@@ -1,0 +1,113 @@
+html, body {
+	overflow: hidden;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 2vh; 
+	color: white;
+	text-shadow: 
+		-1px -1px 0 #555555,
+		1px -1px 0 #555555,
+		-1px 1px 0 #555555,
+		1px 1px 0 #555555,
+		0px 0px 2px black;
+}
+
+.background-container {
+	width: 100vw;
+	height: 95vh;
+	background-image: url('/assets/images/index/night.jpg');
+	background-size: 100% 100%;
+	display: grid; 
+	grid-template-rows: repeat(8, 1fr);
+	grid-template-columns: repeat(16, 1fr);
+}
+
+button {
+	width: 100%;
+	background-color: transparent; 
+	padding: 10%; 
+	aspect-ratio: 1/1; 
+	position: relative; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center; 
+	border: none;
+}
+
+button:hover {
+	cursor: default; 
+}
+
+button p {
+	position: absolute; 
+	margin: 0; 
+	bottom: 5%; 
+	font-size: 2vh; 
+	color: white;
+	text-shadow: 
+		-1px -1px 0 #555555,
+		1px -1px 0 #555555,
+		-1px 1px 0 #555555,
+		1px 1px 0 #555555,
+		0px 0px 2px black;
+}
+
+button img {
+	position: absolute; 
+	border-radius: inherit;
+	height: 60%; 
+	width: auto; 
+	bottom: 25%; 
+	opacity: 0.8;
+}
+
+#blog {
+	grid-row-start: 5; 
+	grid-column-start: 11; 
+}
+
+#blog img {
+	width: 85%; 
+	height: auto; 
+	bottom: 20%; 	
+}
+
+#music {
+	grid-row-start: 5; 
+	grid-column-start: 2; 
+}
+
+#music img, #portfolio img {
+	opacity: 0.9; 
+}
+
+#pic {
+	grid-row-start: 2; 
+	grid-column-start: 1; 
+}
+
+#japan img {
+	width: 80%;
+	height: auto; 
+}
+
+footer {
+	height: 5vh; 
+	z-index: 1; 
+	display: flex;
+	align-items: center; 
+	background: linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%);
+}
+
+footer * {
+	margin-right: .8vw;
+}
+
+footer img {
+	height: 100%; 
+	opacity: 0.8; 
+}
+
+footer p {
+	position: absolute; 
+	right: 0; 
+}

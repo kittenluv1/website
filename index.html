@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>e****girlnews</title>
+	<link rel="icon" href="assets/images/index/flyingtoro.png" type="image/png">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/index/index.css">
+	<link rel="stylesheet" href="assets/css/index/music.css">
+	<link rel="stylesheet" href="assets/css/index/jump.css">
+	<script src="assets/js/index/index.js" defer></script>
+	<script src="assets/js/index/music.js" defer></script>
+	<script src="assets/js/index/jump.js" defer></script>
+</head>
+<body>
+	<div class="background-container">
+		<button id="blog">
+			<img src="assets/images/index/lotus.png" alt="lotus">
+			<p>nostalgiablog</p>
+		</button>
+		<button id="music">
+			<img src="assets/images/index/cd.png" alt="cd">
+			<p>play</p>
+		</button>
+		<button id="creations">
+			<img src="assets/images/creations/crochet & textiles/cat/cat1.png" alt="plush keychain cat">
+			<p>creations</p>
+		</button>
+		<button id="pic">
+			<img src="assets/images/index/flyingtoro.png" alt="flying toro">
+			<p>pic website</p>
+		</button>
+		<button id="japan">
+			<img src="assets/images/index/japan.png" alt="japan video">
+			<p>japan tv</p>
+		</button>
+		<button id="portfolio">
+			<img src="/assets/images/unused/XPgirl.png">
+			<p>portfolio</p>
+		</button>
+	</div>
+	<div class="modal" tabindex="0">
+		<button id="heart-btn"></button>
+		<div id="screen-div">
+			<img class="tama-screen" id="music-image" draggable="false">
+			<!-- may be converted into a gaming screen. we'll see. -->
+			<div class="tama-screen" id="instructions">
+				<p>%Instructions%</p>
+				<ul>
+					<li>click and drag to move</li>
+					<li>double click to close</li>
+					<li>click screen to change image</li>
+					<li>press 'B' to play music</li>
+					<li>press % to play game</li>
+				</ul>
+			</div>
+			<div class="tama-screen" id="tama-game">
+				<div>
+					<p>tama jump!</p>
+					<img id="mametchi" src="/assets/images/index/jump/mametchi.png">
+					<div class="score-div flash">
+						<p id="score">0</p>
+					</div>
+					<div class="game-over flash">
+						<p>game over!</p>
+						<p>press space to play again</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<audio id="audio"></audio>
+		<button id="previous"></button>
+		<button id="play"></button>
+		<button id="next"></button>
+	</div>
+	<footer>
+		<img src='/assets/images/index/start.png'>
+		<p>&copy; e**** 2024</p>
+	</footer>
+</body>
+</html>

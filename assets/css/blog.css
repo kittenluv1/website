@@ -1,0 +1,150 @@
+html {
+	overflow: hidden; 
+	font-family: simsun, serif; 
+	background-image: url('/assets/images/blog/background.jpg');
+	background-size: cover; 
+	transform: none; 
+}
+
+#lotus {
+	position: absolute; 
+	height: 15%; 
+	width: 30%;
+	top: 0%; 
+	left: 50%; 
+	transform: translateX(-50%); 
+	opacity: 0.5;  
+}
+
+header {
+	height: 10vh; 
+	display: flex; 
+	justify-content: center; 
+	align-items: end; 
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	right: 0;  
+}
+
+main {
+	position: absolute; 
+	top: 10vh; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	display: flex;  
+}
+
+aside {
+	width: 15vw; 
+	overflow-y: scroll; 
+}
+
+div {
+	flex: 1; 
+	height: 100%; 
+	overflow-y: scroll; 
+	scroll-behavior: smooth; 
+}
+
+button {
+	margin-right: auto; 
+	padding: 0; 
+	aspect-ratio: 1/1; 
+	height: 100%; 
+	width: 10vh; 
+	font-size: 1vw; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center; 
+	border: none; 
+	background-color: transparent; 
+	position: relative; 
+}
+
+button img {
+	position: absolute;
+	top: 10%; 
+	bottom: 20%; 	
+	height: 70%; 
+	width: auto; 
+	border-radius: inherit;
+}
+
+button p {
+	position: absolute; 
+	margin: 0; 
+	bottom: 5%; 
+	color: white;
+	text-shadow: 
+		-1px -1px 0 #555555,
+		1px -1px 0 #555555,
+		-1px 1px 0 #555555,
+		1px 1px 0 #555555,
+		0px 0px 2px black;
+	font-family: simsun, serif; 
+}
+
+h1 {
+	position: absolute; 
+	margin: 0; 
+	font-size: 8vh; 
+	text-shadow: 
+	-1px -1px 0 #feeeed,
+	1px -1px 0 #555555,
+	-1px 1px 0 #555555,
+	1px 1px 0 #555555,
+	0px 0px 2px black;
+}
+
+header > p {
+	position: absolute; 
+	bottom: 2%; 
+	right: 1%; 
+	font-size: 20%; 
+	font-weight: bold;
+}
+
+header > img {
+	position: absolute; 
+	height: 100%; 
+	width: 35%; 
+	z-index: -1; 
+}
+
+ul {
+	list-style-type: none;
+	margin: 0; 
+	padding: 0; 
+}
+
+li {
+	font-size: 50%; 
+	margin: 5%; 
+	padding: 2%; 
+}
+
+article {
+	padding-top: 4%; 
+	margin: -2% 2% 2% 2%; 
+}
+
+h2 {
+	font-size: 70%; 
+	margin: 1% 0%; 
+}
+
+span {
+	font-size: 50%; 
+	font-family: Consolas, 'Courier New', monospace; 
+}
+
+pre {
+	white-space: pre-wrap; 
+	font-size: 60%; 
+}
+
+.blur {
+	filter: blur(1.5px); 
+}
