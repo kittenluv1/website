@@ -14,7 +14,7 @@ html, body {
 .background-container {
 	width: 100vw;
 	height: 95vh;
-	background-image: url('/assets/images/index/night.jpg');
+	background-image: url('../../images/index/night.jpg');
 	background-size: 100% 100%;
 	display: grid; 
 	grid-template-rows: repeat(8, 1fr);
