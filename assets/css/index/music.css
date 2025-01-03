@@ -7,7 +7,7 @@
 	aspect-ratio: 1 / 1.2; 
 	border-radius: 100px; 
 	background-color: transparent; 
-	background-image: url('/assets/images/index/tama.png'); 
+	background-image: url('../../images/index/tama.png'); 
 	background-size: 100% 100%; 
 	display: none; 
 	grid-template-rows: 1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr; 
@@ -72,7 +72,7 @@
 
 @font-face {
 	font-family: 'tama-connection';
-	src: url('/assets/fonts/TamaConnectType/tamaconnecttype.ttf') format('truetype');
+	src: url('../../fonts/TamaConnectType/tamaconnecttype.ttf') format('truetype');
 }
 
 #instructions ul {

@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'cookie-monster';
-	src: url('/assets/fonts/Cookiemonster/Cookiemonster-gv11.ttf') format('truetype');
+	src: url('../fonts/Cookiemonster/Cookiemonster-gv11.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'messy-handwritten';
-	src: url('/assets/fonts/MessyHandwritten/MessyHandwritten-Regular.ttf') format('truetype');
+	src: url('../fonts/MessyHandwritten/MessyHandwritten-Regular.ttf') format('truetype');
 }
 
 html {
@@ -50,7 +50,7 @@ header {
 	width: 100%;
 	height: 90%;
 	box-sizing: border-box; 
-	background-image: url('/assets/images/portfolio/Fondo Spring Butterfly Gorjuss.jpg');
+	background-image: url('../images/portfolio/Fondo Spring Butterfly Gorjuss.jpg');
 	background-size: cover; 
 	background-position: center;
 	display: flex; 
@@ -136,7 +136,7 @@ header > a {
 	box-sizing: border-box; 
 	width: 4%; 
 	aspect-ratio: 1 / 1; 
-	background-image: url('/assets/images/portfolio/butterfly.png');
+	background-image: url('../images/portfolio/butterfly.png');
 	background-size: contain; 
 	background-position: center; 
 	background-repeat: no-repeat; 
