@@ -54,7 +54,7 @@ function categoriesBtn() {
 
 // fetch all pieces and merge into combined array
 let combinedArray = [];
-fetch(`assets/json/creations/creations.json`)
+fetch(`../json/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		for (let key in data) {
