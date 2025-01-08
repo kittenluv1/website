@@ -96,7 +96,7 @@ modal.addEventListener('keyup', (e) => {
 
 // images
 let imageIndex = 0;
-fetch('../assets/json/index/music/images.json')
+fetch('assets/json/index/music/images.json')
 	.then(response => response.json())
 	.then(images => {
 		screenImage.src = images[imageIndex]; 	//load first image
@@ -123,7 +123,7 @@ nextButton.addEventListener('click', nextSong);
 audio.addEventListener('ended', nextSong);
 
 // load in songs
-fetch('../assets/json/index/music/songs.json')
+fetch('assets/json/index/music/songs.json')
 .then(response => response.json())
 .then(data => {
 	data.forEach(song => {
