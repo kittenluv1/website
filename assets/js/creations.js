@@ -24,7 +24,7 @@ categories.forEach(category => {
 	dropdown.appendChild(item); 
 });
 // add event listeners for menu buttons
-document.getElementById('index').addEventListener('click', () => window.location.href = '/index.html');
+document.getElementById('index').addEventListener('click', () => window.location.href = 'index.html');
 document.getElementById('categories').addEventListener('click', categoriesBtn); 
 displayX.addEventListener('click', closeDisplay);
 document.getElementById('categories').addEventListener('mouseover', () => {
@@ -54,7 +54,7 @@ function categoriesBtn() {
 
 // fetch all pieces and merge into combined array
 let combinedArray = [];
-fetch(`assets/json/creations/creations.json`)
+fetch(`../assets/json/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		for (let key in data) {
@@ -75,7 +75,7 @@ function allPiecesBtn() {
 }
 
 function displayCategories() {
-	fetch(`assets/json/creations/creations.json`)
+	fetch(`../assets/json/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		categories.forEach(category => {
@@ -93,7 +93,7 @@ const nextDisplay = document.getElementById('next-display');
 function displayWorks(category) {
 	removeElements(); 
 	addBreadcrumb(category, () => displayWorks(category), "category");
-	fetch(`assets/json/creations/creations.json`)
+	fetch(`../assets/json/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		let worksArray = data[category];
@@ -184,7 +184,7 @@ function changeImage(work, i) {
 
 // create elements in this structure: 
 // 	<button class="grid-item">
-// 		<img src="assets/images/creations/jewelry/necklace.png">
+// 		<img src="../assets/images/creations/jewelry/necklace.png">
 // 		jewelry
 // </button>
 function createImage(source) {
@@ -264,7 +264,7 @@ function hideDisplayButtons() {
 // open game from creations.html
 function openTama(event) {
 	event.preventDefault(); 
-	let indexTab = window.open('/index.html', '_blank');
+	let indexTab = window.open('index.html', '_blank');
 	indexTab.onload = () => {
 		indexTab.document.getElementById('music').click();
 		indexTab.document.getElementById('heart-btn').click(); 
