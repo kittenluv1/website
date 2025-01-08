@@ -1,9 +1,9 @@
 
-document.getElementById('blog').addEventListener('click', () =>	window.location.href = '/pages/blog.html');
-document.getElementById('creations').addEventListener('click', () => window.location.href = '/pages/creations.html');
+document.getElementById('blog').addEventListener('click', () =>	window.location.href = 'blog.html');
+document.getElementById('creations').addEventListener('click', () => window.location.href = 'creations.html');
 document.getElementById('pic').addEventListener('click', () => window.open('https://www.pic.ucla.edu/~ericahuang916/Final/'));
 document.getElementById('japan').addEventListener('click', () => window.open('https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h'));
-document.getElementById('portfolio').addEventListener('click', () => window.open('/pages/portfolio.html'));
+document.getElementById('portfolio').addEventListener('click', () => window.open('portfolio.html'));
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(
