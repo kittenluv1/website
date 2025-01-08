@@ -1,4 +1,172 @@
-const articles = [
+const _2025 = [
+	{
+		title: "sixth day",
+		date: "1/6",
+		content: 
+`it’s the sixth day already… first day of winter quarter and i need to go to work soon but i can’t believe the quarter is already starting. i feel like i’m still trying to transition from it being break and wrapping things up but i’m almost done. some things that i’m living by this quarter: 
+- it’s always okay to not do your homework to do art
+- fall more and fall better`
+	},
+	{
+		title: "third day...",
+		date: "1/3",
+		content: 
+`i promised i’d update today so here i am. this is reading like my journal lol. i woke up today with bad cramps that didn’t get better throughout the day. i took a cramp medicine from japan that doesn’t do anything and a prescription grade ibuprofen but that also wore off in a few hours. i’m using this heating pad right now on my stomach and it feels so nice. 
+
+despite the constant aching and discomfort and fatigue that comes with the first day of your period, i was very brave today and persisted with my planned activities for the day. i did the resin dipping for my current preservation projects, the lizard, the dragonfly, and the random bug i brought back all the way from la. i also made a pickleball and racket from polymer clay while i was waiting for the resin to cure for my parents since i didn’t make them a christmas present this year. i’m trying a new method of applying the resin, i hung up each of the pieces with string and glazed them with resin and let gravity do the work of smoothing it out and making sure it doesn’t pool unevenly. it’s a bit finicky, and i lost a part of the dragonfly’s wing while applying the resin onto it, but that’s how resin always is. overall i think the method was quite a success. 
+
+my table looks kind of crazy right now, lots of random supplies strewn all over and a bunch of dead bugs and reptiles hanging from a homemade hanging rack contraption thing made from a clorox wipe dispenser and duct tape. i’m going to let this coat cure and then apply another one tomorrow before my mandatory outing with my mom’s acquaintances. and then break will be over so so soon.`
+	},
+	{
+		title: "second day of the new year - snowboarding for the second time",
+		date: "1/2",
+		content: 
+`i had a very eventful second day of the year. i went snowboarding with peony, she drove us down and i met up there with elena and her dad and her friend and they took me up the mountain for the first time on a snowboard. i do not remember those slopes being so steep on when i went was on skis, i was terrified T-T elena’s dad took me down corkscrew first and then sugar n’ spice, they’re both greens but corkscrew is way scarier in theory. the first run i wasn’t used to the slope or the speed and i kept leaning back and basically just being scared and not committing and i ate so much snow TT full on like tumbling and catching edges everywhere. but elena’s dad was so patient and waited for me on both of my first runs of the two green trails, thank god for him. i would like eat it and then just sit there to recover for a bit and he was just sitting there waiting for me TT it was really nice of him. afterwards i went to take a much needed break and i caught up with peony who was having her own winter arc on the mountain TT i tried to teach her about edges and stuff but it’s best to just do it. i told her to follow me down the slope one time so she could learn and i started doing a steep s-turn and then i turn around and she’s flying down the mountain like already halfway down TT i’m like well ok TT after that run there was only one more hour left until the resort closed and i was so ravenous and aching so me and peony went to take a break at the lounge area. i bought her a dirty chai and i got myself a drink and ate a protein bar to fill my stomach. those refreshments were so needed, i see why they’re called refreshments now. 
+
+then i went for one more run on green by myself and oh boy i’m honestly not sure i should have taken that run. first i caught a nasty front edge and i had to just sit there and catch my breath for a second just groaning to myself, and then i got a cramp in my left foot and sat down to wait it out, and then i got a cramp in my right foot, and while i was waiting that one out i ran into a guy who used to volunteer with my nonprofit. and i was like no way crazy seeing you here. he was skiing with his girlfriend and it looked like it was her first time and he was teaching her but it was actually such a crazy coincidence. anyways after that interaction i decided it was finally time get off my butt and go down the mountain and i actually took corkscrew with only 1 fall… i actually barely fell on that last green run and i felt much more in control and less afraid of the speed, so i’m glad i went. but that definitely was the last run, it literally took me like 50 minutes T-T i’m not going to be able to walk normally tomorrow
+
+coming back was so fun, peony drove while i queued songs and together we sang and were blinded by the brightness of the setting tahoe sun. we beat traffic by leaving just before the last chair lift. those 10 minutes really make a big difference traffic-wise. and as i said i couldn’t have done any more even if i wanted to TT when we got home i immediately changed into my pajamas and we made hot ramen together and watched american psycho. i totally didn’t get it at first but peony explained it to me and her explanation made sense. she’s helping me return the snowboards tomorrow too she’s a great friend T-T i also did another lice treatment today because you’re supposed to do one 7 days after your first treatment anyways (which would have been yesterday but i was busy) and i was having deja vu paranoia from the last time i went to bed without washing my hair after snowboarding TT
+
+my website on github pages is kinda spazzing out rn, git and github are kinda both totally new to me but i’m going to put a pin on addressing those issues for now to direct my focus to some other side quests that i have been neglecting this break such as my preservation projects and getting ready for winter quarter and the new year. we’ll see how much progress i can make on those tonight, but i plan to work on preservation all day tmrw. will lyk how it goes ;)`
+	},
+	{
+		title: "reflecting on my 2024 new year's resolutions",
+		date: "1/2",
+		content: 
+`[resolutions redacted]
+
+overall lol ok it’s kinda cringe. idk why i think i changed so much from last year to this year but actually like for real this time. ig i change a lot every year but i feel like i changed in a different way this year. i just want to cement in that change lowkey because i like who i’ve become. that first one idek what i was talking about but i dont even agree with it rn TT mb the creativity part. but i think that was still me trying to be someone i really wasn’t. trying to be someone else. but maybe all that talk about self actualization actually helped me become the way i am now. the way i dont care about that stuff anymore lowk that’s the true realized self. i guess i am more weak now, i think i was onto something with that, i am weak in a way that i accepted things about myself that i previously considered to be flaws and now consider them my strengths. and i decided to live by them. and the friendships… i think that happened all on its own :) along with everything else. 
+
+now that thats out of the way i am ready to put 2024 behind me and move on to 2025 *-*`
+	},
+	{
+		title: "showcasing your art",
+		date: "1/1",
+		content: 
+`yesterday i showed my japan video to my parent’s friends at our new year’s party and i don’t think it really reached the right audience. they kept asking questions about what was going on in the video and telling me to explain it but they were just kind of talking over it instead of watching and experiencing it. some kids my age were there too, but i really don’t think it was the right audience. i was trying to keep myself calm by just focusing and taking comfort from my own video, but it all was actually very overstimulating and lowkey made me want to cry. but i had to remind myself that their reactions to my art don’t determine its worth or change anything about it including my opinion of it. and you can’t control people’s reaction to your art, but you can only show it to everyone and let the art speak to whoever it speaks to. and anyways, i’m proud of myself for showing my art. even if the reaction wasn’t ‘successful’ or amazing, i think every person who sees my art, regardless of their reaction, is a win. 
+
+anyways the reactions i got yesterday weren’t all bad - the video got described as a 2010’s youtube vlog which i appreciated and took as a compliment, and my one friend who was there, i know she got it. i also showed it to peony before the guests came and she liked it. she got it. `
+	},
+	{
+		title: "first day of the new year - got my site published!",
+		date: "1/1",
+		content: 
+`happy new year :) i got my site published!! it’s currently just on github pages and it’s not even working correctly because the file source paths are all wrong right now which is… rip but for some reason i am so tired so i’m about to go to sleep. tomorrow i’m waking up early to go snowboarding again so this is fine, i’ll deal with this all some other time :)
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡆⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⢀⣿⠀⠀⠀⠀⣠⡴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣇⠀⠀⠀⠀⠸⣿⠀⠀⠀⣾⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠹⢿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠻⣧⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠉⢻⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⠷⣶⣤⣀⣀⣀⠀⠀⠀⠀⠀
+⠀⢀⣤⣤⣄⣀⣀⣠⡞⠀⠀⠀⠀⠀⠀⠀⠀⣠⡄⠀⠀⠀⠈⠉⠛⠛⠿⣶⣤⠀
+⢀⡾⠉⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣧
+⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡟
+⠀⠀⠀⠀⠀⢠⣾⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣠⣾⠟⠁
+⠀⠀⠀⠀⣴⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⡿⠿⠿⠟⠁⠀⠀
+⠀⠀⠀⠸⠟⠉⠀⠀⠀⣀⣤⣤⣤⣤⣄⡀⠀⠀⠀⢸⣿⠏⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠈⠙⢿⣦⠀⠀⢸⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡏⠀⠀⠀⠙⢷⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣤⠤⣄⡀⠀⠀⠀⠀⢰⡟⠀⢠⠀⢴⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣴⠟⠁⠀⠈⠙⢦⣀⠀⣠⣿⣧⡀⣸⠀⢈⡇⣸⠏⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣼⠃⠀⠀⠀⠀⠀⠀⢀⣩⠟⠋⠉⣿⣿⣶⠋⣰⡏⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠰⣿⣀⣀⣀⣀⣤⡴⠞⠋⠁⠀⠀⢠⡏⠀⣽⣆⢻⡷⠶⠶⠶⢶⣄⡀⠀⠀
+⠀⠀⠀⠙⠛⠛⠋⠉⠀⠀⢀⣤⡤⠤⢤⣾⣷⠀⠙⠛⠿⠷⠶⠶⣤⣤⡟⠃⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⢷⣦⣤⣤⣤⣤⠤⠤⠤⠤⠤⠶⠟⠋⠀⠀⠀⠀
+`	
+	}
+]
+
+const _2024 = [
+	{
+		title: "lice grooming is a love language",
+		date: "12/30",
+		content: 
+`so you know how i got lice a few days ago from snowboarding. my mom has been helping me with the treatments for the past few days, putting the lice killing shampoo in my hair and combing out the lice with the special comb. and she has to go through the roots checking for lice and picking out anything that might look like lice or lice eggs, just combing for hours on end, and it totally reminded me of how monkeys groom their loved ones. like she would part my hair and look for any eggs buried in the roots then sometimes when the mother monkeys find smth they’ll pick it out and eat it which is kinda nasty but that’s what it reminded me of when my mom was combing through my hair. that’s quite the image to imagine lol but i felt like my natural instincts just kicked in... it’s a love language fr.`
+	},
+	{
+		title: "sell yourself",
+		date: "12/30", 
+		content: 
+`we live in a time where everyone is always trying to sell you something, or trying to get you to sell others something. people will try to sell you a fantasy, a dream, an idea. one thing i hear often as a job applicant is ‘sell yourself’. i don’t want to sell myself. because i’m not a product to be sold. if you ask me, what’s even better than selling yourself is just to be yourself. if you just be yourself, maybe you’ll find yourself in a place where you don’t have to sell yourself. just my thoughts.`
+	},
+	{
+		title: "japan video", 
+		date: "12/29", 
+		content: 
+`i just finished editing my japan video. i’m really surprised the whole process only actually took me one day from start to finish… and i’ve been putting this project off for like a good six months TT tomorrow i’ll take one last look at it and decide if it’s ready to post. and then i’ll upload my first youtube video ever *-*
+
+today my mom made a comment about why i didn’t make the video about our family, instead of the more anonymous vlog style that i’m doing now, and it kinda made me feel bad for a second but i don’t think it’s selfish to take on projects for yourself that are made in a way you like, and she probably didn’t even mean it that way anyways. (edit: never mind she actually just meant it that way. smfh.) the reason i finally attempted to start this project is because we’re hosting a gathering on new year’s eve and my mom said some 叔叔 is going to be sharing his travel video to antarctica, so i was like what i want to share my video too. but i had to actually have the video first, so i made it.`
+	},
+	{
+		title: "玫瑰的故事 drama review",
+		date: "12/28", 
+		content: 
+`i just finished watching ‘The Tale of Rose’, i’ve been watching a few episodes a night with my mom. i haven’t watched a cdrama so spread out like that in a while, i feel like i always binge them over a few days or end up getting bored and neglecting them for a long time. but it was actually so good. credits to the show itself, i think the characters were written so well and each of them was given a lot of respect and stayed true to their flaws and their growth. apparently it’s adapted from a book though so that makes sense, i bet the book is amazing. the main actress was perfect for the role, she captured the elegance of living with complete freedom and growing into yourself. i absolutely love her growth and the growth of all the female characters in the show, the way she lived her life to the fullest and became her own happiness as she grew older is so inspiring and makes me excited to be like her. `
+	},
+	{
+		title: "mold n mildew",
+		date: "12/27", 
+		content: 
+`there’s a patch of mold growing on my carpet, right by my bed, in the corner next to the bedside cabinet. it started growing there when i spilled my water one night and i figured it wouldn’t hurt to just leave some of it and let it evaporate, since it’s just water and i was sleepy and wanted to go to bed. and it seemed to be fine for a few days, but then it started to smell wet, like mildew, right by where i lay down to sleep. so i’ve been spraying it with a mold n mildew remover, every day, like watering a plant. perhaps the liquid chemicals may just be causing it to mutate and become more hydrated, but it’s become a part of my daily routine. i think i’m even starting to grow used to this patch of mold living in my carpet. like it’s growing on me.`
+	},
+	{
+		title: "snowboarding & lice",
+		date: "12/26", 
+		content: 
+`yesterday i went snowboarding for the first time and it was AMAZING and i took a lesson and met these two girls who i rode with the rest of the day and the snowboarding instructor looked like jacob from twilight. and basically after like 2 runs i had the hang of doing turns and controlling my speed down the mountain. i picked it up pretty fast because the mechanics are pretty similar to skating and i also skied before and it’s literally just the combination of those two sports. i caught one nasty edge towards the end of the run and was very grateful for my helmet. 
+
+speaking of the fucking helmet i literally got lice from it. bcs it was a rental and it was a size small so i probably got lice from some kid who wore the helmet before me T-T like merry christmas and fuck me. it was fine until last night and then my head starting itching like a lot and i woke up because of it at 4am and i literally was laying in bed like fuck i got lice from the snowboard rental helmet and i felt gross and was lowkey panicking about it but i was like it’s 4am i need to go back to sleep and deal with this tomorrow morning. and alas the next morning i had lice TT. i’ll do a treatment today but that stuff takes weeks to get rid of TT i got lice once when i was young and it is so persistent and annoying. euuurghhh `
+	},
+	{
+		title: "octopi", 
+		date: "12/24", 
+		content: 
+`in high school i made a bunch of these clay octopuses with this design, like the head is just a ball and the legs were just 8 smaller balls. i really liked it because it was super simple to make and it stood really nicely, like it was just really satisfying to pick up and put down. my favorites were these tiny mini ones, smaller than a coin, and they would sit on top of each other like a snowman. i remember i originally made a set of 3, each one smaller than the other, but the largest one became overly dry and crumbled to pieces. it was made of air dry clay, so i guess it simply returned back to the earth. 
+		
+at some point i showed veda how to make them too, and we each made an octopus together. she had to leave before we were done painting, so she took it home to finish. but when i visited her house after school one day i accidentally saw her finished octopus on the shelf and it looked so busted i couldn’t stop laughing. the rest of the paint job was done haphazardly with marker and for some reason it looked so sad, it was hilarious. `	
+	},
+	{
+		title: "fairies", 
+		date: "12/24",
+		content: 
+`i used to have a charm bracelet that i wore every single day, with charms from the rainbow magic fairy books from the scholastic book fair. back then, i genuinely believed that fairies were the specks of glitter you find on your palms if you look just right, or the yellow golden dust floating about in the summer air. and i think all the girls in our class believed in it so much that we all just accepted it as an innocent truth and took it to be fact. some afternoons, when the sun was shining through the window and the dust was twirling slowly through the air, i would think to myself, wow there are so many fairies today.`
+	},
+	{
+		title: "christmas eve party",
+		date: "12/24",
+		content: 
+`i’m having some conflicts with my creative portfolio… the more i add to my archive, the worse i feel about the overall quality of the page. although it originally was meant to be a place to showcase anything i’ve made, i feel like it’s learning towards quantity over quality because i feel the need to include everything i’ve ever made in my life. but i don’t think that’s the point - the archive is a place for pieces that don’t quite fit in the main ‘portfolio’ but also deserve to be included, more so because of personal sentiment than artistic representation. but i think half the things in there right now don’t need to be included. i may have to do a whole restructuring of the page layout because i don’t like the balance that’s being achieved here. but i’m going snowboarding for the first time tomorrow for christmas, and i think it will be a good break. get to take a step back and get a fresh perspective on things. 
+
+i went to a christmas eve party today with my parents at their friend’s house that i’ve never met before, and i was expecting to not know anybody but i actually ran into quite a few familiar faces and talked to ktlyn again for the first time in forever! it was really nice to catch up. and the food was good too :p`
+	},
+	{
+		title: "visit harper",
+		date: "12/21",
+		content: 
+`i went to visit harper today. i’m really glad i went. i was crying before we left, not even sure why. i should have been happy to be seeing her so soon but it just made me really sad. but when we showed up she ran out the front door to greet us and jumped up at our laps and her tail was wagging and it was adorable. 
+
+i originally did not plan for it to be a whole family thing, i was fine with just going by myself. the lady emailed them and seemed to assume that everyone was going to come so my parents kind of just invited themselves. i honestly was not that thrilled about them coming, especially my dad. my dad was nothing if not unsupportive while harper was here. if he had been more supportive and actually helped my mom out with the dog while i was gone, she wouldn’t even have had to leave. all he had to say about her while she was here were negative things. and i guess i’m glad he supported my mom with the process of finding harper a new home, but i honestly kind of can’t stand it. i find his supportiveness more hypocritical than anything else. where was this attitude when harper was our dog? and even though i know my mom did a lot for the dog and loved her too and was probably even closer to her and definitely spent more time with her than i did, i guess i kind of just overall feel a bit of resentment towards them for giving away my dog. maybe for my parents it was somewhat of a relief, that they have one less thing to take care of and that much less stuff to worry about each day. but for me it just feels more like an act of betrayal. 
+
+the lady was so nice though, she’s just like a grandma and she showed us her and her husband’s collectibles. she really loves loves harper, she brings her everywhere and harper follows her around and i’m sure she loves her too. she had so many new toys and she brought them all to show us and play with us. i got to look into harper’s eyes and scratch her behind the ears and rub her chest and it felt just like before. i think she even got a little chunkier. i saw on her new dog tag it said ‘morgan’ on it and i’m not sure if they’re trying to give her a new name. but they didn’t mention anything about it and when i called her harper she sat so well and looked up at me and gave me her attention just like always.
+
+the lady’s house looks like what i want my future home to look like, and i’m already well on my way. her daughter was there as well and was talking to my parents about her state jobs and to me about how she went to ucla for summer school one summer. she seemed to be very in tune with people, because she asked me if i was doing okay even though i thought i was doing pretty good. i didn’t even cry like i thought i would. 
+
+honestly walking away from that was not as bad as i thought it would be. i’m really glad i went. i think harper is in really good hands and i know she won’t forget me and definitely doesn’t blame us or anything like that. i don’t even think she has the capacity to blame lol she’s just a dog and a silly girl. i think i just need to move on and stop blaming my parents and i guess myself. harper will be happy and that’s all that matters.`
+	},
+	{
+		title: "tama JUMP!",
+		date: "12/18",
+		content: 
+`i finally fuxking finished the tama game. holy shzt that took a lot out of me. but i am so so happy with how it turned out T-T i thought it was going to be like a 3 hour project max because it was based on a video that was literally called ‘easiest javascript game ever’... but it’s kind of on me bcs i went and made it all complicated and made each block like dynamically generate the next one so it kinda got a little out of hand but i think it turned out SO cute and playable :)… anyways now on to my creative portfolio (ᵕ—ᴗ—)`
+	},
+	{
+		title: "lion dancing",
+		date: "12/15", 
+		content: 
+`i want my future kid to do / at least try a performance art. if it’s a boy, i’m sending them to do lion dancing.`
+	},
 	{
 		title: "happy birthday to my blog!",
 		date: "12/13", 
@@ -14,7 +182,7 @@ const articles = [
 	{
 		date: "12/12", 
 		content: 
-`hello hello everyone i am done with finals! my pic final was so fun, it was a 3 hour practical where you just build a website for a fake client. i wanted to be the first one to finish, but a few other people finished before me because i came in like 10 minutes late because i couldn’t find the room. i was the first girl to finish, but i don’t really like that separation of standards and it’s not that satisfying unless i beat the boys too. i love being better than boys at computer science. does that count as a complex,, before the cs final my friend was talking about how he built his own app and i feel like it’s so easy to feel behind or not legitimate in this field. but i’m also lowkey so excited to work with other people and actually make something, like a real cs project… maybe we could build our personal websites together?`
+`hello hello everyone i am done with finals! my pic final was so fun, it was a 3 hour practical where you just build a website for a fake client. i wanted to be the first one to finish, but a few other people finished before me because i came in like 10 minutes late because i couldn’t find the room. i was the first girl to finish... but i don’t really like that separation of standards and it’s not that satisfying unless i beat the boys too. i love being better than boys at computer science, does that count as a complex...? my friend was talking about how he built his own app and i feel like it’s so easy to feel behind or not legitimate in this field. but i’m also lowkey so excited to work with other people and actually make something, like a real cs project...`
 	},
 	{
 		title: "am i insane? or is everything a cycle?",
@@ -36,7 +204,7 @@ const articles = [
 	{
 		date: "11/27",
 		content:
-`i’m home now for thanksgiving break, happy holidays. it feels so odd and empty coming home and not seeing the dog. i asked to visit her during the break, my dad showed me the email where they asked about it and they said i wanted to say goodbye. i never said i wanted to say goodbye. the new owners said she’s spending time with the family in oregon and their dogs and in the picture she was running around on the beach all by herself and no leash. she looked so free and happy. i’m so happy that she’s so happy. she deserves everything. i just wish we were the ones to give her that. why were they able to give her everything we should have given her in such a short amount of time? why did we take her from the people who were interested in her at the shelter if we were only going to give her away? why did we bring her into the home if we weren’t going to give her a family that lasts?
+`i’m home now for thanksgiving break, happy holidays. it feels so odd and empty coming home and not seeing the dog. i asked to visit her during the break, my dad showed me the email where he asked them about it and he told them i wanted to say goodbye. i never said i wanted to say goodbye. the new owners said she’s spending time with the family in oregon and their dogs and in the picture she was running around on the beach all by herself and no leash. she looked so free and happy. i’m so happy that she’s so happy. she deserves everything. i just wish we were the ones to give her that. why were they able to give her everything we should have given her in such a short amount of time? why did we take her from the people who were interested in her at the shelter if we were only going to give her away? why did we bring her into the home if we weren’t going to give her a family that lasts?
 
 i’m grieving her like she’s dead but she’s alive and well, don’t worry. but i can’t help but think that we didn’t deserve her. like we betrayed her trust. 
 
@@ -161,7 +329,7 @@ but it always goes away after the first night`
 		title: "thoughts going into the 2024 school year",
 		date: "8/26", 
 		content:
-`im afraid of letting people down and im afraid of not being able to handle it and im afraid of losing sleep and not being good enough. idk why im so afraid
+`im afraid of letting people down and im afraid of not being able to handle it and im afraid of losing sleep and not being good enough. 
 
 i still feel so green like i still don’t know what i’m doing …`
 	},
@@ -251,7 +419,7 @@ i used to think my parents didn’t know about our secret little hideout. i used
 		content:
 `hello, and welcome to my personal webpage! this site is forever a work in progress, but i hope to use it as an platform to share my thoughts, creations, and inspirations, and also just to do wtv i want
 
-this is my blog page, where i may post site updates & life updates & unedited ramblings about my opinions and experiences
+this is my blog page, where i may post site updates & life updates & original thoughts & unedited ramblings about my opinions and experiences
 
 please feel free to take a look around ⋆.⋆
 

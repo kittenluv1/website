@@ -41,26 +41,14 @@ aside {
 	overflow-y: scroll; 
 }
 
-div {
-	flex: 1; 
-	height: 100%; 
-	overflow-y: scroll; 
-	scroll-behavior: smooth; 
-}
-
 button {
-	margin-right: auto; 
-	padding: 0; 
-	aspect-ratio: 1/1; 
-	height: 100%; 
-	width: 10vh; 
-	font-size: 1vw; 
 	display: flex; 
 	flex-direction: column;
 	align-items: center; 
 	border: none; 
 	background-color: transparent; 
-	position: relative; 
+	font-size: 50%; 
+	font-family: simsun, serif; 
 }
 
 button img {
@@ -113,6 +101,19 @@ header > img {
 	z-index: -1; 
 }
 
+header > button {
+	margin-right: auto; 
+	padding: 0; 
+	aspect-ratio: 1/1; 
+	height: 100%; 
+	width: 10vh; 
+	position: relative; 
+}
+
+aside {
+	font-size: 50%; 
+}
+
 ul {
 	list-style-type: none;
 	margin: 0; 
@@ -120,14 +121,36 @@ ul {
 }
 
 li {
-	font-size: 50%; 
 	margin: 5%; 
 	padding: 2%; 
+}
+
+aside > div {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+
+aside > div > a {
+	margin: 5%; 
+	padding: 0; 
+	font-size: 50%; 
+}
+
+.selected {
+	font-size: 110%; 
 }
 
 article {
 	padding-top: 4%; 
 	margin: -2% 2% 2% 2%; 
+}
+
+#articles {
+	flex: 1; 
+	height: 100%; 
+	overflow-y: scroll; 
+	scroll-behavior: smooth; 
 }
 
 h2 {
