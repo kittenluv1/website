@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 // open game from portfolio
 function openTama(event) {
 	event.preventDefault(); 
-	let indexTab = window.open('/index.html', '_blank');
+	let indexTab = window.open('index.html', '_blank');
 	indexTab.onload = () => {
 		indexTab.document.getElementById('music').click();
 		indexTab.document.getElementById('heart-btn').click(); 
