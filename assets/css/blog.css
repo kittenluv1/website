@@ -4,6 +4,7 @@ html {
 	background-image: url('../images/blog/background.jpg');
 	background-size: cover; 
 	transform: none; 
+	font-size: 2vh; 
 }
 
 #lotus {
