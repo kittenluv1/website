@@ -123,7 +123,7 @@ nextButton.addEventListener('click', nextSong);
 audio.addEventListener('ended', nextSong);
 
 // load in songs
-fetch('./assets/json/index/music/songs.json')
+fetch('assets/json/index/music/songs.json')
 .then(response => response.json())
 .then(data => {
 	data.forEach(song => {
