@@ -4,7 +4,6 @@ html {
 	background-image: url('../images/blog/background.jpg');
 	background-size: cover; 
 	transform: none; 
-	font-size: 2vh; 
 }
 
 #lotus {
@@ -48,7 +47,7 @@ button {
 	align-items: center; 
 	border: none; 
 	background-color: transparent; 
-	font-size: 50%; 
+	font-size: 2vh; 
 	font-family: simsun, serif; 
 }
 
@@ -91,7 +90,7 @@ header > p {
 	position: absolute; 
 	bottom: 2%; 
 	right: 1%; 
-	font-size: 20%; 
+	font-size: 1.5vh; 
 	font-weight: bold;
 }
 
@@ -112,7 +111,7 @@ header > button {
 }
 
 aside {
-	font-size: 50%; 
+	font-size: 2vh;  
 }
 
 ul {
@@ -135,11 +134,11 @@ aside > div {
 aside > div > a {
 	margin: 5%; 
 	padding: 0; 
-	font-size: 50%; 
+	font-size: 1.5vh;  
 }
 
 .selected {
-	font-size: 110%; 
+	font-size: 2.5vh; 
 }
 
 article {
@@ -155,18 +154,18 @@ article {
 }
 
 h2 {
-	font-size: 70%; 
+	font-size: 3vh; 
 	margin: 1% 0%; 
 }
 
 span {
-	font-size: 50%; 
+	font-size: 2vh;  
 	font-family: Consolas, 'Courier New', monospace; 
 }
 
 pre {
 	white-space: pre-wrap; 
-	font-size: 60%; 
+	font-size: 2vh; 
 }
 
 .blur {
