@@ -54,7 +54,7 @@ function categoriesBtn() {
 
 // fetch all pieces and merge into combined array
 let combinedArray = [];
-fetch(`/website/assets/json/creations/creations.json`)
+fetch(`assets/json/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		for (let key in data) {
@@ -75,7 +75,7 @@ function allPiecesBtn() {
 }
 
 function displayCategories() {
-	fetch(`/website/assets/json/creations/creations.json`)
+	fetch(`assets/json/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		categories.forEach(category => {
@@ -93,7 +93,7 @@ const nextDisplay = document.getElementById('next-display');
 function displayWorks(category) {
 	removeElements(); 
 	addBreadcrumb(category, () => displayWorks(category), "category");
-	fetch(`/website/assets/json/creations/creations.json`)
+	fetch(`assets/json/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		let worksArray = data[category];
