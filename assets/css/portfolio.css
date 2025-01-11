@@ -42,7 +42,7 @@ p {
 
 a {
 	color: #808A91;
-	text-shadow: 0 0 5px white, 0 0 10px white;
+	text-shadow: 0 0 5px #F3EAE3, 0 0 10px #F3EAE3;
 	font-size: 1.5vw; 
 }
 
@@ -144,8 +144,34 @@ header > a {
 	border-radius: 50%;
 	box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3), inset 0 0 10px 10px rgba(255, 255, 255, 0.3);
 	/* border: 1px solid black;  */
-
 }
+
+#info {
+	background-image: url('../images/portfolio/clovers.jpg');
+	background-position: center; 
+	text-shadow:  0 0 5px #F3EAE3,
+	0 0 6px #F3EAE3,
+	0 0 7px #F3EAE3, 
+	0 0 8px #F3EAE3,
+	0 0 9px #F3EAE3, 
+	0 0 10px #F3EAE3, 
+	0 0 11px #F3EAE3,
+	0 0 12px #F3EAE3, 
+	0 0 13px #F3EAE3,
+	0 0 14px #F3EAE3, 
+	0 0 15px #F3EAE3, 
+	0 0 20px #F3EAE3,
+	0 0 25px #F3EAE3, 
+	0 0 30px #F3EAE3, 
+	0 0 35px #F3EAE3,
+	0 0 40px #F3EAE3, 
+	0 0 45px #F3EAE3,
+	0 0 50px #F3EAE3, 
+	0 0 60px #F3EAE3;  
+}
+ #info div {
+	box-shadow: 0 0 5px 10px white; 
+ }
 
 #about {
 	width: 60%; 
@@ -154,6 +180,16 @@ header > a {
 #projects {
 	width: 100%; 
 	text-align: center; 
+}
+
+#personal {
+	background-image: url('../images/portfolio/polkadots.jpg');
+	background-size: 60%;
+}
+
+#class {
+	background-image: url('../images/portfolio/stripes.jpg');
+	background-size: 20%;
 }
 
 .project-group {
@@ -167,7 +203,7 @@ header > a {
 }
 
 .project-div {
-	border: 1px solid black; 
+	background-color: white;  
 	width: 20%; 
 	padding: 1vw; 
 	margin-bottom: 4vh; 

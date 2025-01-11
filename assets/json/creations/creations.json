@@ -1,21 +1,83 @@
 {
+	"sketchbooks": [
+		{
+			"title": "burnt OUT!",
+			"images": ["assets/images/creations/sketchbooks/burnt out/1.png",
+				"assets/images/creations/sketchbooks/burnt out/2.png",
+				"assets/images/creations/sketchbooks/burnt out/3.png",
+				"assets/images/creations/sketchbooks/burnt out/4.png",
+				"assets/images/creations/sketchbooks/burnt out/5.png",
+				"assets/images/creations/sketchbooks/burnt out/6.png",
+				"assets/images/creations/sketchbooks/burnt out/7.png",
+				"assets/images/creations/sketchbooks/burnt out/8.png",
+				"assets/images/creations/sketchbooks/burnt out/9.png",
+				"assets/images/creations/sketchbooks/burnt out/10.png",
+				"assets/images/creations/sketchbooks/burnt out/11.png",
+				"assets/images/creations/sketchbooks/burnt out/12.png",
+				"assets/images/creations/sketchbooks/burnt out/13.png"],
+			"captions": ["", "", "3d collage wrapped in plastic", "", "made from harper's real hair", "i love glue!", "inspired by silence of the lamb", "receipts", "", "i spy with my little eye...", "grand prismatic in resin", "zineception", ""],
+			"date": "14 august 2024",
+			"description": "burn-themed junk journal scrapbook sketchbook/zine",
+			"comments": "this sketchbook was my project of last summer, i poured an entire like 3 weeks of my life into these pages. the notebook itself i got from some mean girls themed college event, which is why it was originally a burn book and the first page is actually a burn of my friend that i went to the event with (it's not featured here T-T). this was my first sketchbook and i love how it turned out. when i pick it up it crinkles, like it's so crunchy. in case you couldn't tell i love texture. not every page is amazing, but i guess that's the point of a sketchbook. enjoy scrolling through some of the featured pages :) the end goal for it was to make it into a zine which would go into the sketchbook, featuring the pages of the sketchbook, so it's like zineception. i think it'd be really cool to distribute the zines, maybe someday"
+		},
+		{
+			"title": "composition1 (WIP)",
+			"images": ["assets/images/creations/sketchbooks/composition1/1.png",
+				"assets/images/creations/sketchbooks/composition1/2.jpg",
+				"assets/images/creations/sketchbooks/composition1/3.jpg"],
+			"captions": ["mini composition notebook", "harper sketch", "momo process"],
+			"date": "aug 2024 - present",
+			"description": "composition book sketchbook",
+			"comments": "for drawing freaky little guys and cybercigilism and painting badly @. i've had this mini composition notebook since elementary, never knew what to do with it b4 but now i'm putting it to good use #"
+		}
+	],
+	"drawing & painting": [
+		{
+			"title": "caravaggesque cat", 
+			"images": ["assets/images/creations/drawing & painting/cat.png"],
+			"date": "2023-08-24",
+			"description": "cat in dramatic lighting. painted with acrylics",
+			"comments": "found the reference image on pinterest, and i thought it was perfect for my first real painting. painted at a weekly summer art class with a bunch of older ladies, but the teacher got sick so we just went to the park to paint every sunday"
+		},
+		{
+			"title": "teamlab jellyfish",
+			"images": ["assets/images/creations/drawing & painting/teamlab/1.jpg",
+				"assets/images/creations/drawing & painting/teamlab/2.jpg", 
+				"assets/images/creations/drawing & painting/teamlab/3.jpg", 
+				"assets/images/creations/drawing & painting/teamlab/4.jpg",
+				"assets/images/creations/drawing & painting/teamlab/5.jpg", 
+				"assets/images/creations/drawing & painting/teamlab/jellyfish.jpg"],
+			"date": "september 13, 2024",
+			"description": "oil pastel jellyfish at teamlab borderless exhibit 'sketch ocean'",
+			"comments": "this was from an interactive exhibit at teamlab borderless in tokyo where you could color a sea creature and they would scan it and add it to the exhibit, and it would appear and swim around on the wall with everyone's sea creatures. i know the exhibit's still up, i wonder how long they keep the file around to keep swimming. i loved this exhibit so much, i love being surprised with the opportunity to make art are you kidding meee #. it would be my dream to eventually work for something like this, where you can make art and experiences and creative joy for other people"
+		},
+		{
+			"title": "画龙点睛",
+			"images": ["assets/images/creations/drawing & painting/dragon/dragon.jpg",
+				"assets/images/creations/drawing & painting/dragon/2.jpg"],
+			"date": "sept 5, 2020",
+			"description": "chinese dragon painting, drawn with calligraphy brush and ink",
+			"comments": "i own a few calligraphy ink and brush sets and they are art pieces in themselves. i remember one year my mom led a calligraphy station at my class's chinese new year activity day. i ended up liking this dragon so much i put it on a shirt and gave it to my mom for christmas。 the title of this piece comes from a chinese idiom about an artist who refused to paint the eyes of his dragons, because if he did, they would come to life. one day, he demonstrates this to the unbelieving crowd, and the dragon actually comes to life and flies away."
+		}
+	],
 	"crochet & textiles": [
 		{
 			"title": "lost n' found", 
-			"images": ["assets/images/creations/crochet & textiles/lostnfound/makeup.jpg", 
+			"images": ["assets/images/creations/crochet & textiles/lostnfound/armwarmers.png",
+				"assets/images/creations/crochet & textiles/lostnfound/makeup.jpg", 
 				"assets/images/creations/crochet & textiles/lostnfound/board.jpg", 
 				"assets/images/creations/crochet & textiles/lostnfound/article.jpg",
 				"assets/images/creations/crochet & textiles/lostnfound/process.jpg", 
 				"assets/images/creations/crochet & textiles/lostnfound/design.png"],
-			"captions": ["last minute touchups", "posing", "article by refine", "arm warmers process", "designs by CC"],
+			"captions": ["arm warmers", "last minute touchups", "posing", "article by refine", "arm warmers process", "designs by CC"],
 			"date": "march 8, 2024",
 			"description": "crochet arm warmers, made from mohair and scrap yarns",
-			"comments": "this look was for refine's 2024 lost n' found fashion show. i did the arm warmers, as well as some of the detailings on the dress. the diva made the dress entirely by hand and did makeup for our amazing model chanel. the designs shown were made by CC. i had sm fun with this look, it was worth the nights i stayed up sewing instead of studying %"
+			"comments": "this look was for refine's 2024 lost n' found fashion show. i did the arm warmers, as well as some of the detailings on the dress. the diva made the dress entirely by hand and did makeup for our amazing model chanel. the designs shown were made by CC. there's lots of dangling and moving parts to these babies, the fringe parts at the bottom are made from like a scarf worn by belly dancers so these arm warmers actually make noise when you walk. i had sm fun with this look, it was worth the nights i stayed up sewing instead of studying %"
 		},
 		{
 			"title": "star bag",
-			"images": ["assets/images/creations/crochet & textiles/bag/bag.png",
-				"assets/images/creations/crochet & textiles/bag/bag1.png",
+			"images": ["assets/images/creations/crochet & textiles/bag/bag1.png",
+				"assets/images/creations/crochet & textiles/bag/bag.png",
 				"assets/images/creations/crochet & textiles/bag/beach.jpg"],
 			"date": "summer of 2023",
 			"description": "crochet shoulder bag with star decals, tutorial by <a href='https://youtu.be/xTS5R1h2ht8?si=RuSIeHrANaArn7S5' target='_blank'>coral j</a>",
@@ -57,65 +119,6 @@
 			"comments": "i was obsessed with making a ton of these little guys for a while, they're super fun to make and make for great gifts. gave some of these as christmas gifts to my parents one year"
 		}
 	],
-	"sketchbooks": [
-		{
-			"title": "burnt OUT!",
-			"images": ["assets/images/creations/sketchbooks/burnt out/1.png",
-				"assets/images/creations/sketchbooks/burnt out/2.png",
-				"assets/images/creations/sketchbooks/burnt out/3.png",
-				"assets/images/creations/sketchbooks/burnt out/4.png",
-				"assets/images/creations/sketchbooks/burnt out/5.png",
-				"assets/images/creations/sketchbooks/burnt out/6.png",
-				"assets/images/creations/sketchbooks/burnt out/7.png",
-				"assets/images/creations/sketchbooks/burnt out/8.png",
-				"assets/images/creations/sketchbooks/burnt out/9.png",
-				"assets/images/creations/sketchbooks/burnt out/10.png",
-				"assets/images/creations/sketchbooks/burnt out/11.png",
-				"assets/images/creations/sketchbooks/burnt out/12.png",
-				"assets/images/creations/sketchbooks/burnt out/13.png"],
-			"captions": ["", "", "3d collage wrapped in plastic", "", "made from harper's real hair", "i love glue!", "inspired by silence of the lamb", "receipts", "", "i spy with my little eye...", "grand prismatic in resin", "zineception", ""],
-			"date": "14 august 2024",
-			"description": "burn-themed junk journal scrapbook sketchbook/zine",
-			"comments": "this sketchbook was my project of last summer, i poured an entire like 3 weeks of my life into these pages. the notebook itself i got from some mean girls themed college event, which is why it was originally a burn book and the first page is actually a burn of my friend that i went to the event with (it's not featured here T-T). this was my first sketchbook and i love how it turned out. when i pick it up it crinkles, like it's so crunchy. in case you couldn't tell i love texture. not every page is amazing, but i guess that's the point of a sketchbook. enjoy scrolling through some of the featured pages :) the end goal for it was to make it into a zine which would go into the sketchbook, featuring the pages of the sketchbook, so it's like zineception. i think it'd be really cool to distribute the zines, maybe someday"
-		},
-		{
-			"title": "composition1 (WIP)",
-			"images": ["assets/images/creations/sketchbooks/composition1/2.jpg",
-				"assets/images/creations/sketchbooks/composition1/3.jpg"],
-			"date": "aug 2024 - present",
-			"description": "composition book sketchbook",
-			"comments": "for drawing freaky little guys and cybercigilism and painting badly @"
-		}
-	],
-	"drawing & painting": [
-		{
-			"title": "caravaggesque cat", 
-			"images": ["assets/images/creations/drawing & painting/cat.png"],
-			"date": "2023-08-24",
-			"description": "cat in dramatic lighting. painted with acrylics",
-			"comments": "found the reference image on pinterest, and i thought it was perfect for my first real painting. painted at a weekly summer art class with a bunch of older ladies, but the teacher got sick so we just went to the park to paint every sunday"
-		},
-		{
-			"title": "teamlab jellyfish",
-			"images": ["assets/images/creations/drawing & painting/teamlab/1.jpg",
-				"assets/images/creations/drawing & painting/teamlab/2.jpg", 
-				"assets/images/creations/drawing & painting/teamlab/3.jpg", 
-				"assets/images/creations/drawing & painting/teamlab/4.jpg",
-				"assets/images/creations/drawing & painting/teamlab/5.jpg", 
-				"assets/images/creations/drawing & painting/teamlab/jellyfish.jpg"],
-			"date": "september 13, 2024",
-			"description": "oil pastel jellyfish at teamlab borderless exhibit 'sketch ocean'",
-			"comments": "this was from an interactive exhibit at teamlab borderless in tokyo where you could color a sea creature and they would scan it and add it to the exhibit, and it would appear and swim around on the wall with everyone's sea creatures. i know the exhibit's still up, i wonder how long they keep the file around to keep swimming. i loved this exhibit so much, i love being surprised with the opportunity to make art are you kidding meee #. it would be my dream to eventually work for something like this, where you can make art and experiences and creative joy for other people"
-		},
-		{
-			"title": "画龙点睛",
-			"images": ["assets/images/creations/drawing & painting/dragon/dragon.jpg",
-				"assets/images/creations/drawing & painting/dragon/2.jpg"],
-			"date": "sept 5, 2020",
-			"description": "chinese dragon painting, drawn with calligraphy brush and ink",
-			"comments": "i own a few calligraphy ink and brush sets and they are art pieces in themselves. i remember one year my mom led a calligraphy station at my class's chinese new year activity day. i ended up liking this dragon so much i put it on a shirt and gave it to my mom for christmas。 the title of this piece comes from a chinese idiom about an artist who refused to paint the eyes of his dragons, because if he did, they would come to life. one day, he demonstrates this to the unbelieving crowd, and the dragon actually comes to life and flies away."
-		}
-	],
 	"jewelry": [
 		{
 			"title": "charm necklace", 
@@ -131,6 +134,15 @@
 			"date": "2024-08-17",
 			"description": "wire wrapped rosary style piece made from a broken watch and beads sourced from goodwill",
 			"comments": "i made this piece in one sitting in like 4 hours. i chose every bead and twisted every loop by hand. i don't wear it often because it's not really my style but i really like it as an art piece"
+		},
+		{
+			"title": "hair clips",
+			"images": ["assets/images/creations/jewelry/clips/1.png",
+				"assets/images/creations/jewelry/clips/2.png",
+				"assets/images/creations/jewelry/clips/3.png"],
+			"date": "nov 9, 2024",
+			"description": "hair clips made with various beads & ornaments",
+			"comments": "i made these at sam's birthday party last year, it was such a cute activity and everyone made such beautiful clips. the party was purple orchid themed and she also had an amazing cake that she made herself with like blueberry frosting it was so good"
 		},
 		{
 			"title": "little guy necklace", 
@@ -278,6 +290,21 @@
 			"comments": "i had a vision for this top but it didn't turn out as i had hoped. the top is a bit tight and just not my style at all. but it was a cool project constructing a new piece of clothing out of something else. there's also a lace eye veil with this set that i supposed you could also wear as a necktie, but it reminds me of a widow or a doomed bride"
 		},
 		{
+			"title": "a chipmunk's love", 
+			"images": ["assets/images/creations/archive/woolfelt.png"],
+			"date": "2023-09-08",
+			"description": "woolfelt chipmunk with a heart, made from a daiso kit",
+			"comments": "this was my first time woolfelting, it was not as bad as i had expected and was actually quite easy. i bought a kit for grce and we started them together but i dont think grce ever finished hers"
+		},
+		{
+			"title": "clay toro",
+			"images": ["assets/images/creations/archive/claytoro/1.png",
+				"assets/images/creations/archive/claytoro/2.png"],
+			"date": "12/6/24",
+			"description": "toro made from air dry clay",
+			"comments": "i made this at a refine social in the botanical gardens friday of week 10 right before my last cs discussion of the quarter and i had to carry toro in my hand everywhere so it wouldn't get smushed. the clay is like a weird foamy texture and it's really light and dried super fast. it's cute tho >.<"
+		},
+		{
 			"title": "scarf",
 			"images": ["assets/images/creations/archive/scarf.png"],
 			"date": "probably when i was like 11",
@@ -290,13 +317,6 @@
 			"date": "idk 2015",
 			"description": "pink felt owl made from a kit",
 			"comments": "isn't she adorable? it was super easy to make with the kit too, i think owls were my favorite animal for a while around this time"
-		},
-		{
-			"title": "a chipmunk's love", 
-			"images": ["assets/images/creations/archive/woolfelt.png"],
-			"date": "2023-09-08",
-			"description": "woolfelt chipmunk with a heart, made from a daiso kit",
-			"comments": "this was my first time woolfelting, it was not as bad as i had expected and was actually quite easy. i bought a kit for grce and we started them together but i dont think grce ever finished hers"
 		},
 		{
 			"title": "arterixa",
@@ -321,6 +341,15 @@
 			"date": "1/4/25",
 			"description": "keychain made from polymer clay and coated in resin",
 			"comments": "made this for my parents for the holidays, they love pickleball and play it every day. it goes on their pickleball bag"
+		},
+		{
+			"title": "lego dinosaur",
+			"images": ["assets/images/creations/archive/dino/1.png",
+				"assets/images/creations/archive/dino/2.png",
+				"assets/images/creations/archive/dino/3.png"],
+			"date": "10-30-24",
+			"description": "lego dinosaur painted with metallic acryllic paint",
+			"comments": "i made this at a random halloween floor event last quarter that i decided last minute to go check out and i was glad i went! they had lego dinosaur kits and pumpkin painting but i didn't really want to paint a pumpkin just for it to go bad and have to throw it away so i painted the legos instead, it was a fun side quest from homework. i really liked the metallic paints and it somehow reminds me of the big container cranes used to lift cargo that you see driving by san francisco"
 		},
 		{
 			"title": "\"Alpha\"",
