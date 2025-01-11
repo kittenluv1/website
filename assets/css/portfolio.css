@@ -21,34 +21,34 @@ div {
 }
 
 h1 {
-	font-size: 4vw; 
+	font-size: 3vw; 
 	margin: 4vh; 
 }
 
 h2 {
-	font-size: 3vw; 
+	font-size: 2vw; 
 }
 
 h3 {
-	font-size: 2vw; 
+	font-size: 1.5vw; 
 	margin: 2vh; 
 }
 
 p {
-	font-size: 1.5vw;
+	font-size: 1vw;
 	text-align: center; 
 	margin: 0; 
 }
 
 a {
 	color: #808A91;
-	text-shadow: 0 0 5px #F3EAE3, 0 0 10px #F3EAE3;
+	text-shadow: 0 0 5px #F6F7F1, 0 0 10px #F6F7F1;
 	font-size: 1.5vw; 
 }
 
 header {
 	width: 100%;
-	height: 90%;
+	height: 95%;
 	box-sizing: border-box; 
 	background-image: url('../images/portfolio/Fondo Spring Butterfly Gorjuss.jpg');
 	background-size: cover; 
@@ -132,7 +132,7 @@ header > div > div > p {
 
 header > a {
 	position: absolute; 
-	bottom: 0; 
+	bottom: -4%; 
 	box-sizing: border-box; 
 	width: 4%; 
 	aspect-ratio: 1 / 1; 
@@ -146,35 +146,64 @@ header > a {
 	/* border: 1px solid black;  */
 }
 
-#info {
-	background-image: url('../images/portfolio/clovers.jpg');
-	background-position: center; 
-	text-shadow:  0 0 5px #F3EAE3,
-	0 0 6px #F3EAE3,
-	0 0 7px #F3EAE3, 
-	0 0 8px #F3EAE3,
-	0 0 9px #F3EAE3, 
-	0 0 10px #F3EAE3, 
-	0 0 11px #F3EAE3,
-	0 0 12px #F3EAE3, 
-	0 0 13px #F3EAE3,
-	0 0 14px #F3EAE3, 
-	0 0 15px #F3EAE3, 
-	0 0 20px #F3EAE3,
-	0 0 25px #F3EAE3, 
-	0 0 30px #F3EAE3, 
-	0 0 35px #F3EAE3,
-	0 0 40px #F3EAE3, 
-	0 0 45px #F3EAE3,
-	0 0 50px #F3EAE3, 
-	0 0 60px #F3EAE3;  
+header, #info, .project-group, .project-div {
+	border-radius: 5%; 
+	box-shadow: inset 0 0 10px 15px #F6F7F1; 
 }
- #info div {
-	box-shadow: 0 0 5px 10px white; 
- }
+
+header, #info {
+	box-shadow: inset 0 0 10px 15px #F6F7F1, 0 0 10px 15px #F6F7F1;
+	box-sizing: border-box; 
+}
+
+#info {
+	background-image: url('../images/portfolio/plaid.jpg');
+	background-size: 30%;
+	background-position: center; 
+	text-shadow:  0 0 5px #F6F7F1,
+	0 0 6px #F6F7F1,
+	0 0 7px #F6F7F1, 
+	0 0 8px #F6F7F1,
+	0 0 9px #F6F7F1, 
+	0 0 10px #F6F7F1, 
+	0 0 11px #F6F7F1,
+	0 0 12px #F6F7F1, 
+	0 0 13px #F6F7F1,
+	0 0 14px #F6F7F1, 
+	0 0 15px #F6F7F1, 
+	0 0 20px #F6F7F1,
+	0 0 25px #F6F7F1, 
+	0 0 30px #F6F7F1, 
+	0 0 35px #F6F7F1,
+	0 0 40px #F6F7F1, 
+	0 0 45px #F6F7F1,
+	0 0 50px #F6F7F1, 
+	0 0 60px #F6F7F1;  
+	padding: 4%;
+}
 
 #about {
 	width: 60%; 
+}
+
+.contact-container {
+	flex-direction: row; 
+	margin: 1%;
+	height: 3vw; 
+}
+
+.contact-container a {
+	height: 100%; 
+	width: auto; 
+	padding: 5%; 
+	box-sizing: border-box; 
+	display: flex; 
+	align-items: center; 
+}
+
+.contact-container img {
+	height: 100%; 
+	width: auto; 
 }
 
 #projects {
@@ -188,13 +217,13 @@ header > a {
 }
 
 #class {
-	background-image: url('../images/portfolio/stripes.jpg');
+	background-image: url('../images/portfolio/clovers.jpg');
 	background-size: 20%;
 }
 
 .project-group {
-	border: 1px solid black; 
-	width: 90%; 
+	width: 85%; 
+	margin: 2%; 
 }
 
 .project-container {
@@ -203,7 +232,7 @@ header > a {
 }
 
 .project-div {
-	background-color: white;  
+	background-color: #F6F7F1;  
 	width: 20%; 
 	padding: 1vw; 
 	margin-bottom: 4vh; 
