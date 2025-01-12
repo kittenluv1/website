@@ -1,7 +1,6 @@
 #tama-game {
 	background-image: url('../../images/index/jump/plaid.jpg'); 
 	background-size: cover; 
-	z-index: 1; 
 	opacity: 0.9; 
 	display: none; 
 }
@@ -11,6 +10,7 @@
 	position: relative; 
 	height: 80%; 
 	top: 10%; 
+	overflow: hidden; 
 }
 
 #tama-game p {
@@ -25,6 +25,41 @@
 		0px 0px 2px #4B4C83;
 }
 
+#mametchi {
+	height: 40%; 
+	position: absolute; 
+	bottom: 0; 
+	left: 10%; 
+	opacity: 1.5; 
+}
+
+@keyframes jump {
+	0% { bottom: 0; }
+	50% { bottom: 30%; }
+	100% { bottom: 0; }
+}
+
+.jump {
+	animation: jump 1s cubic-bezier(0.25, 1, 0.5, 1); 
+}
+
+#tama-game span {
+	position: absolute; 
+	font-size: 1vw; 
+	bottom: 0; 
+	left: 110%; 
+	color: #4B4C83; 
+}
+
+@keyframes obstacle {
+	0% { left: 110%; }
+	100% { left: -10% }
+}
+
+.obstacle {
+	animation: obstacle 1.2s linear 1;
+}
+
 .score-div {
 	position: absolute; 
 	top: 25%;  
@@ -33,13 +68,13 @@
 	text-align: center; 
 }
 
-.flash {
-	animation: flash .5s; 
-}
-
 @keyframes flash {
 	0%, 100% { opacity: 1; }
 	50% { opacity: 0; }
+}
+
+.flash {
+	animation: flash .5s; 
 }
 
 #tama-game .game-over {
@@ -62,39 +97,4 @@
 
 #tama-game .game-over p:nth-of-type(2) { 
 	font-size: 0.35vw; 
-}
-
-@keyframes jump {
-	0% { bottom: 0; }
-	50% { bottom: 30%; }
-	100% { bottom: 0; }
-}
-
-.jump {
-	animation: jump 1s cubic-bezier(0.25, 1, 0.5, 1); 
-}
-
-#tama-game #mametchi {
-	height: 40%; 
-	position: absolute; 
-	bottom: 0; 
-	left: 10%; 
-	opacity: 1.5; 
-}
-
-@keyframes obstacle {
-	0% { left: 110%; }
-	100% { left: -20% }
-}
-
-.obstacle {
-	animation: obstacle 1.2s linear;
-}
-
-#tama-game span {
-	position: absolute; 
-	font-size: 1vw; 
-	bottom: 0; 
-	left: 110%; 
-	color: #4B4C83; 
 }

@@ -1,9 +1,9 @@
 
-document.getElementById('blog').addEventListener('click', () =>	window.location.href = 'blog.html');
-document.getElementById('creations').addEventListener('click', () => window.location.href = 'creations.html');
-document.getElementById('pic').addEventListener('click', () => window.open('https://www.pic.ucla.edu/~ericahuang916/Final/'));
-document.getElementById('japan').addEventListener('click', () => window.open('https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h'));
-document.getElementById('portfolio').addEventListener('click', () => window.open('portfolio.html'));
+document.getElementById('blog').addEventListener('dblclick', () =>	window.location.href = 'blog.html');
+document.getElementById('creations').addEventListener('dblclick', () => window.location.href = 'creations.html');
+document.getElementById('pic').addEventListener('dblclick', () => window.open('https://www.pic.ucla.edu/~ericahuang916/Final/'));
+document.getElementById('japan').addEventListener('dblclick', () => window.open('https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h'));
+document.getElementById('portfolio').addEventListener('dblclick', () => window.open('portfolio.html'));
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(
@@ -28,8 +28,6 @@ const blueGradient = `linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%
 const lightBlueGradient = `linear-gradient(rgb(150, 180, 255) 0px,rgb(170, 200, 255) 3%,rgb(180, 210, 255) 6%, rgb(190, 220, 255) 10%, rgb(185, 215, 255) 12%, rgb(175, 205, 255) 15%, rgb(165, 195, 255) 18%, rgb(160, 190, 255) 20%, rgb(158, 188, 255) 23%, rgb(157, 187, 255) 38%, rgb(160, 192, 255) 54%, rgb(162, 195, 255) 86%, rgb(160, 193, 255) 89%, rgb(157, 187, 255) 92%, rgb(150, 180, 240) 95%, rgb(140, 170, 220) 98%)`
 let currentColor = 'blue'; 
 footer.addEventListener('click', () => {
-	console.log(typeof pinkGradient);
-	console.log(typeof footer.style.background);
 	if (currentColor === 'pink') {
 		footer.style.background = blueGradient;
 		currentColor = 'blue'; 

@@ -1,7 +1,7 @@
 
 //modal interactivity
 const modal = document.getElementsByClassName('modal')[0]; 
-document.getElementById('music').addEventListener('click', toggleDisplay);
+document.getElementById('music').addEventListener('dblclick', toggleDisplay);
 modal.addEventListener('dblclick', toggleDisplay); 
 function toggleDisplay() {
 	if (modal.style.display === 'grid')
@@ -42,7 +42,8 @@ const character = document.getElementById('mametchi');
 let isGamePlaying = false; 
 
 //heart buttons toggles between screens
-document.getElementById('heart-btn').addEventListener('click', changeScreen)
+const heartButton = document.getElementById('heart-btn')
+heartButton.addEventListener('click', changeScreen);
 function detectView() {
 	if (instructions.style.display === 'none' && game.style.display === 'none')
 		return 'images'; 
@@ -96,7 +97,7 @@ modal.addEventListener('keyup', (e) => {
 
 // images
 let imageIndex = 0;
-fetch('assets/json/index/music/images.json')
+fetch('assets/json/index/images.json')
 	.then(response => response.json())
 	.then(images => {
 		screenImage.src = images[imageIndex]; 	//load first image
@@ -123,7 +124,7 @@ nextButton.addEventListener('click', nextSong);
 audio.addEventListener('ended', nextSong);
 
 // load in songs
-fetch('assets/json/index/music/songs.json')
+fetch('assets/json/index/songs.json')
 .then(response => response.json())
 .then(data => {
 	data.forEach(song => {
@@ -152,3 +153,17 @@ function nextSong() {
 	loadSong(); 
 	playPause(); 
 }
+
+// button sound effects
+const hover = new Audio('assets/media/sound effects/hover.mp3');
+const click = new Audio('assets/media/sound effects/click.mp3');
+
+const modalButtons = [heartButton, prevButton, playButton, nextButton];
+modalButtons.forEach(button => {
+	button.addEventListener('mouseenter', () => {
+		hover.play(); 
+	})
+	button.addEventListener('click', () => {
+		click.play(); 
+	})
+})
