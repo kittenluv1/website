@@ -1,7 +1,16 @@
+const loadingScreen = document.getElementById('loading-screen');
+const mainContent = document.getElementById('main-content');
 const flowers = document.querySelectorAll('.flower');
 const linksOut = document.querySelectorAll('.link-out');
-const links = []
+const links = [];
 
+// loading screen
+window.addEventListener('load', () => {
+	loadingScreen.style.display = 'none';
+	mainContent.style.display = 'block';
+})
+
+// spinning flower decals
 window.addEventListener('scroll', () => {
 	const scroll = window.scrollY;
 	const rotation = scroll % 360; 

@@ -46,9 +46,38 @@ a {
 	font-size: 1.5vw; 
 }
 
+#loading-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #D1D682;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	overflow: hidden; 
+}
+
+.spinner {
+	width: 10vw;
+	animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#main-content {
+	display: none; 
+}
+
 header {
 	width: 100%;
-	height: 95%;
+	height: 100vh;
 	box-sizing: border-box; 
 	background-image: url('../images/portfolio/Fondo Spring Butterfly Gorjuss.jpg');
 	background-size: cover; 
@@ -152,12 +181,12 @@ header, #info, .project-group, .project-div {
 }
 
 header, #info {
-	box-shadow: inset 0 0 10px 15px #F6F7F1, 0 0 10px 15px #F6F7F1;
+	box-shadow: inset 0 0 10px 15px #f6f7f1, 0 0 10px 15px #F6F7F1;
 	box-sizing: border-box; 
 }
 
 #info {
-	background-image: url('../images/portfolio/plaid.jpg');
+	background-image: linear-gradient(to bottom, rgba(246, 247, 241, 0.8), rgba(246, 252475, 241, 0.4), rgba(246, 252475, 241, 0.2)), url('../images/portfolio/quilt.jpg');
 	background-size: 30%;
 	background-position: center; 
 	text-shadow:  0 0 5px #F6F7F1,
@@ -189,7 +218,11 @@ header, #info {
 .contact-container {
 	flex-direction: row; 
 	margin: 1%;
-	height: 3vw; 
+	height: 10vh; 
+}
+
+.contact-container:nth-of-type(1) {
+	height: 6vh; 
 }
 
 .contact-container a {
@@ -212,13 +245,13 @@ header, #info {
 }
 
 #personal {
-	background-image: url('../images/portfolio/polkadots.jpg');
-	background-size: 60%;
+	background-image: url('../images/portfolio/plaid.jpg');
+	background-size: 50%;
 }
 
 #class {
-	background-image: url('../images/portfolio/clovers.jpg');
-	background-size: 20%;
+	background-image: url('../images/portfolio/polkadots.jpg');
+	background-size: 50%;
 }
 
 .project-group {
