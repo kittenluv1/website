@@ -2,12 +2,13 @@ const loadingScreen = document.getElementById('loading-screen');
 const mainContent = document.getElementById('main-content');
 const flowers = document.querySelectorAll('.flower');
 const linksOut = document.querySelectorAll('.link-out');
-const links = [];
 
 // loading screen
 window.addEventListener('load', () => {
-	loadingScreen.style.display = 'none';
 	mainContent.style.display = 'block';
+	setTimeout(() => {
+		loadingScreen.style.display = 'none';
+	}, 50);
 })
 
 // spinning flower decals
@@ -18,6 +19,16 @@ window.addEventListener('scroll', () => {
 		flower.style.transform = `rotate(${rotation}deg)`;
 	});
 });
+
+// link out hover change
+linksOut.forEach(link => {
+	link.addEventListener('mouseenter', () => {
+		link.style.opacity = 0.7;  
+	});
+	link.addEventListener('mouseleave', () => {
+		link.style.opacity = 1;
+	});
+})
 
 // open game from portfolio
 function openTama(event) {
