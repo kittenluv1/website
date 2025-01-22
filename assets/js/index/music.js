@@ -63,23 +63,31 @@ modal.addEventListener('click', (e) => {
 	let src = shellImage.src.split('/').pop();
 	if (src === "2.png") {
 		shellImage.src = "assets/images/index/shells/3.png";
-		modal.style.gridTemplateRows = "1.3fr 1.5fr .2fr 4.9fr .9fr 1.5fr 1.6fr";
-		modal.style.gridTempateColumns = "2.4fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.2fr"
+		shellImage.onload = () => {
+			modal.style.gridTemplateRows = "1.3fr 1.5fr .2fr 4.9fr .9fr 1.5fr 1.6fr";
+			modal.style.gridTempateColumns = "2.4fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.2fr";
+		}
 	}
 	else if (src === "3.png") {
 		shellImage.src = "assets/images/index/shells/4.png";
-		modal.style.gridTemplateRows = ".3fr 2.9fr .2fr 4.8fr .8fr 1.5fr 1.4fr";
-		modal.style.gridTemplateColumns = "2.3fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.3fr";
+		shellImage.onload = () => {
+			modal.style.gridTemplateRows = ".3fr 2.9fr .2fr 4.8fr .8fr 1.5fr 1.4fr";
+			modal.style.gridTemplateColumns = "2.3fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.3fr";
+		}
 	}
 	else if (src === "4.png") {
 		shellImage.src = "assets/images/index/shells/1.png"
-		modal.style.gridTemplateRows = "1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr"; 
-		modal.style.gridTemplateColumns = "2.5fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.4fr"; 
+		shellImage.onload = () => {
+			modal.style.gridTemplateRows = "1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr"; 
+			modal.style.gridTemplateColumns = "2.5fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.4fr"; 
+		}
 	}
 	else {
 		shellImage.src = "assets/images/index/shells/2.png";
-		modal.style.gridTemplateRows = "1.5fr 1.7fr .4fr 5fr .7fr 1.5fr 1.2fr"; 
-		modal.style.gridTemplateColumns = "2.4fr .5fr .4fr .6fr .9fr .6fr .4fr .5fr 2.2fr"; 
+		shellImage.onload = () => {
+			modal.style.gridTemplateRows = "1.5fr 1.7fr .4fr 5fr .7fr 1.5fr 1.2fr"; 
+			modal.style.gridTemplateColumns = "2.4fr .5fr .4fr .6fr .9fr .6fr .4fr .5fr 2.2fr"; 
+		}
 	}
 })
 
