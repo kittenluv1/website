@@ -24,7 +24,7 @@ categories.forEach(category => {
 	dropdown.appendChild(item); 
 });
 // add event listeners for menu buttons
-document.getElementById('index').addEventListener('click', () => window.location.href = 'index.html');
+document.getElementById('index').addEventListener('click', () => window.location.href = '/');
 document.getElementById('categories').addEventListener('click', categoriesBtn); 
 displayX.addEventListener('click', closeDisplay);
 document.getElementById('categories').addEventListener('mouseover', () => {
