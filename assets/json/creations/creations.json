@@ -255,6 +255,14 @@
 			"comments": "i love this little guy i almost got lost in the sauce with the game logic because i made my life harder than it needed to be by making each of the obstacles dynamically create the next obstacle in order to vary delay time and increase difficulty and engagement, but i made it and it was definitely worth the extra effort. the tama also doubles as a music player and allows user to change the background image screens."
 		},
 		{
+			"title": "FlappyPatchi (WIP)",
+			"images": ["assets/images/creations/web/flappypatchi/1.png",
+				"assets/images/creations/web/flappypatchi/2.png"],
+			"date": "--",
+			"description": "help patchi lose some weight by flying through as many pipes as he can! a flappy bird <a href='assets/unity/flappypatchi/FlappyPatchi.exe' target='_blank'>game</a> made with unity",
+			"comments": "my first game in unity! followed this <a href='https://youtu.be/XtQMytORBmM?si=FaEmiS9f0MclEp12' target='_blank'>tutorial</a> and it was so helpful and quick. still need to implement some features to make it more like a game"
+		},
+		{
 			"title": "nostalgiablog",
 			"images": ["assets/images/creations/web/nostalgiablog.png"],
 			"date": "12/13/24",
@@ -262,7 +270,7 @@
 			"comments": "i have wanted a blog to publish my own random writings for a while now and i finally made it. i'm still perfecting the visuals, but i already put my heart n soul into this."
 		},
 		{
-			"title": "creations.html (WIP)",
+			"title": "creations.html",
 			"images": ["assets/images/creations/web/creations.png"],
 			"date": "12/29/24",
 			"description": "a place to showcase all of my <a href='/pages/creations.html' target='_blank'>creations</a>",

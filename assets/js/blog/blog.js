@@ -5,7 +5,7 @@ const articleElem = document.getElementsByTagName('article');
 const a2024 = document.getElementById('2024');
 const a2025 = document.getElementById('2025');
 
-document.getElementById('index').addEventListener('click', () => window.location.href = 'index.html');
+document.getElementById('index').addEventListener('click', () => window.location.href = '/');
 a2024.addEventListener('click', ()=> {
 	updatePage(_2024); 
 	a2025.classList.remove('selected'); 
