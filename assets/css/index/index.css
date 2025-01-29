@@ -86,8 +86,18 @@ button img {
 }
 
 #japan img {
-	width: 80%;
+	width: 70%;
 	height: auto; 
+}
+
+#flappy {
+	grid-row-start: 4;
+	grid-column-start: 14; 
+}
+
+#flappy img {
+	height: 70%; 
+	bottom: 20%;
 }
 
 footer {

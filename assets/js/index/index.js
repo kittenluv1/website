@@ -4,6 +4,7 @@ document.getElementById('creations').addEventListener('dblclick', () => window.l
 document.getElementById('pic').addEventListener('dblclick', () => window.open('https://www.pic.ucla.edu/~ericahuang916/Final/'));
 document.getElementById('japan').addEventListener('dblclick', () => window.open('https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h'));
 document.getElementById('portfolio').addEventListener('dblclick', () => window.open('portfolio.html'));
+document.getElementById('flappy').addEventListener('dblclick', () => window.open('https://introspec.itch.io/flappypatchi'));
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(

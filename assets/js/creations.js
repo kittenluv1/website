@@ -10,7 +10,7 @@ const backImage = document.getElementById('back');
 const nextImage = document.getElementById('next');
 const aboutBtn = document.getElementById('about-button');
 const aboutDiv = document.getElementById('about-div');
-const categories = ["sketchbooks", "drawing & painting", "crochet & textiles", "jewelry", "preservation", "writing", "video", "web", "archive"]; 
+const categories = ["sketchbooks", "drawing & painting", "crochet & textiles", "jewelry", "preservation", "web", "games", "video", "writing", "archive"]; 
 
 // start with categories page and add categories in menu
 categoriesBtn(); 
