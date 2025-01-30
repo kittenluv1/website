@@ -292,7 +292,7 @@ header, #info {
 	cursor: pointer; 
 }
 
-.link-out > img, .img-div > img {
+.link-out img, .img-div img {
 	width: 100%; 
 }
 

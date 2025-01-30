@@ -217,8 +217,9 @@
 			"images": ["assets/images/creations/web/kittenluv1/index.png",
 				"assets/images/creations/web/kittenluv1/tama JUMP!.png", 
 				"assets/images/creations/web/kittenluv1/nostalgiablog.png",
-				"assets/images/creations/web/kittenluv1/creations.png"],
-			"captions": ["index", "old index with tama player open", "nostalgiablog","creations.html"],
+				"assets/images/creations/web/kittenluv1/creations.png",
+				"assets/images/creations/web/kittenluv1/portfolio.png"],
+			"captions": ["index", "old index with tama player open", "nostalgiablog","creations.html", "portfolio page"],
 			"date": "01/01/25",
 			"description": "personal <a href='/' target='_blank'>website</a> made with HTML, JS, and CSS",
 			"comments": "my personal website to showcase all my works. includes tama game, blog, and creations page. interface is inspired by windows xp. i'm lowkey not sure what else to say about it, you can just check it out for yourself"
@@ -233,7 +234,7 @@
 			"captions": ["login page", "index with phishing links", "phished!", "blog page", "merch page"],
 			"date": "12-11-2024",
 			"description": "my first full <a href='https://www.pic.ucla.edu/~ericahuang916/Final/' target='_blank'>website</a>, built for my PIC40a class project. used html, css, javascript, php, and sqlite3",
-			"comments": "i'm so glad i took this class, i learned so much building this website and at such a manageable pace. though the website is simple, this website paved the way for the personal website i have built today. there was a lot of contraints for how to make this cus i had to get grade but profsarah was super cool and this class was so fun and helpful. i'm not sure how long this will stay on the pic servers but it does have a fully functioning backend for now so you can make an account and post comments on the blog page and everything."
+			"comments": "i'm so glad i took this class, i learned so much building this website and at such a manageable pace. though the website is simple, this website paved the way for the personal website i have built today. there was a lot of contraints for how to make this cus i had to get grade but profsarah was super cool and this class was so fun and helpful. i'm not sure how long this will stay on the pic servers but it does have a fully functioning backend for now so you can make an account and post comments on the blog page and everything.update: i think it's goneee T-T"
 		}
 	],
 	"games": [
@@ -364,10 +365,11 @@
 			"title": "lego dinosaur",
 			"images": ["assets/images/creations/archive/dino/1.png",
 				"assets/images/creations/archive/dino/2.png",
-				"assets/images/creations/archive/dino/3.png"],
+				"assets/images/creations/archive/dino/3.png",
+				"assets/images/creations/archive/dino/4.png"],
 			"date": "10-30-24",
 			"description": "lego dinosaur painted with metallic acryllic paint",
-			"comments": "i made this at a random halloween floor event last quarter that i decided last minute to go check out and i was glad i went! they had lego dinosaur kits and pumpkin painting but i didn't really want to paint a pumpkin just for it to go bad and have to throw it away so i painted the legos instead, it was a fun side quest from homework. i really liked the metallic paints and it somehow reminds me of the big container cranes used to lift cargo that you see driving by san francisco"
+			"comments": "i made this at a random halloween floor event last quarter that i decided last minute to go check out and i was glad i went! they had lego dinosaur kits and pumpkin painting but i didn't really want to paint a pumpkin just for it to go bad and have to throw it away so i painted the legos instead, it was a fun side quest from homework. i really liked the metallic paints and it somehow reminds me of the big container cranes used to lift cargo that you see driving by san francisco. also look how cute he looks on my trinket jar n coaster T-T"
 		},
 		{
 			"title": "\"Alpha\"",

@@ -11,7 +11,11 @@
 </head>
 <body>
 	<div id="loading-screen">
-		<img class="spinner" src="assets/images/portfolio/blueflower.png" alt="spinning flower"></img>
+		<picture>
+			<source type="image/webp" srcset="assets/images/portfolio/blueflower.webp">
+			<source type="image/jpeg" srcset="assets/images/portfolio/blueflower.png">
+			<img class="spinner" src="assets/images/portfolio/blueflower.png" alt="spinning flower">
+		</picture>
 		<h3>loading...</h3>
 	</div>
 	<div id="main-content">
@@ -65,7 +69,11 @@
 					<div class="project-container">
 						<div class="project-div">
 							<div class="link-out" onclick="window.open('/pages/creations.html')">
-								<img src='assets/images/creations/web/kittenluv1/creations.png' alt="creations.html">
+								<picture>
+									<source type="image/webp" srcset="assets/images/creations/web/kittenluv1/creations.webp">
+									<source type="image/jpeg" srcset="assets/images/creations/web/kittenluv1/creations.png">
+									<img src="assets/images/creations/web/kittenluv1/creations.png" alt="creations.html">
+								</picture>
 								<h3>creations.html</h3>
 							</div>
 							<p>An interactive portfolio page which allows users to browse the portfolio works through multiple views. Breadcrumb navigation allows users to know where they are and explore the site smoothly. Data is centralized in a JSON file, making it easy to update and organize into categories. </p>
