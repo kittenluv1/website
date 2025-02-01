@@ -13,7 +13,7 @@
 	<div id="loading-screen">
 		<picture>
 			<source type="image/webp" srcset="assets/images/portfolio/blueflower.webp">
-			<source type="image/jpeg" srcset="assets/images/portfolio/blueflower.png">
+			<source type="image/png" srcset="assets/images/portfolio/blueflower.png">
 			<img class="spinner" src="assets/images/portfolio/blueflower.png" alt="spinning flower">
 		</picture>
 		<h3>loading...</h3>
@@ -27,14 +27,31 @@
 			<a href="#contact">contact</a>
 		</nav>
 		<div>
-			<img id="border" src='assets/images/portfolio/scrap.png'>
+			<picture>
+				<source type="image/webp" srcset="assets/images/portfolio/scrap.webp">
+				<source type="image/png" srcset="assets/images/portfolio/scrap.png">
+				<img id="border" src="assets/images/portfolio/scrap.png">
+			</picture>
 			<div>
 				<p id="hello">HELLO, <br> MY NAME IS:</p>
 				<p id="name">erica huang</p>
 			</div>
-			<img id="clip" class="decal" src='assets/images/portfolio/clip.png'>
-			<img id="yellowflower" class="flower decal" src='assets/images/portfolio/yellowflower.png'>
-			<img id="blueflower" class="flower decal" src='assets/images/portfolio/blueflower.png'>
+			<!-- decals -->
+			<picture>
+				<source type="image/webp" srcset="assets/images/portfolio/clip.webp">
+				<source type="image/png" srcset="assets/images/portfolio/clip.png">
+				<img id="clip" class="decal" src="assets/images/portfolio/clip.png">
+			</picture>
+			<picture>
+				<source type="image/webp" srcset="assets/images/portfolio/yellowflower.webp">
+				<source type="image/png" srcset="assets/images/portfolio/yellowflower.png">
+				<img id="yellowflower" class="flower decal" src="assets/images/portfolio/yellowflower.png">
+			</picture>
+			<picture>
+				<source type="image/webp" srcset="assets/images/portfolio/blueflower.webp">
+				<source type="image/png" srcset="assets/images/portfolio/blueflower.png">
+				<img id="blueflower" class="flower decal" src="assets/images/portfolio/blueflower.png">
+			</picture>
 		</div>
 		<a href="#info"></a>
 	</header>
@@ -42,23 +59,43 @@
 		<div id="info">
 			<div id="about">
 				<h1>About Me</h1>
-				<div id="heart" class="decal">
-					<img src="assets/images/portfolio/heart.png">
+				<div class="decal-div" id="heart">
+					<picture>
+						<source type="image/webp" srcset="assets/images/portfolio/heart.webp">
+						<source type="image/png" srcset="assets/images/portfolio/heart.png">
+						<img  class="decal" src="assets/images/portfolio/heart.png">
+					</picture>
 					<p>Folsom, <br> California</p>
 				</div>
 				<p>My name is <b>Erica Huang</b>. My home is in Folsom, California. I am currently a second year student at University of California, Los Angeles, where I am majoring in <b>Cognitive Science</b> and <b>Computer Science & Linguistics</b>. In my free time, I enjoy skating and making cute interactive webpages and sites. Please feel free to contact me to talk about any of my work!</p>
 				<div class="contact-container">
 					<a href="https://github.com/kittenluv1" target="_blank" title="github">
-						<img src="assets/images/portfolio/contacts/github.png" alt="github">
+						<picture>
+							<source type="image/webp" srcset="assets/images/portfolio/contacts/github.webp">
+							<source type="image/png" srcset="assets/images/portfolio/contacts/github.png">
+							<img src="assets/images/portfolio/contacts/github.png" alt="github">
+						</picture>
 					</a>
 					<a href="https://www.linkedin.com/in/ericahuang916/" target="_blank" title="linkedin">
-						<img src="assets/images/portfolio/contacts/linkedin.png" alt="linkedin">
+						<picture>
+							<source type="image/webp" srcset="assets/images/portfolio/contacts/linkedin.webp">
+							<source type="image/png" srcset="assets/images/portfolio/contacts/linkedin.png">
+							<img src="assets/images/portfolio/contacts/linkedin.png" alt="linkedin">
+						</picture>
 					</a>
 					<a href="assets/images/portfolio/contacts/erica huang.pdf" target="_blank" title="resume">
-						<img src="assets/images/portfolio/contacts/resume.png" alt="resume">
+						<picture>
+							<source type="image/webp" srcset="assets/images/portfolio/contacts/resume.webp">
+							<source type="image/png" srcset="assets/images/portfolio/contacts/resume.png">
+							<img src="assets/images/portfolio/contacts/resume.png" alt="resume">
+						</picture>
 					</a>
 					<a href="mailto:ericahuang916@gmail.com" title="email">
-						<img src="assets/images/portfolio/contacts/email.png" alt="email">
+						<picture>
+							<source type="image/webp" srcset="assets/images/portfolio/contacts/email.webp">
+							<source type="image/png" srcset="assets/images/portfolio/contacts/email.png">
+							<img src="assets/images/portfolio/contacts/email.png" alt="email">
+						</picture>
 					</a>
 				</div>
 			</div>
@@ -71,7 +108,7 @@
 							<div class="link-out" onclick="window.open('/pages/creations.html')">
 								<picture>
 									<source type="image/webp" srcset="assets/images/creations/web/kittenluv1/creations.webp">
-									<source type="image/jpeg" srcset="assets/images/creations/web/kittenluv1/creations.png">
+									<source type="image/png" srcset="assets/images/creations/web/kittenluv1/creations.png">
 									<img src="assets/images/creations/web/kittenluv1/creations.png" alt="creations.html">
 								</picture>
 								<h3>creations.html</h3>
@@ -80,15 +117,27 @@
 						</div>
 						<div class="project-div">
 							<div class="link-out" onclick="window.open('/pages/blog.html')">
-								<img src='assets/images/creations/web/kittenluv1/nostalgiablog.png' alt="nostalgiablog">
+								<picture>
+									<source type="image/webp" srcset="assets/images/creations/web/kittenluv1/nostalgiablog.webp">
+									<source type="image/png" srcset="assets/images/creations/web/kittenluv1/nostalgiablog.png">
+									<img src="assets/images/creations/web/kittenluv1/nostalgiablog.png" alt="nostalgiablog">
+								</picture>
 								<h3>nostalgiablog</h3>
 							</div>
 							<p>A personal blog page, with intuitive navigation links, allowing users to browse sequentially or quickly navigate to any entry.</p>
 						</div>
 						<div class="project-div">
-							<img id="mametchi" class="decal" src="assets/images/index/jump/mametchi.png">
+							<picture>
+								<source type="image/webp" srcset="assets/images/index/jump/mametchi.webp">
+								<source type="image/png" srcset="assets/images/index/jump/mametchi.png">
+								<img id="mametchi" class="decal" src="assets/images/index/jump/mametchi.png">
+							</picture>
 							<div class="link-out" onclick="openTama(event)">
-								<img src='assets/images/creations/web/kittenluv1/tama JUMP!.png' alt="tama JUMP!">
+								<picture>
+									<source type="image/webp" srcset="assets/images/creations/web/kittenluv1/tamaJUMP!.webp">
+									<source type="image/png" srcset="assets/images/creations/web/kittenluv1/tamaJUMP!.png">
+									<img alt="tama JUMP!" src="assets/images/creations/web/kittenluv1/tamaJUMP!.png">
+								</picture>
 								<h3>tama JUMP!</h3>
 							</div>
 							<p>An endless runner game with dynamic obstacle generation, featuring randomized delay times and increasing game tempo. The tama JUMP! console also doubles as a music player, with a customizable background for a more personalized gaming experience.</p>
@@ -99,26 +148,42 @@
 					<h2>class projects</h2>
 					<div class="project-container">
 						<div class="project-div">
-							<div id="strawberry" class="decal">
-								<img src="assets/images/portfolio/strawberry.png">
+							<div class="decal-div" id="strawberry">
+								<picture>
+									<source type="image/webp" srcset="assets/images/portfolio/strawberry.webp">
+									<source type="image/png" srcset="assets/images/portfolio/strawberry.png">
+									<img  class="decal" src="assets/images/portfolio/strawberry.png">
+								</picture>
 								<p>PHP &<br>SQLite3</p>
 							</div>
 							<div class="img-div">
-								<img src='assets/images/creations/web/pic website/5.png' alt="website merchandise page">
+								<picture>
+									<source type="image/webp" srcset="assets/images/creations/web/pic/1.webp">
+									<source type="image/png" srcset="assets/images/creations/web/pic/1.png">
+									<img src="assets/images/creations/web/pic/1.png" alt="website merchandise page">
+								</picture>
 								<h3>PIC Website</h3>
 							</div>
 							<p>A prototype web application featuring user authentication, blogging platform, and merchandising page. Uses PHP and SQLite3 to update and store user information, including blog posts and store credit.</p>
 						</div>
 						<div class="project-div">
 							<div class="img-div">
-								<img src='assets/images/portfolio/projects/perf.png' alt="performance statistics">
+								<picture>
+									<source type="image/webp" srcset="assets/images/portfolio/projects/perf.webp">
+									<source type="image/png" srcset="assets/images/portfolio/projects/perf.png">
+									<img src="assets/images/portfolio/projects/perf.png" alt="performance statistics">
+								</picture>
 								<h3>Performance Lab</h3>
 							</div>
 							<p>Enhanced program performance in C++ by implementing cache access and memory optimization techniques, reducing runtime and improving memory efficiency by a factor of 5x</p>
 						</div>
 						<div class="project-div">
 							<div class="img-div">
-								<img src='assets/images/portfolio/projects/doom.png' alt="doom terminal">
+								<picture>
+									<source type="image/webp" srcset="assets/images/portfolio/projects/doom.webp">
+									<source type="image/png" srcset="assets/images/portfolio/projects/doom.png">
+									<img src="assets/images/portfolio/projects/doom.png" alt="doom terminal">
+								</picture>
 								<h3>South Dakota Smith and the Temple of Doom</h3>
 							</div>
 							<p>A Doom-style terminal game, featuring randomly-generated levels, monster combat, and a player inventory system. Utilized object-oriented programming in C++ to implement a unique player experience in each level.</p>
@@ -126,18 +191,34 @@
 					</div>
 				</div>
 			</div>
-			<div id="contact" class="contact-container">
+			<div class="contact-container">
 				<a href="https://github.com/kittenluv1" target="_blank" title="github">
-					<img src="assets/images/portfolio/contacts/github.png" alt="github">
+					<picture>
+						<source type="image/webp" srcset="assets/images/portfolio/contacts/github.webp">
+						<source type="image/png" srcset="assets/images/portfolio/contacts/github.png">
+						<img src="assets/images/portfolio/contacts/github.png" alt="github">
+					</picture>
 				</a>
 				<a href="https://www.linkedin.com/in/ericahuang916/" target="_blank" title="linkedin">
-					<img src="assets/images/portfolio/contacts/linkedin.png" alt="linkedin">
+					<picture>
+						<source type="image/webp" srcset="assets/images/portfolio/contacts/linkedin.webp">
+						<source type="image/png" srcset="assets/images/portfolio/contacts/linkedin.png">
+						<img src="assets/images/portfolio/contacts/linkedin.png" alt="linkedin">
+					</picture>
 				</a>
 				<a href="assets/images/portfolio/contacts/erica huang.pdf" target="_blank" title="resume">
-					<img src="assets/images/portfolio/contacts/resume.png" alt="resume">
+					<picture>
+						<source type="image/webp" srcset="assets/images/portfolio/contacts/resume.webp">
+						<source type="image/png" srcset="assets/images/portfolio/contacts/resume.png">
+						<img src="assets/images/portfolio/contacts/resume.png" alt="resume">
+					</picture>
 				</a>
 				<a href="mailto:ericahuang916@gmail.com" title="email">
-					<img src="assets/images/portfolio/contacts/email.png" alt="email">
+					<picture>
+						<source type="image/webp" srcset="assets/images/portfolio/contacts/email.webp">
+						<source type="image/png" srcset="assets/images/portfolio/contacts/email.png">
+						<img src="assets/images/portfolio/contacts/email.png" alt="email">
+					</picture>
 				</a>
 			</div>
 		</div>
