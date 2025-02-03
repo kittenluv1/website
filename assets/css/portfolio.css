@@ -297,17 +297,7 @@ header, #info {
 }
 
 picture {
-	display: flex; 
-	flex-direction: column;
-	align-items: center; 
-	justify-content: center;
-    width: auto;
-    height: auto;
-}
-
-picture img {
-    width: 100%;
-    height: auto;
+	display: content; 
 }
 
 .decal {
@@ -324,6 +314,7 @@ picture img {
 .decal-div picture {
 	width: 100%; 
 	height: 100%; 
+	text-align: start; 
 }
 
 .decal-div p {

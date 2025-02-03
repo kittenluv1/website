@@ -1,4 +1,3 @@
-
 document.getElementById('blog').addEventListener('dblclick', () =>	window.location.href = 'blog.html');
 document.getElementById('creations').addEventListener('dblclick', () => window.location.href = 'creations.html');
 document.getElementById('pic').addEventListener('dblclick', () => window.open('https://www.pic.ucla.edu/~ericahuang916/Final/'));
