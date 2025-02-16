@@ -28,7 +28,7 @@
 			"captions": ["mini composition notebook", "harper sketch", "momo process"],
 			"date": "aug 2024 - present",
 			"description": "composition book sketchbook",
-			"comments": "for drawing freaky little guys and cybercigilism and painting badly @. i've had this mini composition notebook since elementary, never knew what to do with it b4 but now i'm putting it to good use #"
+			"comments": "for drawing freaky little guys and cybercigilism and painting badly @. i've had this mini composition notebook since elementary, never knew what to do with it b4 but now i'm putting it to good use #. i had to walk to my friends apartment in the pouring rain with this notebook, so it got wet and the pages are all bleeding. but my last sketchbook was fire themed, so i guess this one is water themed. this reminds me of high school when i used to bring notebooks to class, and every year there was some water bottle leak event where all my notebooks would get drenched and wrinkly and wet TT it was part of my aesthetic"
 		}
 	],
 	"drawing & painting": [
@@ -226,11 +226,11 @@
 		},
 		{
 			"title": "pic website",
-			"images": ["assets/images/creations/web/pic website/1.png",
-				"assets/images/creations/web/pic website/2.png",
-				"assets/images/creations/web/pic website/3.png",
-				"assets/images/creations/web/pic website/4.png",
-				"assets/images/creations/web/pic website/5.png"],
+			"images": ["assets/images/creations/web/pic/1.png",
+				"assets/images/creations/web/pic/2.png",
+				"assets/images/creations/web/pic/3.png",
+				"assets/images/creations/web/pic/4.png",
+				"assets/images/creations/web/pic/5.png"],
 			"captions": ["login page", "index with phishing links", "phished!", "blog page", "merch page"],
 			"date": "12-11-2024",
 			"description": "my first full <a href='https://www.pic.ucla.edu/~ericahuang916/Final/' target='_blank'>website</a>, built for my PIC40a class project. used html, css, javascript, php, and sqlite3",
@@ -240,8 +240,9 @@
 	"games": [
 		{
 			"title": "tama JUMP!",
-			"images": ["assets/images/creations/games/tama.png",
-				"assets/images/creations/web/kittenluv1/tama JUMP!.png"],
+			"images": ["assets/images/creations/games/tama/1.png", 
+				"assets/images/creations/games/tama/2.png",
+				"assets/images/creations/games/tama/3.png"],
 			"date": "12-18-2024",
 			"description": "tamagotchi themed endless runner <a href='#'  onclick='openTama(event)'>game</a> inspired by the chrome dinosaur game. written in javascript",
 			"comments": "i love this little guy i almost got lost in the sauce with the game logic because i made my life harder than it needed to be by making each of the obstacles dynamically create the next obstacle in order to vary delay time and increase difficulty and engagement, but i made it and it was definitely worth the extra effort. the tama also doubles as a music player and allows user to change the background image screens."
@@ -360,6 +361,13 @@
 			"date": "1/4/25",
 			"description": "keychain made from polymer clay and coated in resin",
 			"comments": "made this for my parents for the holidays, they love pickleball and play it every day. it goes on their pickleball bag"
+		},
+		{
+			"title": "shrinky dinks", 
+			"images": ["assets/images/creations/archive/shrinkydinks.jpg"],
+			"date": "12/7/24", 
+			"description": "shrinky dinks", 
+			"comments": "shrinky dinks made at the jsa zine launch party last year! i love shrinky dinks and i need to make moreee, the littl dog and kuchipatchi are made by yuuki! she helped me bake the shrinky dinks and i haven't gotten them back from her yet lol but i plan to add some more shrinky dinks i've made in the past to this post too, and the ones i will be making in the future *-*"
 		},
 		{
 			"title": "lego dinosaur",
