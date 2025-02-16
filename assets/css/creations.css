@@ -219,7 +219,7 @@ nav div {
 	bottom: 10%; 
 	width: 66%; 
 	height: 80%; 
-	border-radius: 10px; 
+	border-radius: 2%; 
 	grid-template-rows: repeat(11, 1fr); 
 	grid-template-columns: 1fr 5fr 1fr 9fr .2fr; 
 	align-items: center; 
