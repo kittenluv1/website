@@ -18,7 +18,7 @@ html, body {
 	background-size: 100% 100%;
 	display: grid; 
 	grid-template-rows: repeat(8, 1fr);
-	grid-template-columns: repeat(16, 1fr);
+	grid-template-columns: repeat(17, 1fr);
 }
 
 button {
@@ -67,7 +67,7 @@ button img {
 
 #blog {
 	grid-row-start: 5; 
-	grid-column-start: 11; 
+	grid-column-start: 12; 
 }
 
 #blog img {
@@ -103,6 +103,11 @@ button img {
 #flappy img {
 	height: 70%; 
 	bottom: 20%;
+}
+
+#neocities {
+	grid-row-start: 5; 
+	grid-column-start: 11; 
 }
 
 footer {

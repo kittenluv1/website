@@ -4,6 +4,7 @@ document.getElementById('pic').addEventListener('dblclick', () => window.open('h
 document.getElementById('japan').addEventListener('dblclick', () => window.open('https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h'));
 document.getElementById('portfolio').addEventListener('dblclick', () => window.open('portfolio.html'));
 document.getElementById('flappy').addEventListener('dblclick', () => window.open('https://introspec.itch.io/flappypatchi'));
+document.getElementById('neocities').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/'));
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(
