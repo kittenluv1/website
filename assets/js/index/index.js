@@ -5,6 +5,7 @@ document.getElementById('japan').addEventListener('dblclick', () => window.open(
 document.getElementById('portfolio').addEventListener('dblclick', () => window.open('portfolio.html'));
 document.getElementById('flappy').addEventListener('dblclick', () => window.open('https://introspec.itch.io/flappypatchi'));
 document.getElementById('neocities').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/'));
+document.getElementById('resources').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/resources/resources'));
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(
