@@ -23,14 +23,6 @@ const _2025 = [
 `i think my work tends to crescendo throughout the week and thursdays tend to be the worst. if you catch me on a thursday don’t be surprised if i’m very stressed / wound up. fridays too but then at least i know the weekend is right there.`
 	},
 	{
-		title: "2 girls", 
-		date: "3/5", 
-		content: 
-`every time i think of my two jobs i feel very happy and satisfied. i fear i am extremely motivated by money. and lowkey a workaholic. 
-
-i have 2 majors, 2 jobs… now i just need to get 2 girlfriends`
-	},
-	{
 		title: "aaron swartz", 
 		date: "3/6", 
 		content: 
