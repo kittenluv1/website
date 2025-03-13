@@ -1,8 +1,130 @@
 const _2025 = [
 	{
+		date: "3/11", 
+		content: 
+`sometimes i write blog posts that are mid and keep them on here only because i like the title. i feel like my 2025 blog posts are not as good as my 2024 ones, they're just not as whimsical. i'm my best version of myself when i'm allowed to just stay inside and sit in my pajamas all day. the other day my friend told me they go on my blog and read it sometimes for fun and that makes my whole life honestly`
+	},
+	{
+		title: "saiki k", 
+		date: "3/10", 
+		content: 
+`i’ve been (re?)watching saiki k season 2. i remember having finished all of saiki k at some point but i don’t even have an inkling of recollection of anything that happened so it’s literally like watching it for the first time. which is good because that’s like the only way i’ll really rewatch anything anyway. i'm not much of a rewatcher, because it's like if i already know how it ended why go back and do it all again? `
+	},
+	{
+		title: "high on the beach scary robot bathroom experience",
+		date: "3/7", 
+		content: 
+`i got to get high on the beach in santa monica with two of my favorite people and at one point i really had to piss so i went into this scary robot bathroom that had like an auto-opening and closing door that i was like if i go in there i feel like it is not going to let me out. and it was very sus because i was like shouldn’t there be a bunch of homeless people camping out here like how did they manage to keep this peculiar high-tech bathroom box so clean and tidy right next to the station and across from the mcdonald's on the pier. and what if this was actually some kind of next-generation ai-powered government trap for the desperate and stupid that just swallowed you up and spit you out into the void. but actually it was lowkey a really nice hygienic, touch-free experience.`
+	},
+	{
+		title: "thursday thoughts", 
+		date: "3/6", 
+		content: 
+`i think my work tends to crescendo throughout the week and thursdays tend to be the worst. if you catch me on a thursday don’t be surprised if i’m very stressed / wound up. fridays too but then at least i know the weekend is right there.`
+	},
+	{
+		title: "2 girls", 
+		date: "3/5", 
+		content: 
+`every time i think of my two jobs i feel very happy and satisfied. i fear i am extremely motivated by money. and lowkey a workaholic. 
+
+i have 2 majors, 2 jobs… now i just need to get 2 girlfriends`
+	},
+	{
+		title: "aaron swartz", 
+		date: "3/6", 
+		content: 
+`i watched this documentary on aaron swartz <a href="https://youtu.be/9vz06QO3UkQ?si=FRxbkP3Wdbz-w6PA">https://youtu.be/9vz06QO3UkQ?si=FRxbkP3Wdbz-w6PA</a> and i took a lot of notes on it because it was for class but i can’t be bothered to comb through them and make them presentable so just watch the documentary for yourself if you have any time while eating or before bed or with your partner and then become inspired to start a blog or create a free speech movement or become angered by the injustice of the corporate web constantly trying to sell you things and limiting your speech and curating your consumption. and then contemplate the tremendous level of personal sacrifice that it requires of anyone to try to make the world a better place and the amount of parallels between aaron swartz and mark zuck and the daunting reality of what happens when you insist on putting your talents towards morals instead of towards profit. and lament about how recent the videos look and how if he was alive right now he could very well be a professor at your college or university but he would probably be doing even bigger things on the internet or in the white house and one day when the papers come out, perhaps it will even be within our lifetimes, we probably will be much too old to notice or care. 
+
+‘what is the most important thing you could be working on in the world right now, and if you aren’t working on that, why aren’t you?’`
+	},
+	{
+		date: "2/25",
+		content: 
+`i’ve had three different beverages today not including water and that is three beverages too many. i feel overstimulated and i think i need to just do my homework. i also would really just like to read a nice book with a plot`
+	},
+	{
+		title: "archives", 
+		date: "2/25", 
+		content: 
+`i remember as a kid i used to keep a box of my favorite toys and ‘artifacts’ that i collected, including some crafts i made, random toys that I liked, some chinese cultural items like pretty fans and calligraphy brush sets, and all of my other treasures ‘宝贝’. i used to even sleep with it sometimes. i haven’t added to it in a while but I definitely still have that box back at home. perhaps at least for me there was a natural desire to archive. 
+
+https://chssc.org/ 
+
+most of my connection to Chinese culture from my upbringing comes from my parents and their circle, which is amazing but I think it is different. seeing these communities and remembering their existence through digital archives felt very personal and made me tear up., I felt somehow connected to this history, we were here`
+	},
+	{
+		title: "the office", 
+		date: "2/20", 
+		content: 
+`today i attended a work party to celebrate the staff with january/february birthdays and it literally felt like the office. we went to a little side conference room where they had set up little decorations and stuff and it was chinese new years themed and they had panda express and played mulan and some jackie chan song.
+
+it felt kinda surreal but it was funny. someone played kendrick lamar too so that’s cool... i haven’t been working at the office for that long and i didn’t know anyone’s name there except my boss so i was kind of just observing and watching everyone while they were eating and talking and just celebrating. i felt like i could tell exactly how they some of these people when they were young… tell me why i would have totally had crushes on some of them in high school`
+	},
+	{
+		title: "hobbies", 
+		date: "2/19", 
+		content: 
+`it makes me so sad that i can’t draw. i grew up doing every kind of arts & craft except for drawing. but i know that if just started right now and devoted like a month or two to just learning how to do, i could become decently good at it, just like i did with programming. that’s my trick to having so many hobbies - you just need to devote yourself for those first few weeks, months, years, whatever - just enough to get through the learning curve. then you’re good to go. 
+
+i used to try to do everything at once, like all my hobbies at least once a day, and that is so unsustainable guys don’t try it. especially if they’re new hobbies. it was so overwhelming and they just became tasks to check off every day instead of hobbies! now i basically just work on one project a day, if i have time, and kind of rotate around whatever i feel like doing on a particular week.
+
+i’m going to have to table learning how to draw for now, though, because i’m currently still in the programming curve, but i already have projects building up… mainly making graphics and assets for my website and such. at some point those projects are going to get overwhelming, in a good way, until i feel like i need to draw. and then i will draw.`
+	},
+	{
+		title: "neocities ahhh", 
+		date: "2/16", 
+		content: 
+`i finally made a neocities site and i built a rough skeleton for it today, but i already need to put a pause on it for a while T-T i want to make a huuuge button collection page at some point with every site that i enjoy ever but rn i need to spend less time on other ppl’s sites and more time on my own… i’m already feeling very overwhelmed from life and sometimes the indie web is just… overstimulating TT which is exactly what the web should be LOL but i need to take a step back from it first and just do hw rn`
+	},
+	{
+		date: "1/13", 
+		content: 
+`i’ve been feeling a bit emotional lately, like i have a lot of feelings that have no place in the mundanity of my school/work/sleep life. also feeling a bit isolated and down, and i find myself missing and thinking about a lot of people. 
+
+i think i should work on my projects more. they give me a little bit of purpose in life when i’m feeling lost. not exactly a reason to keep living, but a reason to keep going
+
+(edit: i also started my period the next day :,))`
+	},
+	{
+		date: "2/12",
+		content: 
+`i miss my parents :,) when i call them now i feel like they talk more and more as if they are winding down for the end. they’re doing so many fun things and silly hobbies now that i never really saw them do while i was growing up. my dad mentioned that he’s going to get himself a singing teacher because he’s never spent money for himself on any of his hobbies before. and i was like hell yeah. maybe this is just retirement. i also talk to my parents about jobs and life and relationships now and it feels like we’re just friends or partners. but when i go home and live with them, they’re always still my parents.`
+	},
+	{
+		title: "how can i be h*mophobic? my b*tch is g*y!",
+		date: "1/31", 
+		content: 
+`took a hit from the (free!) pen we got from skate club and was dying in the alleyway and literally hallucinating things before we left. people loved my ‘new york’ outfit and so many people complimented my hat. i put lashes on nate and we pulled up to the gay party and immediately got mistaken for a couple by the two gay men manning the entrance. nate asked them if they knew any cute girls i could kiss and then they let me in free. i didn’t even save money though bcs nate deducted the party cost from his piano lesson bcs ‘he got me into the party free’ when it was clearly my face card. 
+
+the party was so amazing… the band, the mosh pit, the fit, i was feeling everything. and i was feeling really open to everything too, for the first time. it was also my first time being in a real mosh pit that actually moshes. it was too chaotic, i got outta there so fast, but i stayed the rest of the night on the edge where there’s more room to push and get pushed and it was actually so fun. 
+
+the party ended way too early! but afterwards me and nate and soleil got cheese fries from fat sal’s and we went to soleil’s apartment and sat and talked through the munchies. so much fun.`
+	},
+	{
+		title: "email from harper", 
+		date: "1/30",
+		content: 
+`<span style="font-family: arial; font-size: 0.9rem">Hi Henry. I just got Morgan's DNA results and she's mostly Australian Cattle Dog. The full list is attached. 
+
+She keeps amazing us every day. My husband is finally home and he is really enjoying her. 
+
+Please forward this to your daughter as she wanted to see the results.
+
+Thanks again for sharing her with us. She is cherished.</span>
+
+this makes me tear up. i do see the australian cattle dog in her, she was always suspiciously long for a golden retriever. apparently she’s like 4% golden retriever and 3% american spaniel, and those were the two breeds we used to say she was. she’s like over 50% herding breeds which makes sense, she used to always like to be where ever we were. we always used to joke about how she couldn’t fetch as a retriever, and she didn’t like water… turns out she just wasn’t a retriever. she’s a good healthy mix, 0 at risk conditions :p i wonder where her color comes from. they’re also changing her name to morgan i guess, i wonder how she’s responding to that. she’s a smart girl, she’ll get it
+`
+	},
+	{
+		date: "1/29", 
+		content: 
+`nostalgia is the bad memories in our past falling away, and that’s a beautiful thing. or else no one would ever feel nostalgic for high school. `
+	},
+	{
 		date: "1/28", 
 		content: 
-`dude i just had the best night of my life. i went to skate club and showed a few people how to tic tac and ollie and then emma came over and invited me to do a board slide and she said she thought i’d be good at it so i was like well now i have to try it. and she stood there and spotted me for the first few tries and i actually committed one time !!! like i literally got on the rail and i was standing on my board with two feet and my board was on the rail !!!! i immediately slipped out pretty bad lol but i literally got on the rail and technically the board did slide. lol but omggg that was crazy and when i was skating down the parking structure i did some niceee powerslides and i felt all four wheels move not just the back ones and it felt sooo good omg like fuck yeahhh. and skating back i hit some shuv its and stuff in a little line, it felt so good, and i was sprintingggg down bruinwalk just for fun, it was heaven. and then! when i was looking at what to get for dinner i saw a little notification in my emails… i got an interview!!!! from the student developer position that i was manifesting like omgggg pleaseeee i need this work
+`dude i just had the best night of my life. i went to skate club and showed a few people how to tic tac and ollie and then emma came over and invited me to do a board slide. she said she thought i’d be good at it so i was like well now i have to try it. she spotted me for the first few tries and i was so terrified to commit but i actually committed one time !!! and like i literally got on the rail and i was standing on my board with two feet and my board was on the rail !!!! i immediately slipped out pretty bad lol but i literally got on the rail and technically the board did slide. lol but omggg that was crazy and when i was skating down the parking structure i did some niceee powerslides and i felt all four wheels move and it felt sooo good. and skating back i hit some shuv its and stuff in a little line, and then i was sprintingggg down bruinwalk just for fun, and it was heaven. and then! when i was looking at what to get for dinner i saw a little notification in my emails… i got an interview!!!! from the student developer position that i was manifesting like omgggg pleaseeee i need this work
 
 also i looked through the flappypatchi game again and i found my missing hierarchy details in the scenes folder 🙏 all is well and i will be more patient this time and just let it build („• ֊ •„)੭♡`
 	},
@@ -27,34 +149,34 @@ i felt a bit (a lot) intimidated talking to them. i’m really bad at speaking u
 
 sometimes i feel so overwhelmed looking at things that other people have made, but i have to remind myself that these are projects that have accumulated and grown over time and neocities.org was not built in a day. sometimes i see how cool and developed other peoples’ projects are and it makes me feel like i have nothing in comparison... i just feel overwhelmed
 
-but i’m really proud of what i’m done and i bit the bullet and bought and set up a domain for my website today! i was waiting for a spark of genius to hit me and guide me towards the perfect name for my domain but i decided to just use the ol github username for now and if i decide to change it in the future i can just do that. that’s the great thing about the web, nothing is permanent…`
+but i’m really proud of what i’m done and i bit the bullet and bought and set up a domain for my website today! i was waiting for a spark of genius to hit me and guide me towards the perfect name for my domain but i decided to just use the github username for now and if i decide to change it in the future i can just do that. that’s the great thing about the web, nothing is permanent…`
 	},
 	{
 		date: "1/19", 
 		content: 
-`when people talk about people they know, people they admire and people they love, i always wonder if they know. i wonder what they’re like, what they’re up to, and what they do, to have this person think of them so highly that they want to talk about them to other people. and sometimes you meet them and they’re a bit different than what you imagined, maybe not in a way that’s bad or good, just different, and it sometimes just makes you think - i wonder if they know.`
+`when people talk about people they know, people they admire and people they love, i always wonder if they know. i wonder what they’re like, what they’re up to, and what they do, to have this person think of them so highly that they want to talk about them to other people. and sometimes you meet them and they’re a bit different than what you imagined, maybe not in a way that’s bad or good, just different, and it sometimes just makes you think... i wonder if they know.`
 	},
 	{
 		title: "notes dump", 
 		date: "1/19", 
 		content: 
 `- you don’t know who’s applying, which is exactly why you should apply
+- i lowkey dgaf abt this stuff… i just want to work on things that are meaningful to me
 - i’m actually pretty cool, but not for any of the reasons i thought i was
-- i lowkey dgaf abt any of this stuff… i just want to work on things that are meaningful to me
-- if something had to perish in the fire, i’m glad it was you
+- if something had to perish in the fire, i’m thankful it was you
 - i’m just glad i don’t have to interact with this unrequited crush anymore...`
 	},
 	{
 		title: "lucid sickness",
 		date: "1/13",
 		content: 
-`i’m still kind of sick right now, just recovered from a nasty fever that had me shivering and sweating at the same time. i never get sick so that was pretty bad for me. i just wanted to write because i feel like my thoughts are kind of… lucid right now. i feel like there’s a voice in my head that’s narrating my thoughts, and also narrating my actions as i’m doing them and narrating out the thought of doing them. like i’m not just doing it but i’m cognitively aware of it. i told sun about it and she said congrats, you just unlocked neurodivergence. she told me the other day that i give neurotypical. which is so funny, cus it’s true.`
+`i’m still kind of sick right now, i just recovered from a nasty fever that had me shivering and sweating at the same time. i never get sick so that was very bad for me. i just wanted to write because i feel like my thoughts are kind of… lucid right now. i feel like there’s a voice in my head that’s narrating my thoughts, and also narrating my actions as i’m doing them and narrating the thought of deciding to do those actions. like i’m not just doing it but i’m cognitively aware of doing it and making the conscious decision to do it. i told sun about it and she said congrats, you just unlocked neurodivergence. she told me the other day that i give neurotypical. which is funny, cus it’s true.`
 	},
 	{
 		title: "there's bigger disasters",
 		date: "1/9", 
 		content: 
-`today was such a chaotic day… i spent all morning trying to figure out relative file paths in github pages and i was wrestling with chatgpt for my life and thinking about it all throughout my cs lecture. at some point i semi gave up and decided to make a branch to isolate the testing environment a bit and then things all of a sudden just started working out. after i walked out of my cs lecture where i was busy thinking about my failing github pages, i realized my airpods were missing and i went back to track them down for almost an entire hour using findmy which was showing that they were literally right there in the classroom but they i looked everywhere and i think they’re lost forever. also la is burning and people are having to relocate and evacuate their homes. i really thought i wasn’t going to get thru it at multiple different occasions today, but life has a way of reminding you, there’s bigger disasters. so i think i’ll be fine`
+`today was such a chaotic day… i spent all morning trying to figure out relative file paths in github pages and i was wrestling with chatgpt for my life to try to get my pages to actually show up in github pages and was thinking about it all throughout my cs lecture. at some point i semi gave up and decided to make a branch to isolate the testing environment a bit and then all of a sudden things just started working out. after i walked out of my cs lecture where i was busy thinking about my failing github pages, i realized my airpods were missing and i went back to track them down for almost an entire hour using the findmy app which was showing that they were literally right there in the classroom but they i looked everywhere and i think they’re lost forever. also la is burning and people are having to relocate and evacuate their homes. i really thought i wasn’t going to get thru it at multiple different occasions today, but life has a way of reminding you, there’s bigger disasters. so i think i’ll be fine`
 	},
 	{
 		title: "sixth day",
@@ -78,31 +200,21 @@ my table looks kind of crazy right now, lots of random supplies strewn all over 
 		title: "second day of the new year - snowboarding for the second time",
 		date: "1/2",
 		content: 
-`i had a very eventful second day of the year. i went snowboarding with peony, she drove us down and i met up there with elena and her dad and her friend and they took me up the mountain for the first time on a snowboard. i do not remember those slopes being so steep on when i went was on skis, i was terrified T-T elena’s dad took me down corkscrew first and then sugar n’ spice, they’re both greens but corkscrew is way scarier in theory. the first run i wasn’t used to the slope or the speed and i kept leaning back and basically just being scared and not committing and i ate so much snow TT full on like tumbling and catching edges everywhere. but elena’s dad was so patient and waited for me on both of my first runs of the two green trails, thank god for him. i would like eat it and then just sit there to recover for a bit and he was just sitting there waiting for me TT it was really nice of him. afterwards i went to take a much needed break and i caught up with peony who was having her own winter arc on the mountain TT i tried to teach her about edges and stuff but it’s best to just do it. i told her to follow me down the slope one time so she could learn and i started doing a steep s-turn and then i turn around and she’s flying down the mountain like already halfway down TT i’m like well ok TT after that run there was only one more hour left until the resort closed and i was so ravenous and aching so me and peony went to take a break at the lounge area. i bought her a dirty chai and i got myself a drink and ate a protein bar to fill my stomach. those refreshments were so needed, i see why they’re called refreshments now. 
+`i had a very eventful second day of the year. i went snowboarding with peony, she drove us down and i met up there with elena and her dad and her friend and they took me up to the top of the mountain. i do not remember those slopes being so steep when i went on skis, i was terrified. elena’s dad took me down corkscrew first and then sugar n’ spice, they’re both greens but corkscrew is way scarier in theory. the first run i went on i wasn’t used to the slope or the speed and i kept leaning back and basically just being scared and not committing and i ate so much snow TT full on like tumbling and catching edges everywhere. but elena’s dad was so patient and waited for me, thank god for him. i would like eat it and then just sit there to recover for a bit and he was just sitting there waiting for me TT. afterwards i went to take a much needed break and i caught up with peony who was having her own winter arc on the mountain. i tried to teach her about edges and stuff but it’s best to just do it. one time i told her to follow me down the slope so she could learn and i started doing a steep s-turn and then i turn around and she’s flying down the mountain like already halfway down. 
 
-then i went for one more run on green by myself and oh boy i’m honestly not sure i should have taken that run. first i caught a nasty front edge and i had to just sit there and catch my breath for a second just groaning to myself, and then i got a cramp in my left foot and sat down to wait it out, and then i got a cramp in my right foot, and while i was waiting that one out i ran into a guy who used to volunteer with my nonprofit. and i was like no way crazy seeing you here. he was skiing with his girlfriend and it looked like it was her first time and he was teaching her but it was actually such a crazy coincidence. anyways after that interaction i decided it was finally time get off my butt and go down the mountain and i actually took corkscrew with only 1 fall… i actually barely fell on that last green run and i felt much more in control and less afraid of the speed, so i’m glad i went. but that definitely was the last run, it literally took me like 50 minutes T-T i’m not going to be able to walk normally tomorrow
+i went for one last run on the green trail by myself and oh boy i’m honestly not sure i should have taken that run. first i caught a nasty front edge and i had to just sit there and catch my breath for a second just groaning to myself, and then i got a cramp in my left foot and sat down to wait it out, and then i got a cramp in my right foot, and while i was waiting that one out i ran into a guy who used to volunteer with my nonprofit that i literally thought i would never see again. anyways after that interaction i decided it was finally time get off my butt and go down the mountain… i actually barely fell on that whole run and i felt much more in control and less afraid of the speed, so i’m glad i went. but that definitely was the last run, it literally took me like 50 minutes to complete T-T i’m not going to be able to walk tomorrow
 
 coming back was so fun, peony drove while i queued songs and together we sang and were blinded by the brightness of the setting tahoe sun. we beat traffic by leaving just before the last chair lift. those 10 minutes really make a big difference traffic-wise. and as i said i couldn’t have done any more even if i wanted to TT when we got home i immediately changed into my pajamas and we made hot ramen together and watched american psycho. i totally didn’t get it at first but peony explained it to me and her explanation made sense. she’s helping me return the snowboards tomorrow too she’s a great friend T-T i also did another lice treatment today because you’re supposed to do one 7 days after your first treatment anyways (which would have been yesterday but i was busy) and i was having deja vu paranoia from the last time i went to bed without washing my hair after snowboarding TT
 
 my website on github pages is kinda spazzing out rn, git and github are kinda both totally new to me but i’m going to put a pin on addressing those issues for now to direct my focus to some other side quests that i have been neglecting this break such as my preservation projects and getting ready for winter quarter and the new year. we’ll see how much progress i can make on those tonight, but i plan to work on preservation all day tmrw. will lyk how it goes ;)`
 	},
 	{
-		title: "reflecting on my 2024 new year's resolutions",
-		date: "1/2",
-		content: 
-`[resolutions redacted]
-
-overall lol ok it’s kinda cringe. idk why i think i changed so much from last year to this year but actually like for real this time. ig i change a lot every year but i feel like i changed in a different way this year. i just want to cement in that change lowkey because i like who i’ve become. that first one idek what i was talking about but i dont even agree with it rn TT mb the creativity part. but i think that was still me trying to be someone i really wasn’t. trying to be someone else. but maybe all that talk about self actualization actually helped me become the way i am now. the way i dont care about that stuff anymore lowk that’s the true realized self. i guess i am more weak now, i think i was onto something with that, i am weak in a way that i accepted things about myself that i previously considered to be flaws and now consider them my strengths. and i decided to live by them. and the friendships… i think that happened all on its own :) along with everything else. 
-
-now that thats out of the way i am ready to put 2024 behind me and move on to 2025 *-*`
-	},
-	{
 		title: "showcasing your art",
 		date: "1/1",
 		content: 
-`yesterday i showed my japan video to my parent’s friends at our new year’s party and i don’t think it really reached the right audience. they kept asking questions about what was going on in the video and telling me to explain it but they were just kind of talking over it instead of watching and experiencing it. some kids my age were there too, but i really don’t think it was the right audience. i was trying to keep myself calm by just focusing and taking comfort from my own video, but it all was actually very overstimulating and lowkey made me want to cry. but i had to remind myself that their reactions to my art don’t determine its worth or change anything about it including my opinion of it. and you can’t control people’s reaction to your art, but you can only show it to everyone and let the art speak to whoever it speaks to. and anyways, i’m proud of myself for showing my art. even if the reaction wasn’t ‘successful’ or amazing, i think every person who sees my art, regardless of their reaction, is a win. 
+`yesterday i showed my japan video to my parent’s friends at our new year’s party and i don’t think it really reached the right audience. they kept asking questions about what was going on in the video and telling me to explain it but they were just kind of talking over it instead of watching and experiencing it. i was trying to keep myself calm by just focusing and taking comfort from my own video, but it all was actually very overstimulating and lowkey made me want to cry.
 
-anyways the reactions i got yesterday weren’t all bad - the video got described as a 2010’s youtube vlog which i appreciated and took as a compliment, and my one friend who was there, i know she got it. i also showed it to peony before the guests came and she liked it. she got it. `
+i had to remind myself that their reactions to my art don’t determine its worth or change anything about it. and you can’t control people’s reaction to your art, but you can only show it to everyone and let the art speak to whoever it speaks to. and anyways, i’m proud of myself for showing my art. even if the reaction wasn’t ‘successful’ or amazing, i think every person who sees my art, regardless of their reaction, is a win.`
 	},
 	{
 		title: "first day of the new year - got my site published!",
