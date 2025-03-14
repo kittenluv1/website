@@ -266,7 +266,7 @@ function openTama(event) {
 	event.preventDefault(); 
 	let indexTab = window.open('index.html', '_blank');
 	indexTab.onload = () => {
-		indexTab.document.getElementById('music').click();
+		indexTab.document.getElementById('music').dispatchEvent(new MouseEvent('dblclick'));
 		indexTab.document.getElementById('heart-btn').click(); 
 	}
 }
