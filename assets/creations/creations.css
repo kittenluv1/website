@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'cookie-monster';
-	src: url('../fonts/Cookiemonster/Cookiemonster-gv11.ttf') format('truetype');
+	src: url('/assets/shared/fonts/Cookiemonster/Cookiemonster-gv11.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'messy-handwritten';
-	src: url('../fonts/MessyHandwritten/MessyHandwritten-Regular.ttf') format('truetype');
+	src: url('/assets/shared/fonts/MessyHandwritten/MessyHandwritten-Regular.ttf') format('truetype');
 }
 
 body {
@@ -68,7 +68,7 @@ button:hover {
 	display: flex; 
 	flex-direction: column; 
 	overflow-y: auto; 
-	background-image: url('../images/creations/sweets.jpg');
+	background-image: url('/assets/creations/imgs/sweets.jpg');
 	background-size: 30%;
 	background-position: center;
 	box-shadow: inset 0 0 40px #F7DDEA, 0 0 40px #F7DDEA;
@@ -83,7 +83,7 @@ button:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../images/creations/crochet & textiles/cat/cat1.png');
+	background-image: url('/assets/creations/imgs/crochet & textiles/cat/cat1.png');
 	background-size: 50%; 
 	background-position: center; 
 	background-repeat: no-repeat;
@@ -224,7 +224,7 @@ nav div {
 	grid-template-columns: 1fr 5fr 1fr 9fr .2fr; 
 	align-items: center; 
 	justify-items: center; 
-	background-image: url('../images/creations/display.jpg');
+	background-image: url('/assets/creations/imgs/display.jpg');
 	background-size: cover; 
 	box-sizing: border-box; 
 	display: none; 
