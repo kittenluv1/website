@@ -117,6 +117,11 @@ button img {
 	grid-column-start: 12; 
 }
 
+#writing {
+	grid-row-start: 6;
+	grid-column-start: 13;
+}
+
 /* FOOTER */
 
 footer {

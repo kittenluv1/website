@@ -10,19 +10,28 @@ const backImage = document.getElementById('back');
 const nextImage = document.getElementById('next');
 const aboutBtn = document.getElementById('about-button');
 const aboutDiv = document.getElementById('about-div');
-const categories = ["sketchbooks", "drawing & painting", "crochet & textiles", "jewelry", "preservation", "web", "games", "video", "writing", "archive"]; 
 
-// start with categories page and add categories in menu
-categoriesBtn(); 
-categories.forEach(category => {
-	let item = document.createElement('button');
-	item.innerHTML = category;
-	item.addEventListener('click', () => {
-		closeDisplay();
-		displayWorks(category)
+// start sequence - load in all categories from json
+let categories;
+fetch(`/assets/creations/creations.json`)
+	.then(response => response.json())
+	.then(data => {
+		// fill in categories array using json keys
+		categories = Object.keys(data);
+		// add categories to menu dropdown
+		categories.forEach(category => {
+			let item = document.createElement('button');
+			item.innerHTML = category;
+			item.addEventListener('click', () => {
+				closeDisplay();
+				displayWorks(category);
+			});
+			dropdown.appendChild(item); 
+		});
+		// add categories to main page
+		categoriesBtn(); 
 	});
-	dropdown.appendChild(item); 
-});
+
 // add event listeners for menu buttons
 document.getElementById('index').addEventListener('click', () => window.location.href = '/');
 document.getElementById('categories').addEventListener('click', categoriesBtn); 

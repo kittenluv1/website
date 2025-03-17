@@ -1,4 +1,4 @@
-document.getElementById('blog').addEventListener('dblclick', () =>	window.location.href = 'blog.html');
+document.getElementById('blog').addEventListener('dblclick', () => window.location.href = 'blog.html');
 document.getElementById('creations').addEventListener('dblclick', () => window.location.href = 'creations.html');
 document.getElementById('pic').addEventListener('dblclick', () => window.open('https://www.pic.ucla.edu/~ericahuang916/Final/'));
 document.getElementById('japan').addEventListener('dblclick', () => window.open('https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h'));
@@ -6,6 +6,7 @@ document.getElementById('portfolio').addEventListener('dblclick', () => window.o
 document.getElementById('flappy').addEventListener('dblclick', () => window.open('https://introspec.itch.io/flappypatchi'));
 document.getElementById('neocities').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/'));
 document.getElementById('resources').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/resources/resources'));
+document.getElementById('writing').addEventListener('dblclick', () => window.location.href = 'writing.html');
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(
