@@ -1,5 +1,10 @@
 const _2025 = [
 	{
+		date: "3/16",
+		content: 
+`The government owes me a total of $1,000,000,000,000,000,000 USD. I will collect it tomorrow afternoon.`
+	},
+	{
 		date: "3/11", 
 		content: 
 `sometimes i write blog posts that are mid and keep them on here only because i like the title. i feel like my 2025 blog posts are not as good as my 2024 ones, they're just not as whimsical. i'm my best version of myself when i'm allowed to just stay inside and sit in my pajamas all day. the other day my friend told me they go on my blog and read it sometimes for fun and that makes my whole life honestly`

@@ -87,11 +87,6 @@ button img {
 	opacity: 0.9; 
 }
 
-#pic {
-	grid-row-start: 2; 
-	grid-column-start: 1; 
-}
-
 #japan img {
 	width: 70%;
 	height: auto; 
@@ -118,8 +113,8 @@ button img {
 }
 
 #writing {
-	grid-row-start: 6;
-	grid-column-start: 13;
+	grid-row-start: 6; 
+	grid-column-start: 2; 
 }
 
 /* FOOTER */
