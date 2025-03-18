@@ -1,0 +1,60 @@
+body {
+	height: auto;
+	position: absolute;
+}
+
+button {
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	height: 10%; 
+	padding: 1%;
+	background-color: transparent; 
+	border: none; 
+	font-family: 'Times New Roman', Times, serif;
+}
+
+button > img {
+	height: 80%;
+}
+
+main {
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box; 
+	padding: 5% 30%;
+	height: auto; 
+}
+
+h1 {
+	margin: 0;
+	font-family: "Barlow Condensed", sans-serif;
+	  font-weight: 300;
+	align-self: flex-start; 
+}
+
+span {
+	font-style: italic; 
+	align-self: flex-start; 
+}
+
+hr {
+	width: 100%;
+}
+
+p {
+	text-indent: 3rem;
+	margin: 0; 
+	margin-top: 1rem;
+}
+
+#gif {
+	position: absolute; 
+	right: 0; 
+	bottom: 0;
+	height: 8%;
+}

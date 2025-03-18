@@ -13,7 +13,7 @@ const aboutDiv = document.getElementById('about-div');
 
 // start sequence - load in all categories from json
 let categories;
-fetch(`/assets/creations/creations.json`)
+fetch(`/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		// fill in categories array using json keys
@@ -63,7 +63,7 @@ function categoriesBtn() {
 
 // fetch all pieces and merge into combined array
 let combinedArray = [];
-fetch(`/assets/creations/creations.json`)
+fetch(`/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		for (let key in data) {
@@ -84,7 +84,7 @@ function allPiecesBtn() {
 }
 
 function displayCategories() {
-	fetch(`/assets/creations/creations.json`)
+	fetch(`/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		categories.forEach(category => {
@@ -102,7 +102,7 @@ const nextDisplay = document.getElementById('next-display');
 function displayWorks(category) {
 	removeElements(); 
 	addBreadcrumb(category, () => displayWorks(category), "category");
-	fetch(`/assets/creations/creations.json`)
+	fetch(`/creations/creations.json`)
 	.then(response => response.json())
 	.then(data => {
 		let worksArray = data[category];

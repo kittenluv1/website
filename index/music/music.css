@@ -48,7 +48,7 @@
 
 @font-face {
 	font-family: 'tama-connection';
-	src: url('/assets/shared/fonts/TamaConnectType/tamaconnecttype.ttf') format('truetype');
+	src: url('/global/fonts/TamaConnectType/tamaconnecttype.ttf') format('truetype');
 }
 
 .tama-screen {

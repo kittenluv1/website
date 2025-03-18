@@ -8,7 +8,7 @@ select.addEventListener('change', function(e) {
 	e.target.value === "All" ? displayAll() : displayCategory(e.target.value);
 })
 
-fetch('assets/writing/writing.json')
+fetch('/writing/writing.json')
 	.then(response => response.json())
 	.then(data => {
 		categories = Object.keys(data); 
@@ -36,7 +36,7 @@ function displayCategory(category) {
 	main.appendChild(h3);
 	// append pieces to category subheadings
 	let list = document.createElement('ul');
-	fetch('assets/writing/writing.json')
+	fetch('/writing/writing.json')
 		.then(response => response.json())
 		.then (data => {
 			data[category].forEach(piece => {

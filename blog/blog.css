@@ -1,7 +1,7 @@
 html {
 	overflow: hidden; 
 	font-family: simsun, serif; 
-	background-image: url('/assets/blog/imgs/background.jpg');
+	background-image: url('/blog/imgs/background.jpg');
 	background-size: cover; 
 	transform: none; 
 }

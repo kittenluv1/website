@@ -9,12 +9,12 @@ const gameOver = document.getElementsByClassName('game-over')[0];
 
 // tama JUMP!
 function tamaJUMP() {
-	character.src = "/assets/index/jump/imgs/jump.png";
+	character.src = "/index/jump/imgs/jump.png";
 	character.classList.remove('jump'); 
 	void character.offsetWidth; 
 	character.classList.add('jump'); 
 	character.addEventListener('animationend', () => {
-		character.src = "/assets/index/jump/imgs/mametchi.png";
+		character.src = "/index/jump/imgs/mametchi.png";
 	}, { once: true });
 }
 

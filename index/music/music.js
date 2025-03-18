@@ -62,28 +62,28 @@ modal.addEventListener('click', (e) => {
 	// change shell images
 	let src = shellImage.src.split('/').pop();
 	if (src === "2.png") {
-		shellImage.src = "assets/index/music/imgs/shells/3.png";
+		shellImage.src = "/index/music/imgs/shells/3.png";
 		shellImage.onload = () => {
 			modal.style.gridTemplateRows = "1.3fr 1.5fr .2fr 4.9fr .9fr 1.5fr 1.6fr";
 			modal.style.gridTempateColumns = "2.4fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.2fr";
 		}
 	}
 	else if (src === "3.png") {
-		shellImage.src = "assets/index/music/imgs/shells/4.png";
+		shellImage.src = "/index/music/imgs/shells/4.png";
 		shellImage.onload = () => {
 			modal.style.gridTemplateRows = ".3fr 2.9fr .2fr 4.8fr .8fr 1.5fr 1.4fr";
 			modal.style.gridTemplateColumns = "2.3fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.3fr";
 		}
 	}
 	else if (src === "4.png") {
-		shellImage.src = "assets/index/music/imgs/shells/1.png"
+		shellImage.src = "/index/music/imgs/shells/1.png"
 		shellImage.onload = () => {
 			modal.style.gridTemplateRows = "1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr"; 
 			modal.style.gridTemplateColumns = "2.5fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.4fr"; 
 		}
 	}
 	else {
-		shellImage.src = "assets/index/music/imgs/shells/2.png";
+		shellImage.src = "/index/music/imgs/shells/2.png";
 		shellImage.onload = () => {
 			modal.style.gridTemplateRows = "1.5fr 1.7fr .4fr 5fr .7fr 1.5fr 1.2fr"; 
 			modal.style.gridTemplateColumns = "2.4fr .5fr .4fr .6fr .9fr .6fr .4fr .5fr 2.2fr"; 
@@ -155,7 +155,7 @@ modal.addEventListener('keyup', (e) => {
 
 // IMAGES
 let imageIndex = 0;
-fetch('assets/index/music/images.json')
+fetch('/index/music/images.json')
 	.then(response => response.json())
 	.then(images => {
 		screenImage.src = images[imageIndex]; 	//load first image
@@ -183,7 +183,7 @@ nextButton.addEventListener('click', nextSong);
 audio.addEventListener('ended', nextSong);
 
 // load in songs
-fetch('assets/index/music/songs.json')
+fetch('/index/music/songs.json')
 .then(response => response.json())
 .then(data => {
 	data.forEach(song => {
@@ -214,8 +214,8 @@ function nextSong() {
 }
 
 // button sound effects
-const hover = new Audio('/assets/shared/audio/sound-fx/hover.mp3');
-const click = new Audio('/assets/shared/audio/sound-fx/click.mp3');
+const hover = new Audio('/global/audio/sound-fx/hover.mp3');
+const click = new Audio('/global/audio/sound-fx/click.mp3');
 
 const modalButtons = [heartButton, prevButton, playButton, nextButton];
 modalButtons.forEach(button => {

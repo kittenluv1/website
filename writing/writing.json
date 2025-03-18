@@ -3,13 +3,13 @@
 	"Essays": [
 		{
 			"title": "Kafka on the Door",
-			"file": "/writing/kafka.html"
+			"file": "/writing/kafka"
 		}
 	],
 	"Misc": [
 		{
 			"title": "nostalgiablog",
-			"file": "/blog.html"
+			"file": "/blog"
 		}
 	]
 }
