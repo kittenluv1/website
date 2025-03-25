@@ -145,6 +145,21 @@
 			"comments": "i made these at sam's birthday party last year, it was such a cute activity and everyone made such beautiful clips. the party was purple orchid themed and she also had an amazing cake that she made herself with like blueberry frosting it was so good"
 		},
 		{
+			"title": "horse wrap bracelet",
+			"images": ["/creations/imgs/jewelry/horse/1.png",
+				"/creations/imgs/jewelry/horse/2.png"],
+			"date": "3/22/25", 
+			"description": "leather string with cross and horse charm",
+			"comments": "i like how this can be worn wrapped around the wrist or as a necklace. there is no special symbolism here."
+		},
+		{
+			"title": "keychain", 
+			"images": ["/creations/imgs/jewelry/keychain.png"],
+			"date": "3/22/25", 
+			"description": "keychain made from an assortment of keychain parts, beads, embroidery thread",
+			"comments": "i made this from two iconic keychains from my backpack which both fell apart at the strings, so i put them together to make the ultimate frankenstein keychain. one of those keychains i have had on my backpack for years and kind of had a strong emotional attachment to lol, that's the one with the turtle and evil eye looking beads. the other one was from a make your own keychain depop booth with handmade clay beads made by my friend >.<"
+		},
+		{
 			"title": "little guy necklace", 
 			"images": ["/creations/imgs/jewelry/little guy necklace/1.png",
 				"/creations/imgs/jewelry/little guy necklace/2.png",
@@ -364,7 +379,8 @@
 		},
 		{
 			"title": "shrinky dinks", 
-			"images": ["/creations/imgs/archive/shrinkydinks.jpg"],
+			"images": ["/creations/imgs/archive/shrinkydinks/1.jpg",
+				"/creations/imgs/archive/shrinkydinks/2.png"],
 			"date": "12/7/24", 
 			"description": "shrinky dinks", 
 			"comments": "shrinky dinks made at the jsa zine launch party last year! i love shrinky dinks and i need to make moreee, the littl dog and kuchipatchi are made by yuuki! she helped me bake the shrinky dinks and i haven't gotten them back from her yet lol but i plan to add some more shrinky dinks i've made in the past to this post too, and the ones i will be making in the future *-*"
@@ -398,6 +414,20 @@
 			"date": "july 5, 2016",
 			"description": "one page comic made on scholastic website",
 			"comments": "i made this using the scholastic website's comic maker, which provides graphics and backgrounds for you to make your own comics. i wonder if that's still up. but i gave up when i realized that making comics is hard"
+		},
+		{
+			"title": "notebook",
+			"images": ["/creations/imgs/archive/notebook/1.png",
+				"/creations/imgs/archive/notebook/2.png",
+				"/creations/imgs/archive/notebook/3.jpg",
+				"/creations/imgs/archive/notebook/4.jpg",
+				"/creations/imgs/archive/notebook/5.jpg",
+				"/creations/imgs/archive/notebook/6.png",
+				"/creations/imgs/archive/notebook/7.png",
+				"/creations/imgs/archive/notebook/8.jpg"],
+			"date": "11/23/2015 - 2017",
+			"description": "basically my commonplace book as a child",
+			"comments": "my childhood notebook that i wrote everything in, back when i still spent my time doing things that are actually important. it started as a journal, and i decorated the cover with things that were important to me (i liked my friends and kpop). i spilled so much tea in this journal, wrote songs, made lists, sketched... one weird thing i did was write down the entire lyrics to songs that i really liked, probably so i could memorize them. and i also drew self-insert characters from books/shows that i liked, literally OCs T-T and our 10 minute diss track to ben was first written in these lines... me and grce used to do so many fun projects like Cartopolis 500 where we basically scooted on mover's dollies and the rabbit wedding (bonus photo included at the end). life was so good then... well i hope i'm still that girl now the medium has just changed"
 		},
 		{
 			"title": "duct tape 4life",

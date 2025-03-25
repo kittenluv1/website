@@ -44,11 +44,11 @@ so anyways... what is the most important thing you could be working on in the wo
 		title: "archives", 
 		date: "2/25", 
 		content: 
-`i remember as a kid i used to keep a box of my favorite toys and ‘artifacts’ that i collected, including some crafts i made, random toys that I liked, some chinese cultural items like pretty fans and calligraphy brush sets, and all of my other treasures ‘宝贝’. i used to even sleep with it sometimes. i haven’t added to it in a while but I definitely still have that box back at home. perhaps at least for me there was a natural desire to archive. 
+`i remember as a kid i used to keep a box of my favorite toys and ‘artifacts’ that i collected, including some crafts i made, random toys i liked, souvenirs from china, and all of my other treasures ‘宝贝’. i used to even sleep with it sometimes. i haven’t added to it in a while but I definitely still have that box back at home. this is an archive. 
 
-https://chssc.org/ 
+this made me realize that my website is also an archive. and also all the papers and crafts from my childhood that i've kept all these years and don't publish to my website... perhaps at least for me there was a natural desire to archive. 
 
-most of my connection to Chinese culture from my upbringing comes from my parents and their circle, which is amazing but I think it is different. seeing these communities and remembering their existence through digital archives felt very personal and made me tear up., I felt somehow connected to this history, we were here`
+inspired by a discussion in my information studies class about archives: https://chssc.org/`
 	},
 	{
 		title: "the office", 
