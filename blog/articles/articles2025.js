@@ -1,5 +1,20 @@
 const _2025 = [
 	{
+		title: "a letter to an ex", 
+		date: "3/19", 
+		content: 
+`today i ate on the grass and studied outside because the weather was so nice. i’ve been debating whether to get the chocolate or spicy chips. i love being unemployed enough for that to be a very hard decision. but <s>don’t worry</s>, i’m actually quite busy. after finishing my laundry, i’ll eat dinner with some friends, and then go on a run in my underwear at midnight. `
+	},
+	{
+		title: "flower haiku", 
+		date: "3/17", 
+		content: 
+`spring comes again, sure as the exhale of your breath
+the fog lifts like your spirits in a time frozen winter
+life passed you by like the changing of the seasons
+yet, it's not too late to learn the names of the flowers. `
+	},
+	{
 		date: "3/16",
 		content: 
 `The government owes me a total of $1,000,000,000,000,000,000 USD. I will collect it tomorrow afternoon.`
@@ -54,7 +69,7 @@ inspired by a discussion in my information studies class about archives: https:/
 		title: "the office", 
 		date: "2/20", 
 		content: 
-`today i attended a work party to celebrate the staff with january/february birthdays and it literally felt like the office. we went to a little side conference room where they had set up little decorations and stuff and it was chinese new years themed and they had panda express and played mulan and some jackie chan song.
+`today i attended a work party to celebrate the staff with january/february birthdays and it literally felt like the office. we went to a little side conference room where they had set up decorations and stuff and it was chinese new years themed and they had panda express and played mulan and some jackie chan song.
 
 it felt kinda surreal but it was funny. someone played kendrick lamar too so that’s cool... i haven’t been working at the office for that long and i didn’t know anyone’s name there except my boss so i was kind of just observing and watching everyone while they were eating and talking and just celebrating. i felt like i could tell exactly how they some of these people when they were young… tell me why i would have totally had crushes on some of them in high school`
 	},

@@ -1,15 +1,40 @@
 {
-	"Poetry": [],
-	"Essays": [
+	"articles": [
+		{
+			"title": "UCLA Thrift: A Case Study on the Rising Secondhand Market",
+			"file": "https://refinela.medium.com/ucla-thrift-a-case-study-on-the-rising-secondhand-market-4531c9e84af5",
+			"target": "_blank"
+		},
+		{
+			"title": "Fashion is for Girls: A Vindication of the Legitimacy of Fashion (and Girls)",
+			"file": "/writing/fashion"
+		}
+	],
+	"short story": [
 		{
 			"title": "Kafka on the Door",
 			"file": "/writing/kafka"
+		},
+		{
+			"title": "woman/police script", 
+			"file": "/writing/script"
+		},
+		{
+			"title": "Rapunzel: The true story", 
+			"file": "rapunzel.pdf",
+			"target": "_blank"
 		}
 	],
-	"Misc": [
+	"poems": [],
+	"misc.": [
 		{
 			"title": "nostalgiablog",
-			"file": "/blog"
+			"file": "/blog",
+			"target": "_blank"
+		},
+		{
+			"title": "Westwood Enablr",
+			"file": "/writing/westwood"
 		}
 	]
 }

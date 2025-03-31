@@ -44,6 +44,9 @@ function displayCategory(category) {
 				let a = document.createElement('a');
 				a.href = piece.file;
 				a.innerHTML = piece.title; 
+				if (piece.target !== undefined) {
+					a.target = piece.target;
+				}
 				item.appendChild(a);
 				list.appendChild(item);
 			})

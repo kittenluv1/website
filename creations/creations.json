@@ -380,10 +380,11 @@
 		{
 			"title": "shrinky dinks", 
 			"images": ["/creations/imgs/archive/shrinkydinks/1.jpg",
-				"/creations/imgs/archive/shrinkydinks/2.png"],
+				"/creations/imgs/archive/shrinkydinks/2.png",
+				"/creations/imgs/archive/shrinkydinks/3.png"],
 			"date": "12/7/24", 
 			"description": "shrinky dinks", 
-			"comments": "shrinky dinks made at the jsa zine launch party last year! i love shrinky dinks and i need to make moreee, the littl dog and kuchipatchi are made by yuuki! she helped me bake the shrinky dinks and i haven't gotten them back from her yet lol but i plan to add some more shrinky dinks i've made in the past to this post too, and the ones i will be making in the future *-*"
+			"comments": "shrinky dinks made at the jsa zine launch party last year! i love shrinky dinks and i need to make moreee, the littl dog and kuchipatchi are made by yuuki! she helped me bake the shrinky dinks and i haven't gotten them back from her yet lol but i plan to add some more shrinky dinks i've made in the past to this post too, and the ones i will be making in the future *-* (edit: added some charms i designed myself and a cursed pickle rick from ap chemistry shrinky dink experiment TT"
 		},
 		{
 			"title": "lego dinosaur",
@@ -409,11 +410,14 @@
 			"comments": "this project has so much lore, i made this episode story based off a game that me and grace played which we just called the clan game, but we became so invested in the story that by the end, we were both crying. at that time i was also super into episode so i got the idea to make our game into an episode story. i never published it because i never really finished it, there's still so many things that i could smooth out but lowkey this was a really cool idea... it kind of involves coding for the animations and there's even story logic based on the reader's choices, and there's aspects of writing, character design, world building, and also film direction with camera angles and zooms and scene and pacing choices. i think i realized while doing this how hard writing dialogue really is. when i started this i don't think i realized that it would be such a big project but i have so much respect for people who wrote such good episode stories now, especially those ones that had such long episodes and the series went on for forever. i just played the story all the way through and it definitely has its flaws and i literally gave up on it at the ending which was literally the best part but why am i lowkey so proud of it anyways TT this is kinda crazy i feel so accomplished like a self published author"
 		},
 		{
-			"title": "\"rosalee\"",
-			"images": ["/creations/imgs/archive/rosalee.png"],
+			"title": "scholastic comics",
+			"images": ["/creations/imgs/archive/rosalee/rosalee.png",
+				"/creations/imgs/archive/rosalee/stolen.jpg",
+				"/creations/imgs/archive/rosalee/majic.jpg"],
+			"captions": ["\"Rosalee\"", "\"Stolen\"", "\"The Majic Book\""],
 			"date": "july 5, 2016",
-			"description": "one page comic made on scholastic website",
-			"comments": "i made this using the scholastic website's comic maker, which provides graphics and backgrounds for you to make your own comics. i wonder if that's still up. but i gave up when i realized that making comics is hard"
+			"description": "one page comics made on scholastic website",
+			"comments": "i made these using the scholastic website's comic maker, which provides graphics and backgrounds for you to make your own comics. i wonder if that's still up. but i gave up when i realized that making comics is hard"
 		},
 		{
 			"title": "notebook",
