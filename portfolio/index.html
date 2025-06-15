@@ -23,9 +23,9 @@
 		
 	<header>
 		<nav>
-			<a href="#about">about</a>
-			<a href="#projects">projects</a>
-			<a href="#contact">contact</a>
+			<a class="section-link" href="#about">about</a>
+			<a class="section-link" href="#projects">projects</a>
+			<a class="section-link" href="#contact">contact</a>
 		</nav>
 		<div>
 			<picture>
@@ -99,11 +99,7 @@
 				</div>
 				<div class="contact-div">
 					<a href="mailto:ericahuang916@gmail.com" title="email">
-						<picture>
-							<source type="image/webp" srcset="imgs/contacts/email.webp">
-							<source type="image/png" srcset="imgs/contacts/email.png">
-							<img src="imgs/contacts/email.png" alt="email">
-						</picture>
+						<img src="imgs/contacts/email.png" alt="email">
 					</a>
 				</div>
 			</div>
@@ -115,37 +111,37 @@
 					<div class="project-container">
 
 						<div class="project-div">
-							<div class="link-out" onclick="window.open('https://www.studentaffairs.ucla.edu/')">
+							<a class="project-link" href="https://www.studentaffairs.ucla.edu/" target="_blank">
 								<img src="/portfolio/imgs/ucla.png" alt="ucla student affairs website">
-								<h3>UCLA Student Affairs</h3>
-							</div>
+							</a>
+							<h3>UCLA Student Affairs</h3>
 							<span>SvelteKit, TailwindCSS, TypeScript</span>
 							<p>Student developer for UCLA Student Affairs websites. True Bruin and Financial Education sites coming soon. </p>
 						</div>
 
 						<div class="project-div">
-							<div class="link-out" onclick="window.open('https://www.clubhouseucla.com/')">
-									<img src="/portfolio/imgs/clubhouse.png" alt="clubhouse">
-								<h3>Clubhouse</h3>
-							</div>
+							<a class="project-link" href="https://www.clubhouseucla.com/" target="_blank">
+								<img src="/portfolio/imgs/clubhouse.png" alt="clubhouse">
+							</a>
+							<h3>Clubhouse</h3>
 							<span>Next.js, Supabase, Vercel</span>
 							<p>An online platform for reviewing student organizations at UCLA. Sign in with a UCLA email to leave a review, or find a club to learn more!</p>
 						</div>
 
 						<div class="project-div">
-							<div class="link-out" onclick="window.open('/')">
-								<img src="/portfolio/imgs/desktop.png" alt="homepage">
-								<h3>kittenluv1</h3>
-							</div>
+							<a class="project-link" href="/" target="_blank">
+								<img src="/creations/imgs/web/kittenluv1/index.png" alt="homepage">
+							</a>
+							<h3>kittenluv1</h3>
 							<span>HTML, CSS, JavaScript</span>
 							<p>My personal website featuring a playable tamagotchi game, creative portfolio, and blog. Everything is built from *scratch*!</p>
 						</div>
 
 						<div class="project-div">
-							<div class="link-out" onclick="window.open('https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544?l=es-MX')">
-								<img src="/portfolio/imgs/morii.PNG" alt="morii">
-								<h3>Morii - Moments That Stay</h3>
-							</div>
+							<a class="project-link" href="https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544?l=es-MX" target="_blank">
+								<img src="/portfolio/imgs/morii.png" alt="morii">
+							</a>
+							<h3>Morii - Moments That Stay</h3>
 							<span>Express.js, Node.js, MongoDB</span>
 							<p>A mobile app for sharing and tracking your emotions, analyzing your moods, and staying in touch with your community. Available on the app store!</p>
 						</div>
@@ -157,65 +153,31 @@
 					<div class="project-container">
 
 						<div class="project-div">
-							<div class="link-out" onclick="window.open('https://introspec.itch.io/dimensional-detective')">
+							<a class="project-link" href="https://introspec.itch.io/dimensional-detective" target="_blank">
 								<img src="/creations/imgs/games/detective/2.png" alt="tama JUMP!">
-								<h3>Dimensional Detective</h3>
-							</div>
+							</a>
+							<h3>Dimensional Detective</h3>
 							<span>Unity, Blender, C#</span>
-							<p>A dialogue-driven point-and-click whodunit game. You, the dimensional detective, must solve multiversal mysteries to ensure peace... can you find the real culprit?</p>
+							<p>A dialogue-driven point-and-click whodunit game. Solve multiversal mysteries to restore order and peace... can you find the real culprit?</p>
 						</div>
 
 						<div class="project-div">
-							<div class="img-div">
-								<img src="/creations/imgs/games/psychosis/1.png" alt="psychosis">
-								<h3>Psychosis</h3>
-							</div>
+							<img src="/creations/imgs/games/psychosis/1.png" alt="psychosis">
+							<h3>Psychosis</h3>
 							<span>Unity, C#</span>
-							<p>A first-person shooter game set in a cyberpunk dystopia. Take drugs to alter state and assasinate your targets to level up. </p>
+							<p>A first-person shooter game set in a cyberpunk dystopia. Take drugs to alter state and assasinate your targets to level up. Worked on diegetic UI; WIP</p>
 						</div>
 
 						<div class="project-div">
 							<img id="mametchi" class="decal" src="/index/jump/imgs/mametchi.png" alt="">
-							<div class="link-out" onclick="openTama(event)">
-								<picture>
-									<source type="image/webp" srcset="/creations/imgs/web/kittenluv1/tamaJUMP!.webp">
-									<source type="image/png" srcset="/creations/imgs/web/kittenluv1/tamaJUMP!.png">
-									<img src="/creations/imgs/web/kittenluv1/tamaJUMP!.png" alt="tama JUMP!">
-								</picture>
-								<h3>tama JUMP!</h3>
-							</div>
+							<a class="project-link" href="/#tama" target="_blank">
+								<img src="/creations/imgs/web/kittenluv1/tamaJUMP!.png" alt="tama JUMP!">
+							</a>
+							<h3>tama JUMP!</h3>
 							<span>JavaScript</span>
-							<p>An endless runner game where you avoid the obstacles. The tama JUMP! console is customizable and doubles as a music player for a more personalized gaming experience!</p>
+							<p>An endless runner game where you avoid the obstacles. The tama JUMP! console is customizable and doubles as a music player!!</p>
 						</div>
 
-						<!-- <div class="project-div">
-							<div class="decal-div" id="strawberry">
-								<picture>
-									<source type="image/webp" srcset="imgs/decor/strawberry.webp">
-									<source type="image/png" srcset="imgs/decor/strawberry.png">
-									<img  class="decal" src="imgs/decor/strawberry.png" alt="">
-								</picture>
-								<p>PHP &<br>SQLite3</p>
-							</div>
-							<div class="img-div">
-								<picture>
-									<source type="image/webp" srcset="/creations/imgs/web/pic/1.webp">
-									<source type="image/png" srcset="/creations/imgs/web/pic/1.png">
-									<img src="/creations/imgs/web/pic/1.png" alt="website merchandise page">
-								</picture>
-								<h3>PIC Website</h3>
-							</div>
-							<p>A prototype web application featuring user authentication, blogging platform, and merchandising page. Uses PHP and SQLite3 to update and store user information, including blog posts and store credit.</p>
-						</div> -->
-						
-						<div class="project-div">
-							<div class="img-div">
-								<img src="imgs/doom.png" alt="doom terminal">
-								<h3>Terminal Doom</h3>
-							</div>
-							<span>C++</span>
-							<p>A Doom-style terminal game, featuring randomly-generated levels, monster combat, and a player inventory system. My first game!</p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -239,7 +201,7 @@
 					</a>
 				</div>
 				<div class="contact-div">
-									<a href="imgs/contacts/erica huang.pdf" target="_blank" title="resume">
+					<a href="imgs/contacts/erica huang.pdf" target="_blank" title="resume">
 					<picture>
 						<source type="image/webp" srcset="imgs/contacts/resume.webp">
 						<source type="image/png" srcset="imgs/contacts/resume.png">

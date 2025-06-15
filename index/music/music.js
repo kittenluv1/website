@@ -91,6 +91,16 @@ modal.addEventListener('click', (e) => {
 	}
 })
 
+window.addEventListener('load', () => {
+	const hasTamaHash = window.location.hash.includes("tama");
+	if (hasTamaHash) {
+		modal.style.display = 'grid'; 
+		// reset current view in case it's different
+		currentView = 'instructions';
+		changeScreen();
+	}
+});
+
 // TAMA SCREENS
 const instructions = document.getElementById('instructions'); 
 const game = document.getElementById('tama-game');

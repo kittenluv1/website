@@ -19,13 +19,3 @@ window.addEventListener('scroll', () => {
 		flower.style.transform = `rotate(${rotation}deg)`;
 	});
 });
-
-// open game from portfolio
-function openTama(event) {
-	event.preventDefault(); 
-	let indexTab = window.open('/', '_blank');
-	indexTab.onload = () => {
-		indexTab.document.getElementById('music').dispatchEvent(new MouseEvent('dblclick', { bubbles: true, cancelable: true }));
-		indexTab.window.changeScreen(); 
-	}
-}

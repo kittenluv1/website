@@ -40,16 +40,17 @@ p {
 	margin: 0; 
 }
 
-a {
-	color: #808A91;
-	text-shadow: 0 0 5px #F6F7F1, 0 0 10px #F6F7F1;
-	font-size: 1.5vw; 
-}
-
 span {
 	font-size: 0.9vw; 
 	font-style: italic; 
 	margin-bottom: 1vh;
+}
+
+.section-link {
+	margin: 3rem;
+	color: #808A91;
+	text-shadow: 0 0 5px #F6F7F1, 0 0 10px #F6F7F1;
+	font-size: 1.5vw; 
 }
 
 #loading-screen {
@@ -197,7 +198,8 @@ header, #info {
 	background-image: linear-gradient(to bottom, rgba(246, 247, 241, 0.8), rgba(246, 252475, 241, 0.4), rgba(246, 252475, 241, 0.3)), url('imgs/decor/quilt.jpg');
 	background-size: 30%;
 	background-position: center; 
-	text-shadow:  0 0 5px #F6F7F1,
+	padding: 4%;
+	/* text-shadow:  0 0 5px #F6F7F1,
 	0 0 6px #F6F7F1,
 	0 0 7px #F6F7F1, 
 	0 0 8px #F6F7F1,
@@ -215,8 +217,8 @@ header, #info {
 	0 0 40px #F6F7F1, 
 	0 0 45px #F6F7F1,
 	0 0 50px #F6F7F1, 
-	0 0 60px #F6F7F1;  
-	padding: 4%;
+	0 0 60px #F6F7F1;   */
+
 }
 
 #about {
@@ -241,12 +243,10 @@ header, #info {
 	box-sizing: border-box; 
 	display: flex; 
 	align-items: center; 
-	border: 1px solid green;
 }
 
 .contact-container a {
 	height: 100%; 
-	border: 1px solid red; 
 	border-radius: 50%;
 }
 
@@ -285,13 +285,13 @@ header, #info {
 	display: grid; 
 	grid-template-columns: repeat(3, 1fr); 
 	gap: 3rem; 
-	margin: 0 4rem; 
+	margin: 0 4rem 4rem 4rem; 
 }
 
 .project-div {
 	background-color: #F6F7F1; 
 	padding: 1vw; 
-	margin-bottom: 4vh; 
+	height: 100%;
 	position: relative; 
 	background: linear-gradient(180deg, rgba(173, 216, 230, 0.9) 0%, rgba(135, 206, 250, 0.9) 100%);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 
@@ -299,12 +299,12 @@ header, #info {
 		inset 0px -2px 1px rgba(0, 0, 0, 0.4);
 }
 
-.link-out:hover {
+.project-link:hover {
 	cursor: pointer; 
 	opacity: 0.7;
 }
 
-.link-out img, .img-div img {
+.project-container img {
 	width: 100%; 
 }
 
