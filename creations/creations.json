@@ -75,6 +75,18 @@
 			"comments": "this look was for refine's 2024 lost n' found fashion show. i did the arm warmers, as well as some of the detailings on the dress. the diva made the dress entirely by hand and did makeup for our amazing model chanel. the designs shown were made by CC. there's lots of dangling and moving parts to these babies, the fringe parts at the bottom are made from like a scarf worn by belly dancers so these arm warmers actually make noise when you walk. i had sm fun with this look, it was worth the nights i stayed up sewing instead of studying %"
 		},
 		{
+			"title": "roadkill angel", 
+			"images": ["/creations/imgs/crochet & textiles/angel/1.JPEG",
+				"/creations/imgs/crochet & textiles/angel/2.JPEG",
+				"/creations/imgs/crochet & textiles/angel/3.JPG",
+				"/creations/imgs/crochet & textiles/angel/4.png",
+				"/creations/imgs/crochet & textiles/angel/5.png",
+				"/creations/imgs/crochet & textiles/angel/6.JPEG"],
+			"date": "may 9th, 2025",
+			"description": "angel wing headset, breastplate, and faux fur skirt",
+			"comments": "this look was made for refine's 2025 Decomposition runway show. again everything was fully upcycled, the wings are made from my middle school dark angel costume and my headphones. and glue. lots of glue. i didn't even know if i was going to be able to get the headphones back after i all the stuff was glued on but they came off okay! the breastplate is made from cardboard and feathers and random scrap fabrics. shoutout soleil for contributing handiwork and labor and putting up with the indecision and makerspace crashouts, and micki for walking the house down"
+		},
+		{
 			"title": "star bag",
 			"images": ["/creations/imgs/crochet & textiles/bag/bag1.png",
 				"/creations/imgs/crochet & textiles/bag/bag.png",
@@ -93,6 +105,13 @@
 			"date": "nov 12, 2024",
 			"description": "plush keychain cat made from scrap fabrics and embroidery thread",
 			"comments": "made this at refine's plush keychain upcycling workshop, i worked on it for like the full 3 hours that i was su,pposed to be working the poshmark table. but it turned out so adorable and it's literally me. i put it on my backpack and it goes everywhere with me now"
+		},
+		{
+			"title": "frog plush", 
+			"images": ["/creations/imgs/crochet & textiles/frog.png"],
+			"date": "4/11/2025", 
+			"description": "hand sewn frog plushie made from a pattern at frog night",
+			"comments": "i missed frog night my freshman year and literally waited a year to do this... finally made it to frog night * this is a filler img cus the lighting sucks"
 		},
 		{
 			"title": "sock monkey",
@@ -254,13 +273,14 @@
 	],
 	"games": [
 		{
-			"title": "tama JUMP!",
-			"images": ["/creations/imgs/games/tama/1.png", 
-				"/creations/imgs/games/tama/2.png",
-				"/creations/imgs/games/tama/3.png"],
-			"date": "12-18-2024",
-			"description": "tamagotchi themed endless runner <a href='#'  onclick='openTama(event)'>game</a> inspired by the chrome dinosaur game. written in javascript",
-			"comments": "i love this little guy i almost got lost in the sauce with the game logic because i made my life harder than it needed to be by making each of the obstacles dynamically create the next obstacle in order to vary delay time and increase difficulty and engagement, but i made it and it was definitely worth the extra effort. the tama also doubles as a music player and allows user to change the background image screens."
+			"title": "Dimensional Detective", 
+			"images": ["/creations/imgs/games/detective/1.png",
+				"/creations/imgs/games/detective/2.png",
+				"/creations/imgs/games/detective/3.jpg",
+				"/creations/imgs/games/detective/4.jpg"],
+			"date": "june 4, 2025", 
+			"description": "multidimensional mystery <a href='https://introspec.itch.io/dimensional-detective' target='_blank'>game</a> made in unity with Team Team!", 
+			"comments": "made this for ENGR1GD class spring 2025, one of many projects of the quarter... i worked on the logic for rounds and choosing suspects and i made my own character starboy in blender! this was also my first blend and i'm so proud of how he turned out, he's so cute :,) it was also so fun working with my team and we're going to keep working on it next year and make the game even better and less serious so stay tunedd"
 		},
 		{
 			"title": "FlappyPatchi (WIP)",
@@ -272,6 +292,15 @@
 			"date": "--",
 			"description": "help patchi lose some weight by flying through as many pipes as he can! a flappy bird <a href='https://introspec.itch.io/flappypatchi' target='_blank'>game</a> made with unity",
 			"comments": "my first game in unity! followed this <a href='https://youtu.be/XtQMytORBmM?si=FaEmiS9f0MclEp12' target='_blank'>tutorial</a> and it was so helpful and quick. still need to implement some features to make it more like a game"
+		},
+		{
+			"title": "tama JUMP!",
+			"images": ["/creations/imgs/games/tama/1.png", 
+				"/creations/imgs/games/tama/2.png",
+				"/creations/imgs/games/tama/3.png"],
+			"date": "12-18-2024",
+			"description": "tamagotchi themed endless runner <a href='#'  onclick='openTama(event)'>game</a> inspired by the chrome dinosaur game. written in javascript",
+			"comments": "i love this little guy i almost got lost in the sauce with the game logic because i made my life harder than it needed to be by making each of the obstacles dynamically create the next obstacle in order to vary delay time and increase difficulty and engagement, but i made it and it was definitely worth the extra effort. the tama also doubles as a music player and allows user to change the background image screens."
 		}
 	],
 	"video": [

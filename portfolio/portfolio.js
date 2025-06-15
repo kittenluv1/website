@@ -20,16 +20,6 @@ window.addEventListener('scroll', () => {
 	});
 });
 
-// link out hover change
-linksOut.forEach(link => {
-	link.addEventListener('mouseenter', () => {
-		link.style.opacity = 0.7;  
-	});
-	link.addEventListener('mouseleave', () => {
-		link.style.opacity = 1;
-	});
-})
-
 // open game from portfolio
 function openTama(event) {
 	event.preventDefault(); 
