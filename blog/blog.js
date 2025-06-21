@@ -94,6 +94,10 @@ function updateAside() {
 		let sectionID = i; 
 		a.href = `#${sectionID}`; 
 		a.innerHTML = title.innerHTML; 
+		// Add dark-link class if in dark mode
+		if (html.style.backgroundColor === 'white') {
+		a.classList.add('dark-link');
+		}
 		list.appendChild(a); 
 		// add to side bar
 		ul.insertBefore(list, ul.firstChildElement);
