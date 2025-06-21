@@ -9,6 +9,8 @@ html {
 	transition: all 1s;
 }
 
+/* ===========================HEADING======================= */
+
 #lotus {
 	position: absolute; 
 	height: 15%; 
@@ -30,15 +32,6 @@ header {
 	right: 0;  
 }
 
-main {
-	position: absolute; 
-	top: 10vh; 
-	left: 0; 
-	right: 0; 
-	bottom: 0; 
-	display: flex;  
-}
-
 h1 {
 	position: absolute; 
 	margin: 0; 
@@ -52,6 +45,7 @@ h1 {
 		0px 0px 2px black;
 }
 
+/* applied to title text on dark mode */
 .glow {
 	color: #feeeed;
 	text-shadow:
@@ -66,6 +60,7 @@ h1 {
 		0 0 40px #FFF297; 
 }
 
+/* disclaimer */
 header > p {
 	position: absolute; 
 	bottom: 2%; 
@@ -74,12 +69,7 @@ header > p {
 	font-weight: bold;
 }
 
-header > img {
-	position: absolute; 
-	height: 100%; 
-	width: 35%; 
-	z-index: -1; 
-}
+/* page buttons */
 
 header > .button-container {
 	display: flex; 
@@ -126,6 +116,8 @@ button p {
 	font-family: simsun, serif; 
 }
 
+/* ====================ASIDE - NAV================= */
+
 aside {
 	width: 15vw; 
 	overflow-y: scroll; 
@@ -133,6 +125,7 @@ aside {
 	color: #feeeed;
 }
 
+/* list of links to articles */
 ul {
 	list-style-type: none;
 	margin: 0; 
@@ -148,6 +141,16 @@ a {
 	transition: color 1s;
 }
 
+/* dark mode links */
+.dark-link {
+	color: #8ECBE0;
+}
+
+.dark-link:visited {
+	color: #EDC0D6;
+}
+
+/* links to different years */
 aside > div {
 	display: flex; 
 	align-items: center; 
@@ -164,9 +167,14 @@ aside > div > a {
 	font-size: 1rem; 
 }
 
-article {
-	padding-top: 4%; 
-	margin: -2% 2% 2% 2%; 
+/* =====================MAIN - ARTICLES=================== */
+main {
+	position: absolute; 
+	top: 10vh; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	display: flex;  
 }
 
 #articles {
@@ -177,6 +185,12 @@ article {
 	padding: 2%;
 	box-sizing: border-box; 
 	text-align: justify;
+}
+
+/* individual articles */
+article {
+	padding-top: 4%; 
+	margin: -2% 2% 2% 2%; 
 }
 
 h2 {

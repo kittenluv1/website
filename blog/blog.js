@@ -15,7 +15,7 @@ document.getElementById('mode').addEventListener('click', () => {
 		html.style.color = 'black';
 		h1.classList.remove('glow');
 		document.querySelectorAll('a').forEach(link => {
-  			link.style.color = '';
+  			link.classList.remove('dark-link');
 		});
 	} 
 	else {
@@ -23,7 +23,7 @@ document.getElementById('mode').addEventListener('click', () => {
 		html.style.color = 'white';
 		h1.classList.add('glow');
 		document.querySelectorAll('a').forEach(link => {
-  			link.style.color = '#8ECBE0';
+  			link.classList.add('dark-link');
 		});
 	}
 })
