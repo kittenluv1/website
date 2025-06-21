@@ -4,8 +4,30 @@ const links = document.getElementsByTagName('ul')[0];
 const articleElem = document.getElementsByTagName('article'); 
 const a2024 = document.getElementById('2024');
 const a2025 = document.getElementById('2025');
+const html = document.querySelector('html');
+const h1 = document.querySelector('h1');
 
 document.getElementById('index').addEventListener('click', () => window.location.href = '/');
+
+document.getElementById('mode').addEventListener('click', () => {
+	if (html.style.backgroundColor === 'white') {
+		html.style.backgroundColor = 'black';
+		html.style.color = 'black';
+		h1.classList.remove('glow');
+		document.querySelectorAll('a').forEach(link => {
+  			link.style.color = '';
+		});
+	} 
+	else {
+		html.style.backgroundColor = 'white';
+		html.style.color = 'white';
+		h1.classList.add('glow');
+		document.querySelectorAll('a').forEach(link => {
+  			link.style.color = '#8ECBE0';
+		});
+	}
+})
+
 a2024.addEventListener('click', ()=> {
 	updatePage(_2024); 
 	a2025.classList.remove('selected'); 
@@ -38,13 +60,17 @@ function updateArticles(articles) {
 		let title = document.createElement('h2'); 
 		let date = document.createElement('span'); 
 		let content = document.createElement('pre'); 
-		//parse in content from javascript object
+
+		// title is optional, defaults to "..."
 		if (articles[i].title === undefined) {
 			title.innerHTML = "..."; 
 		} else {
 			title.innerHTML = articles[i].title; 
 		}
-		date.innerHTML = articles[i].date;
+		// date is optional
+		if (articles[i].date !== undefined) {
+			date.innerHTML = articles[i].date;
+		}
 		content.innerHTML = articles[i].content; 
 		if (articles[i].tag !== undefined) {
 			article.className = "blur"; 
