@@ -256,7 +256,7 @@
 			"captions": ["index", "old index with tama player open", "nostalgiablog","creations.html", "portfolio page"],
 			"date": "01/01/25",
 			"description": "personal <a href='/' target='_blank'>website</a> made with HTML, JS, and CSS",
-			"comments": "my personal website to showcase all my works. includes tama game, blog, and creations page. interface is inspired by windows xp. i'm lowkey not sure what else to say about it, you can just check it out for yourself"
+			"comments": "my personal website to showcase all my works. includes tama game, blog, creations page, and plenty more... my goal is to make it fun, creative, and interactive. i'm always adding to it, check it out!"
 		},
 		{
 			"title": "pic website",
@@ -267,8 +267,25 @@
 				"/creations/imgs/web/pic/5.png"],
 			"captions": ["login page", "index with phishing links", "phished!", "blog page", "merch page"],
 			"date": "12-11-2024",
-			"description": "my first full <a href='https://www.pic.ucla.edu/~ericahuang916/Final/' target='_blank'>website</a>, built for my PIC40a class project. used html, css, javascript, php, and sqlite3",
-			"comments": "i'm so glad i took this class, i learned so much building this website and at such a manageable pace. though the website is simple, this website paved the way for the personal website i have built today. there was a lot of contraints for how to make this cus i had to get grade but profsarah was super cool and this class was so fun and helpful. i'm not sure how long this will stay on the pic servers but it does have a fully functioning backend for now so you can make an account and post comments on the blog page and everything.update: i think it's goneee T-T"
+			"description": "my first full <a href='https://kittenluv1.lovestoblog.com' target='_blank'>website</a>, built for my PIC40a class project. used html, css, javascript, php, and sqlite3. hosted on infinityfree",
+			"comments": "i'm so glad i took this class, i learned so much building this website and at such a manageable pace. though the website is simple, this website paved the way for the personal website i have built today. there was a lot of contraints for how to make this cus i had to get grade but profsarah was super cool and this class was so fun and helpful. i'm not sure how long this will stay on the pic servers but it does have a fully functioning backend for now so you can make an account and post comments on the blog page and everything. update: they took it off the pic servers but i found a web server to host it and so it's back up again!!! >,<"
+		},
+		{
+			"title": "neokitties WIP",
+			"images": ["/creations/imgs/web/neocities/1.png",
+				"/creations/imgs/web/neocities/2.png"],
+			"captions": ["home page", "resources"],
+			"date": "2/16/25", 
+			"description": "my <a href='https://kittenluv1.neocities.org/' target='_blank'>neocities</a> site!!!",
+			"comments": "i started this and then haven't touched it for 4 months and idk when i'll get back to it but i definitely will work on it a lot in the future and i have a lot of ideas for it... i've wanted a neocities forever so it will definitely happen! just wait..."
+		},
+		{
+			"title": "clubhouse", 
+			"images": ["/creations/imgs/web/clubhouse/1.png", 
+				"/creations/imgs/web/clubhouse/2.png"],
+			"date": "may 29, 2025", 
+			"description": "a web <a href='https://www.clubhouseucla.com/clubs' target='_blank'>platform</a> for rating student organizations at ucla, developed with the amazing clubhouse team!",
+			"comments": "i was debating whether to include this since it wasn't so much of a creative project as a school project but i do consider it a personal project... this was actually my first fullstack project and i lead dev, i really was winging it... we had a separate design team also so i wasn't in charge of the visual design so much as the technical design but i learned so much working on it and am really proud of her so why not include her here"
 		}
 	],
 	"games": [

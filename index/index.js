@@ -6,6 +6,8 @@ document.getElementById('flappy').addEventListener('dblclick', () => window.open
 document.getElementById('neocities').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/'));
 document.getElementById('resources').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/resources'));
 document.getElementById('writing').addEventListener('dblclick', () => window.location.href = 'writing');
+document.getElementById('detective').addEventListener('dblclick', () => window.open('https://introspec.itch.io/dimensional-detective'));
+document.getElementById('pic').addEventListener('dblclick', () => window.open('https://kittenluv1.lovestoblog.com/'));
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(
