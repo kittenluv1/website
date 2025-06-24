@@ -12,6 +12,19 @@
 	<script src="/index/index.js" defer></script>
 	<script src="/index/music/music.js" defer></script>
 	<script src="/index/jump/jump.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+	<script>
+	// Counter is available as a global variable
+	const counter = new Counter({ workspace: 'kittenluv1' });
+
+	counter.up('kittenluv1-visits')
+		.then(result => {
+			console.log('Counter result:', result);
+			console.log(`Visits: ${result.data.up_count}`);
+			document.getElementById('counter').textContent = result.data.up_count;
+		})
+		.catch(err => console.error(err));
+	</script>
 </head>
 <body>
 	<div class="background-container">
@@ -135,12 +148,9 @@
 
 	<!-- WINDOWS XP FOOTER -->
 	<footer>
-		<picture>
-			<source type="image/webp" srcset="/index/imgs/start.webp">
-			<source type="image/png" srcset="/index/imgs/start.png">
-			<img src="/index/imgs/start.png">
-		</picture>
+		<img src="/index/imgs/start.png">
 		<div id="copyright">
+			<div>visits: <span id="counter"></span></div>
 			<p>&copy; e**** 2024</p>
 			<picture>
 				<source type="image/webp" srcset="/index/imgs/flyingtoro.webp">

@@ -151,10 +151,6 @@ footer picture {
 	height: 100%; 
 }
 
-footer img, p {
-	margin-right: .5vw;
-}
-
 footer img {
 	height: 100%; 
 	opacity: 0.8; 
@@ -166,6 +162,10 @@ footer img {
 	height: 3vh;
 	display: flex; 
 	align-items: center; 
+}
+
+#copyright > * {
+	margin-right: 0.5rem;
 }
 
 #copyright img {
