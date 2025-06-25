@@ -12,6 +12,7 @@ body {
     background-size: 15%;
     color: #FCFCFC;
     font-family: 'MS Sans Serif', Arial, sans-serif;
+    cursor: url('imgs/cursor.png'), auto;
 }
 #home {
     position: absolute;

@@ -142,6 +142,11 @@ button img {
 	grid-column-start: 4;
 }
 
+#microblog img {
+	height: 55%;
+	bottom: 25%;
+}
+
 /* FOOTER */
 
 footer {

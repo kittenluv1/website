@@ -24,15 +24,16 @@ fetch('bites.json')
         const time = document.createElement('span');
         time.className = 'time';
         // parse date and time from JSON
+        // data is stored and displayed in UTC to ensure consistency across timezones
         const d = new Date(bite.date);
         let dateStr = d.toLocaleDateString(undefined, {
-            year: 'numeric', month: 'short', day: 'numeric'
+            year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'
         }).replace(/,/g, '');
         date.textContent = dateStr;
         // Show time if the original string includes 'T' (time part)
         if (bite.date.includes('T')) {
             let timeStr = d.toLocaleTimeString(undefined, {
-                hour: '2-digit', minute: '2-digit'
+                hour: '2-digit', minute: '2-digit', timeZone: 'UTC'
             });
             time.textContent = timeStr;
         }
