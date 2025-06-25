@@ -9,6 +9,7 @@ document.getElementById('writing').addEventListener('dblclick', () => window.loc
 document.getElementById('detective').addEventListener('dblclick', () => window.open('https://introspec.itch.io/dimensional-detective'));
 document.getElementById('pic').addEventListener('dblclick', () => window.open('https://kittenluv1.lovestoblog.com/'));
 document.getElementById('gallery').addEventListener('dblclick', () => window.location.href = 'gallery');
+document.getElementById('microblog').addEventListener('dblclick', () => window.location.href = 'blogbites');
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(

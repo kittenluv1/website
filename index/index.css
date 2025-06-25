@@ -137,6 +137,11 @@ button img {
 	grid-column-start: 14; 
 }
 
+#microblog {
+	grid-row-start: 8;
+	grid-column-start: 4;
+}
+
 /* FOOTER */
 
 footer {

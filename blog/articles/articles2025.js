@@ -1,5 +1,11 @@
 const _2025 = [
 	{
+		title: "moderation", 
+		date: "6/21",
+		content: 
+`it'd be nice if we could be super productive all the time but we're not meant to be like that. everything is good in moderation, including productivity... maybe even moderation? sometimes it is good to be extreme. i guess like my high school principal used to say, the keyword is balance. so you should be productive in moderation, and unproductive in moderation, and also moderate in moderation. it's good every once in a while to have a completely unproductive day, especially if it's intentional. most things done in moderation are especially good if they are intentional. but it's also tiring to be intentional all the time and sometimes it's good to take a break from being intentional. and when you do it's not gonna be intentional bcs you're taking a break from being intentional so you just have to retroactively accept the fact that you just needed a break and that's ok. it's also good to take breaks in moderation. take a break`
+	},
+	{
 		date: "6/19", 
 		content: 
 `if i could have one superpower, i would choose being able to fly. if i could fly, literally nothing would be able to hold me down. because how could i worry myself over worldly matters if i could literally escape everything by leaving hundreds of feet into the air? and i would have the skies all to myself... well, maybe not entirely but i would share it with the birds and the bees and the occasional plane, if they are flying as high as me`

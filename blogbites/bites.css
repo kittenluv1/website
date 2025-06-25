@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'VP Pixel Pro';
+    src: url('/global/fonts/VP Pixel Pro/VPPixel-Simplified.otf') format('opentype');
+}
+/* mostly decor */
+body {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-image: url('imgs/hearts.jpg');
+    background-color: rgba(0,0,0,0.3);
+    background-size: 15%;
+    color: #FCFCFC;
+    font-family: 'MS Sans Serif', Arial, sans-serif;
+}
+#home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1%;
+    color: black;
+    font-family: 'VP Pixel Pro', 'MS Sans Serif', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+#stall5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 13%;
+}
+#stall6 {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    height: 15%;
+}
+#stall3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 13%;
+}
+#bunny {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    transform: translateY(-90%);
+    height: 13%;
+}
+/* microblog elements */
+#border {
+    background: url('imgs/border.gif');
+    background-size: contain;
+    aspect-ratio: 1.14/1;
+    position: relative;
+    width: 30%;
+}
+#container {
+    position: absolute;
+    top: 18%;
+    left: 1%;
+    right: 2%;
+    bottom: 11%;
+    border-radius: 2px;
+    border: 2px solid #C0C0C0;
+    border-top: 2px solid #838383;
+    border-left: 2px solid #838383;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #C0C0C0;
+    background: rgba(0,0,0,0.3);
+}
+#container::-webkit-scrollbar {
+  width: 30px;
+}
+#container::-webkit-scrollbar-thumb {
+  background: #C0C0C0;
+  border: 2px solid #FCFCFC;
+  border-top: 2px solid #838383;
+  border-left: 2px solid #838383;
+}
+#container::-webkit-scrollbar-track {
+  background: #838383;
+}
+#container > * {
+    position: relative;
+    z-index: 1;
+}
+.entry {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    margin: 2%;
+}
+.date-div {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-family: 'VP Pixel Pro', 'MS Sans Serif', Arial, sans-serif;
+}
+.date {
+    color: #FCFCFC;
+    font-size: 0.9rem; 
+}
+.time {
+    color: #FFCBEC;
+    font-size: 0.8rem;
+}
+.text {
+    font-size: 1.1rem;
+    margin: 0 2%;
+}
