@@ -1,5 +1,11 @@
 const _2025 = [
 	{
+		title: "japan round 2", 
+		date: "6/27", 
+		content: 
+`just got to japan and it was a bit hectic getting here but i moved all my stuff into the little hotel 'apartment' and i'm already feeling a bit more settled in... the days leading up to this i straight up did not want to come anymore but now that i'm here there are so many things i'm actually looking forward to doing!! yesterday night i went out by myself to get dinner from the family mart and ran into some ppl from the same program i'm in so we walked back together. and our apartment is small but it has a stove, so i was thinking it would be so fun to cook with friends, or watch tv at night or go trinket shopping together... and then i realized i can also do all those anytime things by myself and it would also be super fun and that made me even more excited, so i'm looking forward to this more and more now :)`
+	},
+	{
 		title: "moderation", 
 		date: "6/21",
 		content: 
@@ -38,7 +44,7 @@ tomorrow i'm getting my first tattoo and ander showed me the flash designs and i
 		title: "journal excerpt blog post rant about doing better",
 		date: "5/19",
 		content: 
-`...tonight i went to spring sing with chloe, it was nice but i was lowkey stressing during it. and then i came back and worked on the homework assignment that was due 2 days ago and i code so slowly and i really only just got started on it but that's the hardest part like reviewing all the materials and getting the assignment started and then once you gain momentum on it it's really not that bad. i stayed up until like 3 to work on it and then scrolled on instagram for another 2 hours but i was like this is ok as long as i'm working i feel a bit better i feel proud of myself for at least having started on it and working hard until 3. and i always admire when people push themselves and i just remembered that i can do that too... i think a key tho is that i'm actually starting to enjoy the work again instead of just feeling like an overwhelming onslaught of pure dread in my heart whenever i think about working on anything productive... 
+`...tonight i went to spring sing with chloe, it was nice but i was lowkey stressing during it. and then i came back and worked on the homework assignment that was due 2 days ago and i code so slowly and i really only just got started on it but that's the hardest part like reviewing all the materials and getting the assignment started and then once you gain momentum on it it's really not that bad. i stayed up until like 3 to work on it and then scrolled on instagram for another 2 hours but i was like this is ok as long as i'm working i feel a bit better i feel proud of myself for at least having started on it and working hard until 3. and i always admire when people push themselves and i just remembered that i can do that too... i think a key tho is that i'm actually starting to enjoy the work again instead of just like an overwhelming feeling of dread in my heart whenever i think about working on anything productive... 
 
 next year i want to be wayyyy less busy and focus on a few things that are important to me and do my own side projects and just hone my craft. i think this quarter  i've tested my upper limits of how much work i can take on without feeling like constant suffering and let's just respect that limit in the future. i'm finally feeling like there's not so much work to do but so much stuff to do and i want to keep it that way...i can do this`
 	},
@@ -91,7 +97,9 @@ walking to class that next morning was pretty painful but i already had made pla
 		content: 
 `after finishing my work and journaling i got ready and went to 420. i missed 4:20 o‘clock but i was so glad i got to finish the cs assignment first and i felt so much better to relax after that. 𖤓's group was with m❀ and m❀ was with literally everyone, the coop people and calvin and even calvin's roommates were there, it was so random. and when i got there 𖤓 was already a bit high and they were hyping me up sm :,) they were like you're literally too cool for this planet and then i went in the circle and hit the blunt and then we were in our own little world. i was eating sm snacks and trying unsuccessfully to spill the tea about this cheating guy at orientation who was sitting a picnic blanket over and trying really hard to be normal. 
 
-and then 𖤓 had to grab her stuff back from the coop ppl and so we go up to them and white boy is laying on the grass playing the guitar and he looks up at her and tell me why he was BEAUTIFUL. like i think my mouth literally fell open and i realized later that all those beautiful men frolicking around in the grass were coop men, like the same coop men that turn gay whenever i visit the coop at night...? idk it was insane. that night we watched the perks of being a wallflower and it was...idk how to feel about all the grooming but it's a cute movie. and then i took another hit and i was feeling ittt so i went to bed early and it was a good sleep :) i had a really good dream...`
+and then 𖤓 had to grab her stuff back from the coop ppl and so we go up to them and white boy is laying on the grass playing the guitar and he looks up at her and tell me why he was BEAUTIFUL. like i think my mouth literally fell open and i realized later that all those beautiful men frolicking around in the grass were coop men, like the same coop men that turn gay whenever i visit the coop at night...? 
+
+that night we watched the perks of being a wallflower and it was...idk how to feel about all the grooming but it's a cute movie. and then i took another hit and i was feeling ittt so i went to bed early and it was a good sleep :) i had a really good dream...`
 	},
 	{
 		title: "how to enjoy yourself on the grass",

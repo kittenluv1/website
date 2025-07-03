@@ -11,7 +11,7 @@ body {
     background-color: rgba(0,0,0,0.3);
     background-size: 15%;
     color: #FCFCFC;
-    font-family: 'MS Sans Serif', Arial, sans-serif;
+    font-family: 'VP Pixel Pro', 'MS Sans Serif', Arial, sans-serif;
     cursor: url('imgs/cursor.png'), auto;
 }
 #home {
@@ -20,7 +20,6 @@ body {
     left: 0;
     margin: 1%;
     color: black;
-    font-family: 'VP Pixel Pro', 'MS Sans Serif', Arial, sans-serif;
     font-size: 1.2rem;
 }
 #stall5 {
@@ -89,27 +88,25 @@ body {
     z-index: 1;
 }
 .entry {
-    width: 100%;
     height: auto;
     display: flex;
     align-items: start;
-    margin: 2%;
+    padding: 2%;
 }
 .date-div {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    font-family: 'VP Pixel Pro', 'MS Sans Serif', Arial, sans-serif;
+    color: #FCFCFC;
 }
 .date {
-    color: #FCFCFC;
-    font-size: 0.9rem; 
+    color: inherit;
 }
 .time {
     color: #FFCBEC;
     font-size: 0.8rem;
 }
 .text {
-    font-size: 1.1rem;
-    margin: 0 2%;
+    margin: 0; 
+    margin-left: 2%;
 }
