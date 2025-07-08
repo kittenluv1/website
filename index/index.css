@@ -133,20 +133,19 @@ button img {
 }
 
 #gallery {
-	grid-row-start: 7; 
+	grid-row-start: 8; 
 	grid-column-start: 14; 
 }
 
 #microblog {
-	grid-row-start: 8;
-	grid-column-start: 4;
+	grid-row-start: 7;
+	grid-column-start: 2;
 }
 
 #microblog img {
-	height: 55%;
+	height: 50%;
 	bottom: 25%;
 }
-
 /* FOOTER */
 
 footer {

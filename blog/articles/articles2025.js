@@ -1,5 +1,19 @@
 const _2025 = [
 	{
+		date: "7/8", 
+		content: 
+`7/8
+things i’m excited to do this summer in japan: 
+- cook dinner (stovetop curry... (｡˘ڡ˘) 𐂐◯𓇋)
+- eat ramen while watching tv after work
+- try to speak japanese w ppl
+- go skating
+- trinket shopping... exploring niche areas around the city
+- playing game after work
+- wearing work clothes and taking the train to work
+- walking around`
+	},
+	{
 		title: "japan round 2", 
 		date: "6/27", 
 		content: 
@@ -26,7 +40,7 @@ today i finished the rest of my studying which was lowkey really chill and then 
 
 my final was good tho like it was chill i finished it early i think most people did cus it was literally 3 hours. and i could've checked my answers but i was so tired it was a 630 to 930 final bruh and i hadn't eaten dinner and i was getting tired like yawning dramatically and stuff so i was like im gonna take my ass home. i left with like 10 minutes remaining and tried to skate for 5 minutes but i was too tired so i went home and showered and ate dinner and now i'm here and im like actually so happy i swear i haven't felt happiness like this in at least a month. 
 
-tomorrow i'm getting my first tattoo and ander showed me the flash designs and i LOVE them i wish i could show u... i'm so excited :ppp and i also realized i saw so many ppl today and nobody wished me a happy 6/9... do people even celebrate 6/9 anymore?`	
+tomorrow i'm getting my first tattoo and ander showed me the flash designs and i LOVE them i wish i could show u... i'm so excited :ppp and also realized i saw so many ppl today and nobody wished me a happy 6/9... do people even celebrate 6/9 anymore?`	
 	},
 	{
 		title: "ai", 
