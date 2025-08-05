@@ -3,7 +3,7 @@ const _2025 = [
 		title: "a long busy day of work", 
 		date: "8/5", 
 		content: 
-`today was a busy day… i was lying on the bed while listening to music…lounging on the couch and watching the clock turn…staring off into space…thinking about doing a lot of things and not doing them…watching the clouds move across the sky...twiddling my thumbs and stretching my toes…practicing whistling and breathing and noticing everything in my surroundings…sleeping until i got tired of sleeping…and many more hard and tiring things… overall a busy and productive day!`
+`today was a busy day... i was lying on the bed while listening to music...lounging on the couch and watching the clock turn...staring off into space...thinking about doing a lot of things and not doing them...watching the clouds move across the sky...twiddling my thumbs and stretching my toes...practicing whistling and breathing and noticing everything in my surroundings...sleeping until i got tired of sleeping...and many more hard and tiring things... overall a busy and productive day!`
 	},
 	{
 		title: "a trinket's journey", 
@@ -29,7 +29,7 @@ in this case i think it would just be slightly more compromising of my feelings 
 		title: "waterfalls", 
 		date: "7/20", 
 		content: 
-`i’m trying to figure out what people find so beautiful about waterfalls… maybe there’s beauty in other people finding them beautiful too. why do i feel even slightly that i need to compete? i need to give myself more time to just feel… not think and just feel. feel the ocean in your hair, the wind in your lungs… i want to lighten his burden, to take part in it. don’t be afraid to feel. thinking is good and feeling is beautiful… wind is lovely and waterfalls are beautiful too`
+`i’m trying to figure out what people find so beautiful about waterfalls... maybe there’s beauty in other people finding them beautiful too. why do i feel even slightly that i need to compete? i need to give myself more time to just feel... not think and just feel. feel the ocean in your hair, the wind in your lungs... i want to lighten his burden, to take part in it. don’t be afraid to feel. thinking is good and feeling is beautiful... wind is lovely and waterfalls are beautiful too`
 	},
 	{
 		date: "7/18", 
@@ -48,7 +48,7 @@ on the other hand, when extroverts aren't hanging out with people, do they feel 
 		title: "well-adjusted adult", 
 		date: "7/15", 
 		content: 
-`getting sick used to be such a silly and unserious experience… you just stay home and allow your parents to fret over you and take time off to take care of you and then once the worst part is over you go to school and spread your nasty kid germs to all your friends and cough on everyone and get everyone else sick. now you have to go to the grocery store and buy yourself vitamin jelly and warm tea so your throat doesn’t get more raw and eat rice and squash stew at home instead of eating out with friends so you can stay strong and fit enough to get up early for a long day of work the next morning. like that’s not an easy thing to accept… being sick or unhealthy and not taking care of myself isn’t even my own choice anymore. only kids can be sick and get others sick; you can’t afford that luxury once you get older.
+`getting sick used to be such a silly and unserious experience... you just stay home and allow your parents to fret over you and take time off to take care of you and then once the worst part is over you go to school and spread your nasty kid germs to all your friends and cough on everyone and get everyone else sick. now you have to go to the grocery store and buy yourself vitamin jelly and warm tea so your throat doesn’t get more raw and eat rice and squash stew at home instead of eating out with friends so you can stay strong and fit enough to get up early for a long day of work the next morning. like that’s not an easy thing to accept... being sick or unhealthy and not taking care of myself isn’t even my own choice anymore. only kids can be sick and get others sick; you can’t afford that luxury once you get older.
 
 and honestly i can't believe how much time you have to spend as an adult just trying to survive... i feel like every day i just get up, get ready for work, go to work, come back, try to find something decent to fill my stomach, take a shower, and then... the day is over. and every day i do that and i'm exhausted. like i can't believe it takes this much energy to just eat and drink and survive. i feel like i used to do so much more in a day... maybe i'm just not a 'well-adjusted adult'. whatever that means`
 	},
@@ -56,9 +56,9 @@ and honestly i can't believe how much time you have to spend as an adult just tr
 		title: "music and art",
 		date: "7/12",
 		content: 
-`i’m a more visually motivated person, in that i like listening to good songs and obviously i enjoy good music but for me if a song has a really good music video it just makes the song thattt much better… there’s this one song ‘antenna’ by hyukoh that i just adore and it’s partly because the music video is so heavenly, one of my favorite pieces of digital media i’ve ever experienced. and although the song is also amazing i don’t think i would have been able to appreciate it as much without the video. whenever i listen to that song i just think of the music video and it transports me to that world.
+`i’m a more visually motivated person, in that i like listening to good songs and obviously i enjoy good music but for me if a song has a really good music video it just makes the song thattt much better... there’s this one song ‘antenna’ by hyukoh that i just adore and it’s partly because the music video is so heavenly, one of my favorite pieces of digital media i’ve ever experienced. and although the song is also amazing i don’t think i would have been able to appreciate it as much without the video. whenever i listen to that song i just think of the music video and it transports me to that world.
 
-i used to think that being visually motivated made me more shallow or something, as compared to like my friend for example who i would say is a more audio motivated person. me and this friend are planning to make a shared vlog of our travels in asia (some separate, some together) and they’ve been working on some tracks while i’ve been taking some videos… anyways when she listens to music she hears the arrangement of the music and the story that it’s telling through its composition. and i think that’s so fascinating, like i think i can appreciate a good song too but when i listen to music i’m mostly just there for the vibe. and hearing how other people experience the world differently like that just makes me realize that our ways of processing art aren’t better or worse, they’re just different. it's as if i see the cadence and you hear the colors. she's music and i'm art`
+i used to think that being visually motivated made me more shallow or something, as compared to like my friend for example who i would say is a more audio motivated person. me and this friend are planning to make a shared vlog of our travels in asia (some separate, some together) and they’ve been working on some tracks while i’ve been taking some videos... anyways when she listens to music she hears the arrangement of the music and the story that it’s telling through its composition. and i think that’s so fascinating, like i think i can appreciate a good song too but when i listen to music i’m mostly just there for the vibe. and hearing how other people experience the world differently like that just makes me realize that our ways of processing art aren’t better or worse, they’re just different. it's as if i see the cadence and you hear the colors. she's music and i'm art`
 	},
 	{
 		date: "7/8", 
