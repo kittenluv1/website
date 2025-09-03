@@ -1,5 +1,68 @@
 const _2025 = [
 	{
+		date: "8/28", 
+		content: 
+`that was my mistake, always thinking about something to distract myself from being present. you worry too much and you think too much about everything… sometimes you just have let things happen. 
+
+you can’t always be thinking about something… sometimes you need to let yourself just exist. `
+	},
+	{
+		title: "acceptance is the last stage of grief", 
+		date: "8/26", 
+		content: 
+`i got to feel a lot of things i haven’t felt in a long time and practice feeling those things again and i learned a lot. he taught me a lot and i showed him new things too. i’m glad it ended when it ended. it’s ok to leave a good thing as it is. you can’t really say it was worth it until after it’s all over, but things never turn out how you expect them to while you’re still hurting. 
+
+i had a lazy afternoon today for the first time in what feels like forever... life is honestly really good right now though, not spending money or making money, no homework, no responsibilities, no stress. and lowkey it’s kind of nice having somebody to miss.`
+	},
+	{
+		title: "hotel in dali", 
+		date: "8/24", 
+		content: 
+`oh how i love living alone and being able to walk in and throw my things around and play whatever music i want and step out of the shower fully naked to grab something i forgot and sleep whenever i want and sink deeply into my thoughts when i write and cry heartily whenever i feel like it... the only thing i cannot with is how the shower doesn’t fully drain from the part that’s connected to the toilet, so i can’t take a fucking piss without having to worry about rolling up my pants or putting on a pair of shoes or else risk getting my socks and pant bottoms all freaking wet... i’m actually having so much fun here though in 大理, and i’m so grateful to my cousin for bringing me here and taking me around and for booking me a separate room to stay in at night. but at the end of the day it’s never quite the same living by yourself in a hotel, and i can’t wait to go home to my family and fully functioning shower drain... `
+	},
+	{
+		title: "lotus in the rain", 
+		date: "8/21", 
+		content: 
+`when we visited the park with the lotus, it was raining pretty hard and the lotus flowers were all kind of wilted from the rain. although it’s necessary for them to stay alive, the raindrops can be heavy on their little petals. walking around in the misty wetness was a little miserable but also kind of nice. it seems that lotus flowers should be visited in this kind of rainy weather. even though it makes them wilt.`
+	},
+	{
+		title: "seeing my grandpa in the hospital in china for the first time in years", 
+		date: "8/21", 
+		content: 
+`we walk in there and i see two lifeless looking people, each in separate beds on either side of the hospital room. luckily my grandpa is the less lifeless looking one, the one by the window. i recognize him from the rare times i make a guest appearance on his video calls with my mom - he looks a bit better here in person, without the beautifying whitening filter from those international video calls. 
+
+they ask him if he recognizes who i am, and his first guess is my mom before he recognizes that it's me. he cries out my name and reaches his hands up, clapping and celebrating in joy. his fingers are frail but his skin is soft and smooth. i hold his hand and smile, not sure how to receive his excitement. 
+
+he can't quite get it through his head that my mom is coming to visit him in two months, after i leave, and he keeps asking where she is and when is she coming. it's difficult to communicate with him, easier than over a video call, but i don't understand the kunming accent and his hearing is starting to fade with his clarity. he accepts the panda stuffed animal that i give him but doesn't seem to like or dislike it. he doesn't seem to quite understand that it's a gift. perhaps he would have appreciated it more if i had given him something a bit more practical... like if i had brought my mom with me instead. 
+
+he's been laying in a bed for years now, unable to even sit up, his back crumbling beneath him as the tissues slowly shrink and soften, yet he still recognizes me and my mom and my dad when i show him a pictures of us on my phone. he mentions how lonely he is when there's no one there to talk to, and i realize that he probably just sleeps and looks forward to seeing his family visit him in the hospital all day. it makes me sad to think about, what little reprieve he gets from his body, when his only company is his caretaker and his thoughts. 
+
+my aunt is trying to leave and he wants us to stay a bit longer, but she's already fed him his soup and changed out his blankets and she's ready to go. he goes back and forth with her for a little bit while she rubs the muscles in his legs, but at the end he kind of laughs a little and gives up, and i wonder which parts of that whole exchange he understood and which parts he's experienced many times before. my aunt is so calloused to it all, but i can't even begin to imagine how she thinks of it, how it felt to watch things slowly progress through the years up to the way i'm seeing them now. for me, this is an important family reunion and an experience, for her this is just her life.`
+	},
+	{
+		title: "goodbye to japan and everything it gave me", 
+		date: "8/20", 
+		content: 
+`there's always a little pain in saying goodbye, even when you wanted to leave the whole time. you come alone and you leave alone, that's just how it goes... 
+
+i remember arriving at the hotel that first night and meeting my roommate and all my friends for the first time. and now we're all packed up and preparing to leave and i'm not yet ready to go... 
+
+i have a bad habit of holding my tongue, but i couldn't stop thinking about how things were coming to an end, and what's the point of saying all this when it's all just going to come to the same end. maybe i focus too much on the outcome. but it's not less real because it's temporary. 
+
+i cried a little when the plane was taking off, and it hit me just how final it would be this time, how much it felt like a real goodbye. i kept thinking about how after those few weeks are over, someday we would just be another part of each other's past. i think i just think too much... but i also know that even though it's sad and brings tears to my eyes right now, when i look back on it in the future, it will be the fun memories and not sad ones that i remember first. 
+
+the melancholy will fade and the good times will stay in my memory. and hopefully genuine friendship will remain there as well.`
+	},
+	{
+		title: "stickers", 
+		date: "8/19", 
+		content: 
+`i love buying stickers but it's hard for me to stick them down... especially with the ones i really like, i feel like once i commit to putting it somewhere, i'll never be able to take it off. so i just end up hoarding them and hiding them away where no one can see them... i would rather never use it than regret using it wrong. i definitely think too much about which stickers should go where, i always feel like i have to consider every possible factor and weigh all my options carefully. sometimes i wish i was more spontaneous... at times it can be quite easy for me, other times it requires so much directed energy. if it's that intentional, does it even count as spontaneity ? 
+
+i think stickers are too permanent for me, and yet in a way also too temporary. even when i finally commit to choosing one, then i'll worry that it will lose its hold over time and peel or fall off. i should accept that that's a natural part of the life cycle of stickers, some fall off and some get scratched up and the ones that stick through it all are the ones that were meant to stick to the end.`
+	},
+	{
 		title: "a long busy day of work", 
 		date: "8/5", 
 		content: 
@@ -9,27 +72,27 @@ const _2025 = [
 		title: "a trinket's journey", 
 		date: "8/4", 
 		content: 
-`trinkets are meant to be lost & found. they’re like special moments in time, but you can only find them when you’re looking in the right places. the best ones of course are found in some dusty corner, at the bottom of a drawer or spotted from the corner of an eye on the sidewalk. some are worth picking up, while others can be left for someone else to discover and treasure. and once they start to accumulate it becomes part of a collection, and each part is not any less important than the whole. then they can become a part of your home or your outfit or your daily routine, and they’re so small that you can never have too many. but if you do find yourself with an extra trinket on your hands, you can always offer it to a trusted friend, or return it to a corner on the playground where it can continue on its way in the world`
+`trinkets are meant to be lost & found. they're like special moments in time, but you can only find them when you're looking in the right places. the best ones are tucked away in some dusty nook or cranny, or spotted from the corner of an eye on a random sidewalk... those are the ones with a real story. some are worth picking up, while others can be left for someone else to discover and treasure. and once they start to accumulate it becomes part of a collection, and each part is not any less important than the whole. then they can become a part of your home or your outfit or your daily routine, and they're so small that you can never have too many. but if you do find yourself with an extra trinket on your hands, you can always offer it to a trusted friend, or return it to a nook on the playground, where it can continue on its way in the world!`
 	},
 	{
 		title: "a more realistic approach", 
 		date: "7/22", 
 		content: 
-`it’s nice if we can do it together but it doesn’t have to be. like honestly i really do respect the bravery to try, i guess it’s just a different kind of guard. i’d rather be a girl you miss out on than a girl you have fun with and then forget.
+`it's nice if we can do it together but it doesn't have to be. like honestly i really do respect the bravery to try, i guess it's just a different kind of guard. i'd rather be a girl you miss out on than a girl you have fun with and then forget.
 
-in this case i think it would just be slightly more compromising of my feelings because i actually like him which is annoying. i lowkey did not think i would ever get hit with the ‘i’m not looking for a relationship’ but like i guess it’s a canon event. and then at the end of the day he’s just a man. from oregon too`
+in this case i think it would just be slightly more compromising of my feelings because i actually like him which is annoying. i lowkey did not think i would ever get hit with the ‘i'm not looking for a relationship' but like i guess it's a canon event. and then at the end of the day he's just a man. from oregon too`
 	},
 	{
 		title: "to learning more about myself through love and heartbreak", 
 		date: "7/22", 
 		content: 
-`to turning turbulent emotional feelings into rational thoughts and final decisions. to overcoming shame and taking sovereignty over what is most comfortable and pleasing for me. to committing to something genuine, not just for the good memories but for all the love and joy and friendship and sadness and hurt. to all that you stand to gain and lose`
+`to turning turbulent emotional feelings into rational thoughts and final decisions. to overcoming shame and taking sovereignty over what is most comfortable and pleasing for me. to committing to something genuine, not just for the good memories but for all the love and friendship and sadness and hurt. to all that you stand to gain and lose`
 	},
 	{
 		title: "waterfalls", 
 		date: "7/20", 
 		content: 
-`i’m trying to figure out what people find so beautiful about waterfalls... maybe there’s beauty in other people finding them beautiful too. why do i feel even slightly that i need to compete? i need to give myself more time to just feel... not think and just feel. feel the ocean in your hair, the wind in your lungs... i want to lighten his burden, to take part in it. don’t be afraid to feel. thinking is good and feeling is beautiful... wind is lovely and waterfalls are beautiful too`
+`i'm trying to figure out what people find so beautiful about waterfalls... maybe there's beauty in other people finding them beautiful too. why do i feel even slightly that i need to compete? i need to give myself more time to just feel... not think and just feel. feel the ocean in your hair, the wind in your lungs... i want to lighten his burden, to take part in it. don't be afraid to feel. thinking is good and feeling is beautiful... wind is lovely and waterfalls are beautiful too`
 	},
 	{
 		date: "7/18", 
@@ -48,7 +111,7 @@ on the other hand, when extroverts aren't hanging out with people, do they feel 
 		title: "well-adjusted adult", 
 		date: "7/15", 
 		content: 
-`getting sick used to be such a silly and unserious experience... you just stay home and allow your parents to fret over you and take time off to take care of you and then once the worst part is over you go to school and spread your nasty kid germs to all your friends and cough on everyone and get everyone else sick. now you have to go to the grocery store and buy yourself vitamin jelly and warm tea so your throat doesn’t get more raw and eat rice and squash stew at home instead of eating out with friends so you can stay strong and fit enough to get up early for a long day of work the next morning. like that’s not an easy thing to accept... being sick or unhealthy and not taking care of myself isn’t even my own choice anymore. only kids can be sick and get others sick; you can’t afford that luxury once you get older.
+`getting sick used to be such a silly and unserious experience... you just stay home and allow your parents to fret over you and take time off to take care of you and then once the worst part is over you go to school and spread your nasty kid germs to all your friends and cough on everyone and get everyone else sick. now you have to go to the grocery store and buy yourself vitamin jelly and warm tea so your throat doesn't get more raw and eat rice and squash stew at home instead of eating out with friends so you can stay strong and fit enough to get up early for a long day of work the next morning. like that's not an easy thing to accept... being sick or unhealthy and not taking care of myself isn't even my own choice anymore. only kids can be sick and get others sick; you can't afford that luxury once you get older.
 
 and honestly i can't believe how much time you have to spend as an adult just trying to survive... i feel like every day i just get up, get ready for work, go to work, come back, try to find something decent to fill my stomach, take a shower, and then... the day is over. and every day i do that and i'm exhausted. like i can't believe it takes this much energy to just eat and drink and survive. i feel like i used to do so much more in a day... maybe i'm just not a 'well-adjusted adult'. whatever that means`
 	},
@@ -56,15 +119,15 @@ and honestly i can't believe how much time you have to spend as an adult just tr
 		title: "music and art",
 		date: "7/12",
 		content: 
-`i’m a more visually motivated person, in that i like listening to good songs and obviously i enjoy good music but for me if a song has a really good music video it just makes the song thattt much better... there’s this one song ‘antenna’ by hyukoh that i just adore and it’s partly because the music video is so heavenly, one of my favorite pieces of digital media i’ve ever experienced. and although the song is also amazing i don’t think i would have been able to appreciate it as much without the video. whenever i listen to that song i just think of the music video and it transports me to that world.
+`i'm a more visually motivated person, in that i like listening to good songs and obviously i enjoy good music but for me if a song has a really good music video it just makes the song thattt much better... there's this one song ‘antenna' by hyukoh that i just adore and it's partly because the music video is so heavenly, one of my favorite pieces of digital media i've ever experienced. and although the song is also amazing i don't think i would have been able to appreciate it as much without the video. whenever i listen to that song i just think of the music video and it transports me to that world.
 
-i used to think that being visually motivated made me more shallow or something, as compared to like my friend for example who i would say is a more audio motivated person. me and this friend are planning to make a shared vlog of our travels in asia (some separate, some together) and they’ve been working on some tracks while i’ve been taking some videos... anyways when she listens to music she hears the arrangement of the music and the story that it’s telling through its composition. and i think that’s so fascinating, like i think i can appreciate a good song too but when i listen to music i’m mostly just there for the vibe. and hearing how other people experience the world differently like that just makes me realize that our ways of processing art aren’t better or worse, they’re just different. it's as if i see the cadence and you hear the colors. she's music and i'm art`
+i used to think that being visually motivated made me more shallow or something, as compared to like my friend for example who i would say is a more audio motivated person. me and this friend are planning to make a shared vlog of our travels in asia, and they've been working on some tracks while i've been taking some videos... ٩>ᴗ<)و!! when she listens to music she hears the arrangement of the music and the story that it's telling through its composition. and i think that's so fascinating, like i think i can appreciate a good song too but when i listen to music i'm mostly just there for the vibe. and hearing how other people experience the world differently like that just makes me realize that our ways of processing art aren't better or worse, they're just different. it's as if i see the cadence and you hear the colors. she's music and i'm art`
 	},
 	{
 		date: "7/8", 
 		content: 
 `7/8
-things i’m excited to do this summer in japan: 
+things i'm excited to do this summer in japan: 
 - cook dinner (stovetop curry... (｡˘ڡ˘) 𐂐◯𓇋)
 - eat ramen while watching tv after work
 - try to speak japanese w ppl
@@ -132,7 +195,7 @@ next year i want to be wayyyy less busy and focus on a few things that are impor
 	{
 		date: "5/14", 
 		content: 
-`i've found this to be a pattern. every time it's the day before my period i write this sad depressed blog post about how i'm not doing well and things are so overwhelming and then the next day my period comes and i have a horrible day because that's just how it is and i take an advil pm at night and knock myself tf out. and then i go back and read the blog post that i wrote the day before and i'm like wtf girl this is so bad T-T like it's very real and all of those emotions that i write about i feel very deeply and i genuinely feel very emotionally overwhelmed but the writing is also just not good. it's so bad and it definitely doesn't need to be shared publicly on the internet so i usually just end up deleting it or moving it to the scrapped section of my notes and forgetting about it then the next time that time of the month rolls around i do it all again :,)`
+`i've found this to be a pattern. every time it's the day before my period i write this sad depressed blog post about how i'm not doing well and things are so overwhelming, and then the next day my period comes and i have a horrible day because that's just how it is and i take an advil pm at night and knock myself tf out. and then i go back and read the blog that i wrote the day before and i'm like wtf girl this is so bad T-T like it's very real and all of those emotions that i write about i feel very deeply but the writing is also just not good. it's so bad and it definitely doesn't need to be shared publicly on the internet, so i usually just end up deleting it or moving it to the scrapped section of my notes and forgetting about it. until the next time that time of the month rolls around and i do it all again :,)`
 	},
 	{
 		title: "i cut microbangs", 
@@ -303,7 +366,7 @@ it felt kinda surreal but it was funny. someone played kendrick lamar too so tha
 
 i used to try to do everything at once, like all my hobbies at least once a day, and that is so unsustainable guys don't try it. especially if they're new hobbies. it was so overwhelming and they just became tasks to check off every day instead of hobbies! now i basically just work on one project a day, if i have time, and kind of rotate around whatever i feel like doing on a particular week.
 
-i'm going to have to table learning how to draw for now, though, because i'm currently still in the programming curve, but i already have projects building up... mainly making graphics and assets for my website and such. at some point those projects are going to get overwhelming, in a good way, until i feel like i need to draw. and then i will draw.`
+i'm going to have to table learning how to draw for now, though, because i'm currently still in the coding curve, but i already have projects building up... mainly making graphics and assets for my website and such. at some point those projects are going to get overwhelming, in a good way, until i feel like i need to draw... and then i will draw (ദ്ദി˙ᗜ˙)`
 	},
 	{
 		title: "neocities ahhh", 
@@ -371,7 +434,7 @@ also i looked through the flappypatchi game again and i found my missing hierarc
 	{
 		date: "1/26", 
 		content: 
-`it's my dad's birthday. creating is so great. writing is the bane of my existence. my sleep schedule is a bit messed up. my favorite thing about being high is how easy it is to laugh. i really am quite bored. go with your gut. there's something so perverse about me making friends. i feel that i'm finally finding my worldview. i just wrote the best personal statement of my life. i want to date a girl. and do a kick flip.`
+`it's my dad's birthday. creating is so great. writing is the bane of my existence. my sleep schedule is a bit messed up. my favorite thing about being high is how easy it is to laugh. i really am quite bored. go with your gut. there's something so perverse about making friends. i feel that i'm finally finding my worldview. i just wrote the best personal statement of my life. i want to date a girl. and do a kick flip.`
 	},
 	{
 		title: "srs meeting", 

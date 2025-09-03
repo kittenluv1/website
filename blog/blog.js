@@ -72,8 +72,8 @@ function updateArticles(articles) {
 			date.innerHTML = articles[i].date;
 		}
 		content.innerHTML = articles[i].content; 
-		if (articles[i].tag !== undefined) {
-			article.className = "blur"; 
+		if (articles[i].tag === "blur") {
+			content.className = "blur"; 
 		}
 		//append to html
 		article.appendChild(title); 

@@ -53,7 +53,7 @@ body {
     background-size: contain;
     aspect-ratio: 1.14/1;
     position: relative;
-    width: 30%;
+    width: 430px;
 }
 #container {
     position: absolute;

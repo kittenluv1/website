@@ -328,9 +328,9 @@ i might end up posting some stuff like this on my blog. i've been really inspire
 		title: "hideout", 
 		date: "8/21", 
 		content: 
-`when we were small my friend and i used to hide out in a little bathroom cabinet, under the sink. we would crawl in there through the cabinet door, one at a time, and curl in our legs so that we could both fit. sometimes we brought the bunnies in too, and then we would just sit, facing each other. sometimes we talked quietly, or napped, or sat in silence, or whispered about how if the clowns ever came while we were here, they would never find us. 
+`when we were small my friend and i used to hide out in a little bathroom cabinet, under the sink. we would crawl in there through the cabinet door, one at a time, and curl in our legs so that we could both fit. it was cramped and stuffy, and when we brought in the bunnies, the four of us could barely fit. sometimes we talked quietly, or napped, or sat and listened to each other's breathing. we would whisper about how if the clowns ever came while we were here, they would never find us. 
 
-i used to think my parents didn't know about our secret little hideout. i used to go in there by myself sometimes, too. when i wanted somewhere to escape, or somewhere to feel like it was just me and nothing else. just to get away. `
+i used to think my parents didn't know about our secret little hideout under the sink. i would crawl in there by myself sometimes, too... when i wanted somewhere to escape, to feel like it was just me and nothing else. just to get away. `
 	
 	},
 	{
