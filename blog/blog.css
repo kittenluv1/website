@@ -210,6 +210,23 @@ pre {
 	font-family: simsun, serif; 
 }
 
+/* sfx */
 .blur {
 	filter: blur(1.6px); 
+}
+
+svg {
+  display: block;
+  width: min(60vw, 500px);
+  height: auto;
+}
+
+.spin {
+  animation: spin 100s linear infinite; 
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
 }

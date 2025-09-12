@@ -1,30 +1,43 @@
 const _2025 = [
 	{
+		date: "8/30", 
+		title: "the candid star at the center of a love spiral", 
+		tag: "spiral", 
+		content: 
+`homesick and lovesick at the same time... that’s why i didn’t enjoy today, i wasn’t even there. maybe the more i feel, the less i try to show it... but still, i didn’t even know i felt this much.  trying not to think about something makes me think about it more so i try not to think about anything at all. it comes in waves, like the sun through the curtains. maybe my next lover will smell sweet like vanilla. i want to talk candidly about my feelings, but sometimes all my emotions get in the way. or maybe it’s the other way around. always let them keep talking. they'll eventually tell you what they really wanted to say. this is exactly why i’m so afraid of falling and letting people in. it happens to everyone though. i guess that’s just how we love and we learn...`
+	},
+	{
 		date: "8/28", 
 		content: 
-`that was my mistake, always thinking about something to distract myself from being present. you worry too much and you think too much about everything… sometimes you just have let things happen. 
+`that was my mistake, always thinking about something to distract myself from being present. you worry too much and you think too much about everything... sometimes you just have let things happen. 
 
-you can’t always be thinking about something… sometimes you need to let yourself just exist. `
+you can't always be thinking about something... sometimes you need to let yourself just exist. `
+	},
+	{
+		date: "8/27", 
+		title: "i swear i saw this in a dream...",
+		content: 
+`we passed by this impressive silver sculpture of a chinese dragon in shanghai and i swear i saw this before in a dream... ꩜ in the dream i was conjuring up this dragon in a metal orb for some kind of performance, and it was flying around it and growing as it went. it was very impressive but as it continued to grow and come alive, it started to get out of control. eventually it broke out of the container and was flying blindly and tearing through the hall. since it was pure silver, it was so strong and heavy, it was threatening to bring down the entire building, and in the end i realized that it had to be destroyed before it could destroy everything.`
 	},
 	{
 		title: "acceptance is the last stage of grief", 
 		date: "8/26", 
 		content: 
-`i got to feel a lot of things i haven’t felt in a long time and practice feeling those things again and i learned a lot. he taught me a lot and i showed him new things too. i’m glad it ended when it ended. it’s ok to leave a good thing as it is. you can’t really say it was worth it until after it’s all over, but things never turn out how you expect them to while you’re still hurting. 
+`i got to feel a lot of things i haven't felt in a long time and practice feeling those things again and i learned a lot. he taught me a lot and i showed him new things too. i'm glad it ended when it ended. it's ok to leave a good thing as it is. you can't really say it was worth it until after it's all over, but things never turn out how you expect them to while you're still hurting. 
 
-i had a lazy afternoon today for the first time in what feels like forever... life is honestly really good right now though, not spending money or making money, no homework, no responsibilities, no stress. and lowkey it’s kind of nice having somebody to miss.`
+i had a lazy afternoon today for the first time in what feels like forever... life is honestly really good right now though, not spending money or making money, no homework, no responsibilities, no stress. and lowkey it's kind of nice having somebody to miss.`
 	},
 	{
 		title: "hotel in dali", 
 		date: "8/24", 
 		content: 
-`oh how i love living alone and being able to walk in and throw my things around and play whatever music i want and step out of the shower fully naked to grab something i forgot and sleep whenever i want and sink deeply into my thoughts when i write and cry heartily whenever i feel like it... the only thing i cannot with is how the shower doesn’t fully drain from the part that’s connected to the toilet, so i can’t take a fucking piss without having to worry about rolling up my pants or putting on a pair of shoes or else risk getting my socks and pant bottoms all freaking wet... i’m actually having so much fun here though in 大理, and i’m so grateful to my cousin for bringing me here and taking me around and for booking me a separate room to stay in at night. but at the end of the day it’s never quite the same living by yourself in a hotel, and i can’t wait to go home to my family and fully functioning shower drain... `
+`oh how i love living alone and being able to walk in and throw my things around and play whatever music i want and step out of the shower fully naked to grab something i forgot and sleep whenever i want and sink deeply into my thoughts when i write and cry heartily whenever i feel like it... the only thing i cannot with is how the shower doesn't fully drain from the part that's connected to the toilet, so i can't take a fucking piss without having to worry about rolling up my pants or putting on a pair of shoes or else risk getting my socks and pant bottoms all freaking wet... i'm actually having so much fun here though in 大理, and i'm so grateful to my cousin for bringing me here and taking me around and for booking me a separate room to stay in at night. but at the end of the day it's never quite the same living by yourself in a hotel, and i can't wait to go home to my family and fully functioning shower drain... `
 	},
 	{
 		title: "lotus in the rain", 
 		date: "8/21", 
 		content: 
-`when we visited the park with the lotus, it was raining pretty hard and the lotus flowers were all kind of wilted from the rain. although it’s necessary for them to stay alive, the raindrops can be heavy on their little petals. walking around in the misty wetness was a little miserable but also kind of nice. it seems that lotus flowers should be visited in this kind of rainy weather. even though it makes them wilt.`
+`when we visited the park with the lotus, it was raining pretty hard and the lotus flowers were all kind of wilted from the rain. although it's necessary for them to stay alive, the raindrops can be heavy on their little petals. walking around in the misty wetness was a little miserable but also kind of nice. it seems that lotus flowers should be visited in this kind of rainy weather. even though it makes them wilt.`
 	},
 	{
 		title: "seeing my grandpa in the hospital in china for the first time in years", 
