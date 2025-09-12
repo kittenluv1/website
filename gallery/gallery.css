@@ -17,9 +17,11 @@ body {
     width: 100%;
     margin-bottom: 1rem;
     background: transparent;
+    border-radius: 10px;
     box-shadow: 
-        inset 0 0 100px 20px #F1F3F4,
-        0 0 150px 60px #F1F3F4;
+        inset 0 0 20px 60px #F1F3F4,
+        0 0 15px 15px #F1F3F4;
+    font-weight: bold;
 }
 audio {
     flex: 1 1 0;
@@ -46,7 +48,7 @@ a, p {
     width: 100%;
     display: block;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px #F1F3F4;
 }
 .caption {
     position: absolute;
@@ -60,7 +62,6 @@ a, p {
     border-radius: 0 0 8px 8px;
     transition: opacity 0.2s;
     pointer-events: none;
-    font-size: 0.95em;
 }
 .masonry-item:hover .caption {
     opacity: 1;
