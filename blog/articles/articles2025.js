@@ -60,7 +60,7 @@ the melancholy will fade and the good times will stay in my memory. and hopefull
 		content: 
 `i love buying stickers but it's hard for me to stick them down... especially with the ones i really like, i feel like once i commit to putting it somewhere, i'll never be able to take it off. so i just end up hoarding them and hiding them away where no one can see them... i would rather never use it than regret using it wrong. i definitely think too much about which stickers should go where, i always feel like i have to consider every possible factor and weigh all my options carefully. sometimes i wish i was more spontaneous... at times it can be quite easy for me, other times it requires so much directed energy. if it's that intentional, does it even count as spontaneity ? 
 
-i think stickers are too permanent for me, and yet in a way also too temporary. even when i finally commit to choosing one, then i'll worry that it will lose its hold over time and peel or fall off. i should accept that that's a natural part of the life cycle of stickers, some fall off and some get scratched up and the ones that stick through it all are the ones that were meant to stick to the end.`
+i think stickers are too permanent for me, and yet in a way also too temporary. even when i finally commit to choosing one, then i'll worry that it will lose its hold over time and peel or fall off. i should accept that that's a natural part of the life cycle of stickers, some fall off and some get scratched up and the ones that stick through to the end are the ones that were meant to stick`
 	},
 	{
 		title: "a long busy day of work", 
