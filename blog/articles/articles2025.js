@@ -1,10 +1,27 @@
 const _2025 = [
 	{
+		date: "9/5", 
+		content: 
+`do you ever have a bunch of tasks to do and feel so overwhelmed with how much there is and how when you start doing one thing it reminds you that you have to do another thing and it gets so overwhelming you just want to drop everything and lay down? i’ve developed a workflow for myself where i just do things as i think of them, even if i’m in the middle of doing something else, so if i realize i need to do another task first in order to do this one i just go do that one and if in the middle of that task i realize there was something else i forgot to do a while ago, i’ll go do that one before i forget. it’s like a recursive pattern instead of an iterative one… it’s not necessarily finish one task and onto the next… which is kind of what it feels like most of us have been taught or conditioned to do… that is the essence of the to do list. usually i’ll set some kind of physical reminder to come back to the previous task, or if it’s like an online task i’ll keep open a tab or something. but yea i’ve learned to not try to govern too much when or in what exact order the tasks get done in, or else i would just end up thinking too much about what task is the most important or which task might affect another slightly and the dependency graph gets a little too complicated and my head overheats and i have to sit and let it cool down for a bit. so instead i just choose something to do, anything, and start doing it, and it’s better than doing nothing. and then i go into work periods where i just do tasks as i think of them, and usually i’ll get pretty immersed in a task before it reminds me to do another one and if i feel like switching gears right then i’ll go ahead and do the other one instead. this helps me a lot with not thinking too much about everything i need to be doing, and just doing something. but also, there’s definitely times when i’m trying to do everything and i really just need to sit down and choose one thing and finish it first, before really moving on to the next. this is usually when i’m procrastinating a task that i don’t want to do and i end up doing anything and everything else instead of this one task that i keep having to come back to and eventually it becomes more of a mind block than just another regular task. and then sometimes you just gotta grit your teeth and just work on something, even if you don't feel like it or it doesn't fit your flow. sometimes work just feels like work, and that’s ok too`
+	},
+	{
+		date: "9/2", 
+		title: "my last straws", 
+		content: 
+`my flight from shanghai was severely delayed due to storms and when it finally landed i rushed out of there as fast as i could and did everything i could but i ended up missing my transfer to my connecting flight home. i had to call to cancel the flight and book a new one and i haven’t eaten a meal since morning and i was walking around the airport with all my luggage that i have been lugging around for months and i’m so tired of living out of a suitcase. i just really want to go home. the first hotel i went to was way too expensive so i found myself a box to stay in for $60 a night. they have wifi and a public bath so i guess it’ll be enough. i called my mom to rebook my flight for the next day and figure out what the hell is going on and i really would not have made it through this night without her. and my mom just told me that my dad is in china right now because my grandpa just passed away??? i was just in china. also is it just me or my bedding is damp. `
+	},
+	{
+		date: "9/1", 
+		title: "回想我在中国的时间", 
+		content: 
+`这个礼拜我去了四个城市： 大理， 昆明， 上海， 和 杭州。 哇塞。 在昆明我感觉一点渴望， 想的事儿比较多， 写的也多。 大理跟余韩哥哥和OJ很好玩儿， 就好像跟两个大哥哥一起跑样的。 上海很发达，是一个新感觉。 在杭州感觉太累了， 实在想回家了。这个文章本来是用英文写的， 后来被反义成中文了。 如果写的不太好， 请见谅。`
+	},
+	{
 		date: "8/30", 
 		title: "the candid star at the center of a love spiral", 
 		tag: "spiral", 
 		content: 
-`homesick and lovesick at the same time... that’s why i didn’t enjoy today, i wasn’t even there. maybe the more i feel, the less i try to show it... but still, i didn’t even know i felt this much.  trying not to think about something makes me think about it more so i try not to think about anything at all. it comes in waves, like the sun through the curtains. maybe my next lover will smell sweet like vanilla. i want to talk candidly about my feelings, but sometimes all my emotions get in the way. or maybe it’s the other way around. always let them keep talking. they'll eventually tell you what they really wanted to say. this is exactly why i’m so afraid of falling and letting people in. it happens to everyone though. i guess that’s just how we love and we learn...`
+`homesick and lovesick at the same time... that’s why i didn’t enjoy today, i wasn’t even there. maybe the more i feel, the less i try to show it... but still, i didn’t even know i felt this much.  trying not to think about something makes me think about it more so i try not to think about anything at all. it comes in waves, like the sun through the curtains. maybe my next lover will smell sweet like vanilla. i want to talk candidly about my feelings, but sometimes all my emotions get in the way. or maybe it’s the other way around. this is exactly why i’m so afraid of falling and letting people in. it happens to everyone though. sometimes you just have to break down and get back up. i guess that’s just how we love and we learn...`
 	},
 	{
 		date: "8/28", 
