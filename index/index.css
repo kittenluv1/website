@@ -11,6 +11,8 @@ html, body {
 		0px 0px 2px black;
 }
 
+/* windows bg and buttons */
+
 .background-container {
 	width: 100vw;
 	height: 95vh;
@@ -40,7 +42,7 @@ button:hover {
 button p {
 	position: absolute; 
 	margin: 0; 
-	bottom: 5%; 
+	bottom: 10%; 
 	font-size: 2vh; 
 	color: white;
 	text-shadow: 
@@ -52,7 +54,6 @@ button p {
 }
 
 button picture {
-	border: 1px solid red;  
 	display: contents; 
 }
 
@@ -61,7 +62,7 @@ button img {
 	border-radius: inherit;
 	height: 60%; 
 	width: auto; 
-	bottom: 25%; 
+	bottom: 30%; 
 	opacity: 0.8;
 }
 
@@ -71,18 +72,16 @@ button img {
 	grid-row-start: 5; 
 	grid-column-start: 11; 
 }
-
 #blog img {
 	width: 85%; 
 	height: auto; 
-	bottom: 20%; 	
+	bottom: 25%; 	
 }
 
 #music {
 	grid-row-start: 5; 
 	grid-column-start: 2; 
 }
-
 #music img, #portfolio img {
 	opacity: 0.9; 
 }
@@ -96,10 +95,9 @@ button img {
 	grid-row-start: 4;
 	grid-column-start: 13; 
 }
-
 #flappy img {
 	height: 70%; 
-	bottom: 20%;
+	bottom: 25%;
 }
 
 #neocities {
@@ -121,10 +119,9 @@ button img {
 	grid-row-start: 4;
 	grid-column-start: 14; 
 }
-
 #detective img {
 	height: 75%;
-	bottom: 20%;
+	bottom: 25%;
 }
 
 #pic {
@@ -133,19 +130,18 @@ button img {
 }
 
 #gallery {
-	grid-row-start: 8; 
-	grid-column-start: 14; 
+	grid-row-start: 6; 
+	grid-column-start: 7; 
 }
 
 #microblog {
 	grid-row-start: 7;
 	grid-column-start: 2;
 }
-
 #microblog img {
 	height: 50%;
-	bottom: 25%;
 }
+
 /* FOOTER */
 
 footer {
