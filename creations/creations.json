@@ -1,5 +1,5 @@
 {
-	"sketchbooks": [
+	"scrapbooking": [
 		{
 			"title": "burnt OUT!",
 			"images": ["/creations/imgs/sketchbooks/burnt out/1.png",
@@ -24,8 +24,9 @@
 			"title": "composition1 (WIP)",
 			"images": ["/creations/imgs/sketchbooks/composition1/1.png",
 				"/creations/imgs/sketchbooks/composition1/2.jpg",
-				"/creations/imgs/sketchbooks/composition1/3.jpg"],
-			"captions": ["mini composition notebook", "harper sketch", "momo process"],
+				"/creations/imgs/sketchbooks/composition1/3.jpg",
+				"/creations/imgs/sketchbooks/composition1/4.png"],
+			"captions": ["mini composition notebook", "harper sketch", "momo process", "back cover"],
 			"date": "aug 2024 - present",
 			"description": "composition book sketchbook",
 			"comments": "for drawing freaky little guys and cybercigilism and painting badly @. i've had this mini composition notebook since elementary, never knew what to do with it b4 but now i'm putting it to good use #. i had to walk to my friends apartment in the pouring rain with this notebook, so it got wet and the pages are all bleeding. but my last sketchbook was fire themed, so i guess this one is water themed. this reminds me of high school when i used to bring notebooks to class, and every year there was some water bottle leak event where all my notebooks would get drenched and wrinkly and wet TT it was part of my aesthetic"
@@ -114,10 +115,12 @@
 		},
 		{
 			"title": "frog plush", 
-			"images": ["/creations/imgs/crochet & textiles/frog.png"],
+			"images": ["/creations/imgs/crochet & textiles/frog/1.png",
+				"/creations/imgs/crochet & textiles/frog/2.png",
+				"/creations/imgs/crochet & textiles/frog/3.png"],
 			"date": "4/11/2025", 
 			"description": "hand sewn frog plushie made from a pattern at frog night",
-			"comments": "i missed frog night my freshman year and literally waited a year to do this... finally made it to frog night * this is a filler img cus the lighting sucks"
+			"comments": "i missed frog night my freshman year and literally waited a year to do this... finally made it to frog night so yayyy ᐠ( ᐛ )ᐟ"
 		},
 		{
 			"title": "sock monkey",
@@ -405,14 +408,6 @@
 			"date": "so long ago. maybe like 2014",
 			"description": "clam decoration made from shells and marble %",
 			"comments": "i made this using a clam shell that i probably picked up from the beach or saved from a restaurant from some oyster dish when i was like 10. i love picking up shells on the beach. i still think this was a stroke of genius... look at the way the light hits the marble *-*"
-		},
-		{
-			"title": "widow top",
-			"images": ["/creations/imgs/archive/widow/bride.png",
-				"/creations/imgs/archive/widow/widow.png"],
-			"date": "20 de agosto 2024",
-			"description": "black lace bandeau top with lace shrug sleeves, upcycled from a long sleeve shirt",
-			"comments": "i had a vision for this top but it didn't turn out as i had hoped. the top is a bit tight and just not my style at all. but it was a cool project constructing a new piece of clothing out of something else. there's also a lace eye veil with this set that i supposed you could also wear as a necktie, but it reminds me of a widow or a doomed bride"
 		},
 		{
 			"title": "a chipmunk's love", 
