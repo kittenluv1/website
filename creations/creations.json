@@ -261,8 +261,9 @@
 				"/creations/imgs/preservation/beetles/hanamuguri.png",
 				"/creations/imgs/preservation/beetles/wip.jpg",
 				"/creations/imgs/preservation/beetles/joeyjosh.jpg",
+				"/creations/imgs/preservation/beetles/joeyjosh2.jpg",
 				"/creations/imgs/preservation/beetles/joey.jpg"],
-			"captions": ["<em>koganemushi</em> (june bug)", "<em>hanamuguri</em> (flower chafer)", "<em>oosenchikogane</em> (earth-boring dung beetle)", "joeyjosh (my son)", "joeyjosh & joey"],
+			"captions": ["<em>koganemushi</em> (june bug)", "<em>hanamuguri</em> (flower chafer)", "<em>oosenchikogane</em> (earth-boring dung beetle)", "joeyjosh (my son)", "posin' it up", "joeyjosh & joey"],
 			"date": "summer 2025", 
 			"description": "beetles i found in japan!!!",
 			"comments": "the green ones were soo hard to identify! this <a href='https://preview.redd.it/what-kind-of-beetle-is-this-v0-d30lkr3qhscd1.jpeg?width=595&auto=webp&s=a0dcf4af3124de3c0e34829b662d3e25b5ee8dbe' target='_blank'>image</a> i found on reddit helped me with the identification a lot. the <em>koganemushi</em> is probably some ind of june bug or chafer. in japanese it means 'gold bug' and apparently there's some <a href='https://blogs.transparent.com/japanese/japanese-beetle-song/' target='_blank'>children's song</a> about it being rich. <em>hanamuguri</em> means flower chafer and are often found among flowers. unfortunately i don't remember where exactly i found these cute little green beetles. <em>oosenchikogane</em>, the pretty blue beetle, was found on our trip to nachii waterfalls. my friend katie and i were playing with an alive one that kept walking right off our hands and falling on the ground. it was very cute and clumsy. after a while we kept walking and then joey/josh find this one that's a little banged up, looks like it might have gotten crushed a bit but they said they weren't the ones who crushed it. beetles are so pretty :3 also in japan we found a little rhinocerous beetle outside a family mart and we adopted him and named him joeyjosh. he didn't die but i wanted to feature him here :,) miss my little guy"
@@ -273,6 +274,13 @@
 			"date": "aug 25, 2025",
 			"description": "giant shield bug found in dali, china", 
 			"comments": "saw him on the ground while running to catch the taxi to get back from dali and scared the sh*t out of my cousin... he's like actually afraid of bugs and i thought he was going to throw me out of the car T-T apparently these giant shield bugs are common in yunnan, china, shoutout to the hometown"
+		},
+		{
+			"title": "moth WIP", 
+			"images": ["/creations/imgs/preservation/moth/1.png"],
+			"date": "9/28/25", 
+			"description": "small moth that i found on the ground at ucla.",
+			"comments": "WIP"
 		},
 		{
 			"title": "mouse",

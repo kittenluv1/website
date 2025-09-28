@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    <div id="audio-div">
+    <div id="loading-screen">
+        <img id="loading-image" src="images/tarepanda1.png">
+        <div id="loading-progress">
+            <div id="loading-progress-bar"></div>
+        </div>
+    </div>
+    <div id="main-content">
+        <div id="audio-div">
         <a href="/">&larr; home</a>
-        <audio controls autoplay src="When someone's mind is in a hurry.mp3"></audio>
+        <audio controls src="When someone's mind is in a hurry.mp3"></audio>
         <a href="https://www.youtube.com/watch?v=UMcqpEuMUrs" target="_blank">audio credit. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</a>
         <p>thank you for visiting my photo gallery ⸜(｡˃ ᵕ ˂ )⸝♡-ˋˏ ༻ ❁ ✿ ❀༺ ˎ‧₊˚❀ ༉ ‧₊ ˚. ☘︎ </p>
     </div>
     <div id="gallery" class="masonry-grid"></div>
+    </div>
+
     <script src="gallery.js"></script>
 </body>
 </html>

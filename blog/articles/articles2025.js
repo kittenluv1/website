@@ -1,12 +1,12 @@
 const _2025 = [
 	{
-		date: "9/24", 
-		title: "last day of summer (school starts tomorrow!!)",
+		date: "9/26", 
+		title: "learning, creating",
 		content: 
-`i had a really good day today :) in the morning i got breakfast at the dining hall and read a bit of edgar allan poe, before finishing some work for clubhouse that i've been putting off. i scrapbooked today in the lounge, i cut a fish out of fabric and sewed it onto my sketchbook... i've had that vision in my head for a while so i'm glad i finally got to put it to paper. i started feeling a bit antsy so i went outside and skated and ran into a guy named **** of all names... after my shower i stood in line for a food truck and watched my tv show while i ate dinner in my room. last night i finally got to smoke with soleil and we talked and came to some deep revelations that i'm still thinking about today (my deep revelation being 'maybe my situationship is not good for me' and theirs being 'maybe i should start smoking again...'). i'm about to go to bed right now and it's only 10pm, but i feel tired. i think part of what made today so good was that i actually made an effort to go outside, and doing my tasks in places where i can expose myself to fresh air and sunlight instead of staying cooped up in the comfort of my dorm room... i'm really feeling like i'll make an effort to go out more often and meet new people and keep up with old friends this quarter. my roommate said she had a good feeling about this year, i really hope she's right... `
+`learning is just like creating... it takes time. your time can't be too precious when you learn or create; you have to hold space for failure and see it as progress, not waste. if it doesn't look right when you first make it, keep working on it... if you still don't understand it when you first study it, keep learning it. start small & start early... learning something new is putting yourself out there. if you believe you can do it and then give yourself time to do it, magic will happen. creating something is always better than creating nothing. learning something will make you stronger than if you learn nothing.`
 	},
 	{
-		date: "9/23", 
+		date: "9/25", 
 		title: "canon events i've experienced this summer:",
 		content: 
 `- getting called a racial slur after being hit on at the club
@@ -26,12 +26,30 @@ const _2025 = [
 - having the best summer of your life (somehow again), and realizing you never want to grow up`
 	},
 	{
+		date: "9/24", 
+		title: "last day of summer (school starts tomorrow!!)",
+		content: 
+`i had a really good day today :) in the morning i got breakfast at the dining hall and read a bit of edgar allan poe, before finishing some work for clubhouse that i've been putting off. i scrapbooked today in the lounge, i cut a fish out of fabric and sewed it onto my sketchbook... i've had that vision in my head for a while so i'm glad i finally put it to paper. i started feeling a bit antsy so i went outside and skated and ran into a guy named **** of all names... after my shower i stood in line for a food truck and watched my tv show while i ate dinner in my room. last night i finally got to smoke with soleil and we talked and came to some deep revelations that i'm still thinking about today (my deep revelation being 'maybe my situationship is not good for me' and theirs being 'maybe i should start smoking again...'). i'm about to go to bed right now and it's only 10pm, but i feel tired. i think part of what made today so good was that i actually made an effort to go outside, and doing my tasks in places where i can expose myself to fresh air and sunlight instead of staying cooped up in the comfort of my dorm room all day... i'm really feeling like i'll make an effort to go out more often and meet new people and keep up with old friends this quarter. my roommate said she had a good feeling about this year, i really hope she's right... `
+	},
+	{
 		date: "9/13", 
 		title: "how to let go of ego", 
 		content: 
 `uncenter yourself. don't take things too hard if they aren't, and don't take things to heart if they are. (i've come to realize that i'm not good at this, and i'll take things too hard if they aren't, and take them to heart if they are. but that creates its own sort of balance). embrace your flaws and your vulnerabilities. come to terms with everything about yourself and accept yourself fully. be a student - accept criticism, stay curious, and enjoy being a beginner. 
 
 do the work more than you talk about the work. don't compare. don't complain. don't forget that reality exists outside of your head. develop a genuine interest in others. put others' needs above your own; embrace others' flaws as well as your own. notice when you feel defensive, prideful, creative, or self-important... notice the ego. and then go outside and let it go`
+	},
+	{
+		date: "9/7", 
+		title: "manifestations",
+		content: 
+`i live for myself and i am creating the life i want to live
+i love spending time with myself and others
+my work is meaningful and exciting
+cool opportunities find me and relief finds me also
+i take breaks when i want to
+i can make anything with my own two hands
+I have everything i need`
 	},
 	{
 		date: "9/5", 
