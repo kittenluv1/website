@@ -1,5 +1,10 @@
 const _2025 = [
 	{
+		date: "9/29", 
+		content: 
+`maybe it's just cus i'm friends with cs people but so many people have their little personal websites now and it makes me so happy. i think i'm done waxing poetic about my situationship... kind of embarrassing but it had to happen, it had to be done. i actually have some friends in my classes this quarter and i'm looking forward to possibly making some more... a girl in my class said my hair looks like sea moss, which is so sweet but that's not what it's supposed to look like ToT. i'll re-dye my hair... when the time is right. & i just realized i'm still writing in my old notes page from the summer... i think it's time for a new era ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧`
+	},
+	{
 		date: "9/26", 
 		title: "learning, creating",
 		content: 
