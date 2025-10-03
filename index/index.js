@@ -2,14 +2,14 @@ document.getElementById('blog').addEventListener('dblclick', () => window.locati
 document.getElementById('creations').addEventListener('dblclick', () => window.location.href = 'creations');
 document.getElementById('japan').addEventListener('dblclick', () => window.open('https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h'));
 document.getElementById('portfolio').addEventListener('dblclick', () => window.open('portfolio'));
-document.getElementById('flappy').addEventListener('dblclick', () => window.open('https://introspec.itch.io/flappypatchi'));
-document.getElementById('neocities').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/'));
+// document.getElementById('flappy').addEventListener('dblclick', () => window.open('https://introspec.itch.io/flappypatchi'));
+// document.getElementById('neocities').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/'));
 document.getElementById('resources').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/resources'));
 document.getElementById('writing').addEventListener('dblclick', () => window.location.href = 'writing');
 document.getElementById('detective').addEventListener('dblclick', () => window.open('https://introspec.itch.io/dimensional-detective'));
 document.getElementById('pic').addEventListener('dblclick', () => window.open('https://kittenluv1.lovestoblog.com/'));
 document.getElementById('gallery').addEventListener('dblclick', () => window.location.href = 'gallery');
-document.getElementById('microblog').addEventListener('dblclick', () => window.location.href = 'microblog');
+// document.getElementById('microblog').addEventListener('dblclick', () => window.location.href = 'microblog');
 
 const footer = document.querySelector('footer');
 const pinkGradient = `linear-gradient(
