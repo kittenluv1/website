@@ -1,5 +1,21 @@
 const _2025 = [
 	{
+		date: "10/19",
+		content: 
+`ahhh i went to the pump track today for the first time and it was sooo fun (˶˃ ᵕ ˂˶) ˚ ༘ ೀ⋆｡˚ my friend ananya was a pro and it was me and sun's first time and i learned how to get really far on the pump track and they got it for me on video!!! also i lowkey did a lot of work this weekend (not enough - it's never enough) but i feel good about the work i did and the effort i put in. yesterday i went to sawtelle with the clubhouse girls and i got to hang out with/see a lot of my girls this week :) when we were skating back there was a long smooth road with some small hills and a burning orange sunset, it was so beautiful and la... tomorrow i'm going to the doctor's just for a checkup which is something i haven't done in probably like three years lol so i hope it goes well and hopefully if there's anything wrong with me they will tell me`
+	},
+	{
+		date: "10/13",
+		content: 
+`oh man i'm falling behind again... i'm starting to think, is it really true? is there really no rest for the wicked??? 
+
+i have this crisis every year... that i'm not spending enough time on my hobbies, i'm too busy all the time, i'm not qualified enough to get a job...etc.etc.
+
+i've actually been getting such good sleep though... like consistently going to bed at 10pm and waking up between 7 and 8. i'm the first in my dorm to go to sleep and the first to wake up. it almost feels too good to be true... 
+
+they say you can only choose two out of social life, sleep, and academics. i fear it might be time for me to make some choices...`
+	},
+	{
 		date: "9/29", 
 		content: 
 `maybe it's just cus i'm friends with cs people but so many people have their little personal websites now and it makes me so happy. i think i'm done waxing poetic about my situationship... kind of embarrassing but it had to happen, it had to be done. i actually have some friends in my classes this quarter and i'm looking forward to possibly making some more... a girl in my class said my hair looks like sea moss, which is so sweet but that's not what it's supposed to look like ToT. i'll re-dye my hair... when the time is right. & i just realized i'm still writing in my old notes page from the summer... i think it's time for a new era ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧`

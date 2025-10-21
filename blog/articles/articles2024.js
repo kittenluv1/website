@@ -334,6 +334,25 @@ i used to think my parents didn't know about our secret little hideout under the
 	
 	},
 	{
+		title: "My Self-Employed Internship: Employed by Delusion",
+		date: "8/19", 
+		content: 
+`This summer, I failed to find a job. 
+
+In the summer of my freshman year, I wasn’t looking for anything special - simply an entry-level, part-time job to do something productive with my time. Due to foreseen and avoidable circumstances, I started my job search a bit too late and was rejected or ghosted by every location I applied to :,(
+
+For a while, I busied myself with some ‘unemployed activities’ - I made jewelry, rock climbed, sewed, skated, painted, and even printed my first handmade zine from scratch. Honestly it was a very fulfilling era of my life. But soon, my bank balance reached a number that was pitifully low, and I had to come back to reality. 
+
+I had always wanted a singular place where I could hoard digital memories or showcase miscellaneous art projects, a digital space that I could call entirely my own. I had tried making instagram accounts, finstas, photo albums in my phone... it never quite felt like enough. After doing a bit of research into the <a href="https://youtu.be/zswyWBtF-7Y?si=9Y1veHLL9W12Ns5T" target="_blank">personal web</a>, I found that there were plenty of others who shared this sentiment. 
+
+And that was the birth of my website! Long story short, this website is a free-for-all personal creative space inspired by the early internet (before it was consumed by the corporate takeover). On it, I hope to share the things I create, progress I’ve made, and other interests that I enjoy. 
+
+As for my unemployment, I imagined myself completing a project assigned to me by my hiring company. I kept to a very lenient 9-5 work schedule and ate breakfast while checking emails like a real intern. Since I was self-employed in my parent’s home, I even ran errands for the higher-ups, including washing dishes, taking out the trash, and cutting fruit after meals. Then I wrote a heartfelt and inspiring article fit to post on LinkedIn. My delusional internship experience was complete. 
+
+I have always been inspired by DIY solutions, and this DIY web development internship managed to bring together my growing technical skills with my independent creative pursuits. Though learning how to code is daunting at first, there are plenty of <a href="https://youtu.be/PlxWf493en4?si=Sq5F_b1AShACmE-K" target="_blank">resources</a> that helped me get started. So if you also find yourself needing a personal platform to express yourself online, or a productive project that delusionally resembles employment, Join me in taking back the internet one page at a time, and thank you for enjoying my website!
+`
+	},
+	{
 		title: "Welcome to my website °❀⋆.ೃ࿔*",
 		date: "8/19",
 		content:
