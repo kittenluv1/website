@@ -1,8 +1,27 @@
 const _2025 = [
 	{
+		date: "11/2",
+		title: "mid-quarter crisis",
+		content: 
+`i'm like actually feeling anxious about not having enough friends. i'm going to be a senior with no friends... and that's nothing but the sad harsh truth. 
+
+that midterm felt like it set me back generations on homework... my rhythm got hella thrown off. and oklou concert and halloweekend in the same week... might take a miracle and a dose of self denial to pull this one off. 
+
+i feel like i have a lot of feelings and i want to project them on someone... that can get kind of toxic pretty fast. yearning is better than insanity... at least i don't have to worry about somebody out cheating on me... 
+
+if he cheated... that would have actually broke me. i wouldn't be able to trust people like that again... or men, ever. like my views would become traditionalist and i would fall down the alt right pipeline. that kind of hurt. damn i'm one betrayal away from the alt right conservative pipeline.`
+	},
+	{
+		date: "10/27",
+		content: 
+`is this love? ecstasy? psychosis? i want to be born again... purified, cleansed. reflowered. all the blood in my body drained and replenished with virgin blood. 
+
+i want to take a nap in the middle of the day and think about the passage of time. about men who've disappointed me and people i still don't understand. and then wake up and realize i was daydreaming the whole time`
+	},
+	{
 		date: "10/19",
 		content: 
-`ahhh i went to the pump track today for the first time and it was sooo fun (˶˃ ᵕ ˂˶) ˚ ༘ ೀ⋆｡˚ my friend ananya was a pro and it was me and sun's first time and i learned how to get really far on the pump track and they got it for me on video!!! also i lowkey did a lot of work this weekend (not enough - it's never enough) but i feel good about the work i did and the effort i put in. yesterday i went to sawtelle with the clubhouse girls and i got to hang out with/see a lot of my girls this week :) when we were skating back there was a long smooth road with some small hills and a burning orange sunset, it was so beautiful and la... tomorrow i'm going to the doctor's just for a checkup which is something i haven't done in probably like three years lol so i hope it goes well and hopefully if there's anything wrong with me they will tell me`
+`ahhh i went to the pump track today for the first time and it was sooo fun (˶˃ ᵕ ˂˶) ˚ ༘ ೀ⋆｡˚ my friend ananya was a pro and it was me and sun's first time and i learned how to get really far on the pump track and they got it for me on video!!! also i lowkey did a lot of work this weekend (not enough - it's never enough) but i feel good about the work i did and the effort i put in. yesterday i went to sawtelle with the clubhouse girls and i got to hang out with/see a lot of my girls this week :) when we were skating back there was a long smooth road with some small hills and a burning orange sunset, it was so beautiful and la... tomorrow i'm going to the doctor's just for a checkup which is something i haven't done in probably like three years lol so i hope it goes well and hopefully if there's anything wrong with me they will tell me soon`
 	},
 	{
 		date: "10/13",
@@ -18,7 +37,7 @@ they say you can only choose two out of social life, sleep, and academics. i fea
 	{
 		date: "9/29", 
 		content: 
-`maybe it's just cus i'm friends with cs people but so many people have their little personal websites now and it makes me so happy. i think i'm done waxing poetic about my situationship... kind of embarrassing but it had to happen, it had to be done. i actually have some friends in my classes this quarter and i'm looking forward to possibly making some more... a girl in my class said my hair looks like sea moss, which is so sweet but that's not what it's supposed to look like ToT. i'll re-dye my hair... when the time is right. & i just realized i'm still writing in my old notes page from the summer... i think it's time for a new era ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧`
+`maybe it's just cus i'm friends with cs people but so many people have their little personal websites now and it makes me so happy. i think i'm done waxing poetic about my situationship... kind of embarrassing but it had to happen, it had to be done. i actually have some friends in my classes this quarter and i'm looking forward to possibly making some more... a girl in my class said my hair looks like sea moss, which is so sweet but that's not what it's supposed to look like ToT. i'll re-dye my hair... when the time is right. & i just realized i'm still writing in my old notes page from the summer... i think it's time for a new notes era ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧`
 	},
 	{
 		date: "9/26", 
