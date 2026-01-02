@@ -124,11 +124,6 @@ button img {
 	bottom: 25%;
 }
 
-#pic {
-	grid-row-start: 2;
-	grid-column-start: 1;
-}
-
 #gallery {
 	grid-row-start: 6; 
 	grid-column-start: 7; 

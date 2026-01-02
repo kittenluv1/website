@@ -7,7 +7,6 @@ document.getElementById('portfolio').addEventListener('dblclick', () => window.o
 document.getElementById('resources').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/resources'));
 document.getElementById('writing').addEventListener('dblclick', () => window.location.href = 'writing');
 document.getElementById('detective').addEventListener('dblclick', () => window.open('https://introspec.itch.io/dimensional-detective'));
-document.getElementById('pic').addEventListener('dblclick', () => window.open('https://kittenluv1.lovestoblog.com/'));
 document.getElementById('gallery').addEventListener('dblclick', () => window.location.href = 'gallery');
 // document.getElementById('microblog').addEventListener('dblclick', () => window.location.href = 'microblog');
 

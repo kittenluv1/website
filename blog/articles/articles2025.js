@@ -1,5 +1,57 @@
 const _2025 = [
 	{
+		date: "1/1/26", 
+		title: "new year's reflections", 
+		content:
+`think less, do more: there will never be a time when you're completely free... you will always have to make time. appreciate the importance of doing nothing, too. 
+
+you can fall in love with anyone: everyone is an artist. everyone's life is a story. art is everywhere
+
+***
+
+some things i did to welcome in the new year: 
+- took a nap on the couch
+- dyed my hair >.<
+- looked into linuxOS (perhaps this is the year i become a linux user)
+- bought a new domain for my site! (bunnyluv1 - i plan to try it out and kittenluv1 and just see which one sticks)
+
+***
+
+planning a major site refactor that involves moving everything to a framework, so a lot of things might go under construction for a while. this is good for the long term growth and scalability of my website... i think, according to my research (i asked chatgpt)
+
+i noticed that my ‘new year's resolutions' from last year to this year haven't really changed much. i could take it as a sign of stagnation, that i'm not growing or challenging myself enough, but i kind of would rather see it as an indication of stability, like i've found goals for myself that i can continue to aim for even past the arbitrary term of one year. or perhaps in other words, new year, same me :p it's nice, not having to reinvent myself every year. also bcs i didn't fulfill my resolution of landing a kf last year (╥ᴗ╥) this is the year tho, i can feel it... `
+	},
+	{
+		date: "12/31", 
+		content: 
+`happy new year's eve :3 merry christmas too i guess if you celebrate. i haven't been feeling very inspired to write lately, everything just seems too mundane to really sit down and write about. and i don't think there's all that much for me to contribute to the literature on holiday vacations and college career crises anyways. on to the year of 2026!`
+	},
+	{
+		date: "12/17", 
+		title: "reflecting on jobs and boring stuff like that... again", 
+		content: 
+`trying to remember why i chose this path and what i enjoyed so much about it, i keep running into hard things and immediately wanting to give up or switch out. literally considering any other options that could potentially satisfy the same cravings but realistically they're not easier and i have the ability to do something in this field... but maybe it's just not what everyone else is doing. maybe i need to find something right for me, something i was looking for all along. i hate job insecurity, bane of my life and career :$
+maybe in another life i would've gone into the trades. maybe further down the line in this life i still can. i would love to be a person who does all kinds of random jobs in their life... or maybe i should just work for the government directly out of college and retire by 50. but the goal isn't to retire, the goal is to live a good-to-decent life until then. i don't know why i still believe my prime is in my 20s... i know it's a narrative. but i'm here now and i don't want to waste it. and i don't want to just live for retirement. i might not even live that long, i could just die before then. so it's not something i want to live for. lately i've been living so much in the future and not the present but it's important to live for both and impossible to live for both at the same time. at least for me. maybe ur better.`
+	},
+	{
+		date: "11/27", 
+		title: "happy thanksgiving", 
+		content:
+`i am grateful to be at home, in bed
+i am grateful for friends, and for smiskis
+i'm grateful that i'm not more behind on homework than i already am / could be
+i am grateful for staying up late and not having to wake up early
+i'm grateful for chinese dramas and chinese people and chinese food
+and i'm grateful for you
+happy thanksgiving ;)`
+	},
+	{
+		date: "11/9 3:37 P.M.", 
+		title: "procrastinating in weekends", 
+		content: 
+`dude i loveee this time of the day... late afternoon and the sun is filtering in through the window. the light dances on the wall as it plays with the curtains and the trees. it's quiet except for the ambient stirrings of the neighbors, and the consistent humming of the walls. bits of conversation float up from people passing by, and laughter from children as they play on their bikes. there's lots of work to finish, but it doesn't seem so urgent compared to the leisurely sunlight and good weather. stomachs are full and sheets are soft. i climb into my bed and it feels like a treat. it seems like the world is in a good mood.`
+	},
+	{
 		date: "11/2",
 		title: "mid-quarter crisis",
 		content: 
