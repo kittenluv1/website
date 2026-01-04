@@ -1,0 +1,257 @@
+/* INDEX BUTTON */
+
+#music {
+	grid-row-start: 5; 
+	grid-column-start: 2; 
+}
+
+#music img, #portfolio img {
+	opacity: 0.9; 
+}
+
+/* MODAL */
+
+.modal {
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20%; 
+	aspect-ratio: 1 / 1.2; 
+	border-radius: 50%; 
+	background-color: transparent; 
+	display: none; 
+	grid-template-rows: 1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr; 
+	grid-template-columns: 2.5fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.4fr; 
+	cursor: pointer; 
+}
+
+.modal:active {
+	cursor: grabbing;
+}
+
+.modal:focus {
+	outline: none; 
+}
+
+#tama-shell {
+	width: 100%;
+    height: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+#screen-div {
+	grid-area: 4 / 2 / 5 / 9;
+	border-radius: 8%; 
+	position: relative; 
+}
+
+#screen-div::after {
+	content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit; 
+	box-shadow: inset 0 0 10px 1px rgba(255, 255, 255, 1), 0 0 5px 5px rgba(255, 255, 255, .7);
+	pointer-events: none;
+}
+
+@font-face {
+	font-family: 'tama-connection';
+	src: url('/fonts/TamaConnectType/tamaconnecttype.ttf') format('truetype');
+}
+
+.tama-screen {
+	width: 100%; 
+	height: 100%; 
+	border-radius: inherit; 
+	font-family: 'tama-connection'; 
+	color: black; 
+	text-shadow: none; 
+	overflow: hidden; 
+}
+
+#music-image {
+	opacity: 0.9; 
+	position: absolute; 
+	user-select: none; 
+}
+
+#instructions {
+	background-color: lightgrey;
+	opacity: 0.8; 
+	position: relative; 
+}
+
+.tama-screen p {
+	padding-top: 8%; 
+	margin: 0; 
+	text-align: center; 
+	font-size: 0.6vw; 
+}
+
+#instructions ul {
+	width: 100%; 
+	margin: 0; 
+	padding: 2% 4% 2% 20%; 
+	font-size: .55vw; 
+	position: relative; 
+	box-sizing: border-box; 
+}
+
+.modal button {
+	background-color: transparent; 
+	padding: 0; 
+	width: 100%;
+	height: 70%; 
+	position: absolute; 
+	border-radius: 50%; 
+	border-color: transparent; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: 'tama-connection', sans-serif;
+	font-size: 0.5rem;
+	opacity: 0.3;
+}
+
+.modal button:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1), inset 0 0 5px rgba(255, 255, 255, 1);
+	opacity: 0.2; 
+	cursor: pointer; 
+}
+
+.modal button:focus {
+	outline: none; 
+}
+
+#heart-btn {
+	grid-area: 2 / 3 / 3 / 8;
+	width: 100%; 
+	height: 100%; 
+	border-radius: 10%; 
+}
+
+#heart-btn:hover {
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 1), inset 0 0 5px rgba(255, 255, 255, 1);
+}
+
+#previous {
+	grid-area: 6 / 2 / 7 / 4; 
+}
+
+#play {
+	grid-area: 6 / 5 / 7 / 6; 
+	bottom: 0; 
+}
+
+#next {
+	grid-area: 6 / 7 / 7 / 9;
+}
+
+/* GAME */
+
+#tama-game {
+	background-image: url('/images/index/modal/plaid.jpg'); 
+	background-size: cover; 
+	opacity: 0.9; 
+	display: none; 
+}
+
+#tama-game > div {
+	background-color: #FAFBF3; 
+	position: relative; 
+	height: 80%; 
+	top: 10%; 
+	overflow: hidden; 
+}
+
+#tama-game p {
+	padding-top: 2%; 
+	font-size: .9vw; 
+	color: #4B4C83; 
+	text-shadow: 
+		-.5px -.5px 0 #6EB7D6,
+		.5px -.5px 0 white,
+		-.5px .5px 0 white,
+		.5px .5px 0 white,
+		0px 0px 2px #4B4C83;
+}
+
+#mametchi {
+	height: 40%; 
+	position: absolute; 
+	bottom: 0; 
+	left: 10%; 
+	opacity: 1.5; 
+}
+
+@keyframes jump {
+	0% { bottom: 0; }
+	50% { bottom: 30%; }
+	100% { bottom: 0; }
+}
+
+.jump {
+	animation: jump 1s cubic-bezier(0.25, 1, 0.5, 1); 
+}
+
+#tama-game span {
+	position: absolute; 
+	font-size: 1vw; 
+	bottom: 0; 
+	left: 110%; 
+	color: #4B4C83; 
+}
+
+@keyframes obstacle {
+	0% { left: 110%; }
+	100% { left: -10% }
+}
+
+.obstacle {
+	animation: obstacle 1.2s linear 1;
+}
+
+.score-div {
+	position: absolute; 
+	top: 25%;  
+	right: 4%; 
+	width: 20%; 
+	text-align: center; 
+}
+
+@keyframes flash {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0; }
+}
+
+.flash {
+	animation: flash .5s; 
+}
+
+#tama-game .game-over {
+	width: 100%; 
+	text-align: center; 
+	position: absolute; 
+	bottom: 50%; 
+	transform: translateY(50%); 
+	display: none; 
+}
+
+#tama-game .game-over p {
+	text-shadow: 
+		-.5px -.5px 0 #E58FB1,
+		.5px -.5px 0 white,
+		-.5px .5px 0 white,
+		.5px .5px 0 white,
+		0px 0px 2px #4B4C83;
+}
+
+#tama-game .game-over p:nth-of-type(2) { 
+	font-size: 0.35vw; 
+}

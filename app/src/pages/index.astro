@@ -1,0 +1,97 @@
+---
+import "../styles/index.css";
+import "../styles/globals.css";
+import Modal from "../components/indexModal/modal.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kittenluv1</title>
+    <link rel="icon" href="/images/index/flyingtoro.png" type="image/png" />
+    <!-- <link rel="stylesheet" href="/index/jump/jump.css" /> -->
+
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"
+    ></script>
+    <script is:inline defer>
+      // Counter is available as a global variable
+      const counter = new Counter({ workspace: "kittenluv1" });
+
+      counter
+        .up("kittenluv1-visits")
+        .then((result) => {
+          console.log("Counter result:", result);
+          document.getElementById("counter").textContent = result.data.up_count;
+        })
+        .catch((err) => console.error(err));
+    </script>
+  </head>
+  <body>
+    <div class="background-container">
+      <button id="blog">
+        <img src="/images/index/lotus.png" alt="lotus" />
+        <p>nostalgiablog</p>
+      </button>
+      <button id="creations">
+        <img src="/images/index/cat.png" alt="plush keychain cat" />
+        <p>creations</p>
+      </button>
+      <button id="japan">
+        <img src="/images/index/japan.png" alt="japan video" />
+        <p>japan tv</p>
+      </button>
+      <button id="portfolio">
+        <img src="/images/unused/XPgirl.png" alt="portfolio" />
+        <p>portfolio</p>
+      </button>
+      <!-- <button id="flappy">
+			<img src="/creations/imgs/games/flappy/kuchipatchi.png" alt="kuchipatchi">
+			<p>flappypatchi</p>
+		</button> -->
+      <!-- <button id="neocities">
+			<img src="/images/index/treble-cat.png" alt="neocities">
+			<p>neocities</p>
+		</button> -->
+      <button id="resources">
+        <img src="/images/index/tool.png" alt="resources" />
+        <p>resources</p>
+      </button>
+      <button id="writing">
+        <img src="/images/index/writing.png" alt="writing" />
+        <p>writing</p>
+      </button>
+      <button id="detective">
+        <img src="/creations/imgs/games/detective/1.png" alt="detective game" />
+        <p>detective</p>
+      </button>
+      <button id="gallery">
+        <img src="/gallery/images/tarepanda1.png" alt="gallery" />
+        <p>gallery</p>
+      </button>
+      <!-- <button id="microblog">
+			<img src="/microblog/imgs/heart-cookie.png">
+			<p>microblog</p>
+		</button> -->
+
+      <Modal client:visible />
+    </div>
+
+    <!-- WINDOWS XP FOOTER -->
+    <footer>
+      <img src="/images/index/start.png" />
+      <div id="copyright">
+        <div>visits: <span id="counter"></span></div>
+        <p>&copy; e**** 2024</p>
+        <img src="/images/index/flyingtoro.png" alt="flying toro" />
+      </div>
+    </footer>
+  </body>
+
+  <script src="../scripts/index.js"></script>
+  <!-- <script src="/src/pages/index/music/music.js"></script> -->
+  <!-- <script src="/index/jump/jump.js" defer></script> -->
+</html>

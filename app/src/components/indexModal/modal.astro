@@ -1,0 +1,47 @@
+---
+import "./modal.css";
+---
+
+<button id="music">
+  <img src="/images/index/cd.png" alt="cd" />
+  <p>play</p>
+</button>
+
+<div class="modal" tabindex="0">
+  <img
+    id="tama-shell"
+    src="/images/index/modal/shells/0.png"
+    draggable="false"
+  />
+  <button id="heart-btn"></button>
+  <div id="screen-div">
+    <img class="tama-screen" id="music-image" draggable="false" />
+    <div class="tama-screen" id="instructions">
+      <p>%Instructions%</p>
+      <ul>
+        <li>click and drag to move</li>
+        <li>double click to close</li>
+        <li>click 'B' to play music</li>
+        <li>press ᧔%᧓ to play game</li>
+      </ul>
+    </div>
+    <div class="tama-screen" id="tama-game">
+      <div>
+        <p>tama jump!</p>
+        <img id="mametchi" src="/images/index/modal/mametchi.png" />
+        <div class="score-div flash">
+          <p id="score">0</p>
+        </div>
+        <div class="game-over flash">
+          <p>game over!</p>
+          <p>press space to play again</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="audio"></audio>
+  <button id="previous">A</button>
+  <button id="play">B</button>
+  <button id="next">C</button>
+</div>
+<script src="./modal.js"></script>
