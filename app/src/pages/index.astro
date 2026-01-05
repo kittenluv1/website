@@ -2,6 +2,8 @@
 import "../styles/index.css";
 import "../styles/globals.css";
 import Modal from "../components/indexModal/modal.astro";
+import { Image } from "astro:assets";
+import backgroundImgSrc from "../images/index.jpg";
 ---
 
 <!doctype html>
@@ -10,7 +12,7 @@ import Modal from "../components/indexModal/modal.astro";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kittenluv1</title>
-    <link rel="icon" href="/images/index/flyingtoro.png" type="image/png" />
+    <link rel="icon" href="/images/index/index.jpg" type="image/jpg" />
     <!-- <link rel="stylesheet" href="/index/jump/jump.css" /> -->
 
     <script
@@ -32,6 +34,15 @@ import Modal from "../components/indexModal/modal.astro";
   </head>
   <body>
     <div class="background-container">
+      <Image
+        src={backgroundImgSrc}
+        alt=""
+        loading="eager"
+        fetchpriority="high"
+        sizes="100vw"
+        class="bg-img"
+      />
+
       <button id="blog">
         <img src="/images/index/lotus.png" alt="lotus" />
         <p>nostalgiablog</p>
