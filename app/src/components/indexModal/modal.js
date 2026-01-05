@@ -1,4 +1,4 @@
-import songsData from "../../data/songs.json";
+import songs from "../../data/songs.json";
 
 // MODAL INTERACTIVITY
 const modal = document.querySelector(".modal");
@@ -194,7 +194,6 @@ function changeImage() {
 
 // AUDIO
 let songIndex = 0;
-const songs = songsData;
 const audio = document.getElementById("audio");
 const prevButton = document.getElementById("previous");
 const playButton = document.getElementById("play");

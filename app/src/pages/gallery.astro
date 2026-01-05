@@ -1,0 +1,56 @@
+---
+import "../styles/gallery.css";
+import images from "../data/gallery.json" assert { type: "json" };
+import GalleryImage from "../components/galleryImage.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photo gallery</title>
+    <link rel="icon" href="/images/gallery/tarepanda1.png" type="image/png" />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <img id="loading-image" src="/images/gallery/tarepanda1.png" />
+    </div>
+
+    <div id="main-content">
+      <div id="audio-div">
+        <a href="/">&larr; home</a>
+        <audio controls src="/audio/music/When someone's mind is in a hurry.mp3"
+        ></audio>
+        <a href="https://www.youtube.com/watch?v=UMcqpEuMUrs" target="_blank"
+          >audio credit. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</a
+        >
+        <p>
+          thank you for visiting my photo gallery ⸜(｡˃ ᵕ ˂ )⸝♡-ˋˏ ༻ ❁ ✿ ❀༺ ˎ‧₊˚❀
+          ༉ ‧₊ ˚. ☘︎
+        </p>
+      </div>
+      <div id="gallery" class="masonry-grid">
+        {
+          images.map((img) => (
+            <GalleryImage url={img.url} caption={img.caption} client:load />
+          ))
+        }
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        const loadingScreen = document.getElementById("loading-screen");
+        const mainContent = document.getElementById("main-content");
+
+        mainContent!.classList.add("visible");
+        loadingScreen!.classList.add("hidden");
+        // remove loader from layout after transition
+        setTimeout(() => {
+          loadingScreen!.style.display = "none";
+        }, 400);
+      });
+    </script>
+  </body>
+</html>
