@@ -4,6 +4,7 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "strict": false
   }
 }

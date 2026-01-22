@@ -1,0 +1,222 @@
+---
+import "../../styles/globals.css";
+import "../../styles/blog.css";
+
+export function getStaticPaths() {
+  return [
+    { params: { year: "2024" } },
+    { params: { year: "2025" } },
+    { params: { year: "2026" } },
+  ];
+}
+
+const { year } = Astro.params;
+
+import data2024 from "../../data/blogs/2024.js";
+import data2025 from "../../data/blogs/2025.js";
+import data2026 from "../../data/blogs/2026.js";
+
+const blogData = {
+  "2024": data2024,
+  "2025": data2025,
+  "2026": data2026,
+};
+
+const articles = blogData[year];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nostalgiablog</title>
+    <link rel="icon" href="/images/index/lotus.png" type="image/png" />
+  </head>
+  <body>
+    <img src="/images/blog/flower.png" id="lotus" alt="lotus" />
+    <header>
+      <div class="button-container">
+        <button id="index" onclick="location.href='/'">
+          <img src="/images/blog/happyghost.png" />
+          <p>home</p>
+        </button>
+        <button id="mode">
+          <img src="/images/blog/angel.png" />
+          <p>mode</p>
+        </button>
+      </div>
+      <h1>nostalgiablog</h1>
+      <p>the contents of this blog are entirely fictional.</p>
+    </header>
+    <main>
+      <aside>
+        <div id="links">
+          <ul>
+            <!-- dynamically insert links to articles -->
+            {
+              articles.map((article: any, index: number) => (
+                <li>
+                  <a href={`#${index.toString()}`}>
+                    {article.title ? article.title : "..."}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div id="years">
+          {
+            Object.keys(blogData).map((year) => (
+              <a
+                href={`./${year}`}
+                id={year}
+                class={year === Astro.params.year ? "selected" : ""}
+              >
+                {year}
+              </a>
+            ))
+          }
+        </div>
+      </aside>
+      <div id="articles">
+        {
+          articles.map((article: any, index: number) => (
+            <article id={index.toString()}>
+              {article.title && <h2>{article.title}</h2>}
+              {article.date && <span>{article.date}</span>}
+              {article.tag === "spiral" ? (
+                <div class="spiral-container" data-content={article.content} />
+              ) : (
+                <pre class={article.tag}>{article.content}</pre>
+              )}
+            </article>
+          ))
+        }
+      </div>
+    </main>
+  </body>
+
+  <script>
+    // toggle dark mode
+    const body = document.querySelector("body");
+    const modeBtn = document.getElementById("mode");
+    const h1 = document.querySelector("h1");
+
+    modeBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      h1.classList.toggle("glow");
+      document
+        .querySelectorAll("a")
+        .forEach((link) => link.classList.toggle("dark-link"));
+
+      // Update all spiral text elements
+      const isDarkMode = body.classList.contains("dark-mode");
+      document.querySelectorAll(".spin").forEach((textElement) => {
+        textElement.setAttribute("fill", isDarkMode ? "white" : "black");
+      });
+    });
+
+    // spiral article rendering
+    const SVG_NS = "http://www.w3.org/2000/svg";
+    const spiralContainers = document.querySelectorAll(".spiral-container");
+
+    spiralContainers.forEach((container) => {
+      const content = container.getAttribute("data-content");
+      if (!content) return;
+
+      // create svg
+      const svg = document.createElementNS(SVG_NS, "svg");
+
+      // code for spiral
+      const spiralText = content + " \u2022 "; // add a spacer (bullet) between repeats
+      const repeats = 20;
+
+      // Archimedean spiral r = a + b * theta
+      const a = 2; // inner offset (px)
+      const b = 4.5; // spiral 'tightness' (px per radian)
+      const turns = 12; // how many full revolutions
+      const step = 0.1; // radians step for sampling points (smaller = smoother)
+      const pad = 24; // padding (px) around spiral to avoid clipping text
+      const fontSize = 20; // used only to suggest padding size; tune if needed
+
+      // ---------- MATH: compute maximum radius ----------
+      const thetaMax = turns * 2 * Math.PI;
+      const rMax = a + b * thetaMax;
+
+      // make the SVG coordinates positive by placing the spiral center at (rMax + pad, rMax + pad)
+      const cx = rMax + pad;
+      const cy = rMax + pad;
+      const size = (rMax + pad) * 2; // the viewBox will be 0 0 size size
+
+      // ---------- Set viewBox of svg using math (circle-based) ----------
+      svg.setAttribute("viewBox", `0 0 ${size} ${size}`);
+      svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+
+      // Build the path (sampled points) centered at cx,cy
+      const pts = [];
+      for (let theta = 0; theta <= thetaMax + 1e-6; theta += step) {
+        const r = a + b * theta;
+        const x = cx + r * Math.cos(theta);
+        const y = cy + r * Math.sin(theta);
+        pts.push([x, y]);
+      }
+      const d =
+        "M " +
+        pts.map(([x, y]) => `${x.toFixed(2)} ${y.toFixed(2)}`).join(" L ");
+
+      const defs = document.createElementNS(SVG_NS, "defs");
+      const path = document.createElementNS(SVG_NS, "path");
+      const pathId = `spiral-${Math.random().toString(36).substr(2, 9)}`;
+      path.setAttribute("id", pathId);
+      path.setAttribute("d", d);
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", "none");
+      defs.appendChild(path);
+
+      const text = document.createElementNS(SVG_NS, "text");
+      const textPath = document.createElementNS(SVG_NS, "textPath");
+      textPath.setAttributeNS(
+        "http://www.w3.org/1999/xlink",
+        "href",
+        `#${pathId}`,
+      );
+      textPath.setAttribute("startOffset", "0%");
+      textPath.textContent = spiralText.repeat(repeats);
+      text.classList.add("spin");
+      text.setAttribute("fill", "black");
+      text.appendChild(textPath);
+
+      // --- Text buffer ---
+      const pathLength = path.getTotalLength();
+      const repeatCount =
+        Math.ceil(pathLength / (spiralText.length * fontSize)) + 2;
+      let buffer = spiralText.repeat(repeatCount); // starting text
+      textPath.textContent = buffer;
+
+      let pixelCounter = 0;
+      const speed = 0.2; // px per frame
+
+      function animate() {
+        pixelCounter += speed;
+
+        // when enough pixels = 1 char, rotate string by 1 char
+        if (pixelCounter >= fontSize) {
+          // take first char and move it to the end
+          buffer = buffer.slice(1) + buffer[0];
+          textPath.textContent = buffer;
+
+          pixelCounter -= fontSize;
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+
+      svg.appendChild(defs);
+      svg.appendChild(text);
+      container.appendChild(svg);
+    });
+  </script>
+</html>

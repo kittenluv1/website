@@ -1,0 +1,244 @@
+body {
+	overflow: hidden; 
+	font-family: simsun, serif; 
+	background-image: url('/images/blog/background.jpg');
+	background-size: cover; 
+	background-blend-mode: difference;
+	background-color: black;
+	color: black;
+	transition: all 1s;
+}
+
+body.dark-mode {
+	background-color: white;
+	color: white; 
+}
+
+/* ===========================HEADING======================= */
+
+#lotus {
+	position: absolute; 
+	height: 15%; 
+	width: 30%;
+	top: 0%; 
+	left: 50%; 
+	transform: translateX(-50%); 
+	opacity: 0.5;  
+}
+
+header {
+	height: 10vh; 
+	display: flex; 
+	justify-content: center; 
+	align-items: end; 
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	right: 0;  
+}
+
+h1 {
+	position: absolute; 
+	margin: 0; 
+	font-size: 3.5rem; 
+	transition: all 1s ease-in;
+	text-shadow: 
+		-1px -1px 0 #feeeed,
+		1px -1px 0 #555555,
+		-1px 1px 0 #555555,
+		1px 1px 0 #555555,
+		0px 0px 2px black;
+}
+
+/* applied to title text on dark mode */
+.glow {
+	color: #feeeed;
+	text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 #555555,
+		-1px 1px 0 #555555,
+		1px 1px 0 #555555,
+		0px 0px 2px #feeeed,
+    	0 0 4px #FFF297,
+    	0 0 15px #FFF297,
+    	0 0 20px #FFF297,
+		0 0 40px #FFF297; 
+}
+
+/* disclaimer */
+header > p {
+	position: absolute; 
+	bottom: 2%; 
+	right: 1%; 
+	font-size: 1rem; 
+	font-weight: bold;
+}
+
+/* page buttons */
+
+header > .button-container {
+	display: flex; 
+	flex-direction: row; 
+	margin-right: auto; 
+	position: relative; 
+	height: 100%;
+}
+
+button {
+	display: flex; 
+	flex-direction: column;
+	align-items: center; 
+	border: none; 
+	background-color: transparent; 
+	font-size: 1em; 
+	font-family: simsun, serif; 
+	padding: 0; 
+	aspect-ratio: 1/1; 
+	height: 100%; 
+	width: 10vh; 
+}
+
+button img {
+	position: absolute;
+	top: 10%; 
+	bottom: 20%; 	
+	height: 70%; 
+	width: auto; 
+	border-radius: inherit;
+}
+
+button p {
+	position: absolute; 
+	margin: 0; 
+	bottom: 5%; 
+	color: white;
+	text-shadow: 
+		-1px -1px 0 #555555,
+		1px -1px 0 #555555,
+		-1px 1px 0 #555555,
+		1px 1px 0 #555555,
+		0px 0px 2px black;
+	font-family: simsun, serif; 
+}
+
+/* ====================ASIDE - NAV================= */
+
+aside {
+	width: 15vw; 
+	font-size: 2vh;  
+	font-family: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+	display: flex; 
+	flex-direction: column;
+}
+
+/* list of links to articles */
+#links {
+	flex: 1; 
+	overflow-y: auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0; 
+	padding: 0; 
+}
+
+li {
+	margin: 5%; 
+	padding: 2%; 
+}
+
+a {
+	transition: color 1s;
+}
+
+/* dark mode links */
+.dark-link {
+	color: #8ECBE0;
+}
+
+.dark-link:visited {
+	color: #EDC0D6;
+}
+
+/* links to different years */
+#years {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+aside > div > a {
+	margin: 5%; 
+	padding: 0; 
+	font-size: 0.6rem; 
+}
+
+.selected {
+	font-size: 1rem; 
+}
+
+/* =====================MAIN - ARTICLES=================== */
+main {
+	position: absolute; 
+	top: 10vh; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	display: flex;  
+}
+
+#articles {
+	flex: 1; 
+	height: 100%; 
+	overflow-y: scroll; 
+	scroll-behavior: smooth; 
+	padding: 2%;
+	box-sizing: border-box; 
+	text-align: justify;
+}
+
+/* individual articles */
+article {
+	padding-top: 4%; 
+	margin: -2% 2% 2% 2%; 
+}
+
+h2 {
+	font-size: 1.8rem; 
+	margin: 1% 0%; 
+}
+
+span {
+	font-size: 1rem; 
+	font-family: Consolas, 'Courier New', monospace; 
+}
+
+pre {
+	white-space: pre-wrap; 
+	font-size: 1rem; 
+	line-height: 1.5; 
+	font-family: simsun, serif; 
+}
+
+/* sfx */
+.blur {
+	filter: blur(1.6px); 
+}
+
+svg {
+  display: block;
+  width: min(60vw, 500px);
+  height: auto;
+}
+
+.spin {
+  animation: spin 100s linear infinite; 
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
