@@ -69,7 +69,7 @@ const articles = blogData[year];
           {
             Object.keys(blogData).map((year) => (
               <a
-                href={`./${year}`}
+                href={`/blog/${year}`}
                 id={year}
                 class={year === Astro.params.year ? "selected" : ""}
               >
