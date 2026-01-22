@@ -1,0 +1,363 @@
+---
+import UnderConstruction from "../components/underConstruction.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="erica huang web development portfolio" />
+    <link rel="icon" href="imgs/decor/blueflower.png" type="image/png" />
+    <link rel="stylesheet" href="/global/styles.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="portfolio.js" defer></script>
+    <title>erica huang's portfolio</title>
+  </head>
+  <body>
+    <UnderConstruction />
+    <div id="loading-screen">
+      <picture>
+        <source type="image/webp" srcset="imgs/decor/blueflower.webp" />
+        <source type="image/png" srcset="imgs/decor/blueflower.png" />
+        <img
+          class="spinner"
+          src="imgs/decor/blueflower.png"
+          alt="spinning flower"
+        />
+      </picture>
+      <h3>loading...</h3>
+    </div>
+    <div id="main-content">
+      <header>
+        <nav>
+          <a class="section-link" href="#about">about</a>
+          <a class="section-link" href="#projects">projects</a>
+          <a class="section-link" href="#about">contact</a>
+        </nav>
+        <div>
+          <picture>
+            <source type="image/webp" srcset="imgs/decor/scrap.webp" />
+            <source type="image/png" srcset="imgs/decor/scrap.png" />
+            <img id="border" src="imgs/decor/scrap.png" alt="" />
+          </picture>
+          <div>
+            <p id="hello">HELLO, <br /> MY NAME IS:</p>
+            <p id="name">erica huang</p>
+          </div>
+          <!-- decals -->
+          <picture>
+            <source type="image/webp" srcset="imgs/decor/clip.webp" />
+            <source type="image/png" srcset="imgs/decor/clip.png" />
+            <img id="clip" class="decal" src="imgs/decor/clip.png" alt="" />
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="imgs/decor/yellowflower.webp" />
+            <source type="image/png" srcset="imgs/decor/yellowflower.png" />
+            <img
+              id="yellowflower"
+              class="flower decal"
+              src="imgs/decor/yellowflower.png"
+              alt=""
+            />
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="imgs/decor/blueflower.webp" />
+            <source type="image/png" srcset="imgs/decor/blueflower.png" />
+            <img
+              id="blueflower"
+              class="flower decal"
+              src="imgs/decor/blueflower.png"
+              alt=""
+            />
+          </picture>
+        </div>
+        <a href="#info" aria-label="info"></a>
+      </header>
+      <main>
+        <div id="info">
+          <div id="about">
+            <h1>About Me</h1>
+            <div class="decal-div" id="heart">
+              <picture>
+                <source type="image/webp" srcset="imgs/decor/heart.webp" />
+                <source type="image/png" srcset="imgs/decor/heart.png" />
+                <img class="decal" src="imgs/decor/heart.png" alt="" />
+              </picture>
+              <p>Folsom, <br /> California</p>
+            </div>
+            <p>
+              Hi! I'm <b>Erica Huang</b>, a developer who loves bringing ideas
+              to life through thoughtful design and interactive experiences. I’m
+              drawn to roles in <b>web and software development</b> where I can create
+              projects that are not only functional, but also visually engaging and
+              meaningful. In my free time, I enjoy skating, crafting, and tinkering
+              with my websites. Please feel free to <b>contact me</b> to talk about
+              any of my work!
+            </p>
+            <div class="contact-container">
+              <div class="contact-div">
+                <a
+                  href="https://github.com/kittenluv1"
+                  target="_blank"
+                  title="github"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="imgs/contacts/github.webp"
+                    />
+                    <source
+                      type="image/png"
+                      srcset="imgs/contacts/github.png"
+                    />
+                    <img src="imgs/contacts/github.png" alt="github" />
+                  </picture>
+                </a>
+              </div>
+              <div class="contact-div">
+                <a
+                  href="https://www.linkedin.com/in/ericahuang916/"
+                  target="_blank"
+                  title="linkedin"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="imgs/contacts/linkedin.webp"
+                    />
+                    <source
+                      type="image/png"
+                      srcset="imgs/contacts/linkedin.png"
+                    />
+                    <img src="imgs/contacts/linkedin.png" alt="linkedin" />
+                  </picture>
+                </a>
+              </div>
+              <div class="contact-div">
+                <a
+                  href="imgs/contacts/erica huang.pdf"
+                  target="_blank"
+                  title="resume"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="imgs/contacts/resume.webp"
+                    />
+                    <source
+                      type="image/png"
+                      srcset="imgs/contacts/resume.png"
+                    />
+                    <img src="imgs/contacts/resume.png" alt="resume" />
+                  </picture>
+                </a>
+              </div>
+              <div class="contact-div">
+                <a href="mailto:ericahuang916@gmail.com" title="email">
+                  <img src="imgs/contacts/email.png" alt="email" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="projects">
+            <h1>Projects</h1>
+            <div class="project-group" id="personal">
+              <h2>Web & mobile</h2>
+              <div class="project-container">
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://www.studentaffairs.ucla.edu/"
+                    target="_blank"
+                  >
+                    <img
+                      src="/portfolio/imgs/ucla.png"
+                      alt="ucla student affairs website"
+                    />
+                  </a>
+                  <h3>UCLA Student Affairs</h3>
+                  <span>SvelteKit, TailwindCSS, TypeScript</span>
+                  <p>
+                    Student developer for UCLA Student Affairs websites. True
+                    Bruin and Financial Education sites coming soon.
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://www.clubhouseucla.com/"
+                    target="_blank"
+                  >
+                    <img src="/portfolio/imgs/clubhouse.png" alt="clubhouse" />
+                  </a>
+                  <h3>Clubhouse</h3>
+                  <span>Next.js, Supabase, Vercel</span>
+                  <p>
+                    An online platform for reviewing student organizations at
+                    UCLA. Sign in with a UCLA email to leave a review, or find a
+                    club to learn more!
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <a class="project-link" href="/" target="_blank">
+                    <img
+                      src="/creations/imgs/web/kittenluv1/index.png"
+                      alt="homepage"
+                    />
+                  </a>
+                  <h3>kittenluv1</h3>
+                  <span>HTML, CSS, JavaScript</span>
+                  <p>
+                    My personal website featuring a playable tamagotchi game,
+                    creative portfolio, and blog. Everything is built from
+                    *scratch*!
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544?l=es-MX"
+                    target="_blank"
+                  >
+                    <img src="/portfolio/imgs/morii.PNG" alt="morii" />
+                  </a>
+                  <h3>Morii - Moments That Stay</h3>
+                  <span>Express.js, Node.js, MongoDB</span>
+                  <p>
+                    A mobile app for sharing and tracking your emotions,
+                    analyzing your moods, and staying in touch with your
+                    community. Available on the app store!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="project-group" id="class">
+              <h2>Games</h2>
+              <div class="project-container">
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://introspec.itch.io/dimensional-detective"
+                    target="_blank"
+                  >
+                    <img
+                      src="/creations/imgs/games/detective/2.png"
+                      alt="tama JUMP!"
+                    />
+                  </a>
+                  <h3>Dimensional Detective</h3>
+                  <span>Unity, Blender, C#</span>
+                  <p>
+                    A dialogue-driven point-and-click whodunit game. Solve
+                    multiversal mysteries to restore order and peace... can you
+                    find the real culprit?
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <div class="project-img">
+                    <img
+                      src="/creations/imgs/games/psychosis/1.png"
+                      alt="psychosis"
+                    />
+                  </div>
+                  <h3>Psychosis</h3>
+                  <span>Unity, C#</span>
+                  <p>
+                    A first-person shooter game set in a cyberpunk dystopia.
+                    Take drugs to alter state and assasinate your targets to
+                    level up. Worked on diegetic UI; WIP
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <img
+                    id="mametchi"
+                    class="decal"
+                    src="/index/jump/imgs/mametchi.png"
+                    alt=""
+                  />
+                  <a class="project-link" href="/#tama" target="_blank">
+                    <img
+                      src="/creations/imgs/web/kittenluv1/tamaJUMP!.png"
+                      alt="tama JUMP!"
+                    />
+                  </a>
+                  <h3>tama JUMP!</h3>
+                  <span>JavaScript</span>
+                  <p>
+                    An endless runner game where you avoid the obstacles. The
+                    tama JUMP! console is customizable and doubles as a music
+                    player!!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-container">
+            <div class="contact-div">
+              <a
+                href="https://github.com/kittenluv1"
+                target="_blank"
+                title="github"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="imgs/contacts/github.webp"
+                  />
+                  <source type="image/png" srcset="imgs/contacts/github.png" />
+                  <img src="imgs/contacts/github.png" alt="github" />
+                </picture>
+              </a>
+            </div>
+            <div class="contact-div">
+              <a
+                href="https://www.linkedin.com/in/ericahuang916/"
+                target="_blank"
+                title="linkedin"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="imgs/contacts/linkedin.webp"
+                  />
+                  <source
+                    type="image/png"
+                    srcset="imgs/contacts/linkedin.png"
+                  />
+                  <img src="imgs/contacts/linkedin.png" alt="linkedin" />
+                </picture>
+              </a>
+            </div>
+            <div class="contact-div">
+              <a
+                href="imgs/contacts/erica huang.pdf"
+                target="_blank"
+                title="resume"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="imgs/contacts/resume.webp"
+                  />
+                  <source type="image/png" srcset="imgs/contacts/resume.png" />
+                  <img src="imgs/contacts/resume.png" alt="resume" />
+                </picture>
+              </a>
+            </div>
+            <div class="contact-div">
+              <a href="mailto:ericahuang916@gmail.com" title="email">
+                <img src="imgs/contacts/email.png" alt="email" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
