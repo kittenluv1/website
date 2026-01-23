@@ -1,0 +1,192 @@
+body {
+	background-color: black;
+	color: white; 
+	font-family: "Death Note", sans-serif; 
+	position: relative;
+	padding: 3rem;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Death Note";
+	src: url("/fonts/death-note/Death Note.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Gothic War";
+	src: url("/fonts/Gothic War.otf") format("opentype");
+}
+
+/* ========================= NAV ==================== */
+
+nav {
+	font-size: 2rem;
+	height: 100%;
+	position: fixed;
+	padding-right: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex; 
+	flex-direction: column; 
+	gap: 2rem;
+}
+
+li {
+	display: flex;
+	align-items: center;
+}
+
+li > img.sword {
+	height: 2rem;
+	margin-left: 1rem;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+li.active > img.sword {
+	opacity: 1;
+}
+
+a {
+	color: white; 
+	text-decoration: none; 
+}
+
+a:hover {
+	text-decoration: underline;
+	text-shadow: 0 0 5px white, 0 0 10px white;
+}
+
+/* ======================== MAIN ======================= */
+
+main {
+	flex: 1; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center;
+	justify-items: center; 
+	margin: 0 0 5% 20%;
+	margin-left: 15%; /* to avoid nav */
+	gap: 4rem;
+	padding: 2rem;
+}
+
+/* header */
+
+header {
+	width: 100%;
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	font-family: "Death Note", sans-serif;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+#h1-image {
+	position: absolute; 
+	margin-top: 1rem;
+	width: 15rem;
+}
+
+/* sections */
+
+section {
+	width: 100%; 
+	box-sizing: border-box; 
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	font-family: "Gothic War", sans-serif; 
+}
+
+#about {
+	text-align: center;
+}
+
+/* contact buttons */
+
+#contact-buttons-div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#contact-buttons-div > a {
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white; 
+	font-family: "Death Note", sans-serif; 
+	min-width: 8rem;
+}
+
+button {
+	background: transparent;
+	border: none; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white; 
+	font-family: "Death Note", sans-serif; 
+	min-width: 8rem;
+}
+
+button > img {
+	height: 5rem;
+	margin-bottom: 0.5rem;
+}
+
+#contact-buttons-div > a > img {
+	height: 5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+/* copy tooltip */
+
+.copy-tooltip {
+	position: absolute;
+	color: white;
+	text-shadow: 1px 1px 3px black, 0px 0px 5px white;
+	pointer-events: none;
+	z-index: 1000;
+	animation: fadeOut 1.5s ease forwards;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: translate(-50%, -120%);
+	}
+	70% {
+		opacity: 1;
+		transform: translate(-50%, -120%);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -140%);
+	}
+}
+
+/* decals */
+
+#skeleton-angel-decal {
+	width: 25rem;
+	position: absolute;
+	bottom: 0; 
+	left: 0; 
+}
