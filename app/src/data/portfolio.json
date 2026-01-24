@@ -16,7 +16,7 @@
 		}, 
 		{
 			"title": "bunnyluv1", 
-			"href": "https://www.bunnyluv1.com/",
+			"href": "/",
 			"imgSrc": "/images/portfolio/website.png",
 			"stack": "Astro, Cloudflare Pages",
 			"description": "My personal website featuring a playable tamagotchi game, creative portfolio, and blog. Currently going through a refactor from plain HTML/CSS/JS to Astro."
@@ -45,6 +45,7 @@
 		}, 
 		{
 			"title": "Tama JUMP!",
+			"href": "/#tama",
 			"imgSrc": "/images/portfolio/tamajump.png",
 			"stack": "Javascript", 
 			"description": "An endless runner game where you avoid the obstacles. The tama JUMP! console is customizable and doubles as a music player!!"

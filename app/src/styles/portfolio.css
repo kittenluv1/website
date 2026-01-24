@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+
 body {
 	background-color: black;
 	color: white; 
@@ -20,8 +24,7 @@ body {
 /* ========================= NAV ==================== */
 
 nav {
-	font-size: 2rem;
-	height: 100%;
+	font-size: 1.5rem;
 	position: fixed;
 	padding-right: 0;
 	box-sizing: border-box;
@@ -33,7 +36,7 @@ ul {
 	margin: 0;
 	display: flex; 
 	flex-direction: column; 
-	gap: 2rem;
+	gap: 1.5rem;
 }
 
 li {
@@ -72,22 +75,25 @@ main {
 	justify-items: center; 
 	margin: 0 0 5% 20%;
 	margin-left: 15%; /* to avoid nav */
-	gap: 4rem;
-	padding: 2rem;
+	/* gap: 4rem; */
+	padding: 0 2rem;
 }
 
-/* header */
+/* ============================== HEADER ========================= */
 
 header {
 	width: 100%;
 	display: flex; 
 	justify-content: center; 
 	align-items: center;
-	font-family: "Death Note", sans-serif;
+	perspective: 1000px;
+	margin-top: 4rem;
 }
 
 h1 {
 	font-size: 6rem;
+	font-family: "Pinyon Script", "Death Note", sans-serif;
+	font-weight: 200;
 }
 
 #h1-image {
@@ -96,23 +102,51 @@ h1 {
 	width: 15rem;
 }
 
-/* sections */
+/* wings */
+
+.wing {
+	width: 15rem;
+	transition: transform 0.5s ease-out;
+	transform-style: preserve-3d;
+	z-index: 20;
+}
+
+#cyber-wing-img-left {
+	transform-origin: right center;
+}
+
+#cyber-wing-img-right {
+	transform-origin: left center;
+}
+
+/* ============================== SECTIONS ========================= */
 
 section {
 	width: 100%; 
 	box-sizing: border-box; 
-	font-family: sans-serif;
+	font-family: "Death Note", sans-serif; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 4rem;
 }
 
 h2 {
-	font-family: "Gothic War", sans-serif; 
+	font-size: 2rem;
+	text-shadow: 0 0 10px white;
 }
 
 #about {
 	text-align: center;
+}
+
+#about-img {
+	width: 10rem;
+	margin-top: 1rem;
+}
+
+p {
+	font-family: sans-serif;
 }
 
 /* contact buttons */
@@ -163,7 +197,7 @@ button > img {
 	color: white;
 	text-shadow: 1px 1px 3px black, 0px 0px 5px white;
 	pointer-events: none;
-	z-index: 1000;
+	z-index: 20;
 	animation: fadeOut 1.5s ease forwards;
 }
 
@@ -184,8 +218,40 @@ button > img {
 
 /* decals */
 
+#belt-decal {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 2rem;
+	height: 20rem;
+}
+
+.cyber-decal {
+	position: absolute;
+	width: 30rem;
+	opacity: 0.6; 
+}
+
+#cyber-decal-top {
+	top: 0; 
+	right: 0; 
+}
+
+#cyber-decal-left {
+	top: 0; 
+	left: 15%; 
+	transform: scaleX(-1);
+}
+
+#cyber-decal-bottom {
+	bottom: 0; 
+	right: 0; 
+	transform: scaleY(-1);
+	width: 20rem;
+}
+
 #skeleton-angel-decal {
-	width: 25rem;
+	width: 30rem;
 	position: absolute;
 	bottom: 0; 
 	left: 0; 

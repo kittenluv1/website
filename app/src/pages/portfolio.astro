@@ -19,11 +19,28 @@ import Project from "../components/portfolioProject.astro";
     />
   </head>
   <body>
+    <!-- <img src="/images/portfolio/stud-belt.png" id="belt-decal" /> -->
+    <img
+      src="/images/portfolio/cyber-decal.png"
+      class="cyber-decal"
+      id="cyber-decal-top"
+    />
+    <img
+      src="/images/portfolio/cyber-decal.png"
+      class="cyber-decal"
+      id="cyber-decal-left"
+    />
+    <img
+      src="/images/portfolio/cyber-decal.png"
+      class="cyber-decal"
+      id="cyber-decal-bottom"
+    />
     <img src="/images/portfolio/skeleton-angel.gif" id="skeleton-angel-decal" />
+
     <nav>
       <ul>
         <li data-section="home">
-          <a href="/">go home</a>
+          <a href="/">&larr; go home</a>
           <img src="/images/portfolio/sword.png" class="sword" />
         </li>
         <li data-section="about">
@@ -47,7 +64,17 @@ import Project from "../components/portfolioProject.astro";
 
     <main>
       <header>
-        <h1>ERICA &emsp; HUANG</h1>
+        <img
+          src="/images/portfolio/wing-left.png"
+          class="wing"
+          id="cyber-wing-img-left"
+        />
+        <h1>Erica &emsp; Huang</h1>
+        <img
+          src="/images/portfolio/wing-right.png"
+          class="wing"
+          id="cyber-wing-img-right"
+        />
         <img src="/images/portfolio/lotus-transparent.png" id="h1-image" />
       </header>
 
@@ -59,6 +86,9 @@ import Project from "../components/portfolioProject.astro";
           engaging digital experiences. In my free time, I enjoy skating,
           crafting, and tinkering with my websites.
         </p>
+        <a href="#web">
+          <img src="/images/portfolio/dn-heart.jpg" id="about-img" />
+        </a>
       </section>
 
       <section id="web">
@@ -170,11 +200,11 @@ import Project from "../components/portfolioProject.astro";
           const docHeight = document.documentElement.scrollHeight;
 
           // top of window
-          if (scrollTop === 0) {
-            currentSection = "home";
+          if (scrollTop >= 0 && scrollTop < sections[0].offsetTop) {
+            currentSection = "about";
           }
           // bottom of window
-          else if (scrollTop + windowHeight >= docHeight) {
+          if (scrollTop + windowHeight >= docHeight) {
             currentSection = "contact";
           }
           // in a section
@@ -196,6 +226,59 @@ import Project from "../components/portfolioProject.astro";
 
       window.addEventListener("scroll", updateActiveSection);
       window.addEventListener("load", updateActiveSection);
+
+      // Wing flapping animation on scroll
+      const leftWing = document.getElementById("cyber-wing-img-left");
+      const rightWing = document.getElementById("cyber-wing-img-right");
+      let isScrolling = false;
+      let scrollTimeout = null;
+      let flapPhase = 0;
+      let animationId = null;
+
+      function updateWings() {
+        if (isScrolling) {
+          // Increment phase at consistent speed
+          flapPhase += 0.1;
+
+          // Calculate rotation angle using sine wave for smooth flapping motion
+          const flapAngle = Math.sin(flapPhase) * 60; // ±60 degrees
+
+          // Apply rotation to wings
+          leftWing.style.transform = `rotateY(${flapAngle}deg)`;
+          rightWing.style.transform = `rotateY(${-flapAngle}deg)`;
+
+          // Continue animation
+          animationId = requestAnimationFrame(updateWings);
+        } else {
+          // Reset to neutral position when stopped
+          leftWing.style.transform = "rotateY(0deg)";
+          rightWing.style.transform = "rotateY(0deg)";
+        }
+      }
+
+      function handleScroll() {
+        // Start flapping if not already
+        if (!isScrolling) {
+          isScrolling = true;
+          updateWings();
+        }
+
+        // Clear existing timeout
+        clearTimeout(scrollTimeout);
+
+        // Set timeout to stop flapping after scrolling ends
+        scrollTimeout = setTimeout(() => {
+          isScrolling = false;
+          if (animationId) {
+            cancelAnimationFrame(animationId);
+          }
+          // Reset to neutral position
+          leftWing.style.transform = "rotateY(0deg)";
+          rightWing.style.transform = "rotateY(0deg)";
+        }, 150); // Stop 150ms after scrolling ends
+      }
+
+      window.addEventListener("scroll", handleScroll);
     </script>
   </body>
 </html>
