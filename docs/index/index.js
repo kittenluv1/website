@@ -14,7 +14,10 @@ document
   );
 document
   .getElementById("portfolio")
-  .addEventListener("dblclick", () => window.open("portfolio"));
+  .addEventListener(
+    "dblclick",
+    () => (window.location.href = "https://www.bunnyluv1.com/portfolio/"),
+  );
 document
   .getElementById("flappy")
   .addEventListener("dblclick", () =>

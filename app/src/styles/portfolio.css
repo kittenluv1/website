@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
 	background-color: black;
@@ -17,8 +16,8 @@ body {
 }
 
 @font-face {
-	font-family: "Gothic War";
-	src: url("/fonts/Gothic War.otf") format("opentype");
+	font-family: "Beyond Wonderland";
+	src: url("/fonts/Beyond Wonderland.ttf") format("truetype");
 }
 
 /* ========================= NAV ==================== */
@@ -73,10 +72,9 @@ main {
 	flex-direction: column; 
 	align-items: center;
 	justify-items: center; 
-	margin: 0 0 5% 20%;
-	margin-left: 15%; /* to avoid nav */
-	/* gap: 4rem; */
-	padding: 0 2rem;
+	margin: 0 0 5% 15%;
+	padding: 0 3rem;
+	gap: 4rem;
 }
 
 /* ============================== HEADER ========================= */
@@ -91,15 +89,30 @@ header {
 }
 
 h1 {
-	font-size: 6rem;
-	font-family: "Pinyon Script", "Death Note", sans-serif;
+	font-size: 5rem;
+	font-family: "Beyond Wonderland", "Pinyon Script", "Death Note", sans-serif;
 	font-weight: 200;
+	white-space: nowrap;
 }
 
-#h1-image {
+#lotus-decal {
 	position: absolute; 
 	margin-top: 1rem;
 	width: 15rem;
+	/* z-index: -1 i actually like the lotus on top */
+}
+
+@media (max-width: 768px) {
+	header {
+		margin-top: 2rem;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+	#lotus-decal {
+		width: 10rem;
+		margin-top: 0.5rem;
+	}
 }
 
 /* wings */
@@ -128,12 +141,28 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 4rem;
+	/* margin-bottom: 4rem; */
+}
+
+.section-header-div {
+	display: flex; 
+	align-items: center;
 }
 
 h2 {
 	font-size: 2rem;
 	text-shadow: 0 0 10px white;
+}
+
+.section-sword-left {
+	height: 2rem;
+	margin-right: 1rem;
+}
+
+.section-sword-right {
+	height: 2rem;
+	margin-left: 1rem;
+	transform: scaleX(-1);
 }
 
 #about {
@@ -146,7 +175,7 @@ h2 {
 }
 
 p {
-	font-family: sans-serif;
+	font-family: "IBM Plex Mono", monospace;
 }
 
 /* contact buttons */
@@ -255,4 +284,12 @@ button > img {
 	position: absolute;
 	bottom: 0; 
 	left: 0; 
+}
+
+.crack {
+	position: absolute;
+	width: 5rem;
+	z-index: 1000;
+	transition: opacity 0.5s ease;
+	transform: translate(-50%, -50%);
 }

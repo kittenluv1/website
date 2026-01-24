@@ -5,50 +5,58 @@
 			"href": "https://clubhouseucla.com",
 			"imgSrc": "/images/portfolio/clubhouse.png",
 			"stack": "Next.js, Supabase, Vercel",
-			"description": "An online platform for reviewing student organizations at UCLA Sign in with a UCLA email to leave a review, or find a club to learn more!"
+			"description": "An online platform for reviewing UCLA student organizations, built to make campus involvement more transparent. I led end-to-end development of the project, including APIs, auth, and deployment, and core features. Upcoming features include user profiles and club recommendations."
 		}, 
 		{
 			"title": "UCLA Student Affairs",
 			"href": "https://www.studentaffairs.ucla.edu",
 			"imgSrc": "/images/portfolio/sait.png",
 			"stack": "SvelteKit, TailwindCSS, TypeScript",
-			"description": "Student developer for UCLA Student Affairs websites. True Bruin and Financial Education sites coming soon."
+			"description": "Student developer for UCLA Student Affairs websites. I work across multiple sites building reusable components, fixing bugs, and implementing accessibility improvements to make the experience more inclusive and reliable."
 		}, 
+		{
+			"title": "Michael Dean Wilkins",
+			"href": "https://www.michaeldeanwilkins.com",
+			"imgSrc": "/images/portfolio/michael.png",
+			"stack": "Next.js, SanityCMS, Vercel, Figma",
+			"description": "A freelance portfolio site for an LA-based photographer. I designed and built the site using a headless CMS to enable easy content management, with a focus on performance, scalability, and a modern, responsive design."
+		},
 		{
 			"title": "bunnyluv1", 
 			"href": "/",
 			"imgSrc": "/images/portfolio/website.png",
 			"stack": "Astro, Cloudflare Pages",
-			"description": "My personal website featuring a playable tamagotchi game, creative portfolio, and blog. Currently going through a refactor from plain HTML/CSS/JS to Astro."
+			"description": "My personal website, featuring a playable tamagotchi game, creative portfolio, blog, and more. This was one of my first programming projects ever, and is still growing! Currently undergoing a refactor from plain HTML/CSS/JS to Astro.js."
 		}, 
 		{
 			"title": "Morii - Moments That Stay",
 			"href": "https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544?l=es-MX",
 			"imgSrc": "/images/portfolio/morii.PNG",
 			"stack": "Express.js, Node.js, MongoDB, RestAPI",
-			"description": "A mobile app for sharing and tracking your emotions, analyzing your moods, and staying in touch with your community. Available on the app store!"
+			"description": "A mobile app for sharing and tracking emotions, analyzing mood patterns, and staying connected with your community. I built backend endpoints for social features like posts, likes, comments, and admin-authenticated block/report tools to support safe interactions. Available on the app store!"
 		}
 	], 
 	"games": [
+		{
+			"title": "SynthSlicer",
+			"href": "https://chrissanrow.github.io/SynthSlicer/",
+			"imgSrc": "/images/portfolio/synthslicer.png",
+			"stack": "Three.js, Vite, JavaScript",
+			"description": "A rhythm-based slicing game with procedurally generated beatmaps from user-uploaded audio. I implemented level selection, custom audio upload, and pause/play controls, and contributed to the visual design of scoring, hit feedback, and color themes."
+		},
 		{
 			"title": "Dimensional Detective",
 			"href": "https://introspec.itch.io/dimensional-detective", 
 			"imgSrc": "/images/portfolio/detective.png",
 			"stack": "Unity, Blender, C#",
-			"description": "A dialogue-driven point-and-click whodunit game. Solve multiversal mysteries to restore order and peace... can you find the real culprit?"
-		}, 
-		{
-			"title": "Psychosis",
-			"imgSrc": "/images/portfolio/psychosis.png",
-			"stack": "Unity, C#",
-			"description": "A first-person shooter game set in a cyberpunk dystopia. Take drugs to alter state and assasinate your targets to level up. Worked on diegetic UI"
+			"description": "A dialogue-driven point-and-click whodunit game. I developed core gameplay mechanics, including round management and dialogue interactions, and designed the 3D model and story for my original character, Starboy ☆."
 		}, 
 		{
 			"title": "Tama JUMP!",
 			"href": "/#tama",
 			"imgSrc": "/images/portfolio/tamajump.png",
 			"stack": "Javascript", 
-			"description": "An endless runner game where you avoid the obstacles. The tama JUMP! console is customizable and doubles as a music player!!"
+			"description": "An tamagotchi-themed endless runner inspired by the chrome dinosaur game. The tama JUMP! console is customizable and doubles as a music player!!"
 		}
 	]
 }
