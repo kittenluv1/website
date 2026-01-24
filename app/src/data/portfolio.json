@@ -54,9 +54,9 @@
 		{
 			"title": "Tama JUMP!",
 			"href": "/#tama",
-			"imgSrc": "/images/portfolio/tamajump.png",
+			"imgSrc": "/images/portfolio/tama-jump.png",
 			"stack": "Javascript", 
-			"description": "An tamagotchi-themed endless runner inspired by the chrome dinosaur game. The tama JUMP! console is customizable and doubles as a music player!!"
+			"description": "A tamagotchi-themed endless runner inspired by the chrome dinosaur game. The tama JUMP! console is customizable and doubles as a music player!!"
 		}
 	]
 }
