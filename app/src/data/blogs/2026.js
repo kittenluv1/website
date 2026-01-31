@@ -1,5 +1,21 @@
 export default [
   {
+    date: "1/31",
+    title: "pinterest oa",
+    content: `i just finished my pinterest oa! i was so excited when i got the email, it's literally for my dream position out of all the 120 positions that i applied for this year and last year, this is the one that i wanted the MOST... but i was also immediately stressed because i haven't been grinding leetcode like that because i honestly wasn't expecting much from the places that still haven't gotten back to me at this point. so imagine my surprise...
+
+this past week i've kind of just been a non-person though, existing solely to master data structures and algorithms. the week before that i was also a non-person, but at least what i was hyperfocused on was slightly more personal - i did a lot of work on my website and portfolio :) my schoolwork and other work is feeling extremely neglected rn. but i finally finished the oa this morning, i literally couldn't sleep last night because i was so nervous (excited!) to do it today, and i did super okay on it. like i got a pretty average score ToT. i really hope it's enough, but at this point i've done my part and what happens next is up not to me... so if you're my pinterest recruiter reading this, hiii (pls give me an interview (つ╥﹏╥)つ.·°՞)
+`,
+  },
+  {
+    date: "1/27",
+    content: `we take turns pursuing each other but we're never pursuing each other at the same time. sometimes, i think it's more important what i think the other person is thinking than what they are actually thinking, because honestly at some point, it's not worth the trouble of finding out. every once in a while, i feel like i need a cigarette but i don't even smoke, so i lowkey just go outside and take deep breaths of fresh air. it feels like i'm just taking my time, like i'm experimenting before i finally get to where i'm actually supposed to be going... or maybe there is no destination. maybe i'll always just be trying things out. the world won't let me be settled & satisfied because there's so much left to explore.`,
+  },
+  {
+    date: "1/26",
+    content: `it's my dad's birthday again. i love having time to do useless things. everything should be a passion project. you won't enjoy it unless you put effort into it. don't think so much about it... just do it. sleep schedule could be better. edibles gets you high but smoking makes you <em>feel</em> high. i want to write about love and understand it... and i'm this close to landing a kickflip.`,
+  },
+  {
     title: "goth beach event",
     date: "1/19/26",
     content: `i just really wanted to go to the beach, and i had also wanted to do goth again sometime, so i decided why not just do both... right now? and the upcoming weekend was a long weekend. it was the perfect opportunity. i entertained some plans of going to the beach and watching the sunset, taste-tested adding makeup and a book and an edible to that plan, and it was sounding really delicious. and after thinking about it some more while trying to fall asleep that night, i decided to make it official and added it to my calendar. i originally contemplated doing it alone - spending some time with my thoughts and being emo and vulnerable and sentimental with myself. but i decided to ask my best friend if they were down and just go regardless of whether they were able to join or not. and i was glad i went with them. and that they were down to do it with me. it made it feel like a sisters goth beach night out. which is funny bcs a guy on the elevator did ask us if we were nuns ToT

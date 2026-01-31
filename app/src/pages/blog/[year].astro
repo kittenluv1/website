@@ -88,7 +88,7 @@ const articles = blogData[year];
               {article.tag === "spiral" ? (
                 <div class="spiral-container" data-content={article.content} />
               ) : (
-                <pre class={article.tag}>{article.content}</pre>
+                <pre class={article.tag} set:html={article.content} />
               )}
             </article>
           ))
