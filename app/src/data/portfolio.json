@@ -5,7 +5,7 @@
 			"href": "https://clubhouseucla.com",
 			"imgSrc": "/images/portfolio/clubhouse.png",
 			"stack": "Next.js, Supabase, Vercel",
-			"description": "An online platform for reviewing UCLA student organizations, built to make campus involvement more transparent. I led end-to-end development of the project, including APIs, auth, and deployment, and core features. Upcoming features include user profiles and club recommendations."
+			"description": "An online platform for reviewing UCLA student organizations, built to make campus involvement more transparent. I led end-to-end development across the stack, including APIs, auth, deployment, and core features. Future updates include user profiles and club recommendations."
 		}, 
 		{
 			"title": "UCLA Student Affairs",

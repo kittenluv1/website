@@ -19,7 +19,7 @@ import Project from "../components/portfolioProject.astro";
     />
   </head>
   <body>
-    <!-- <img src="/images/portfolio/stud-belt.png" id="belt-decal" /> -->
+    <!-- decals -->
     <img
       src="/images/portfolio/cyber-decal.png"
       class="cyber-decal"
@@ -37,6 +37,7 @@ import Project from "../components/portfolioProject.astro";
     />
     <img src="/images/portfolio/skeleton-angel.gif" id="skeleton-angel-decal" />
 
+    <!-- nav -->
     <nav>
       <ul>
         <li data-section="home">
@@ -63,6 +64,7 @@ import Project from "../components/portfolioProject.astro";
     </nav>
 
     <main>
+      <!-- header -->
       <header>
         <img
           src="/images/portfolio/wing-left.png"
@@ -78,6 +80,7 @@ import Project from "../components/portfolioProject.astro";
         <img src="/images/portfolio/lotus-transparent.png" id="lotus-decal" />
       </header>
 
+      <!-- about section -->
       <section id="about">
         <div class="section-header-div">
           <img src="/images/portfolio/sword.png" class="section-sword-left" />
@@ -85,56 +88,48 @@ import Project from "../components/portfolioProject.astro";
           <img src="/images/portfolio/sword.png" class="section-sword-right" />
         </div>
         <p>
-          Hi! My name is Erica Huang. I'm a programmer, project manager, and
-          game developer who is passionate about creating meaningful and
-          engaging digital experiences. In my free time, I enjoy skating,
-          crafting, and tinkering with my websites.
+          Hi! My name is Erica Huang. I’m a programmer, project manager, and
+          game developer who is passionate about creating impactful and engaging
+          digital experiences. I enjoy working closely with both engineers and
+          designers to turn ideas into meaningful products, with a strong
+          appreciation for usability and visual composition. In my free time, I
+          enjoy skating, crafting, and tinkering with my websites.
         </p>
         <a href="#about">
           <img src="/images/portfolio/dn-heart.jpg" id="about-img" />
         </a>
       </section>
 
-      <section id="web">
-        <div class="section-header-div">
-          <img src="/images/portfolio/sword.png" class="section-sword-left" />
-          <h2>web</h2>
-          <img src="/images/portfolio/sword.png" class="section-sword-right" />
-        </div>
-        {
-          portfolioData.web.map((project, index) => (
-            <Project
-              left={index % 2 === 0}
-              title={project.title}
-              href={project.href}
-              imgSrc={project.imgSrc}
-              stack={project.stack}
-              description={project.description}
-            />
-          ))
-        }
-      </section>
+      <!-- projects sections -->
+      {
+        Object.entries(portfolioData).map(([key, section]) => (
+          <section id={key}>
+            <div class="section-header-div">
+              <img
+                src="/images/portfolio/sword.png"
+                class="section-sword-left"
+              />
+              <h2>{key}</h2>
+              <img
+                src="/images/portfolio/sword.png"
+                class="section-sword-right"
+              />
+            </div>
+            {section.map((project, index) => (
+              <Project
+                left={index % 2 === 0}
+                title={project.title}
+                href={project.href}
+                imgSrc={project.imgSrc}
+                stack={project.stack}
+                description={project.description}
+              />
+            ))}
+          </section>
+        ))
+      }
 
-      <section id="games">
-        <div class="section-header-div">
-          <img src="/images/portfolio/sword.png" class="section-sword-left" />
-          <h2>games</h2>
-          <img src="/images/portfolio/sword.png" class="section-sword-right" />
-        </div>
-        {
-          portfolioData.games.map((project, index) => (
-            <Project
-              left={index % 2 === 0}
-              title={project.title}
-              href={project.href}
-              imgSrc={project.imgSrc}
-              stack={project.stack}
-              description={project.description}
-            />
-          ))
-        }
-      </section>
-
+      <!-- contact section -->
       <section id="contact">
         <div class="section-header-div">
           <img src="/images/portfolio/sword.png" class="section-sword-left" />
@@ -339,3 +334,5 @@ import Project from "../components/portfolioProject.astro";
     </script>
   </body>
 </html>
+--> }
+
