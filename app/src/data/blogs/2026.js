@@ -1,5 +1,12 @@
 export default [
   {
+    date: "2/11",
+    title: "feverish anticipation",
+    content: `i feel insane i'm going crazy with anticipation... i spent today in agony waiting for a response. is this how people feel when they're in love? i think i'm coming down with something, i've literally been worrying myself sick. last night i had a dream, that i was in a family of fish and we were fleeing for our lives again. and then we had big black wings, and we were searching the sky and the sea... flying above the sea water, skimming the salty waves with our feet. feeling powerless but free. 
+
+why does hope make people miserable? i don't know but man, i guess it's up to fate again. if it's meant to be yours it will be yours. and things come looking for you when you're not looking for them. ah i've made peace with my results... whatever they may be, i know i tried. i was fine before and i'll be fine after. you know, i just got invited to my friend's wedding... how can i change what's truly not within my control?`,
+  },
+  {
     date: "1/31",
     title: "pinterest oa",
     content: `i just finished my pinterest oa! i was so excited when i got the email, it's literally for my dream position out of all the 120 positions that i applied for this year and last year, this is the one that i wanted the MOST... but i was also immediately stressed because i haven't been grinding leetcode like that because i honestly wasn't expecting much from the places that still haven't gotten back to me at this point. so imagine my surprise...

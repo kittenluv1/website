@@ -80,7 +80,6 @@ they say you can only choose two out of social life, sleep, and academics. i fea
 - missing your connecting flight home and living out the actual last 24 hours of your time in japan in the airport
 - losing both grandpas in the span of a few weeks, making you contemplate loss, family, and growing up
 - healing while reconnecting with my hometown and learning more about my family and myself
-- having no agency for privacy as a yet-to-be-homeowner and getting caught in the act by the police
 - losing contact and getting back in touch with people slightly above my age and thinking soon, that will be us... 
 - having the best summer of your life (somehow again), and realizing you never want to grow up`,
   },
