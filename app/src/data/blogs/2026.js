@@ -1,5 +1,25 @@
 export default [
   {
+    date: "2/16",
+    title: "copilot is creepy as hell",
+    content: `i write really personal things in my blogs and try to keep things authentic and raw and only a little bit fictional. sometimes i would start typing a title into the code editor, and then copilot would immediately spit out an entire blog about whatever topic it thought i was going for. and the scary thing is that it kind of sounded like... me. like i would write that. probably did write that. i really don't like how that feels, hearing my own internal monologue mimicked back to me by my computer... an imperfect imitation, but always learning. that shit was so scary i had to turn it off. `,
+  },
+  {
+    date: "2/14",
+    title: "love advice",
+    content: `- the best way to become a better lover is to practice being a great friend
+- you can fall in love with anyone. everyone is an artist. everyone's life is a story
+- if you only date supermodels, it's more of a reflection on your insecurity than anything
+- chocolate covered strawberries are naturally romantic. try to incorporate them into your regular diet
+- what is unconditional love? would you love me if i was a worm? would you love me if i was a boy? 
+- you can't just ask to unfumble the bag, you gotta do it
+- wait, please, you're the only girl who's ever given me love and affection... i've never been at peace with myself, even after i met you... you're the love of my life, i need you because you make me feel like more of a man than i ever will be... i have to have you in order to have me. you're <b>everything</b> to me. 
+- why does nobody want to see me undressed? you can't even let your guard down when you're clothed!
+- love is morbid!!!
+
+happy valentine's day, xoxoxo`,
+  },
+  {
     date: "2/11",
     title: "feverish anticipation",
     content: `i feel insane i'm going crazy with anticipation... i spent today in agony waiting for a response. is this how people feel when they're in love? i think i'm coming down with something, i've literally been worrying myself sick. last night i had a dream, that i was in a family of fish and we were fleeing for our lives again. and then we had big black wings, and we were searching the sky and the sea... flying above the sea water, skimming the salty waves with our feet. feeling powerless but free. 
@@ -20,7 +40,7 @@ this past week i've kind of just been a non-person though, existing solely to ma
   },
   {
     date: "1/26",
-    content: `it's my dad's birthday again. i love having time to do useless things. everything should be a passion project. you won't enjoy it unless you put effort into it. don't think so much about it... just do it. sleep schedule could be better. edibles gets you high but smoking makes you <em>feel</em> high. i want to write about love and understand it... and i'm this close to landing a kickflip.`,
+    content: `it's my dad's birthday again. i love having time to do useless things. everything should be a passion project. you won't enjoy it unless you put effort into it. don't think so much... just do it. sleep schedule could be better. edibles gets you high but smoking makes you <em>feel</em> high. i want to write about love and understand it... and i'm this close to landing a kickflip.`,
   },
   {
     title: "goth beach event",
@@ -50,9 +70,9 @@ i learned recently about a rumor that that teacher had inappropriate relations w
     title: "new year's reflections",
     date: "1/1/26",
     content: `
-think less, do more: there will never be a time when you're completely free... you will always have to make time. appreciate the importance of doing nothing, too. 
-
-you can fall in love with anyone: everyone is an artist. everyone's life is a story. art is everywhere
+think less, do more: there will never be a time when you're completely free... you will always have to make time. 
+appreciate the importance of doing nothing, too
+art is everywhere!!!
 
 ***
 
