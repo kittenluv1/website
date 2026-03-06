@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial Condensed', Helvetica, Arial, sans-serif;
-    background-image: url('/images/gallery/skull-gray-bg.jpg');
+    background-image: url('../images/gallery/skull-gray-bg.jpg');
     background-attachment: fixed;
     margin: 0;
     padding: 2rem;
@@ -89,3 +89,37 @@ a, p {
 @media (max-width: 500px) {
     .masonry-grid { column-count: 1; }
 }
+/* gallery images */
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    position: relative;
+    transition: box-shadow 0.2s;
+  }
+  .gallery-image {
+    width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #f1f3f4;
+  }
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0)
+    );
+    color: #fff;
+    padding: 8px;
+    opacity: 0;
+    border-radius: 0 0 8px 8px;
+    transition: opacity 0.2s;
+    pointer-events: none;
+  }
+  .masonry-item:hover .caption {
+    opacity: 1;
+  }

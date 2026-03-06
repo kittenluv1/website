@@ -4,6 +4,8 @@ import "../styles/globals.css";
 import Modal from "../components/indexModal/modal.astro";
 import { Image } from "astro:assets";
 import backgroundImgSrc from "../images/index.jpg";
+
+// TODO: import images from src for optimization
 ---
 
 <!doctype html>
@@ -80,7 +82,7 @@ import backgroundImgSrc from "../images/index.jpg";
         <p>detective</p>
       </button>
       <button id="gallery">
-        <img src="/images/gallery/tarepanda1.png" alt="gallery" />
+        <img src="/src/images/gallery/tarepanda1.PNG" alt="gallery" />
         <p>gallery</p>
       </button>
       <!-- <button id="microblog">

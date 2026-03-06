@@ -1,7 +1,12 @@
 ---
 import "../styles/gallery.css";
-import images from "../data/gallery.json";
-import GalleryImage from "../components/galleryImage.astro";
+import galleryData from "../data/gallery.json";
+import { Image } from "astro:assets";
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/gallery/*",
+  { eager: true },
+);
 ---
 
 <!doctype html>
@@ -32,15 +37,27 @@ import GalleryImage from "../components/galleryImage.astro";
       </div>
       <div id="gallery" class="masonry-grid">
         {
-          images.map((img) => (
-            <GalleryImage url={img.url} caption={img.caption} client:load />
-          ))
+          galleryData.map(({ url, caption }) => {
+            const image = images[`/src/images/gallery/${url}`]?.default;
+            if (!image) return null;
+
+            return (
+              <div class="masonry-item">
+                <Image
+                  src={image}
+                  alt={String(caption ?? "")}
+                  class="gallery-image"
+                />
+                {caption && <div class="caption">{caption}</div>}
+              </div>
+            );
+          })
         }
       </div>
     </div>
 
     <script>
-      window.addEventListener("load", () => {
+      window.addEventListener("DOMContentLoaded", () => {
         const loadingScreen = document.getElementById("loading-screen");
         const mainContent = document.getElementById("main-content");
 
