@@ -3,9 +3,24 @@ import "../styles/index.css";
 import "../styles/globals.css";
 import Modal from "../components/indexModal/modal.astro";
 import { Image } from "astro:assets";
-import backgroundImgSrc from "../images/index.jpg";
+import IndexButton from "../components/indexButton.astro";
 
-// TODO: import images from src for optimization
+// image imports
+import backgroundImgSrc from "/src/images/index/index.jpg";
+import blogImgSrc from "/src/images/index/lotus.png";
+import creationsImgSrc from "/src/images/index/cat.png";
+import japanImgSrc from "/src/images/index/japan.png";
+import portfolioImgSrc from "/src/images/index/lotus-transparent.png";
+import resourcesImgSrc from "/src/images/index/tool.png";
+import writingImgSrc from "/src/images/index/writing.png";
+import detectiveImgSrc from "/src/images/index/detective.png";
+import galleryImgSrc from "/src/images/index/tarepanda1.png";
+import flappyImgSrc from "/src/images/index/kuchipatchi.png";
+import neocitiesImgSrc from "/src/images/index/treble-cat.png";
+import microblogImgSrc from "/src/images/index/heart-cookie.png";
+import musicImgSrc from "/src/images/index/cd.png";
+import flyingToroImgSrc from "/src/images/index/flyingtoro.png";
+import startImgSrc from "/src/images/index/start.png";
 ---
 
 <!doctype html>
@@ -14,8 +29,7 @@ import backgroundImgSrc from "../images/index.jpg";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bunnyluv1</title>
-    <link rel="icon" href="/images/index/index.jpg" type="image/jpg" />
-    <!-- <link rel="stylesheet" href="/index/jump/jump.css" /> -->
+    <link rel="icon" href="/src/images/index/index.jpg" type="image/jpg" />
 
     <script
       is:inline
@@ -45,106 +59,113 @@ import backgroundImgSrc from "../images/index.jpg";
         class="bg-img"
       />
 
-      <!-- create index button components with passed in images, dynamically calculate whether how links should open -->
-      <button id="blog">
-        <img src="/images/index/lotus.png" alt="lotus" />
-        <p>nostalgiablog</p>
-      </button>
-      <button id="creations">
-        <img src="/images/index/cat.png" alt="plush keychain cat" />
-        <p>creations</p>
-      </button>
-      <button id="japan">
-        <img src="/images/index/japan.png" alt="japan video" />
-        <p>japan tv</p>
-      </button>
-      <button id="portfolio">
-        <img src="/images/portfolio/lotus-transparent.png" alt="portfolio" />
-        <p>portfolio</p>
-      </button>
-      <!-- <button id="flappy">
-			<img src="/creations/imgs/games/flappy/kuchipatchi.png" alt="kuchipatchi">
-			<p>flappypatchi</p>
-		</button> -->
-      <!-- <button id="neocities">
-			<img src="/images/index/treble-cat.png" alt="neocities">
-			<p>neocities</p>
-		</button> -->
-      <button id="resources">
-        <img src="/images/index/tool.png" alt="resources" />
-        <p>resources</p>
-      </button>
-      <button id="writing">
-        <img src="/images/index/writing.png" alt="writing" />
-        <p>writing</p>
-      </button>
-      <button id="detective">
-        <img src="/creations/imgs/games/detective/1.png" alt="detective game" />
-        <p>detective</p>
-      </button>
-      <button id="gallery">
-        <img src="/src/images/gallery/tarepanda1.png" alt="gallery" />
-        <p>gallery</p>
-      </button>
-      <!-- <button id="microblog">
-			<img src="/microblog/imgs/heart-cookie.png">
-			<p>microblog</p>
-		</button> -->
+      <Modal />
 
-      <Modal client:visible />
+      <!-- BUTTONS -->
+      <IndexButton
+        img={blogImgSrc}
+        imgStyle="width: 85%; height: auto; bottom: 25%;"
+        text="nostalgiablog"
+        href="/blog/2026"
+        row={5}
+        col={11}
+      />
+      <IndexButton
+        img={creationsImgSrc}
+        text="creations"
+        href="/creations"
+        row={1}
+        col={1}
+      />
+      <IndexButton
+        img={japanImgSrc}
+        imgStyle="width: 70%; height: auto; "
+        text="japan tv"
+        href="https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h"
+        row={1}
+        col={2}
+      />
+      <IndexButton
+        img={portfolioImgSrc}
+        text="portfolio"
+        href="/portfolio"
+        row={1}
+        col={3}
+      />
+      <IndexButton
+        img={resourcesImgSrc}
+        text="resources"
+        href="https://kittenluv1.neocities.org/resources"
+        row={6}
+        col={12}
+      />
+      <IndexButton
+        img={writingImgSrc}
+        text="writing"
+        href="/writing"
+        row={6}
+        col={2}
+      />
+      <IndexButton
+        img={detectiveImgSrc}
+        imgStyle="height: 75%; bottom: 25%;"
+        text="detective"
+        href="https://introspec.itch.io/dimensional-detective"
+        row={4}
+        col={14}
+      />
+      <IndexButton
+        img={galleryImgSrc}
+        text="gallery"
+        href="/gallery"
+        row={6}
+        col={7}
+      />
+      <IndexButton
+        img={musicImgSrc}
+        imgStyle="opacity: 0.9;"
+        text="play"
+        href="music"
+        row={5}
+        col={2}
+      />
+      <!-- <IndexButton
+        img={flappyImgSrc}
+        imgStyle="height: 70%; bottom: 25%;"
+        text="flappypatchi"
+        href="https://introspec.itch.io/flappypatchi"
+        row={4}
+        col={13}
+      /> -->
+      <!-- <IndexButton
+        img={neocitiesImgSrc}
+        text="neocities"
+        href="https://kittenluv1.neocities.org/"
+        row={6}
+        col={11}
+      /> -->
+      <!-- <IndexButton
+        img={microblogImgSrc}
+        imgStyle="height: 50%;"
+        text="microblog"
+        href="/microblog"
+        row={7}
+        col={2}
+      /> -->
     </div>
 
     <!-- WINDOWS XP FOOTER -->
     <footer>
-      <img src="/images/index/start.png" />
+      <Image src={startImgSrc} alt="" width="100" />
       <div id="copyright">
         <div>visits: <span id="counter"></span></div>
         <p>&copy; e**** 2024</p>
-        <img src="/images/index/flyingtoro.png" alt="flying toro" />
+        <Image src={flyingToroImgSrc} alt="flying toro" width="100" />
       </div>
     </footer>
   </body>
 
   <script>
-    const currentYear = 2026;
-
-    document
-      .getElementById("blog")
-      .addEventListener(
-        "dblclick",
-        () => (window.location.href = `blog/${currentYear}`),
-      );
-    document
-      .getElementById("creations")
-      .addEventListener("dblclick", () => (window.location.href = "creations"));
-    document
-      .getElementById("japan")
-      .addEventListener("dblclick", () =>
-        window.open("https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h"),
-      );
-    document
-      .getElementById("portfolio")
-      .addEventListener("dblclick", () => (window.location.href = "portfolio"));
-    // document.getElementById('flappy').addEventListener('dblclick', () => window.open('https://introspec.itch.io/flappypatchi'));
-    // document.getElementById('neocities').addEventListener('dblclick', () => window.open('https://kittenluv1.neocities.org/'));
-    document
-      .getElementById("resources")
-      .addEventListener("dblclick", () =>
-        window.open("https://kittenluv1.neocities.org/resources"),
-      );
-    document
-      .getElementById("writing")
-      .addEventListener("dblclick", () => (window.location.href = "writing"));
-    document
-      .getElementById("detective")
-      .addEventListener("dblclick", () =>
-        window.open("https://introspec.itch.io/dimensional-detective"),
-      );
-    document
-      .getElementById("gallery")
-      .addEventListener("dblclick", () => (window.location.href = "gallery"));
-    // document.getElementById('microblog').addEventListener('dblclick', () => window.location.href = 'microblog');
-
     // ========================== FOOTER GRADIENTS ========================= //
     const footer = document.querySelector("footer");
     const gradients = [

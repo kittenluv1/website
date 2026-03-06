@@ -3,9 +3,10 @@ import songs from "../../data/songs.json";
 // MODAL INTERACTIVITY
 const modal = document.querySelector(".modal");
 modal.addEventListener("dblclick", toggleDisplay);
-document
-  .getElementById("music")
-  .addEventListener("dblclick", () => toggleDisplay());
+window.addEventListener("toggle-modal", () => {
+  console.log("toggle modal event listener fired");
+  toggleDisplay();
+});
 
 function toggleDisplay() {
   if (modal.style.display === "grid") modal.style.display = "none";
@@ -263,7 +264,7 @@ function tamaJUMP() {
     () => {
       character.src = "/images/index/modal/mametchi.png";
     },
-    { once: true }
+    { once: true },
   );
 }
 

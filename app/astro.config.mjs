@@ -4,4 +4,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   site: "https://bunnyluv1.com",
+  redirects: {
+    "/blog": "/blog/2026",
+  },
 });
