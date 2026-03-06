@@ -30,6 +30,7 @@ body {
 }
 #loading-image {
     width: 15%;
+    height: auto; 
     animation: float 2s ease-in-out infinite;
     will-change: transform;
 }

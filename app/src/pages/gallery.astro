@@ -15,11 +15,20 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>photo gallery</title>
-    <link rel="icon" href="/images/gallery/tarepanda1.png" type="image/png" />
+    <link
+      rel="icon"
+      href="/src/images/gallery/tarepanda1.png"
+      type="image/png"
+    />
   </head>
   <body>
     <div id="loading-screen">
-      <img id="loading-image" src="/images/gallery/tarepanda1.png" />
+      <Image
+        src={images[`/src/images/gallery/tarepanda1.png`]?.default}
+        alt="loading..."
+        width={600}
+        id="loading-image"
+      />
     </div>
 
     <div id="main-content">
@@ -57,7 +66,23 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     </div>
 
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
+      // SCRIPT: wait for images in initial viewport to load, then remove loading page
+      // add promise to each image
+      const imagePromise = (img: HTMLImageElement) => {
+        if (img.complete) return Promise.resolve();
+
+        return new Promise<void>((resolve) => {
+          img.addEventListener("load", () => resolve(), { once: true });
+          img.addEventListener("error", () => resolve(), { once: true });
+        });
+      };
+      // filter to only images in initial viewport
+      const inInitialViewport = (img: HTMLImageElement) => {
+        const rect = img.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      };
+      // remove loading ui
+      const showPage = () => {
         const loadingScreen = document.getElementById("loading-screen");
         const mainContent = document.getElementById("main-content");
 
@@ -67,7 +92,20 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         setTimeout(() => {
           loadingScreen!.style.display = "none";
         }, 400);
-      });
+      };
+      const init = async () => {
+        // get all images
+        const imageNodes = Array.from(document.querySelectorAll("img"));
+        // find images in initial viewport and wait for only those
+        const initialImages = imageNodes.filter((img) =>
+          inInitialViewport(img),
+        );
+        await Promise.all(initialImages.map(imagePromise));
+        // once initial images have loaded, show gallery
+        showPage();
+      };
+
+      void init();
     </script>
   </body>
 </html>
