@@ -51,9 +51,9 @@ const articles = blogData[year];
     </header>
     <main>
       <aside>
+        <!-- links to articles -->
         <div id="links">
           <ul>
-            <!-- dynamically insert links to articles -->
             {
               articles.map((article: any, index: number) => (
                 <li>
@@ -65,20 +65,24 @@ const articles = blogData[year];
             }
           </ul>
         </div>
+        <!-- links to switch between years -->
         <div id="years">
           {
-            Object.keys(blogData).map((year) => (
-              <a
-                href={`/blog/${year}`}
-                id={year}
-                class={year === Astro.params.year ? "selected" : ""}
-              >
-                {year}
-              </a>
-            ))
+            Object.keys(blogData)
+              .sort((a, b) => Number(b) - Number(a))
+              .map((year) => (
+                <a
+                  href={`/blog/${year}`}
+                  id={year}
+                  class={year === Astro.params.year ? "selected" : ""}
+                >
+                  {year}
+                </a>
+              ))
           }
         </div>
       </aside>
+      <!-- display the articles themselves -->
       <div id="articles">
         {
           articles.map((article: any, index: number) => (
