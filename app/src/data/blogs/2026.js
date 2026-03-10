@@ -1,5 +1,31 @@
 export default [
   {
+    date: "3/10/26",
+    title: "rejection, denial, loss (the reality of the current market)",
+    content: `why are they not responding to me? am i not good enough? is there somebody else? these will always be things that are outside of your control...
+
+i don't really exist right now... i'm not real. creating is the only thing in life that's consistently fulfilling. i need to forget about it, i'll survive... but if i can't get that one, i don't want another one. it's not the end of the world, just the end of my hopes and dreams. i was enough. the other person was just better. 
+
+i know i was perfect for them... but that other person probably was too. and thirty others who didn't even have a chance. i'm not even trying to look on the bright side anymore. there isn't a bright side. it's just how it is. 
+
+to think i was so close to happiness... i was so close, i just know there's some alternate universe version of me who got it. that phone call got scheduled, that meeting got postponed. some version of me out there is celebrating right now. i just wish i could celebrate with them. 
+
+i attached so much value to this... so many plans and desires and wishes. it would have validated so much of what i've been working so hard on for so long now. i would, have, given up so much for this. i would choose heartbreak over this. but they don't know that. 
+
+i do have regrets. i regret... not being more excited. not showing myself and being more vulnerable and interested. not realizing that asking questions is just as important as getting asked questions. but i should work on myself and not waste time drowning in regret.
+
+i have to accept my fate... or else i'll find myself the star of a tragedy. it just sucks to be dreaming of something that was in my past. but i have to learn how to do it for the process and not the outcome. i must accept my circumstances in life. 
+
+... so this is how rejection feels... maybe i should really start seeking what i avoid. i avoid so much but there's no avoiding it all. 
+
+i've been crying to my parents a lot lately. when i called them, my mom told me exactly what i knew she would tell me, and it was exactly what i needed to hear. she said, erica move on. you won't always get what you want - if it's not yours already, it will never be yours. my parents had a much better mindset than me. they just said, get up, go find something better. and honestly that's what i need to do. that's the only thing i can do. 
+
+i don't deserve anything. the world doesn't owe me anything and i don't owe anyone else anything either. some things in life just are not mine. it's not cruel and it's not nice. life is just such. 
+
+i think tomorrow i'm going to start applying again. idk if i got another recruitment cycle in me but man. i let myself be depressed for a week and it's time to move on. still mourning the fact that i have to work hard again... that i have to start over. but i hope this can become my motivation to do better. regret follows but it doesn't have to lead.
+`,
+  },
+  {
     date: "2/16",
     title: "copilot is creepy as hell",
     content: `i write really personal things in my blogs and try to keep things authentic and raw and only a little bit fictional. sometimes i would start typing a title into the code editor, and then copilot would immediately spit out an entire blog about whatever topic it thought i was going for. and the scary thing is that it kind of sounded like... me. like i would write that. probably did write that. i really don't like how that feels, hearing my own internal monologue mimicked back to me by my computer... an imperfect imitation, but always learning. that shit was so scary i had to turn it off. `,
