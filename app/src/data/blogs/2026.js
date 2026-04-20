@@ -1,5 +1,45 @@
 export default [
   {
+    date: "4/18",
+    title:
+      "stories of the worst date in the world, where i lost my joint, my airpods, and my date... ",
+    content: `for starters, it was a double date with these guys we met on tinder, and he asked to meet up at this bar in hollywood. soleil was mostly just coming with me for the extra support. we got there earlier than them, despite him telling me they'd get there 30 minutes before our eta, and then i talked to him for all of about 5 minutes before he went to the bathroom and disappeared for the rest of the night. when we got back, i realized i only had one airpod in my pocket and i couldn't find the remaining unsmoked half of my joint. 
+
+i thought for a while about why he did that. i could have come up with so many excuses, and i did come up with quite a few. it made me think of all the rejections i've faced in the past few months, and how they keep piling up and growing and not letting me forget. i kept replaying those failures in my mind... but why am i counting? who's keeping track? 
+
+honestly i was kind of glad that happened to me. i realized i haven't been facing my feelings for so long, just avoiding them... downloading tinder was truly the final straw ToT i haven't been giving myself time to think... i haven't written a blog post that's more than an incoherent string of ramblings in a good minute. 
+
+i found my airpod case in the pocket of my leather jacket the next morning. i realized that nobody is going to come save me and i need to focus on what i can control. i got to check off 'going on a double date' from my bucket list, because having the worst experience ever is also an experience. and it got me writing again. so when i really think about it... i guess didn't lose anything too important that night. 
+
+i decided to set some realistic goals for myself to get over this hump:
+- call my parents
+- choose to do the hard thing instead of the easy one, maybe not every single time but at least a few times a day
+- learn to <span style="text-decoration: underline; font-family:simsun, serif;">enjoy</span> doing the hard thing again
+- learn to <span style="text-decoration: underline; font-family:simsun, serif;">detach</span> from the outcome
+- appreciate what i have: my friends (seriously, appreciate your friends), an internship (even if it may not be the one you desperately want), an opportunity to explore something new. the weather, my body, the ability to change. the whole unwritten future
+- social media detox... i need to unfry my brain. 
+
+i hope it's not too late to turn things around... `,
+  },
+  {
+    date: "4/14",
+    content: `it takes some level of indulging in a behavior to accurately criticize it, so here we go... you can't always chase stimulation so that you fall asleep as soon as your head hits the pillow at night. you can't run away from your thoughts, you can't outrun your dissatisfaction with your life. and if you manage to it might just be too damn late. it's hard to be in the present when you're always worrying about your future and sulking about your past. you can't be so scared of rejection that you never try anything and end up doing nothing with your whole entire life. you can't resign yourself to failure because it's easier than trying to pick yourself up again. `,
+  },
+  {
+    date: "4/6",
+    content: `i've had my moments in life, this is not one of them... this whole year is not my moment. i overthink so much about when i fumble social interactions... but at least i'm getting social interactions to fumble :,) all the coolest girls i know haven't dated anyone. i think i should just start saying whatever comes to my mind to people. just vocalize my stream of consciousness. i want to get better at conveying myself. but i don't have the energy to write anymore so i just write these little thought compilations. sorry for being lazy :(`,
+  },
+  {
+    date: "3/13",
+    title: "dreams and aspirations",
+    content: `my life kinda sucks rn so i kind of want to ruin somebody else's life... it has to be someone i lowkey don't respect... so a man. it won't make me feel good about myself but it's ok because i already don't. i want control, even if it's fake. if i'm going to feel bad regardless, can't i at least choose why? 
+
+i want to learn how to let go. to enjoy the journey not just the end. my life is ruined, but only temporarily... this is a weird time in my life, i'm developing my character, and i want to do it my way. 
+
+i feel like i'm in high school again... alone, unaccomplished, uncertain... and bad sleep schedule. also i think my period is starting soon. my need for accomplishment is killing me... hasn't it always, though?
+`,
+  },
+  {
     date: "3/10/26",
     title: "rejection, denial, loss (the reality of the current market)",
     content: `why are they not responding to me? am i not good enough? is there somebody else? these will always be things that are outside of your control...
@@ -106,7 +146,7 @@ some things i did to welcome in the new year:
 - took a nap on the couch
 - dyed my hair >.<
 - looked into linuxOS (perhaps this is the year i become a linux user)
-- bought a new domain for my site! (bunnyluv1 - i plan to try it out and kittenluv1 and just see which one sticks)
+- bought a new domain for my site! (bunnyluv1 - i plan to try it out with kittenluv1 and just see which one sticks)
 
 ***
 

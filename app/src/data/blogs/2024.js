@@ -227,7 +227,7 @@ i still feel so green like i still don't know what i'm doing ...`,
     date: "8/25",
     content: `today i found a half decomposed lizard tail on the ground while i was picking up dog poop in the yard. i considered letting it decompose naturally a bit more before picking it up but i was afraid it might decompose too much and become brittle or fall apart if i let it stay out in the sun too much longer. i soaked it in warm water to soften the connective tissues remaining on the bone but it kind of softened it too much and now some of the tail bones are barely hanging on and one of the tail vertebrae fully came off :,(
 
-i need to spend more time in the backyard though. i used to see entire worlds in there, and spend entire afternoons just exploring and finding interesting things in the garden. so many creatures have lived and died there; they've been there all this time, even when i stopped noticing. if i'm observant and a bit lucky, once nature takes its pickings, i sometimes get to keep a little piece for myself too`,
+i need to spend more time in the backyard though. i used to see entire worlds in there, and spend entire afternoons just exploring and finding interesting things in the garden. so many creatures have lived and died there; they've been there all this time, even when i stopped noticing. if i'm observant (and a bit lucky), once nature takes its pickings, i sometimes get to keep a little piece for myself too`,
   },
   {
     date: "8/24",
