@@ -222,6 +222,12 @@ pre {
 	font-family: simsun, serif; 
 }
 
+/* article emphasis */
+.underline {
+	font-family: simsun, serif; 
+	text-decoration: underline; 
+}
+
 /* sfx */
 .blur {
 	filter: blur(1.6px); 
