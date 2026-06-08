@@ -1,7 +1,37 @@
 export default [
   {
+    date: "6/8",
+    title: "notes from an undelivered confession",
+    content: `i just wanted to tell you that
+i think you're very easy to be around and a very good person
+i could see you being someone that i like and i love spending time with you
+i don't want you to feel any pressure or expectations from my end
+i just wanted to tell you and open up to you a bit
+but even if i can't tell you in person i hope this reaches you in spirit: 
+i think you're a very cool person, 
+and i really like being your friend ⸜(｡˃ ᵕ ˂ )⸝♡`,
+  },
+  {
+    title: "6/7",
+    content: `i actually looked it up and individuals with depression or anxiety are still classified as neurotypical, because they fall under the range of typical variations in mental health... which makes a lot of sense. i've doubted in the past whether i was really depressed or just 'sad' because i wouldn't consider myself neurodivergent or chronically depressed. but i looked up the symptoms online and i more or less checked all the boxes... i usually manage to stay pretty high functioning, and it's usually not a severe depression - i think this this winter was kind of the worst i've experienced - but i'd definitely say that i was experiencing depression... it was so odd because i knew why i was depressed, i knew what's making me depressed, and i knew why i shouldn't be depressed - yet i still feel depressed. but it's kind of comforting to know that all that's not just me being lazy or unable to get over myself, it's like actually a symptom of a well recognized and documented mental phenomenon... 
+
+when i stopped being depressed was when i started creating. i'm not sure if that's a cause/effect or if it's just correlation... i need to work on my video, even if i don't want to, even if i don't have time. i started looking forward to stuff in my future and because of that, i've been finally making decisions that would benefit my future self... like actually doing my work n shit. i'm looking forward to having my own room this summer, and my roommates seem pretty social. i hope i can get along with them and also do justice to the goals i set for myself. `,
+  },
+  {
+    date: "5/27",
+    title: "another summary post... sorry",
+    content: `i feel like i'm discovering free will in a way that's kind of scary... like what if i just woke up one morning and decided to not to work. like that could work for a day but then what. is freedom worth it? 
+
+is it too late to pursue my dreams? do i try to work until i have to give up my goals to pursue my dreams, or the other way around? i feel like i'll always have a goal, but i should just choose one and commit to it until i graduate college. i need to commit tho... i can feel the clock ticking... 
+i want to find a job that makes money, interests me, and validates my need for success. i want to become likeable and figure out how people make friends & be a great friend. i want to grow my creative abilities and create things that are out of my league. 
+i'm not a people pleaser but i do want to be liked by people. i'm trying to get better at talking to people... i don't know why it took me so long to figure that out ToT 
+i definitely rely on inertia a lot. i can kind of be a passive force in my own life. but i think you need to let your guard down to let yourself enjoy life. you have to let yourself enjoy yourself. 
+i'm not really looking forward to this summer. but i genuinely had a great weekend so... 
+i shouldn't be giving myself a hard time... i'm young and unencumbered and i should be enjoying myself. i need to decide what i want right now in life and just go for it. and then i can do wtv the fuck i want`,
+  },
+  {
     date: "5/4",
-    content: `guess what... i'm <span class="underline">finally feeling good</span> again!!! i was walking home from class the other day and i just started noticing the wind blowing, the sun shining and the birds chirping and i was like, wow... it was like a veil lifted from my eyes ToT. i was feeling kind of stressed about my look for the fashion show and i was being indecisive between two very distinct concepts that i had in mind. but the stressing and late nights and hours of drama watching and lowkey asphyxiating myself for the burnt edges look are all just a part of the creative process. i do need to trust my process more. it was really nice to be so engaged in a creative project for an extended period of time, it reminded me that if i ever don't feel like doing coding or working i can always do crafts. i forgot how fun crafting is. 
+    content: `guess what... i'm <span class="underline">finally feeling good</span> again!!! i was walking home from class the other day and i just started noticing the wind blowing, the sun shining and the birds chirping and i was like, wow... it was like a veil lifted from my eyes ToT. i was feeling kind of stressed about my look for the fashion show and i was being indecisive between two very distinct concepts that i had in mind. but the stressing and late nights and hours of drama watching and lowkey asphyxiating myself for the burnt look are all just a part of the creative process. i do need to trust my process more. it was really nice to be so engaged in a creative project for an extended period of time, it reminded me that if i ever don't feel like doing coding or working i can always do crafts. i forgot how fun crafting is. 
 
 the day of the fashion show was definitely the best day i've had all year - in the morning, i fashioned the hobby horse prop and it turned out kind of nice. i helped my model with getting ready and then went to sam's to play mahjong with maya and soleil before returning for the show. the show was amazing ofc and i kind of floated around afterwards and talked to people there. i helped clean up and then at the afters i talked to this girl who's in my class and met my model's friends, and they were all super sweet. i got to meet so many cool people that day and just be surrounded by creativity and friends!
 
@@ -18,9 +48,9 @@ i've been doing daily gratitude lately, which is how you know that it was really
   {
     date: "4/20",
     title: "when men make robots",
-    content: `i saw this humanoid robot on my way back to my dorm today and it was talking to people and 'rizzing up' this girl on the street. at first it was just complimenting her and it was kind of wholesome so i pulled out my phone to take a video, and then she walked away and then it started flipping her off and <span class="underline">chasing</span> after her. i was like what the actual hell, why would they make it do that. i literally asked the demo guy, so was this designed only by men or. and he was like yea probably, and i said, yeah, i can tell. like did they not watch the terminator? why would you teach your robot to display aggressive tendencies, specifically towards women that it tries to 'rizz up'. it was just so disappointing, that they have the time and energy to literally build a robot and they decide to make it go and do that. it's like the epitome of silicon valley misogynistic internet red pilled robotic ai slop. like i know underneath all that it's just a robot wrapper for a chatgpt wrapper too. it takes a group of really bad men to design a really bad robot. i have so much disdain for men. 
+    content: `i saw this humanoid robot on my way back to my dorm today and it was talking to people and 'rizzing up' this girl on the street. at first it was just complimenting her and it was kind of wholesome so i pulled out my phone to take a video, but then when she walked away it started flipping her off and <span class="underline">chasing</span> after her. i was like what the actual hell, why would they make it do that. i literally asked the demo guy, so was this designed only by men or. and he was like yea probably, and i said, yeah, i can tell. like did they not watch the terminator? why would you teach your robot to display aggressive tendencies, specifically towards women that it tries to 'rizz up'. it was just so disappointing, that they have the time and energy to literally build a robot and they decide to make it go and do that. it's like the epitome of silicon valley misogynistic internet red pilled robotic ai slop. like i know underneath all that it's just a robot wrapper for a chatgpt wrapper too. it takes a group of really bad men to design a really bad robot. i have so much disdain for men. 
 
-that definitely ruined the moment for me but the rest of my day was good. it was a bit less productive than i had imagined because i forgot it was 4/20 today, but it was overall a good day and i hope you had a beautiful 4/20 :)`,
+that definitely ruined the moment for me but the rest of my day was good. it was a bit less productive than i had imagined because i lowkey forgot it was 4/20 today, but it was overall a good day and i hope you had a beautiful 4/20 :)`,
   },
   {
     date: "4/19",
