@@ -1,5 +1,72 @@
 export default [
   {
+    date: "6/26",
+    title: "i hate companies",
+    content: `i've already been through this in the worst way possible, with my dream company and everything, but this time it just reminded me of that feeling again and it just makes me feel so hopeless like how many times am i going to have to go through this. it's not even just the rejection it's the telling me that they're going to give me something and then taking it away. why are companies like this and why do they get to just do that to you. why is the job market so cooked. i feel bad complaining about the job market because i know i'm probably not doing as much as i could but i'm so tired. i'm tired of trying to remain hopeful and getting reminded of why it's not productive to do that. i guess there's no way to brute force it and i just have to wait. 
+
+i called soleil about it today, i'm so grateful to have a friend that i can cry to. i have to remember, it's a wonderful privilege. there's so much hardship waiting for me in life, but i've made it through all the stuff in the past and i know i will grow through it in the future and become who i am meant to become. 
+`,
+  },
+  {
+    date: "6/20",
+    title: "boston itinernary",
+    content: `5:40am dunkin' iced tea, lore drops, arrived, parked, peed in a very bostonian man's pasta shop
+12:30pm cannoli's at mike's, photo booth, fresh oysters, cop slide, fifa. 
+1:47pm boston commons park! carousel ride, acorn street, swan boats. 
+3:39pm phones charging at the apple store, bought goods, tracked down kaitlyn at heytea
+6:06pm christian science plaza, chinatown dinner. 
+8:30pm bell in hand tavern, scottish people, drunk men, bass guitarist
+1am airport parking, sleeping in the car. peed in a bush. said goodnight. 
+9:59am getting ready in a mcdonald's, coffee shops, brattle bookshop. 
+3:04pm sushi at the park, boston library, mattybraps? museum of fine arts, claude monet. 
+8:38pm portapotties, said goodbye to boston. tired karaoke on the drive back and slept. 
+`,
+  },
+  {
+    date: "6/24",
+    title: "work and life updates",
+    content: `hiii i had a rlly good day! we got breakfast, lunch and dinner at work today and afterwards we went to a supergirl early release event where we got free food again and everyone brought their babies. the movie was alright but the company was great. i'm getting more comfortable at work and learning to speak up at meetings and ask questions. i was thinking about all the awkward encounters i've had at work and i know most of the time it's not my fault bcs these guys are super awkward but also it's lowkey my fault bcs i'm also super awkward. i wish i could just have a calm, confident energy all the time and just be a cool laid back kind of girl but i've found that it works better for me to be smiley and kind of quirky at first and i find that people are more comfortable with me if i just yap at them a bit. of course it depends who i'm talking with but like for people who don't know me and only judge me based on my appearance i could see why it makes a better impression. idk maybe that's just true for everyone though but it's just ugh i'm shy too, why do i always have to do the work to make people feel comfortable around me? i wish it was just natural to me <(ꐦㅍ _ㅍ)>
+
+last summer felt a bit too chaotic and magical to be considered a real working summer but this summer kind of feels like being an adult. i feel like i have to do like a grown up thing every day, cooking and washing dishes and doing laundry. and doing all that after work like that's like my main chore for the day. and then once that's done i get to do my other work - skating, apply to job, go through emails, work on my projects. i still need to do work for my other job too (╥﹏╥) but that's just life. yesterday i skated and i ALMOST DID A KF like i actually LANDED ON IT AND SLIPPED OUT but i actually LANDED IT and that has never happened to be b4. 
+
+i've been really enjoying life though... on monday we got free massages at work and my task right now is actually just to play the unreleased game and test it. like yea work is actually kind of great rn (๑•᎑•๑) life is peaceful and i'm getting along with my roommates, work isn't stressful and it's even fun and i like my coworkers. i'm in a nice green space and i'm working towards my goals and in a sense i've already achieved many of the things that i wanted for myself in the future. although i don't necessarily see my future here still, i can totally see my future being like this :)`,
+  },
+  {
+    date: "6/19",
+    title: "clubs",
+    content: `i'm convinced guys bump into you at the club on purpose just to catch your attention or catch a feel, like i know you feel me here bro MOVE OVER. i like when crowds get crazy and i like being pushed around but i know there's space over there right now. i say i want to make out with someone random at the club but lowkey I DONT. and girls too like that one girl that kept trying to touch the guitarist like actually what was going on. you have to have really good social perceptions at clubs and it makes me feel so crazy
+
+part of becoming friends with someone is gauging how well they handle conflict and awkwardness and shit. i'm getting so many stares and i'm getting tired of it 🫩 lowkey i'm a misandrist and it's kind of a problem... but i'm never wrong about them tho. `,
+  },
+  {
+    date: "6/18",
+    content: `some ppl in my life that i'm trying  to be more like and take an example from: 
+- my mom
+- shirley
+- soleil
+- chris
+- liz
+actually i see admirable qualities in all of my friends that i would want to learn from. i think seeing those traits in someone is what makes me want to become friends with them in the first place. 
+`,
+  },
+  {
+    date: "6/18",
+    content: `the reason i'm not on instagram is because i actually cannot have a normal relationship with it... like i am  either on it for 6 hours a day or not on it at all. and out of those two options i much prefer the second option. i really like the idea of just posting on it casually though, i like to post and aura farm and remind everyone that i'm really cool and hot and superficial sometimes. but at the same time i hate instagram and would much rather just ramble on my website and post my selfie pictures on my gallery for literally nobody to see like honestly that's peace
+
+i know i'm getting over my depression cus i'm rambling again ahhh... i missed rambling :,) smth that helps when i'm feeling depression is doing something that forces me to be very rooted in the present... crafting, skating... it feels kind of stupid to be depressed sometimes cus i'm like actually my life is rlly good... i'm never romanticizing sleepless nights ever again because that shit sucks forever. the real hard work is napless afternoons. 
+
+i'd been living with the aim to not experience bad emotions for so long... but it's such a privilege to feel those bad things too. how could i go through life without a bad heartbreak or two? looking back on my writing during those times... it always feels weird writing about my struggles but i look back and see how much i've felt and how much i've grown. 
+
+i hope people read my blog and think, ‘this girl thinks too damn much'. some other miscellaneous updates... i landed a kickflip while holding onto the rail... !!! i've been dreaming about this for two summers. i've so close, i can taste it. i think i'm a pretty practical person... i wouldn't consider myself very whimsical tbh, especially when you haven't yet known me for at least like 2 years, and i do consider this a flaw of mine. also really trying to combat this yt shorts addiction... it's gonna be hard... but it will be okay`,
+  },
+  {
+    date: "6/14",
+    title: "troy, ny",
+    content: `i want to blog but i feel like i hardly have time for it, every day i get up and get ready for work, do “work stuff” from 9-5 and then go home and either cook, eat, skate, call people, wash dishes, go for a walk, watch love island with my roommates, or like all of the above and i just have no time to do anything else before i have to go to bed for work the next day. honestly it's not too bad though - i'm still “adjusting” and my work is not too draining so i'm not even that super tired when i get back. i literally haven't even been taking a nap after work and i've been enjoying cooking and eating food that i make myself :) i love chinese fooood and cdramas and calling my friends like honestly this is kind of the life. i've been going on walks at around 8PM here, because they have really nice green parks and also sunsets that are purple and pink, and the sun goes down really slowly and pretty late. the area around my neighborhood is student housing and and pretty skateable... i've been skating at the hospital, which is a bit ironic if you think about it. situational irony, hopefully not... i like working on games and my work is interesting if not fulfilling, i'm trying really hard to get along and spend time with my roommates since they were all kind of here before me. we're going to drive to boston early tomorrow and spend the night there in the car, hopefully it'll be a bonding experience. 
+
+maybe i can make a 9-5 work for me after all, i just need to figure out how to keep making progress on my personal goals while also keeping up with life stuff on top of work, but i think i've gotten a lot of experience and practice these past few years and maybe this is the summer i'll make it all work`,
+  },
+  {
     date: "6/8",
     title: "notes from an undelivered confession",
     content: `i just wanted to tell you that
