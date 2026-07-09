@@ -29,6 +29,20 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         width={600}
         id="loading-image"
       />
+      <div id="loading-text">
+        <span class="loading-word">loading</span>
+        <span class="loading-dots" aria-hidden="true">
+          <span class="loading-dot">.</span>
+          <span class="loading-dot">.</span>
+          <span class="loading-dot">.</span>
+        </span>
+        <span class="loading-word">please wait</span>
+        <span class="loading-dots loading-dots--late" aria-hidden="true">
+          <span class="loading-dot">.</span>
+          <span class="loading-dot">.</span>
+          <span class="loading-dot">.</span>
+        </span>
+      </div>
     </div>
 
     <div id="main-content">
@@ -67,6 +81,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
     <script>
       // SCRIPT: wait for images in initial viewport to load, then remove loading page
+
       // add promise to each image
       const imagePromise = (img: HTMLImageElement) => {
         if (img.complete) return Promise.resolve();
@@ -91,6 +106,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         // remove loader from layout after transition
         setTimeout(() => {
           loadingScreen!.style.display = "none";
+          document.querySelector("body").style.overflowY = "visible";
         }, 400);
       };
       const init = async () => {
