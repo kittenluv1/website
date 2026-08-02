@@ -1,10 +1,35 @@
 export default [
   {
+    date: "8/1",
+    title: "summary of the summer so far",
+    content: `i've been listening to a lot of chinese underground rap... like idek what genre this is but i fw it. i've met so many cool ppl from everywhere. i'm learning to approach things with joy instead of fear bcs sometimes i just need to gaf less. i'm learning how to roll with the punches. it's like one day u just decide to own it and then you realize it works sm better that way. i haven't had a free weekend in such a longggg time i really needed this. also, getting a tattoo soon!!! i realized that if i want to have a lot of tattoos and be a cool tatted up person by the time i'm 25 i need to start getting tattoos like now. nothing is permanent, including your body. `,
+  },
+  {
+    date: "7/26",
+    content: `12:19 A.M.
+i just went out... to smoke... and then to take a walk afterwards... and there was a man... ok he was like across the street but he was walking in the same direction... and i got scared. ya that's it but i went inside and was having a dance battle with myself and editing my video and unpacking all while trying to be quiet and unsuspicious. actually i think that's why i like going out high so much, it activates my dancing gene. and being crossed is even better bcs the tipsy deactivates the shy gene (=^x^=) no yes oklou please i don't want to listen to anything other than oklou rn. i swear they were talking about me outside about how i went out to smoke but also i think i'm just high (ToT) fuck i have to lock in i still have to edit my video and unpack
+12:24 A.M.
+i think my own video is gonna overstimulate me ToT
+12:25 A.M.
+just watched an acid trip optical illusion video while high and now i'm literally Bruno Mars & Gucci Mane
+took like 3 big hits to impress the imaginary acquaintances and now i'm so. high. i'm a lightweight
+fuck now i'm using chatgpt to understand internet meme references...  is that horribly gen z. gen zs are the next millennials, we're already becoming them
+i used to never understand stoners. but now i think i can kind of get them ... 
+if you drop a bird upside down... can it fly?`,
+  },
+  {
+    date: "7/24",
+    title: "montreal",
+    content: `visited my first childhood home in montreal, the place where it all began... i had dinner at my auntie/uncle's house one night and it was a super wholesome experience. my aunt made such amazing pakistani food and my uncle did palm readings for me and all my friends. when my aunt hugged me when i was leaving, she teared up and it made me really emotional. i really like montreal, it has a cultured feel to it and even though i left when i was 3 and don't remember anything of it, it feels somehow nostalgic to me. i could see myself living there someday. time to brush up on my french. `,
+  },
+  {
     date: "6/26",
     title: "i hate companies",
-    content: `i've already been through this in the worst way possible, with my dream company and everything, but this time it just reminded me of that feeling again and it just makes me feel so hopeless like how many times am i going to have to go through this. it's not even just the rejection it's the telling me that they're going to give me something and then taking it away. why are companies like this and why do they get to just do that to you. why is the job market so cooked. i feel bad complaining about the job market because i know i'm probably not doing as much as i could but i'm so tired. i'm tired of trying to remain hopeful and getting reminded of why it's not productive to do that. i guess there's no way to brute force it and i just have to wait. 
+    content: `i've already been through this in the worst way possible, with my dream company and everything, but this time it just reminded me of that feeling again and it just makes me feel so hopeless like how many times am i going to have to go through this. it's not even just the rejection it's the telling me that they're going to give me something and then taking it away. why are companies like this and why do they get to just do that to you. why is the job market so cooked. i feel bad complaining about the job market because i know i'm probably not doing as much as i could but i'm so tired. i guess there's no way to brute force it and i just have to wait. 
 
 i called soleil about it today, i'm so grateful to have a friend that i can cry to. i have to remember, it's a wonderful privilege. there's so much hardship waiting for me in life, but i've made it through all the shit in the past and i know i will grow through it in the future and become who i am meant to become. 
+
+also companies ain't shit
 `,
   },
   {
@@ -51,7 +76,7 @@ actually i see admirable qualities in all of my friends that i would want to lea
     date: "6/18",
     content: `the reason i'm not on instagram is because i actually cannot have a normal relationship with it... like i am  either on it for 6 hours a day or not on it at all. and out of those two options i much prefer the second option. i really like the idea of just posting on it casually though, i like to post and aura farm and remind everyone that i'm really cool and hot and superficial sometimes. but at the same time i hate instagram and would much rather just ramble on my website and post my selfie pictures on my gallery for literally nobody to see like honestly that's peace
 
-i know i'm getting over my depression cus i'm rambling again ahhh... i missed rambling :,) smth that helps when i'm feeling depression is doing something that forces me to be very rooted in the present... crafting, skating... it feels kind of stupid to be depressed sometimes cus i'm like actually my life is rlly good... i'm never romanticizing sleepless nights ever again because that shit sucks forever. the real hard work is napless afternoons. 
+i know i'm getting over my depression cus i'm rambling again ahhh... i missed rambling :,) smth that helps when i'm feeling depressed is doing something that forces me to be very rooted in the present... crafting, skating... it feels kind of stupid to be depressed sometimes cus i'm like actually my life is rlly good... i'm never romanticizing sleepless nights ever again tho because that shit sucks forever. the real hard work is napless afternoons. 
 
 i'd been living with the aim to not experience bad emotions for so long... but it's such a privilege to feel those bad things too. how could i go through life without a bad heartbreak or two? looking back on my writing during those times... it always feels weird writing about my struggles but i look back and see how much i've felt and how much i've grown. 
 
