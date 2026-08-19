@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
+import linkOutImg from "/src/images/index/link-out.jpg";
+
 interface Props {
   img: ImageMetadata;
   imgStyle?: string;
@@ -12,6 +14,8 @@ interface Props {
 }
 
 const { img, imgStyle, text, href, row, col } = Astro.props;
+
+const linksOut = href.startsWith("http");
 ---
 
 <!-- use button for double click functionality (a does not provide this easily) -->
@@ -26,20 +30,33 @@ const { img, imgStyle, text, href, row, col } = Astro.props;
     class="index-button-img"
     style={imgStyle}
   />
-  <p>{text}</p>
+  <p>
+    {text}
+    {
+      linksOut && (
+        <Image src={linkOutImg} alt="links out" class="link-out-img" />
+      )
+    }
+  </p>
 </button>
 
 <style>
   button {
     width: 100%;
     background-color: transparent;
+    border: none;
     padding: 10%;
     aspect-ratio: 1/1;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: none;
+  }
+
+  button:focus-within {
+    background-color: rgb(163, 217, 271, 0.5);
+    border-radius: 1px;
+    border: 3px solid rgb(115, 147, 179, 0.7);
   }
 
   button:hover {
@@ -68,6 +85,13 @@ const { img, imgStyle, text, href, row, col } = Astro.props;
       1px 1px 0 #555555,
       0px 0px 2px black;
   }
+
+  .link-out-img {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+  }
 </style>
 
 <script>
@@ -77,6 +101,7 @@ const { img, imgStyle, text, href, row, col } = Astro.props;
       const href = btn.dataset.href;
       if (!href) return;
 
+      // custom doubleclick functionality to open the game modal
       if (href == "music") {
         btn.addEventListener("dblclick", () => {
           window.dispatchEvent(new CustomEvent("toggle-modal"));
@@ -84,6 +109,7 @@ const { img, imgStyle, text, href, row, col } = Astro.props;
         return;
       }
 
+      // double click to visit
       btn.addEventListener("dblclick", () => {
         href.startsWith("http")
           ? window.open(href)

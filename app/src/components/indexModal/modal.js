@@ -209,6 +209,7 @@ loadSong();
 
 function loadSong() {
   audio.src = songs[songIndex];
+  console.log(audio.src);
   audio.load();
 }
 function playPause() {
