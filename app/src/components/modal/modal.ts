@@ -14,6 +14,9 @@ function getModal(id: string): HTMLDialogElement | null {
 function centerModal(dialog: HTMLDialogElement) {
   dialog.style.margin = "0";
   dialog.style.position = "fixed";
+  dialog.style.right = "auto";
+  dialog.style.bottom = "auto";
+  dialog.style.transform = "none";
 
   const rect = dialog.getBoundingClientRect();
   dialog.style.left = `${Math.max(0, (window.innerWidth - rect.width) / 2)}px`;
@@ -24,10 +27,21 @@ export function openModal(id: string) {
   const modal = getModal(id);
   if (!modal || modal.open) return;
 
-  modal.showModal();
-  if (modal.dataset.draggable === "true") {
-    centerModal(modal);
+  if (document.activeElement instanceof HTMLElement) {
+    document.activeElement.blur();
   }
+
+  const isDraggable = modal.dataset.draggable === "true";
+
+  if (isDraggable) {
+    modal.style.position = "fixed";
+    modal.style.margin = "0";
+    modal.show();
+    requestAnimationFrame(() => centerModal(modal));
+    return;
+  }
+
+  modal.showModal();
   document.body.style.overflow = "hidden";
 }
 
@@ -35,11 +49,14 @@ export function closeModal(id: string) {
   const modal = getModal(id);
   if (!modal?.open) return;
   modal.close();
+  updateBodyScroll();
 }
 
 function updateBodyScroll() {
-  const anyOpen = document.querySelector("dialog[data-modal][open]");
-  document.body.style.overflow = anyOpen ? "hidden" : "";
+  const anyBlockingModal = document.querySelector(
+    'dialog[data-modal][open]:not([data-draggable="true"])',
+  );
+  document.body.style.overflow = anyBlockingModal ? "hidden" : "";
 }
 
 function setupDrag(dialog: HTMLDialogElement) {
@@ -70,6 +87,7 @@ function setupDrag(dialog: HTMLDialogElement) {
     offsetX = e.clientX - dialog.offsetLeft;
     offsetY = e.clientY - dialog.offsetTop;
     document.body.style.cursor = "grabbing";
+    dialog.dataset.modalDragging = "false";
   });
 
   document.addEventListener("mousemove", (e) => {
@@ -79,6 +97,7 @@ function setupDrag(dialog: HTMLDialogElement) {
     const distY = Math.abs(e.clientY - startY);
     if (distX > dragThreshold || distY > dragThreshold) {
       isDragging = true;
+      dialog.dataset.modalDragging = "true";
     }
 
     if (isDragging) {
@@ -92,21 +111,27 @@ function setupDrag(dialog: HTMLDialogElement) {
     dragStart = false;
     setTimeout(() => {
       isDragging = false;
+      dialog.dataset.modalDragging = "false";
       document.body.style.cursor = "";
     }, 0);
   });
 }
 
 function setupModal(dialog: HTMLDialogElement) {
+  const id = dialog.dataset.modalId;
+  if (!id) return;
+
+  const isDraggable = dialog.dataset.draggable === "true";
   const closeOnBackdrop = dialog.dataset.closeOnBackdrop === "true";
 
-  if (closeOnBackdrop) {
+  // click-away only applies to showModal() dialogs, not draggable popups
+  if (closeOnBackdrop && !isDraggable) {
     dialog.addEventListener("click", (e) => {
-      if (e.target === dialog) dialog.close();
+      if (e.target === dialog) closeModal(id);
     });
   }
 
-  if (dialog.dataset.draggable === "true") {
+  if (isDraggable) {
     setupDrag(dialog);
   }
 
@@ -135,8 +160,8 @@ function handleClick(e: MouseEvent) {
     }
 
     const modal = closeTrigger.closest("dialog[data-modal]");
-    if (modal instanceof HTMLDialogElement) {
-      modal.close();
+    if (modal instanceof HTMLDialogElement && modal.dataset.modalId) {
+      closeModal(modal.dataset.modalId);
     }
   }
 }
@@ -161,4 +186,9 @@ export function initModals() {
 
   window.openModal = openModal;
   window.closeModal = closeModal;
+}
+
+export function isModalDragging(id: string) {
+  const modal = getModal(id);
+  return modal?.dataset.modalDragging === "true";
 }

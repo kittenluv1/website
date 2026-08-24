@@ -1,49 +1,93 @@
-.modal {
-	position: absolute; 
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 20%; 
-	aspect-ratio: 1 / 1.2; 
-	border-radius: 50%; 
-	background-color: transparent; 
-	display: none; 
-	grid-template-rows: 1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr; 
-	grid-template-columns: 2.5fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.4fr; 
-	cursor: pointer; 
+dialog[data-modal-id="indexModal"] {
+	overflow: visible;
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: max-content;
+	height: max-content;
+	max-width: none;
+	max-height: none;
+	background: transparent;
+	color: inherit;
 }
 
-.modal:active {
+dialog[data-modal-id="indexModal"]:focus,
+dialog[data-modal-id="indexModal"]:focus-visible {
+	outline: none;
+	box-shadow: none;
+}
+
+dialog[data-modal-id="indexModal"] [data-modal-panel] {
+	overflow: visible;
+	width: fit-content;
+	height: fit-content;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+}
+
+#index-modal {
+	display: grid;
+	position: relative;
+	width: 20vw;
+	aspect-ratio: 1 / 1.2;
+	border-radius: 50%;
+	background-color: transparent;
+	grid-template-rows: 1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr;
+	grid-template-columns: 2.5fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.4fr;
+	cursor: pointer;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+#index-modal * {
+	-webkit-tap-highlight-color: transparent;
+}
+
+#index-modal *:focus,
+#index-modal *:focus-visible {
+	outline: none;
+	box-shadow: none;
+}
+
+#index-modal:active {
 	cursor: grabbing;
 }
 
-.modal:focus {
-	outline: none; 
+#index-modal > audio {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	pointer-events: none;
 }
 
 #tama-shell {
 	width: 100%;
-    height: 100%;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
+	height: 100%;
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	pointer-events: none;
 }
 
 #screen-div {
 	grid-area: 4 / 2 / 5 / 9;
-	border-radius: 8%; 
-	position: relative; 
+	border-radius: 8%;
+	position: relative;
+	overflow: hidden;
 }
 
 #screen-div::after {
 	content: '';
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
 	box-shadow: inset 0 0 10px 1px rgba(255, 255, 255, 1), 0 0 5px 5px rgba(255, 255, 255, .7);
 	pointer-events: none;
+	z-index: 2;
 }
 
 @font-face {
@@ -52,51 +96,62 @@
 }
 
 .tama-screen {
-	width: 100%; 
-	height: 100%; 
-	border-radius: inherit; 
-	font-family: 'tama-connection'; 
-	color: black; 
-	text-shadow: none; 
-	overflow: hidden; 
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	font-family: 'tama-connection';
+	color: black;
+	text-shadow: none;
+	overflow: hidden;
 }
 
 #music-image {
-	opacity: 0.9; 
-	position: absolute; 
-	user-select: none; 
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	object-fit: cover;
+	opacity: 0.9;
+	user-select: none;
+	z-index: 0;
+}
+
+#instructions,
+#tama-game {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #instructions {
 	background-color: lightgrey;
-	opacity: 0.8; 
-	position: relative; 
+	opacity: 0.8;
 }
 
 .tama-screen p {
-	padding-top: 8%; 
-	margin: 0; 
-	text-align: center; 
-	font-size: 0.6vw; 
+	padding-top: 8%;
+	margin: 0;
+	text-align: center;
+	font-size: 0.6vw;
 }
 
 #instructions ul {
-	width: 100%; 
-	margin: 0; 
-	padding: 2% 4% 2% 20%; 
-	font-size: .55vw; 
-	position: relative; 
-	box-sizing: border-box; 
+	width: 100%;
+	margin: 0;
+	padding: 2% 4% 2% 20%;
+	font-size: .55vw;
+	position: relative;
+	box-sizing: border-box;
+	list-style-type: disc !important;
+	padding-left: 1rem !important;
 }
 
-.modal button {
-	background-color: transparent; 
-	padding: 0; 
-	width: 100%;
-	height: 70%; 
-	position: absolute; 
-	border-radius: 50%; 
-	border-color: transparent; 
+#index-modal button {
+	background-color: transparent;
+	padding: 0;
+	border-color: transparent;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -106,62 +161,76 @@
 	opacity: 0.3;
 }
 
-.modal button:hover {
+#index-modal button:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 1), inset 0 0 5px rgba(255, 255, 255, 1);
-	opacity: 0.2; 
-	cursor: pointer; 
+	opacity: 0.2;
+	cursor: pointer;
 }
 
-.modal button:focus {
-	outline: none; 
+#index-modal button:focus {
+	outline: none;
 }
 
-#heart-btn {
+#index-modal #heart-btn {
 	grid-area: 2 / 3 / 3 / 8;
-	width: 100%; 
-	height: 100%; 
-	border-radius: 10%; 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+	z-index: 10;
+	pointer-events: auto;
 }
 
-#heart-btn:hover {
+#index-modal #heart-btn:hover {
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 1), inset 0 0 5px rgba(255, 255, 255, 1);
 }
 
-#previous {
-	grid-area: 6 / 2 / 7 / 4; 
+#index-modal #previous,
+#index-modal #play,
+#index-modal #next {
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	border-radius: 50%;
+	z-index: 10;
+	pointer-events: auto;
 }
 
-#play {
-	grid-area: 6 / 5 / 7 / 6; 
-	bottom: 0; 
+#index-modal #previous {
+	grid-area: 6 / 2 / 7 / 4;
 }
 
-#next {
+#index-modal #play {
+	grid-area: 6 / 5 / 7 / 6;
+	bottom: 0;
+}
+
+#index-modal #next {
 	grid-area: 6 / 7 / 7 / 9;
 }
 
 /* GAME */
 
 #tama-game {
-	background-image: url('/images/index/modal/plaid.jpg'); 
-	background-size: cover; 
-	opacity: 0.9; 
-	display: none; 
+	background-image: url('/images/index/modal/plaid.jpg');
+	background-size: cover;
+	opacity: 0.9;
+	display: none;
 }
 
 #tama-game > div {
-	background-color: #FAFBF3; 
-	position: relative; 
-	height: 80%; 
-	top: 10%; 
-	overflow: hidden; 
+	background-color: #FAFBF3;
+	position: relative;
+	height: 80%;
+	top: 10%;
+	overflow: hidden;
 }
 
 #tama-game p {
-	padding-top: 2%; 
-	font-size: .9vw; 
-	color: #4B4C83; 
-	text-shadow: 
+	padding-top: 2%;
+	font-size: .9vw;
+	color: #4B4C83;
+	text-shadow:
 		-.5px -.5px 0 #6EB7D6,
 		.5px -.5px 0 white,
 		-.5px .5px 0 white,
@@ -170,11 +239,11 @@
 }
 
 #mametchi {
-	height: 40%; 
-	position: absolute; 
-	bottom: 0; 
-	left: 10%; 
-	opacity: 1.5; 
+	height: 40%;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	opacity: 1.5;
 }
 
 @keyframes jump {
@@ -184,15 +253,15 @@
 }
 
 .jump {
-	animation: jump 1s cubic-bezier(0.25, 1, 0.5, 1); 
+	animation: jump 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 #tama-game span {
-	position: absolute; 
-	font-size: 1vw; 
-	bottom: 0; 
-	left: 110%; 
-	color: #4B4C83; 
+	position: absolute;
+	font-size: 1vw;
+	bottom: 0;
+	left: 110%;
+	color: #4B4C83;
 }
 
 @keyframes obstacle {
@@ -205,11 +274,11 @@
 }
 
 .score-div {
-	position: absolute; 
-	top: 25%;  
-	right: 4%; 
-	width: 20%; 
-	text-align: center; 
+	position: absolute;
+	top: 25%;
+	right: 4%;
+	width: 20%;
+	text-align: center;
 }
 
 @keyframes flash {
@@ -218,20 +287,20 @@
 }
 
 .flash {
-	animation: flash .5s; 
+	animation: flash .5s;
 }
 
 #tama-game .game-over {
-	width: 100%; 
-	text-align: center; 
-	position: absolute; 
-	bottom: 50%; 
-	transform: translateY(50%); 
-	display: none; 
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 50%;
+	transform: translateY(50%);
+	display: none;
 }
 
 #tama-game .game-over p {
-	text-shadow: 
+	text-shadow:
 		-.5px -.5px 0 #E58FB1,
 		.5px -.5px 0 white,
 		-.5px .5px 0 white,
@@ -239,6 +308,6 @@
 		0px 0px 2px #4B4C83;
 }
 
-#tama-game .game-over p:nth-of-type(2) { 
-	font-size: 0.35vw; 
+#tama-game .game-over p:nth-of-type(2) {
+	font-size: 0.35vw;
 }

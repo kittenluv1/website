@@ -1,69 +1,28 @@
 import songs from "../../data/songs.json";
+import { closeModal, isModalDragging, openModal } from "../modal/modal.ts";
 
-// MODAL INTERACTIVITY
-const modal = document.querySelector(".modal");
-modal.addEventListener("dblclick", toggleDisplay);
-window.addEventListener("toggle-modal", () => {
-  console.log("toggle modal event listener fired");
-  toggleDisplay();
-});
+const INDEX_MODAL_ID = "indexModal";
 
-function toggleDisplay() {
-  if (modal.style.display === "grid") modal.style.display = "none";
-  else {
-    modal.style.display = "grid";
-    modal.focus();
-  }
+const modal = document.querySelector(`dialog[data-modal-id="${INDEX_MODAL_ID}"]`);
+const indexModal = document.getElementById("index-modal");
+
+if (!modal || !indexModal) {
+  throw new Error("index modal elements not found");
 }
 
-let dragStart = false;
-let isDragging = false;
-let offsetX, offsetY;
-let dragThreshold = 5;
-let startX, startY;
-
-modal.addEventListener("mousedown", function (e) {
-  dragStart = true;
-  startX = e.clientX;
-  startY = e.clientY;
-  offsetX = e.clientX - modal.offsetLeft;
-  offsetY = e.clientY - modal.offsetTop;
-  document.body.style.cursor = "grabbing";
-});
-
-document.addEventListener("mousemove", function (e) {
-  if (dragStart) {
-    // Check if the mouse moved enough to consider it a drag
-    let distX = Math.abs(e.clientX - startX);
-    let distY = Math.abs(e.clientY - startY);
-    if (distX > dragThreshold || distY > dragThreshold) {
-      isDragging = true; // If movement exceeds threshold, start dragging
-    }
-  }
-
-  if (isDragging) {
-    let newLeft = e.clientX - offsetX;
-    let newTop = e.clientY - offsetY;
-    modal.style.left = `${newLeft}px`;
-    modal.style.top = `${newTop}px`;
-  }
-});
-
-modal.addEventListener("mouseup", () => {
-  dragStart = false;
-  // slight delay to ensure click event doesn't fire immediately after drag
-  setTimeout(() => {
-    isDragging = false;
-    document.body.style.cursor = "default";
-  }, 0);
+modal.addEventListener("dblclick", (e) => {
+  if (e.target.closest("button")) return;
+  closeModal(INDEX_MODAL_ID);
 });
 
 // TAMA SHELLS
 const screenDiv = document.getElementById("screen-div");
 const shellImage = document.getElementById("tama-shell");
-screenDiv.addEventListener("click", (event) => {
+
+screenDiv?.addEventListener("click", (event) => {
   event.stopPropagation();
 });
+
 const shells = [
   {
     rows: "1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr",
@@ -82,72 +41,77 @@ const shells = [
     columns: "2.3fr .6fr .4fr .5fr 1fr .6fr .4fr .6fr 2.3fr",
   },
 ];
-document.addEventListener("keydown", (e) => {
-  if (e.key === "s" || e.key === "t") {
-    let currentShell = Number(shellImage.src.split("/").pop().split(".")[0]); // shell source names map directly to index in shells array
-    let i = (currentShell + 1) % shells.length;
-    shellImage.src = `/images/index/modal/shells/${i}.png`;
-    shellImage.onload = () => {
-      modal.style.gridTemplateRows = shells[i].rows;
-      modal.style.gridTemplateColumns = shells[i].columns;
-    };
-  }
-});
 
-window.addEventListener("load", () => {
-  const hasTamaHash = window.location.hash.includes("tama");
-  if (hasTamaHash) {
-    modal.style.display = "grid";
-    // reset current view in case it's different
-    currentView = "instructions";
-    changeScreen();
-  }
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "s" && e.key !== "t") return;
+  if (!shellImage) return;
+
+  const currentShell = Number(shellImage.src.split("/").pop()?.split(".")[0]);
+  const i = (currentShell + 1) % shells.length;
+  shellImage.src = `/images/index/modal/shells/${i}.png`;
+  shellImage.onload = () => {
+    indexModal.style.gridTemplateRows = shells[i].rows;
+    indexModal.style.gridTemplateColumns = shells[i].columns;
+  };
 });
 
 // TAMA SCREENS
 const instructions = document.getElementById("instructions");
 const game = document.getElementById("tama-game");
-let screenImage = document.getElementById("music-image");
-let currentView = "instructions";
+const screenImage = document.getElementById("music-image");
 const character = document.getElementById("mametchi");
+const heartButton = document.getElementById("heart-btn");
+
+let currentView = "instructions";
 let isGamePlaying = false;
 
-//heart buttons toggles between screens
-const heartButton = document.getElementById("heart-btn");
-heartButton.addEventListener("click", changeScreen);
-function detectView() {
-  if (instructions.style.display === "none" && game.style.display === "none")
-    return "images";
-  else if (game.style.display === "block") return "game";
-  /* at the beginning, (instructions.style.display === 'block') */ else {
-    return "instructions";
-  }
+function isScreenVisible(el) {
+  if (!el) return false;
+  return getComputedStyle(el).display !== "none";
 }
+
+function initScreens() {
+  if (instructions) instructions.style.display = "block";
+  if (game) game.style.display = "none";
+  currentView = "instructions";
+}
+
+initScreens();
+
+heartButton?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  changeScreen();
+});
+
+function detectView() {
+  if (!isScreenVisible(instructions) && !isScreenVisible(game)) {
+    return "images";
+  }
+  if (isScreenVisible(game)) return "game";
+  return "instructions";
+}
+
 function changeScreen() {
   currentView = detectView();
   if (currentView === "instructions") {
-    instructions.style.display = "none";
-    game.style.display = "block";
+    if (instructions) instructions.style.display = "none";
+    if (game) game.style.display = "block";
   } else if (currentView === "game") {
-    instructions.style.display = "none";
-    game.style.display = "none";
-    //stop game on exit
-    character.classList.remove("jump");
-    //end the game
-  } else if ((currentView = "images")) {
-    instructions.style.display = "block";
-    game.style.display = "none";
+    if (instructions) instructions.style.display = "none";
+    if (game) game.style.display = "none";
+    character?.classList.remove("jump");
+  } else {
+    if (instructions) instructions.style.display = "block";
+    if (game) game.style.display = "none";
   }
   modal.focus();
 }
 
-// pressing space does functionalities within screens
 let isKeyPress = false;
+
 modal.addEventListener("keydown", (e) => {
   currentView = detectView();
-  if (e.key === " ") {
-    e.preventDefault();
-  }
+  if (e.key === " ") e.preventDefault();
   if (e.key === " " && !isKeyPress) {
     isKeyPress = true;
     if (currentView === "game") {
@@ -159,7 +123,8 @@ modal.addEventListener("keydown", (e) => {
     }
   }
 });
-modal.addEventListener("keyup", (e) => {
+
+modal.addEventListener("keyup", () => {
   isKeyPress = false;
 });
 
@@ -183,11 +148,15 @@ const images = [
   "/images/index/modal/tsundere.jpg",
   "/images/index/modal/XPgirl.JPG",
 ];
-screenImage.src = images[imageIndex]; //load first image
-screenImage.addEventListener("click", () => {
-  if (isDragging) return;
-  screenImage.src = images[changeImage()];
-});
+
+if (screenImage) {
+  screenImage.src = images[imageIndex];
+  screenImage.addEventListener("click", () => {
+    if (isModalDragging(INDEX_MODAL_ID)) return;
+    screenImage.src = images[changeImage()];
+  });
+}
+
 function changeImage() {
   imageIndex = (imageIndex + 1) % images.length;
   return imageIndex;
@@ -200,27 +169,31 @@ const prevButton = document.getElementById("previous");
 const playButton = document.getElementById("play");
 const nextButton = document.getElementById("next");
 
-playButton.addEventListener("click", playPause);
-prevButton.addEventListener("click", prevSong);
-nextButton.addEventListener("click", nextSong);
-audio.addEventListener("ended", nextSong);
+playButton?.addEventListener("click", playPause);
+prevButton?.addEventListener("click", prevSong);
+nextButton?.addEventListener("click", nextSong);
+audio?.addEventListener("ended", nextSong);
 
 loadSong();
 
 function loadSong() {
+  if (!audio) return;
   audio.src = songs[songIndex];
-  console.log(audio.src);
   audio.load();
 }
+
 function playPause() {
+  if (!audio) return;
   if (audio.paused) audio.play();
   else audio.pause();
 }
+
 function prevSong() {
   songIndex = (songIndex - 1 + songs.length) % songs.length;
   loadSong();
   playPause();
 }
+
 function nextSong() {
   songIndex = (songIndex + 1) % songs.length;
   loadSong();
@@ -231,7 +204,10 @@ function nextSong() {
 const hover = new Audio("/audio/sound-fx/hover.mp3");
 const click = new Audio("/audio/sound-fx/click.mp3");
 
-const modalButtons = [heartButton, prevButton, playButton, nextButton];
+const modalButtons = [heartButton, prevButton, playButton, nextButton].filter(
+  Boolean,
+);
+
 modalButtons.forEach((button) => {
   button.addEventListener("mouseenter", () => {
     hover.play();
@@ -254,8 +230,8 @@ const score = document.getElementById("score");
 const scoreDiv = document.getElementsByClassName("score-div")[0];
 const gameOver = document.getElementsByClassName("game-over")[0];
 
-// tama JUMP!
 function tamaJUMP() {
+  if (!character) return;
   character.src = "/images/index/modal/jump.png";
   character.classList.remove("jump");
   void character.offsetWidth;
@@ -270,54 +246,57 @@ function tamaJUMP() {
 }
 
 function startGame() {
-  //restart game values
+  if (!score || !gameOver || !scoreDiv || !character) return;
+
   numObstacles = 0;
-  score.innerHTML = numObstacles;
+  score.innerHTML = String(numObstacles);
   gameOver.style.display = "none";
   scoreDiv.appendChild(score);
   obstacleTimeoutID = 0;
   obstacleFrequency = initialFrequency;
   minFrequency = initialFrequency;
   character.style.animationPlayState = "running";
-  const obstacles = document.querySelectorAll(".obstacle");
-  obstacles.forEach((obstacle) => {
+  document.querySelectorAll(".obstacle").forEach((obstacle) => {
     obstacle.remove();
   });
-  //start obstacle chain
-  obstacleTimeoutID = setTimeout(() => createObstacle(), initialFrequency);
+  obstacleTimeoutID = window.setTimeout(() => createObstacle(), initialFrequency);
 }
 
 function createObstacle() {
-  if (!isGamePlaying) return;
-  // create span
+  if (!isGamePlaying || !character || !score) return;
+
   numObstacles++;
   const obstacle = document.createElement("span");
   obstacle.classList.add("obstacle");
   obstacle.innerHTML = "|";
   character.insertAdjacentElement("afterend", obstacle);
-  // detect collisions
-  const collisionIntervalID = setInterval(() => {
+
+  const collisionIntervalID = window.setInterval(() => {
     detectCollision(obstacle, collisionIntervalID);
   }, 10);
-  // remove when done
+
   obstacle.addEventListener("animationend", () => {
     obstacle.remove();
     clearInterval(collisionIntervalID);
-    score.innerHTML = numObstacles;
+    score.innerHTML = String(numObstacles);
   });
-  // schedule next obstacle
-  obstacleTimeoutID = setTimeout(() => createObstacle(), setNextFrequency());
+
+  obstacleTimeoutID = window.setTimeout(
+    () => createObstacle(),
+    setNextFrequency(),
+  );
 }
 
 function detectCollision(obstacle, ID) {
+  if (!character) return;
+
   const characterRect = character.getBoundingClientRect();
   const obstacleRect = obstacle.getBoundingClientRect();
-  // adjust for mametchi size & span size
-  let characterWidth = characterRect.width;
-  let characterRight = characterRect.right - characterWidth * 0.35;
-  let characterLeft = characterRect.left + characterWidth * 0.5;
-  let obstacleTop = obstacleRect.top + obstacleRect.height * 0.5;
-  // detect collisions
+  const characterWidth = characterRect.width;
+  const characterRight = characterRect.right - characterWidth * 0.35;
+  const characterLeft = characterRect.left + characterWidth * 0.5;
+  const obstacleTop = obstacleRect.top + obstacleRect.height * 0.5;
+
   if (
     characterRight >= obstacleRect.left &&
     characterLeft <= obstacleRect.right &&
@@ -329,11 +308,14 @@ function detectCollision(obstacle, ID) {
 }
 
 function endGame() {
+  if (!character || !gameOver || !score) return;
+
   clearTimeout(obstacleTimeoutID);
-  setTimeout(() => (isGamePlaying = false), 500);
+  window.setTimeout(() => {
+    isGamePlaying = false;
+  }, 500);
   character.style.animationPlayState = "paused";
-  const obstacles = document.querySelectorAll(".obstacle");
-  obstacles.forEach((obstacle) => {
+  document.querySelectorAll(".obstacle").forEach((obstacle) => {
     obstacle.style.animationPlayState = "paused";
   });
   gameOver.style.display = "block";
@@ -345,3 +327,10 @@ function setNextFrequency() {
   obstacleFrequency = Math.random() * obstacleFrequency + minFrequency;
   return obstacleFrequency;
 }
+
+window.addEventListener("load", () => {
+  if (!window.location.hash.includes("tama")) return;
+
+  initScreens();
+  openModal(INDEX_MODAL_ID);
+});

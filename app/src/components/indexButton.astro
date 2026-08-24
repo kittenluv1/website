@@ -51,6 +51,8 @@ const textShadow =
 </button>
 
 <script>
+  import { initModals } from "@/components/modal/modal.ts";
+
   document
     .querySelectorAll<HTMLButtonElement>("button[data-href]")
     .forEach((btn) => {
@@ -58,9 +60,10 @@ const textShadow =
       if (!href) return;
 
       // custom doubleclick functionality to open the game modal
-      if (href == "music") {
+      if (href === "music") {
         btn.addEventListener("dblclick", () => {
-          window.dispatchEvent(new CustomEvent("toggle-modal"));
+          initModals();
+          window.openModal("indexModal");
         });
         return;
       }

@@ -26,6 +26,7 @@ if (!id) {
   data-draggable={draggable ? "true" : "false"}
   data-close-on-backdrop={closeOnBackdrop ? "true" : "false"}
   aria-labelledby={`${id}-title`}
+  tabindex="-1"
 >
   <div data-modal-panel>
     <slot />
@@ -48,6 +49,17 @@ if (!id) {
 
   dialog[data-modal]::backdrop {
     background: rgb(0 0 0 / 0.75);
+  }
+
+  dialog[data-modal][data-draggable="true"][open] {
+    z-index: 1000;
+    pointer-events: auto;
+  }
+
+  dialog[data-modal]:focus,
+  dialog[data-modal]:focus-visible {
+    outline: none;
+    box-shadow: none;
   }
 
   [data-modal-panel] {
