@@ -1,6 +1,7 @@
 ---
-import "../styles/gallery.css";
-import galleryData from "../data/gallery.json";
+import "@/styles/global.css";
+import "@/styles/gallery.css";
+import galleryData from "@/data/gallery.json";
 import { Image } from "astro:assets";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(

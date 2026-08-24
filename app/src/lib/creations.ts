@@ -30,3 +30,6 @@ export function getCategories(data: CreationsData) {
 export function getCategorySlug(name: string) {
   return slugify(name);
 }
+
+export const CREATION_MODAL_ID = "creationModal";
+export const CREATION_ITEM_PARAM = "item";

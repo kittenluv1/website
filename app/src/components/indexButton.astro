@@ -16,83 +16,39 @@ interface Props {
 const { img, imgStyle, text, href, row, col } = Astro.props;
 
 const linksOut = href.startsWith("http");
+
+const textShadow =
+  "[text-shadow:-1px_-1px_0_#555555,1px_-1px_0_#555555,-1px_1px_0_#555555,1px_1px_0_#555555,0px_0px_2px_black]";
 ---
 
 <!-- use button for double click functionality (a does not provide this easily) -->
 <button
   data-href={href}
   style={`grid-row-start: ${row}; grid-column-start: ${col};`}
+  class="relative flex aspect-square w-full flex-col items-center border-[3px] border-solid border-transparent bg-transparent p-[10%] hover:cursor-default focus-within:rounded-[3px] focus-within:border-[rgb(115,147,179,0.7)] focus-within:bg-[rgb(163,217,271,0.5)]"
 >
   <Image
     src={img}
     alt={text}
     width="400"
-    class="index-button-img"
+    class="absolute bottom-[30%] h-[60%] w-auto rounded-[inherit] opacity-80"
     style={imgStyle}
   />
-  <p>
+  <p
+    class={`absolute bottom-[10%] m-0 text-[2vh] whitespace-nowrap text-white ${textShadow}`}
+  >
     {text}
     {
       linksOut && (
-        <Image src={linkOutImg} alt="links out" class="link-out-img" />
+        <Image
+          src={linkOutImg}
+          alt="links out"
+          class="inline-block h-[0.5em] w-[0.5em] align-[-0.1em]"
+        />
       )
     }
   </p>
 </button>
-
-<style>
-  button {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 10%;
-    aspect-ratio: 1/1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  button:focus-within {
-    background-color: rgb(163, 217, 271, 0.5);
-    border-radius: 1px;
-    border: 3px solid rgb(115, 147, 179, 0.7);
-  }
-
-  button:hover {
-    cursor: default;
-  }
-
-  .index-button-img {
-    position: absolute;
-    border-radius: inherit;
-    height: 60%;
-    width: auto;
-    bottom: 30%;
-    opacity: 0.8;
-  }
-
-  p {
-    position: absolute;
-    margin: 0;
-    bottom: 10%;
-    font-size: 2vh;
-    color: white;
-    text-shadow:
-      -1px -1px 0 #555555,
-      1px -1px 0 #555555,
-      -1px 1px 0 #555555,
-      1px 1px 0 #555555,
-      0px 0px 2px black;
-  }
-
-  .link-out-img {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.15em;
-  }
-</style>
 
 <script>
   document

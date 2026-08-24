@@ -2,8 +2,8 @@
 import "@/styles/global.css";
 import creationsData from "@/data/creations.json";
 import {
+  CREATION_MODAL_ID,
   getCategories,
-  getCategorySlug,
   type CreationsData,
 } from "@/lib/creations";
 import Modal from "@/components/modal/modal.astro";
@@ -21,7 +21,6 @@ interface Props {
 }
 
 const { categoryName } = Astro.props;
-const categorySlug = getCategorySlug(categoryName);
 
 const items = (creationsData as CreationsData)[categoryName];
 
@@ -61,7 +60,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
             return (
               <button
                 type="button"
-                data-modal-open="creationModal"
+                data-creation-item={index}
                 class="text-left text-white border-2 border-white"
               >
                 <Image src={image} alt={item.title} />
@@ -72,60 +71,142 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         }
       </div>
 
-      {
-        items.map((item) => {
-          return (
-            <Modal id="creationModal">
-              <div class="bg-black border-2 border-white p-4 text-white">
-                <div class="flex justify-between items-start gap-4 mb-4">
-                  <div>
-                    <h2 class="text-2xl">
-                      {item.title}
-                    </h2>
-                    <p class="text-sm opacity-70">{item.date}</p>
-                  </div>
-                  <button
-                    type="button"
-                    data-modal-close
-                    class="border border-white px-2 py-1 shrink-0"
-                    aria-label="Close"
-                  >
-                    close
-                  </button>
+      <Modal id={CREATION_MODAL_ID}>
+        {
+          items.map((item, index) => (
+            <div
+              data-creation-panel={index}
+              class="bg-black border-2 border-white p-4 text-white hidden"
+            >
+              <div class="flex justify-between items-start gap-4 mb-4">
+                <div>
+                  <h2 class="text-2xl">{item.title}</h2>
+                  <p class="text-sm opacity-70">{item.date}</p>
                 </div>
-
-                <p class="mb-4">{item.description}</p>
-
-                <div class="flex flex-col gap-4">
-                  {
-                    item.images.map((imageSrc, imageIndex) => {
-                      const image = images[imageSrc]?.default;
-                      if (!image) return null;
-
-                      const caption = item.captions?.[imageIndex];
-
-                      return (
-                        <figure>
-                          <Image src={image} alt={caption || item.title} />
-                          {caption && (
-                            <figcaption class="text-sm opacity-70 mt-1">
-                              {caption}
-                            </figcaption>
-                          )}
-                        </figure>
-                      );
-                    })
-                  }
-                </div>
-
-                {item.comments && (
-                  <p class="mt-4 text-sm opacity-80">{item.comments}</p>
-                )}
+                <button
+                  type="button"
+                  data-modal-close
+                  class="border border-white px-2 py-1 shrink-0"
+                  aria-label="Close"
+                >
+                  close
+                </button>
               </div>
-            </Modal>
-          );
-        })
-      }
+
+              <p class="mb-4">{item.description}</p>
+
+              <div class="flex flex-col gap-4">
+                {
+                  item.images.map((imageSrc, imageIndex) => {
+                    const image = images[imageSrc]?.default;
+                    if (!image) return null;
+
+                    const caption = item.captions?.[imageIndex];
+
+                    return (
+                      <figure>
+                        <Image src={image} alt={caption || item.title} />
+                        {caption && (
+                          <figcaption class="text-sm opacity-70 mt-1">
+                            {caption}
+                          </figcaption>
+                        )}
+                      </figure>
+                    );
+                  })
+                }
+              </div>
+
+              {item.comments && (
+                <p class="mt-4 text-sm opacity-80">{item.comments}</p>
+              )}
+            </div>
+          ))
+        }
+      </Modal>
     </main>
+
+    <script>
+      import {
+        CREATION_ITEM_PARAM,
+        CREATION_MODAL_ID,
+      } from "@/lib/creations";
+      import { closeModal, initModals, openModal } from "@/components/modal/modal.ts";
+
+      initModals();
+
+      function showPanel(index: number) {
+        document.querySelectorAll<HTMLElement>("[data-creation-panel]").forEach(
+          (panel) => {
+            const panelIndex = Number.parseInt(panel.dataset.creationPanel ?? "", 10);
+            panel.classList.toggle("hidden", panelIndex !== index);
+          },
+        );
+      }
+
+      function setItemParam(index: number | null, replace = false) {
+        const url = new URL(window.location.href);
+        if (index === null) {
+          url.searchParams.delete(CREATION_ITEM_PARAM);
+        } else {
+          url.searchParams.set(CREATION_ITEM_PARAM, String(index));
+        }
+
+        const next = `${url.pathname}${url.search}${url.hash}`;
+        if (replace) {
+          window.history.replaceState({ creationItem: index }, "", next);
+        } else {
+          window.history.pushState({ creationItem: index }, "", next);
+        }
+      }
+
+      function openItemModal(index: number, replace = false) {
+        showPanel(index);
+        openModal(CREATION_MODAL_ID);
+        setItemParam(index, replace);
+      }
+
+      function syncFromUrl(replace = false) {
+        const raw = new URLSearchParams(window.location.search).get(
+          CREATION_ITEM_PARAM,
+        );
+        if (raw === null) {
+          closeModal(CREATION_MODAL_ID);
+          return;
+        }
+
+        const index = Number.parseInt(raw, 10);
+        if (Number.isNaN(index) || index < 0) return;
+
+        openItemModal(index, replace);
+      }
+
+      document.addEventListener("click", (e) => {
+        const trigger = (e.target as HTMLElement).closest<HTMLElement>(
+          "[data-creation-item]",
+        );
+        if (!trigger) return;
+
+        e.preventDefault();
+
+        const index = Number.parseInt(trigger.dataset.creationItem ?? "", 10);
+        if (Number.isNaN(index)) return;
+
+        openItemModal(index);
+      });
+
+      document
+        .querySelector(`dialog[data-modal-id="${CREATION_MODAL_ID}"]`)
+        ?.addEventListener("close", () => {
+          if (!new URLSearchParams(window.location.search).has(CREATION_ITEM_PARAM)) {
+            return;
+          }
+          setItemParam(null, true);
+        });
+
+      window.addEventListener("popstate", () => syncFromUrl(true));
+
+      syncFromUrl(true);
+    </script>
   </body>
 </html>
