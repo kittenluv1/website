@@ -1,0 +1,131 @@
+---
+import "@/styles/global.css";
+import creationsData from "@/data/creations.json";
+import {
+  getCategories,
+  getCategorySlug,
+  type CreationsData,
+} from "@/lib/creations";
+import Modal from "@/components/modal/modal.astro";
+import { Image } from "astro:assets";
+
+export function getStaticPaths() {
+  return getCategories(creationsData as CreationsData).map(({ name, slug }) => ({
+    params: { category: slug },
+    props: { categoryName: name },
+  }));
+}
+
+interface Props {
+  categoryName: string;
+}
+
+const { categoryName } = Astro.props;
+const categorySlug = getCategorySlug(categoryName);
+
+const items = (creationsData as CreationsData)[categoryName];
+
+if (!items) {
+  return Astro.redirect("/creations");
+}
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/creations/**/*.{png,jpg,jpeg,JPEG,webp,gif}",
+  { eager: true },
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{categoryName} | creations</title>
+    <link rel="icon" href="/src/images/creations/caticon.png" type="image/png" />
+  </head>
+  <body>
+    <main class="bg-black text-white p-6">
+      <a href="/creations" class="text-white">← creations</a>
+      <h1 class="text-5xl">{categoryName}</h1>
+      <div class="grid grid-cols-5 gap-10 mt-8">
+        {
+          items.map((item, index) => {
+            const imageSrc = item.images?.[0];
+            const image = imageSrc ? images[imageSrc]?.default : undefined;
+
+            if (!image) {
+              console.log(imageSrc, "image not found");
+              return null;
+            }
+
+            return (
+              <button
+                type="button"
+                data-modal-open="creationModal"
+                class="text-left text-white border-2 border-white"
+              >
+                <Image src={image} alt={item.title} />
+                {item.title}
+              </button>
+            );
+          })
+        }
+      </div>
+
+      {
+        items.map((item) => {
+          return (
+            <Modal id="creationModal">
+              <div class="bg-black border-2 border-white p-4 text-white">
+                <div class="flex justify-between items-start gap-4 mb-4">
+                  <div>
+                    <h2 class="text-2xl">
+                      {item.title}
+                    </h2>
+                    <p class="text-sm opacity-70">{item.date}</p>
+                  </div>
+                  <button
+                    type="button"
+                    data-modal-close
+                    class="border border-white px-2 py-1 shrink-0"
+                    aria-label="Close"
+                  >
+                    close
+                  </button>
+                </div>
+
+                <p class="mb-4">{item.description}</p>
+
+                <div class="flex flex-col gap-4">
+                  {
+                    item.images.map((imageSrc, imageIndex) => {
+                      const image = images[imageSrc]?.default;
+                      if (!image) return null;
+
+                      const caption = item.captions?.[imageIndex];
+
+                      return (
+                        <figure>
+                          <Image src={image} alt={caption || item.title} />
+                          {caption && (
+                            <figcaption class="text-sm opacity-70 mt-1">
+                              {caption}
+                            </figcaption>
+                          )}
+                        </figure>
+                      );
+                    })
+                  }
+                </div>
+
+                {item.comments && (
+                  <p class="mt-4 text-sm opacity-80">{item.comments}</p>
+                )}
+              </div>
+            </Modal>
+          );
+        })
+      }
+    </main>
+  </body>
+</html>

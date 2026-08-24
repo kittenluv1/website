@@ -1,0 +1,64 @@
+---
+interface Props {
+  id: string;
+  draggable?: boolean;
+  closeOnBackdrop?: boolean;
+}
+
+const { id, draggable = false, closeOnBackdrop = false } = Astro.props;
+
+if (!id) {
+  throw new Error("Modal component requires an id");
+}
+---
+
+{
+  Astro.slots.has("trigger") && (
+    <div data-modal-open={id} class="contents">
+      <slot name="trigger" />
+    </div>
+  )
+}
+
+<dialog
+  data-modal
+  data-modal-id={id}
+  data-draggable={draggable ? "true" : "false"}
+  data-close-on-backdrop={closeOnBackdrop ? "true" : "false"}
+  aria-labelledby={`${id}-title`}
+>
+  <div data-modal-panel>
+    <slot />
+  </div>
+</dialog>
+
+<script>
+  import { initModals } from "./modal.ts";
+  initModals();
+</script>
+
+<style>
+  dialog[data-modal] {
+    border: none;
+    padding: 0;
+    margin: auto;
+    background: transparent;
+    color: inherit;
+  }
+
+  dialog[data-modal]::backdrop {
+    background: rgb(0 0 0 / 0.75);
+  }
+
+  [data-modal-panel] {
+    overflow-y: auto;
+  }
+
+  dialog[data-modal][data-draggable="true"] [data-modal-panel] {
+    cursor: grab;
+  }
+
+  dialog[data-modal][data-draggable="true"] [data-modal-drag-handle] {
+    cursor: grab;
+  }
+</style>
