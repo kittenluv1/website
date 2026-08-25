@@ -57,10 +57,10 @@ export const CREATION_ITEM_PARAM = "item";
 // reusable styles
 // reusable styles
 export const textShadowPink =
-  "[text-shadow:-1px_-1px_0_#192855,1px_-1px_0_#192855,-1px_1px_0_#192855,1px_1px_0_#192855,0px_0px_2px_#192855,0_0_5px_#192855,0_0_10px_#192855]";
+  "[text-shadow:-1px_-1px_0_#98455d,1px_-1px_0_#98455d,-1px_1px_0_#98455d,1px_1px_0_#98455d,0px_0px_2px_#98455d,0_0_5px_#98455d,0_0_10px_#98455d]";
 
 export const textShadowGreenHover =
-  "hover:text-white hover:[text-shadow:-1px_-1px_0_#CEDA78,1px_-1px_0_#CEDA78,-1px_1px_0_#CEDA78,1px_1px_0_#CEDA78,0px_0px_2px_#CEDA78,0_0_5px_#CEDA78,0_0_10px_#CEDA78]";
+  "hover:text-white hover:[text-shadow:-1px_-1px_0_#58e8e8,1px_-1px_0_#58e8e8,-1px_1px_0_#58e8e8,1px_1px_0_#58e8e8,0px_0px_2px_#58e8e8,0_0_5px_#58e8e8,0_0_10px_#58e8e8]";
 
 export const gridItemButton = [
   "flex aspect-square w-full flex-col items-center border-transparent bg-transparent p-0",
@@ -71,3 +71,9 @@ export const gridItemButton = [
   "[&_p]:mt-[2vh] [&_p]:mb-0 [&_p]:font-[messy-handwritten,simsun,serif] [&_p]:font-bold",
   "[&_em]:m-0",
 ].join(" ");
+
+// text shadow colors: 
+// - pink: #98455d
+// - dark blue: #98455d
+// - yellow-green: #58e8e8
+// - turquoise: #58e8e8
