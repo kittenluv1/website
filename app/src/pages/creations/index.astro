@@ -1,42 +1,38 @@
 ---
-import "@/styles/global.css";
-import { getCategories } from "@/lib/creations";
+import { getCategories, type CreationsData } from "@/lib/creations";
 import { Image } from "astro:assets";
 import creationsData from "@/data/creations.json";
+import Layout from "./layout.astro";
+import { gridItemButton } from "@/lib/creations";
+
+const categories = getCategories(creationsData as CreationsData);
+
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/images/creations/**/*.{png,jpg,jpeg,JPEG,webp,gif}",
   { eager: true },
 );
+
+
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>creations</title>
-	<link rel="icon" href="/src/images/creations/caticon.png" type="image/png">
-</header>
-<body>
-  <main class="bg-black text-white">
-    <h1 class="text-5xl">creations</h1>
-    <div class="grid grid-cols-5 gap-10">
-      {
-        getCategories(creationsData).map(({ name, slug, preview }) => {
-          const image = preview ? images[preview]?.default : undefined;
-          if (!image) {
-            console.log(preview, "image not found");
-            return null;
-          }
-
-          return (
-            <a href={`/creations/${slug}`} class="text-white border-2 border-white">
-              <Image src={image} alt={name} />
-              {name}
-            </a>
-          );
-        })
+<Layout pageView="categories">
+  {
+    categories.map(({ name, slug, preview }) => {
+      const image = preview ? images[preview]?.default : undefined;
+      if (!image) {
+        console.log(preview, "image not found");
+        return null;
       }
-    </div>
-  </main>
-</body>
+
+      return (
+        <a
+          href={`/creations/${slug}`}
+          class={gridItemButton}
+        >
+          <Image src={image} alt={name} />
+          <p>{name}</p>
+        </a>
+      );
+    })
+  }
+</Layout>

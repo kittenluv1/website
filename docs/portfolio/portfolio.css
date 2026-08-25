@@ -1,15 +1,10 @@
 @font-face {
-	font-family: 'cookie-monster';
-	src: url('/global/fonts/Cookiemonster/Cookiemonster-gv11.ttf') format('truetype');
-}
-
-@font-face {
 	font-family: 'messy-handwritten';
 	src: url('/global/fonts/MessyHandwritten/MessyHandwritten-Regular.ttf') format('truetype');
 }
 
 html {
-	font-family: simsun, messy-handwritten, cookie-monster, serif; 
+	font-family: simsun, messy-handwritten, serif; 
 	scroll-behavior: smooth; 
 }
 
@@ -146,7 +141,7 @@ header > div > div > p {
 
 #name {
 	color: #423B35;
-	font-family: messy-handwritten, cookie-monster, simsun, serif; 
+	font-family: messy-handwritten, simsun, serif; 
 	text-shadow: 0 0 5px #5A422A, 0 0 20px #9CA364;
 }
 

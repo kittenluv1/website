@@ -11,6 +11,55 @@ function getModal(id: string): HTMLDialogElement | null {
   return document.querySelector(`dialog[data-modal-id="${CSS.escape(id)}"]`);
 }
 
+function isDraggable(modal: HTMLDialogElement) {
+  return modal.dataset.draggable === "true";
+}
+
+function dimsBackdrop(modal: HTMLDialogElement) {
+  return modal.dataset.dimBackdrop === "true";
+}
+
+// use native dialog backdrop functionality
+function usesNativeBackdrop(modal: HTMLDialogElement) {
+  return dimsBackdrop(modal) && !isDraggable(modal);
+}
+
+// custom backdrop for draggable and dimmable modals
+function getCustomBackdrop(id: string) {
+  // find the custom backdrop button by data-modal-backdrop attribute
+  // clicking this button will close the modal
+  return document.querySelector<HTMLButtonElement>(
+    `[data-modal-backdrop="${CSS.escape(id)}"]`,
+  );
+}
+
+function showCustomBackdrop(id: string) {
+  const modal = getModal(id);
+  if (!modal) return;
+
+  let backdrop = getCustomBackdrop(id);
+  // if no custom backdrop button found, create a new one
+  if (!backdrop) {
+    backdrop = document.createElement("button");
+    backdrop.type = "button";
+    backdrop.dataset.modalBackdrop = id;
+    backdrop.className = "modal-custom-backdrop";
+    backdrop.setAttribute("aria-label", "Close dialog");
+    backdrop.addEventListener("click", () => {
+      if (modal.dataset.closeOnBackdrop === "true") {
+        closeModal(id);
+      }
+    });
+    document.body.appendChild(backdrop);
+  }
+
+  backdrop.hidden = false;
+}
+
+function hideCustomBackdrop(id: string) {
+  getCustomBackdrop(id)?.remove();
+}
+
 function centerModal(dialog: HTMLDialogElement) {
   dialog.style.margin = "0";
   dialog.style.position = "fixed";
@@ -31,30 +80,38 @@ export function openModal(id: string) {
     document.activeElement.blur();
   }
 
-  const isDraggable = modal.dataset.draggable === "true";
-
-  if (isDraggable) {
-    modal.style.position = "fixed";
-    modal.style.margin = "0";
-    modal.show();
-    requestAnimationFrame(() => centerModal(modal));
+  if (usesNativeBackdrop(modal)) {
+    modal.showModal();
+    document.body.style.overflow = "hidden";
     return;
   }
 
-  modal.showModal();
-  document.body.style.overflow = "hidden";
+  modal.style.position = "fixed";
+  modal.style.margin = "0";
+  modal.show();
+
+  if (isDraggable(modal)) {
+    requestAnimationFrame(() => centerModal(modal));
+  }
+
+  if (dimsBackdrop(modal)) {
+    showCustomBackdrop(id);
+    document.body.style.overflow = "hidden";
+  }
 }
 
 export function closeModal(id: string) {
   const modal = getModal(id);
   if (!modal?.open) return;
+
+  hideCustomBackdrop(id);
   modal.close();
   updateBodyScroll();
 }
 
 function updateBodyScroll() {
   const anyBlockingModal = document.querySelector(
-    'dialog[data-modal][open]:not([data-draggable="true"])',
+    'dialog[data-modal][open][data-dim-backdrop="true"]',
   );
   document.body.style.overflow = anyBlockingModal ? "hidden" : "";
 }
@@ -121,21 +178,20 @@ function setupModal(dialog: HTMLDialogElement) {
   const id = dialog.dataset.modalId;
   if (!id) return;
 
-  const isDraggable = dialog.dataset.draggable === "true";
-  const closeOnBackdrop = dialog.dataset.closeOnBackdrop === "true";
-
-  // click-away only applies to showModal() dialogs, not draggable popups
-  if (closeOnBackdrop && !isDraggable) {
+  if (dialog.dataset.closeOnBackdrop === "true" && usesNativeBackdrop(dialog)) {
     dialog.addEventListener("click", (e) => {
       if (e.target === dialog) closeModal(id);
     });
   }
 
-  if (isDraggable) {
+  if (isDraggable(dialog)) {
     setupDrag(dialog);
   }
 
-  dialog.addEventListener("close", updateBodyScroll);
+  dialog.addEventListener("close", () => {
+    hideCustomBackdrop(id);
+    updateBodyScroll();
+  });
 }
 
 function handleClick(e: MouseEvent) {

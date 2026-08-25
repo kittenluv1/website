@@ -1,26 +1,21 @@
 @font-face {
-	font-family: 'cookie-monster';
-	src: url('/global/fonts/Cookiemonster/Cookiemonster-gv11.ttf') format('truetype');
-}
-
-@font-face {
 	font-family: 'messy-handwritten';
 	src: url('/global/fonts/MessyHandwritten/MessyHandwritten-Regular.ttf') format('truetype');
 }
 
 body {
-	font-family: messy-handwritten, cookie-monster, simsun, serif; 
+	font-family: messy-handwritten, simsun, serif; 
 	font-size: 4vh; 
 	font-weight: bold; 
 	color: white; 
 	text-shadow:
-		-1px -1px 0 #9BB958,
-		1px -1px 0 #9BB958,
-		-1px 1px 0 #9BB958,
-		1px 1px 0 #9BB958,
-		0px 0px 2px #9BB958,
-		0 0 5px #9BB958,
-		0 0 10px #9BB958;
+		-1px -1px 0 #30d9d7,
+		1px -1px 0 #30d9d7,
+		-1px 1px 0 #30d9d7,
+		1px 1px 0 #30d9d7,
+		0px 0px 2px #30d9d7,
+		0 0 5px #30d9d7,
+		0 0 10px #30d9d7;
 	display: flex; 
 }
 
@@ -45,13 +40,13 @@ button {
 button:hover {
 	color: white; 
 	text-shadow:
-		-1px -1px 0 #9BB958,
-		1px -1px 0 #9BB958,
-		-1px 1px 0 #9BB958,
-		1px 1px 0 #9BB958,
-		0px 0px 2px #9BB958,
-		0 0 5px #9BB958,
-		0 0 10px #9BB958;
+		-1px -1px 0 #30d9d7,
+		1px -1px 0 #30d9d7,
+		-1px 1px 0 #30d9d7,
+		1px 1px 0 #30d9d7,
+		0px 0px 2px #30d9d7,
+		0 0 5px #30d9d7,
+		0 0 10px #30d9d7;
 }
 
 .display a {
@@ -353,7 +348,7 @@ nav div {
 
 .grid-item p {
 	margin: 2vh 0 0 0; 
-	font-family: messy-handwritten, cookie-monster, simsun, serif; 
+	font-family: messy-handwritten, simsun, serif; 
 	font-weight: bold; 
 }
 

@@ -1,30 +1,47 @@
 ---
-import "@/styles/global.css";
 import creationsData from "@/data/creations.json";
 import {
-  CREATION_MODAL_ID,
+  ALL_CATEGORY_SLUG,
+  getAllCreations,
   getCategories,
+  type Creation,
   type CreationsData,
+  type FlatCreation,
+  gridItemButton,
 } from "@/lib/creations";
-import Modal from "@/components/modal/modal.astro";
+import CreationModal, {
+  type CreationModalItem,
+} from "@/components/creations/CreationModal.astro";
 import { Image } from "astro:assets";
+import Layout from "./layout.astro";
 
 export function getStaticPaths() {
-  return getCategories(creationsData as CreationsData).map(({ name, slug }) => ({
-    params: { category: slug },
-    props: { categoryName: name },
-  }));
+  const categories = getCategories(creationsData as CreationsData);
+
+  return [
+    ...categories.map(({ name, slug }) => ({
+      params: { category: slug },
+      props: { categoryName: name, isAll: false },
+    })),
+    {
+      params: { category: ALL_CATEGORY_SLUG },
+      props: { categoryName: "all pieces", isAll: true },
+    },
+  ];
 }
 
 interface Props {
   categoryName: string;
+  isAll: boolean;
 }
 
-const { categoryName } = Astro.props;
+const { categoryName, isAll } = Astro.props;
 
-const items = (creationsData as CreationsData)[categoryName];
+const items: (Creation | FlatCreation)[] = isAll
+  ? getAllCreations(creationsData as CreationsData)
+  : ((creationsData as CreationsData)[categoryName] ?? []);
 
-if (!items) {
+if (!items.length) {
   return Astro.redirect("/creations");
 }
 
@@ -32,181 +49,52 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/images/creations/**/*.{png,jpg,jpeg,JPEG,webp,gif}",
   { eager: true },
 );
+
+function getItemCategoryName(item: Creation | FlatCreation) {
+  return "categoryName" in item ? item.categoryName : undefined;
+}
+
+function getImageUrl(path: string) {
+  return images[path]?.default?.src ?? path;
+}
+
+const modalItems: CreationModalItem[] = items.map((item) => ({
+  title: item.title,
+  date: item.date,
+  description: item.description,
+  comments: item.comments,
+  categoryName: getItemCategoryName(item),
+  imageUrls: item.images.map(getImageUrl),
+  captions: item.captions ?? [],
+}));
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{categoryName} | creations</title>
-    <link rel="icon" href="/src/images/creations/caticon.png" type="image/png" />
-  </head>
-  <body>
-    <main class="bg-black text-white p-6">
-      <a href="/creations" class="text-white">← creations</a>
-      <h1 class="text-5xl">{categoryName}</h1>
-      <div class="grid grid-cols-5 gap-10 mt-8">
-        {
-          items.map((item, index) => {
-            const imageSrc = item.images?.[0];
-            const image = imageSrc ? images[imageSrc]?.default : undefined;
+<Layout pageView={categoryName}>
+  {
+    items.map((item, index) => {
+      const imageSrc = item.images?.[0];
+      const image = imageSrc ? images[imageSrc]?.default : undefined;
 
-            if (!image) {
-              console.log(imageSrc, "image not found");
-              return null;
-            }
-
-            return (
-              <button
-                type="button"
-                data-creation-item={index}
-                class="text-left text-white border-2 border-white"
-              >
-                <Image src={image} alt={item.title} />
-                {item.title}
-              </button>
-            );
-          })
-        }
-      </div>
-
-      <Modal id={CREATION_MODAL_ID}>
-        {
-          items.map((item, index) => (
-            <div
-              data-creation-panel={index}
-              class="bg-black border-2 border-white p-4 text-white hidden"
-            >
-              <div class="flex justify-between items-start gap-4 mb-4">
-                <div>
-                  <h2 class="text-2xl">{item.title}</h2>
-                  <p class="text-sm opacity-70">{item.date}</p>
-                </div>
-                <button
-                  type="button"
-                  data-modal-close
-                  class="border border-white px-2 py-1 shrink-0"
-                  aria-label="Close"
-                >
-                  close
-                </button>
-              </div>
-
-              <p class="mb-4">{item.description}</p>
-
-              <div class="flex flex-col gap-4">
-                {
-                  item.images.map((imageSrc, imageIndex) => {
-                    const image = images[imageSrc]?.default;
-                    if (!image) return null;
-
-                    const caption = item.captions?.[imageIndex];
-
-                    return (
-                      <figure>
-                        <Image src={image} alt={caption || item.title} />
-                        {caption && (
-                          <figcaption class="text-sm opacity-70 mt-1">
-                            {caption}
-                          </figcaption>
-                        )}
-                      </figure>
-                    );
-                  })
-                }
-              </div>
-
-              {item.comments && (
-                <p class="mt-4 text-sm opacity-80">{item.comments}</p>
-              )}
-            </div>
-          ))
-        }
-      </Modal>
-    </main>
-
-    <script>
-      import {
-        CREATION_ITEM_PARAM,
-        CREATION_MODAL_ID,
-      } from "@/lib/creations";
-      import { closeModal, initModals, openModal } from "@/components/modal/modal.ts";
-
-      initModals();
-
-      function showPanel(index: number) {
-        document.querySelectorAll<HTMLElement>("[data-creation-panel]").forEach(
-          (panel) => {
-            const panelIndex = Number.parseInt(panel.dataset.creationPanel ?? "", 10);
-            panel.classList.toggle("hidden", panelIndex !== index);
-          },
-        );
+      if (!image) {
+        console.log(imageSrc, "image not found");
+        return null;
       }
 
-      function setItemParam(index: number | null, replace = false) {
-        const url = new URL(window.location.href);
-        if (index === null) {
-          url.searchParams.delete(CREATION_ITEM_PARAM);
-        } else {
-          url.searchParams.set(CREATION_ITEM_PARAM, String(index));
-        }
+      const itemCategoryName = getItemCategoryName(item);
 
-        const next = `${url.pathname}${url.search}${url.hash}`;
-        if (replace) {
-          window.history.replaceState({ creationItem: index }, "", next);
-        } else {
-          window.history.pushState({ creationItem: index }, "", next);
-        }
-      }
+      return (
+        <button type="button" data-creation-item={index} class={gridItemButton}>
+          <Image src={image} alt={item.title} />
+          <p class="mb-0!">{item.title}</p>
+          {itemCategoryName && (
+            <p class="m-0! text-sm">{itemCategoryName}</p>
+          )}
+        </button>
+      );
+    })
+  }
 
-      function openItemModal(index: number, replace = false) {
-        showPanel(index);
-        openModal(CREATION_MODAL_ID);
-        setItemParam(index, replace);
-      }
-
-      function syncFromUrl(replace = false) {
-        const raw = new URLSearchParams(window.location.search).get(
-          CREATION_ITEM_PARAM,
-        );
-        if (raw === null) {
-          closeModal(CREATION_MODAL_ID);
-          return;
-        }
-
-        const index = Number.parseInt(raw, 10);
-        if (Number.isNaN(index) || index < 0) return;
-
-        openItemModal(index, replace);
-      }
-
-      document.addEventListener("click", (e) => {
-        const trigger = (e.target as HTMLElement).closest<HTMLElement>(
-          "[data-creation-item]",
-        );
-        if (!trigger) return;
-
-        e.preventDefault();
-
-        const index = Number.parseInt(trigger.dataset.creationItem ?? "", 10);
-        if (Number.isNaN(index)) return;
-
-        openItemModal(index);
-      });
-
-      document
-        .querySelector(`dialog[data-modal-id="${CREATION_MODAL_ID}"]`)
-        ?.addEventListener("close", () => {
-          if (!new URLSearchParams(window.location.search).has(CREATION_ITEM_PARAM)) {
-            return;
-          }
-          setItemParam(null, true);
-        });
-
-      window.addEventListener("popstate", () => syncFromUrl(true));
-
-      syncFromUrl(true);
-    </script>
-  </body>
-</html>
+  <div slot="extra">
+    <CreationModal items={modalItems} />
+  </div>
+</Layout>

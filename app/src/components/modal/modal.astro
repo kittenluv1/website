@@ -2,10 +2,16 @@
 interface Props {
   id: string;
   draggable?: boolean;
+  dimBackdrop?: boolean;
   closeOnBackdrop?: boolean;
 }
 
-const { id, draggable = false, closeOnBackdrop = false } = Astro.props;
+const {
+  id,
+  draggable = false,
+  dimBackdrop = false,
+  closeOnBackdrop = false,
+} = Astro.props;
 
 if (!id) {
   throw new Error("Modal component requires an id");
@@ -24,6 +30,7 @@ if (!id) {
   data-modal
   data-modal-id={id}
   data-draggable={draggable ? "true" : "false"}
+  data-dim-backdrop={dimBackdrop ? "true" : "false"}
   data-close-on-backdrop={closeOnBackdrop ? "true" : "false"}
   aria-labelledby={`${id}-title`}
   tabindex="-1"
@@ -38,7 +45,7 @@ if (!id) {
   initModals();
 </script>
 
-<style>
+<style is:global>
   dialog[data-modal] {
     border: none;
     padding: 0;
@@ -51,7 +58,7 @@ if (!id) {
     background: rgb(0 0 0 / 0.75);
   }
 
-  dialog[data-modal][data-draggable="true"][open] {
+  dialog[data-modal][open]:not([data-dim-backdrop="true"]) {
     z-index: 1000;
     pointer-events: auto;
   }
@@ -72,5 +79,15 @@ if (!id) {
 
   dialog[data-modal][data-draggable="true"] [data-modal-drag-handle] {
     cursor: grab;
+  }
+
+  .modal-custom-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    border: none;
+    padding: 0;
+    background: rgb(0 0 0 / 0.75);
+    cursor: default;
   }
 </style>

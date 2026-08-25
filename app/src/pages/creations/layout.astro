@@ -1,1 +1,134 @@
-<!-- might make this a shared layout page for index and [category] pages, unless they end up having different UI once i design them -->
+---
+import "@/styles/global.css";
+import { ALL_CATEGORY_SLUG, textShadowPink, textShadowGreenHover } from "@/lib/creations";
+
+import catLogoBg from "@/images/creations/crochet & textiles/cat/cat1.png";
+import circleLogo from "@/images/creations/turquoise.png";
+
+interface Props {
+  pageView?: string;
+}
+
+const { pageView = "categories" } = Astro.props;
+
+const menuLink = [
+  "m-[2%] border-transparent bg-transparent p-0",
+  "font-[short-stack-regular,simsun,serif] text-[1em] font-bold text-white no-underline",
+  textShadowPink,
+  textShadowGreenHover,
+].join(" ");
+
+const menuLinkWithIcon = [
+  menuLink,
+  "inline-flex items-center gap-[0.25em] leading-none",
+  "[&_svg]:block [&_svg]:h-[0.9em] [&_svg]:w-[0.9em] [&_svg]:shrink-0",
+  "[&_svg]:[filter:drop-shadow(-1px_-1px_0_#98455d)_drop-shadow(1px_-1px_0_#98455d)_drop-shadow(-1px_1px_0_#98455d)_drop-shadow(1px_1px_0_#98455d)]",
+  "hover:[&_svg]:[filter:drop-shadow(-1px_-1px_0_#30d9d7)_drop-shadow(1px_-1px_0_#30d9d7)_drop-shadow(-1px_1px_0_#30d9d7)_drop-shadow(1px_1px_0_#30d9d7)_drop-shadow(0_0_5px_#30d9d7)]",
+].join(" ");
+---
+
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>creations</title>
+    <link rel="icon" href="/src/images/creations/caticon.png" type="image/png" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+        </style>
+  </head>
+  <body
+    class:list={[
+      "m-0 flex h-full min-h-0 overflow-hidden font-[messy-handwritten,simsun,serif] text-[4vh] font-bold text-white",
+      textShadowGreenHover,
+    ]}
+  >
+    <div class="relative z-[1] flex h-full w-[20%] min-h-0 flex-col">
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-0 bg-[url('/src/images/creations/gloomy.jpg')] bg-[length:70%] shadow-[inset_0_0_40px_#f7ddea,0_0_40px_#f7ddea] opacity-89"
+      />
+      <div class="relative z-[1] flex min-h-0 flex-1 flex-col overflow-y-auto">
+        <div class="relative box-border flex aspect-square w-full flex-col items-center justify-center">
+          <img
+            src="/src/images/creations/caticon.png"
+            alt=""
+            aria-hidden="true"
+            class="pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 object-contain opacity-80"
+          />
+          <img
+            src="/src/images/creations/games/detective/1.png"
+            alt="logo"
+            class="relative z-[1] w-full object-contain"
+          />
+        </div>
+        <div class="flex flex-1 flex-col items-center mt-2">
+          <div class="flex flex-col flex-nowrap items-center">
+            <a href="/" class={menuLinkWithIcon}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="m25 9.0937l-17.719 16.281h5.563v15.531h24.312v-15.531h5.563l-17.719-16.281z"
+                ></path>
+              </svg>
+              <span>home</span>
+            </a>
+            <a href="/creations" class={menuLink}>categories</a>
+            <a href={`/creations/${ALL_CATEGORY_SLUG}`} class={menuLink}>
+              all pieces
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-[1] flex min-h-0 flex-1 flex-col shadow-[inset_0_0_20px_#f7ddea]">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0" />
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-0 bg-[url('/src/images/creations/music.jpg')] bg-[length:100%_100%] bg-cover opacity-90"
+      />
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-0 bg-[url('/src/images/creations/teal.jpg')] bg-[length:100%_100%] bg-center opacity-40"
+      />
+
+      <div class="relative z-[1] flex min-h-0 flex-1 flex-col overflow-y-auto">
+        <nav class="sticky top-0 z-[3] flex h-[8vh] items-center p-[2vh]">
+          <p class="m-0 mx-2 text-4xl">creations</p>
+          <p class="m-0 text-md">| {pageView}</p>
+        </nav>
+        <div class="z-[2] w-inherit flex-1">
+          <div
+            id="creations-grid"
+            class="grid w-inherit grid-cols-[repeat(auto-fill,minmax(20%,1fr))] gap-[3vw] px-[4vw] pb-[4vw]"
+          >
+            <slot />
+          </div>
+          <slot name="extra" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  .short-stack-regular {
+    font-family: "Short Stack", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "messy-handwritten";
+    src: url("/fonts/MessyHandwritten/MessyHandwritten-Regular.ttf")
+      format("truetype");
+  }
+
+</style>

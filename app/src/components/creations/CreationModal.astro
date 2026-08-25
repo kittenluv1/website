@@ -1,0 +1,188 @@
+---
+import Modal from "@/components/modal/modal.astro";
+import { CREATION_MODAL_ID } from "@/lib/creations";
+import displayBg from "@/images/creations/dots.jpg";
+import borderImg from "@/images/creations/border.png";
+import dragonfly from "@/images/creations/dragonfly.png";
+
+export type CreationModalItem = {
+  title: string;
+  date: string;
+  description: string;
+  comments?: string;
+  categoryName?: string;
+  imageUrls: string[];
+  captions: string[];
+};
+
+interface Props {
+  items: CreationModalItem[];
+}
+
+const { items } = Astro.props;
+
+const changeDisplayBtn =
+  "absolute aspect-square w-[8%] cursor-pointer border-transparent bg-transparent p-0 [&_img]:w-full";
+---
+
+<Modal id={CREATION_MODAL_ID}>
+  {
+    items.map((item, index) => {
+      const firstImage = item.imageUrls[0] ?? "";
+      const firstCaption = item.captions[0];
+      const multipleImages = item.imageUrls.length > 1;
+
+      return (
+        <div
+          data-creation-panel={index}
+          class="relative box-border flex hidden h-full w-full items-stretch rounded-[2%] bg-repeat shadow-[inset_0_0_40px_#f7ddea] [&_*]:m-[1vw] [&_*]:text-[#3c3828] [&_*]:[text-shadow:none] [&>button:hover]:opacity-70 [&_img]:m-0 p-25 bg-[#C1EBF8]"
+          data-image-urls={JSON.stringify(item.imageUrls)}
+          data-captions={JSON.stringify(item.captions)}
+          data-image-index="0"
+        >
+          <img
+            src={borderImg.src}
+            alt=""
+            aria-hidden="true"
+            class="pointer-events-none absolute inset-0 h-full w-full object-fill"
+          />
+          <button
+            type="button"
+            data-modal-close
+            class="absolute top-10 right-25 z-[2] cursor-pointer border-transparent bg-transparent p-0 font-[messy-handwritten,simsun,serif] text-[3em] font-bold text-black"
+            aria-label="Close"
+          >
+            x
+          </button>
+
+          <button
+            type="button"
+            class:list={[changeDisplayBtn, "top-1/2 left-[-10%] -translate-y-1/2 [&_img]:-rotate-90"]}
+            data-creation-prev-work
+            aria-label="Previous piece"
+          >
+            <img src={dragonfly.src} alt="" />
+          </button>
+
+          <button
+            type="button"
+            class:list={[changeDisplayBtn, "top-1/2 right-[-10%] -translate-y-1/2 [&_img]:rotate-90"]}
+            data-creation-next-work
+            aria-label="Next piece"
+          >
+            <img src={dragonfly.src} alt="" />
+          </button>
+
+          <div class="flex min-h-0 min-w-0 flex-[5] flex-col text-center">
+            <div class="flex min-h-0 flex-1 items-center justify-center overflow-hidden">
+              <img
+                data-creation-image
+                src={firstImage}
+                alt={item.title}
+                class:list={[
+                  "max-h-full max-w-full object-contain transition-opacity duration-200 ease-in-out",
+                  { "cursor-pointer": multipleImages },
+                ]}
+              />
+            </div>
+
+            <div class="flex shrink-0 flex-col items-center justify-end pb-[0.5vh]">
+              <p
+                data-creation-caption
+                class:list={["text-sm text-nowrap", { hidden: !firstCaption }]}
+                set:html={firstCaption ?? ""}
+              />
+
+              {
+                multipleImages && (
+                  <div
+                    data-creation-dots
+                    class="mt-[0.2em] flex items-center justify-center gap-[.3em] [&_*]:m-0"
+                  >
+                    {
+                      item.imageUrls.map((_, dotIndex) => (
+                        <span
+                          data-creation-dot={dotIndex}
+                          class:list={[
+                            "block shrink-0 !m-0 h-[0.9vh] w-[0.9vh] rounded-full bg-[#3c3828] transition-opacity",
+                            dotIndex === 0 ? "opacity-100" : "opacity-40",
+                          ]}
+                          aria-hidden="true"
+                        />
+                      ))
+                    }
+                  </div>
+                )
+              }
+            </div>
+          </div>
+
+          <div class="min-h-0 min-w-0 flex-[9] overflow-y-auto">
+            <h1 class="text-6xl" id={`${CREATION_MODAL_ID}-title`}>
+              {item.title}
+            </h1>
+            {item.categoryName && (
+              <p class="text-sm opacity-80 italic">{item.categoryName}</p>
+            )}
+            <p class="text-sm">date: {item.date}</p>
+            <p class="text-sm">
+              description: <span set:html={item.description} />
+            </p>
+            {
+              item.comments && (
+                <p class="text-sm">
+                  comments: <span set:html={item.comments} />
+                </p>
+              )
+            }
+          </div>
+        </div>
+      );
+    })
+  }
+</Modal>
+
+<script>
+  import { initCreationModal } from "./creationModal.ts";
+  initCreationModal();
+</script>
+
+<style is:global>
+  dialog[data-modal-id="creationModal"] p,
+  dialog[data-modal-id="creationModal"] [data-creation-caption] {
+    font-family: "Short Stack", cursive;
+    font-weight: 400;
+  }
+
+  dialog[data-modal-id="creationModal"] a {
+    color: deepskyblue;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0;
+  }
+
+  dialog[data-modal-id="creationModal"] span,
+  dialog[data-modal-id="creationModal"] em {
+    margin: 0;
+  }
+
+  dialog[data-modal-id="creationModal"] {
+    position: fixed;
+    right: 7%;
+    bottom: 10%;
+    left: auto;
+    top: auto;
+    width: 66%;
+    height: 80%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    overflow: visible;
+  }
+
+  dialog[data-modal-id="creationModal"] [data-modal-panel] {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+</style>
