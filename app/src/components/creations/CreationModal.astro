@@ -1,7 +1,7 @@
 ---
 import Modal from "@/components/modal/modal.astro";
 import { CREATION_MODAL_ID } from "@/lib/creations";
-import displayBg from "@/images/creations/dots.jpg";
+import displayBg from "@/images/creations/display.jpg";
 import borderImg from "@/images/creations/border.png";
 import dragonfly from "@/images/creations/dragonfly.png";
 
@@ -35,10 +35,11 @@ const changeDisplayBtn =
       return (
         <div
           data-creation-panel={index}
-          class="relative box-border flex hidden h-full w-full items-stretch rounded-[2%] bg-repeat shadow-[inset_0_0_40px_#f7ddea] [&_*]:m-[1vw] [&_*]:text-[#3c3828] [&_*]:[text-shadow:none] [&>button:hover]:opacity-70 [&_img]:m-0 p-25 bg-[#C1EBF8]"
+          class="relative box-border flex hidden h-full w-full items-stretch rounded-[2%] bg-cover shadow-[inset_0_0_40px_#f7ddea] [&_*]:m-[1vw] [&_*]:text-[#3c3828] [&_*]:[text-shadow:none] [&>button:hover]:opacity-70 [&_img]:m-0 p-25"
           data-image-urls={JSON.stringify(item.imageUrls)}
           data-captions={JSON.stringify(item.captions)}
           data-image-index="0"
+          style={`background-image: url('${displayBg.src}')`}
         >
           <img
             src={borderImg.src}

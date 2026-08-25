@@ -60,7 +60,7 @@ export const textShadowPink =
   "[text-shadow:-1px_-1px_0_#192855,1px_-1px_0_#192855,-1px_1px_0_#192855,1px_1px_0_#192855,0px_0px_2px_#192855,0_0_5px_#192855,0_0_10px_#192855]";
 
 export const textShadowGreenHover =
-  "hover:text-white hover:[text-shadow:-1px_-1px_0_#e3d539,1px_-1px_0_#e3d539,-1px_1px_0_#e3d539,1px_1px_0_#e3d539,0px_0px_2px_#e3d539,0_0_5px_#e3d539,0_0_10px_#e3d539]";
+  "hover:text-white hover:[text-shadow:-1px_-1px_0_#CEDA78,1px_-1px_0_#CEDA78,-1px_1px_0_#CEDA78,1px_1px_0_#CEDA78,0px_0px_2px_#CEDA78,0_0_5px_#CEDA78,0_0_10px_#CEDA78]";
 
 export const gridItemButton = [
   "flex aspect-square w-full flex-col items-center border-transparent bg-transparent p-0",
