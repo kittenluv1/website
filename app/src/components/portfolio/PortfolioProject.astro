@@ -10,47 +10,43 @@ const coverImage = images[0];
 ---
 
 <article
-  class="group flex h-[317px] flex-col overflow-hidden rounded-[10px] border border-[#939393] bg-white shadow-[0_0_6px_1px_rgba(0,0,0,0.25)]"
+  class="group flex h-90 flex-col overflow-hidden rounded-xl border border-[#D3D3D3] bg-white shadow-md"
   data-portfolio-card
   data-portfolio-index={index}
 >
-  <div class="relative min-h-0 flex-1 w-full">
+  <div class="min-h-0 flex-1">
     <img
       src={coverImage}
       alt=""
-      class="pointer-events-none absolute inset-0 size-full object-cover"
+      class="pointer-events-none size-full object-cover"
     />
   </div>
 
   <div
-    class="relative h-[84px] max-h-[95px] shrink-0 w-full transition-colors group-hover:bg-black/[0.03]"
+    class="flex shrink-0 flex-col gap-1.5 px-4 py-3 transition-colors group-hover:bg-black/[0.03]"
     data-portfolio-text
   >
-    <div class="absolute top-[11px] left-4 flex items-center gap-1">
+    <div class="flex items-center gap-1">
       {
         link ? (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            class="font-medium text-[20px] text-black no-underline transition-colors hover:text-[#777] hover:underline"
+            class="font-medium text-lg text-black no-underline transition-colors hover:text-[#8e8e93] hover:underline md:text-xl flex items-center gap-1"
             data-portfolio-name-link
           >
             {name}
+            <span class="text-base text-[#8e8e93] italic leading-none" aria-hidden="true">
+              ↗
+            </span>
           </a>
         ) : (
           <span
-            class="font-medium text-[20px] text-black"
+            class="font-medium text-xl text-black md:text-2xl"
             data-portfolio-name
           >
             {name}
-          </span>
-        )
-      }
-      {
-        link && (
-          <span class="text-[16px] text-[#777] italic leading-none" aria-hidden="true">
-            ↗
           </span>
         )
       }
@@ -60,7 +56,7 @@ const coverImage = images[0];
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            class="ml-1 inline-flex size-4 items-center justify-center text-[#777] transition-opacity hover:opacity-70"
+            class="ml-1 inline-flex size-4 items-center justify-center text-[#8e8e93] transition-opacity hover:opacity-70"
             data-portfolio-github-link
             aria-label={`${name} on GitHub`}
           >
@@ -74,13 +70,13 @@ const coverImage = images[0];
 
     {
       stack && (
-        <p class="absolute top-[37px] left-4 text-[11px] text-[#8e8e93] italic">
+        <p class="text-sm text-[#8e8e93] italic">
           {stack}
         </p>
       )
     }
 
-    <p class="absolute top-[57px] left-4 max-w-[calc(100%-2rem)] truncate text-[13px] text-black">
+    <p class="line-clamp-2 text-md leading-snug text-black">
       {tagline}
     </p>
   </div>

@@ -28,70 +28,65 @@ const allItems = getAllPortfolioItems(data);
   </head>
   <body class="font-[Inter,sans-serif] text-black antialiased">
     <div
-      class="min-h-screen bg-[length:200px_200px] bg-top-left"
+      class="min-h-screen bg-size-50 bg-top-left"
       style="background-image: url('/images/portfolio/paper.jpg'), url('/images/portfolio/page-bg.jpg')"
     >
       <!-- banner -->
-      <header class="relative h-[356px] w-full overflow-hidden">
+      <header class="absolute h-50 w-full overflow-hidden md:h-96">
         <img
-          src="/images/portfolio/bridge.png"
+          src="/images/portfolio/banner.jpg"
           alt=""
           class="absolute inset-0 size-full object-cover"
         />
-        <img
-          src="/images/portfolio/mountains.png"
-          alt=""
-          class="absolute inset-x-0 top-[-71px] h-[572px] w-full object-cover"
-        />
       </header>
 
-      <main class="mx-auto max-w-[964px] px-6 pb-16 pt-8 md:px-10">
+      <main class="mx-6 md:mx-auto max-w-5xl px-6 pb-24 pt-8 md:px-10">
         <!-- profile -->
-        <section class="relative mb-12">
-          <div class="relative mb-6 h-[292px] w-[273px] max-w-full">
+        <section class="relative mb-12 mt-12 md:mt-48">
+          <div class="relative mb-6 h-48 md:h-72 w-48 md:w-68 max-w-full">
             <div
-              class="absolute left-[11px] top-[25px] size-[245px] rounded-full border border-[#d4d4d4]/60"
+              class="absolute left-3 top-6 size-40 md:size-60 rounded-full border border-none"
+              style="background-image: url('/images/portfolio/paper.jpg')"
               aria-hidden="true"
             />
             <div
-              class="absolute left-[22px] top-[36px] size-[223px] rounded-full border border-[#e0e0e0]/80 bg-cover bg-center bg-no-repeat bg-left"
+              class="absolute left-5.5 top-9 size-36 md:size-56 rounded-full border border-[#D3D3D3]/80 bg-cover bg-center bg-no-repeat bg-left"
               style="background-image: url('/images/portfolio/doko.jpg')"
               aria-hidden="true"
             />
             <div
-              class="absolute left-0 top-1 size-[271px] overflow-hidden"
-              style="-webkit-mask-image: url('/images/portfolio/pfp-mask.svg'); mask-image: url('/images/portfolio/pfp-mask.svg'); -webkit-mask-size: 275px 256px; mask-size: 275px 256px; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: 0 15px; mask-position: -1px -1px;"
+              class="absolute left-0 top-1 size-48 overflow-hidden mask-[url('/images/portfolio/pfp-mask.svg')] mask-size-[100%_auto] mask-no-repeat mask-position-[-1px_-2px] md:size-68 md:mask-position-[-1px_2px]"
             >
               <img
                 src={data.profile.pfp}
                 alt=""
-                class="w-full object-cover -translate-y-[15px]"
+                class="w-full object-cover -translate-y-2.5 md:-translate-y-3.5"
               />
             </div>
           </div>
 
           <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-            <h1 class="text-[36px] font-semibold">{data.profile.name}</h1>
-            <p class="text-[24px] font-semibold italic text-[#5e5e5e]">
+            <h1 class="text-3xl font-semibold md:text-4xl">{data.profile.name}</h1>
+            <p class="text-xl font-semibold italic text-[#5e5e5e] md:text-2xl">
               {data.profile.pronouns}
             </p>
           </div>
 
-          <p class="mt-4 max-w-[931px] text-[20px] leading-normal text-[#9d9d9d]">
+          <p class="mt-4 max-w-4xl text-lg leading-normal text-[#8e8e93] md:max-w-5xl md:text-xl">
             {data.profile.bio}
           </p>
 
-          <p class="mt-4 text-[20px] text-[#9d9d9d]">
-            <span class="underline">ask me about</span>
+          <p class="mt-4 text-lg text-[#8e8e93] md:text-xl">
+            <a href="#contact" class="underline">ask me about</a>
             {" "}my projects, work, or my love for toro inuoue!
           </p>
         </section>
 
         <!-- projects -->
         <section class="mb-16">
-          <h2 class="mb-8 text-[20px] font-semibold">projects</h2>
+          <h2 class="mb-8 text-2xl font-semibold md:text-3xl">projects</h2>
           <div
-            class="grid grid-cols-1 gap-x-[111px] gap-y-[78px] md:grid-cols-2"
+            class="grid grid-cols-1 gap-x-20 gap-y-20 md:grid-cols-2"
           >
             {
               data.projects.map((project, index) => (
@@ -103,9 +98,9 @@ const allItems = getAllPortfolioItems(data);
 
         <!-- playground -->
         <section class="mb-16">
-          <h2 class="mb-8 text-[20px] font-semibold">playground</h2>
+          <h2 class="mb-8 text-2xl font-semibold md:text-3xl">playground</h2>
           <div
-            class="grid grid-cols-1 gap-x-[111px] gap-y-[78px] md:grid-cols-2"
+            class="grid grid-cols-1 gap-x-20 gap-y-20 md:grid-cols-2"
           >
             {
               data.playground.map((project, index) => (
@@ -120,41 +115,42 @@ const allItems = getAllPortfolioItems(data);
 
         <!-- contact -->
         <footer>
-          <p class="text-[24px] font-semibold italic text-[#8e8e93]">
-            <span class="font-normal not-italic">Contact:</span>
-            {" "}
-            <a
-              href={`mailto:${data.contact.email}`}
-              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+          <p id="contact" class="text-lg font-semibold italic text-[#8e8e93] md:text-xl">
+            <span class="font-normal not-italic">contacts:</span>
+            {'\u00A0'}
+            <button
+              type="button"
+              data-copy-email={data.contact.email}
+              class="cursor-pointer border-0 bg-transparent p-0 font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
             >
-              Email
-            </a>
-            {" "}
+              email
+            </button>
+            {'\u00A0'}
             <a
               href={data.contact.github}
               target="_blank"
               rel="noopener noreferrer"
               class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
             >
-              GitHub
+              github
             </a>
-            {" "}
+            {'\u00A0'}
             <a
               href={data.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
             >
-              LinkedIn
+              linkedin
             </a>
-            {" "}
+            {'\u00A0'}
             <a
               href={data.contact.resume}
               target="_blank"
               rel="noopener noreferrer"
               class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
             >
-              Resume
+              resume
             </a>
           </p>
         </footer>
@@ -162,5 +158,72 @@ const allItems = getAllPortfolioItems(data);
     </div>
 
     <PortfolioModal items={allItems} />
+
+    <script>
+      function initCopyEmail() {
+        document.querySelectorAll<HTMLButtonElement>("[data-copy-email]").forEach((button) => {
+          if (button.dataset.copyEmailInit === "true") return;
+          button.dataset.copyEmailInit = "true";
+
+          button.addEventListener("click", async (e) => {
+            const email = button.dataset.copyEmail;
+            if (!email) return;
+
+            e.preventDefault();
+
+            try {
+              await navigator.clipboard.writeText(email);
+            } catch {
+              return;
+            }
+
+            const tooltip = document.createElement("div");
+            tooltip.className = "copy-tooltip";
+            tooltip.textContent = "email copied";
+            tooltip.setAttribute("role", "status");
+            tooltip.setAttribute("aria-live", "polite");
+            document.body.appendChild(tooltip);
+
+            const { clientX, clientY } = e;
+            tooltip.style.left = `${clientX + 10}px`;
+            tooltip.style.top = `${clientY - 10}px`;
+
+            window.setTimeout(() => {
+              tooltip.remove();
+            }, 1500);
+          });
+        });
+      }
+
+      initCopyEmail();
+    </script>
+
+    <style is:global>
+      .copy-tooltip {
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        font-size: 0.875rem;
+        white-space: nowrap;
+        color: white;
+        text-shadow: 1px 1px 3px black, 0 0 5px white;
+        animation: copy-tooltip-fade-out 1.5s ease forwards;
+      }
+
+      @keyframes copy-tooltip-fade-out {
+        0% {
+          opacity: 1;
+          transform: translate(-50%, -120%);
+        }
+        70% {
+          opacity: 1;
+          transform: translate(-50%, -120%);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -140%);
+        }
+      }
+    </style>
   </body>
 </html>
