@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -9,4 +11,11 @@ html, body {
 
 button:hover {
 	cursor: pointer; 
+}
+
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+	transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease !important;
 }

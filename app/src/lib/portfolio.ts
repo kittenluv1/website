@@ -45,3 +45,28 @@ export function getAllPortfolioItems(data: PortfolioData): FlatPortfolioProject[
     })),
   ];
 }
+
+// DARK MODE
+const THEME_KEY = "portfolio-theme";
+const TRANSITION_MS = 200;
+
+function withThemeTransition(action: () => void) {
+  document.documentElement.classList.add("theme-transition");
+  action();
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("theme-transition");
+  }, TRANSITION_MS);
+}
+
+export function initPortfolioTheme() {
+  const toggle = document.querySelector<HTMLButtonElement>("[data-theme-toggle]");
+  if (!toggle || toggle.dataset.themeInit === "true") return;
+  toggle.dataset.themeInit = "true";
+
+  toggle.addEventListener("click", () => {
+    withThemeTransition(() => {
+      const isDark = document.documentElement.classList.toggle("dark");
+      localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
+    });
+  });
+}

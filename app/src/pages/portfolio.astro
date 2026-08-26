@@ -19,6 +19,11 @@ const allItems = getAllPortfolioItems(data);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="erica huang portfolio" />
     <title>erica huang</title>
+    <script is:inline>
+      if (localStorage.getItem("portfolio-theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
     <link rel="icon" href="/images/portfolio/pfps/toro.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,10 +32,9 @@ const allItems = getAllPortfolioItems(data);
       rel="stylesheet"
     />
   </head>
-  <body class="font-[Inter,sans-serif] text-black antialiased">
+  <body class="font-[Inter,sans-serif] text-black antialiased dark:text-neutral-100">
     <div
-      class="min-h-screen bg-size-50 bg-top-left"
-      style="background-image: url('/images/portfolio/paper.jpg'), url('/images/portfolio/page-bg.jpg')"
+      class="min-h-screen bg-size-50 bg-top-left bg-[url('/images/portfolio/paper.jpg')] dark:bg-[url('/images/portfolio/paper-black.png')]"
     >
       <!-- banner -->
       <header class="absolute h-50 w-full overflow-hidden md:h-96">
@@ -47,13 +51,11 @@ const allItems = getAllPortfolioItems(data);
         <section class="relative mb-12 mt-12 md:mt-48">
           <div class="relative mb-6 h-48 md:h-72 w-48 md:w-68 max-w-full">
             <div
-              class="absolute left-3 top-6 size-40 md:size-60 rounded-full border border-none"
-              style="background-image: url('/images/portfolio/paper.jpg')"
+              class="absolute left-3 top-6 size-40 rounded-full border border-none bg-[url('/images/portfolio/paper.jpg')] bg-cover md:size-60 dark:bg-[url('/images/portfolio/paper-black.png')]"
               aria-hidden="true"
             />
             <div
-              class="absolute left-5.5 top-9 size-36 md:size-56 rounded-full border border-[#D3D3D3]/80 bg-cover bg-center bg-no-repeat bg-left"
-              style="background-image: url('/images/portfolio/doko.jpg')"
+              class="absolute left-5.5 top-9 size-36 rounded-full border border-[#D3D3D3]/80 bg-[url('/images/portfolio/doko.jpg')] bg-cover bg-center bg-no-repeat bg-left md:size-56 dark:border-neutral-600/80"
               aria-hidden="true"
             />
             <div
@@ -68,18 +70,37 @@ const allItems = getAllPortfolioItems(data);
             </div>
           </div>
 
-          <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-            <h1 class="text-3xl font-semibold md:text-4xl">{data.profile.name}</h1>
-            <p class="text-xl font-semibold italic text-[#5e5e5e] md:text-2xl">
-              {data.profile.pronouns}
-            </p>
+          <div class="flex w-full flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+            <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+              <h1 class="text-3xl font-semibold md:text-4xl">{data.profile.name}</h1>
+              <p class="text-xl font-semibold italic text-[#5e5e5e] md:text-2xl dark:text-neutral-400">
+                {data.profile.pronouns}
+              </p>
+            </div>
+            <button
+              type="button"
+              data-theme-toggle
+              class="ml-auto shrink-0 border-0 bg-transparent p-1 mr-2"
+              aria-label="Toggle dark mode"
+            >
+              <img
+                src="/images/portfolio/dark_mode.svg"
+                alt=""
+                class="size-6 dark:hidden"
+              />
+              <img
+                src="/images/portfolio/light_mode.svg"
+                alt=""
+                class="hidden size-6 dark:block dark:invert"
+              />
+            </button>
           </div>
 
-          <p class="mt-4 max-w-4xl text-lg leading-normal text-[#8e8e93] md:max-w-5xl md:text-xl">
+          <p class="mt-4 max-w-4xl text-lg leading-normal text-[#8e8e93] md:max-w-5xl md:text-xl dark:text-neutral-400">
             {data.profile.bio}
           </p>
 
-          <p class="mt-4 text-lg text-[#8e8e93] md:text-xl">
+          <p class="mt-4 text-lg text-[#8e8e93] md:text-xl dark:text-neutral-400">
             <a href="#contact" class="underline">ask me about</a>
             {" "}my projects, work, or my love for toro inuoue!
           </p>
@@ -118,13 +139,13 @@ const allItems = getAllPortfolioItems(data);
 
         <!-- contact -->
         <footer>
-          <p id="contact" class="text-lg font-semibold italic text-[#8e8e93] md:text-xl">
+          <p id="contact" class="text-lg font-semibold italic text-[#8e8e93] md:text-xl dark:text-neutral-400">
             <span class="font-normal not-italic">contacts:</span>
             {'\u00A0'}
             <button
               type="button"
               data-copy-email={data.contact.email}
-              class="cursor-pointer border-0 bg-transparent p-0 font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+              class="cursor-pointer border-0 bg-transparent p-0 font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black dark:text-neutral-400 dark:hover:text-neutral-100"
             >
               email
             </button>
@@ -133,7 +154,7 @@ const allItems = getAllPortfolioItems(data);
               href={data.contact.github}
               target="_blank"
               rel="noopener noreferrer"
-              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black dark:text-neutral-400 dark:hover:text-neutral-100"
             >
               github
             </a>
@@ -142,7 +163,7 @@ const allItems = getAllPortfolioItems(data);
               href={data.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black dark:text-neutral-400 dark:hover:text-neutral-100"
             >
               linkedin
             </a>
@@ -151,7 +172,7 @@ const allItems = getAllPortfolioItems(data);
               href={data.contact.resume}
               target="_blank"
               rel="noopener noreferrer"
-              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black dark:text-neutral-400 dark:hover:text-neutral-100"
             >
               resume
             </a>
@@ -161,6 +182,11 @@ const allItems = getAllPortfolioItems(data);
     </div>
 
     <PortfolioModal items={allItems} />
+
+    <script>
+      import { initPortfolioTheme } from "@/lib/portfolio.ts";
+      initPortfolioTheme();
+    </script>
 
     <script define:vars={{ pfps: data.profile.pfp }}>
       function initRandomPfp() {
