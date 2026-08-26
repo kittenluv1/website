@@ -1,0 +1,336 @@
+---
+import "@/styles/global.css";
+import "@/styles/archive/portfolio.css";
+import portfolioData from "@/data/archive/portfolio.json";
+import Project from "@/components/archive/portfolioProject.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="erica huang web portfolio" />
+    <title>erica huang</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/archive/portfolio/lotus-transparent.png"
+    />
+  </head>
+  <body>
+    <!-- decals -->
+    <img
+      src="/images/archive/portfolio/cyber-decal.png"
+      class="cyber-decal"
+      id="cyber-decal-top"
+    />
+    <img
+      src="/images/archive/portfolio/cyber-decal.png"
+      class="cyber-decal"
+      id="cyber-decal-left"
+    />
+    <img
+      src="/images/archive/portfolio/cyber-decal.png"
+      class="cyber-decal"
+      id="cyber-decal-bottom"
+    />
+    <img src="/images/archive/portfolio/skeleton-angel.gif" id="skeleton-angel-decal" />
+
+    <!-- nav -->
+    <nav>
+      <ul>
+        <li data-section="home">
+          <a href="/">&larr; go home</a>
+          <img src="/images/archive/portfolio/sword.png" class="sword" />
+        </li>
+        <li data-section="about">
+          <a href="#about">about</a>
+          <img src="/images/archive/portfolio/sword.png" class="sword" />
+        </li>
+        <li data-section="web">
+          <a href="#web">web</a>
+          <img src="/images/archive/portfolio/sword.png" class="sword" />
+        </li>
+        <li data-section="games">
+          <a href="#games">games</a>
+          <img src="/images/archive/portfolio/sword.png" class="sword" />
+        </li>
+        <li data-section="contact">
+          <a href="#contact">contact</a>
+          <img src="/images/archive/portfolio/sword.png" class="sword" />
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- header -->
+      <header>
+        <img
+          src="/images/archive/portfolio/wing-left.png"
+          class="wing"
+          id="cyber-wing-img-left"
+        />
+        <h1>ERICA &emsp; HUANG</h1>
+        <img
+          src="/images/archive/portfolio/wing-right.png"
+          class="wing"
+          id="cyber-wing-img-right"
+        />
+        <img src="/images/archive/portfolio/lotus-transparent.png" id="lotus-decal" />
+      </header>
+
+      <!-- about section -->
+      <section id="about">
+        <div class="section-header-div">
+          <img src="/images/archive/portfolio/sword.png" class="section-sword-left" />
+          <h2>about</h2>
+          <img src="/images/archive/portfolio/sword.png" class="section-sword-right" />
+        </div>
+        <p>
+          Hi! My name is Erica Huang. I’m a programmer, project manager, and web
+          developer who is passionate about creating impactful and engaging
+          digital experiences. I enjoy working closely with engineering and
+          design teams to turn ideas into meaningful products, with a strong
+          appreciation for usability and visual composition. In my free time, I
+          enjoy skating, crafting, and tinkering with my websites.
+        </p>
+        <a href="#about">
+          <img src="/images/archive/portfolio/dn-heart.jpg" id="about-img" />
+        </a>
+      </section>
+
+      <!-- projects sections -->
+      {
+        Object.entries(portfolioData).map(([key, section]) => (
+          <section id={key}>
+            <div class="section-header-div">
+              <img
+                src="/images/archive/portfolio/sword.png"
+                class="section-sword-left"
+              />
+              <h2>{key}</h2>
+              <img
+                src="/images/archive/portfolio/sword.png"
+                class="section-sword-right"
+              />
+            </div>
+            {section.map((project, index) => (
+              <Project
+                left={index % 2 === 0}
+                title={project.title}
+                href={project.href}
+                imgSrc={project.imgSrc}
+                stack={project.stack}
+                description={project.description}
+              />
+            ))}
+          </section>
+        ))
+      }
+
+      <!-- contact section -->
+      <section id="contact">
+        <div class="section-header-div">
+          <img src="/images/archive/portfolio/sword.png" class="section-sword-left" />
+          <h2>contact</h2>
+          <img src="/images/archive/portfolio/sword.png" class="section-sword-right" />
+        </div>
+        <div id="contact-buttons-div">
+          <a
+            href="https://github.com/kittenluv1"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/archive/portfolio/cat-white.jpg" />
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ericahuang916/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/archive/portfolio/vivienne.jpg" />
+            LinkedIn
+          </a>
+          <a href="/resume.pdf" target="_blank" rel="noopener">
+            <img src="/images/archive/portfolio/dn-heart.jpg" />
+            Resume
+          </a>
+          <a href="#" id="email-copy" data-email="ericahuang916@gmail.com">
+            <img src="/images/archive/portfolio/key.png" />
+            Email
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // EMAIL COPY
+      const emailLink = document.getElementById("email-copy");
+
+      emailLink?.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const email = emailLink.getAttribute("data-email");
+
+        try {
+          await navigator.clipboard.writeText(email);
+
+          // Create tooltip
+          const tooltip = document.createElement("div");
+          tooltip.className = "copy-tooltip";
+          tooltip.textContent = "email copied!";
+          document.body.appendChild(tooltip);
+
+          // Position tooltip near cursor
+          tooltip.style.left = e.pageX + "px";
+          tooltip.style.top = e.pageY + "px";
+
+          // Remove tooltip after animation
+          setTimeout(() => {
+            tooltip.remove();
+          }, 1500);
+        } catch (err) {
+          console.error("Failed to copy:", err);
+        }
+      });
+
+      // NAV SCROLL SPY
+      function updateActiveSection() {
+        const sections = document.querySelectorAll<HTMLElement>("section[id]");
+        const navItems = document.querySelectorAll("nav li[data-section]");
+
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          const scrollPosition = window.scrollY + window.innerHeight / 3;
+          const scrollTop = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const docHeight = document.documentElement.scrollHeight;
+
+          // top of window
+          if (scrollTop >= 0 && scrollTop < sections[0].offsetTop) {
+            currentSection = "about";
+          }
+          // bottom of window
+          if (scrollTop + windowHeight >= docHeight) {
+            currentSection = "contact";
+          }
+          // in a section
+          else if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navItems.forEach((item) => {
+          item.classList.remove("active");
+          if (item.getAttribute("data-section") === currentSection) {
+            item.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", updateActiveSection);
+      window.addEventListener("load", updateActiveSection);
+
+      // WING FLAPPING ANIMATION
+      const leftWing = document.getElementById("cyber-wing-img-left");
+      const rightWing = document.getElementById("cyber-wing-img-right");
+      let isScrolling = false;
+      let scrollTimeout = null;
+      let flapPhase = 0;
+      let animationId = null;
+
+      function updateWings() {
+        if (isScrolling) {
+          // Increment phase at consistent speed
+          flapPhase += 0.1;
+
+          // Calculate rotation angle using sine wave for smooth flapping motion
+          const flapAngle = Math.sin(flapPhase) * 60; // ±60 degrees
+
+          // Apply rotation to wings
+          leftWing.style.transform = `rotateY(${flapAngle}deg)`;
+          rightWing.style.transform = `rotateY(${-flapAngle}deg)`;
+
+          // Continue animation
+          animationId = requestAnimationFrame(updateWings);
+        } else {
+          // Reset to neutral position when stopped
+          leftWing.style.transform = "rotateY(0deg)";
+          rightWing.style.transform = "rotateY(0deg)";
+        }
+      }
+
+      function handleScroll() {
+        // Start flapping if not already
+        if (!isScrolling) {
+          isScrolling = true;
+          updateWings();
+        }
+
+        // Clear existing timeout
+        clearTimeout(scrollTimeout);
+
+        // Set timeout to stop flapping after scrolling ends
+        scrollTimeout = setTimeout(() => {
+          isScrolling = false;
+          if (animationId) {
+            cancelAnimationFrame(animationId);
+          }
+          // Reset to neutral position
+          leftWing.style.transform = "rotateY(0deg)";
+          rightWing.style.transform = "rotateY(0deg)";
+        }, 150); // Stop 150ms after scrolling ends
+      }
+
+      window.addEventListener("scroll", handleScroll);
+
+      // SCREEN CRACKING EFFECT
+      window.addEventListener("click", (e) => {
+        const target = e.target as Element;
+        if (target.closest("a, button")) return;
+
+        const smallCrack = document.createElement("img");
+        smallCrack.src = "/images/archive/portfolio/crack1.png";
+        smallCrack.className = "crack";
+        smallCrack.style.width = "5rem";
+        smallCrack.style.left = e.pageX + "px";
+        smallCrack.style.top = e.pageY + "px";
+        document.body.appendChild(smallCrack);
+
+        setTimeout(() => {
+          smallCrack.style.opacity = "0";
+          setTimeout(() => {
+            smallCrack.remove();
+          }, 500); // Remove after fade-out
+        }, 1000); // fade out after 1 sec
+      });
+
+      window.addEventListener("dblclick", (e) => {
+        const target = e.target as Element; // <-- tell TS it’s an Element
+        if (target.closest("a, button")) return;
+
+        const bigCrack = document.createElement("img");
+        bigCrack.src = "/images/archive/portfolio/crack2.png";
+        bigCrack.className = "crack";
+        bigCrack.style.width = "6rem";
+        bigCrack.style.left = e.pageX + "px";
+        bigCrack.style.top = e.pageY + "px";
+        document.body.appendChild(bigCrack);
+
+        setTimeout(() => {
+          bigCrack.style.opacity = "0";
+          setTimeout(() => {
+            bigCrack.remove();
+          }, 500); // Remove after fade-out
+        }, 1000); // fade out after 1 sec
+      });
+    </script>
+  </body>
+</html>

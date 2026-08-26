@@ -1,8 +1,15 @@
 ---
 import "@/styles/global.css";
-import "../styles/portfolio.css";
-import portfolioData from "../data/portfolio.json";
-import Project from "../components/portfolioProject.astro";
+import portfolioData from "@/data/portfolio.json";
+import PortfolioProject from "@/components/portfolio/PortfolioProject.astro";
+import PortfolioModal from "@/components/portfolio/PortfolioModal.astro";
+import {
+  getAllPortfolioItems,
+  type PortfolioData,
+} from "@/lib/portfolio";
+
+const data = portfolioData as PortfolioData;
+const allItems = getAllPortfolioItems(data);
 ---
 
 <!doctype html>
@@ -10,327 +17,150 @@ import Project from "../components/portfolioProject.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="erica huang web portfolio" />
+    <meta name="description" content="erica huang portfolio" />
     <title>erica huang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/png"
-      href="/images/portfolio/lotus-transparent.png"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- decals -->
-    <img
-      src="/images/portfolio/cyber-decal.png"
-      class="cyber-decal"
-      id="cyber-decal-top"
-    />
-    <img
-      src="/images/portfolio/cyber-decal.png"
-      class="cyber-decal"
-      id="cyber-decal-left"
-    />
-    <img
-      src="/images/portfolio/cyber-decal.png"
-      class="cyber-decal"
-      id="cyber-decal-bottom"
-    />
-    <img src="/images/portfolio/skeleton-angel.gif" id="skeleton-angel-decal" />
-
-    <!-- nav -->
-    <nav>
-      <ul>
-        <li data-section="home">
-          <a href="/">&larr; go home</a>
-          <img src="/images/portfolio/sword.png" class="sword" />
-        </li>
-        <li data-section="about">
-          <a href="#about">about</a>
-          <img src="/images/portfolio/sword.png" class="sword" />
-        </li>
-        <li data-section="web">
-          <a href="#web">web</a>
-          <img src="/images/portfolio/sword.png" class="sword" />
-        </li>
-        <li data-section="games">
-          <a href="#games">games</a>
-          <img src="/images/portfolio/sword.png" class="sword" />
-        </li>
-        <li data-section="contact">
-          <a href="#contact">contact</a>
-          <img src="/images/portfolio/sword.png" class="sword" />
-        </li>
-      </ul>
-    </nav>
-
-    <main>
-      <!-- header -->
-      <header>
+  <body class="font-[Inter,sans-serif] text-black antialiased">
+    <div
+      class="min-h-screen bg-[length:200px_200px] bg-top-left"
+      style="background-image: url('/images/portfolio/paper.jpg'), url('/images/portfolio/page-bg.jpg')"
+    >
+      <!-- banner -->
+      <header class="relative h-[356px] w-full overflow-hidden">
         <img
-          src="/images/portfolio/wing-left.png"
-          class="wing"
-          id="cyber-wing-img-left"
+          src="/images/portfolio/bridge.png"
+          alt=""
+          class="absolute inset-0 size-full object-cover"
         />
-        <h1>ERICA &emsp; HUANG</h1>
         <img
-          src="/images/portfolio/wing-right.png"
-          class="wing"
-          id="cyber-wing-img-right"
+          src="/images/portfolio/mountains.png"
+          alt=""
+          class="absolute inset-x-0 top-[-71px] h-[572px] w-full object-cover"
         />
-        <img src="/images/portfolio/lotus-transparent.png" id="lotus-decal" />
       </header>
 
-      <!-- about section -->
-      <section id="about">
-        <div class="section-header-div">
-          <img src="/images/portfolio/sword.png" class="section-sword-left" />
-          <h2>about</h2>
-          <img src="/images/portfolio/sword.png" class="section-sword-right" />
-        </div>
-        <p>
-          Hi! My name is Erica Huang. I’m a programmer, project manager, and web
-          developer who is passionate about creating impactful and engaging
-          digital experiences. I enjoy working closely with engineering and
-          design teams to turn ideas into meaningful products, with a strong
-          appreciation for usability and visual composition. In my free time, I
-          enjoy skating, crafting, and tinkering with my websites.
-        </p>
-        <a href="#about">
-          <img src="/images/portfolio/dn-heart.jpg" id="about-img" />
-        </a>
-      </section>
-
-      <!-- projects sections -->
-      {
-        Object.entries(portfolioData).map(([key, section]) => (
-          <section id={key}>
-            <div class="section-header-div">
+      <main class="mx-auto max-w-[964px] px-6 pb-16 pt-8 md:px-10">
+        <!-- profile -->
+        <section class="relative mb-12">
+          <div class="relative mb-6 h-[292px] w-[273px] max-w-full">
+            <div
+              class="absolute left-[11px] top-[25px] size-[245px] rounded-full border border-[#d4d4d4]/60"
+              aria-hidden="true"
+            />
+            <div
+              class="absolute left-[22px] top-[36px] size-[223px] rounded-full border border-[#e0e0e0]/80 bg-cover bg-center bg-no-repeat bg-left"
+              style="background-image: url('/images/portfolio/doko.jpg')"
+              aria-hidden="true"
+            />
+            <div
+              class="absolute left-0 top-1 size-[271px] overflow-hidden"
+              style="-webkit-mask-image: url('/images/portfolio/pfp-mask.svg'); mask-image: url('/images/portfolio/pfp-mask.svg'); -webkit-mask-size: 275px 256px; mask-size: 275px 256px; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: 0 15px; mask-position: -1px -1px;"
+            >
               <img
-                src="/images/portfolio/sword.png"
-                class="section-sword-left"
-              />
-              <h2>{key}</h2>
-              <img
-                src="/images/portfolio/sword.png"
-                class="section-sword-right"
+                src={data.profile.pfp}
+                alt=""
+                class="w-full object-cover -translate-y-[15px]"
               />
             </div>
-            {section.map((project, index) => (
-              <Project
-                left={index % 2 === 0}
-                title={project.title}
-                href={project.href}
-                imgSrc={project.imgSrc}
-                stack={project.stack}
-                description={project.description}
-              />
-            ))}
-          </section>
-        ))
-      }
+          </div>
 
-      <!-- contact section -->
-      <section id="contact">
-        <div class="section-header-div">
-          <img src="/images/portfolio/sword.png" class="section-sword-left" />
-          <h2>contact</h2>
-          <img src="/images/portfolio/sword.png" class="section-sword-right" />
-        </div>
-        <div id="contact-buttons-div">
-          <a
-            href="https://github.com/kittenluv1"
-            target="_blank"
-            rel="noopener"
+          <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+            <h1 class="text-[36px] font-semibold">{data.profile.name}</h1>
+            <p class="text-[24px] font-semibold italic text-[#5e5e5e]">
+              {data.profile.pronouns}
+            </p>
+          </div>
+
+          <p class="mt-4 max-w-[931px] text-[20px] leading-normal text-[#9d9d9d]">
+            {data.profile.bio}
+          </p>
+
+          <p class="mt-4 text-[20px] text-[#9d9d9d]">
+            <span class="underline">ask me about</span>
+            {" "}my projects, work, or my love for toro inuoue!
+          </p>
+        </section>
+
+        <!-- projects -->
+        <section class="mb-16">
+          <h2 class="mb-8 text-[20px] font-semibold">projects</h2>
+          <div
+            class="grid grid-cols-1 gap-x-[111px] gap-y-[78px] md:grid-cols-2"
           >
-            <img src="/images/portfolio/cat-white.jpg" />
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ericahuang916/"
-            target="_blank"
-            rel="noopener"
+            {
+              data.projects.map((project, index) => (
+                <PortfolioProject {...project} index={index} />
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- playground -->
+        <section class="mb-16">
+          <h2 class="mb-8 text-[20px] font-semibold">playground</h2>
+          <div
+            class="grid grid-cols-1 gap-x-[111px] gap-y-[78px] md:grid-cols-2"
           >
-            <img src="/images/portfolio/vivienne.jpg" />
-            LinkedIn
-          </a>
-          <a href="/resume.pdf" target="_blank" rel="noopener">
-            <img src="/images/portfolio/dn-heart.jpg" />
-            Resume
-          </a>
-          <a href="#" id="email-copy" data-email="ericahuang916@gmail.com">
-            <img src="/images/portfolio/key.png" />
-            Email
-          </a>
-        </div>
-      </section>
-    </main>
+            {
+              data.playground.map((project, index) => (
+                <PortfolioProject
+                  {...project}
+                  index={data.projects.length + index}
+                />
+              ))
+            }
+          </div>
+        </section>
 
-    <script>
-      // EMAIL COPY
-      const emailLink = document.getElementById("email-copy");
+        <!-- contact -->
+        <footer>
+          <p class="text-[24px] font-semibold italic text-[#8e8e93]">
+            <span class="font-normal not-italic">Contact:</span>
+            {" "}
+            <a
+              href={`mailto:${data.contact.email}`}
+              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+            >
+              Email
+            </a>
+            {" "}
+            <a
+              href={data.contact.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+            >
+              GitHub
+            </a>
+            {" "}
+            <a
+              href={data.contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+            >
+              LinkedIn
+            </a>
+            {" "}
+            <a
+              href={data.contact.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-normal not-italic text-[#8e8e93] underline transition-colors hover:text-black"
+            >
+              Resume
+            </a>
+          </p>
+        </footer>
+      </main>
+    </div>
 
-      emailLink?.addEventListener("click", async (e) => {
-        e.preventDefault();
-        const email = emailLink.getAttribute("data-email");
-
-        try {
-          await navigator.clipboard.writeText(email);
-
-          // Create tooltip
-          const tooltip = document.createElement("div");
-          tooltip.className = "copy-tooltip";
-          tooltip.textContent = "email copied!";
-          document.body.appendChild(tooltip);
-
-          // Position tooltip near cursor
-          tooltip.style.left = e.pageX + "px";
-          tooltip.style.top = e.pageY + "px";
-
-          // Remove tooltip after animation
-          setTimeout(() => {
-            tooltip.remove();
-          }, 1500);
-        } catch (err) {
-          console.error("Failed to copy:", err);
-        }
-      });
-
-      // NAV SCROLL SPY
-      function updateActiveSection() {
-        const sections = document.querySelectorAll<HTMLElement>("section[id]");
-        const navItems = document.querySelectorAll("nav li[data-section]");
-
-        let currentSection = "";
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          const scrollPosition = window.scrollY + window.innerHeight / 3;
-          const scrollTop = window.scrollY;
-          const windowHeight = window.innerHeight;
-          const docHeight = document.documentElement.scrollHeight;
-
-          // top of window
-          if (scrollTop >= 0 && scrollTop < sections[0].offsetTop) {
-            currentSection = "about";
-          }
-          // bottom of window
-          if (scrollTop + windowHeight >= docHeight) {
-            currentSection = "contact";
-          }
-          // in a section
-          else if (
-            scrollPosition >= sectionTop &&
-            scrollPosition < sectionTop + sectionHeight
-          ) {
-            currentSection = section.getAttribute("id");
-          }
-        });
-
-        navItems.forEach((item) => {
-          item.classList.remove("active");
-          if (item.getAttribute("data-section") === currentSection) {
-            item.classList.add("active");
-          }
-        });
-      }
-
-      window.addEventListener("scroll", updateActiveSection);
-      window.addEventListener("load", updateActiveSection);
-
-      // WING FLAPPING ANIMATION
-      const leftWing = document.getElementById("cyber-wing-img-left");
-      const rightWing = document.getElementById("cyber-wing-img-right");
-      let isScrolling = false;
-      let scrollTimeout = null;
-      let flapPhase = 0;
-      let animationId = null;
-
-      function updateWings() {
-        if (isScrolling) {
-          // Increment phase at consistent speed
-          flapPhase += 0.1;
-
-          // Calculate rotation angle using sine wave for smooth flapping motion
-          const flapAngle = Math.sin(flapPhase) * 60; // ±60 degrees
-
-          // Apply rotation to wings
-          leftWing.style.transform = `rotateY(${flapAngle}deg)`;
-          rightWing.style.transform = `rotateY(${-flapAngle}deg)`;
-
-          // Continue animation
-          animationId = requestAnimationFrame(updateWings);
-        } else {
-          // Reset to neutral position when stopped
-          leftWing.style.transform = "rotateY(0deg)";
-          rightWing.style.transform = "rotateY(0deg)";
-        }
-      }
-
-      function handleScroll() {
-        // Start flapping if not already
-        if (!isScrolling) {
-          isScrolling = true;
-          updateWings();
-        }
-
-        // Clear existing timeout
-        clearTimeout(scrollTimeout);
-
-        // Set timeout to stop flapping after scrolling ends
-        scrollTimeout = setTimeout(() => {
-          isScrolling = false;
-          if (animationId) {
-            cancelAnimationFrame(animationId);
-          }
-          // Reset to neutral position
-          leftWing.style.transform = "rotateY(0deg)";
-          rightWing.style.transform = "rotateY(0deg)";
-        }, 150); // Stop 150ms after scrolling ends
-      }
-
-      window.addEventListener("scroll", handleScroll);
-
-      // SCREEN CRACKING EFFECT
-      window.addEventListener("click", (e) => {
-        const target = e.target as Element;
-        if (target.closest("a, button")) return;
-
-        const smallCrack = document.createElement("img");
-        smallCrack.src = "/images/portfolio/crack1.png";
-        smallCrack.className = "crack";
-        smallCrack.style.width = "5rem";
-        smallCrack.style.left = e.pageX + "px";
-        smallCrack.style.top = e.pageY + "px";
-        document.body.appendChild(smallCrack);
-
-        setTimeout(() => {
-          smallCrack.style.opacity = "0";
-          setTimeout(() => {
-            smallCrack.remove();
-          }, 500); // Remove after fade-out
-        }, 1000); // fade out after 1 sec
-      });
-
-      window.addEventListener("dblclick", (e) => {
-        const target = e.target as Element; // <-- tell TS it’s an Element
-        if (target.closest("a, button")) return;
-
-        const bigCrack = document.createElement("img");
-        bigCrack.src = "/images/portfolio/crack2.png";
-        bigCrack.className = "crack";
-        bigCrack.style.width = "6rem";
-        bigCrack.style.left = e.pageX + "px";
-        bigCrack.style.top = e.pageY + "px";
-        document.body.appendChild(bigCrack);
-
-        setTimeout(() => {
-          bigCrack.style.opacity = "0";
-          setTimeout(() => {
-            bigCrack.remove();
-          }, 500); // Remove after fade-out
-        }, 1000); // fade out after 1 sec
-      });
-    </script>
+    <PortfolioModal items={allItems} />
   </body>
 </html>

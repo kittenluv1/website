@@ -1,0 +1,93 @@
+---
+import type { PortfolioProject } from "@/lib/portfolio";
+
+interface Props extends PortfolioProject {
+  index: number;
+}
+
+const { index, name, tagline, stack, images, link, github } = Astro.props;
+const coverImage = images[0];
+---
+
+<article
+  class="group flex h-[317px] flex-col overflow-hidden rounded-[10px] border border-[#939393] bg-white shadow-[0_0_6px_1px_rgba(0,0,0,0.25)]"
+  data-portfolio-card
+  data-portfolio-index={index}
+>
+  <div class="relative min-h-0 flex-1 w-full">
+    <img
+      src={coverImage}
+      alt=""
+      class="pointer-events-none absolute inset-0 size-full object-cover"
+    />
+  </div>
+
+  <div
+    class="relative h-[84px] max-h-[95px] shrink-0 w-full transition-colors group-hover:bg-black/[0.03]"
+    data-portfolio-text
+  >
+    <div class="absolute top-[11px] left-4 flex items-center gap-1">
+      {
+        link ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-[20px] text-black no-underline transition-colors hover:text-[#777] hover:underline"
+            data-portfolio-name-link
+          >
+            {name}
+          </a>
+        ) : (
+          <span
+            class="font-medium text-[20px] text-black"
+            data-portfolio-name
+          >
+            {name}
+          </span>
+        )
+      }
+      {
+        link && (
+          <span class="text-[16px] text-[#777] italic leading-none" aria-hidden="true">
+            ↗
+          </span>
+        )
+      }
+      {
+        github && (
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ml-1 inline-flex size-4 items-center justify-center text-[#777] transition-opacity hover:opacity-70"
+            data-portfolio-github-link
+            aria-label={`${name} on GitHub`}
+          >
+            <svg viewBox="0 0 16 16" class="size-4 fill-current" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+          </a>
+        )
+      }
+    </div>
+
+    {
+      stack && (
+        <p class="absolute top-[37px] left-4 text-[11px] text-[#8e8e93] italic">
+          {stack}
+        </p>
+      )
+    }
+
+    <p class="absolute top-[57px] left-4 max-w-[calc(100%-2rem)] truncate text-[13px] text-black">
+      {tagline}
+    </p>
+  </div>
+</article>
+
+<style>
+  [data-portfolio-text] {
+    cursor: pointer;
+  }
+</style>

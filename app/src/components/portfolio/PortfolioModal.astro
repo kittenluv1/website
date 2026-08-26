@@ -1,0 +1,167 @@
+---
+import Modal from "@/components/modal/modal.astro";
+import { PORTFOLIO_MODAL_ID, type FlatPortfolioProject } from "@/lib/portfolio";
+
+interface Props {
+  items: FlatPortfolioProject[];
+}
+
+const { items } = Astro.props;
+---
+
+<Modal id={PORTFOLIO_MODAL_ID} draggable={false} dimBackdrop={true} closeOnBackdrop={true}>
+  {
+    items.map((item, index) => {
+      const firstImage = item.images[0] ?? "";
+      const secondImage = item.images[1];
+      const hasMultipleImages = item.images.length > 1;
+
+      return (
+        <div
+          data-portfolio-panel={index}
+          class="relative hidden w-[min(869px,calc(100vw-2rem))] border border-[#5a5a5a] bg-white p-8 text-black"
+          data-image-urls={JSON.stringify(item.images)}
+          data-image-index="0"
+        >
+          <button
+            type="button"
+            data-modal-close
+            class="absolute top-4 right-4 cursor-pointer border-0 bg-transparent p-1 text-2xl leading-none text-[#777] hover:text-black"
+            aria-label="Close"
+          >
+            ×
+          </button>
+
+          <header class="mb-4 flex items-start justify-between gap-4 border-b border-[#d9d9d9] pb-3">
+            <div class="flex min-w-0 items-center gap-2">
+              <h2
+                id={`${PORTFOLIO_MODAL_ID}-title`}
+                class="text-[32px] font-semibold leading-tight"
+              >
+                {item.name}
+              </h2>
+              {
+                item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[24px] text-[#777] italic no-underline transition-colors hover:text-black hover:underline"
+                    aria-label={`Visit ${item.name}`}
+                  >
+                    ↗
+                  </a>
+                )
+              }
+              {
+                item.github && (
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex size-4 items-center justify-center text-[#777] transition-opacity hover:opacity-70"
+                    aria-label={`${item.name} on GitHub`}
+                  >
+                    <svg viewBox="0 0 16 16" class="size-4 fill-current" aria-hidden="true">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </a>
+                )
+              }
+            </div>
+            <p class="shrink-0 text-right text-[16px] italic">{item.role}</p>
+          </header>
+
+          {
+            hasMultipleImages && (
+              <div
+                class="mb-4 h-3 w-full overflow-hidden rounded-full bg-[#e5e5e5]"
+                aria-hidden="true"
+              >
+                <div
+                  data-portfolio-progress
+                  class="h-full rounded-full bg-[#777] transition-[width] duration-200"
+                  style={`width: ${100 / item.images.length}%`}
+                />
+              </div>
+            )
+          }
+
+          <div class="mb-6 flex flex-col gap-4 md:flex-row">
+            <div class="relative h-[230px] w-full md:w-[405px] shrink-0">
+              <img
+                data-portfolio-modal-image
+                src={firstImage}
+                alt=""
+                class="size-full object-cover"
+              />
+            </div>
+            {
+              secondImage && (
+                <div class="relative hidden h-[230px] w-[220px] shrink-0 md:block">
+                  <img
+                    data-portfolio-modal-image-secondary
+                    src={secondImage}
+                    alt=""
+                    class="size-full object-cover"
+                  />
+                </div>
+              )
+            }
+          </div>
+
+          <div class="mb-6 text-[11px] text-[#777] italic">
+            <p class="not-italic">{item.tagline}</p>
+            {item.stack && <p class="mt-2">{item.stack}</p>}
+          </div>
+
+          {
+            item.details && (
+              <div
+                class="text-[14px] leading-relaxed [&_p]:mb-3 [&_strong]:font-semibold"
+                set:html={item.details}
+              />
+            )
+          }
+
+          {
+            item.customComponent && (
+              <div data-portfolio-custom={item.customComponent} />
+            )
+          }
+        </div>
+      );
+    })
+  }
+</Modal>
+
+<script>
+  import { initPortfolioModal } from "./portfolioModal.ts";
+  initPortfolioModal();
+</script>
+
+<style is:global>
+  dialog[data-modal-id="portfolioModal"] {
+    position: fixed;
+    inset: 0;
+    width: fit-content;
+    height: fit-content;
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 2rem);
+    margin: auto;
+    overflow: visible;
+    border: none;
+    padding: 0;
+    background: transparent;
+  }
+
+  dialog[data-modal-id="portfolioModal"] [data-modal-panel] {
+    position: relative;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+
+  dialog[data-modal-id="portfolioModal"] [data-portfolio-panel]:not(.hidden) {
+    display: block;
+  }
+</style>

@@ -1,62 +1,108 @@
 {
-	"web": [
-		{
-			"title": "Clubhouse UCLA",
-			"href": "https://clubhouseucla.com",
-			"imgSrc": "/images/portfolio/clubhouse.png",
-			"stack": "Next.js, Supabase, Vercel",
-			"description": "An online platform for reviewing UCLA student organizations, built to make campus involvement more transparent. I led end-to-end development across the stack, including APIs, auth, deployment, and core features. Future updates include user profiles and club recommendations."
-		}, 
-		{
-			"title": "UCLA Student Affairs",
-			"href": "https://www.studentaffairs.ucla.edu",
-			"imgSrc": "/images/portfolio/sait.png",
-			"stack": "SvelteKit, TailwindCSS, TypeScript",
-			"description": "Student developer for UCLA Student Affairs websites. I work across multiple sites building reusable components, fixing bugs, and implementing accessibility improvements to make the experience more inclusive and reliable."
-		}, 
-		{
-			"title": "Michael Dean Wilkins",
-			"href": "https://www.michaeldeanwilkins.com",
-			"imgSrc": "/images/portfolio/michael.png",
-			"stack": "Next.js, SanityCMS, Vercel, Figma",
-			"description": "A freelance portfolio site for an LA-based photographer. I designed and built the site using a headless CMS to enable easy content management, with a focus on performance, scalability, and a modern, responsive design."
-		},
-		{
-			"title": "bunnyluv1", 
-			"href": "/",
-			"imgSrc": "/images/portfolio/website.png",
-			"stack": "Astro, Cloudflare Pages",
-			"description": "My personal website, featuring a playable tamagotchi game, creative portfolio, blog, and more. This was one of my first programming projects ever, and is still growing! Currently undergoing a refactor from plain HTML/CSS/JS to Astro.js."
-		}, 
-		{
-			"title": "Morii - Moments That Stay",
-			"href": "https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544?l=es-MX",
-			"imgSrc": "/images/portfolio/morii.PNG",
-			"stack": "Express.js, Node.js, MongoDB, RestAPI",
-			"description": "A mobile app for sharing and tracking emotions, analyzing mood patterns, and staying connected with your community. I built backend endpoints for social features like posts, likes, comments, and admin-authenticated block/report tools to support safe interactions. Available on the app store!"
-		}
-	], 
-	"games": [
-		{
-			"title": "SynthSlicer",
-			"href": "https://chrissanrow.github.io/SynthSlicer/",
-			"imgSrc": "/images/portfolio/synthslicer.png",
-			"stack": "Three.js, Vite, JavaScript",
-			"description": "A rhythm-based slicing game with procedurally generated beatmaps from user-uploaded audio. I implemented level selection, custom audio upload, and pause/play controls, and contributed to the visual design of scoring, hit feedback, and color themes."
-		},
-		{
-			"title": "Dimensional Detective",
-			"href": "https://introspec.itch.io/dimensional-detective", 
-			"imgSrc": "/images/portfolio/detective.png",
-			"stack": "Unity, Blender, C#",
-			"description": "A dialogue-driven point-and-click whodunit game. I developed core gameplay mechanics, including round management and dialogue interactions, and designed the 3D model and story for my original character, Starboy ☆."
-		}, 
-		{
-			"title": "Tama JUMP!",
-			"href": "/#tama",
-			"imgSrc": "/images/portfolio/tama-jump.png",
-			"stack": "Javascript", 
-			"description": "A tamagotchi-themed endless runner inspired by the chrome dinosaur game. The tama JUMP! console is customizable and doubles as a music player!!"
-		}
-	]
+  "profile": {
+    "name": "erica huang",
+    "pronouns": "she/they",
+    "bio": "hi! i'm erica. i make websites that engage audiences visually and perform at scale. i work with designers, engineers, and marketers to turn ideas into meaningful products. i also make games and other cool things sometimes too.",
+    "pfp": "/images/portfolio/toro.png",
+    "askMeAbout": "ask me about my projects, work, or my love for toro inuoue!"
+  },
+  "contact": {
+    "email": "ericahuang916@gmail.com",
+    "github": "https://github.com/kittenluv1",
+    "linkedin": "https://www.linkedin.com/in/ericahuang916/",
+    "resume": "/resume.pdf"
+  },
+  "projects": [
+    {
+      "name": "clubhouse",
+      "tagline": "a website for students to rate and review clubs at ucla.",
+      "role": "Product Manager, Lead Developer",
+      "images": [
+        "/images/archive/portfolio/clubhouse.png"
+      ],
+      "link": "https://clubhouseucla.com",
+      "github": "https://github.com/kittenluv1",
+      "stack": "Next.js, Supabase, Vercel",
+      "details": "<p><strong>Details:</strong></p><p><strong>The Problem:</strong> UCLA students lacked a centralized, transparent way to discover and evaluate student organizations before committing their time.</p><p><strong>My Action:</strong> I led end-to-end development across the stack, including APIs, authentication, deployment, and core review features. I worked closely with design and marketing to ship iteratively and respond to user feedback.</p><p><strong>The Outcome:</strong> Launched a scalable platform used by UCLA students to browse, rate, and review clubs with plans for profiles and recommendations.</p>"
+    },
+    {
+      "name": "ucla student affairs",
+      "tagline": "accessibility-focused web development for ucla student affairs sites.",
+      "role": "Student Developer",
+      "images": [
+        "/images/archive/portfolio/sait.png"
+      ],
+      "link": "https://www.studentaffairs.ucla.edu",
+      "stack": "SvelteKit, TailwindCSS, TypeScript",
+      "details": "<p><strong>Details:</strong></p><p><strong>The Problem:</strong> Multiple UCLA Student Affairs websites needed reusable components, bug fixes, and accessibility improvements.</p><p><strong>My Action:</strong> I built reusable UI components, fixed production bugs, and implemented accessibility improvements across several sites.</p><p><strong>The Outcome:</strong> More inclusive and reliable web experiences for students navigating UCLA resources.</p>"
+    },
+    {
+      "name": "michael dean wilkins",
+      "tagline": "a freelance portfolio site for an la-based photographer.",
+      "role": "Designer & Developer",
+      "images": [
+        "/images/archive/portfolio/michael.png"
+      ],
+      "link": "https://www.michaeldeanwilkins.com",
+      "stack": "Next.js, SanityCMS, Vercel, Figma",
+      "details": "<p><strong>Details:</strong></p><p><strong>The Problem:</strong> A photographer needed a performant, scalable portfolio with easy content management.</p><p><strong>My Action:</strong> I designed and built the site with a headless CMS, focusing on performance, responsive layout, and a modern visual identity.</p><p><strong>The Outcome:</strong> A client-managed photography portfolio deployed with a maintainable content workflow.</p>"
+    },
+    {
+      "name": "bunnyluv1",
+      "tagline": "my personal website with games, blog, and creative projects.",
+      "role": "Creator & Developer",
+      "images": [
+        "/images/archive/portfolio/website.png"
+      ],
+      "link": "/",
+      "stack": "Astro, Cloudflare Pages",
+      "details": "<p><strong>Details:</strong></p><p><strong>The Problem:</strong> I wanted a home on the web that could grow with my interests — games, writing, crafts, and experiments.</p><p><strong>My Action:</strong> I built and continuously refactor the site from plain HTML/CSS/JS into Astro, adding interactive features like a tamagotchi game and a creations archive.</p><p><strong>The Outcome:</strong> A living personal site that doubles as a playground for learning new tools and design ideas.</p>"
+    },
+    {
+      "name": "morii",
+      "tagline": "a mobile app for sharing emotions and tracking mood patterns.",
+      "role": "Backend Developer",
+      "images": [
+        "/images/archive/portfolio/morii.PNG"
+      ],
+      "link": "https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544",
+      "stack": "Express.js, Node.js, MongoDB, RestAPI",
+      "details": "<p><strong>Details:</strong></p><p><strong>The Problem:</strong> Users needed a safe social space to share emotions and understand mood patterns over time.</p><p><strong>My Action:</strong> I built backend endpoints for posts, likes, comments, and admin-authenticated block/report tools.</p><p><strong>The Outcome:</strong> Shipped social features supporting safe community interactions; available on the App Store.</p>"
+    }
+  ],
+  "playground": [
+    {
+      "name": "synthslicer",
+      "tagline": "a rhythm slicing game with procedurally generated beatmaps.",
+      "role": "Gameplay & UI Developer",
+      "images": [
+        "/images/archive/portfolio/synthslicer.png"
+      ],
+      "link": "https://chrissanrow.github.io/SynthSlicer/",
+      "stack": "Three.js, Vite, JavaScript",
+      "details": "<p><strong>Details:</strong></p><p>Implemented level selection, custom audio upload, pause/play controls, and contributed to visual design for scoring and hit feedback.</p>"
+    },
+    {
+      "name": "dimensional detective",
+      "tagline": "a dialogue-driven point-and-click whodunit game.",
+      "role": "Gameplay Developer & 3D Artist",
+      "images": [
+        "/images/archive/portfolio/detective.png"
+      ],
+      "link": "https://introspec.itch.io/dimensional-detective",
+      "stack": "Unity, Blender, C#",
+      "details": "<p><strong>Details:</strong></p><p>Developed core gameplay mechanics including round management and dialogue interactions. Designed the 3D model and story for original character Starboy ☆.</p>"
+    },
+    {
+      "name": "tama jump!",
+      "tagline": "a tamagotchi-themed endless runner and music player.",
+      "role": "Solo Developer",
+      "images": [
+        "/images/archive/portfolio/tama-jump.png"
+      ],
+      "link": "/#tama",
+      "stack": "Javascript",
+      "details": "<p><strong>Details:</strong></p><p>An endless runner inspired by the chrome dinosaur game. The console is customizable and doubles as a music player.</p>"
+    }
+  ]
 }
