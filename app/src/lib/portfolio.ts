@@ -45,7 +45,3 @@ export function getAllPortfolioItems(data: PortfolioData): FlatPortfolioProject[
     })),
   ];
 }
-
-export function getRandomPfp(data: PortfolioData): string {
-  return data.profile.pfp[Math.floor(Math.random() * data.profile.pfp.length)];
-}

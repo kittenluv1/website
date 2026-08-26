@@ -6,11 +6,9 @@ import PortfolioModal from "@/components/portfolio/PortfolioModal.astro";
 import {
   getAllPortfolioItems,
   type PortfolioData,
-  getRandomPfp,
 } from "@/lib/portfolio";
 
 const data = portfolioData as PortfolioData;
-const randomPfp = getRandomPfp(data);
 const allItems = getAllPortfolioItems(data);
 ---
 
@@ -61,7 +59,8 @@ const allItems = getAllPortfolioItems(data);
               class="absolute left-0 top-1 size-48 overflow-hidden mask-[url('/images/portfolio/pfp-mask.svg')] mask-size-[100%_auto] mask-no-repeat mask-position-[-1px_-2px] md:size-68 md:mask-position-[-1px_2px]"
             >
               <img
-                src={randomPfp}
+                id="profile-pfp"
+                src={data.profile.pfp[0]}
                 alt=""
                 class="w-full absolute bottom-0 -translate-y-2.5 md:-translate-y-3.5"
               />
@@ -161,6 +160,16 @@ const allItems = getAllPortfolioItems(data);
     </div>
 
     <PortfolioModal items={allItems} />
+
+    <script define:vars={{ pfps: data.profile.pfp }}>
+      function initRandomPfp() {
+        const img = document.getElementById("profile-pfp");
+        if (!(img instanceof HTMLImageElement) || pfps.length === 0) return;
+        img.src = pfps[Math.floor(Math.random() * pfps.length)];
+      }
+
+      initRandomPfp();
+    </script>
 
     <script>
       function initCopyEmail() {
