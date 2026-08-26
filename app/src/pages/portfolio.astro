@@ -6,9 +6,11 @@ import PortfolioModal from "@/components/portfolio/PortfolioModal.astro";
 import {
   getAllPortfolioItems,
   type PortfolioData,
+  getRandomPfp,
 } from "@/lib/portfolio";
 
 const data = portfolioData as PortfolioData;
+const randomPfp = getRandomPfp(data);
 const allItems = getAllPortfolioItems(data);
 ---
 
@@ -58,9 +60,9 @@ const allItems = getAllPortfolioItems(data);
               class="absolute left-0 top-1 size-48 overflow-hidden mask-[url('/images/portfolio/pfp-mask.svg')] mask-size-[100%_auto] mask-no-repeat mask-position-[-1px_-2px] md:size-68 md:mask-position-[-1px_2px]"
             >
               <img
-                src={data.profile.pfp}
+                src={randomPfp}
                 alt=""
-                class="w-full object-cover -translate-y-2.5 md:-translate-y-3.5"
+                class="w-full absolute bottom-0 -translate-y-2.5 md:-translate-y-3.5"
               />
             </div>
           </div>

@@ -15,7 +15,7 @@ export type PortfolioData = {
     name: string;
     pronouns: string;
     bio: string;
-    pfp: string;
+    pfp: string[];
     askMeAbout: string;
   };
   contact: {
@@ -44,4 +44,8 @@ export function getAllPortfolioItems(data: PortfolioData): FlatPortfolioProject[
       index: data.projects.length + index,
     })),
   ];
+}
+
+export function getRandomPfp(data: PortfolioData): string {
+  return data.profile.pfp[Math.floor(Math.random() * data.profile.pfp.length)];
 }

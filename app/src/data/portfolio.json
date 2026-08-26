@@ -2,8 +2,8 @@
   "profile": {
     "name": "erica huang",
     "pronouns": "she/they",
-    "bio": "hi! i'm erica. i make websites that engage audiences visually and perform at scale. i work with designers, engineers, and marketers to turn ideas into meaningful products. i also make games and other cool things sometimes too.",
-    "pfp": "/images/portfolio/pfps/toro.png",
+    "bio": "hi! i'm erica. i make websites that engage audiences visually and perform at scale. i work with designers, engineers, and marketers to turn ideas into useful products. i also make games and other cool things sometimes too.",
+    "pfp": ["/images/portfolio/pfps/toro.png", "/images/portfolio/pfps/toro-question.png", "/images/portfolio/pfps/toro-wave.png", "/images/portfolio/pfps/toro-game.png", "/images/portfolio/pfps/toro-clover.png", "/images/portfolio/pfps/toro-think.png", "/images/portfolio/pfps/cat.png"],
     "askMeAbout": "ask me about my projects, work, or my love for toro inuoue!"
   },
   "contact": {
@@ -89,7 +89,7 @@
     },
     {
       "name": "dimensional detective",
-      "tagline": "a dialogue-driven point-and-click whodunit game.",
+      "tagline": "an intergalactic dialogue-driven point-and-click whodunit game.",
       "role": "Gameplay Developer & 3D Artist",
       "images": [
         "/images/portfolio/detective.png"
