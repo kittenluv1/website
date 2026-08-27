@@ -14,7 +14,7 @@ const { items } = Astro.props;
     items.map((item, index) => (
         <div
           data-portfolio-panel={index}
-          class="relative hidden w-full max-w-4xl border border-[#8e8e93] bg-white p-8 text-black dark:border-neutral-500 dark:bg-neutral-900 dark:text-neutral-100"
+          class="relative hidden w-full max-w-[85vw] md:max-w-4xl max-h-[80vh] overflow-y-auto border border-[#8e8e93] bg-white p-8 text-black dark:border-neutral-500 dark:bg-neutral-900 dark:text-neutral-100"
         >
           <button
             type="button"

@@ -18,12 +18,15 @@
       "tagline": "a website for students to rate and review clubs at ucla.",
       "role": "Product Manager, Lead Developer",
       "images": [
-        "/images/portfolio/clubhouse.png"
+        "/images/portfolio/clubhouse.png",
+        "/images/portfolio/clubhouse-profile.png",
+        "/images/portfolio/clubhouse-recs.png",
+        "/images/portfolio/clubhouse-preferences.png"
       ],
       "link": "https://clubhouseucla.com",
       "github": "https://github.com/kittenluv1/clubhouse",
       "stack": "Next.js, Supabase, Vercel",
-      "details": "<p><strong>Details:</strong></p><p><strong>Problem:</strong> UCLA students lacked a centralized, transparent way to discover and evaluate student organizations before committing their time.</p><p><strong>Action:</strong> I led end-to-end development across the stack, including APIs, authentication, deployment, and core review features. I worked closely with design and marketing to ship iteratively and respond to user feedback.</p><p><strong>Outcome:</strong> Launched a scalable platform used by UCLA students to browse, rate, and review clubs with plans for profiles and recommendations.</p>"
+      "details": "<p><strong>Details:</strong></p><p><strong>Problem:</strong> UCLA students lacked a centralized, transparent way to discover and evaluate student organizations before committing their time.</p><p><strong>Action:</strong> As lead developer, I led end-to-end development across the stack, including APIs, authentication, deployment, and core review features. As product manager, I work closely with design, engineering, and marketing teams to ship iteratively and build user-centric features.</p><p><strong>Outcome:</strong> Launched a scalable platform used by UCLA students to browse, rate, and review clubs. Recently launched 2 new features, `User Profiles' and `Club Recommendations'.</p>"
     },
     {
       "name": "ucla student affairs",
@@ -31,35 +34,36 @@
       "role": "Student Developer",
       "images": [
         "/images/portfolio/sait.png", 
-        "/images/portfolio/sait3.png",
-        "/images/portfolio/sait-preview.png"
+        "/images/portfolio/sait-preview.png",
+        "/images/portfolio/sait-cae.png"
       ],
       "link": "https://www.studentaffairs.ucla.edu",
       "stack": "SvelteKit, TailwindCSS, TypeScript",
-      "details": "<p><strong>Details:</strong></p><p><strong>Problem:</strong> Multiple UCLA Student Affairs websites needed reusable components, bug fixes, and accessibility improvements.</p><p><strong>Action:</strong> I built reusable UI components, fixed production bugs, and implemented accessibility improvements across several sites.</p><p><strong>Outcome:</strong> More inclusive and reliable web experiences for students navigating UCLA resources.</p>"
+      "details": "<p><strong>Details:</strong></p><p>Develop and maintain UCLA websites serving 14M+ annual page views. Key projects include migrating major university sites to component-based architecture, creating custom web components, and building an open graph image rendering pipeline.</p>"
     },
     {
       "name": "michael dean wilkins",
       "tagline": "a freelance portfolio site for an la-based photographer.",
       "role": "Designer & Developer",
       "images": [
-        "/images/portfolio/michael.png"
+        "/images/portfolio/michael.png",
+        "/images/portfolio/michael-contact.png"
       ],
       "link": "https://www.michaeldeanwilkins.com",
       "github": "https://github.com/kittenluv1/michaeldeanwilkins",
       "stack": "Next.js, SanityCMS, Vercel, Figma",
-      "details": "<p><strong>Details:</strong></p><p><strong>Problem:</strong> A photographer needed a performant, scalable portfolio with easy content management.</p><p><strong>Action:</strong> I designed and built the site with a headless CMS, focusing on performance, responsive layout, and a modern visual identity.</p><p><strong>Outcome:</strong> A client-managed photography portfolio deployed with a maintainable content workflow.</p>"
+      "details": "<p><strong>Details:</strong></p><p><strong>Problem:</strong> A photographer needed a visually appealling, performant portfolio with easy content management.</p><p><strong>Action:</strong> I designed and built the site with a headless CMS, focusing on performance, responsive layout, and a modern visual identity.</p><p><strong>Outcome:</strong> Successfully deployed a photography portfolio site that client can maintain with a simple content workflow.</p>"
     },
     {
       "name": "morii",
       "tagline": "a mobile app for sharing emotions and tracking mood patterns.",
       "role": "Backend Developer",
       "images": [
-        "/images/portfolio/morii.PNG"
+        "/images/portfolio/morii.png"
       ],
       "link": "https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544",
       "stack": "Express.js, Node.js, MongoDB, RestAPI",
-      "details": "<p><strong>Details:</strong></p><p><strong>Problem:</strong> Users needed a safe social space to share emotions and understand mood patterns over time.</p><p><strong>Action:</strong> I built backend endpoints for posts, likes, comments, and admin-authenticated block/report tools.</p><p><strong>Outcome:</strong> Shipped social features supporting safe community interactions; available on the App Store.</p>"
+      "details": "<p><strong>Details:</strong></p><p>I built backend endpoints for posts, likes, comments, and admin-authenticated block/report tools. Available on the App Store.</p>"
     }
   ],
   "playground": [
@@ -68,16 +72,19 @@
       "tagline": "my personal website with games, blog, and creative projects.",
       "role": "Creator & Developer",
       "images": [
-        "/images/portfolio/website.png"
+        "/images/portfolio/tama-jump.png",
+        "/images/portfolio/figma.png",
+        "/images/portfolio/creations.png",
+        "/images/portfolio/gallery.png"
       ],
       "link": "/",
       "github": "https://github.com/kittenluv1/website",
       "stack": "Astro, Cloudflare Pages",
-      "details": "<p><strong>Details:</strong></p><p><strong>Problem:</strong> I wanted a home on the web that could grow with my interests - games, writing, crafts, and experiments.</p><p><strong>Action:</strong> I built and continuously refactor the site from plain HTML/CSS/JS into Astro, adding interactive features like a tamagotchi game and a creations archive.</p><p><strong>Outcome:</strong> A living personal site that doubles as a playground for learning new tools and design ideas.</p>"
+      "details": "<p><strong>Details:</strong></p><p>I wanted a home on the web where I could try new things and post about my interests. This was my first coding project - I built it in plain HTML/CSS/JS and am currently refactoring to use Astro.js. Also messing around with fun designs in Figma and design-to-code with MCP. Some features I'm most proud of right now include my tamagotchi game and creations archive.</p>"
     },
     {
       "name": "synthslicer",
-      "tagline": "a rhythm slicing game with procedurally generated beatmaps.",
+      "tagline": "a rhythm-based slicing game with procedurally generated beatmaps.",
       "role": "Gameplay & UI Developer",
       "images": [
         "/images/portfolio/synthslicer.png"
@@ -85,7 +92,7 @@
       "link": "https://chrissanrow.github.io/SynthSlicer/",
       "github": "https://github.com/chrissanrow/SynthSlicer",
       "stack": "Three.js, Vite, JavaScript",
-      "details": "<p><strong>Details:</strong></p><p>Implemented level selection, custom audio upload, pause/play controls, and contributed to visual design for scoring and hit feedback.</p>"
+      "details": "<p><strong>Details:</strong></p><p>I implemented level selection, custom audio upload, pause/play controls, and contributed to visual design for scoring and hit feedback.</p>"
     },
     {
       "name": "dimensional detective",
@@ -97,19 +104,7 @@
       "link": "https://introspec.itch.io/dimensional-detective",
       "github": "https://github.com/kittenluv1/dimensional-detective",
       "stack": "Unity, Blender, C#",
-      "details": "<p><strong>Details:</strong></p><p>Developed core gameplay mechanics including round management and dialogue interactions. Designed the 3D model and story for original character Starboy ☆.</p>"
-    },
-    {
-      "name": "tama jump!",
-      "tagline": "a tamagotchi-themed endless runner and music player.",
-      "role": "Solo Developer",
-      "images": [
-        "/images/portfolio/tama-jump.png"
-      ],
-      "link": "/#tama",
-      "github": "https://github.com/kittenluv1/website/tree/main/app/src/components/indexModal",
-      "stack": "Javascript",
-      "details": "<p><strong>Details:</strong></p><p>An endless runner inspired by the chrome dinosaur game. The console is customizable and doubles as a music player.</p>"
+      "details": "<p><strong>Details:</strong></p><p>Developed core gameplay mechanics including round management and dialogue interactions. Designed 3D model and story for original character Starboy ☆.</p>"
     }
   ]
 }
