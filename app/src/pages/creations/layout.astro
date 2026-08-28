@@ -1,9 +1,25 @@
 ---
 import "@/styles/global.css";
-import { ALL_CATEGORY_SLUG, textShadowPink, textShadowGreenHover } from "@/lib/creations";
+import {
+  ALL_CATEGORY_SLUG,
+  shortStackFont,
+  textShadowPink,
+  textShadowGreenHover,
+} from "@/lib/creations";
 
-import catLogoBg from "@/images/creations/crochet & textiles/cat/cat1.png";
-import circleLogo from "@/images/creations/turquoise.png";
+import buttonCategories from "@/images/creations/button.png";
+import buttonAllPieces from "@/images/creations/button4.png";
+import buttonHeart from "@/images/creations/button6.png";
+import catIcon from "@/images/creations/caticon.png";
+import circleLogo from "@/images/creations/circleLogo.png";
+import cornerDeco from "@/images/creations/corner.png";
+import edgeLace from "@/images/creations/image-removebg-preview(3).png";
+import plaidBg from "@/images/creations/plaid.jpg";
+import plaidMain from "@/images/creations/plaid1.jpg";
+import stickerCat from "@/images/creations/sticker-cat.png";
+import stickerFish from "@/images/creations/sticker-fish.png";
+import stickerHamster from "@/images/creations/sticker-hamster.png";
+import stickerTop from "@/images/creations/image-removebg-preview(2).png";
 
 interface Props {
   pageView?: string;
@@ -11,19 +27,23 @@ interface Props {
 
 const { pageView = "categories" } = Astro.props;
 
-const menuLink = [
-  "m-[2%] border-transparent bg-transparent p-0",
-  "font-[short-stack-regular,simsun,serif] text-[1em] font-bold text-white no-underline",
+const sidebarLinkText = [
+  shortStackFont,
+  "text-base font-normal text-white underline underline-offset-4 sm:text-lg",
+  textShadowPink,
+  "origin-center transition-transform duration-200 ease-out hover:-rotate-[15deg]",
+].join(" ");
+
+const stickerNavLink = [
+  "absolute flex items-center justify-center border-transparent bg-transparent p-0 no-underline",
+  "origin-center transition-transform duration-200 ease-out",
   textShadowPink,
   textShadowGreenHover,
 ].join(" ");
 
-const menuLinkWithIcon = [
-  menuLink,
-  "inline-flex items-center gap-[0.25em] leading-none",
-  "[&_svg]:block [&_svg]:h-[0.9em] [&_svg]:w-[0.9em] [&_svg]:shrink-0",
-  "[&_svg]:[filter:drop-shadow(-1px_-1px_0_#98455d)_drop-shadow(1px_-1px_0_#98455d)_drop-shadow(-1px_1px_0_#98455d)_drop-shadow(1px_1px_0_#98455d)]",
-  "hover:[&_svg]:[filter:drop-shadow(-1px_-1px_0_#30d9d7)_drop-shadow(1px_-1px_0_#30d9d7)_drop-shadow(-1px_1px_0_#30d9d7)_drop-shadow(1px_1px_0_#30d9d7)_drop-shadow(0_0_5px_#30d9d7)]",
+const stickerLabel = [
+  shortStackFont,
+  "relative z-[1] px-2 text-center text-base font-normal text-white underline underline-offset-2 text-shadow-inherit"
 ].join(" ");
 ---
 
@@ -33,81 +53,177 @@ const menuLinkWithIcon = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>creations</title>
-    <link rel="icon" href="/src/images/creations/caticon.png" type="image/png" />
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
-        </style>
+    <link rel="icon" href={catIcon.src} type="image/png" />
   </head>
-  <body
-    class:list={[
-      "m-0 flex h-full min-h-0 overflow-hidden font-[messy-handwritten,simsun,serif] text-[4vh] font-bold text-white",
-      textShadowGreenHover,
-    ]}
-  >
-    <div class="relative z-[1] flex h-full w-[20%] min-h-0 flex-col">
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute inset-0 bg-[url('/src/images/creations/plaid.jpg')] bg-[length:70%] shadow-[inset_0_0_40px_#f7ddea,0_0_40px_#f7ddea] opacity-89"
-      />
-      <div class="relative z-[1] flex min-h-0 flex-1 flex-col overflow-y-auto">
-        <div class="relative box-border flex aspect-square w-full flex-col items-center justify-center">
+  <body class="m-0 flex h-full min-h-0 overflow-hidden bg-white">
+    <!-- sidebar variant 2 -->
+    <aside
+      class="relative z-[1] flex h-full w-[min(100%,16rem)] min-w-[14rem] shrink-0 flex-col items-center overflow-y-hidden py-2"
+      style={`background-image: url(${plaidBg.src}); background-size: 6.25rem 6.25rem;`}
+    >
+      <a href="/" class:list={["w-full px-4 text-lg sm:px-5 messy-handwritten text-white underline", textShadowPink, textShadowGreenHover]}>
+        ← home
+      </a>
+
+      <!-- plaid clover circle logo -->
+      <div class="relative w-full shrink-0 p-2">
+        <div
+          class="pointer-events-none absolute left-1/2 top-1/2 flex size-[88%] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full overflow-hidden border-8 border-[#A9C46C]"
+        >
           <img
-            src="/src/images/creations/caticon.png"
+            src={plaidMain.src}
             alt=""
             aria-hidden="true"
-            class="pointer-events-none absolute left-1/2 top-1/2 h-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 object-contain opacity-80"
-          />
-          <img
-            src="/src/images/creations/circle.png"
-            alt="logo"
-            class="relative z-[1] w-full object-contain"
+            class="size-full -rotate-45 object-cover border-radius-full"
           />
         </div>
-        <div class="flex flex-1 flex-col items-center mt-2">
-          <div class="flex flex-col flex-nowrap items-center">
-            <a href="/" class={menuLinkWithIcon}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 50 50"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="m25 9.0937l-17.719 16.281h5.563v15.531h24.312v-15.531h5.563l-17.719-16.281z"
-                ></path>
-              </svg>
-              <span>home</span>
-            </a>
-            <a href="/creations" class={menuLink}>categories</a>
-            <a href={`/creations/${ALL_CATEGORY_SLUG}`} class={menuLink}>
-              all pieces
-            </a>
-          </div>
-        </div>
+        <img
+          src={circleLogo.src}
+          alt=""
+          aria-hidden="true"
+          class="relative z-[1] w-full object-contain"
+        />
       </div>
-    </div>
 
-    <div class="relative z-[1] flex min-h-0 flex-1 flex-col shadow-[inset_0_0_20px_#f7ddea]">
-      <div aria-hidden="true" class="pointer-events-none absolute inset-0" />
+      <p
+        class:list={[
+          shortStackFont,
+          "m-0 shrink-0 text-3xl text-white sm:text-4xl mb-2",
+          "[text-shadow:-1px_-1px_0_#AEC873,1px_-1px_0_#AEC873,-1px_1px_0_#AEC873,1px_1px_0_#AEC873,0px_0px_2px_#AEC873,0_0_5px_#AEC873,0_0_10px_#AEC873]"
+        ]}
+      >
+        creations
+      </p>
+
+      <div class="relative min-h-[22rem] w-full flex-1 sm:min-h-[26rem]">
+        <a
+          href={`/creations/${ALL_CATEGORY_SLUG}`}
+          class:list={[
+            stickerNavLink,
+            "-rotate-8 hover:-rotate-[23deg] left-[8%] top-0 size-[6.5rem] sm:size-[7rem]",
+          ]}
+          aria-label="all pieces"
+        >
+          <img
+            src={buttonAllPieces.src}
+            alt=""
+            aria-hidden="true"
+            class="absolute inset-0 size-full object-contain"
+          />
+          <span class={stickerLabel}>all pieces</span>
+        </a>
+
+        <a
+          href="/creations"
+          class:list={[
+            stickerNavLink,
+            "rotate-[7deg] hover:rotate-[22deg] left-[38%] top-[9.5rem] size-[6.5rem] sm:left-[42%] sm:top-[10.5rem] sm:size-[7rem]",
+          ]}
+          aria-label="categories"
+        >
+          <img
+            src={buttonCategories.src}
+            alt=""
+            aria-hidden="true"
+            class="absolute inset-0 size-full object-fit opacity-90"
+          />
+          <span class={stickerLabel}>categories</span>
+        </a>
+
+        <a
+          href={`/about`}
+          class:list={[
+            stickerNavLink,
+            "-rotate-8 hover:-rotate-[23deg] -rotate-6 left-[8%] top-[19.5rem] size-[6.5rem] sm:top-[21rem] sm:size-[7rem]",
+          ]}
+          aria-label="about"
+        >
+          <img
+            src={buttonHeart.src}
+            alt=""
+            aria-hidden="true"
+            class="absolute inset-0 size-full object-contain"
+          />
+          <span class={stickerLabel}>about</span>
+        </a>
+
+        <img
+          src={stickerCat.src}
+          alt=""
+          aria-hidden="true"
+          class="pointer-events-none absolute -rotate-8 left-[7%] top-[16rem] w-16 sm:top-[17.5rem] sm:w-[4.25rem]"
+        />
+        <img
+          src={stickerTop.src}
+          alt=""
+          aria-hidden="true"
+          class="pointer-events-none absolute rotate-[13deg] right-[4%] top-[3%] w-14 sm:w-16"
+        />
+        <img
+          src={stickerFish.src}
+          alt=""
+          aria-hidden="true"
+          class="pointer-events-none absolute -scale-y-100 rotate-[165deg] left-[14%] top-[7.5rem] w-24 sm:w-[6rem]"
+        />
+        <img
+          src={stickerHamster.src}
+          alt=""
+          aria-hidden="true"
+          class="pointer-events-none absolute rotate-[23deg] right-[8%] top-[23.5rem] w-16 sm:top-[25rem] sm:w-[4.25rem]"
+        />
+      </div>
+    </aside>
+
+    <!-- main -->
+    <div
+      class="relative z-[1] flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden"
+      style={`background-image: url(${plaidMain.src}); background-size: 9.375rem 9.375rem;`}
+    >
       <div
         aria-hidden="true"
-        class="pointer-events-none absolute inset-0 bg-[url('/src/images/creations/music.jpg')] bg-[length:100%_100%] bg-cover opacity-90"
-      />
-      <div
+        class="pointer-events-none absolute bottom-0 left-0 top-0 flex w-[4.5rem] flex-col sm:w-[5.5rem] md:w-[7rem]"
+      >
+        <img
+          src={edgeLace.src}
+          alt=""
+          class="h-1/3 w-full object-cover object-left"
+        />
+        <img
+          src={edgeLace.src}
+          alt=""
+          class="h-1/3 w-full -scale-y-100 object-cover object-left"
+        />
+        <img
+          src={edgeLace.src}
+          alt=""
+          class="h-1/3 w-full object-cover object-left"
+        />
+      </div>
+
+      <img
+        src={cornerDeco.src}
+        alt=""
         aria-hidden="true"
-        class="pointer-events-none absolute inset-0 bg-[url('/src/images/creations/teal.jpg')] bg-[length:100%_100%] bg-center opacity-40"
+        class="pointer-events-none absolute bottom-0 right-0 hidden w-28 object-contain sm:block md:w-36"
       />
 
-      <div class="relative z-[1] flex min-h-0 flex-1 flex-col overflow-y-auto">
-        <nav class="sticky top-0 z-[3] flex h-[8vh] items-center p-[2vh]">
-          <p class="m-0 mx-2 text-4xl">creations</p>
-          <p class="m-0 text-md">| {pageView}</p>
+      <div class="relative z-[1] flex min-h-0 flex-1 flex-col overflow-y-auto pl-[1rem] sm:pl-[2rem] md:pl-[3rem]">
+        <nav class="sticky top-0 z-[3] px-6 py-3 sm:px-10 sm:py-4 md:px-12">
+          <p
+            class:list={[
+              "m-0 text-lg sm:text-xl text-white",
+              shortStackFont,
+              textShadowPink,
+            ]}
+          >
+            {pageView}
+          </p>
         </nav>
-        <div class="z-[2] w-inherit flex-1">
+
+        <div class="z-[2] flex-1">
           <div
             id="creations-grid"
-            class="grid w-inherit grid-cols-[repeat(auto-fill,minmax(20%,1fr))] gap-[3vw] px-[4vw] pb-[4vw]"
+            class="grid grid-cols-2 gap-6 px-6 pb-8 sm:grid-cols-3 sm:gap-8 sm:px-10 md:px-12 md:pb-12 lg:grid-cols-4"
           >
             <slot />
           </div>
@@ -119,10 +235,13 @@ const menuLinkWithIcon = [
 </html>
 
 <style is:global>
-  .short-stack-regular {
-    font-family: "Short Stack", cursive;
+  @font-face {
+    font-family: "short-stack-regular";
+    src: url("https://fonts.gstatic.com/s/shortstack/v16/bMrzmS2X6p0jZC6EcmPFX-SS.ttf")
+      format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
   }
 
   @font-face {
@@ -130,5 +249,4 @@ const menuLinkWithIcon = [
     src: url("/fonts/MessyHandwritten/MessyHandwritten-Regular.ttf")
       format("truetype");
   }
-
 </style>

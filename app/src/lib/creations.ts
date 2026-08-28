@@ -55,12 +55,24 @@ export const CREATION_MODAL_ID = "creationModal";
 export const CREATION_ITEM_PARAM = "item";
 
 // reusable styles
-// reusable styles
 export const textShadowPink =
   "[text-shadow:-1px_-1px_0_#98455d,1px_-1px_0_#98455d,-1px_1px_0_#98455d,1px_1px_0_#98455d,0px_0px_2px_#98455d,0_0_5px_#98455d,0_0_10px_#98455d]";
 
 export const textShadowGreenHover =
-  "hover:text-white hover:[text-shadow:-1px_-1px_0_#58e8e8,1px_-1px_0_#58e8e8,-1px_1px_0_#58e8e8,1px_1px_0_#58e8e8,0px_0px_2px_#58e8e8,0_0_5px_#58e8e8,0_0_10px_#58e8e8]";
+  "hover:text-white hover:[text-shadow:-1px_-1px_0_#AEC873,1px_-1px_0_#AEC873,-1px_1px_0_#AEC873,1px_1px_0_#AEC873,0px_0px_2px_#AEC873,0_0_5px_#AEC873,0_0_10px_#AEC873]";
+
+export const shortStackFont = "font-[short-stack-regular,simsun,serif]";
+
+export const creationTilt =
+  "origin-center transition-transform duration-200 ease-out will-change-transform";
+
+export const creationTiltLeft = `${creationTilt} hover:-rotate-[15deg]`;
+
+export const creationTiltRight = `${creationTilt} hover:rotate-[15deg]`;
+
+export function creationGridTilt(index: number) {
+  return index % 2 === 0 ? creationTiltLeft : creationTiltRight;
+}
 
 export const gridItemButton = [
   "flex aspect-square w-full flex-col items-center border-transparent bg-transparent p-0",
@@ -72,8 +84,8 @@ export const gridItemButton = [
   "[&_em]:m-0",
 ].join(" ");
 
-// text shadow colors: 
+// text shadow colors 4 reference: 
 // - pink: #98455d
-// - dark blue: #98455d
 // - yellow-green: #58e8e8
 // - turquoise: #58e8e8
+// - green: #AEC873

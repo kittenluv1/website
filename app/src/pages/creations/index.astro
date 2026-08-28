@@ -17,7 +17,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
 <Layout pageView="categories">
   {
-    categories.map(({ name, slug, preview }) => {
+    categories.map(({ name, slug, preview }, index) => {
       const image = preview ? images[preview]?.default : undefined;
       if (!image) {
         console.log(preview, "image not found");
