@@ -4,6 +4,8 @@ import {
   ALL_CATEGORY_SLUG,
   getAllCreations,
   getCategories,
+  getCreationImage,
+  getCreationImageUrl,
   type Creation,
   type CreationsData,
   type FlatCreation,
@@ -45,17 +47,8 @@ if (!items.length) {
   return Astro.redirect("/creations");
 }
 
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/images/creations/**/*.{png,jpg,jpeg,JPEG,webp,gif}",
-  { eager: true },
-);
-
 function getItemCategoryName(item: Creation | FlatCreation) {
   return "categoryName" in item ? item.categoryName : undefined;
-}
-
-function getImageUrl(path: string) {
-  return images[path]?.default?.src ?? path;
 }
 
 const modalItems: CreationModalItem[] = items.map((item) => ({
@@ -64,7 +57,7 @@ const modalItems: CreationModalItem[] = items.map((item) => ({
   description: item.description,
   comments: item.comments,
   categoryName: getItemCategoryName(item),
-  imageUrls: item.images.map(getImageUrl),
+  imageUrls: item.images.map(getCreationImageUrl),
   captions: item.captions ?? [],
 }));
 ---
@@ -73,18 +66,25 @@ const modalItems: CreationModalItem[] = items.map((item) => ({
   {
     items.map((item, index) => {
       const imageSrc = item.images?.[0];
-      const image = imageSrc ? images[imageSrc]?.default : undefined;
+      const image = getCreationImage(imageSrc);
+      const itemCategoryName = getItemCategoryName(item);
 
       if (!image) {
-        console.log(imageSrc, "image not found");
-        return null;
+        console.warn(`[creations] image not found: ${imageSrc} (${item.title})`);
       }
-
-      const itemCategoryName = getItemCategoryName(item);
 
       return (
         <button type="button" data-creation-item={index} class={gridItemButton}>
-          <Image src={image} alt={item.title} />
+          {
+            image ? (
+              <Image src={image} alt={item.title} />
+            ) : (
+              <div
+                aria-hidden="true"
+                class="box-border flex aspect-square h-full w-full items-center justify-center pb-[1vh] opacity-50"
+              />
+            )
+          }
           <p class="mb-0!">{item.title}</p>
           {itemCategoryName && (
             <p class="m-0! text-sm">{itemCategoryName}</p>

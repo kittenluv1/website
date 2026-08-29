@@ -338,7 +338,7 @@ function handleDocumentClick(e: MouseEvent) {
     return;
   }
 
-  if (target.closest("[data-creation-image]")) {
+  if (target.closest("[data-creation-image-trigger]")) {
     e.preventDefault();
     nextImage(active);
   }

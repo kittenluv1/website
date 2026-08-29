@@ -1,3 +1,4 @@
+// ================ DATA - TYPES & HELPERS ================
 export type Creation = {
   title: string;
   images: string[];
@@ -57,6 +58,40 @@ export const CREATIONS_ABOUT_TEXT =
 export const CREATION_MODAL_ID = "creationModal";
 export const CREATION_ITEM_PARAM = "item";
 
+// ================ IMAGE HELPERS ================
+// all creations images must live under this directory
+export const CREATIONS_IMAGE_PATH = "/src/images/creations";
+
+const creationImageModules = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/creations/**/*.{png,jpg,jpeg,JPEG,webp,gif}",
+  { eager: true },
+);
+
+/** Resolve a JSON image path to the glob key under CREATIONS_IMAGE_PATH. */
+export function resolveCreationImagePath(path: string): string {
+  if (path.startsWith(`${CREATIONS_IMAGE_PATH}/`)) return path;
+  if (path.startsWith("/")) {
+    console.warn(
+      `[creations] image must live under ${CREATIONS_IMAGE_PATH}: ${path}`,
+    );
+    return path;
+  }
+  return `${CREATIONS_IMAGE_PATH}/${path.replace(/^\//, "")}`;
+}
+
+export function getCreationImage(path: string | undefined) {
+  if (!path) return undefined;
+  const key = resolveCreationImagePath(path);
+  if (!key.startsWith(`${CREATIONS_IMAGE_PATH}/`)) return undefined;
+  return creationImageModules[key]?.default;
+}
+
+export function getCreationImageUrl(path: string): string {
+  return getCreationImage(path)?.src ?? resolveCreationImagePath(path);
+}
+
+
+// ================ STYLES - VARIABLES & HELPERS ================
 export const shortStackFont = "font-[short-stack-regular,simsun,serif]";
 
 const textShadowPink =
@@ -73,7 +108,7 @@ const creationTiltBase =
 
 export type CreationTiltDirection = "left" | "right";
 
-/** Pass `"left"` / `"right"`, or a numeric index (even → left, odd → right). */
+// Pass `"left"` / `"right"`, or a numeric index (even → left, odd → right).
 export function creationTilt(direction: CreationTiltDirection | number): string {
   const side: CreationTiltDirection =
     typeof direction === "number"
@@ -110,12 +145,6 @@ export const creationsNavCrumbText = [
 export const creationsNavCrumbLink = [
   creationsNavCrumbText,
   "underline underline-offset-4",
-  textShadowGreenHover,
-].join(" ");
-
-export const creationsHomeLink = [
-  "w-full px-4 text-lg sm:px-5 messy-handwritten text-white underline",
-  textShadowPink,
   textShadowGreenHover,
 ].join(" ");
 

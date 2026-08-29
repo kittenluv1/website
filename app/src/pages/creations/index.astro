@@ -1,26 +1,23 @@
 ---
-import { getCategories, type CreationsData } from "@/lib/creations";
+import {
+  getCategories,
+  getCreationImage,
+  type CreationsData,
+} from "@/lib/creations";
 import { Image } from "astro:assets";
 import creationsData from "@/data/creations.json";
 import Layout from "./layout.astro";
 import { gridItemButton } from "@/lib/creations";
 
 const categories = getCategories(creationsData as CreationsData);
-
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/images/creations/**/*.{png,jpg,jpeg,JPEG,webp,gif}",
-  { eager: true },
-);
-
-
 ---
 
 <Layout pageView="categories">
   {
-    categories.map(({ name, slug, preview }, index) => {
-      const image = preview ? images[preview]?.default : undefined;
+    categories.map(({ name, slug, preview }) => {
+      const image = getCreationImage(preview);
       if (!image) {
-        console.log(preview, "image not found");
+        console.warn(`[creations] preview image not found: ${preview} (${name})`);
         return null;
       }
 

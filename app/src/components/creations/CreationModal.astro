@@ -91,17 +91,23 @@ const changeDisplayBtn =
           <div class="flex min-h-0 flex-1 items-stretch gap-4 overflow-hidden sm:gap-6">
             <div class="my-6 ml-6 flex min-h-0 min-w-0 flex-1 basis-0 flex-col items-center justify-center gap-2 sm:my-8 sm:ml-8 md:ml-10">
               <div class="flex w-full min-h-0 flex-1 items-center justify-center">
-                <div class="relative flex aspect-square w-full max-h-full max-w-sm items-center justify-center">
+                <button
+                  type="button"
+                  data-creation-image-trigger
+                  class:list={[
+                    "relative flex aspect-square w-full max-h-full max-w-sm items-center justify-center border-transparent bg-transparent p-0",
+                    { "cursor-pointer": multipleImages },
+                  ]}
+                  aria-label={multipleImages ? "Next image" : undefined}
+                  disabled={!multipleImages}
+                >
                   <img
                     data-creation-image
                     src={firstImage}
                     alt={item.title}
-                    class:list={[
-                      "max-h-full max-w-full object-contain transition-opacity duration-200 ease-in-out",
-                      { "cursor-pointer": multipleImages },
-                    ]}
+                    class="pointer-events-none max-h-full max-w-full object-contain transition-opacity duration-200 ease-in-out"
                   />
-                </div>
+                </button>
               </div>
 
               <div class="flex shrink-0 flex-col items-center justify-end max-w-full">
@@ -119,7 +125,7 @@ const changeDisplayBtn =
                   multipleImages && (
                     <div
                       data-creation-dots
-                      class="mt-3 flex items-center justify-center gap-1"
+                      class="mt-3 flex items-center justify-center gap-2"
                     >
                       {
                         item.imageUrls.map((_, dotIndex) => (
@@ -233,5 +239,9 @@ const changeDisplayBtn =
 
   dialog[data-modal-id="creationModal"] [data-creation-panel].hidden {
     display: none;
+  }
+
+  dialog[data-modal-id="creationModal"] [data-creation-image-trigger]:disabled {
+    cursor: default;
   }
 </style>
