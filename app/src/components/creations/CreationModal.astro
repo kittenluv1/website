@@ -1,8 +1,8 @@
 ---
 import Modal from "@/components/modal/modal.astro";
-import { CREATION_MODAL_ID } from "@/lib/creations";
-import displayBg from "@/images/creations/fabric.jpg";
-import borderImg from "@/images/creations/border.png";
+import { CREATION_MODAL_ID, shortStackFont, textShadowGreenHover } from "@/lib/creations";
+import modalBg from "@/images/creations/fabric 1.png";
+import modalHeader from "@/images/creations/plaid3.jpg";
 import dragonfly from "@/images/creations/dragonfly.png";
 
 export type CreationModalItem = {
@@ -22,10 +22,15 @@ interface Props {
 const { items } = Astro.props;
 
 const changeDisplayBtn =
-  "absolute aspect-square w-[8%] cursor-pointer border-transparent bg-transparent p-0 [&_img]:w-full";
+  "absolute z-20 aspect-square w-[8%] min-w-10 cursor-pointer border-transparent bg-transparent p-0 sm:min-w-12 [&_img]:w-full";
 ---
 
-<Modal id={CREATION_MODAL_ID}>
+<Modal
+  id={CREATION_MODAL_ID}
+  draggable={false}
+  dimBackdrop={false}
+  closeOnBackdrop={false}
+>
   {
     items.map((item, index) => {
       const firstImage = item.imageUrls[0] ?? "";
@@ -35,30 +40,36 @@ const changeDisplayBtn =
       return (
         <div
           data-creation-panel={index}
-          class="relative box-border flex hidden h-full w-full items-stretch rounded-[2%] bg-repeat shadow-[inset_0_0_40px_#f7ddea] [&_*]:m-[1vw] [&_*]:text-[#3c3828] [&_*]:[text-shadow:none] [&>button:hover]:opacity-70 [&_img]:m-0 p-25"
+          class="relative box-border hidden h-full min-h-0 w-full flex-col overflow-visible rounded-xl bg-top-left bg-[length:50%] bg-repeat text-[#3d3829] [&_*]:[text-shadow:none] [&>button:hover]:opacity-70 [&_img]:m-0"
           data-image-urls={JSON.stringify(item.imageUrls)}
           data-captions={JSON.stringify(item.captions)}
           data-image-index="0"
-          style={`background-image: url('${displayBg.src}')`}
+          style={`background-image: url('${modalBg.src}');`}
         >
-          <img
-            src={borderImg.src}
-            alt=""
-            aria-hidden="true"
-            class="pointer-events-none absolute inset-0 h-full w-full object-fill"
-          />
-          <button
-            type="button"
-            data-modal-close
-            class="absolute top-10 right-25 z-[2] cursor-pointer border-transparent bg-transparent p-0 font-[messy-handwritten,simsun,serif] text-[3em] font-bold text-black"
-            aria-label="Close"
+          <div
+            class="relative h-12 w-full shrink-0 overflow-hidden bg-cover bg-top bg-no-repeat sm:h-14"
+            style={`background-image: url('${modalHeader.src}');`}
           >
-            x
-          </button>
+            <button
+              type="button"
+              data-modal-close
+              class:list={[
+                shortStackFont,
+                "absolute top-2 right-6 z-[2] cursor-pointer border-transparent bg-transparent p-0 text-2xl leading-none text-black sm:top-3 sm:right-8 sm:text-3xl",
+                textShadowGreenHover,
+              ]}
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
 
           <button
             type="button"
-            class:list={[changeDisplayBtn, "top-1/2 left-[-10%] -translate-y-1/2 [&_img]:-rotate-90"]}
+            class:list={[
+              changeDisplayBtn,
+              "top-1/2 left-[-10%] -translate-y-1/2 [&_img]:-rotate-90",
+            ]}
             data-creation-prev-work
             aria-label="Previous piece"
           >
@@ -67,75 +78,98 @@ const changeDisplayBtn =
 
           <button
             type="button"
-            class:list={[changeDisplayBtn, "top-1/2 right-[-10%] -translate-y-1/2 [&_img]:rotate-90"]}
+            class:list={[
+              changeDisplayBtn,
+              "top-1/2 right-[-10%] -translate-y-1/2 [&_img]:rotate-90",
+            ]}
             data-creation-next-work
             aria-label="Next piece"
           >
             <img src={dragonfly.src} alt="" />
           </button>
 
-          <div class="flex min-h-0 min-w-0 flex-[5] flex-col text-center">
-            <div class="flex min-h-0 flex-1 items-center justify-center overflow-hidden">
-              <img
-                data-creation-image
-                src={firstImage}
-                alt={item.title}
+          <div class="flex min-h-0 flex-1 items-stretch gap-4 overflow-hidden sm:gap-6">
+            <div class="my-6 ml-6 flex min-h-0 min-w-0 flex-1 basis-0 flex-col items-center justify-center gap-2 sm:my-8 sm:ml-8 md:ml-10">
+              <div class="flex w-full min-h-0 flex-1 items-center justify-center">
+                <div class="relative flex aspect-square w-full max-h-full max-w-sm items-center justify-center">
+                  <img
+                    data-creation-image
+                    src={firstImage}
+                    alt={item.title}
+                    class:list={[
+                      "max-h-full max-w-full object-contain transition-opacity duration-200 ease-in-out",
+                      { "cursor-pointer": multipleImages },
+                    ]}
+                  />
+                </div>
+              </div>
+
+              <div class="flex shrink-0 flex-col items-center justify-end max-w-full">
+                <p
+                  data-creation-caption
+                  class:list={[
+                    shortStackFont,
+                    "text-center text-xs",
+                    { hidden: !firstCaption },
+                  ]}
+                  set:html={firstCaption ?? ""}
+                />
+
+                {
+                  multipleImages && (
+                    <div
+                      data-creation-dots
+                      class="mt-3 flex items-center justify-center gap-1"
+                    >
+                      {
+                        item.imageUrls.map((_, dotIndex) => (
+                          <span
+                            data-creation-dot={dotIndex}
+                            class:list={[
+                              "block size-1.5 shrink-0 rounded-full bg-[#3d3829] transition-opacity sm:size-2",
+                              dotIndex === 0 ? "opacity-100" : "opacity-40",
+                            ]}
+                            aria-hidden="true"
+                          />
+                        ))
+                      }
+                    </div>
+                  )
+                }
+              </div>
+            </div>
+
+            <div class="my-6 mr-6 flex min-h-0 min-w-0 flex-1 basis-0 flex-col sm:my-8 sm:mr-8 md:mr-10">
+              <div
                 class:list={[
-                  "max-h-full max-w-full object-contain transition-opacity duration-200 ease-in-out",
-                  { "cursor-pointer": multipleImages },
+                  shortStackFont,
+                  "min-h-0 flex-1 overflow-y-auto overscroll-contain pr-3 sm:pr-4",
                 ]}
-              />
-            </div>
-
-            <div class="flex shrink-0 flex-col items-center justify-end pb-[0.5vh]">
-              <p
-                data-creation-caption
-                class:list={["text-sm text-nowrap", { hidden: !firstCaption }]}
-                set:html={firstCaption ?? ""}
-              />
-
-              {
-                multipleImages && (
-                  <div
-                    data-creation-dots
-                    class="mt-[0.2em] flex items-center justify-center gap-[.3em] [&_*]:m-0"
-                  >
-                    {
-                      item.imageUrls.map((_, dotIndex) => (
-                        <span
-                          data-creation-dot={dotIndex}
-                          class:list={[
-                            "block shrink-0 !m-0 h-[0.9vh] w-[0.9vh] rounded-full bg-[#3c3828] transition-opacity",
-                            dotIndex === 0 ? "opacity-100" : "opacity-40",
-                          ]}
-                          aria-hidden="true"
-                        />
-                      ))
-                    }
-                  </div>
-                )
-              }
-            </div>
-          </div>
-
-          <div class="min-h-0 min-w-0 flex-[9] overflow-y-auto">
-            <h1 class="text-6xl" id={`${CREATION_MODAL_ID}-title`}>
-              {item.title}
-            </h1>
-            {item.categoryName && (
-              <p class="text-sm opacity-80 italic">{item.categoryName}</p>
-            )}
-            <p class="text-sm">date: {item.date}</p>
-            <p class="text-sm">
-              description: <span set:html={item.description} />
-            </p>
-            {
-              item.comments && (
+              >
+                <div class="flex min-h-full flex-col justify-center gap-3">
+                <h1
+                  class="text-2xl leading-none sm:text-3xl lg:text-4xl"
+                  id={`${CREATION_MODAL_ID}-title`}
+                >
+                  {item.title}
+                </h1>
+                {item.categoryName && (
+                  <p class="text-sm opacity-80 italic">{item.categoryName}</p>
+                )}
+                <p class="text-sm">date: {item.date}</p>
                 <p class="text-sm">
-                  comments: <span set:html={item.comments} />
+                  description: <span set:html={item.description} />
                 </p>
-              )
-            }
+                {
+                  item.comments && (
+                    <p class="text-sm">
+                      comments: <span set:html={item.comments} />
+                    </p>
+                  )
+                }
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       );
@@ -150,8 +184,9 @@ const changeDisplayBtn =
 
 <style is:global>
   dialog[data-modal-id="creationModal"] p,
-  dialog[data-modal-id="creationModal"] [data-creation-caption] {
-    font-family: "Short Stack", cursive;
+  dialog[data-modal-id="creationModal"] [data-creation-caption],
+  dialog[data-modal-id="creationModal"] h1 {
+    font-family: "short-stack-regular", "Short Stack", simsun, sans-serif;
     font-weight: 400;
   }
 
@@ -169,21 +204,34 @@ const changeDisplayBtn =
 
   dialog[data-modal-id="creationModal"] {
     position: fixed;
-    right: 7%;
-    bottom: 10%;
-    left: auto;
-    top: auto;
-    width: 66%;
-    height: 80%;
-    max-width: none;
-    max-height: none;
+    inset: auto 7% 10% auto;
+    z-index: 1000;
+    width: min(66vw, 56rem);
+    height: 80vh;
     margin: 0;
     overflow: visible;
+    pointer-events: none;
+    isolation: isolate;
+  }
+
+  dialog[data-modal-id="creationModal"]::backdrop {
+    background: transparent;
   }
 
   dialog[data-modal-id="creationModal"] [data-modal-panel] {
     width: 100%;
     height: 100%;
+    min-height: 0;
     overflow: visible;
+    pointer-events: auto;
+  }
+
+  dialog[data-modal-id="creationModal"] [data-creation-panel] {
+    display: flex;
+    min-height: 0;
+  }
+
+  dialog[data-modal-id="creationModal"] [data-creation-panel].hidden {
+    display: none;
   }
 </style>

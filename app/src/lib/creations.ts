@@ -51,28 +51,85 @@ export function getAllCreations(data: CreationsData): FlatCreation[] {
 
 export const ALL_CATEGORY_SLUG = "all";
 
+export const CREATIONS_ABOUT_TEXT =
+  "welcome to my creations archive! intended to be a hoarding spot for me to put everything i've ever made in my whole life. crochet, scrapbooking, trinkets... the 'archive' section even has stuff that i made in my childhood. i had a lot of fun putting this together - hope you enjoy looking around and also have some fun!";
+
 export const CREATION_MODAL_ID = "creationModal";
 export const CREATION_ITEM_PARAM = "item";
 
-// reusable styles
-export const textShadowPink =
+export const shortStackFont = "font-[short-stack-regular,simsun,serif]";
+
+const textShadowPink =
   "[text-shadow:-1px_-1px_0_#98455d,1px_-1px_0_#98455d,-1px_1px_0_#98455d,1px_1px_0_#98455d,0px_0px_2px_#98455d,0_0_5px_#98455d,0_0_10px_#98455d]";
+
+export const textShadowGreen =
+  "[text-shadow:-1px_-1px_0_#AEC873,1px_-1px_0_#AEC873,-1px_1px_0_#AEC873,1px_1px_0_#AEC873,0px_0px_2px_#AEC873,0_0_5px_#AEC873,0_0_10px_#AEC873]";
 
 export const textShadowGreenHover =
   "hover:text-white hover:[text-shadow:-1px_-1px_0_#AEC873,1px_-1px_0_#AEC873,-1px_1px_0_#AEC873,1px_1px_0_#AEC873,0px_0px_2px_#AEC873,0_0_5px_#AEC873,0_0_10px_#AEC873]";
 
-export const shortStackFont = "font-[short-stack-regular,simsun,serif]";
-
-export const creationTilt =
+const creationTiltBase =
   "origin-center transition-transform duration-200 ease-out will-change-transform";
 
-export const creationTiltLeft = `${creationTilt} hover:-rotate-[15deg]`;
+export type CreationTiltDirection = "left" | "right";
 
-export const creationTiltRight = `${creationTilt} hover:rotate-[15deg]`;
-
-export function creationGridTilt(index: number) {
-  return index % 2 === 0 ? creationTiltLeft : creationTiltRight;
+/** Pass `"left"` / `"right"`, or a numeric index (even → left, odd → right). */
+export function creationTilt(direction: CreationTiltDirection | number): string {
+  const side: CreationTiltDirection =
+    typeof direction === "number"
+      ? direction % 2 === 0
+        ? "left"
+        : "right"
+      : direction;
+  const hover =
+    side === "left" ? "hover:-rotate-[15deg]" : "hover:rotate-[15deg]";
+  return `${creationTiltBase} ${hover}`;
 }
+
+const creationsButtonReset =
+  "cursor-pointer border-transparent bg-transparent p-0";
+
+const creationsClickableText = [
+  shortStackFont,
+  "font-normal text-white underline underline-offset-4",
+  textShadowPink,
+  textShadowGreenHover,
+].join(" ");
+
+export const creationsClickableTextButton = [
+  creationsClickableText,
+  creationsButtonReset,
+].join(" ");
+
+export const creationsNavCrumbText = [
+  shortStackFont,
+  "text-lg text-white sm:text-xl",
+  textShadowPink,
+].join(" ");
+
+export const creationsNavCrumbLink = [
+  creationsNavCrumbText,
+  "underline underline-offset-4",
+  textShadowGreenHover,
+].join(" ");
+
+export const creationsHomeLink = [
+  "w-full px-4 text-lg sm:px-5 messy-handwritten text-white underline",
+  textShadowPink,
+  textShadowGreenHover,
+].join(" ");
+
+export const creationsStickerLabel = [
+  shortStackFont,
+  "relative z-[1] px-2 text-center text-base font-normal text-white underline underline-offset-2 text-shadow-inherit",
+].join(" ");
+
+export const creationsStickerButton = [
+  "absolute flex items-center justify-center no-underline",
+  creationsButtonReset,
+  textShadowPink,
+  textShadowGreenHover,
+].join(" ");
 
 export const gridItemButton = [
   "flex aspect-square w-full flex-col items-center border-transparent bg-transparent p-0",
