@@ -1,0 +1,25 @@
+---
+import "@/styles/global.css";
+const linkClass = "text-blue-600 underline hover:text-blue-800";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>japan tv</title>
+    <link rel="icon" href="/src/images/japan.png" type="image/png" />
+  </head>
+  <body class="bg-pink-100">
+    <a href="/" class={linkClass}>← back</a>
+    <main class="flex flex-col items-center gap-40 p-30">
+        <div class="aspect-video w-full max-w-5xl">
+            <iframe class="size-full" src="https://www.youtube.com/embed/a7f_3K_WzJE?si=T6z7a-zcVu6yb1II" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video w-full max-w-5xl">
+            <iframe class="size-full" src="https://www.youtube.com/embed/3UTBZtwQMpI?si=_Rdi3WLmIRTO84Vp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+  </body>
+</html>
