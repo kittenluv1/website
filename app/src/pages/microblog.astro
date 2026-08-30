@@ -1,0 +1,35 @@
+---
+import "@/styles/global.css";
+import "@/styles/microblog.css";
+import Bite from "@/components/microblog/Bite.astro";
+import bitesData from "@/data/bites.json";
+
+interface BiteData {
+  date: string;
+  text: string;
+}
+
+const bites: BiteData[] = bitesData;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog bites</title>
+    <link rel="icon" href="/images/microblog/heart-cookie.png" type="image/png" />
+  </head>
+  <body>
+    <div id="home">
+      <a href="/">&larr; home</a> bite sized blogs ♡ ugh i need to change how this page looks
+    </div>
+
+    <div id="border">
+      <img id="border-img" src="/images/microblog/border.gif" alt="" />
+      <div id="container">
+        {bites.map((bite) => <Bite date={bite.date} text={bite.text} />)}
+      </div>
+    </div>
+  </body>
+</html>

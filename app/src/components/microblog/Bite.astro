@@ -1,0 +1,34 @@
+---
+interface Props {
+  date: string;
+  text: string;
+}
+
+const { date, text } = Astro.props;
+
+const parsed = new Date(date);
+const dateLabel = parsed
+  .toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  })
+  .replace(/,/g, "");
+
+const timeLabel = date.includes("T")
+  ? parsed.toLocaleTimeString(undefined, {
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZone: "UTC",
+    })
+  : null;
+---
+
+<div class="entry">
+  <div class="date-div">
+    <span>{dateLabel}</span>
+    {timeLabel && <span class="time">{timeLabel}</span>}
+  </div>
+  <p class="text">{text}</p>
+</div>

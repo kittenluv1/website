@@ -1,0 +1,77 @@
+---
+import writingData from "@/data/writing.json";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e's creative writing page</title>
+  </head>
+  <body>
+    <header>
+      <button>home</button>
+      <h1>Welcome to my Creative Writing page</h1>
+      <label
+        >view by category:
+        <select name="categories">
+          <option>All</option>
+        </select>
+      </label>
+    </header>
+    <main></main>
+  </body>
+
+  <script define:vars={{ writingData }}>
+    const main = document.querySelector("main");
+    const select = document.querySelector("select");
+    const homeButton = document.querySelector("header button");
+    const data = writingData;
+    const categories = Object.keys(data);
+
+    homeButton.addEventListener("click", () => {
+      window.location.href = "/";
+    });
+
+    select.addEventListener("change", (e) => {
+      main.replaceChildren();
+      e.target.value === "All" ? displayAll() : displayCategory(e.target.value);
+    });
+
+    categories.forEach((category) => {
+      const option = document.createElement("option");
+      option.textContent = category;
+      select.appendChild(option);
+    });
+
+    displayAll();
+
+    function displayAll() {
+      categories.forEach((category) => displayCategory(category));
+      select.value = "All";
+    }
+
+    function displayCategory(category) {
+      const heading = document.createElement("h3");
+      heading.textContent = category;
+      main.appendChild(heading);
+
+      const list = document.createElement("ul");
+      data[category].forEach((piece) => {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = piece.file;
+        link.textContent = piece.title;
+        if (piece.target !== undefined) {
+          link.target = piece.target;
+        }
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+
+      main.appendChild(list);
+      select.value = category;
+    }
+  </script>
+</html>

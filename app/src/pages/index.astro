@@ -1,9 +1,9 @@
 ---
 import "@/styles/global.css";
-import "@/styles/index.css";
 import Modal from "../components/indexModal/modal.astro";
 import { Image } from "astro:assets";
 import IndexButton from "../components/indexButton.astro";
+import type { ImageMetadata } from "astro";
 
 // image imports
 import backgroundImgSrc from "@/images/index/index.jpg";
@@ -22,6 +22,100 @@ import musicImgSrc from "@/images/index/mametchi.png";
 import flyingToroImgSrc from "@/images/index/flyingtoro.png";
 import startImgSrc from "@/images/index/start.png";
 import archiveImgSrc from "@/images/index/archive.png";
+
+const textShadow =
+  "[text-shadow:-1px_-1px_0_#555555,1px_-1px_0_#555555,-1px_1px_0_#555555,1px_1px_0_#555555,0px_0px_2px_black]";
+
+const footerGradient =
+  "linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%)";
+
+interface IndexButtonData {
+  img: ImageMetadata;
+  text: string;
+  href: string;
+  class: string;
+}
+
+const indexButtons: IndexButtonData[] = [
+  {
+    img: creationsImgSrc,
+    text: "creations",
+    href: "/creations",
+    class: "md:[grid-row-start:1] md:[grid-column-start:1]",
+  },
+  {
+    img: japanImgSrc,
+    text: "japan tv",
+    href: "/japan-tv",
+    class: "md:[grid-row-start:1] md:[grid-column-start:2]",
+  },
+  {
+    img: portfolioImgSrc,
+    text: "portfolio",
+    href: "/portfolio",
+    class: "md:[grid-row-start:1] md:[grid-column-start:3]",
+  },
+  {
+    img: musicImgSrc,
+    text: "play",
+    href: "music",
+    class: "md:[grid-row-start:5] md:[grid-column-start:2]",
+  },
+  {
+    img: writingImgSrc,
+    text: "writing",
+    href: "/writing",
+    class: "md:[grid-row-start:6] md:[grid-column-start:2]",
+  },
+  {
+    img: microblogImgSrc,
+    text: "microblog",
+    href: "/microblog",
+    class: "md:[grid-row-start:7] md:[grid-column-start:2]",
+  },
+  {
+    img: blogImgSrc,
+    text: "nostalgiablog",
+    href: "/blog/2026",
+    class: "md:[grid-row-start:5] md:[grid-column-start:11]",
+  },
+  {
+    img: galleryImgSrc,
+    text: "gallery",
+    href: "/gallery",
+    class: "md:[grid-row-start:6] md:[grid-column-start:7]",
+  },
+  {
+    img: neocitiesImgSrc,
+    text: "neocities",
+    href: "https://kittenluv1.neocities.org/",
+    class: "md:[grid-row-start:6] md:[grid-column-start:11]",
+  },
+  {
+    img: resourcesImgSrc,
+    text: "resources",
+    href: "https://kittenluv1.neocities.org/resources",
+    class: "md:[grid-row-start:6] md:[grid-column-start:12]",
+  },
+  {
+    img: flappyImgSrc,
+    text: "flappypatchi",
+    href: "https://introspec.itch.io/flappypatchi",
+    class: "md:[grid-row-start:3] md:[grid-column-start:14]",
+  },
+  {
+    img: detectiveImgSrc,
+    text: "detective",
+    href: "https://introspec.itch.io/dimensional-detective",
+    class: "md:[grid-row-start:4] md:[grid-column-start:14]",
+  },
+  {
+    img: archiveImgSrc,
+    text: "archive",
+    href: "/archive",
+    class: "md:[grid-row-start:8] md:[grid-column-start:16]",
+  },
+];
 ---
 
 <!doctype html>
@@ -49,153 +143,66 @@ import archiveImgSrc from "@/images/index/archive.png";
         .catch((err) => console.error(err));
     </script>
   </head>
-  <body>
-    <div class="background-container">
+  <body
+    class={`font-[Tahoma,Verdana,sans-serif] text-sm text-white md:text-[2vh] ${textShadow}`}
+  >
+    <div class="relative h-[95vh] w-screen">
       <Image
         src={backgroundImgSrc}
         alt=""
         loading="eager"
         fetchpriority="high"
         sizes="100vw"
-        class="bg-img"
+        class="absolute inset-0 z-0 h-full w-full object-cover"
       />
 
-      <!-- BUTTONS -->
-      <IndexButton
-        img={blogImgSrc}
-        imgStyle="width: 85%; height: auto; bottom: 25%;"
-        text="nostalgiablog"
-        href="/blog/2026"
-        row={5}
-        col={11}
-      />
-      <IndexButton
-        img={creationsImgSrc}
-        imgStyle="height: 60%; bottom: 25%;"
-        text="creations"
-        href="/creations"
-        row={1}
-        col={1}
-      />
-      <IndexButton
-        img={japanImgSrc}
-        imgStyle="width: 70%; height: auto; "
-        text="japan tv"
-        href="/japan-tv"
-        row={1}
-        col={2}
-      />
-      <IndexButton
-        img={portfolioImgSrc}
-        text="portfolio"
-        href="/portfolio"
-        row={1}
-        col={3}
-      />
-      <IndexButton
-        img={resourcesImgSrc}
-        text="resources"
-        href="https://kittenluv1.neocities.org/resources"
-        row={6}
-        col={12}
-      />
-      <IndexButton
-        img={writingImgSrc}
-        text="writing"
-        href="/writing"
-        row={6}
-        col={2}
-      />
-      <IndexButton
-        img={detectiveImgSrc}
-        imgStyle="height: 75%; bottom: 25%;"
-        text="detective"
-        href="https://introspec.itch.io/dimensional-detective"
-        row={4}
-        col={14}
-      />
-      <IndexButton
-        img={galleryImgSrc}
-        text="gallery"
-        href="/gallery"
-        row={6}
-        col={7}
-      />
-      <IndexButton
-        img={musicImgSrc}
-        imgStyle="opacity: 0.9;"
-        text="play"
-        href="music"
-        row={5}
-        col={2}
-      />
-      <IndexButton
-        img={archiveImgSrc}
-        text="archive"
-        href="/archive"
-        row={8}
-        col={16}
-      />
-      <!-- <IndexButton
-        img={flappyImgSrc}
-        imgStyle="height: 70%; bottom: 25%;"
-        text="flappypatchi"
-        href="https://introspec.itch.io/flappypatchi"
-        row={4}
-        col={13}
-      /> -->
-      <!-- <IndexButton
-        img={neocitiesImgSrc}
-        text="neocities"
-        href="https://kittenluv1.neocities.org/"
-        row={6}
-        col={11}
-      /> -->
-      <!-- <IndexButton
-        img={microblogImgSrc}
-        imgStyle="height: 50%;"
-        text="microblog"
-        href="/microblog"
-        row={7}
-        col={2}
-      /> -->
+      <div
+        class="relative z-10 grid h-full w-full grid-cols-4 grid-rows-4 gap-2 p-3 md:grid-cols-[repeat(16,1fr)] md:grid-rows-[repeat(8,1fr)] md:gap-0 md:p-0"
+      >
+        {
+          indexButtons.map((button) => (
+            <IndexButton
+              img={button.img}
+              text={button.text}
+              href={button.href}
+              class={button.class}
+            />
+          ))
+        }
+      </div>
     </div>
 
     <Modal />
 
     <!-- WINDOWS XP FOOTER -->
-    <footer>
-      <Image src={startImgSrc} alt="" width="100" />
-      <div id="copyright">
+    <footer
+      class="z-[1] flex h-[5vh] items-center"
+      style={`background: ${footerGradient}`}
+    >
+      <Image
+        src={startImgSrc}
+        alt=""
+        width="100"
+        class="h-full w-auto opacity-80"
+      />
+      <div class="absolute right-0 flex h-[3vh] items-center [&>*]:mr-2">
         <div>visits: <span id="counter"></span></div>
         <p>&copy; e**** 2024</p>
-        <Image src={flyingToroImgSrc} alt="flying toro" width="100" />
+        <Image
+          src={flyingToroImgSrc}
+          alt="flying toro"
+          width="100"
+          class="h-full w-auto opacity-80"
+        />
       </div>
     </footer>
   </body>
 
-  <script>
+  <script define:vars={{ footerGradient }}>
     // ========================== FOOTER GRADIENTS ========================= //
     const footer = document.querySelector("footer");
     const gradients = [
-      `linear-gradient(
-    rgb(31, 47, 134) 0px,
-    rgb(49, 101, 196) 3%,
-    rgb(54, 130, 229) 6%,
-    rgb(68, 144, 230) 10%,
-    rgb(56, 131, 229) 12%,
-    rgb(43, 113, 224) 15%,
-    rgb(38, 99, 218) 18%,
-    rgb(35, 91, 214) 20%,
-    rgb(34, 88, 213) 23%,
-    rgb(33, 87, 214) 38%,
-    rgb(36, 93, 219) 54%,
-    rgb(37, 98, 223) 86%,
-    rgb(36, 95, 220) 89%,
-    rgb(33, 88, 212) 92%,
-    rgb(29, 78, 192) 95%,
-    rgb(25, 65, 165) 98%
-  )`,
+      footerGradient,
       `linear-gradient(
     rgb(255, 225, 235) 0px,
     rgb(255, 215, 225) 3%,

@@ -9,11 +9,10 @@ interface Props {
   imgStyle?: string;
   text: string;
   href: string;
-  row: number;
-  col: number;
+  class?: string;
 }
 
-const { img, imgStyle, text, href, row, col } = Astro.props;
+const { img, imgStyle, text, href, class: gridClass } = Astro.props;
 
 const linksOut = href.startsWith("http");
 
@@ -24,18 +23,17 @@ const textShadow =
 <!-- use button for double click functionality (a does not provide this easily) -->
 <button
   data-href={href}
-  style={`grid-row-start: ${row}; grid-column-start: ${col};`}
-  class="relative flex aspect-square w-full flex-col items-center border-[3px] border-solid border-transparent bg-transparent p-[10%] hover:cursor-default focus-within:rounded-[3px] focus-within:border-[rgb(115,147,179,0.7)] focus-within:bg-[rgb(163,217,271,0.5)]"
+  class={`relative z-10 flex aspect-square w-full max-h-full flex-col gap-0 items-center self-center border-[3px] border-solid border-transparent bg-transparent p-[10%] hover:cursor-default focus-within:rounded-[3px] focus-within:border-[rgb(115,147,179,0.7)] focus-within:bg-[rgb(163,217,271,0.5)] ${gridClass ?? ""}`}
 >
   <Image
     src={img}
     alt={text}
     width="400"
-    class="absolute bottom-[30%] h-[60%] w-auto rounded-[inherit] opacity-80"
+    class="relative h-[60%] w-auto rounded-[inherit] opacity-80"
     style={imgStyle}
   />
   <p
-    class={`absolute bottom-[10%] m-0 text-[2vh] whitespace-nowrap text-white ${textShadow}`}
+    class={`relative text-md mt-auto whitespace-nowrap text-white ${textShadow}`}
   >
     {text}
     {

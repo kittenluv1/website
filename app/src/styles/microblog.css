@@ -1,0 +1,98 @@
+@font-face {
+	font-family: "VP Pixel Pro";
+	src: url("/fonts/VP Pixel Pro/VPPixel-Simplified.otf") format("opentype");
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	background-image: url("/images/microblog/hearts.jpg");
+	background-size: 15%;
+	color: #fcfcfc;
+	font-family: "VP Pixel Pro", "MS Sans Serif", Arial, sans-serif;
+	cursor: url("/images/microblog/cursor.png"), auto;
+}
+
+#home {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1%;
+	color: black;
+	font-size: 1.2rem;
+}
+
+#home a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#border {
+	position: relative;
+	width: 430px;
+}
+
+#border-img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#container {
+	position: absolute;
+	top: 18%;
+	left: 1%;
+	right: 2%;
+	bottom: 11%;
+	border-radius: 2px;
+	border: 2px solid #c0c0c0;
+	border-top: 2px solid #838383;
+	border-left: 2px solid #838383;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-color: #c0c0c0 #838383;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+#container::-webkit-scrollbar {
+	width: 30px;
+}
+
+#container::-webkit-scrollbar-thumb {
+	background: #c0c0c0;
+	border: 2px solid #fcfcfc;
+	border-top: 2px solid #838383;
+	border-left: 2px solid #838383;
+}
+
+#container::-webkit-scrollbar-track {
+	background: #838383;
+}
+
+.entry {
+	height: auto;
+	display: flex;
+	align-items: start;
+	padding: 0 2%;
+}
+
+.date-div {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	color: #fcfcfc;
+}
+
+.time {
+	color: #ffcbec;
+	font-size: 0.8rem;
+}
+
+.text {
+	margin: 0;
+	margin-left: 2%;
+}
