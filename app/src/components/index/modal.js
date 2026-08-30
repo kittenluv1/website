@@ -19,10 +19,6 @@ modal.addEventListener("dblclick", (e) => {
 const screenDiv = document.getElementById("screen-div");
 const shellImage = document.getElementById("tama-shell");
 
-screenDiv?.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
-
 const shells = [
   {
     rows: "1.3fr 1.7fr .2fr 4.7fr 1.5fr 1.5fr 1fr",
@@ -42,8 +38,7 @@ const shells = [
   },
 ];
 
-document.addEventListener("keydown", (e) => {
-  if (e.key !== "s" && e.key !== "t") return;
+function changeShell() {
   if (!shellImage) return;
 
   const currentShell = Number(shellImage.src.split("/").pop()?.split(".")[0]);
@@ -53,6 +48,20 @@ document.addEventListener("keydown", (e) => {
     indexModal.style.gridTemplateRows = shells[i].rows;
     indexModal.style.gridTemplateColumns = shells[i].columns;
   };
+}
+
+indexModal.addEventListener("click", (event) => {
+  if (isModalDragging(INDEX_MODAL_ID)) return;
+  if (event.target.closest("#screen-div, button")) return;
+  event.stopPropagation();
+  changeShell();
+});
+
+screenDiv?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  if (isModalDragging(INDEX_MODAL_ID)) return;
+  if (event.target.closest("#music-image")) return;
+  changeScreen();
 });
 
 // TAMA SCREENS
