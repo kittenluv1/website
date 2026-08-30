@@ -6,21 +6,22 @@ import { Image } from "astro:assets";
 import IndexButton from "../components/indexButton.astro";
 
 // image imports
-import backgroundImgSrc from "/src/images/index/index.jpg";
-import blogImgSrc from "/src/images/index/lotus.png";
-import creationsImgSrc from "/src/images/index/clover.png";
-import japanImgSrc from "/src/images/index/japan.png";
-import portfolioImgSrc from "/src/images/index/toro.png";
+import backgroundImgSrc from "@/images/index/index.jpg";
+import blogImgSrc from "@/images/index/lotus.png";
+import creationsImgSrc from "@/images/index/clover.png";
+import japanImgSrc from "@/images/index/japan.png";
+import portfolioImgSrc from "@/images/index/toro.png";
 import resourcesImgSrc from "/src/images/index/tool.png";
-import writingImgSrc from "/src/images/index/writing.png";
-import detectiveImgSrc from "/src/images/index/detective.png";
-import galleryImgSrc from "/src/images/index/tarepanda1.png";
-import flappyImgSrc from "/src/images/index/kuchipatchi.png";
-import neocitiesImgSrc from "/src/images/index/treble-cat.png";
-import microblogImgSrc from "/src/images/index/heart-cookie.png";
-import musicImgSrc from "/src/images/index/mametchi.png";
-import flyingToroImgSrc from "/src/images/index/flyingtoro.png";
-import startImgSrc from "/src/images/index/start.png";
+import writingImgSrc from "@/images/index/writing.png";
+import detectiveImgSrc from "@/images/index/detective.png";
+import galleryImgSrc from "@/images/index/tarepanda1.png";
+import flappyImgSrc from "@/images/index/kuchipatchi.png";
+import neocitiesImgSrc from "@/images/index/treble-cat.png";
+import microblogImgSrc from "@/images/index/heart-cookie.png";
+import musicImgSrc from "@/images/index/mametchi.png";
+import flyingToroImgSrc from "@/images/index/flyingtoro.png";
+import startImgSrc from "@/images/index/start.png";
+import archiveImgSrc from "@/images/index/archive.png";
 ---
 
 <!doctype html>
@@ -127,6 +128,13 @@ import startImgSrc from "/src/images/index/start.png";
         href="music"
         row={5}
         col={2}
+      />
+      <IndexButton
+        img={archiveImgSrc}
+        text="archive"
+        href="/archive"
+        row={8}
+        col={16}
       />
       <!-- <IndexButton
         img={flappyImgSrc}
