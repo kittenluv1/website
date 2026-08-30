@@ -32,35 +32,6 @@
 			"comments": "for drawing freaky little guys and cybercigilism and painting badly @. i've had this mini composition notebook since elementary, never knew what to do with it b4 but now i'm putting it to good use #. i had to walk to my friends apartment in the pouring rain with this notebook, so it got wet and the pages are all bleeding. but my last sketchbook was fire themed, so i guess this one is water themed. this reminds me of high school when i used to bring notebooks to class, and every year there was some water bottle leak event where all my notebooks would get drenched and wrinkly and wet TT it was part of my aesthetic"
 		}
 	],
-	"drawing & painting": [
-		{
-			"title": "caravaggesque cat", 
-			"images": ["drawing & painting/cat.png"],
-			"date": "2023-08-24",
-			"description": "cat in dramatic lighting. painted with acrylics",
-			"comments": "found the reference image on pinterest, and i thought it was perfect for my first real painting. painted at a weekly summer art class with a bunch of older ladies, but the teacher got sick so we just went to the park to paint every sunday"
-		},
-		{
-			"title": "teamlab jellyfish",
-			"images": ["drawing & painting/teamlab/1.jpg",
-				"drawing & painting/teamlab/2.jpg", 
-				"drawing & painting/teamlab/3.jpg", 
-				"drawing & painting/teamlab/4.jpg",
-				"drawing & painting/teamlab/5.jpg", 
-				"drawing & painting/teamlab/jellyfish.jpg"],
-			"date": "september 13, 2024",
-			"description": "oil pastel jellyfish at teamlab borderless exhibit 'sketch ocean'",
-			"comments": "this was from an interactive exhibit at teamlab borderless in tokyo where you could color a sea creature and they would scan it and add it to the exhibit, and it would appear and swim around on the wall with everyone's sea creatures. i know the exhibit's still up, i wonder how long they keep the file around to keep swimming. i loved this exhibit so much, i love being surprised with the opportunity to make art are you kidding meee #. it would be my dream to eventually work for something like this, where you can make art and experiences and creative joy for other people"
-		},
-		{
-			"title": "画龙点睛",
-			"images": ["drawing & painting/dragon/dragon.jpg",
-				"drawing & painting/dragon/2.jpg"],
-			"date": "sept 5, 2020",
-			"description": "chinese dragon painting, drawn with calligraphy brush and ink",
-			"comments": "i own a few calligraphy ink and brush sets and they are art pieces in themselves. i remember one year my mom led a calligraphy station at my class's chinese new year activity day. i ended up liking this dragon so much i put it on a shirt and gave it to my mom for christmas。 the title of this piece comes from a chinese idiom about an artist who refused to paint the eyes of his dragons, because if he did, they would come to life. one day, he demonstrates this to the unbelieving crowd, and the dragon actually comes to life and flies away."
-		}
-	],
 	"crochet & textiles": [
 		{
 			"title": "lost n' found", 
@@ -92,6 +63,14 @@
 			"date": "may 9th, 2025",
 			"description": "angel wing headset, breastplate, and faux fur skirt",
 			"comments": "this look was made for refine's 2025 Decomposition runway show. again everything was fully upcycled, the wings are made from my middle school dark angel costume and my headphones. and glue. lots of glue. i didn't even know if i was going to be able to get the headphones back after i all the stuff was glued on but they came off okay! the breastplate is made from cardboard and feathers and random scrap fabrics. shoutout soleil for contributing handiwork and labor and putting up with the indecision and makerspace crashouts, and micki for walking the house down"
+		},
+		{
+			"title": "burning man", 
+			"images": ["crochet & textiles/anthropocene/thumbnail.png", "crochet & textiles/anthropocene/1.JPEG", "crochet & textiles/anthropocene/2.JPEG", "crochet & textiles/anthropocene/3.JPEG", "crochet & textiles/anthropocene/4.JPEG", "crochet & textiles/anthropocene/5.JPEG", "crochet & textiles/anthropocene/6.JPEG"],
+			"captions": ["model: benjamin zheng", "on the runway", "", "", "hobby horse :3", "chinese vogue shoot inspired makeup by tess vo"],
+			"date": "may 2, 2026", 
+			"description": "apocalyptic outfit for refine 2026 fashion show anthropocene",
+			"comments": "the process for this look was crazy - i went to the thrift store and bought a bunch of junk basically, and it was going to be a junk-scavenger type of outfit. i had a helmet and everything that i spent a bunch of time on painting and gluing and stuff. the only thing left from that is the tube on the pants. i liked how the pants turned out tho, but man those stressed me tf out. basically most of the look actually was made like the night before the show, i spent so much time sewing and pinning random stuff onto the pants and nearly asphyxiated myself while burning the edges of the clothes for the raw burnt look. i made the hobby horse the morning of ToT <br><br> i loved how everything came together though and my model was super cool. i'd never made a look for men's fashion before and i'm ngl it was hard because i couldn't try on the pants to know how they would fit. i had to combine two pants to make it bigger and i was kind of just winging it. so stressful. i ended up giving the pants to coleman because he liked them, i'm so glad they got to have a good home after the show :)"
 		},
 		{
 			"title": "star bag",
@@ -173,6 +152,21 @@
 			"comments": "i made these at sam's birthday party last year, it was such a cute activity and everyone made such beautiful clips. the party was purple orchid themed and she also had an amazing cake that she made herself with like blueberry frosting it was so good"
 		},
 		{
+			"title": "keychain", 
+			"images": ["jewelry/keychain.png"],
+			"date": "3/22/25", 
+			"description": "keychain made from an assortment of keychain parts, beads, embroidery thread",
+			"comments": "i made this from two iconic keychains from my backpack which both fell apart at the strings, so i put them together to make the ultimate frankenstein keychain. one of those keychains i have had on my backpack for years and kind of had a strong emotional attachment to lol, that's the one with the turtle and evil eye looking beads. the other one was from a make your own keychain depop booth with handmade clay beads made by my friend >.<"
+		},
+		{
+			"title": "resin charms", 
+			"images": ["jewelry/resin/charms.png", "jewelry/resin/1.png", "jewelry/resin/process.jpeg"],
+			"captions": ["charms", "", "uv resin process"],
+			"date": "dec 14 2025", 
+			"description": "necklaces made from resin and silver findings", 
+			"comments": "made these necklaces using resin and a findings kit. it was really easy, i just printed pictures out on paper and processed them a bit and then sealed them with the findings and resin. i was able to give these all out to people and they really liked it so i will be making more :)"
+		},
+		{
 			"title": "horse wrap bracelet",
 			"images": ["jewelry/horse/1.png",
 				"jewelry/horse/2.png"],
@@ -180,13 +174,7 @@
 			"description": "leather string with cross and horse charm",
 			"comments": "i like how this can be worn wrapped around the wrist or as a necklace. there is no special symbolism here."
 		},
-		{
-			"title": "keychain", 
-			"images": ["jewelry/keychain.png"],
-			"date": "3/22/25", 
-			"description": "keychain made from an assortment of keychain parts, beads, embroidery thread",
-			"comments": "i made this from two iconic keychains from my backpack which both fell apart at the strings, so i put them together to make the ultimate frankenstein keychain. one of those keychains i have had on my backpack for years and kind of had a strong emotional attachment to lol, that's the one with the turtle and evil eye looking beads. the other one was from a make your own keychain depop booth with handmade clay beads made by my friend >.<"
-		},
+
 		{
 			"title": "beaded bird necklace",
 			"images": ["jewelry/bird.png"],
@@ -286,6 +274,13 @@
 			"comments": "soooo sun's cat kitty gifted this mouse to us while i was at their home in sd and i brought it all the way back home with me to preserve it. this is my first wet specimen but actually wet specimens are like really easy you literally just soak them in and that's it"
 		},
 		{
+			"title": "bat", 
+			"images": ["preservation/bat/1.png", "preservation/bat/2.png", "preservation/bat/3.png"],
+			"date": "aug 16, 2026",
+			"description": "bat",
+			"comments": "i found him on my way back from skating in new york. i was having a really bad day because my roommates had all moved out and i was kind of just alone and it was really hitting me so i went out to skate and saw this guy just chilling, half decomposing on some driveway while i was attempting to kickflip. stuck him in the freezer and shipped him home with me. good things happen to those who go outside<br><br>it's kiiind of hard to tell what kind of bat it is but here are the <a href='https://www.teatown.org/bats-of-westchester/' target='_blank'>9 species of bats that call new york home</a>. i guess i'm just keeping it as a dry specimen, not sure how else i would be able to preserve it"
+		},
+		{
 			"title": "praying mantis",
 			"images": ["preservation/mantis/1.png",
 				"preservation/mantis/2.png"],
@@ -354,8 +349,7 @@
 				"preservation/misc/3.png",
 				"preservation/misc/4.png",
 				"preservation/misc/5.png",
-				"preservation/misc/8.png",
-				"preservation/misc/collection.jpg"],
+				"preservation/misc/collection.png"],
 			"captions": ["misc. items",
 				"snail shells i found when i was young", 
 				"rose petal from my mom's garden", 
@@ -409,6 +403,24 @@
 			"date": "may 29, 2025", 
 			"description": "a web <a href='https://www.clubhouseucla.com/clubs' target='_blank'>platform</a> for rating student organizations at ucla, developed with the amazing clubhouse team!",
 			"comments": "i was debating whether to include this since it wasn't so much of a creative project as a school project but i do consider it a personal project... this was actually my first fullstack project and i led dev, i really was winging it... we had a separate design team also so i wasn't in charge of the visual design so much as the technical design but i learned so much working on it and am really proud of her so why not include her here"
+		},
+		{
+			"title": "michaeldeanwilkins", 
+			"images": ["web/michael/1.png", "web/michael/2.png"],
+			"captions": ["home page", "contact page"],
+			"date": "dec 1, 2025", 
+			"description": "photography portfolio <a href='https://michaeldeanwilkins.com' target='_blank'>website</a> for michael",
+			"comments": "my first freelance project! thank you michael for being the best first client. i basically borrowed this design from a bunch of other professional photographers' websites but i worked really hard on the performance and content workflow of this site. and i think the pictures look great which is the important thing. i got to visit michael's studio after this and be his camera assistant for a day, which was a really interesting experience, i got to see how he works and watch him do his thing"
+		}
+	],
+	"video": [
+		{
+			"title": "summer in japan .☘︎ ݁˖⋆˙.mp4",
+			"images": ["video/japan2025/japan.png",
+				"video/youtube.png"],
+			"date": "12-29-2024",
+			"description": "a video <a href='https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h' target='_blank'>montage</a> of my summer in japan",
+			"comments": "this took me a whole six months to get around to doing and i completed the whole editing process in 1 day. i filmed the shots over my two week trip to japan this past summer on an old digital video camera that i thrifted for 7 dollars. i really enjoyed the whole process and am super proud of how it turned out. might make more videos like this in the future, stay tuned $"
 		}
 	],
 	"games": [
@@ -421,6 +433,14 @@
 			"date": "june 4, 2025", 
 			"description": "multidimensional mystery <a href='https://introspec.itch.io/dimensional-detective' target='_blank'>game</a> made in unity with Team Team!", 
 			"comments": "made this for ENGR1GD class spring 2025, one of many projects of the quarter... i worked on the logic for rounds and choosing suspects and i made my own character starboy in blender! this was also my first blend and i'm so proud of how he turned out, he's so cute :,) it was also so fun working with my team and we're going to keep working on it next year and make the game even better and less serious so stay tunedd"
+		},
+		{
+			"title": "intern run", 
+			"images": ["games/intern-run/title.png", "games/intern-run/play.png", "games/intern-run/store.png"],
+			"captions": ["title screen", "gameplay", "store"],
+			"date": "aug 30, 2026",
+			"description": "2d platformer game made for internship hackathon",
+			"comments": "made this with the other interns for the hackathon.  we had so many merge conflicts, but it turned pretty good imo and we had a lot of fun. we also made this whole thing in 3 days, and half of us had no experience with unity/github/etc. we got to present it to our bosses at the end of our internship (that's their faces in the game LOL) and we added our faces as unlockable inventory items for character customization. so it was fair game <br><br> we used the unity 2d platformer template for basically all the gameplay mechanics but we used the company's games backend service for the accounts/inventory services, so technically this is **property of wb games**. there is also a super secret link where you can play this but i don't think i'm allowed to post it so you'll have to ask me if you want to try out this **super secret highly coveted unreleased game** in person."
 		},
 		{
 			"title": "FlappyPatchi (WIP)",
@@ -450,17 +470,43 @@
 			"comments": "i think this is technically my first game. made for cs32 project 3, the one everyone warns about... i did not take everyone's warnings and i started like 2 days before it was due. i remember turning it in at like 3am because i couldn't get the recursive goblin function to work but i still got an alright grade on it"
 		}
 	],
-	"video": [
+	"drawing & painting": [
 		{
-			"title": "summer in japan .☘︎ ݁˖⋆˙.mp4",
-			"images": ["video/japan2025/japan.png",
-				"video/youtube.png"],
-			"date": "12-29-2024",
-			"description": "a video <a href='https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h' target='_blank'>montage</a> of my summer in japan",
-			"comments": "this took me a whole six months to get around to doing and i completed the whole editing process in 1 day. i filmed the shots over my two week trip to japan this past summer on an old digital video camera that i thrifted for 7 dollars. i really enjoyed the whole process and am super proud of how it turned out. might make more videos like this in the future, stay tuned $"
+			"title": "caravaggesque cat", 
+			"images": ["drawing & painting/cat.png"],
+			"date": "2023-08-24",
+			"description": "cat in dramatic lighting. painted with acrylics",
+			"comments": "found the reference image on pinterest, and i thought it was perfect for my first real painting. painted at a weekly summer art class with a bunch of older ladies, but the teacher got sick so we just went to the park to paint every sunday"
+		},
+		{
+			"title": "teamlab jellyfish",
+			"images": ["drawing & painting/teamlab/1.jpg",
+				"drawing & painting/teamlab/2.jpg", 
+				"drawing & painting/teamlab/3.jpg", 
+				"drawing & painting/teamlab/4.jpg",
+				"drawing & painting/teamlab/5.jpg", 
+				"drawing & painting/teamlab/jellyfish.jpg"],
+			"date": "september 13, 2024",
+			"description": "oil pastel jellyfish at teamlab borderless exhibit 'sketch ocean'",
+			"comments": "this was from an interactive exhibit at teamlab borderless in tokyo where you could color a sea creature and they would scan it and add it to the exhibit, and it would appear and swim around on the wall with everyone's sea creatures. i know the exhibit's still up, i wonder how long they keep the file around to keep swimming. i loved this exhibit so much, i love being surprised with the opportunity to make art are you kidding meee #. it would be my dream to eventually work for something like this, where you can make art and experiences and creative joy for other people"
+		},
+		{
+			"title": "画龙点睛",
+			"images": ["drawing & painting/dragon/dragon.jpg",
+				"drawing & painting/dragon/2.jpg"],
+			"date": "sept 5, 2020",
+			"description": "chinese dragon painting, drawn with calligraphy brush and ink",
+			"comments": "i own a few calligraphy ink and brush sets and they are art pieces in themselves. i remember one year my mom led a calligraphy station at my class's chinese new year activity day. i ended up liking this dragon so much i put it on a shirt and gave it to my mom for christmas。 the title of this piece comes from a chinese idiom about an artist who refused to paint the eyes of his dragons, because if he did, they would come to life. one day, he demonstrates this to the unbelieving crowd, and the dragon actually comes to life and flies away."
 		}
 	],
 	"trinkets": [
+		{
+			"title": "lighter", 
+			"images": ["trinkets/lighter/1.png", "trinkets/lighter/lighter.gif"],
+			"date": "may 15, 2026",
+			"description": "trinket lighter made for soleil's birthday", 
+			"comments": "i made this out of scraps n stuff i had saved for soleil's bday! it took a few hours but i'm happy with how it turned out. i'm also surprised the stuff hasn't fallen off yet it's pretty sturdy. i love the gif too it's so fun"
+		},
 		{
 			"title": "clay toro",
 			"images": ["trinkets/claytoro/resin-toro.png",
@@ -469,14 +515,6 @@
 			"date": "12/6/24",
 			"description": "toro made from air dry clay and coated in resin",
 			"comments": "i made this at a refine social in the botanical gardens friday of week 10 right before my last cs discussion of the quarter and i had to carry toro in my hand everywhere so it wouldn't get smushed. the clay is like a weird foamy texture and it's really light and dried super fast. it's cute tho >.< </br></br> edit: gave him a resin coat-over and now he's got a shiny new look *-*"
-		},
-		{
-			"title": "little guy", 
-			"images": ["trinkets/little guy necklace/2.png",
-				"trinkets/little guy necklace/3.jpg"],
-			"date": "1/4/25",
-			"description": "charm made of polymer clay and resin",
-			"comments": "this was inspired by a necklace that i saw a youtuber make, and i based it off a little guy that i drew in my sketchbook. originally made him into a necklace with some chains from old jewelry but i never really wore it... maybe he could just be a keychain or a paperweight instead >,<"
 		},
 		{
 			"title": "resin",
