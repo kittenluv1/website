@@ -8,8 +8,8 @@ body {
     flex-direction: column;
     align-items: center; 
     overflow-y: scroll;
-    
 }
+
 /* loading screen items */
 #loading-screen {
 	position: fixed;
@@ -116,7 +116,7 @@ body {
     align-items: center; 
     box-sizing: border-box; 
     padding: 0 1%;
-    gap: 2%;
+    gap: 1%;
     width: 100%;
     margin-bottom: 1rem;
     background: transparent;
@@ -125,6 +125,12 @@ body {
         inset 0 0 20px 60px #F1F3F4,
         0 0 15px 15px #F1F3F4;
     font-weight: bold;
+    text-shadow: -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black,
+      0px 0px 2px black;
+    color: #D4E5E1; 
 }
 audio {
     flex: 1 1 0;
@@ -135,6 +141,10 @@ a, p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    padding: 0 3px;
+}
+a {
+  text-decoration: underline;
 }
 /* grid */
 .masonry-grid {
