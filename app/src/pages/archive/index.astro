@@ -1,7 +1,9 @@
 ---
 import "@/styles/global.css";
 
-const linkClass = "text-blue-600 underline hover:text-blue-800";
+const linkClass = "hover:text-blue-600 hover:underline";
+const cardLinkClass = "group block hover:text-blue-600 hover:underline";
+const cardTextClass = "m-0 group-hover:text-blue-600 group-hover:underline";
 ---
 
 <!DOCTYPE html>
@@ -12,31 +14,27 @@ const linkClass = "text-blue-600 underline hover:text-blue-800";
         <title>archive</title>
         <link rel="icon" href="/images/archive/lotus-transparent.png" type="image/png">
     </head>
-    <body class="p-6 sm:p-8">
+    <body class="!p-8 sm:!p-6 bg-green-100">
         <a href="/" class={linkClass}>← back</a>
-        <ul class="space-y-4">
-            <li>
-                <a href="portfolio" class={linkClass}>old portfolio</a>
-            </li>
-            <li class="space-y-2">
+        <div class="grid grid-cols-3 gap-4 m-6">
+            <a href="/archive/portfolio-v2" class={cardLinkClass}>
+                <img src="/images/archive/portfolio-v2.png" alt="portfolio v2" class="block h-auto max-w-sm w-full rounded" />
+                <p class={cardTextClass}>portfolio v2</p>
+            </a>
+            <a href="/archive/portfolio-v1" class={cardLinkClass}>
+                <img src="/images/archive/portfolio-v1.png" alt="portfolio v1" class="block h-auto max-w-sm w-full rounded" />
+                <p class={cardTextClass}>portfolio v1</p>
+            </a>
+            <div>
                 <img
                     src="/images/archive/creations.png"
                     alt="creations"
-                    class="block h-auto max-w-sm w-full rounded border border-neutral-300"
+                    class="block h-auto max-w-sm w-full rounded"
                 />
                 <p class="m-0">
                     old <a href="/creations" class={linkClass}>creations</a> page UI
                 </p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </body>
 </html>
-
-<style>
-ol, ul > li {
-	display: list-item;
-	list-style-type: disc;
-	list-style-position: inside;
-	padding-left: 0.25rem;
-}
-</style>

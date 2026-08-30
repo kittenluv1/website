@@ -1,0 +1,673 @@
+---
+const img = (path: string) => `/images/archive/portfolio1/${path}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="erica huang web development portfolio" />
+    <link rel="icon" href={img("decor/blueflower.png")} type="image/png" />
+    <title>erica huang's portfolio</title>
+  </head>
+  <body>
+    <div id="loading-screen">
+      <img class="spinner" src={img("decor/blueflower.png")} alt="spinning flower" />
+      <h3>loading...</h3>
+    </div>
+
+    <div id="main-content">
+      <header>
+        <nav>
+          <a class="section-link" href="/archive">&larr; back to archive</a>
+          <a class="section-link" href="#about">about</a>
+          <a class="section-link" href="#projects">projects</a>
+          <a class="section-link" href="#about">contact</a>
+        </nav>
+        <div>
+          <img id="border" src={img("decor/scrap.png")} alt="" />
+          <div>
+            <p id="hello">HELLO, <br /> MY NAME IS:</p>
+            <p id="name">erica huang</p>
+          </div>
+          <img id="clip" class="decal" src={img("decor/clip.png")} alt="" />
+          <img
+            id="yellowflower"
+            class="flower decal"
+            src={img("decor/yellowflower.png")}
+            alt=""
+          />
+          <img
+            id="blueflower"
+            class="flower decal"
+            src={img("decor/blueflower.png")}
+            alt=""
+          />
+        </div>
+        <a href="#info" aria-label="info"></a>
+      </header>
+
+      <main>
+        <div id="info">
+          <div id="about">
+            <h1>About Me</h1>
+            <div class="decal-div" id="heart">
+              <img class="decal" src={img("decor/heart.png")} alt="" />
+              <p>
+                Folsom, <br /> California
+              </p>
+            </div>
+            <p>
+              Hi! I'm <b>Erica Huang</b>, a developer who loves bringing ideas to
+              life through thoughtful design and interactive experiences. I’m drawn
+              to roles in <b>web and software development</b> where I can create
+              projects that are not only functional, but also visually engaging and
+              meaningful. In my free time, I enjoy skating, crafting, and tinkering
+              with my websites. Please feel free to <b>contact me</b> to talk about
+              any of my work!
+            </p>
+            <div class="contact-container">
+              <div class="contact-div">
+                <a href="https://github.com/kittenluv1" target="_blank" title="github">
+                  <img src={img("contacts/github.png")} alt="github" />
+                </a>
+              </div>
+              <div class="contact-div">
+                <a
+                  href="https://www.linkedin.com/in/ericahuang916/"
+                  target="_blank"
+                  title="linkedin"
+                >
+                  <img src={img("contacts/linkedin.png")} alt="linkedin" />
+                </a>
+              </div>
+              <div class="contact-div">
+                <a
+                  href={img("contacts/erica huang.pdf")}
+                  target="_blank"
+                  title="resume"
+                >
+                  <img src={img("contacts/resume.png")} alt="resume" />
+                </a>
+              </div>
+              <div class="contact-div">
+                <a href="mailto:ericahuang916@gmail.com" title="email">
+                  <img src={img("contacts/email.png")} alt="email" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="projects">
+            <h1>Projects</h1>
+            <div class="project-group" id="personal">
+              <h2>Web & mobile</h2>
+              <div class="project-container">
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://www.studentaffairs.ucla.edu/"
+                    target="_blank"
+                  >
+                    <img
+                      src={img("projects/ucla.png")}
+                      alt="ucla student affairs website"
+                    />
+                  </a>
+                  <h3>UCLA Student Affairs</h3>
+                  <span>SvelteKit, TailwindCSS, TypeScript</span>
+                  <p>
+                    Student developer for UCLA Student Affairs websites. True Bruin
+                    and Financial Education sites coming soon.
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://www.clubhouseucla.com/"
+                    target="_blank"
+                  >
+                    <img src={img("projects/clubhouse.png")} alt="clubhouse" />
+                  </a>
+                  <h3>Clubhouse</h3>
+                  <span>Next.js, Supabase, Vercel</span>
+                  <p>
+                    An online platform for reviewing student organizations at UCLA.
+                    Sign in with a UCLA email to leave a review, or find a club to
+                    learn more!
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <a class="project-link" href="/" target="_blank">
+                    <img
+                      src={img("projects/kittenluv1-index.png")}
+                      alt="homepage"
+                    />
+                  </a>
+                  <h3>kittenluv1</h3>
+                  <span>HTML, CSS, JavaScript</span>
+                  <p>
+                    My personal website featuring a playable tamagotchi game, creative
+                    portfolio, and blog. Everything is built from *scratch*!
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://apps.apple.com/us/app/morii-moments-that-stay/id6746750544?l=es-MX"
+                    target="_blank"
+                  >
+                    <img src={img("projects/morii.PNG")} alt="morii" />
+                  </a>
+                  <h3>Morii - Moments That Stay</h3>
+                  <span>Express.js, Node.js, MongoDB</span>
+                  <p>
+                    A mobile app for sharing and tracking your emotions, analyzing
+                    your moods, and staying in touch with your community. Available
+                    on the app store!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-group" id="class">
+              <h2>Games</h2>
+              <div class="project-container">
+                <div class="project-div">
+                  <a
+                    class="project-link"
+                    href="https://introspec.itch.io/dimensional-detective"
+                    target="_blank"
+                  >
+                    <img
+                      src={img("projects/detective.png")}
+                      alt="dimensional detective"
+                    />
+                  </a>
+                  <h3>Dimensional Detective</h3>
+                  <span>Unity, Blender, C#</span>
+                  <p>
+                    A dialogue-driven point-and-click whodunit game. Solve
+                    multiversal mysteries to restore order and peace... can you find
+                    the real culprit?
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <div class="project-img">
+                    <img
+                      src={img("projects/psychosis.png")}
+                      alt="psychosis"
+                    />
+                  </div>
+                  <h3>Psychosis</h3>
+                  <span>Unity, C#</span>
+                  <p>
+                    A first-person shooter game set in a cyberpunk dystopia. Take
+                    drugs to alter state and assasinate your targets to level up.
+                    Worked on diegetic UI; WIP
+                  </p>
+                </div>
+
+                <div class="project-div">
+                  <img
+                    id="mametchi"
+                    class="decal"
+                    src="/images/index/modal/mametchi.png"
+                    alt=""
+                  />
+                  <a class="project-link" href="/#tama" target="_blank">
+                    <img
+                      src={img("projects/tama-jump.png")}
+                      alt="tama JUMP!"
+                    />
+                  </a>
+                  <h3>tama JUMP!</h3>
+                  <span>JavaScript</span>
+                  <p>
+                    An endless runner game where you avoid the obstacles. The tama
+                    JUMP! console is customizable and doubles as a music player!!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-container">
+            <div class="contact-div">
+              <a href="https://github.com/kittenluv1" target="_blank" title="github">
+                <img src={img("contacts/github.png")} alt="github" />
+              </a>
+            </div>
+            <div class="contact-div">
+              <a
+                href="https://www.linkedin.com/in/ericahuang916/"
+                target="_blank"
+                title="linkedin"
+              >
+                <img src={img("contacts/linkedin.png")} alt="linkedin" />
+              </a>
+            </div>
+            <div class="contact-div">
+              <a href={img("contacts/erica huang.pdf")} target="_blank" title="resume">
+                <img src={img("contacts/resume.png")} alt="resume" />
+              </a>
+            </div>
+            <div class="contact-div">
+              <a href="mailto:ericahuang916@gmail.com" title="email">
+                <img src={img("contacts/email.png")} alt="email" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <style>
+    @font-face {
+      font-family: "messy-handwritten";
+      src: url("/fonts/MessyHandwritten/MessyHandwritten-Regular.ttf")
+        format("truetype");
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    html {
+      font-family: simsun, messy-handwritten, serif;
+      scroll-behavior: smooth;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3vw;
+      margin: 4vh;
+    }
+
+    h2 {
+      font-size: 2vw;
+      margin: 3rem;
+    }
+
+    h3 {
+      font-size: 1.5vw;
+      margin: 2vh;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    span {
+      font-size: 0.9vw;
+      font-style: italic;
+      margin-bottom: 1vh;
+    }
+
+    .section-link {
+      margin: 3rem;
+      color: #808a91;
+      text-shadow:
+        0 0 5px #f6f7f1,
+        0 0 10px #f6f7f1;
+      font-size: 1.5vw;
+      white-space: nowrap;
+    }
+
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #d1d682;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      overflow: hidden;
+    }
+
+    .spinner {
+      width: 10vw;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #main-content {
+      display: none;
+    }
+
+    header {
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+      background-image: url("/images/archive/portfolio1/decor/fondo-spring-butterfly.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      display: flex;
+    }
+
+    nav > a {
+      margin: 5% 5%;
+    }
+
+    header > div {
+      position: relative;
+      text-align: center;
+      width: 43%;
+      aspect-ratio: 4 / 3;
+      z-index: 1;
+    }
+
+    #border {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 120%;
+      height: auto;
+      opacity: 0.9;
+    }
+
+    header > div > div {
+      position: absolute;
+      top: 35%;
+      right: 20%;
+      text-align: center;
+      transform: rotate(-3deg);
+      z-index: 2;
+      width: 60%;
+      height: 45%;
+    }
+
+    header > div > div > p {
+      font-size: min(15vh, 4vw);
+      margin: 5% 0;
+      color: #272321;
+      font-weight: bold;
+      text-align: center;
+      text-shadow:
+        0 0 5px #5a422a,
+        0 0 10px #ae7877;
+    }
+
+    #name {
+      color: #423b35;
+      font-family: messy-handwritten, simsun, serif;
+      text-shadow:
+        0 0 5px #5a422a,
+        0 0 20px #9ca364;
+    }
+
+    #clip {
+      top: 0;
+      right: 0;
+      height: 60%;
+      width: auto;
+    }
+
+    #yellowflower {
+      width: 30%;
+      top: 0;
+      left: 0;
+    }
+
+    #blueflower {
+      width: 40%;
+      bottom: -10%;
+      right: -10%;
+    }
+
+    header > a {
+      position: absolute;
+      bottom: -4%;
+      box-sizing: border-box;
+      width: 4%;
+      aspect-ratio: 1 / 1;
+      background-image: url("/images/archive/portfolio1/decor/butterfly.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+      border-radius: 50%;
+      box-shadow:
+        0 0 10px 10px rgba(255, 255, 255, 0.3),
+        inset 0 0 10px 10px rgba(255, 255, 255, 0.3);
+    }
+
+    header,
+    #info,
+    .project-group,
+    .project-div {
+      border-radius: 5%;
+      box-shadow: inset 0 0 10px 15px #f6f7f1;
+    }
+
+    header,
+    #info {
+      box-shadow:
+        inset 0 0 10px 15px #f6f7f1,
+        0 0 10px 15px #f6f7f1;
+      box-sizing: border-box;
+    }
+
+    #info {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(246, 247, 241, 0.8),
+          rgba(246, 247, 241, 0.4),
+          rgba(246, 247, 241, 0.3)
+        ),
+        url("/images/archive/portfolio1/decor/quilt.jpg");
+      background-size: 30%;
+      background-position: center;
+      padding: 4%;
+    }
+
+    #about {
+      width: 60%;
+      position: relative;
+    }
+
+    #about > p {
+      font-size: 1.5rem;
+    }
+
+    .contact-container {
+      flex-direction: row;
+      margin: 1rem;
+      height: 4rem;
+    }
+
+    .contact-div {
+      height: 100%;
+      width: auto;
+      padding: 5%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-container a {
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .contact-container a:hover {
+      background-color: #f6f7f1;
+      box-shadow:
+        0 0 10px 10px rgba(255, 255, 255, 0.3),
+        inset 0 0 10px 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .contact-container img {
+      height: 100%;
+      width: auto;
+    }
+
+    #projects {
+      width: 100%;
+      text-align: center;
+    }
+
+    #personal {
+      background-image: url("/images/archive/portfolio1/decor/plaid.jpg");
+      background-size: 50%;
+    }
+
+    #class {
+      background-image: url("/images/archive/portfolio1/decor/polkadots.jpg");
+      background-size: 50%;
+    }
+
+    .project-group {
+      width: 85%;
+      margin: 2%;
+      position: relative;
+    }
+
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      justify-items: center;
+      align-items: stretch;
+      margin: 0 4rem 3rem;
+    }
+
+    .project-div {
+      background-color: #f6f7f1;
+      padding: 2rem;
+      width: 65%;
+      margin-bottom: 3rem;
+      position: relative;
+      background: linear-gradient(
+        180deg,
+        rgba(245, 251, 253, 0.7) 0%,
+        rgba(201, 230, 248, 0.9) 100%
+      );
+      box-shadow:
+        5px 10px 15px rgba(0, 0, 0, 0.3),
+        inset 0px 4px 1px rgba(255, 255, 255, 0.3),
+        inset 0px -4px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-link,
+    .project-img {
+      width: 100%;
+      border-radius: 5%;
+    }
+
+    .project-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-sizing: border-box;
+      border-radius: inherit;
+      box-shadow:
+        5px 10px 15px rgba(0, 0, 0, 0.3),
+        inset 0px 4px 1px rgba(255, 255, 255, 0.3),
+        inset 0px -4px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-link img:hover {
+      cursor: pointer;
+      opacity: 0.7;
+      box-shadow:
+        5px 10px 15px rgba(0, 0, 0, 0.3),
+        inset 0px 4px 1px rgba(255, 255, 255, 0.3),
+        inset 0px -4px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    #mametchi {
+      width: 15%;
+      height: auto;
+      top: 0;
+      right: 0;
+      transform: translateY(-100%) scaleX(-1);
+      box-shadow: none;
+    }
+
+    .decal {
+      position: absolute;
+      opacity: 0.8;
+      width: 100%;
+    }
+
+    .decal-div {
+      position: absolute;
+      aspect-ratio: 1 / 1;
+    }
+
+    .decal-div img {
+      width: 100%;
+      height: 100%;
+      text-align: start;
+    }
+
+    .decal-div p {
+      position: absolute;
+    }
+
+    #heart {
+      width: 17%;
+      left: -20%;
+      top: 30%;
+      rotate: -10deg;
+    }
+  </style>
+
+  <script>
+    const loadingScreen = document.getElementById("loading-screen");
+    const mainContent = document.getElementById("main-content");
+    const flowers = document.querySelectorAll(".flower");
+
+    window.addEventListener("load", () => {
+      if (mainContent) mainContent.style.display = "block";
+      setTimeout(() => {
+        if (loadingScreen) loadingScreen.style.display = "none";
+      }, 50);
+    });
+
+    window.addEventListener("scroll", () => {
+      const scroll = window.scrollY;
+      const rotation = scroll % 360;
+      flowers.forEach((flower) => {
+        (flower as HTMLElement).style.transform = `rotate(${rotation}deg)`;
+      });
+    });
+  </script>
+</html>
