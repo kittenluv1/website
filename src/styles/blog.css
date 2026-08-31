@@ -76,6 +76,10 @@ header > p {
 
 /* page buttons */
 
+button {
+	cursor: pointer; 
+}
+
 header > .button-container {
 	display: flex; 
 	flex-direction: row; 
