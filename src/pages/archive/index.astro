@@ -2,39 +2,52 @@
 import "@/styles/global.css";
 
 const linkClass = "hover:text-blue-600 hover:underline";
-const cardLinkClass = "group block hover:text-blue-600 hover:underline";
+const cardLinkClass =
+  "group block hover:text-blue-600 hover:underline flex flex-col items-center";
 const cardTextClass = "m-0 group-hover:text-blue-600 group-hover:underline";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>archive</title>
-        <link rel="icon" href="/images/archive/lotus-transparent.png" type="image/png">
-    </head>
-    <body class="!p-8 sm:!p-6 bg-green-100">
-        <a href="/" class={linkClass}>← back</a>
-        <div class="grid grid-cols-3 gap-4 m-6">
-            <a href="/archive/portfolio-v2" class={cardLinkClass}>
-                <img src="/images/archive/portfolio-v2.png" alt="portfolio v2" class="block h-auto max-w-sm w-full rounded" />
-                <p class={cardTextClass}>portfolio v2</p>
-            </a>
-            <a href="/archive/portfolio-v1" class={cardLinkClass}>
-                <img src="/images/archive/portfolio-v1.png" alt="portfolio v1" class="block h-auto max-w-sm w-full rounded" />
-                <p class={cardTextClass}>portfolio v1</p>
-            </a>
-            <div>
-                <img
-                    src="/images/archive/creations.png"
-                    alt="creations"
-                    class="block h-auto max-w-sm w-full rounded"
-                />
-                <p class="m-0">
-                    old <a href="/creations" class={linkClass}>creations</a> page UI
-                </p>
-            </div>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>archive</title>
+    <link
+      rel="icon"
+      href="/images/archive/lotus-transparent.png"
+      type="image/png"
+    />
+  </head>
+  <body class="!p-8 sm:!p-6 bg-green-100">
+    <a href="/" class={linkClass}>← back</a>
+    <div class="grid grid-cols-3 gap-4 m-6">
+      <a href="/archive/portfolio-v2" class={cardLinkClass}>
+        <img
+          src="/images/archive/portfolio-v2.png"
+          alt="portfolio v2"
+          class="block h-auto max-w-sm w-full rounded"
+        />
+        <p class={cardTextClass}>portfolio v2</p>
+      </a>
+      <a href="/archive/portfolio-v1" class={cardLinkClass}>
+        <img
+          src="/images/archive/portfolio-v1.png"
+          alt="portfolio v1"
+          class="block h-auto max-w-sm w-full rounded"
+        />
+        <p class={cardTextClass}>portfolio v1</p>
+      </a>
+      <div class="flex flex-col items-center">
+        <img
+          src="/images/archive/creations.png"
+          alt="creations"
+          class="block h-auto max-w-sm w-full rounded"
+        />
+        <p class="m-0">
+          old <a href="/creations" class={linkClass}>creations</a> page UI
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
