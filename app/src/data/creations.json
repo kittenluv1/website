@@ -443,15 +443,16 @@
 			"comments": "made this with the other interns for the hackathon.  we had so many merge conflicts, but it turned pretty good imo and we had a lot of fun. we also made this whole thing in 3 days, and half of us had no experience with unity/github/etc. we got to present it to our bosses at the end of our internship (that's their faces in the game LOL) and we added our faces as unlockable inventory items for character customization. so it was fair game <br><br> we used the unity 2d platformer template for basically all the gameplay mechanics but we used the company's games backend service for the accounts/inventory services, so technically this is **property of wb games**. there is also a super secret link where you can play this but i don't think i'm allowed to post it so you'll have to ask me if you want to try out this **super secret highly coveted unreleased game** in person."
 		},
 		{
-			"title": "FlappyPatchi (WIP)",
+			"title": "flappypatchi",
 			"images": ["games/flappy/kuchipatchi.png",
 				"games/flappy/1.png",
+				"games/flappy/update.png",
 				"games/flappy/2.png",
 				"games/flappy/3.png"],
-			"captions": ["kuchpatchi sprite", "flappypatchi.exe", "unity editor", "itch.io"],
-			"date": "jan 29, 2025",
+			"captions": ["kuchpatchi sprite", "flappypatchi.exe (old)", "updated UI", "unity editor", "itch.io"],
+			"date": "jan 29, 2025 (updated 8/30/26)",
 			"description": "help patchi lose some weight by flying through as many pipes as he can! a flappy bird <a href='https://introspec.itch.io/flappypatchi' target='_blank'>game</a> made with unity",
-			"comments": "my first game in unity! followed this <a href='https://youtu.be/XtQMytORBmM?si=FaEmiS9f0MclEp12' target='_blank'>tutorial</a> and it was so helpful and quick. still need to implement some features to make it more like a game"
+			"comments": "my first game in unity! followed this <a href='https://youtu.be/XtQMytORBmM?si=FaEmiS9f0MclEp12' target='_blank'>tutorial</a> and it was so helpful and quick. still need to implement some features to make it more like a game <br><br> sooo i finally got around to updating this ToT i mostly just updated the UI but i honestly thought i wasn't going to get around to finishing this so i'm just glad i did. i think i can finally call this finished now ToT unity runs so much faster on the work computer, it makes me sad to think about how much more productive i could be if i had this computer forever..."
 		},
 		{
 			"title": "tama JUMP!",
