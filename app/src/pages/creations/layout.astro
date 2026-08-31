@@ -42,15 +42,13 @@ const normalizedPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 const isCategoriesIndex = normalizedPath === "/creations";
 const isAllPieces = normalizedPath === `/creations/${ALL_CATEGORY_SLUG}`;
 const categorySlug =
-  !isCategoriesIndex &&
-  !isAllPieces &&
-  normalizedPath.startsWith("/creations/")
+  !isCategoriesIndex && !isAllPieces && normalizedPath.startsWith("/creations/")
     ? normalizedPath.slice("/creations/".length)
     : null;
 const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
@@ -64,13 +62,16 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
       id="creations-sidebar"
       data-view="nav"
       transition:persist="creations-sidebar"
-      class="relative z-[1] flex h-full w-[min(100%,16rem)] min-w-[14rem] shrink-0 flex-col items-center overflow-y-auto py-2 sm:overflow-y-hidden"
+      class="relative z-1 flex h-full w-[min(100%,16rem)] min-w-56 shrink-0 flex-col items-center overflow-y-auto py-2 sm:overflow-y-hidden"
       style={`background-image: url(${plaidBg.src}); background-size: 6.25rem 6.25rem;`}
     >
-      <div class:list={[
-          "absolute right-[2%] top-0 z-[2] flex size-14 rotate-12 items-center justify-center sm:size-16",
+      <div
+        class:list={[
+          "absolute right-[2%] top-0 z-2 flex size-14 rotate-12 items-center justify-center sm:size-16",
           creationTilt("right"),
-        ]} aria-hidden="true">
+        ]}
+        aria-hidden="true"
+      >
         <img
           src={stickerStar.src}
           alt=""
@@ -79,7 +80,12 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
         />
       </div>
 
-      <a href="/" class:list={[creationsClickableTextButton, "w-full px-4 text-lg sm:px-5 text-white underline"]}
+      <a
+        href="/"
+        class:list={[
+          creationsClickableTextButton,
+          "w-full px-4 text-lg sm:px-5 text-white underline",
+        ]}
       >
         ← home
       </a>
@@ -100,7 +106,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           src={circleLogo.src}
           alt=""
           aria-hidden="true"
-          class="relative z-[1] w-full object-contain"
+          class="relative z-1 w-full object-contain"
         />
       </div>
 
@@ -122,37 +128,48 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
         <button
           type="button"
           data-sidebar-show="nav"
-          class:list={[creationsClickableTextButton, "self-start text-sm sm:text-base"]}
+          class:list={[
+            creationsClickableTextButton,
+            "self-start text-sm sm:text-base",
+          ]}
         >
           ← back
         </button>
 
-        <div class="relative flex w-full max-w-[13rem] shrink-0 items-center justify-center pt-2">
+        <div
+          class="relative flex w-full max-w-52 shrink-0 items-center justify-center pt-2"
+        >
           <img
             src={stickerCat.src}
             alt=""
             aria-hidden="true"
-            class="pointer-events-none absolute left-3 top-4 z-[2] w-14 -rotate-8 sm:w-16"
+            class="pointer-events-none absolute left-3 top-4 z-2 w-14 -rotate-8 sm:w-16"
           />
-          <div class="relative flex h-16 w-full items-center justify-center sm:h-[4.5rem]">
+          <div
+            class="relative flex h-16 w-full items-center justify-center sm:h-18"
+          >
             <img
               src={buttonAboutBanner.src}
               alt=""
               aria-hidden="true"
               class="absolute inset-0 size-full object-fill"
             />
-            <span class:list={[[
-              shortStackFont,
-              "relative z-[1] text-center text-base font-normal text-white underline underline-offset-2 pl-12",
-              textShadowGreen,
-            ]]}>about</span>
+            <span
+              class:list={[
+                [
+                  shortStackFont,
+                  "relative z-1 text-center text-base font-normal text-white underline underline-offset-2 pl-12",
+                  textShadowGreen,
+                ],
+              ]}>about</span
+            >
           </div>
         </div>
 
         <p
           class:list={[
             shortStackFont,
-            "m-0 mt-2 w-full text-center text-xs leading-relaxed text-black sm:text-sm"
+            "m-0 mt-2 w-full text-center text-xs leading-relaxed text-black sm:text-sm",
           ]}
         >
           {CREATIONS_ABOUT_TEXT}
@@ -161,7 +178,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
 
       <div
         data-creations-sidebar-nav
-        class="relative min-h-[22rem] w-full flex-1 sm:min-h-[26rem]"
+        class="relative min-h-88 w-full flex-1 sm:min-h-104"
       >
         <a
           href={`/creations/${ALL_CATEGORY_SLUG}`}
@@ -169,7 +186,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           class:list={[
             creationsStickerButton,
             creationTilt("left"),
-            "-rotate-8 left-[8%] top-0 size-[6.5rem] sm:size-[7rem]",
+            "-rotate-8 left-[8%] top-0 size-26 sm:size-28",
           ]}
           aria-label="all pieces"
         >
@@ -188,7 +205,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           class:list={[
             creationsStickerButton,
             creationTilt("right"),
-            "rotate-[7deg] left-[38%] top-[9.5rem] size-[6.5rem] sm:left-[42%] sm:top-[10.5rem] sm:size-[7rem]",
+            "rotate-7 left-[38%] top-38 size-26 sm:left-[42%] sm:top-42 sm:size-28",
           ]}
           aria-label="categories"
         >
@@ -207,7 +224,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           class:list={[
             creationsStickerButton,
             creationTilt("left"),
-            "-rotate-6 left-[8%] top-[19.5rem] size-[6.5rem] sm:top-[21rem] sm:size-[7rem]",
+            "-rotate-6 left-[8%] top-78 size-26 sm:top-84 sm:size-28",
           ]}
           aria-label="about"
         >
@@ -226,7 +243,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           aria-hidden="true"
           class:list={[
             creationTilt(0),
-            "absolute -rotate-8 left-[7%] top-[16rem] w-16 sm:top-[17.5rem] sm:w-[4.25rem]",
+            "absolute -rotate-8 left-[7%] top-64 w-16 sm:top-70 sm:w-17",
           ]}
         />
         <img
@@ -235,7 +252,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           aria-hidden="true"
           class:list={[
             creationTilt(1),
-            "absolute rotate-[13deg] right-[4%] top-[3%] w-14 sm:w-16",
+            "absolute rotate-13 right-[4%] top-[3%] w-14 sm:w-16",
           ]}
         />
         <img
@@ -244,7 +261,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           aria-hidden="true"
           class:list={[
             creationTilt(2),
-            "absolute -scale-y-100 rotate-[16deg] left-[14%] top-[7.5rem] w-24 sm:w-[6rem]",
+            "absolute -scale-y-100 rotate-16 left-[14%] top-30 w-24 sm:w-24",
           ]}
         />
         <img
@@ -253,7 +270,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           aria-hidden="true"
           class:list={[
             creationTilt(3),
-            "absolute rotate-[23deg] right-[8%] top-[23.5rem] w-16 sm:top-[25rem] sm:w-[4.25rem]",
+            "absolute rotate-23 right-[8%] top-94 w-16 sm:top-100 sm:w-17",
           ]}
         />
       </div>
@@ -263,13 +280,13 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
     <div
       id="creations-main"
       transition:animate="fade"
-      class="relative z-[1] flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden"
+      class="relative z-1 flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden"
       style={`background-image: url(${plaidMain.src}); background-size: 9.375rem 9.375rem;`}
     >
-       <!-- left edge --> 
+      <!-- left edge -->
       <div
         aria-hidden="true"
-        class="pointer-events-none absolute bottom-0 left-0 top-0 flex w-[4.5rem] flex-col sm:w-[5.5rem] md:w-[7rem]"
+        class="pointer-events-none absolute bottom-0 left-0 top-0 flex w-18 flex-col sm:w-22 md:w-28"
       >
         <img
           src={edgeLace.src}
@@ -297,10 +314,10 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
 
       <div
         id="creations-scroll"
-        class="relative z-[1] flex min-h-0 flex-1 flex-col overflow-y-auto pl-[1rem] sm:pl-[2rem] md:pl-[3rem]"
+        class="relative z-1 flex min-h-0 flex-1 flex-col overflow-y-auto pl-4 sm:pl-8 md:pl-12"
       >
         <nav
-          class="sticky top-0 z-[3] px-6 py-3 sm:px-12 sm:py-4 md:px-15"
+          class="sticky top-0 z-3 px-6 py-3 sm:px-12 sm:py-4 md:px-15"
           aria-label="Breadcrumb"
         >
           <ol
@@ -336,11 +353,17 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
               ) : (
                 <>
                   <li>
-                    <a href="/creations" class={creationsNavCrumbLink} data-astro-prefetch>
+                    <a
+                      href="/creations"
+                      class={creationsNavCrumbLink}
+                      data-astro-prefetch
+                    >
                       categories
                     </a>
                   </li>
-                  <li class={creationsNavCrumbText} aria-hidden="true">/</li>
+                  <li class={creationsNavCrumbText} aria-hidden="true">
+                    /
+                  </li>
                   <li>
                     <a
                       href={categoryHref!}
@@ -366,21 +389,22 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
               <a
                 id="creation-breadcrumb-piece-link"
                 class={creationsNavCrumbLink}
-                data-astro-prefetch
-              />
+                data-astro-prefetch></a>
             </li>
           </ol>
         </nav>
 
-        <div id="creations-content" class="relative z-[2] flex min-h-0 flex-1 flex-col">
+        <div
+          id="creations-content"
+          class="relative z-2 flex min-h-0 flex-1 flex-col"
+        >
           <button
             type="button"
             id="creation-modal-backdrop"
             hidden
-            class="fixed z-[15] cursor-default border-0 bg-white/70 p-0 opacity-0 pointer-events-none transition-opacity duration-200 data-[open]:pointer-events-auto data-[open]:opacity-60 ml-20"
+            class="fixed z-15 cursor-default border-0 bg-white/70 p-0 opacity-0 pointer-events-none transition-opacity duration-200 data-open:pointer-events-auto data-open:opacity-60 ml-20"
             aria-label="Close dialog"
-            aria-hidden="true"
-          ></button>
+            aria-hidden="true"></button>
           <div
             id="creations-grid"
             class="relative z-10 grid grid-cols-2 gap-6 px-6 pb-8 sm:grid-cols-3 sm:gap-8 sm:px-10 md:px-12 md:pb-12 lg:grid-cols-4"
