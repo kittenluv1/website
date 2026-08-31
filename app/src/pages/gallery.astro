@@ -3,11 +3,19 @@ import "@/styles/global.css";
 import "@/styles/gallery.css";
 import galleryData from "@/data/gallery.json";
 import { Image } from "astro:assets";
+import Modal from "@/components/modal/modal.astro";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/images/gallery/*",
   { eager: true },
 );
+
+const galleryItems = galleryData.flatMap(({ url, caption }) => {
+  const image = images[`/src/images/gallery/${url}`]?.default;
+  if (!image) return [];
+
+  return [{ url, caption, image }];
+});
 ---
 
 <!doctype html>
@@ -52,7 +60,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         <audio controls src="/audio/music/When someone's mind is in a hurry.mp3"
         ></audio>
         <a href="https://www.youtube.com/watch?v=UMcqpEuMUrs" target="_blank"
-          >audio credit. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</a
+          >audio credit ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</a
         >
         <p>
           thank you for visiting my photo gallery ⸜(｡˃ ᵕ ˂ )⸝♡-ˋˏ ༻ ❁ ✿ ❀༺ ˎ‧₊˚❀
@@ -61,24 +69,30 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       </div>
       <div id="gallery" class="masonry-grid">
         {
-          galleryData.map(({ url, caption }) => {
-            const image = images[`/src/images/gallery/${url}`]?.default;
-            if (!image) return null;
-
-            return (
-              <div class="masonry-item">
-                <Image
-                  src={image}
-                  alt={String(caption ?? "")}
-                  class="gallery-image"
-                />
-                {caption && <div class="caption">{caption}</div>}
-              </div>
-            );
-          })
+          galleryItems.map(({ caption, image }, index) => (
+            <button
+              type="button"
+              class="masonry-item"
+              data-gallery-item={index}
+            >
+              <Image
+                src={image}
+                alt={String(caption ?? "")}
+                class="gallery-image"
+              />
+              {caption && <div class="caption">{caption}</div>}
+            </button>
+          ))
         }
       </div>
     </div>
+
+    <Modal id="galleryModal" dimBackdrop closeOnBackdrop>
+      <figure id="gallery-modal-content">
+        <img id="gallery-modal-image" alt="" />
+        <figcaption id="gallery-modal-caption" hidden></figcaption>
+      </figure>
+    </Modal>
 
     <script>
       // SCRIPT: wait for images in initial viewport to load, then remove loading page
@@ -111,11 +125,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         }, 400);
       };
       const init = async () => {
-        // get all images
-        const imageNodes = Array.from(document.querySelectorAll("img"));
-        // find images in initial viewport and wait for only those
+        // only wait on gallery grid images — not the modal or loading screen
+        const imageNodes = Array.from(
+          document.querySelectorAll("#gallery img.gallery-image"),
+        );
         const initialImages = imageNodes.filter((img) =>
-          inInitialViewport(img),
+          inInitialViewport(img as HTMLImageElement),
         );
         await Promise.all(initialImages.map(imagePromise));
         // once initial images have loaded, show gallery
@@ -123,6 +138,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       };
 
       void init();
+    </script>
+
+    <script>
+      import { initGalleryModal } from "@/components/gallery/galleryModal.ts";
+
+      initGalleryModal();
     </script>
   </body>
 </html>

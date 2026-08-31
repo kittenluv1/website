@@ -3,6 +3,7 @@ dist/
 # generated types
 .astro/
 .vscode/
+.npm-cache/
 
 # dependencies
 node_modules/
@@ -13,7 +14,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
 .env.production
@@ -23,3 +23,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# playwright
+.playwright-browsers/

@@ -7,9 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    overflow-y: hidden;
-    
+    overflow-y: scroll;
 }
+
 /* loading screen items */
 #loading-screen {
 	position: fixed;
@@ -78,6 +78,7 @@ body {
 #loading-screen.hidden {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transition: opacity 0.5s ease, visibility 0s linear 0.5s;
 }
 #loading-image {
@@ -115,7 +116,7 @@ body {
     align-items: center; 
     box-sizing: border-box; 
     padding: 0 1%;
-    gap: 2%;
+    gap: 1%;
     width: 100%;
     margin-bottom: 1rem;
     background: transparent;
@@ -124,6 +125,12 @@ body {
         inset 0 0 20px 60px #F1F3F4,
         0 0 15px 15px #F1F3F4;
     font-weight: bold;
+    text-shadow: -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black,
+      0px 0px 2px black;
+    color: #D4E5E1; 
 }
 audio {
     flex: 1 1 0;
@@ -134,12 +141,17 @@ a, p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    padding: 0 3px;
+}
+a {
+  text-decoration: underline;
 }
 /* grid */
 .masonry-grid {
     column-count: 5;
     column-gap: 16px;
     margin: 0;
+    overflow: visible;
 }
 @media (max-width: 1200px) {
     .masonry-grid { column-count: 3; }
@@ -156,6 +168,19 @@ a, p {
     margin-bottom: 16px;
     position: relative;
     transition: box-shadow 0.2s;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    text-align: left;
+    font: inherit;
+    cursor: zoom-in;
+    overflow: visible;
+  }
+  .masonry-item:hover {
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
   }
   .gallery-image {
     width: 100%;
@@ -180,7 +205,54 @@ a, p {
     border-radius: 0 0 8px 8px;
     transition: opacity 0.2s;
     pointer-events: none;
+    overflow: visible;
+    white-space: normal;
   }
   .masonry-item:hover .caption {
     opacity: 1;
   }
+
+dialog[data-modal-id="galleryModal"] {
+  overflow: visible;
+}
+
+dialog[data-modal-id="galleryModal"] [data-modal-panel] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: min(900px, 92vw);
+  margin: auto;
+  overflow: visible;
+}
+
+#gallery-modal-content {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 100%;
+  overflow: visible;
+}
+
+#gallery-modal-image {
+  display: block;
+  max-width: min(900px, 92vw);
+  max-height: min(80vh, 900px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.45);
+}
+
+#gallery-modal-caption {
+  color: #fff;
+  text-align: center;
+  font-size: 0.95rem;
+  max-width: min(900px, 92vw);
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.8);
+  overflow: visible;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
