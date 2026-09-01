@@ -117,7 +117,7 @@ export function creationTilt(direction: CreationTiltDirection | number): string 
         : "right"
       : direction;
   const hover =
-    side === "left" ? "hover:-rotate-[15deg]" : "hover:rotate-[15deg]";
+    side === "left" ? "hover:-rotate-23" : "hover:rotate-23";
   return `${creationTiltBase} ${hover}`;
 }
 
@@ -154,7 +154,7 @@ export const creationsStickerLabel = [
 ].join(" ");
 
 export const creationsStickerButton = [
-  "absolute flex items-center justify-center no-underline",
+  "flex items-center justify-center no-underline",
   creationsButtonReset,
   textShadowPink,
   textShadowGreenHover,

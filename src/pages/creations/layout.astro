@@ -62,12 +62,12 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
       id="creations-sidebar"
       data-view="nav"
       transition:persist="creations-sidebar"
-      class="relative z-1 flex h-full w-[min(100%,16rem)] min-w-56 shrink-0 flex-col items-center overflow-y-auto py-2 sm:overflow-y-hidden"
+      class="relative z-1 flex h-full w-[min(100%,16rem)] min-w-56 shrink-0 flex-col items-center overflow-hidden py-2"
       style={`background-image: url(${plaidBg.src}); background-size: 6.25rem 6.25rem;`}
     >
       <div
         class:list={[
-          "absolute right-[2%] top-0 z-2 flex size-14 rotate-12 items-center justify-center sm:size-16",
+          "absolute right-[2%] rotate-8 top-0 z-2 flex size-14 items-center justify-center sm:size-16",
           creationTilt("right"),
         ]}
         aria-hidden="true"
@@ -91,7 +91,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
       </a>
 
       <!-- plaid clover circle logo -->
-      <div class="relative w-full shrink-0 p-2">
+      <div class="relative w-full shrink p-2">
         <div
           class="pointer-events-none absolute left-1/2 top-1/2 flex size-[88%] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full overflow-hidden border-8 border-[#A9C46C]"
         >
@@ -143,7 +143,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
             src={stickerCat.src}
             alt=""
             aria-hidden="true"
-            class="pointer-events-none absolute left-3 top-4 z-2 w-14 -rotate-8 sm:w-16"
+            class="pointer-events-none absolute left-3 top-4 z-2 w-14 sm:w-16"
           />
           <div
             class="relative flex h-16 w-full items-center justify-center sm:h-18"
@@ -178,7 +178,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
 
       <div
         data-creations-sidebar-nav
-        class="relative min-h-88 w-full flex-1 sm:min-h-104"
+        class="relative w-full flex-1 flex flex-col justify-between mb-2"
       >
         <a
           href={`/creations/${ALL_CATEGORY_SLUG}`}
@@ -186,7 +186,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           class:list={[
             creationsStickerButton,
             creationTilt("left"),
-            "-rotate-8 left-[8%] top-0 size-26 sm:size-28",
+            "-rotate-8 size-26 sm:size-28 ml-4",
           ]}
           aria-label="all pieces"
         >
@@ -205,7 +205,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           class:list={[
             creationsStickerButton,
             creationTilt("right"),
-            "rotate-7 left-[38%] top-38 size-26 sm:left-[42%] sm:top-42 sm:size-28",
+            "rotate-7 size-26 self-end mr-4",
           ]}
           aria-label="categories"
         >
@@ -224,7 +224,7 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           class:list={[
             creationsStickerButton,
             creationTilt("left"),
-            "-rotate-6 left-[8%] top-78 size-26 sm:top-84 sm:size-28",
+            "-rotate-6 size-26 sm:size-29 ml-8",
           ]}
           aria-label="about"
         >
@@ -236,23 +236,14 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           />
           <span class={creationsStickerLabel}>about</span>
         </button>
-
-        <img
-          src={stickerCat.src}
-          alt=""
-          aria-hidden="true"
-          class:list={[
-            creationTilt(0),
-            "absolute -rotate-8 left-[7%] top-64 w-16 sm:top-70 sm:w-17",
-          ]}
-        />
+        <!-- decorative stickers -->
         <img
           src={stickerKamio.src}
           alt=""
           aria-hidden="true"
           class:list={[
             creationTilt(1),
-            "absolute rotate-13 right-[4%] top-[3%] w-14 sm:w-16",
+            "absolute right-[10%] rotate-8 top-[3%] w-14 sm:w-16",
           ]}
         />
         <img
@@ -261,7 +252,16 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           aria-hidden="true"
           class:list={[
             creationTilt(2),
-            "absolute -scale-y-100 rotate-16 left-[14%] top-30 w-24 sm:w-24",
+            "absolute -scale-y-100 rotate-8 hover:-rotate-12 left-[12%] top-[33%] w-24 sm:w-24",
+          ]}
+        />
+        <img
+          src={stickerCat.src}
+          alt=""
+          aria-hidden="true"
+          class:list={[
+            creationTilt("right"),
+            "absolute -rotate-20 hover:rotate-12! left-[9%] bottom-[33%] w-16 sm:w-17",
           ]}
         />
         <img
@@ -269,8 +269,8 @@ const categoryHref = categorySlug ? `/creations/${categorySlug}` : null;
           alt=""
           aria-hidden="true"
           class:list={[
-            creationTilt(3),
-            "absolute rotate-23 right-[8%] top-94 w-16 sm:top-100 sm:w-17",
+            creationTilt("left"),
+            "absolute rotate-23 hover:-rotate-2! right-[8%] bottom-[3%] w-16 sm:w-17",
           ]}
         />
       </div>

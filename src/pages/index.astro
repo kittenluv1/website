@@ -123,8 +123,8 @@ const indexButtons: IndexButtonData[] = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bunnyluv1</title>
-    <link rel="icon" href="/src/images/index/index.jpg" type="image/jpg" />
+    <title>kittenluv1</title>
+    <link rel="icon" href={backgroundImgSrc.src} type="image/jpeg" />
 
     <script
       is:inline
@@ -176,7 +176,7 @@ const indexButtons: IndexButtonData[] = [
 
     <!-- WINDOWS XP FOOTER -->
     <footer
-      class="z-[1] flex h-[5vh] items-center"
+      class="z-1 flex h-[5vh] items-center"
       style={`background: ${footerGradient}`}
     >
       <Image
@@ -185,7 +185,7 @@ const indexButtons: IndexButtonData[] = [
         width="100"
         class="h-full w-auto opacity-80"
       />
-      <div class="absolute right-0 flex h-[3vh] items-center [&>*]:mr-2">
+      <div class="absolute right-0 flex h-[3vh] items-center *:mr-2">
         <div>visits: <span id="counter"></span></div>
         <p>&copy; e**** 2024</p>
         <Image
