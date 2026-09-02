@@ -1,5 +1,25 @@
 export default [
   {
+    date: "9/1",
+    content: `i want to be in a relationship so bad, but it can't just be any relationship. even a good relationship is so much work so if it was even a mid relationship i'd rather just be single. it's way easier and honestly more fun. but it's been so longggg since i've been in a relationship and i miss it. i miss being infatuated with someone! and them being infatuated back. 
+
+i'm at a point in my life though where i want to find a job before focusing on being in a real relationship, but i also want to try to travel places before i'm locked in to a stupid job. but before i get a job i have no money to travel. i think that's just being in your 20s, specifically college. it's a good time tho. lots to learn and discover`,
+  },
+  {
+    date: "8/31",
+    title: "freedom (we're so back)",
+    content: `hii it's the monday after my internship ended so now it's officially UNEMPLOYED SUMMER!!! it's been too long since i blogged to go over everything that happened, but i'll stick to the high level details for now and fill in the rest bit by bit later. it'll be like a wistful recollection of the summer before it's past; it'll be a nostalgiablog (｡•̀ᴗ-)✧
+
+my friend chris visited me a few days ago in sac and we went to a gay bar at 4pm and found a lot of parking. i "worked" remotely for the last week of my internship and made a lot of progress on my personal projects. i met some people from h*nge that i would actually want to stay in contact with during the last week of my lease in troy, and i'll miss my co-interns and coworkers from wbny (some of whom i would also call my friends ( •̯́ ₃ •̯̀)). i landed a kickflip on july 20, 2026 (that's going back a bit but it's too important not to include :0). got a new tattoo in nyc with shady (shoutout the new <a href='https://shadykatie.com/' target='_blank' rel='noopener noreferrer'>site</a>, it's epic!). there was so much other stuff that happened that i didn't really have time to/didn't feel like writing about, but i have the time/motivation now, so please look forward to it ദ്ദി(  •̀–•́  )
+
+last night i moved everything over to one site directory and pointed both domains at it; my refactor, redesign, and website reconstruction of one year is officially complete! i finally updated my creations page and i have more exciting updates hopefully to come; i feel motivated and somewhat productive again... i started this domain thing at 12am and finished it at like 2, i felt like the intern who deploys to production at 4:59pm on a friday. lol then i watched scott pilgrim after :D good movie
+
+i've been doing all this stuff on the work laptop, which is a macbook pro and it's so... nice... it's so much faster and smoother than my own laptop (;𖦹ㅁ𖦹) but i have to send it back today and return to my chud reality of excruciating seconds of lag after every click... 
+
+i'm so excited for unemployed summer though. i have like 1 month...? 20 days. i'm going to sd to see soleil for a week, and i managed to convince my parents to let me have the car for the quarter... it's going to be a good year 𐔌՞ ܸ.ˬ.ܸ՞𐦯 i can feel it
+`,
+  },
+  {
     date: "8/1",
     title: "summary of the summer so far",
     content: `i've been listening to a lot of chinese underground rap... like idek what genre this is but i fw it. i've met so many cool ppl from everywhere. i'm learning to approach things with joy instead of fear bcs sometimes i just need to gaf less. i'm learning how to roll with the punches. it's like one day u just decide to own it and then you realize it works sm better that way. i haven't had a free weekend in such a longggg time i really needed this. also, getting a tattoo soon!!! i realized that if i want to have a lot of tattoos and be a cool tatted up person by the time i'm 25 i need to start getting tattoos like now. nothing is permanent, including your body. `,
@@ -8,8 +28,10 @@ export default [
     date: "7/26",
     content: `12:19 A.M.
 i just went out... to smoke... and then to take a walk afterwards... and there was a man... ok he was like across the street but he was walking in the same direction... and i got scared. ya that's it but i went inside and was having a dance battle with myself and editing my video and unpacking all while trying to be quiet and unsuspicious. actually i think that's why i like going out high so much, it activates my dancing gene. and being crossed is even better bcs the tipsy deactivates the shy gene (=^x^=) no yes oklou please i don't want to listen to anything other than oklou rn. i swear they were talking about me outside about how i went out to smoke but also i think i'm just high (ToT) fuck i have to lock in i still have to edit my video and unpack
+
 12:24 A.M.
 i think my own video is gonna overstimulate me ToT
+
 12:25 A.M.
 just watched an acid trip optical illusion video while high and now i'm literally Bruno Mars & Gucci Mane
 took like 3 big hits to impress the imaginary acquaintances and now i'm so. high. i'm a lightweight
@@ -21,6 +43,26 @@ if you drop a bird upside down... can it fly?`,
     date: "7/24",
     title: "montreal",
     content: `visited my first childhood home in montreal, the place where it all began... i had dinner at my auntie/uncle's house one night and it was a super wholesome experience. my aunt made such amazing pakistani food and my uncle did palm readings for me and all my friends. when my aunt hugged me when i was leaving, she teared up and it made me really emotional. i really like montreal, it has a cultured feel to it and even though i left when i was 3 and don't remember anything of it, it feels somehow nostalgic to me. i could see myself living there someday. time to brush up on my french. `,
+  },
+  {
+    date: "7/22",
+    title: "be who you are",
+    content: `i just think everyone's a little gay. like queerness is a spectrum and not everyone is gonna be at the far end of the spectrum yk? and even most spectrums are actually just circles, like the straightest people are lowkey just kinda gay. like charlie kirk. but at the end of the day everyone has the final say on their own identity. and i do think that you can choose to be gay, like how most people who are straight are just kind of choosing to be straight. like so many queer people will, and have, just gone their entire lives without ever experiencing a queer relationship because they don't choose to. and when someone chooses to be gay, that's them choosing to step outside of society's socially prescribed standards of normativity and live in a way that feels true to them. and that's why queer people are cool. qed`,
+  },
+  {
+    date: "7/13/26",
+    title: "the wedding",
+    content: `the wedding was amazing. the bride looked so pretty and the groom looked so nervous which is cute. me and vanessa almost arrived late, when we got there everyone was already sitting down and my heart dropped because i thought the ceremony had already started. that would have been so bad, thankfully they were still just waiting. we ended up sitting next to ry, who i haven't seen since high school and we got to catch up a bit. when the bridal party started walking in it was kind of surreal, like whoa this is really happening. and when kailyn walked in and they were playing the twilight song the groom started crying a bit but he pulled it together lol. it was a cute little ceremony! best wedding ever (also my first wedding ⸜(｡˃ ᵕ ˂ )⸝♡)
+
+afterwards there was food, drinks, speeches etc. etc. … it was nice, i got to catch up with so many people i hadn't seen since high school and meet a bunch of kailyn's friends. even kailyn i hadn't seen for really like 2 years before the bridal shower, and i was kind of nervous about that but it was so nice to see her again and watch her get married :,) at the end we danced a bit, and i was dd'ing so i was sober but i had a lot of fun! there were a bunch of guests from both sides of the family so there was people from all generations and it really felt like a dance floor :) `,
+  },
+  {
+    date: "7/8",
+    title: "hoe phase",
+    content: `hai i'm lowkey having a hoe phase and i never knew it could be like dis :33333 never maintained a roster b4 why is dis shit lowkey hard work ToT tho tbh i've been on so many first dates but not many second dates. mb bcs of the fact that i'm only here for the summer, it's hard… :d unforch to this day i still like the first guy i met the best… he said it was the best first date he'd been on too :3… so then why'd he ghost me ToT for a while i was stressing like what if he doesn't want to see me anymore? and then i realized it actually doesn't matter (╥ ᴗ ╥) and i went on a bunch more dates. 
+
+overall it's been a good time. i think i gained something from every date i went on, got to meet one more person and spend time with a person i never would have gotten to meet otherwise. i'm learning about what works for me and what i actually like and dislike in a person. it's important stuff tbh. it's life experience
+`,
   },
   {
     date: "6/26",
