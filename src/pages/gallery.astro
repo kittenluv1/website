@@ -4,6 +4,7 @@ import "@/styles/gallery.css";
 import galleryData from "@/data/gallery.json";
 import { Image } from "astro:assets";
 import Modal from "@/components/modal/modal.astro";
+import galleryFavicon from "@/images/gallery/tarepanda1.png";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/images/gallery/*",
@@ -24,11 +25,7 @@ const galleryItems = galleryData.flatMap(({ url, caption }) => {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>photo gallery</title>
-    <link
-      rel="icon"
-      href="/src/images/gallery/tarepanda1.png"
-      type="image/png"
-    />
+    <link rel="icon" href={galleryFavicon.src} type="image/png" />
   </head>
   <body>
     <div id="loading-screen">

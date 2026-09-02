@@ -12,6 +12,7 @@ export function getStaticPaths() {
 
 const { year } = Astro.params;
 
+import lotusIcon from "@/images/index/lotus.png";
 import data2024 from "../../data/blogs/2024.js";
 import data2025 from "../../data/blogs/2025.js";
 import data2026 from "../../data/blogs/2026.js";
@@ -31,7 +32,7 @@ const articles = blogData[year];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nostalgiablog</title>
-    <link rel="icon" href="/src/images/index/lotus.png" type="image/png" />
+    <link rel="icon" href={lotusIcon.src} type="image/png" />
   </head>
   <body>
     <img src="/images/blog/flower.png" id="lotus" alt="lotus" />
