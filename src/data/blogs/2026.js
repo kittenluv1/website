@@ -1,5 +1,32 @@
 export default [
   {
+    date: "9/3",
+    content: `sometimes i sit down to do work and i just feel so empty inside. and then i end up scrolling instagram reels. 
+
+every human throughout all ages of history has spent the majority of their day trying to survive and put food on the table. it just looks different now. so yea mb i don't actually want a tech job - i just want a well paying job that can sustain my interests. that can put food on the table essentially.
+
+genuine question though: if you were a soldier in ancient times, would you die honorably or fight without honor? what about now?
+
+i need to overcome my natural aversion to doing (aka my fear of messing up). i think growing up, anything exclusive i always needed to be a part of it. i've always been like that
+
+maybe i'll never have it all figured out. maybe i'm always just figuring it out as i go. maybe there's nothing to actually figure out except what i'm doing right now. `,
+  },
+  {
+    date: "9/1",
+    title: "things i thought about in troy",
+    content: `life: i have such a fear of life passing me by but i'm lowkey living it right now. youth isn't real. we're all experiencing our lives at the perfect time.
+
+music: there's no such thing as music you don't like. there's only music you like and music you don't like yet. all the music i like now i once didn't like. that's life, it's just friction and acceptance. 
+
+work: it's all just wordslop. to live is to spend money. evil is a male dominated field. 
+
+doing: lists are for reminding, not planning. the ppl who feel most hopeless are the ones who do nothing. you gotta just keep doing. 
+
+danny: he's an interesting one fs i've never met someone who keeps up the persona so effortlessly (and so late into adult life). 
+
+beauty: this is the first time i realized what they meant by beauty is a curse. but ugliness is a whole different curse ToT`,
+  },
+  {
     date: "9/1",
     content: `i want to be in a relationship so bad, but it can't just be any relationship. even a good relationship is so much work so if it was even a mid relationship i'd rather just be single. it's way easier and honestly more fun. but it's been so longggg since i've been in a relationship and i miss it. i miss being infatuated with someone! and them being infatuated back. 
 
@@ -8,7 +35,7 @@ i'm at a point in my life though where i want to find a job before focusing on b
   {
     date: "8/31",
     title: "freedom (we're so back)",
-    content: `hii it's the monday after my internship ended so now it's officially UNEMPLOYED SUMMER!!! it's been too long since i blogged to go over everything that happened, but i'll stick to the high level details for now and fill in the rest bit by bit later. it'll be like a wistful recollection of the summer before it's past; it'll be a nostalgiablog (｡•̀ᴗ-)✧
+    content: `hii it's the monday after my internship ended so now it's officially UNEMPLOYED SUMMER!!! it's been too long since i really blogged to go over everything that happened, but i'll stick to the high level details for now and fill in the rest bit by bit later. it'll be like a wistful recollection of the summer before it's past; it'll be a nostalgiablog (｡•̀ᴗ-)✧
 
 my friend chris visited me a few days ago in sac and we went to a gay bar at 4pm and found a lot of parking. i "worked" remotely for the last week of my internship and made a lot of progress on my personal projects. i met some people from h*nge that i would actually want to stay in contact with during the last week of my lease in troy, and i'll miss my co-interns and coworkers from wbny (some of whom i would also call my friends ( •̯́ ₃ •̯̀)). i landed a kickflip on july 20, 2026 (that's going back a bit but it's too important not to include :0). got a new tattoo in nyc with shady (shoutout the new <a href='https://shadykatie.com/' target='_blank' rel='noopener noreferrer'>site</a>, it's epic!). there was so much other stuff that happened that i didn't really have time to/didn't feel like writing about, but i have the time/motivation now, so please look forward to it ദ്ദി(  •̀–•́  )
 
@@ -18,6 +45,30 @@ i've been doing all this stuff on the work laptop, which is a macbook pro and it
 
 i'm so excited for unemployed summer though. i have like 1 month...? 20 days. i'm going to sd to see soleil for a week, and i managed to convince my parents to let me have the car for the quarter... it's going to be a good year 𐔌՞ ܸ.ˬ.ܸ՞𐦯 i can feel it
 `,
+  },
+  {
+    date: "8/22",
+    title: "mile high",
+    content: `i've never been high at work just because i'm scared if it happens once it'll happen again. and it would be a coping mechanism or smth bcs why tf else would i be getting high at work. ofc this only applies to me bcs i'm doing corporate rn, this honestly doesn't apply for any other kind of job. like minimum wage ya imma be high at work. 
+
+wiggling your toes is so underrated. also sitting cross-legged, leaning on one hip, but slouching back with your arms out. 
+
+i just met the roommate who's moving in to the apartment after i leave, she was super chill. she saw me finishing my joint and she was just like, "what's that :p". and her mom gave me beef soup :p 
+
+i should make self deprecating jokes more often. some people have a higher threshold for humor, i have a higher threshold for words. i can talk to adults and random strangers too (affirmation). adults were all kids once but it's been so long they forgot what it was like
+
+i'm just gonna follow these rich looking african ladies... 
+
+nvm they dk what they're doing. i just watched a tsa lady walking away from a pat down she did on a lady whose bf was watching red-faced saying “i think he thinks i'm gay”
+
+ig when i'm high i get the overwhelming urge to write. or mb it's the urge to think that's why i'm so tired the next day
+
+i'm home!!! `,
+  },
+  {
+    date: "8/19",
+    title: "realizing i'm all alone :,)",
+    content: `i can so see why people get depressed working a 9-5. why was i so disappointed by that? it's not cus i need him, i don't even like him like that. i think i'm just lonely over here... because i don't have anyone, not even myself. my roommates and friends all moved out already so i'm literally all alone. like i don't have a single friend over here it's kinda crazy. even if it's just for a week i think the thought of it is just making me depressed...`,
   },
   {
     date: "8/1",
@@ -54,12 +105,12 @@ if you drop a bird upside down... can it fly?`,
     title: "the wedding",
     content: `the wedding was amazing. the bride looked so pretty and the groom looked so nervous which is cute. me and vanessa almost arrived late, when we got there everyone was already sitting down and my heart dropped because i thought the ceremony had already started. that would have been so bad, thankfully they were still just waiting. we ended up sitting next to ry, who i haven't seen since high school and we got to catch up a bit. when the bridal party started walking in it was kind of surreal, like whoa this is really happening. and when kailyn walked in and they were playing the twilight song the groom started crying a bit but he pulled it together lol. it was a cute little ceremony! best wedding ever (also my first wedding ⸜(｡˃ ᵕ ˂ )⸝♡)
 
-afterwards there was food, drinks, speeches etc. etc. … it was nice, i got to catch up with so many people i hadn't seen since high school and meet a bunch of kailyn's friends. even kailyn i hadn't seen for really like 2 years before the bridal shower, and i was kind of nervous about that but it was so nice to see her again and watch her get married :,) at the end we danced a bit, and i was dd'ing so i was sober but i had a lot of fun! there were a bunch of guests from both sides of the family so there was people from all generations and it really felt like a dance floor :) `,
+afterwards there was food, drinks, speeches etc. etc. ... it was nice, i got to catch up with so many people i hadn't seen since high school and meet a bunch of kailyn's friends. even kailyn i hadn't seen for really like 2 years before the bridal shower, and i was kind of nervous about that but it was so nice to see her again and watch her get married :,) at the end we danced a bit, and i was dd'ing so i was sober but i had a lot of fun! there were a bunch of guests from both sides of the family so there was people from all generations and it really felt like a dance floor :) `,
   },
   {
     date: "7/8",
     title: "hoe phase",
-    content: `hai i'm lowkey having a hoe phase and i never knew it could be like dis :33333 never maintained a roster b4 why is dis shit lowkey hard work ToT tho tbh i've been on so many first dates but not many second dates. mb bcs of the fact that i'm only here for the summer, it's hard… :d unforch to this day i still like the first guy i met the best… he said it was the best first date he'd been on too :3… so then why'd he ghost me ToT for a while i was stressing like what if he doesn't want to see me anymore? and then i realized it actually doesn't matter (╥ ᴗ ╥) and i went on a bunch more dates. 
+    content: `hai i'm lowkey having a hoe phase and i never knew it could be like dis :33333 never maintained a roster b4 why is dis shit lowkey hard work ToT tho tbh i've been on so many first dates but not many second dates. mb bcs of the fact that i'm only here for the summer, it's hard... :d unforch to this day i still like the first guy i met the best... he said it was the best first date he'd been on too :3... so then why'd he ghost me ToT for a while i was stressing like what if he doesn't want to see me anymore? and then i realized it actually doesn't matter (╥ ᴗ ╥) and i went on a bunch more dates. 
 
 overall it's been a good time. i think i gained something from every date i went on, got to meet one more person and spend time with a person i never would have gotten to meet otherwise. i'm learning about what works for me and what i actually like and dislike in a person. it's important stuff tbh. it's life experience
 `,
