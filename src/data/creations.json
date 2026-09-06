@@ -262,26 +262,18 @@
 			"comments": "my friend joey spotted this dying on the side of the road in japan. we brought it in and it died shortly afterwards, and then it went with me on three international flights. it lost all of its legs in the transport/resin process unfortunately, and the resin seems to make the colors different. it also bothers me that it's kinda sideways lol, but i used uv resin this time instead of epoxy and it was a much better experience. apparently its name comes from the white color on its body/tail because it looks like salt, which is 'shio' in japanese. i decided not to rehydrate and pin it because i wanted to resin him the way i found him... dying, i guess, that is"
 		},
 		{
-			"title": "lizard",
-			"images": ["preservation/lizard1/1.png",
-				"preservation/lizard1/2.png",
-				"preservation/lizard1/3.png",
-				"preservation/lizard1/jar.jpg"],
-			"date": "19 july 2024",
-			"description": "lizard dry preserved in resin, likely a western fence lizard",
-			"comments": "i found this guy while walking the dogs with grce's dad and it was already all dried up and just sticking up facedown in the grass. it must have gotten dehydrated from the summer sun and fallen down from wherever it was. this was my first preservation project bcs the opportunity literally presented itself to my hands, i never even thought of doing stuff like this before but it was too good to pass up... when i first brought it home my mom was disgusted but she was lowkey more chill about it than i expected lol. honestly she seemed not that surprised. i covered it in salt for a few weeks and bought an airtight container and used dessicants to dry it some more, and then once it was completely dry i used a brush to coat it in resin layer by layer. ruined the brush but now i have a resin covered lizard <br><br> i believe this is a female western fence lizard because it doesn't have the blue markings on its belly that the other one has. also did you know that the weird push up thing that lizards do is done by males to show their colors and display dominance? i always thought that was just a weird lizard quirk"
-		},
-		{
-			"title": "bluebelly",
-			"images": ["preservation/lizard2/1.png",
-				"preservation/lizard2/2.png",
-				"preservation/lizard2/3.png",
-				"preservation/lizard2/4.jpg",
-				"preservation/lizard2/5.jpg"],
-			"captions": ["", "", "", "pinning", "drying"],
-			"date": "1/5/25",
-			"description": "western fence lizard dry preserved in resin",
-			"comments": "i also found this guy while walking the dog, but it was not dry already like the first one but fresh, with ants crawling all over it. i tried to actually position this one to look a bit more alive like you're supposed to but it got super deflated when it dried and it looks very much dead. i made a blog <a href='/pages/blog.html#24' target='_blank'>post</a> about it if you want to read more of my thoughts..."
+			"title": "lizards",
+			"images": ["preservation/lizard/1.png",
+				"preservation/lizard/western-fence.png",
+				"preservation/lizard/jar.jpg",
+				"preservation/lizard/male.png", 
+				"preservation/lizard/male-dry.png", 
+				"preservation/lizard/pinning-male.jpg",
+				"preservation/lizard/wet.png"],
+			"captions": ["female western fence lizard", "19 july 2024", "drying", "male bluebelly", "1/5/25", "pinning", "wet specimen (march 29, 2026)"],
+			"date": "2024 - 2026",
+			"description": "western fence lizards (aka 'bluebellies'), preserved in resin & ethanol",
+			"comments": "<strong>female western fence lizard:</strong> i found this guy while walking the dogs with grce's dad and it was already all dried up and just sticking up facedown in the grass. it must have gotten dehydrated from the summer sun and fallen down from wherever it was. this was my first preservation project bcs the opportunity literally presented itself to my hands, i never even thought of doing stuff like this before but it was too good to pass up... when i first brought it home my mom was disgusted but she was lowkey more chill about it than i expected lol. honestly she seemed not that surprised. i covered it in salt for a few weeks and bought an airtight container and used dessicants to dry it some more, and then once it was completely dry i used a brush to coat it in resin layer by layer. ruined the brush but now i have a resin covered lizard... i believe this is a female western fence lizard because it doesn't have the blue markings on its belly that the other one has. also did you know that the weird push up thing that lizards do is done by males to show their colors and display dominance? i always thought that was just a weird lizard quirk <br><br> <strong>male bluebelly:</strong> i also found this guy while walking the dog, but it was not dry already like the first one but fresh, with ants crawling all over it. i tried to actually position this one to look a bit more alive like you're supposed to but it got super deflated when it dried and it looks very much dead. i made a blog <a href='/pages/blog.html#24' target='_blank'>post</a> about it if you want to read more of my thoughts... <br><br> <strong>wet specimen: </strong> this one is likely ALSO a western fence lizard. sorry they're the most common species in the sacramento area ToT what can i say. i got tired of dry preserving these guys especially because the last one just kind of deflated... and i also didn't have time to dry it i had to go to school. so i decided to change it up and try a wet specimen. i also finally got my hands on some ethanol here so i can preserve them better"
 		},
 		{
 			"title": "mouse",
