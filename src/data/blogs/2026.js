@@ -161,7 +161,6 @@ i've been really enjoying life though... on monday we got free massages at work 
 - shirley
 - soleil
 - chris
-- liz
 actually i see admirable qualities in all of my friends that i would want to learn from. i think seeing those traits in someone is what makes me want to become friends with them in the first place. 
 `,
   },

@@ -1,6 +1,7 @@
 body {
     font-family: 'Arial Condensed', Helvetica, Arial, sans-serif;
-    background-image: url('../images/gallery/skull-gray-bg.jpg');
+    background-image: url('../images/gallery/skulls.jpg');
+    background-size: 20%;
     background-attachment: fixed;
     margin: 0;
     padding: 2rem;
