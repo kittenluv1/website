@@ -1,66 +1,67 @@
 export default [
   {
-    date: "9/25", 
+    date: "9/25",
     content: `goals 4 the qtr
 - get better at saying bye (and not overthinking it)
-- don’t buy any more clothes until i finish all my clothing diys
+- don't buy any more clothes until i finish all my clothing diys
 - do things during the day before i get lazy and tired at night (but why do i also get lazy and tired during the day ToT)
 - catch up with old friends n focus on myself
-`
+- finish neetcode 150
+`,
   },
   {
-    date: "9/22", 
+    date: "9/22",
     content: `just came back from eaf... omg. i'm not even going to try to overthink all those social interactions... there will be no end. i had some good moments and some major fumbles but literally everyone who tables at eaf will experience this. i'm sure there's nobody who walks away from eaf feeling better than they did going into it. 
 
 the best interactions are the ones that go off script. i feel like this is true in general. it's good to have a script prepared though but yeah. i think the goal is always to go off the script. that's when things get real
 
 i forgot how cliquish and exclusive people can be here. i don't see myself as part of any in group which can be hard sometimes tbh ToT i don't want to be part of the clique group but it's hard to be on the outside... becoming disillusioned by la is just slowly pulling back the cataracts of social hierarchy that seem implanted in everyone here. me included. it clouds your vision but once you see it you won't want to go back. 
-i don’t want to be perceived as attractive or “cool” anymore (it means smth different in la than it does elsewhere). wanting to be accepted, loved, and cared is natural; trying to be cool is not the same thing as that. when you look that good it’s easy to think that’s the most important thing about you… in fact that’s what they want you to think… 
-`
+i don't want to be perceived as attractive or “cool” anymore (it means smth different in la than it does elsewhere). wanting to be accepted, loved, and cared is natural; trying to be cool is not the same thing as that. when you look that good it's easy to think that's the most important thing about you... in fact that's what they want you to think... 
+`,
   },
   {
-    date: "9/21", 
-    content: `i tried to go to the goodwill today… no luck. there were too many people there and also i don’t really want new clothes. i just want the clothes i had. it was like trying to go pick out a new boyfriend after you just broke up with the last one… of course you’re going to be like, this one’s not as good as the last one. 
+    date: "9/21",
+    content: `i tried to go to the goodwill today... no luck. there were too many people there and also i don't really want new clothes. i just want the clothes i had. it was like trying to go pick out a new boyfriend after you just broke up with the last one... of course you're going to be like, this one's not as good as the last one. 
 
-i need to take some time… i need to focus on myself ToT genuinely though, i don’t want to be in a hurry to replace everything. i want to focus on making my own clothes and reevaluating what’s important to me in my life and in my closet anyways. i’m taking this as an opportunity to rethink and reinvent . so i can come back bigger and better
-`
+i need to take some time... i need to focus on myself ToT genuinely though, i don't want to be in a hurry to replace everything. i want to focus on making my own clothes and reevaluating what's important to me in my life and in my closet anyways. i'm taking this as an opportunity to rethink and reinvent . so i can come back bigger and better
+`,
   },
   {
-    date: "9/20", 
-    title: "half my closet...", 
-    content: `ugh im having an even worse day today than yesterday… i was unpacking all my stuff and then eventually i realized that i actually am missing all of my shirts. and i checked outside and called the storage place and everything and theyre all just gone. like years and years worth of a collection… genuinely half my closet. i actually had to crash out about that a bit. i was walking around westwood and all the freshmen were overstimulating me. i can be very judgemental it’s lowkey an issue. i walked into the 2nd street and then walked out bcs it was pissing me off. that shit is just as bad as buying all your stuff designer, just paying for good style. idc i gotta hit the goodwill now ig. ughh i was just beginning to feel happy with my closet too. actually can’t have shit in la
-i told soleil and she was just pretty chill abt it … im glad she didn’t throw a pity party for me tbh that wouldn’t have been as helpful as how she reacted to it. she also just lost a baddie so ig we’re both #down rn ToT but we’ll both be #up soon, just wait… 
-`
+    date: "9/20",
+    title: "half my closet...",
+    content: `ugh im having an even worse day today than yesterday... i was unpacking all my stuff and then eventually i realized that i actually am missing all of my shirts. and i checked outside and called the storage place and everything and theyre all just gone. like years and years worth of a collection... genuinely half my closet. i actually had to crash out about that a bit. i was walking around westwood and all the freshmen were overstimulating me. i can be very judgemental it's lowkey an issue. i walked into the 2nd street and then walked out bcs it was pissing me off. that shit is just as bad as buying all your stuff designer, just paying for good style. idc i gotta hit the goodwill now ig. ughh i was just beginning to feel happy with my closet too. actually can't have shit in la
+i told soleil and she was just pretty chill abt it ... im glad she didn't throw a pity party for me tbh that wouldn't have been as helpful as how she reacted to it. she also just lost a baddie so ig we're both #down rn ToT but we'll both be #up soon, just wait... 
+`,
   },
   {
-    date: "9/19", 
-    title: "move-in", 
-    content: `today was a long day… i finished packing in the morning and then left for the airport with my mom. at the airport we went to an express lounge bcs she’s a card holder and they had a bar and the bartender was really cute. i had a cocktail, and then on the plane i threw up and and almost passed out and they got all the flight attendants involved. i think they even announced it on the loudspeaker ToT so embarrassing. then i had a headache the rest of the day while moving in.
-while we were trying to get to public storage i forgot the locker key and had to go back for it twice, because after i got it i started doubting if it was even the right key and i had to go back to double check. getting the stuff from public storage was pretty smooth (for once). when we got back we were soo hungry and we had a lovely meal at liu’s cafe. 
-at night my mom and i went dumpster diving for furniture and it was kind of a humbling experience. like i personally see no problem with it but actually doing it and going to the frats to pick up their used tables and shelves is a bit of a lesson in shamelessness and humility im ngl. but also… people can be so wasteful and there are more enough shelves and tables in the world just like there are enough clothes, so why would i go buy a new one when there’s a free one right there on the curb? 
-`
+    date: "9/19",
+    title: "move-in",
+    content: `today was a long day... i finished packing in the morning and then left for the airport with my mom. at the airport we went to an express lounge bcs she's a card holder and they had a bar and the bartender was really cute. i had a cocktail, and then on the plane i threw up and and almost passed out and they got all the flight attendants involved. i think they even announced it on the loudspeaker ToT so embarrassing. then i had a headache the rest of the day while moving in.
+while we were trying to get to public storage i forgot the locker key and had to go back for it twice, because after i got it i started doubting if it was even the right key and i had to go back to double check. getting the stuff from public storage was pretty smooth (for once). when we got back we were soo hungry and we had a lovely meal at liu's cafe. 
+at night my mom and i went dumpster diving for furniture and it was kind of a humbling experience. like i personally see no problem with it but actually doing it and going to the frats to pick up their used tables and shelves is a bit of a lesson in shamelessness and humility im ngl. but also... people can be so wasteful and there are more enough shelves and tables in the world just like there are enough clothes, so why would i go buy a new one when there's a free one right there on the curb? 
+`,
   },
   {
-    date: "9/17", 
+    date: "9/17",
     title: "visit morgan",
-    content: `i visited my girl harper today! well they renamed her to morgan and it’s a pretty name. it suits her. my baby :(
-i scheduled the time with marcia at 12 today. i didn’t ask my mom if she wanted to go. she got upset when she found out which is valid. she asked me why i didn’t invite her and i was like i don’t know… i honestly don’t really know. i guess i assumed she wouldn’t want to come, or that it would be more convenient if i just went by myself since she works n stuff. and maybe a part of me still subconsciously blames her for sending away the dog… even though logically i know it’s not her fault. and i know she didn’t want to. not my dad though, i didn’t want my dad to go. i don’t think he deserves it
-seeing morgan was so lovely, i got to hold her in my hands and kiss her stinky forehead just like old times. she totally remembered me and was jumping all over me when i first got there. she’s gotten fat and happy and spoiled… spoiled is an understatement tbh. but her family is really good to her and they keep each other company. they’re honestly really suited for each other, in terms of lifestyle and treatment wise. morgan deserves to be adored and spoiled. i can tell marcia loves that dog and she loves her right back. she was fun to talk to also, it wasn’t too awkward like i feared - we talked about her family and the dog
-i ended up visiting for just under 2 hours… i need to learn how to not overstay my welcome. and tbh if anything i think i overstayed my own desire to be there more than hers T-T they were just chilling but i got kind of tired ngl. i went to the park afterwards to performatively read under a tree and reflect on my feelings about what i just experienced. 
-`
+    content: `i visited my girl harper today! well they renamed her to morgan and it's a pretty name. it suits her. my baby :(
+i scheduled the time with marcia at 12 today. i didn't ask my mom if she wanted to go. she got upset when she found out which is valid. she asked me why i didn't invite her and i was like i don't know... i honestly don't really know. i guess i assumed she wouldn't want to come, or that it would be more convenient if i just went by myself since she works n stuff. and maybe a part of me still subconsciously blames her for sending away the dog... even though logically i know it's not her fault. and i know she didn't want to. not my dad though, i didn't want my dad to go. i don't think he deserves it
+seeing morgan was so lovely, i got to hold her in my hands and kiss her stinky forehead just like old times. she totally remembered me and was jumping all over me when i first got there. she's gotten fat and happy and spoiled... spoiled is an understatement tbh. but her family is really good to her and they keep each other company. they're honestly really suited for each other, in terms of lifestyle and treatment wise. morgan deserves to be adored and spoiled. i can tell marcia loves that dog and she loves her right back. she was fun to talk to also, it wasn't too awkward like i feared - we talked about her family and the dog
+i ended up visiting for just under 2 hours... i need to learn how to not overstay my welcome. and tbh if anything i think i overstayed my own desire to be there more than hers T-T they were just chilling but i got kind of tired ngl. i went to the park afterwards to performatively read under a tree and reflect on my feelings about what i just experienced. 
+`,
   },
   {
-    date: "9/16", 
-    title: "passing time", 
-    content: `don’t be intimidated by the passing of time. it’s not good or bad, it’s just something that happens. time is never lost or wasted, it just passes. no matter how much time has already passed, there is so much time that has yet to be passed! go do something fun or cool or productive or wtv. all you’ve got is time`
+    date: "9/16",
+    title: "passing time",
+    content: `don't be intimidated by the passing of time. it's not good or bad, it's just something that happens. time is never lost or wasted, it just passes. no matter how much time has already passed, there is so much time that has yet to be passed! go do something fun or cool or productive or wtv. all you've got is time`,
   },
   {
-    date: "9/13", 
-    title: "a week in sd", 
-    content: `just had one of the best weeks in my life visiting my best friend in one of the best places :) the whole week we just kind of chilled at parks, chilled at the beach, chilled at home, chilled at the club, even chilled in mexico. i love the park culture in sd, there are so many green spaces and people just go there to lay down n smoke n chill. i told soleil, this week was the happiest i’ve felt for a long time… i used to think happiness was euphoria and exhilaration but this whole week was such bliss and contentment. good company, light breeze, nice views. that’s all a girl really needs. 
+    date: "9/13",
+    title: "a week in sd",
+    content: `just had one of the best weeks in my life visiting my best friend in one of the best places :) the whole week we just kind of chilled at parks, chilled at the beach, chilled at home, chilled at the club, even chilled in mexico. i love the park culture in sd, there are so many green spaces and people just go there to lay down n smoke n chill. i told soleil, this week was the happiest i've felt for a long time... i used to think happiness was euphoria and exhilaration but this whole week was such bliss and contentment. good company, light breeze, nice views. that's all a girl really needs. 
 
-soleil’s cat daisy is one of the best kitties in the world, she let me give her belly rubs. i got to meet up with some other friends (and friends of friends) who moved to / live in sd, i really enjoyed that also. my favorite part about going out is actually the going home and breaking down / analyzing every interaction we had afterwards. school is starting in a week and summer is lowkey over but… life is good ❀
-`
+soleil's cat daisy is one of the best kitties in the world, she let me give her belly rubs. i got to meet up with some other friends (and friends of friends) who moved to / live in sd, i really enjoyed that also. my favorite part about going out is actually the going home and breaking down / analyzing every interaction we had afterwards. school is starting in a week and summer is lowkey over but... life is good ❀
+`,
   },
   {
     date: "9/3",
