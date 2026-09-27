@@ -13,5 +13,12 @@
     "astro": "^5.16.6",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.3.3"
+  },
+  "allowScripts": {
+    "sharp@0.34.5": true,
+    "sharp@0.35.4": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.27.7": true,
+    "fsevents@2.3.3": true
   }
 }

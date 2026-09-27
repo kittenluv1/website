@@ -6,9 +6,8 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "strict": false, 
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     }
   }
 }

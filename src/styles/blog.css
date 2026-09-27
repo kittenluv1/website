@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'simsun';
+	src: url('/fonts/simsun.ttf') format('truetype');
+}
+
 body {
 	overflow: hidden; 
 	font-family: simsun, serif; 
@@ -130,7 +135,7 @@ button p {
 aside {
 	width: 15vw; 
 	font-size: 2vh;  
-	font-family: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+	font-family: simsun, sans-serif;
 	display: flex; 
 	flex-direction: column;
 }
