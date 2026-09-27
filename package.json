@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^5.16.6",
+    "astro": "^7.3.5",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.3.3"
   },
@@ -18,7 +18,10 @@
     "sharp@0.34.5": true,
     "sharp@0.35.4": true,
     "esbuild@0.25.12": true,
-    "esbuild@0.27.7": true,
-    "fsevents@2.3.3": true
+    "fsevents@2.3.3": true,
+    "esbuild@0.28.2": true
+  },
+  "overrides": {
+    "vite": "^7.0.0"
   }
 }
