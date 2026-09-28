@@ -67,10 +67,13 @@ const modalItems: CreationModalItem[] = items.map((item) => ({
     items.map((item, index) => {
       const imageSrc = item.images?.[0];
       const image = getCreationImage(imageSrc);
+      const imageUrl = imageSrc ? getCreationImageUrl(imageSrc) : undefined;
       const itemCategoryName = getItemCategoryName(item);
 
       if (!image) {
-        console.warn(`[creations] image not found: ${imageSrc} (${item.title})`);
+        console.warn(
+          `[creations] optimized image unavailable, using URL fallback: ${imageSrc} (${item.title})`,
+        );
       }
 
       return (
@@ -78,6 +81,12 @@ const modalItems: CreationModalItem[] = items.map((item) => ({
           {
             image ? (
               <Image src={image} alt={item.title} />
+            ) : imageUrl ? (
+              <img
+                src={imageUrl}
+                alt={item.title}
+                onerror="this.style.display='none'"
+              />
             ) : (
               <div
                 aria-hidden="true"

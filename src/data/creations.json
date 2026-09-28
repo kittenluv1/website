@@ -1,674 +1,895 @@
 {
-	"scrapbooking": [
-		{
-			"title": "burnt OUT!",
-			"images": ["scrapbooking/burnt out/1.png",
-				"scrapbooking/burnt out/2.png",
-				"scrapbooking/burnt out/3.png",
-				"scrapbooking/burnt out/4.png",
-				"scrapbooking/burnt out/5.png",
-				"scrapbooking/burnt out/6.png",
-				"scrapbooking/burnt out/7.png",
-				"scrapbooking/burnt out/8.png",
-				"scrapbooking/burnt out/9.png",
-				"scrapbooking/burnt out/10.png",
-				"scrapbooking/burnt out/11.png",
-				"scrapbooking/burnt out/12.png",
-				"scrapbooking/burnt out/13.png"],
-			"captions": ["", "", "3d collage wrapped in plastic", "", "made from harper's real hair", "i love glue!", "inspired by silence of the lamb", "receipts", "", "i spy with my little eye...", "grand prismatic in resin", "zineception", ""],
-			"date": "14 august 2024",
-			"description": "burn-themed junk journal scrapbook sketchbook/zine",
-			"comments": "this sketchbook was my project of last summer, i poured an entire like 3 weeks of my life into these pages. the notebook itself i got from some mean girls themed college event, which is why it was originally a burn book and the first page is actually a burn of my friend that i went to the event with (it's not featured here T-T). this was my first sketchbook and i love how it turned out. when i pick it up it crinkles, like it's so crunchy. in case you couldn't tell i love texture. not every page is amazing, but i guess that's the point of a sketchbook. enjoy scrolling through some of the featured pages :) the end goal for it was to make it into a zine which would go into the sketchbook, featuring the pages of the sketchbook, so it's like zineception. i think it'd be really cool to distribute the zines, maybe someday"
-		},
-		{
-			"title": "composition1 (WIP)",
-			"images": ["scrapbooking/composition1/1.png",
-				"scrapbooking/composition1/2.jpg",
-				"scrapbooking/composition1/3.jpg",
-				"scrapbooking/composition1/4.png"],
-			"captions": ["mini composition notebook", "harper sketch", "momo process", "back cover"],
-			"date": "aug 2024 - present",
-			"description": "composition book sketchbook",
-			"comments": "for drawing freaky little guys and cybercigilism and painting badly @. i've had this mini composition notebook since elementary, never knew what to do with it b4 but now i'm putting it to good use #. i had to walk to my friends apartment in the pouring rain with this notebook, so it got wet and the pages are all bleeding. but my last sketchbook was fire themed, so i guess this one is water themed. this reminds me of high school when i used to bring notebooks to class, and every year there was some water bottle leak event where all my notebooks would get drenched and wrinkly and wet TT it was part of my aesthetic"
-		},
-		{
-			"title": "sketchbook (current)", 
-			"images": ["scrapbooking/sketchbook/1.png", 
-				"scrapbooking/sketchbook/21.png", 
-				"scrapbooking/sketchbook/music.png", 
-				"scrapbooking/sketchbook/soleil.png", 
-				"scrapbooking/sketchbook/flowers.png"
-			],
-			"captions": ["cover", 
-				"drawings by frenz >.<", 
-				"which one is better?", 
-				"me n soleil",
-				"arts n crafts night with chloe!"
-			],
-			"date": "--",
-			"description": "current sketchbook", 
-			"comments": "current sketchbook. i'm trying to actually draw in this instead of just scrapbooking. been going slow"
-		}
-	],
-	"crochet & textiles": [
-		{
-			"title": "lost n' found", 
-			"images": ["crochet & textiles/lostnfound/armwarmers.png",
-				"crochet & textiles/lostnfound/makeup.jpg", 
-				"crochet & textiles/lostnfound/board.jpg", 
-				"crochet & textiles/lostnfound/article.jpg",
-				"crochet & textiles/lostnfound/process.jpg", 
-				"crochet & textiles/lostnfound/design.png"],
-			"captions": ["arm warmers", "last minute touchups", "posing", "article by refine", "arm warmers process", "designs by CC"],
-			"date": "march 8, 2024",
-			"description": "crochet arm warmers, made from mohair and scrap yarns",
-			"comments": "this look was for refine's 2024 lost n' found fashion show. i did the arm warmers, as well as some of the detailings on the dress. the diva made the dress entirely by hand and did makeup for our amazing model chanel. the designs shown were made by CC. there's lots of dangling and moving parts to these babies, the fringe parts at the bottom are made from like a scarf worn by belly dancers so these arm warmers actually make noise when you walk. i had sm fun with this look, it was worth the nights i stayed up sewing instead of studying %"
-		},
-		{
-			"title": "roadkill angel", 
-			"images": ["crochet & textiles/angel/1.JPEG",
-				"crochet & textiles/angel/2.JPEG",
-				"crochet & textiles/angel/3.JPG",
-				"crochet & textiles/angel/4.png",
-				"crochet & textiles/angel/5.png",
-				"crochet & textiles/angel/6.JPEG"],
-			"captions": ["model: micki porcaro", 
-				"on the runway", 
-				"after the show", 
-				"headset", 
-				"breastplate",
-				"decomposition 2025 #"],
-			"date": "may 9th, 2025",
-			"description": "angel wing headset, breastplate, and faux fur skirt",
-			"comments": "this look was made for refine's 2025 Decomposition runway show. again everything was fully upcycled, the wings are made from my middle school dark angel costume and my headphones. and glue. lots of glue. i didn't even know if i was going to be able to get the headphones back after i all the stuff was glued on but they came off okay! the breastplate is made from cardboard and feathers and random scrap fabrics. shoutout soleil for contributing handiwork and labor and putting up with the indecision and makerspace crashouts, and micki for walking the house down"
-		},
-		{
-			"title": "burning man", 
-			"images": ["crochet & textiles/anthropocene/thumbnail.png", "crochet & textiles/anthropocene/1.JPEG", "crochet & textiles/anthropocene/2.JPEG", "crochet & textiles/anthropocene/3.JPEG", "crochet & textiles/anthropocene/4.JPEG", "crochet & textiles/anthropocene/5.JPEG", "crochet & textiles/anthropocene/6.JPEG"],
-			"captions": ["model: benjamin zheng", "on the runway", "", "", "hobby horse :3", "chinese vogue shoot inspired makeup by tess vo"],
-			"date": "may 2, 2026", 
-			"description": "apocalyptic outfit for refine 2026 fashion show anthropocene",
-			"comments": "the process for this look was crazy - i went to the thrift store and bought a bunch of junk basically, and it was going to be a junk-scavenger type of outfit. i had a helmet and everything that i spent a bunch of time on painting and gluing and stuff. the only thing left from that is the tube on the pants. i liked how the pants turned out tho, but man those stressed me tf out. basically most of the look actually was made like the night before the show, i spent so much time sewing and pinning random stuff onto the pants and nearly asphyxiated myself while burning the edges of the clothes for the raw burnt look. i made the hobby horse the morning of ToT <br><br> i loved how everything came together though and my model was super cool. i'd never made a look for men's fashion before and i'm ngl it was hard because i couldn't try on the pants to know how they would fit. i had to combine two pants to make it bigger and i was kind of just winging it. so stressful. i ended up giving the pants to coleman because he liked them, i'm so glad they got to have a good home after the show :)"
-		},
-		{
-			"title": "star bag",
-			"images": ["crochet & textiles/bag/bag1.png",
-				"crochet & textiles/bag/bag.png",
-				"crochet & textiles/bag/beach.jpg"],
-			"date": "summer of 2023",
-			"description": "crochet shoulder bag with star decals, tutorial by <a href='https://youtu.be/xTS5R1h2ht8?si=RuSIeHrANaArn7S5' target='_blank'>coral j</a>",
-			"comments": "i remember working on this every night one summer, i think it was my last the summer before college. i was reading anna karenina back then. this still remains one of my favorite pieces i've crocheted. i wear it a lot but i can't seem to get pictures that do it justice. i take her grocery shopping, beach romping, anywhere. i love telling people i made it and i'm thinking to make another one, maybe with another color scheme"
-		},
-		{
-			"title": "plush keychain cat",
-			"images": ["crochet & textiles/cat/cat1.png", 
-				"crochet & textiles/cat/cat2.jpg", 
-				"crochet & textiles/cat/cat3.jpg",
-				"crochet & textiles/cat/cat4.jpg",
-				"crochet & textiles/cat/cat5.jpg"],
-			"date": "nov 12, 2024",
-			"description": "plush keychain cat made from scrap fabrics and embroidery thread",
-			"comments": "made this at refine's plush keychain upcycling workshop, i worked on it for like the full 3 hours that i was su,pposed to be working the poshmark table. but it turned out so adorable and it's literally me. i put it on my backpack and it goes everywhere with me now"
-		},
-		{
-			"title": "frog plush", 
-			"images": ["crochet & textiles/frog/1.png",
-				"crochet & textiles/frog/2.png",
-				"crochet & textiles/frog/3.png"],
-			"date": "4/11/2025", 
-			"description": "hand sewn frog plushie made from a pattern at frog night",
-			"comments": "i missed frog night my freshman year and literally waited a year to do this... finally made it to frog night so yayyy ᐠ( ᐛ )ᐟ"
-		},
-		{
-			"title": "sock monkey",
-			"images": ["crochet & textiles/sockmonkeygirl.png"],
-			"date": "march 2024",
-			"description": "crochet sock monkey inspired hat scarf",
-			"comments": "i honestly don't remember when exactly i finished this hat but little backstory i started this over winter break last year (it is now winter break 2024) and then i broke my wrist in the middle of working on it so i couldn't work on it for another couple of months lol. this was a self-made pattern and i spent so long imagining out and designing the pattern beforehand but it didn't turn out to be my favorite piece. i think i learned to just go with the flow more with pieces like this. also if you're wondering who is modeling this hat that is literally me"
-		},
-		{
-			"title": "cat beanie",
-			"images": ["crochet & textiles/catbeanie.png"],
-			"date": "march 2024",
-			"description": "crochet cat beanie with star detail",
-			"comments": "i might add some more stars to the beanie part i think that might be cute. it seems kind of plain right now."
-		},
-		{
-			"title": "amigurumi",
-			"images": ["crochet & textiles/amigurumi/1.png",
-				"crochet & textiles/amigurumi/2.png",
-				"crochet & textiles/amigurumi/3.png",
-				"crochet & textiles/amigurumi/4.png"],
-			"date": "est. 2014 - 2019",
-			"description": "crochet amigurumi, made using various tutorials",
-			"comments": "i was obsessed with making a ton of these little guys for a while, they're super fun to make and make for great gifts. gave some of these as christmas gifts to my parents one year"
-		}
-	],
-	"jewelry": [
-		{
-			"title": "charm necklace", 
-			"images": ["jewelry/silver/necklace.png", 
-				"jewelry/silver/process.jpg"],
-			"date": "2024-08-16",
-			"description": "silver charm necklace made from materials sourced from goodwill",
-			"comments": "i put this together using parts from a few different necklaces and some charms that i had lying around from forever ago. this was super fun to make, i'll definitely do more jewelry making like this in the future. i thought it turned out super cool but it's hanging on my wall as decoration rn and i don't wear it so i might take it apart and turn it into something new again @"
-		},
-		{
-			"title": "time rosary", 
-			"images": ["jewelry/rosary.png"],
-			"date": "2024-08-17",
-			"description": "wire wrapped rosary style piece made from a broken watch and beads sourced from goodwill",
-			"comments": "i made this piece in one sitting in like 4 hours. i chose every bead and twisted every loop by hand. i don't wear it often because it's not really my style but i really like it as an art piece"
-		},
-		{
-			"title": "hair clips",
-			"images": ["jewelry/clips/1.png",
-				"jewelry/clips/2.png",
-				"jewelry/clips/3.png"],
-			"date": "nov 9, 2024",
-			"description": "hair clips made with various beads & ornaments",
-			"comments": "i made these at sam's birthday party last year, it was such a cute activity and everyone made such beautiful clips. the party was purple orchid themed and she also had an amazing cake that she made herself with like blueberry frosting it was so good"
-		},
-		{
-			"title": "keychain", 
-			"images": ["jewelry/keychain.png"],
-			"date": "3/22/25", 
-			"description": "keychain made from an assortment of keychain parts, beads, embroidery thread",
-			"comments": "i made this from two iconic keychains from my backpack which both fell apart at the strings, so i put them together to make the ultimate frankenstein keychain. one of those keychains i have had on my backpack for years and kind of had a strong emotional attachment to lol, that's the one with the turtle and evil eye looking beads. the other one was from a make your own keychain depop booth with handmade clay beads made by my friend >.<"
-		},
-		{
-			"title": "resin charms", 
-			"images": ["jewelry/resin/charms.png", "jewelry/resin/1.png", "jewelry/resin/process.jpeg"],
-			"captions": ["charms", "", "uv resin process"],
-			"date": "dec 14 2025", 
-			"description": "necklaces made from resin and silver findings", 
-			"comments": "made these necklaces using resin and a findings kit. it was really easy, i just printed pictures out on paper and processed them a bit and then sealed them with the findings and resin. i was able to give these all out to people and they really liked it so i will be making more :)"
-		},
-		{
-			"title": "horse wrap bracelet",
-			"images": ["jewelry/horse/1.png",
-				"jewelry/horse/2.png"],
-			"date": "3/22/25", 
-			"description": "leather string with cross and horse charm",
-			"comments": "i like how this can be worn wrapped around the wrist or as a necklace. there is no special symbolism here."
-		},
+  "scrapbooking": [
+    {
+      "title": "composition1",
+      "images": [
+        "scrapbooking/composition1/front.png",
+        "scrapbooking/composition1/1.png",
+        "scrapbooking/composition1/2.png",
+        "scrapbooking/composition1/3.jpg",
+        "scrapbooking/composition1/4.png",
+        "scrapbooking/composition1/5.jpg",
+        "scrapbooking/composition1/6.jpg",
+        "scrapbooking/composition1/8.png",
+        "scrapbooking/composition1/9.png",
+        "scrapbooking/composition1/10.png",
+        "scrapbooking/composition1/11.png",
+        "scrapbooking/composition1/12.png",
+        "scrapbooking/composition1/13.png",
+        "scrapbooking/composition1/14.png",
+        "scrapbooking/composition1/15.png",
+        "scrapbooking/composition1/16.png",
+        "scrapbooking/composition1/17.png",
+        "scrapbooking/composition1/18.png",
+        "scrapbooking/composition1/back.png"
+      ],
+      "captions": [
+        "mini composition notebook",
+        "",
+        "jennie kim",
+        "barper",
+        "momo",
+        "momo process",
+        "little guys",
+        "ander tattoo flash!",
+        "summer in japan spread >.<",
+        "blind box opening -->",
+        "mystery item!",
+        "toro shrine",
+        "heartbroken poet era",
+        "stickerbook!",
+        "",
+        "fish",
+        "ander tamagotchi stickers",
+        "i've seen better nana's",
+        "fin"
+      ],
+      "date": "aug 2024 - june 2026",
+      "description": "composition book sketchbook",
+      "comments": "for drawing freaky little guys and cybercigilism and painting badly @. i've had this mini composition notebook since elementary, never knew what to do with it b4 but now i'm putting it to good use #. i had to walk to my friends apartment in the pouring rain with this notebook, so it got wet and the pages are all bleeding. but my last sketchbook was fire themed, so i guess this one is water themed. this reminds me of high school when i used to bring notebooks to class, and every year there was some water bottle leak event where all my notebooks would get drenched and wrinkly and wet TT it was part of my aesthetic <br><br> i'm back two years later finally adding all the pictures to the creations page... this notebook followed me to japan and a lot of the pages towards the end are inspired by or a result of that trip. i really like this notebook, it turned out really fun! my new favorite fs"
+    },
+    {
+      "title": "burnt OUT!",
+      "images": [
+        "scrapbooking/burnt out/1.png",
+        "scrapbooking/burnt out/2.png",
+        "scrapbooking/burnt out/3.png",
+        "scrapbooking/burnt out/4.png",
+        "scrapbooking/burnt out/5.png",
+        "scrapbooking/burnt out/6.png",
+        "scrapbooking/burnt out/7.png",
+        "scrapbooking/burnt out/8.png",
+        "scrapbooking/burnt out/9.png",
+        "scrapbooking/burnt out/10.png",
+        "scrapbooking/burnt out/11.png",
+        "scrapbooking/burnt out/12.png",
+        "scrapbooking/burnt out/13.png"
+      ],
+      "captions": [
+        "",
+        "",
+        "3d collage wrapped in plastic",
+        "",
+        "made from harper's real hair",
+        "i love glue!",
+        "inspired by silence of the lamb",
+        "receipts",
+        "",
+        "i spy with my little eye...",
+        "grand prismatic in resin",
+        "zineception",
+        ""
+      ],
+      "date": "14 august 2024",
+      "description": "burn-themed junk journal scrapbook sketchbook/zine",
+      "comments": "this sketchbook was my project of last summer, i poured an entire like 3 weeks of my life into these pages. the notebook itself i got from some mean girls themed college event, which is why it was originally a burn book and the first page is actually a burn of my friend that i went to the event with (it's not featured here T-T). this was my first sketchbook and i love how it turned out. when i pick it up it crinkles, like it's so crunchy. in case you couldn't tell i love texture. not every page is amazing, but i guess that's the point of a sketchbook. enjoy scrolling through some of the featured pages :) the end goal for it was to make it into a zine which would go into the sketchbook, featuring the pages of the sketchbook, so it's like zineception. i think it'd be really cool to distribute the zines, maybe someday"
+    },
+    {
+      "title": "sketchbook (current)",
+      "images": [
+        "scrapbooking/sketchbook/1.png",
+        "scrapbooking/sketchbook/21.png",
+        "scrapbooking/sketchbook/music.png",
+        "scrapbooking/sketchbook/soleil.png",
+        "scrapbooking/sketchbook/flowers.png"
+      ],
+      "captions": [
+        "cover",
+        "drawings by frenz >.<",
+        "which one is better?",
+        "me n soleil",
+        "arts n crafts night with chloe!"
+      ],
+      "date": "--",
+      "description": "current sketchbook",
+      "comments": "current sketchbook. i'm trying to actually draw in this instead of just scrapbooking. been going slow"
+    }
+  ],
+  "crochet & textiles": [
+    {
+      "title": "lost n' found",
+      "images": [
+        "crochet & textiles/lostnfound/armwarmers.png",
+        "crochet & textiles/lostnfound/makeup.jpg",
+        "crochet & textiles/lostnfound/board.jpg",
+        "crochet & textiles/lostnfound/article.jpg",
+        "crochet & textiles/lostnfound/process.jpg",
+        "crochet & textiles/lostnfound/design.png"
+      ],
+      "captions": [
+        "arm warmers",
+        "last minute touchups",
+        "posing",
+        "article by refine",
+        "arm warmers process",
+        "designs by CC"
+      ],
+      "date": "march 8, 2024",
+      "description": "crochet arm warmers, made from mohair and scrap yarns",
+      "comments": "this look was for refine's 2024 lost n' found fashion show. i did the arm warmers, as well as some of the detailings on the dress. the diva made the dress entirely by hand and did makeup for our amazing model chanel. the designs shown were made by CC. there's lots of dangling and moving parts to these babies, the fringe parts at the bottom are made from like a scarf worn by belly dancers so these arm warmers actually make noise when you walk. i had sm fun with this look, it was worth the nights i stayed up sewing instead of studying %"
+    },
+    {
+      "title": "roadkill angel",
+      "images": [
+        "crochet & textiles/angel/1.JPEG",
+        "crochet & textiles/angel/2.JPEG",
+        "crochet & textiles/angel/3.JPG",
+        "crochet & textiles/angel/4.png",
+        "crochet & textiles/angel/5.png",
+        "crochet & textiles/angel/6.JPEG"
+      ],
+      "captions": [
+        "model: micki porcaro",
+        "on the runway",
+        "after the show",
+        "headset",
+        "breastplate",
+        "decomposition 2025 #"
+      ],
+      "date": "may 9th, 2025",
+      "description": "angel wing headset, breastplate, and faux fur skirt",
+      "comments": "this look was made for refine's 2025 Decomposition runway show. again everything was fully upcycled, the wings are made from my middle school dark angel costume and my headphones. and glue. lots of glue. i didn't even know if i was going to be able to get the headphones back after i all the stuff was glued on but they came off okay! the breastplate is made from cardboard and feathers and random scrap fabrics. shoutout soleil for contributing handiwork and labor and putting up with the indecision and makerspace crashouts, and micki for walking the house down"
+    },
+    {
+      "title": "burning man",
+      "images": [
+        "crochet & textiles/anthropocene/thumbnail.png",
+        "crochet & textiles/anthropocene/1.JPEG",
+        "crochet & textiles/anthropocene/2.JPEG",
+        "crochet & textiles/anthropocene/3.JPEG",
+        "crochet & textiles/anthropocene/4.JPEG",
+        "crochet & textiles/anthropocene/5.JPEG",
+        "crochet & textiles/anthropocene/6.JPEG"
+      ],
+      "captions": [
+        "model: benjamin zheng",
+        "on the runway",
+        "",
+        "",
+        "hobby horse :3",
+        "chinese vogue shoot inspired makeup by tess vo"
+      ],
+      "date": "may 2, 2026",
+      "description": "apocalyptic outfit for refine 2026 fashion show anthropocene",
+      "comments": "the process for this look was crazy - i went to the thrift store and bought a bunch of junk basically, and it was going to be a junk-scavenger type of outfit. i had a helmet and everything that i spent a bunch of time on painting and gluing and stuff. the only thing left from that is the tube on the pants. i liked how the pants turned out tho, but man those stressed me tf out. basically most of the look actually was made like the night before the show, i spent so much time sewing and pinning random stuff onto the pants and nearly asphyxiated myself while burning the edges of the clothes for the raw burnt look. i made the hobby horse the morning of ToT <br><br> i loved how everything came together though and my model was super cool. i'd never made a look for men's fashion before and i'm ngl it was hard because i couldn't try on the pants to know how they would fit. i had to combine two pants to make it bigger and i was kind of just winging it. so stressful. i ended up giving the pants to coleman because he liked them, i'm so glad they got to have a good home after the show :)"
+    },
+    {
+      "title": "star bag",
+      "images": [
+        "crochet & textiles/bag/bag1.png",
+        "crochet & textiles/bag/bag.png",
+        "crochet & textiles/bag/beach.jpg"
+      ],
+      "date": "summer of 2023",
+      "description": "crochet shoulder bag with star decals, tutorial by <a href='https://youtu.be/xTS5R1h2ht8?si=RuSIeHrANaArn7S5' target='_blank'>coral j</a>",
+      "comments": "i remember working on this every night one summer, i think it was my last the summer before college. i was reading anna karenina back then. this still remains one of my favorite pieces i've crocheted. i wear it a lot but i can't seem to get pictures that do it justice. i take her grocery shopping, beach romping, anywhere. i love telling people i made it and i'm thinking to make another one, maybe with another color scheme"
+    },
+    {
+      "title": "plush keychain cat",
+      "images": [
+        "crochet & textiles/cat/cat1.png",
+        "crochet & textiles/cat/cat2.jpg",
+        "crochet & textiles/cat/cat3.jpg",
+        "crochet & textiles/cat/cat4.jpg",
+        "crochet & textiles/cat/cat5.jpg"
+      ],
+      "date": "nov 12, 2024",
+      "description": "plush keychain cat made from scrap fabrics and embroidery thread",
+      "comments": "made this at refine's plush keychain upcycling workshop, i worked on it for like the full 3 hours that i was su,pposed to be working the poshmark table. but it turned out so adorable and it's literally me. i put it on my backpack and it goes everywhere with me now"
+    },
+    {
+      "title": "frog plush",
+      "images": [
+        "crochet & textiles/frog/1.png",
+        "crochet & textiles/frog/2.png",
+        "crochet & textiles/frog/3.png"
+      ],
+      "date": "4/11/2025",
+      "description": "hand sewn frog plushie made from a pattern at frog night",
+      "comments": "i missed frog night my freshman year and literally waited a year to do this... finally made it to frog night so yayyy ᐠ( ᐛ )ᐟ"
+    },
+    {
+      "title": "sock monkey",
+      "images": ["crochet & textiles/sockmonkeygirl.png"],
+      "date": "march 2024",
+      "description": "crochet sock monkey inspired hat scarf",
+      "comments": "i honestly don't remember when exactly i finished this hat but little backstory i started this over winter break last year (it is now winter break 2024) and then i broke my wrist in the middle of working on it so i couldn't work on it for another couple of months lol. this was a self-made pattern and i spent so long imagining out and designing the pattern beforehand but it didn't turn out to be my favorite piece. i think i learned to just go with the flow more with pieces like this. also if you're wondering who is modeling this hat that is literally me"
+    },
+    {
+      "title": "cat beanie",
+      "images": ["crochet & textiles/catbeanie.png"],
+      "date": "march 2024",
+      "description": "crochet cat beanie with star detail",
+      "comments": "i might add some more stars to the beanie part i think that might be cute. it seems kind of plain right now."
+    },
+    {
+      "title": "amigurumi",
+      "images": [
+        "crochet & textiles/amigurumi/1.png",
+        "crochet & textiles/amigurumi/2.png",
+        "crochet & textiles/amigurumi/3.png",
+        "crochet & textiles/amigurumi/4.png"
+      ],
+      "date": "est. 2014 - 2019",
+      "description": "crochet amigurumi, made using various tutorials",
+      "comments": "i was obsessed with making a ton of these little guys for a while, they're super fun to make and make for great gifts. gave some of these as christmas gifts to my parents one year"
+    }
+  ],
+  "jewelry": [
+    {
+      "title": "charm necklace",
+      "images": ["jewelry/silver/necklace.png", "jewelry/silver/process.jpg"],
+      "date": "2024-08-16",
+      "description": "silver charm necklace made from materials sourced from goodwill",
+      "comments": "i put this together using parts from a few different necklaces and some charms that i had lying around from forever ago. this was super fun to make, i'll definitely do more jewelry making like this in the future. i thought it turned out super cool but it's hanging on my wall as decoration rn and i don't wear it so i might take it apart and turn it into something new again @"
+    },
+    {
+      "title": "time rosary",
+      "images": ["jewelry/rosary.png"],
+      "date": "2024-08-17",
+      "description": "wire wrapped rosary style piece made from a broken watch and beads sourced from goodwill",
+      "comments": "i made this piece in one sitting in like 4 hours. i chose every bead and twisted every loop by hand. i don't wear it often because it's not really my style but i really like it as an art piece"
+    },
+    {
+      "title": "hair clips",
+      "images": [
+        "jewelry/clips/1.png",
+        "jewelry/clips/2.png",
+        "jewelry/clips/3.png"
+      ],
+      "date": "nov 9, 2024",
+      "description": "hair clips made with various beads & ornaments",
+      "comments": "i made these at sam's birthday party last year, it was such a cute activity and everyone made such beautiful clips. the party was purple orchid themed and she also had an amazing cake that she made herself with like blueberry frosting it was so good"
+    },
+    {
+      "title": "keychain",
+      "images": ["jewelry/keychain.png"],
+      "date": "3/22/25",
+      "description": "keychain made from an assortment of keychain parts, beads, embroidery thread",
+      "comments": "i made this from two iconic keychains from my backpack which both fell apart at the strings, so i put them together to make the ultimate frankenstein keychain. one of those keychains i have had on my backpack for years and kind of had a strong emotional attachment to lol, that's the one with the turtle and evil eye looking beads. the other one was from a make your own keychain depop booth with handmade clay beads made by my friend >.<"
+    },
+    {
+      "title": "resin charms",
+      "images": [
+        "jewelry/resin/charms.png",
+        "jewelry/resin/1.png",
+        "jewelry/resin/process.jpeg"
+      ],
+      "captions": ["charms", "", "uv resin process"],
+      "date": "dec 14 2025",
+      "description": "necklaces made from resin and silver findings",
+      "comments": "made these necklaces using resin and a findings kit. it was really easy, i just printed pictures out on paper and processed them a bit and then sealed them with the findings and resin. i was able to give these all out to people and they really liked it so i will be making more :)"
+    },
+    {
+      "title": "horse wrap bracelet",
+      "images": ["jewelry/horse/1.png", "jewelry/horse/2.png"],
+      "date": "3/22/25",
+      "description": "leather string with cross and horse charm",
+      "comments": "i like how this can be worn wrapped around the wrist or as a necklace. there is no special symbolism here."
+    },
 
-		{
-			"title": "beaded bird necklace",
-			"images": ["jewelry/bird.png"],
-			"date": "summer 2022",
-			"description": "beaded necklace with bird charm and matching beaded earrings",
-			"comments": "i made this one summer at kay's house, her mom has a beading kit and is super into jewelry and stuff like that. i feel like this was my first time making jewelry since i was like a kid, so i really enjoyed making this. i also love doing crafts with friends"
-		}
-	],
-	"preservation": [
-		{
-			"title": "cicadas: japan", 
-			"images": ["preservation/cicadas/1.png",
-				"preservation/cicadas/2.png",
-				"preservation/cicadas/3.png",
-				"preservation/cicadas/4.png",
-				"preservation/cicadas/5.png",
-				"preservation/cicadas/6.png"],
-			"captions": ["kuma-zemi (bear cicada)", "aburazemi (large brown cicada)", "pinning", "chammaemi (robust cicada)", "robust :p", "cicada party"],
-			"date": "summer 2025", 
-			"description": "cicadas found from korea & japan", 
-			"comments": "the cicadas in japan were so loud, truly a summer in japan experience. i've never really heard cicadas here where i'm from, not to mention the amount that we heard constantly in japan... i learned that cicadas have one of the longest insect lifespans, living 13 to 17 years, yet they only spend a few weeks above ground for their whole lives, just to mate, and then they die. which is kinda funny and makes me like the little guys even more. the defeaning sound that they make is a mating call, prodced by a special membrane on male cicadas called tymbals, and can reach over 100 decibels :o which is enough to cause hearing loss <br><br> <em>kuma-zemi</em> (bear cicada): there was this one corner on my walk to work where the cicadas would get earsplittingly loud and they were there every morning. one day i was walking back from lunch with my coworkers and i spotted this guy just lying there on the ground. i was having a really bad day and i'd never seen a cicada before, so that really made my day. this is the <a href='https://metropolisjapan.com/the-screaming-insects-of-summer/' target='_blank'>largest</a> of all cicada species and also the angriest-sounding, hence its name <em>kuma</em> which means 'bear' in japanese. <br><br> <em>chammaemi</em> (robust cicada): my friends spotted this one on the ground in korea, whiel we were on a late night hunt for snacks for them since they had literally gone out for like 48 hours straight and barely had anything to eat. this one is really cute imo. its korean name <em>chammaemi</em> means 'common cicada' because of how common these guys are in korea. <br><br> <em>aburazemi</em> (large brown cicada): i think i picked this one up just from the side of the road, i don't really remember anymore. it was from japan though. its name <em>abura</em> means <a href='https://bugsofjapan.tumblr.com/post/146283782981/graptopsaltria-nigrofuscata-%E3%82%A2%E3%83%96%E3%83%A9%E3%82%BC%E3%83%9F-abura-zemi' target='_blank'>oil</a> in japanese, and comes from the sound it makes, similar to the sound of oil in a frying pan"
-		},
-		{
-			"title": "cicada: troy", 
-			"images": ["preservation/dog-days.png"],
-			"date": "8/20/29",
-			"description": "cicada found in troy, new york. likely a <a href='https://www.cicadamania.com/cicadas/common-cicadas-of-new-york/' target='_blank'>dog days</a> cicada",
-			"comments": "i found this guy on the ground while walking to my last day of work. that was actually the only day i walked to work, it was because i missed the bus. it wasn't a complete specimen when i found it already. it's really small though compared to the ones in japan, it's so cute."
-		},
-		{
-			"title": "beetles of japan", 
-			"images": ["preservation/beetles-japan/koganemushi.png",
-				"preservation/beetles-japan/hanamuguri.png",
-				"preservation/beetles-japan/oosenchikogane.png",
-				"preservation/beetles-japan/wip.jpg",
-				"preservation/beetles-japan/pinning.png"],
-			"captions": ["<em>koganemushi</em> (june bug)", "<em>hanamuguri</em> (flower chafer)", "<em>oosenchikogane</em> (earth-boring dung beetle)", "wip", "pinning", "joeyjosh (my son)", "posin' it up"],
-			"date": "summer 2025", 
-			"description": "beetles i found in japan!!!",
-			"comments": "the green ones were soo hard to identify! this <a href='https://preview.redd.it/what-kind-of-beetle-is-this-v0-d30lkr3qhscd1.jpeg?width=595&auto=webp&s=a0dcf4af3124de3c0e34829b662d3e25b5ee8dbe' target='_blank'>image</a> i found on reddit helped me with the identification a lot. the <em>koganemushi</em> is probably some ind of june bug or chafer. in japanese it means 'gold bug' and apparently there's some <a href='https://blogs.transparent.com/japanese/japanese-beetle-song/' target='_blank'>children's song</a> about it being rich. <em>hanamuguri</em> means flower chafer and are often found among flowers. unfortunately i don't remember where exactly i found these cute little green beetles. <em>oosenchikogane</em>, the pretty blue beetle, was found on our trip to nachii waterfalls. my friend katie and i were playing with an alive one that kept walking right off our hands and falling on the ground. it was very cute and clumsy. after a while we kept walking and then joey/josh find this one that's a little banged up, looks like it might have gotten crushed a bit but they said they weren't the ones who crushed it. beetles are so pretty :3 i lowkey find the first one so satisfying how it just looks like a little bean T-T the dung beetle's reflective lustre kind of got covered by the resin unfortunately, it's probably because the resin is too thick and the light can't penetrate through well enough to show the color... also in japan we found a little rhinocerous beetle outside a family mart and we adopted him and named him joeyjosh. he didn't die but i wanted to shout him out... miss my little guy"
-		},
-		{
-			"title": "leaf beetle",
-			"images": ["preservation/leafbeetle/1.png",
-				"preservation/leafbeetle/2.png"],
-			"date": "10/31/25",
-			"description": "<em>paropsisterna</em> leaf beetle found in los angeles",
-			"comments": "this little leaf beetle might just be the cutest little guy ever... it looks like a little red button. the color really stands out compared to the rest of my collection... soleil found this guy while walking in the street and gave it to me to preserve, so sweet :> i love it it's such a bean"
-		},
-		{
-			"title": "green darner", 
-			"images": ["preservation/dragonfly/1.png", 
-				"preservation/dragonfly/2.png",
-				"preservation/dragonfly/3.png",
-				"preservation/dragonfly/4.jpg"],
-			"date": "1/5/25",
-			"description": "common green darner dragonfly preserved in resin",
-			"comments": "i found this dragonfly in my backyard one day just laying there in almost pristine condition. it was dead obviously it had ants on it but the ants had barely even gotten to it yet like i was like this is a crazy find. i lost a bit of its wing while doing the resin, and it also lost some color from when i first found it but it still looks beautiful"
-		},
-		{
-			"title": "shiokara",
-			"images": ["preservation/shiokara/1.png",
-				"preservation/shiokara/2.png",
-				"preservation/shiokara/3.jpg"],
-			"date": "aug 16, 2025", 
-			"description": "male <a href='https://ture-japan.com/na/3741.html target='_blank'>white-tailed skinner</a> from japan", 
-			"comments": "my friend joey spotted this dying on the side of the road in japan. we brought it in and it died shortly afterwards, and then it went with me on three international flights. it lost all of its legs in the transport/resin process unfortunately, and the resin seems to make the colors different. it also bothers me that it's kinda sideways lol, but i used uv resin this time instead of epoxy and it was a much better experience. apparently its name comes from the white color on its body/tail because it looks like salt, which is 'shio' in japanese. i decided not to rehydrate and pin it because i wanted to resin him the way i found him... dying, i guess, that is"
-		},
-		{
-			"title": "lizards",
-			"images": ["preservation/lizard/1.png",
-				"preservation/lizard/western-fence.png",
-				"preservation/lizard/jar.jpg",
-				"preservation/lizard/male.png", 
-				"preservation/lizard/male-dry.png", 
-				"preservation/lizard/pinning-male.jpg",
-				"preservation/lizard/wet.png"],
-			"captions": ["female western fence lizard", "19 july 2024", "drying", "male bluebelly", "1/5/25", "pinning", "wet specimen (march 29, 2026)"],
-			"date": "2024 - 2026",
-			"description": "western fence lizards (aka 'bluebellies'), preserved in resin & ethanol",
-			"comments": "<strong>female western fence lizard:</strong> i found this guy while walking the dogs with grce's dad and it was already all dried up and just sticking up facedown in the grass. it must have gotten dehydrated from the summer sun and fallen down from wherever it was. this was my first preservation project bcs the opportunity literally presented itself to my hands, i never even thought of doing stuff like this before but it was too good to pass up... when i first brought it home my mom was disgusted but she was lowkey more chill about it than i expected lol. honestly she seemed not that surprised. i covered it in salt for a few weeks and bought an airtight container and used dessicants to dry it some more, and then once it was completely dry i used a brush to coat it in resin layer by layer. ruined the brush but now i have a resin covered lizard... i believe this is a female western fence lizard because it doesn't have the blue markings on its belly that the other one has. also did you know that the weird push up thing that lizards do is done by males to show their colors and display dominance? i always thought that was just a weird lizard quirk <br><br> <strong>male bluebelly:</strong> i also found this guy while walking the dog, but it was not dry already like the first one but fresh, with ants crawling all over it. i tried to actually position this one to look a bit more alive like you're supposed to but it got super deflated when it dried and it looks very much dead. i made a blog <a href='/pages/blog.html#24' target='_blank'>post</a> about it if you want to read more of my thoughts... <br><br> <strong>wet specimen: </strong> this one is likely ALSO a western fence lizard. sorry they're the most common species in the sacramento area ToT what can i say. i got tired of dry preserving these guys especially because the last one just kind of deflated... and i also didn't have time to dry it i had to go to school. so i decided to change it up and try a wet specimen. i also finally got my hands on some ethanol here so i can preserve them better"
-		},
-		{
-			"title": "mouse",
-			"images": ["preservation/mouse/1.png",
-				"preservation/mouse/2.png"],
-			"date": "1/18/25",
-			"description": "mouse fell into the cookie jar",
-			"comments": "soooo sun's cat kitty gifted this mouse to us while i was at their home in sd and i brought it all the way back home with me to preserve it. this is my first wet specimen but actually wet specimens are like really easy you literally just soak them in and that's it"
-		},
-		{
-			"title": "bat", 
-			"images": ["preservation/bat/1.png", "preservation/bat/2.png", "preservation/bat/3.png"],
-			"date": "aug 16, 2026",
-			"description": "bat",
-			"comments": "i found him on my way back from skating in new york. i was having a really bad day because my roommates had all moved out and i was kind of just alone and it was really hitting me so i went out to skate and saw this guy just chilling, half decomposing on some driveway while i was attempting to kickflip. stuck him in the freezer and shipped him home with me. good things happen to those who go outside<br><br>it's kiiind of hard to tell what kind of bat it is but here are the <a href='https://www.teatown.org/bats-of-westchester/' target='_blank'>9 species of bats that call new york home</a>. i guess i'm just keeping it as a dry specimen, not sure how else i would be able to preserve it"
-		},
-		{
-			"title": "praying mantis",
-			"images": ["preservation/mantis/1.png",
-				"preservation/mantis/2.png"],
-			"date": "11/13/25",
-			"description": "severed praying mantis head i found on the steps behind de neve birch",
-			"comments":"bro i found this when walking to epic to meet up with fam mart socks ppl, it was kind of crazy that i even spotted it but it was just on the steps and i looked around for the rest of it but it was just the head :o maybe another mantis ate the rest of him... anyways a few days later we literally saw a beautiful big albino praying mantis near boelter and this guy just picked her up because he used to have a pet mantis and let me hold it and everything... i was like hm maybe it's praying mantis szn ᐠ( ᐛ )ᐟ also i kinda fw how it's in a cat shape haha it's the only resin mold shape i have. an it's lowkey like in relief like half the mantis is sticking out of the resin which is cool"
-		},
-		{
-			"title": "CENTIPEDE", 
-			"images": ["preservation/centipede.png"],
-			"date": "summer 2026",
-			"description": "centipede",
-			"comments": "i lowkey don't remember where i found this, probably in a dusty corner somewhere lol. centipedes are cool though, this one's really small and i lost most of its legs probably in the process but ah it's ok u see the gist"
-		},
-		{
-			"title": "wasps", 
-			"images": ["preservation/wasps/european.png", "preservation/wasps/paper.png"],
-			"captions": ["european paper wasp", "paper wasp"],
-			"date": "june 2026",
-			"description": "wasps",
-			"comments": "<strong>european paper wasp:</strong> i found this guy at the bottom of a pot while we were cleaning out our kitchen in our apartment in troy ToT we threw out that pot but this wasp was in great condition for some reason lol <br><br><strong>paper wasp:</strong> kinda forgot where i found this, i think it was also at the pickleball courts lowk. i would get better pictures of it but i lowkey lost it idk where it is ToT <br><br> edit: i found it and took a better picture lawl"
-		},
-		{
-			"title": "stinkbugs", 
-			"images": [	"preservation/stinkbugs/shield.png",
-				"preservation/stinkbugs/marmorated.png",
-				"preservation/stinkbugs/shield-resin.png"
-			],
-			"captions": ["giant shield bug from dali, china", 
-				"", 
-				"brown marmorated stink bug"],
-			"date": "aug 25, 2025",
-			"description": "stinkbugs found in china and los angeles", 
-			"comments": "<em>brown marmorated stink bug</em>: found this guy in la, it's just such a stink bug lol. apparently they're an invasive species in the states<br><br><em>giant stink bug</em>: saw him on the ground while running to catch the taxi to get back from dali and scared the sh*t out of my cousin... he's like actually afraid of bugs and i thought he was going to throw me out of the car T-T apparently these giant shield bugs are common in yunnan, china, shoutout to the hometown <br><br>post edit: honestly i think the resin didn't really do it justice, and it lost some parts in the process T-T. idk why i always kind of subconsciously thought this bug in particular was kind of nasty, mb because it was kind of stinky because it's part of the stink bug family? and the way the legs were curled in kind of freaked me out T-T but these bugs are actually pretty cool"
-		},
-		{
-			"title": "beetlez", 
-			"images": ["preservation/beetles-misc/ground-beetle.png", "preservation/beetles-misc/giant-black.png"],
-			"captions": ["ground beetle encased in resin ₍^.&nbsp.^₎⟆", "giant black water beetle"],
-			"date": "aug 29, 2026",
-			"description": "beetles found in folsom, california",
-			"comments": "<strong>ground beetle:</strong> i found this guy in the laundry bins also. he was helping me clean <br><br><strong>giant black water beetle:</strong> i think i found him at the pickleball courts... i remember having to pull tennis fuzzies off of its legs. not sure what he was doing there. don't you love how big and watery and black he is? <br><br> edit: there's a tonnnnee of these guys at the pickleball courts, after a certain point at night there's just a bunch of them crawling around. i had to rescue them so they don't get smushed underfoot they're so cute tho"
-		},
-		{
-			"title": "grasshopper", 
-			"images": ["preservation/grasshopper.png"],
-			"date": "summer 2026",
-			"description": "grasshopper",
-			"comments": "i think this was also? found at the folsom pickleball courts? why are there so much variety of bugs at the pickleball courts? anyways i've never found a grasshopper before so this was pretty cool. hoping for many more beautiful grasshoppers to come our way"
-		},
-		{
-			"title": "mothszzz", 
-			"images": ["preservation/moths/1.png",
-				"preservation/moths/2.png",
-				"preservation/moths/3.png"],
-			"captions": ["moth pre-resin", "post-resin", "tiny moth (tiny banana for reference)"],
-			"date": "aug 27, 2025", 
-			"description": "mothszzzzzzzzzz",
-			"comments": "i found this moth on the ground by de neve birch and didn't want to deal with it for a while bcs it seemed annoying to do a moth so i just left it for like a whole year. it is kind of hard to tell what's going on with it after the resin ngl as you can see in the picture but it's fine it still looks pretty cool. it just looks like a moth nugget. the other moth is a tiny moth i found in the laundry dust, that one was a pain in the butt but it turned out gud so it was worth it :3"
-		},
-		{
-			"title": "misc.", 
-			"images": ["preservation/misc/misc.png", 
-				"preservation/misc/1.png", 
-				"preservation/misc/2.png",
-				"preservation/misc/3.png",
-				"preservation/misc/4.png",
-				"preservation/misc/5.png",
-				"preservation/misc/collection.png"],
-			"captions": ["misc. items",
-				"snail shells i found when i was young", 
-				"rose petal from my mom's garden", 
-				"lizard tail found in the backyard", 
-				"cicada molts and wing found in japan", 
-				"tiny spider", 
-				"the full collection (˵ •̀ ᴗ - ˵ ) ✧"],
-			"date": "--", 
-			"description": "miscellaneous items preserved in uv resin", 
-			"comments": "misc. comments: <br><br><strong>snail shell:</strong> i had that snail shell since i was a kid, i used to lowkey collect snail shells... that was the early roots of this 'hobby' i guess. <br><br><strong>cicada molts:</strong> i found a tonnn of those cicada molts in korea and japan, collected them in a bottle, it looked insane. i tossed most of them though because they were so brittle and kind of nasty, but now i wish i kept more. <br><br><strong>tiny spider:</strong> as for the tiny spider, i found it collecting dust in the laundry basket outside, i think it's lowkey beheaded because i can't see the head... but also it's so tiny i really can't tell T-T either way i think it's beyond identification. it looks cute on the rose petal though. <br><br> also doesn't the full collection look cool?"
-		}
-	],
-	"web": [
-		{
-			"title": "kittenluv1",
-			"images": ["web/kittenluv1/index.png",
-				"web/kittenluv1/tamaJUMP!.png", 
-				"web/kittenluv1/nostalgiablog.png",
-				"web/kittenluv1/creations.png",
-				"web/kittenluv1/portfolio.png"],
-			"captions": ["index", "old index with tama player open", "nostalgiablog","creations.html", "portfolio page"],
-			"date": "01/01/25",
-			"description": "personal <a href='/' target='_blank'>website</a> made with HTML, JS, and CSS",
-			"comments": "my personal website to showcase all my works. includes tama game, blog, creations page, and plenty more... my goal is to make it fun, creative, and interactive. i'm always adding to it, check it out!"
-		},
-		{
-			"title": "pic website",
-			"images": ["web/pic/1.png",
-				"web/pic/2.png",
-				"web/pic/3.png",
-				"web/pic/4.png",
-				"web/pic/5.png"],
-			"captions": ["login page", "index with phishing links", "phished!", "blog page", "merch page"],
-			"date": "12-11-2024",
-			"description": "my first full <a href='https://kittenluv1.lovestoblog.com' target='_blank'>website</a>, built for my PIC40a class project. used html, css, javascript, php, and sqlite3. hosted on infinityfree",
-			"comments": "i'm so glad i took this class, i learned so much building this website and at such a manageable pace. though the website is simple, this website paved the way for the personal website i have built today. there was a lot of contraints for how to make this cus i had to get grade but profsarah was super cool and this class was so fun and helpful. i'm not sure how long this will stay on the pic servers but it does have a fully functioning backend for now so you can make an account and post comments on the blog page and everything. update: they took it off the pic servers but i found a web server to host it and so it's back up again!!! >,<"
-		},
-		{
-			"title": "neokitties WIP",
-			"images": ["web/neocities/1.png",
-				"web/neocities/2.png"],
-			"captions": ["home page", "resources"],
-			"date": "2/16/25", 
-			"description": "my <a href='https://kittenluv1.neocities.org/' target='_blank'>neocities</a> site!!!",
-			"comments": "i started this and then haven't touched it for 4 months and idk when i'll get back to it but i definitely will work on it a lot in the future and i have a lot of ideas for it... i've wanted a neocities forever so it will definitely happen! just wait..."
-		},
-		{
-			"title": "clubhouse", 
-			"images": ["web/clubhouse/1.png", 
-				"web/clubhouse/2.png"],
-			"date": "may 29, 2025", 
-			"description": "a web <a href='https://www.clubhouseucla.com/clubs' target='_blank'>platform</a> for rating student organizations at ucla, developed with the amazing clubhouse team!",
-			"comments": "i was debating whether to include this since it wasn't so much of a creative project as a school project but i do consider it a personal project... this was actually my first fullstack project and i led dev, i really was winging it... we had a separate design team also so i wasn't in charge of the visual design so much as the technical design but i learned so much working on it and am really proud of her so why not include her here"
-		},
-		{
-			"title": "michaeldeanwilkins", 
-			"images": ["web/michael/1.png", "web/michael/2.png"],
-			"captions": ["home page", "contact page"],
-			"date": "dec 1, 2025", 
-			"description": "photography portfolio <a href='https://michaeldeanwilkins.com' target='_blank'>website</a> for michael",
-			"comments": "my first freelance project! thank you michael for being the best first client. i basically borrowed this design from a bunch of other professional photographers' websites but i worked really hard on the performance and content workflow of this site. and i think the pictures look great which is the important thing. i got to visit michael's studio after this and be his camera assistant for a day, which was a really interesting experience, i got to see how he works and watch him do his thing"
-		}
-	],
-	"video": [
-		{
-			"title": "summer in japan .☘︎ ݁˖⋆˙.mp4",
-			"images": ["video/japan2025/japan.png",
-				"video/japan2025/youtube.png"],
-			"date": "12-29-2024",
-			"description": "a video <a href='https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h' target='_blank'>montage</a> of my summer in japan",
-			"comments": "this took me a whole six months to get around to doing and i completed the whole editing process in 1 day. i filmed the shots over my two week trip to japan this past summer on an old digital video camera that i thrifted for 7 dollars. i really enjoyed the whole process and am super proud of how it turned out. might make more videos like this in the future, stay tuned $"
-		}, 
-		{
-			"title": "🪷10 things to do during your summer trip to japan, korea & china ⋆.˚ ☆₊˚⊹˚.🪷", 
-			"images": ["video/japan2026/japan2026.png", "video/japan2026/thumbnail.png"],
-			"date": "july 27, 2026", 
-			"description": "video from my summer 2025 in japan with family mart socks",
-			"comments": "urgh i swear i already wrote this description and it disappeared. anyways this was the best summer of my life. spent the summer in japan for my internship and met the family mart socks squad. also went to korea and china and had an unforgettable time there. it was so nostalgic editing this video and looking back on all those memories again <br><br> this video literally took me over a year to edit because i got busy with school and stuff and there was so. much. footage i'm glad i even got it down to under 20 minutes. editing this was like making a whole film istg. i tried to keep the clips in mostly chronological order and i got to watch it together at the end with fam mart socks + soleil so it was all worth it - the summer and the editing and the memories and everything :)"
-		},
-		{
-			"title": "oklou concert 10.27.2026", 
-			"images": ["video/oklou/oklou.png", "video/oklou/thumbnail.png"],
-			"date": "sept. 4 2026", 
-			"description": "video montage of oklou concert", 
-			"comments": "i finallyyy got around to this, i had already given up on this tbh cus it had been in my computer for so long and i had to edit the japan video first. but i just opened it today cus i was like i'll just take one more look at it and remove it if i don't want to do it and then i just decided to quickly put something together because something is always better than nothing. it lowkey ended up taking me all day tho LOL but it's ok it's worth it for the mems. also glad to have something other than japan videos on my channel lol and i really do enjoy the vibe of dis one in the end"
-		}
-	],
-	"games": [
-		{
-			"title": "Dimensional Detective", 
-			"images": ["games/detective/1.png",
-				"games/detective/2.png",
-				"games/detective/3.jpg",
-				"games/detective/4.jpg"],
-			"date": "june 4, 2025", 
-			"description": "multidimensional mystery <a href='https://introspec.itch.io/dimensional-detective' target='_blank'>game</a> made in unity with Team Team!", 
-			"comments": "made this for ENGR1GD class spring 2025, one of many projects of the quarter... i worked on the logic for rounds and choosing suspects and i made my own character starboy in blender! this was also my first blend and i'm so proud of how he turned out, he's so cute :,) it was also so fun working with my team and we're going to keep working on it next year and make the game even better and less serious so stay tunedd"
-		},
-		{
-			"title": "intern run", 
-			"images": ["games/intern-run/title.png", "games/intern-run/play.png", "games/intern-run/store.png"],
-			"captions": ["title screen", "gameplay", "store"],
-			"date": "aug 30, 2026",
-			"description": "2d platformer game made for internship hackathon",
-			"comments": "made this with the other interns for the hackathon.  we had so many merge conflicts, but it turned pretty good imo and we had a lot of fun. we also made this whole thing in 3 days, and half of us had no experience with unity/github/etc. we got to present it to our bosses at the end of our internship (that's their faces in the game LOL) and we added our faces as unlockable inventory items for character customization. so it was fair game <br><br> we used the unity 2d platformer template for basically all the gameplay mechanics but we used the company's games backend service for the accounts/inventory services, so technically this is **property of wb games**. there is also a super secret link where you can play this but i don't think i'm allowed to post it so you'll have to ask me if you want to try out this **super secret highly coveted unreleased game** in person."
-		},
-		{
-			"title": "flappypatchi",
-			"images": ["games/flappy/kuchipatchi.png",
-				"games/flappy/1.png",
-				"games/flappy/update.png",
-				"games/flappy/2.png",
-				"games/flappy/3.png"],
-			"captions": ["kuchpatchi sprite", "flappypatchi.exe (old)", "updated UI", "unity editor", "itch.io"],
-			"date": "jan 29, 2025 (updated 8/30/26)",
-			"description": "help patchi lose some weight by flying through as many pipes as he can! a flappy bird <a href='https://introspec.itch.io/flappypatchi' target='_blank'>game</a> made with unity",
-			"comments": "my first game in unity! followed this <a href='https://youtu.be/XtQMytORBmM?si=FaEmiS9f0MclEp12' target='_blank'>tutorial</a> and it was so helpful and quick. still need to implement some features to make it more like a game <br><br> sooo i finally got around to updating this ToT i mostly just updated the UI but i honestly thought i wasn't going to get around to finishing this so i'm just glad i did. i think i can finally call this finished now ToT unity runs so much faster on the work computer, it makes me sad to think about how much more productive i could be if i had this computer forever..."
-		},
-		{
-			"title": "tama JUMP!",
-			"images": ["games/tama/1.png", 
-				"games/tama/2.png",
-				"games/tama/3.png"],
-			"date": "12-18-2024",
-			"description": "tamagotchi themed endless runner <a href='/#tama'>game</a> inspired by the chrome dinosaur game. written in javascript",
-			"comments": "i love this little guy i almost got lost in the sauce with the game logic because i made my life harder than it needed to be by making each of the obstacles dynamically create the next obstacle in order to vary delay time and increase difficulty and engagement, but i made it and it was definitely worth the extra effort. the tama also doubles as a music player and allows user to change the background image screens."
-		},
-		{
-			"title": "Terminal Doom", 
-			"images": ["games/doom.png"],
-			"date": "5/28/24",
-			"description": "a terminal version of the classic doom game, made in Cplusplus",
-			"comments": "i think this is technically my first game. made for cs32 project 3, the one everyone warns about... i did not take everyone's warnings and i started like 2 days before it was due. i remember turning it in at like 3am because i couldn't get the recursive goblin function to work but i still got an alright grade on it"
-		}
-	],
-	"drawing & painting": [
-		{
-			"title": "caravaggesque cat", 
-			"images": ["drawing & painting/cat.png"],
-			"date": "2023-08-24",
-			"description": "cat in dramatic lighting. painted with acrylics",
-			"comments": "found the reference image on pinterest, and i thought it was perfect for my first real painting. painted at a weekly summer art class with a bunch of older ladies, but the teacher got sick so we just went to the park to paint every sunday"
-		},
-		{
-			"title": "teamlab jellyfish",
-			"images": ["drawing & painting/teamlab/1.jpg",
-				"drawing & painting/teamlab/2.jpg", 
-				"drawing & painting/teamlab/3.jpg", 
-				"drawing & painting/teamlab/4.jpg",
-				"drawing & painting/teamlab/5.jpg", 
-				"drawing & painting/teamlab/jellyfish.jpg"],
-			"date": "september 13, 2024",
-			"description": "oil pastel jellyfish at teamlab borderless exhibit 'sketch ocean'",
-			"comments": "this was from an interactive exhibit at teamlab borderless in tokyo where you could color a sea creature and they would scan it and add it to the exhibit, and it would appear and swim around on the wall with everyone's sea creatures. i know the exhibit's still up, i wonder how long they keep the file around to keep swimming. i loved this exhibit so much, i love being surprised with the opportunity to make art are you kidding meee #. it would be my dream to eventually work for something like this, where you can make art and experiences and creative joy for other people"
-		},
-		{
-			"title": "画龙点睛",
-			"images": ["drawing & painting/dragon/dragon.jpg",
-				"drawing & painting/dragon/2.jpg"],
-			"date": "sept 5, 2020",
-			"description": "chinese dragon painting, drawn with calligraphy brush and ink",
-			"comments": "i own a few calligraphy ink and brush sets and they are art pieces in themselves. i remember one year my mom led a calligraphy station at my class's chinese new year activity day. i ended up liking this dragon so much i put it on a shirt and gave it to my mom for christmas。 the title of this piece comes from a chinese idiom about an artist who refused to paint the eyes of his dragons, because if he did, they would come to life. one day, he demonstrates this to the unbelieving crowd, and the dragon actually comes to life and flies away."
-		}
-	],
-	"trinkets": [
-		{
-			"title": "lighter", 
-			"images": ["trinkets/lighter/1.png", "trinkets/lighter/lighter.gif"],
-			"date": "may 15, 2026",
-			"description": "trinket lighter made for soleil's birthday", 
-			"comments": "i made this out of scraps n stuff i had saved for soleil's bday! it took a few hours but i'm happy with how it turned out. i'm also surprised the stuff hasn't fallen off yet it's pretty sturdy. i love the gif too it's so fun"
-		},
-		{
-			"title": "clay toro",
-			"images": ["trinkets/claytoro/resin-toro.png",
-				"trinkets/claytoro/1.png",
-				"trinkets/claytoro/2.png"],
-			"date": "12/6/24",
-			"description": "toro made from air dry clay and coated in resin",
-			"comments": "i made this at a refine social in the botanical gardens friday of week 10 right before my last cs discussion of the quarter and i had to carry toro in my hand everywhere so it wouldn't get smushed. the clay is like a weird foamy texture and it's really light and dried super fast. it's cute tho >.< </br></br> edit: gave him a resin coat-over and now he's got a shiny new look *-*"
-		},
-		{
-			"title": "resin",
-			"images": ["trinkets/resin/1.png"],
-			"date": "november 27, 2025",
-			"description": "resin trinket with beads",
-			"comments": "i made this with some leftover resin and beads. it's a nice trinket ig, very useless"
-		},
-		{
-			"title": "pickleball keychain",
-			"images": ["trinkets/pickleball keychain/keychain.png",
-				"trinkets/pickleball keychain/bag.jpg"],
-			"date": "1/4/25",
-			"description": "keychain made from polymer clay and coated in resin",
-			"comments": "made this for my parents for the holidays, they love pickleball and play it every day. it goes on their pickleball bag"
-		},
-		{
-			"title": "trinket jar",
-			"images": ["trinkets/dino/1.png",
-				"trinkets/dino/2.png",
-				"trinkets/dino/3.png",
-				"trinkets/dino/4.png"],
-			"date": "10-30-24",
-			"description": "lego dinosaur painted with metallic acryllic paint",
-			"comments": "i painted this lego dinosaur at a random halloween floor event last quarter that i decided last minute, they had lego dinosaur kits and pumpkin painting as separate activities but i didn't really want to paint a pumpkin just for it to go bad and have to throw it away so i painted the legos instead, it was a fun side quest from homework. i really liked the metallic paints and it somehow reminds me of the big container cranes used to lift cargo that you see driving by san francisco. i think it looks cute on my trinket jar/coaster :3"
-		}
-	],
-	"archive": [
-		{
-			"title": "a pearly clam", 
-			"images": ["archive/clam.png"],
-			"date": "so long ago. maybe like 2014",
-			"description": "clam decoration made from shells and marble %",
-			"comments": "i made this using a clam shell that i probably picked up from the beach or saved from a restaurant from some oyster dish when i was like 10. i love picking up shells on the beach. i still think this was a stroke of genius... look at the way the light hits the marble *-*"
-		},
-		{
-			"title": "a chipmunk's love", 
-			"images": ["archive/woolfelt.png"],
-			"date": "2023-09-08",
-			"description": "woolfelt chipmunk with a heart, made from a daiso kit",
-			"comments": "this was my first time woolfelting, it was not as bad as i had expected and was actually quite easy. i bought a kit for grce and we started them together but i dont think grce ever finished hers"
-		},
-		{
-			"title": "scarf",
-			"images": ["archive/scarf.png"],
-			"date": "probably when i was like 11",
-			"description": "green fringe scarf, made on a knitting loom",
-			"comments": "i made this for my dad for christmas one year, i think from a knitting loom that he got me the year before. it's quite long and a bit itchy and very green."
-		},
-		{
-			"title": "silent owl",
-			"images": ["archive/owl.png"],
-			"date": "idk 2015",
-			"description": "pink felt owl made from a kit",
-			"comments": "isn't she adorable? it was super easy to make with the kit too, i think owls were my favorite animal for a while around this time"
-		},
-		{
-			"title": "arterixa",
-			"images": ["archive/arterixa/1.jpg",
-				"archive/arterixa/2.jpg",
-				"archive/arterixa/3.jpg",
-				"archive/arterixa/4.PNG",
-				"archive/arterixa/5.jpg",
-				"archive/arterixa/6.jpg",
-				"archive/arterixa/7.PNG",
-				"archive/arterixa/8.PNG",
-				"archive/arterixa/9.PNG",
-				"archive/arterixa/10.PNG"],
-			"date": "2019 - 2020",
-			"description": "digital paintings made in aj classic art studio",
-			"comments": "during the pandemic i became super obsessed with animal jam, i never got to play it as a child and i became obsesseddd. i spent hours grinding that game and became really rare but i checked back recently and i think my account got hacked TT i had been collecting nonmember rares for sooo long i had a document and everything dedicated to it it was so sad TT and all my looks were gone T-T but i got into painting on the studio lowkey to get rich but i painted all of these using only the aj studio airbrush and smudge tool and with a MOUSE. i got so into art stuff from this that i made an art instagram account called arterixa which i deleted a long time ago but that's the title of this little collection. i traced most of the paintings from an image that i literally printed out and held up to the computer but this was like my first time doing proper drawings and i think i did pretty good. the one of rm was my first commission and i spent foreverrr on it and i think they paid me a short spiked collar which was probably my first spike and there's one of hyungwon that's obviously unfinished and that one was also supposed to be a commission but i never finished bcs i lowkey quit the game. oops but i think the person who commissioned me lowkey quit too so it's okay. there was also this one painting of a cherry blossom tree that me and grce made together when the painting function first came out for nonmembers but i can't find a picture of it anywhere which is so sad TT idk why i didn't take more pictures of my outfits and dens and stuff while i was playing because now i have no record of them anywhere T-T"
-		},
-		{
-			"title": "\"Alpha\"",
-			"images": ["archive/alpha/1.png",
-				"archive/alpha/2.png",
-				"archive/alpha/3.png",
-				"archive/alpha/4.png",
-				"archive/alpha/5.png",
-				"archive/alpha/6.png",
-				"archive/alpha/7.png"],
-			"date": "2017 - 2018",
-			"description": "<a href='http://episodeinteractive.com/s/5015758158168064' target='_blank'>episode story</a> adapted from original story 'clan game' by me and grce. link must be opened from a mobile device",
-			"comments": "this project has so much lore, i made this episode story based off a game that me and grace played which we just called the clan game, but we became so invested in the story that by the end, we were both crying. at that time i was also super into episode so i got the idea to make our game into an episode story. i never published it because i never really finished it, there's still so many things that i could smooth out but lowkey this was a really cool idea... it kind of involves coding for the animations and there's even story logic based on the reader's choices, and there's aspects of writing, character design, world building, and also film direction with camera angles and zooms and scene and pacing choices. i think i realized while doing this how hard writing dialogue really is. when i started this i don't think i realized that it would be such a big project but i have so much respect for people who wrote such good episode stories now, especially those ones that had such long episodes and the series went on for forever. i just played the story all the way through and it definitely has its flaws and i literally gave up on it at the ending which was literally the best part but why am i lowkey so proud of it anyways TT this is kinda crazy i feel so accomplished like a self published author"
-		},
-		{
-			"title": "scholastic comics",
-			"images": ["archive/rosalee/rosalee.png",
-				"archive/rosalee/stolen.jpg",
-				"archive/rosalee/majic.jpg"],
-			"captions": ["\"Rosalee\"", "\"Stolen\"", "\"The Majic Book\""],
-			"date": "july 5, 2016",
-			"description": "one page comics made on scholastic website",
-			"comments": "i made these using the scholastic website's comic maker, which provides graphics and backgrounds for you to make your own comics. i wonder if that's still up. but i gave up when i realized that making comics is hard"
-		},
-		{
-			"title": "notebook",
-			"images": ["archive/notebook/1.png",
-				"archive/notebook/2.png",
-				"archive/notebook/3.jpg",
-				"archive/notebook/4.jpg",
-				"archive/notebook/5.jpg",
-				"archive/notebook/6.png",
-				"archive/notebook/7.png",
-				"archive/notebook/8.jpg"],
-			"date": "11/23/2015 - 2017",
-			"description": "basically my commonplace book as a child",
-			"comments": "my childhood notebook that i wrote everything in, back when i still spent my time doing things that are actually important. it started as a journal, and i decorated the cover with things that were important to me (i liked my friends and kpop). i spilled so much tea in this journal, wrote songs, made lists, sketched... one weird thing i did was write down the entire lyrics to songs that i really liked, probably so i could memorize them. and i also drew self-insert characters from books/shows that i liked, literally OCs T-T and our 10 minute diss track to ben was first written in these lines... me and grce used to do so many fun projects like Cartopolis 500 where we basically scooted on mover's dollies and the rabbit wedding (bonus photo included at the end). life was so good then... well i hope i'm still that girl now the medium has just changed"
-		},
-		{
-			"title": "duct tape 4life",
-			"images": ["archive/duct tape/wallet.png",
-				"archive/duct tape/ducttape.png",
-				"archive/duct tape/pen.png"],
-			"date": "circa 2013",
-			"description": "duct tape hello kitty wallet and rose pen",
-			"comments": "remember when duct tape wallets and diys were a whole thing... i still use this wallet and the pen occasionally too. there's a lot more where that came from but i think these ones aged the best"
-		},
-		{
-			"title": "miscellaneous sculptures & clay",
-			"images": ["archive/miscellaneous clay & sculpture/1.png",
-				"archive/miscellaneous clay & sculpture/2.png",
-				"archive/miscellaneous clay & sculpture/3.png",
-				"archive/miscellaneous clay & sculpture/octo.png",
-				"archive/miscellaneous clay & sculpture/4.jpg"],
-			"captions": ["", "scaly dragon egg made from an eos container, mermaid snow globe scene made from polymer clay inside", "poop made of natural clay", "mini stackable octopi made from air dry clay. coin for scale", "dioramas made from polymer clay"],
-			"date": "est. 2016 - 2020", 
-			"description": "miscellaneous sculptures made of air dry and polymer clay. painted with acrylic paint and coated with glue and clear nail polish",
-			"comments": "this is just a collection of things that i was too lazy to make a separate thing for each one. for the scaly dragon egg, the eos container i used is two different colors because i traded the top half with one of my best friends in elementary school. i used to collect those and look for diys to do with them all the time. there's also these little clay octopi that i made a bunch of at one point and even showed my friend how to make them as well. my favorites were these two tiny ones that sit on top of each other. and let me explain the poop, it was at the lake and me and grce and alicia found natural red clay in the dirt and made sculptures out of them, and the clay was actually really nice and has held up all the way until today. and it does bear a striking resemblance to poop. i also used to make these dioramas for my family for christmas every year, can you see the dog in the last one? :,)"
-		}
-	]
+    {
+      "title": "beaded bird necklace",
+      "images": ["jewelry/bird.png"],
+      "date": "summer 2022",
+      "description": "beaded necklace with bird charm and matching beaded earrings",
+      "comments": "i made this one summer at kay's house, her mom has a beading kit and is super into jewelry and stuff like that. i feel like this was my first time making jewelry since i was like a kid, so i really enjoyed making this. i also love doing crafts with friends"
+    }
+  ],
+  "preservation": [
+    {
+      "title": "cicadas: japan",
+      "images": [
+        "preservation/cicadas/1.png",
+        "preservation/cicadas/2.png",
+        "preservation/cicadas/3.png",
+        "preservation/cicadas/4.png",
+        "preservation/cicadas/5.png",
+        "preservation/cicadas/6.png"
+      ],
+      "captions": [
+        "kuma-zemi (bear cicada)",
+        "aburazemi (large brown cicada)",
+        "pinning",
+        "chammaemi (robust cicada)",
+        "robust :p",
+        "cicada party"
+      ],
+      "date": "summer 2025",
+      "description": "cicadas found from korea & japan",
+      "comments": "the cicadas in japan were so loud, truly a summer in japan experience. i've never really heard cicadas here where i'm from, not to mention the amount that we heard constantly in japan... i learned that cicadas have one of the longest insect lifespans, living 13 to 17 years, yet they only spend a few weeks above ground for their whole lives, just to mate, and then they die. which is kinda funny and makes me like the little guys even more. the defeaning sound that they make is a mating call, prodced by a special membrane on male cicadas called tymbals, and can reach over 100 decibels :o which is enough to cause hearing loss <br><br> <em>kuma-zemi</em> (bear cicada): there was this one corner on my walk to work where the cicadas would get earsplittingly loud and they were there every morning. one day i was walking back from lunch with my coworkers and i spotted this guy just lying there on the ground. i was having a really bad day and i'd never seen a cicada before, so that really made my day. this is the <a href='https://metropolisjapan.com/the-screaming-insects-of-summer/' target='_blank'>largest</a> of all cicada species and also the angriest-sounding, hence its name <em>kuma</em> which means 'bear' in japanese. <br><br> <em>chammaemi</em> (robust cicada): my friends spotted this one on the ground in korea, whiel we were on a late night hunt for snacks for them since they had literally gone out for like 48 hours straight and barely had anything to eat. this one is really cute imo. its korean name <em>chammaemi</em> means 'common cicada' because of how common these guys are in korea. <br><br> <em>aburazemi</em> (large brown cicada): i think i picked this one up just from the side of the road, i don't really remember anymore. it was from japan though. its name <em>abura</em> means <a href='https://bugsofjapan.tumblr.com/post/146283782981/graptopsaltria-nigrofuscata-%E3%82%A2%E3%83%96%E3%83%A9%E3%82%BC%E3%83%9F-abura-zemi' target='_blank'>oil</a> in japanese, and comes from the sound it makes, similar to the sound of oil in a frying pan"
+    },
+    {
+      "title": "cicada: troy",
+      "images": ["preservation/dog-days.png"],
+      "date": "8/20/29",
+      "description": "cicada found in troy, new york. likely a <a href='https://www.cicadamania.com/cicadas/common-cicadas-of-new-york/' target='_blank'>dog days</a> cicada",
+      "comments": "i found this guy on the ground while walking to my last day of work. that was actually the only day i walked to work, it was because i missed the bus. it wasn't a complete specimen when i found it already. it's really small though compared to the ones in japan, it's so cute."
+    },
+    {
+      "title": "beetles of japan",
+      "images": [
+        "preservation/beetles-japan/koganemushi.png",
+        "preservation/beetles-japan/hanamuguri.png",
+        "preservation/beetles-japan/oosenchikogane.png",
+        "preservation/beetles-japan/wip.jpg",
+        "preservation/beetles-japan/pinning.png"
+      ],
+      "captions": [
+        "<em>koganemushi</em> (june bug)",
+        "<em>hanamuguri</em> (flower chafer)",
+        "<em>oosenchikogane</em> (earth-boring dung beetle)",
+        "wip",
+        "pinning",
+        "joeyjosh (my son)",
+        "posin' it up"
+      ],
+      "date": "summer 2025",
+      "description": "beetles i found in japan!!!",
+      "comments": "the green ones were soo hard to identify! this <a href='https://preview.redd.it/what-kind-of-beetle-is-this-v0-d30lkr3qhscd1.jpeg?width=595&auto=webp&s=a0dcf4af3124de3c0e34829b662d3e25b5ee8dbe' target='_blank'>image</a> i found on reddit helped me with the identification a lot. the <em>koganemushi</em> is probably some ind of june bug or chafer. in japanese it means 'gold bug' and apparently there's some <a href='https://blogs.transparent.com/japanese/japanese-beetle-song/' target='_blank'>children's song</a> about it being rich. <em>hanamuguri</em> means flower chafer and are often found among flowers. unfortunately i don't remember where exactly i found these cute little green beetles. <em>oosenchikogane</em>, the pretty blue beetle, was found on our trip to nachii waterfalls. my friend katie and i were playing with an alive one that kept walking right off our hands and falling on the ground. it was very cute and clumsy. after a while we kept walking and then joey/josh find this one that's a little banged up, looks like it might have gotten crushed a bit but they said they weren't the ones who crushed it. beetles are so pretty :3 i lowkey find the first one so satisfying how it just looks like a little bean T-T the dung beetle's reflective lustre kind of got covered by the resin unfortunately, it's probably because the resin is too thick and the light can't penetrate through well enough to show the color... also in japan we found a little rhinocerous beetle outside a family mart and we adopted him and named him joeyjosh. he didn't die but i wanted to shout him out... miss my little guy"
+    },
+    {
+      "title": "leaf beetle",
+      "images": [
+        "preservation/leafbeetle/1.png",
+        "preservation/leafbeetle/2.png"
+      ],
+      "date": "10/31/25",
+      "description": "<em>paropsisterna</em> leaf beetle found in los angeles",
+      "comments": "this little leaf beetle might just be the cutest little guy ever... it looks like a little red button. the color really stands out compared to the rest of my collection... soleil found this guy while walking in the street and gave it to me to preserve, so sweet :> i love it it's such a bean"
+    },
+    {
+      "title": "green darner",
+      "images": [
+        "preservation/dragonfly/1.png",
+        "preservation/dragonfly/2.png",
+        "preservation/dragonfly/3.png",
+        "preservation/dragonfly/4.jpg"
+      ],
+      "date": "1/5/25",
+      "description": "common green darner dragonfly preserved in resin",
+      "comments": "i found this dragonfly in my backyard one day just laying there in almost pristine condition. it was dead obviously it had ants on it but the ants had barely even gotten to it yet like i was like this is a crazy find. i lost a bit of its wing while doing the resin, and it also lost some color from when i first found it but it still looks beautiful"
+    },
+    {
+      "title": "shiokara",
+      "images": [
+        "preservation/shiokara/1.png",
+        "preservation/shiokara/2.png",
+        "preservation/shiokara/3.jpg"
+      ],
+      "date": "aug 16, 2025",
+      "description": "male <a href='https://ture-japan.com/na/3741.html target='_blank'>white-tailed skinner</a> from japan",
+      "comments": "my friend joey spotted this dying on the side of the road in japan. we brought it in and it died shortly afterwards, and then it went with me on three international flights. it lost all of its legs in the transport/resin process unfortunately, and the resin seems to make the colors different. it also bothers me that it's kinda sideways lol, but i used uv resin this time instead of epoxy and it was a much better experience. apparently its name comes from the white color on its body/tail because it looks like salt, which is 'shio' in japanese. i decided not to rehydrate and pin it because i wanted to resin him the way i found him... dying, i guess, that is"
+    },
+    {
+      "title": "lizards",
+      "images": [
+        "preservation/lizard/1.png",
+        "preservation/lizard/western-fence.png",
+        "preservation/lizard/jar.jpg",
+        "preservation/lizard/male.png",
+        "preservation/lizard/male-dry.png",
+        "preservation/lizard/pinning-male.jpg",
+        "preservation/lizard/wet.png"
+      ],
+      "captions": [
+        "female western fence lizard",
+        "19 july 2024",
+        "drying",
+        "male bluebelly",
+        "1/5/25",
+        "pinning",
+        "wet specimen (march 29, 2026)"
+      ],
+      "date": "2024 - 2026",
+      "description": "western fence lizards (aka 'bluebellies'), preserved in resin & ethanol",
+      "comments": "<strong>female western fence lizard:</strong> i found this guy while walking the dogs with grce's dad and it was already all dried up and just sticking up facedown in the grass. it must have gotten dehydrated from the summer sun and fallen down from wherever it was. this was my first preservation project bcs the opportunity literally presented itself to my hands, i never even thought of doing stuff like this before but it was too good to pass up... when i first brought it home my mom was disgusted but she was lowkey more chill about it than i expected lol. honestly she seemed not that surprised. i covered it in salt for a few weeks and bought an airtight container and used dessicants to dry it some more, and then once it was completely dry i used a brush to coat it in resin layer by layer. ruined the brush but now i have a resin covered lizard... i believe this is a female western fence lizard because it doesn't have the blue markings on its belly that the other one has. also did you know that the weird push up thing that lizards do is done by males to show their colors and display dominance? i always thought that was just a weird lizard quirk <br><br> <strong>male bluebelly:</strong> i also found this guy while walking the dog, but it was not dry already like the first one but fresh, with ants crawling all over it. i tried to actually position this one to look a bit more alive like you're supposed to but it got super deflated when it dried and it looks very much dead. i made a blog <a href='/pages/blog.html#24' target='_blank'>post</a> about it if you want to read more of my thoughts... <br><br> <strong>wet specimen: </strong> this one is likely ALSO a western fence lizard. sorry they're the most common species in the sacramento area ToT what can i say. i got tired of dry preserving these guys especially because the last one just kind of deflated... and i also didn't have time to dry it i had to go to school. so i decided to change it up and try a wet specimen. i also finally got my hands on some ethanol here so i can preserve them better"
+    },
+    {
+      "title": "rodents",
+      "images": [
+        "preservation/mouse/1.png",
+        "preservation/mouse/2.png",
+        "preservation/mouse/rat1.png",
+        "preservation/mouse/rat2.png"
+      ],
+      "captions": ["mouse", "", "rat", ""],
+      "date": "1/18/25",
+      "description": "mouse fell into the cookie jar",
+      "comments": "<strong>mouse:</strong> soooo sun's cat kitty gifted this mouse to us while i was at their home in sd and i brought it all the way back home with me to preserve it. this is my first wet specimen but actually wet specimens are like really easy you literally just soak them in and that's it <br><br> <strong>rat:</strong> i found this guy near haines hall during finals week during daylight hours and i was like... i need to take him home. it was a dilemma because i did not have anything to grab him with and also i did not want to look utterly insane picking up this rat at school. this is a full on rat btw this was not a cute small mouse. i ended up going to ackerman and grabbing a compostable bowl to pick up the rat in and i brought him back to the dorm. i had to keep him in our microfridge for a while to prevent decomposition ToT apologies to and shouts to my roommates for being chill abt it tho ToT"
+    },
+    {
+      "title": "bat",
+      "images": [
+        "preservation/bat/1.png",
+        "preservation/bat/2.png",
+        "preservation/bat/3.png"
+      ],
+      "date": "aug 16, 2026",
+      "description": "bat",
+      "comments": "i found him on my way back from skating in new york. i was having a really bad day because my roommates had all moved out and i was kind of just alone and it was really hitting me so i went out to skate and saw this guy just chilling, half decomposing on some driveway while i was attempting to kickflip. stuck him in the freezer and shipped him home with me. good things happen to those who go outside<br><br>it's kiiind of hard to tell what kind of bat it is but here are the <a href='https://www.teatown.org/bats-of-westchester/' target='_blank'>9 species of bats that call new york home</a>. i guess i'm just keeping it as a dry specimen, not sure how else i would be able to preserve it"
+    },
+    {
+      "title": "praying mantis",
+      "images": ["preservation/mantis/1.png", "preservation/mantis/2.png"],
+      "date": "11/13/25",
+      "description": "severed praying mantis head i found on the steps behind de neve birch",
+      "comments": "bro i found this when walking to epic to meet up with fam mart socks ppl, it was kind of crazy that i even spotted it but it was just on the steps and i looked around for the rest of it but it was just the head :o maybe another mantis ate the rest of him... anyways a few days later we literally saw a beautiful big albino praying mantis near boelter and this guy just picked her up because he used to have a pet mantis and let me hold it and everything... i was like hm maybe it's praying mantis szn ᐠ( ᐛ )ᐟ also i kinda fw how it's in a cat shape haha it's the only resin mold shape i have. an it's lowkey like in relief like half the mantis is sticking out of the resin which is cool"
+    },
+    {
+      "title": "CENTIPEDE",
+      "images": ["preservation/centipede.png"],
+      "date": "summer 2026",
+      "description": "centipede",
+      "comments": "i lowkey don't remember where i found this, probably in a dusty corner somewhere lol. centipedes are cool though, this one's really small and i lost most of its legs probably in the process but ah it's ok u see the gist"
+    },
+    {
+      "title": "wasps",
+      "images": [
+        "preservation/wasps/european.png",
+        "preservation/wasps/paper.png"
+      ],
+      "captions": ["european paper wasp", "paper wasp"],
+      "date": "june 2026",
+      "description": "wasps",
+      "comments": "<strong>european paper wasp:</strong> i found this guy at the bottom of a pot while we were cleaning out our kitchen in our apartment in troy ToT we threw out that pot but this wasp was in great condition for some reason lol <br><br><strong>paper wasp:</strong> kinda forgot where i found this, i think it was also at the pickleball courts lowk. i would get better pictures of it but i lowkey lost it idk where it is ToT <br><br> edit: i found it and took a better picture lawl"
+    },
+    {
+      "title": "stinkbugs",
+      "images": [
+        "preservation/stinkbugs/shield.png",
+        "preservation/stinkbugs/marmorated.png",
+        "preservation/stinkbugs/shield-resin.png"
+      ],
+      "captions": [
+        "giant shield bug from dali, china",
+        "",
+        "brown marmorated stink bug"
+      ],
+      "date": "aug 25, 2025",
+      "description": "stinkbugs found in china and los angeles",
+      "comments": "<em>brown marmorated stink bug</em>: found this guy in la, it's just such a stink bug lol. apparently they're an invasive species in the states<br><br><em>giant stink bug</em>: saw him on the ground while running to catch the taxi to get back from dali and scared the sh*t out of my cousin... he's like actually afraid of bugs and i thought he was going to throw me out of the car T-T apparently these giant shield bugs are common in yunnan, china, shoutout to the hometown <br><br>post edit: honestly i think the resin didn't really do it justice, and it lost some parts in the process T-T. idk why i always kind of subconsciously thought this bug in particular was kind of nasty, mb because it was kind of stinky because it's part of the stink bug family? and the way the legs were curled in kind of freaked me out T-T but these bugs are actually pretty cool"
+    },
+    {
+      "title": "beetlez",
+      "images": [
+        "preservation/beetles-misc/ground-beetle.png",
+        "preservation/beetles-misc/giant-black.png"
+      ],
+      "captions": [
+        "ground beetle encased in resin ₍^.&nbsp.^₎⟆",
+        "giant black water beetle"
+      ],
+      "date": "aug 29, 2026",
+      "description": "beetles found in folsom, california",
+      "comments": "<strong>ground beetle:</strong> i found this guy in the laundry bins also. he was helping me clean <br><br><strong>giant black water beetle:</strong> i think i found him at the pickleball courts... i remember having to pull tennis fuzzies off of its legs. not sure what he was doing there. don't you love how big and watery and black he is? <br><br> edit: there's a tonnnnee of these guys at the pickleball courts, after a certain point at night there's just a bunch of them crawling around. i had to rescue them so they don't get smushed underfoot they're so cute tho"
+    },
+    {
+      "title": "grasshopper",
+      "images": ["preservation/grasshopper.png"],
+      "date": "summer 2026",
+      "description": "grasshopper",
+      "comments": "i think this was also? found at the folsom pickleball courts? why are there so much variety of bugs at the pickleball courts? anyways i've never found a grasshopper before so this was pretty cool. hoping for many more beautiful grasshoppers to come our way"
+    },
+    {
+      "title": "mothszzz",
+      "images": [
+        "preservation/moths/1.png",
+        "preservation/moths/2.png",
+        "preservation/moths/3.png"
+      ],
+      "captions": [
+        "moth pre-resin",
+        "post-resin",
+        "tiny moth (tiny banana for reference)"
+      ],
+      "date": "aug 27, 2025",
+      "description": "mothszzzzzzzzzz",
+      "comments": "i found this moth on the ground by de neve birch and didn't want to deal with it for a while bcs it seemed annoying to do a moth so i just left it for like a whole year. it is kind of hard to tell what's going on with it after the resin ngl as you can see in the picture but it's fine it still looks pretty cool. it just looks like a moth nugget. the other moth is a tiny moth i found in the laundry dust, that one was a pain in the butt but it turned out gud so it was worth it :3"
+    },
+    {
+      "title": "misc.",
+      "images": [
+        "preservation/misc/misc.png",
+        "preservation/misc/1.png",
+        "preservation/misc/2.png",
+        "preservation/misc/3.png",
+        "preservation/misc/4.png",
+        "preservation/misc/5.png",
+        "preservation/misc/collection.png"
+      ],
+      "captions": [
+        "misc. items",
+        "snail shells i found when i was young",
+        "rose petal from my mom's garden",
+        "lizard tail found in the backyard",
+        "cicada molts and wing found in japan",
+        "tiny spider",
+        "the full collection (˵ •̀ ᴗ - ˵ ) ✧"
+      ],
+      "date": "--",
+      "description": "miscellaneous items preserved in uv resin",
+      "comments": "misc. comments: <br><br><strong>snail shell:</strong> i had that snail shell since i was a kid, i used to lowkey collect snail shells... that was the early roots of this 'hobby' i guess. <br><br><strong>cicada molts:</strong> i found a tonnn of those cicada molts in korea and japan, collected them in a bottle, it looked insane. i tossed most of them though because they were so brittle and kind of nasty, but now i wish i kept more. <br><br><strong>tiny spider:</strong> as for the tiny spider, i found it collecting dust in the laundry basket outside, i think it's lowkey beheaded because i can't see the head... but also it's so tiny i really can't tell T-T either way i think it's beyond identification. it looks cute on the rose petal though. <br><br> also doesn't the full collection look cool?"
+    }
+  ],
+  "web": [
+    {
+      "title": "kittenluv1",
+      "images": [
+        "web/kittenluv1/index.png",
+        "web/kittenluv1/tamaJUMP!.png",
+        "web/kittenluv1/nostalgiablog.png",
+        "web/kittenluv1/creations.png",
+        "web/kittenluv1/portfolio.png"
+      ],
+      "captions": [
+        "index",
+        "old index with tama player open",
+        "nostalgiablog",
+        "creations.html",
+        "portfolio page"
+      ],
+      "date": "01/01/25",
+      "description": "personal <a href='/' target='_blank'>website</a> made with HTML, JS, and CSS",
+      "comments": "my personal website to showcase all my works. includes tama game, blog, creations page, and plenty more... my goal is to make it fun, creative, and interactive. i'm always adding to it, check it out!"
+    },
+    {
+      "title": "pic website",
+      "images": [
+        "web/pic/1.png",
+        "web/pic/2.png",
+        "web/pic/3.png",
+        "web/pic/4.png",
+        "web/pic/5.png"
+      ],
+      "captions": [
+        "login page",
+        "index with phishing links",
+        "phished!",
+        "blog page",
+        "merch page"
+      ],
+      "date": "12-11-2024",
+      "description": "my first full <a href='https://kittenluv1.lovestoblog.com' target='_blank'>website</a>, built for my PIC40a class project. used html, css, javascript, php, and sqlite3. hosted on infinityfree",
+      "comments": "i'm so glad i took this class, i learned so much building this website and at such a manageable pace. though the website is simple, this website paved the way for the personal website i have built today. there was a lot of contraints for how to make this cus i had to get grade but profsarah was super cool and this class was so fun and helpful. i'm not sure how long this will stay on the pic servers but it does have a fully functioning backend for now so you can make an account and post comments on the blog page and everything. update: they took it off the pic servers but i found a web server to host it and so it's back up again!!! >,<"
+    },
+    {
+      "title": "neokitties WIP",
+      "images": ["web/neocities/1.png", "web/neocities/2.png"],
+      "captions": ["home page", "resources"],
+      "date": "2/16/25",
+      "description": "my <a href='https://kittenluv1.neocities.org/' target='_blank'>neocities</a> site!!!",
+      "comments": "i started this and then haven't touched it for 4 months and idk when i'll get back to it but i definitely will work on it a lot in the future and i have a lot of ideas for it... i've wanted a neocities forever so it will definitely happen! just wait..."
+    },
+    {
+      "title": "clubhouse",
+      "images": ["web/clubhouse/1.png", "web/clubhouse/2.png"],
+      "date": "may 29, 2025",
+      "description": "a web <a href='https://www.clubhouseucla.com/clubs' target='_blank'>platform</a> for rating student organizations at ucla, developed with the amazing clubhouse team!",
+      "comments": "i was debating whether to include this since it wasn't so much of a creative project as a school project but i do consider it a personal project... this was actually my first fullstack project and i led dev, i really was winging it... we had a separate design team also so i wasn't in charge of the visual design so much as the technical design but i learned so much working on it and am really proud of her so why not include her here"
+    },
+    {
+      "title": "michaeldeanwilkins",
+      "images": ["web/michael/1.png", "web/michael/2.png"],
+      "captions": ["home page", "contact page"],
+      "date": "dec 1, 2025",
+      "description": "photography portfolio <a href='https://michaeldeanwilkins.com' target='_blank'>website</a> for michael",
+      "comments": "my first freelance project! thank you michael for being the best first client. i basically borrowed this design from a bunch of other professional photographers' websites but i worked really hard on the performance and content workflow of this site. and i think the pictures look great which is the important thing. i got to visit michael's studio after this and be his camera assistant for a day, which was a really interesting experience, i got to see how he works and watch him do his thing"
+    }
+  ],
+  "video": [
+    {
+      "title": "summer in japan .☘︎ ݁˖⋆˙.mp4",
+      "images": ["video/japan2025/japan.png", "video/japan2025/youtube.png"],
+      "date": "12-29-2024",
+      "description": "a video <a href='https://youtu.be/3UTBZtwQMpI?si=sRSIXSru4suTvE5h' target='_blank'>montage</a> of my summer in japan",
+      "comments": "this took me a whole six months to get around to doing and i completed the whole editing process in 1 day. i filmed the shots over my two week trip to japan this past summer on an old digital video camera that i thrifted for 7 dollars. i really enjoyed the whole process and am super proud of how it turned out. might make more videos like this in the future, stay tuned $"
+    },
+    {
+      "title": "🪷10 things to do during your summer trip to japan, korea & china ⋆.˚ ☆₊˚⊹˚.🪷",
+      "images": [
+        "video/japan2026/japan2026.png",
+        "video/japan2026/thumbnail.png"
+      ],
+      "date": "july 27, 2026",
+      "description": "video from my summer 2025 in japan with family mart socks",
+      "comments": "urgh i swear i already wrote this description and it disappeared. anyways this was the best summer of my life. spent the summer in japan for my internship and met the family mart socks squad. also went to korea and china and had an unforgettable time there. it was so nostalgic editing this video and looking back on all those memories again <br><br> this video literally took me over a year to edit because i got busy with school and stuff and there was so. much. footage i'm glad i even got it down to under 20 minutes. editing this was like making a whole film istg. i tried to keep the clips in mostly chronological order and i got to watch it together at the end with fam mart socks + soleil so it was all worth it - the summer and the editing and the memories and everything :)"
+    },
+    {
+      "title": "oklou concert 10.27.2026",
+      "images": ["video/oklou/oklou.png", "video/oklou/thumbnail.png"],
+      "date": "sept. 4 2026",
+      "description": "video montage of oklou concert",
+      "comments": "i finallyyy got around to this, i had already given up on this tbh cus it had been in my computer for so long and i had to edit the japan video first. but i just opened it today cus i was like i'll just take one more look at it and remove it if i don't want to do it and then i just decided to quickly put something together because something is always better than nothing. it lowkey ended up taking me all day tho LOL but it's ok it's worth it for the mems. also glad to have something other than japan videos on my channel lol and i really do enjoy the vibe of dis one in the end"
+    }
+  ],
+  "games": [
+    {
+      "title": "Dimensional Detective",
+      "images": [
+        "games/detective/1.png",
+        "games/detective/2.png",
+        "games/detective/3.jpg",
+        "games/detective/4.jpg"
+      ],
+      "date": "june 4, 2025",
+      "description": "multidimensional mystery <a href='https://introspec.itch.io/dimensional-detective' target='_blank'>game</a> made in unity with Team Team!",
+      "comments": "made this for ENGR1GD class spring 2025, one of many projects of the quarter... i worked on the logic for rounds and choosing suspects and i made my own character starboy in blender! this was also my first blend and i'm so proud of how he turned out, he's so cute :,) it was also so fun working with my team and we're going to keep working on it next year and make the game even better and less serious so stay tunedd"
+    },
+    {
+      "title": "intern run",
+      "images": [
+        "games/intern-run/title.png",
+        "games/intern-run/play.png",
+        "games/intern-run/store.png"
+      ],
+      "captions": ["title screen", "gameplay", "store"],
+      "date": "aug 30, 2026",
+      "description": "2d platformer game made for internship hackathon",
+      "comments": "made this with the other interns for the hackathon.  we had so many merge conflicts, but it turned pretty good imo and we had a lot of fun. we also made this whole thing in 3 days, and half of us had no experience with unity/github/etc. we got to present it to our bosses at the end of our internship (that's their faces in the game LOL) and we added our faces as unlockable inventory items for character customization. so it was fair game <br><br> we used the unity 2d platformer template for basically all the gameplay mechanics but we used the company's games backend service for the accounts/inventory services, so technically this is **property of wb games**. there is also a super secret link where you can play this but i don't think i'm allowed to post it so you'll have to ask me if you want to try out this **super secret highly coveted unreleased game** in person."
+    },
+    {
+      "title": "flappypatchi",
+      "images": [
+        "games/flappy/kuchipatchi.png",
+        "games/flappy/1.png",
+        "games/flappy/update.png",
+        "games/flappy/2.png",
+        "games/flappy/3.png"
+      ],
+      "captions": [
+        "kuchpatchi sprite",
+        "flappypatchi.exe (old)",
+        "updated UI",
+        "unity editor",
+        "itch.io"
+      ],
+      "date": "jan 29, 2025 (updated 8/30/26)",
+      "description": "help patchi lose some weight by flying through as many pipes as he can! a flappy bird <a href='https://introspec.itch.io/flappypatchi' target='_blank'>game</a> made with unity",
+      "comments": "my first game in unity! followed this <a href='https://youtu.be/XtQMytORBmM?si=FaEmiS9f0MclEp12' target='_blank'>tutorial</a> and it was so helpful and quick. still need to implement some features to make it more like a game <br><br> sooo i finally got around to updating this ToT i mostly just updated the UI but i honestly thought i wasn't going to get around to finishing this so i'm just glad i did. i think i can finally call this finished now ToT unity runs so much faster on the work computer, it makes me sad to think about how much more productive i could be if i had this computer forever..."
+    },
+    {
+      "title": "tama JUMP!",
+      "images": ["games/tama/1.png", "games/tama/2.png", "games/tama/3.png"],
+      "date": "12-18-2024",
+      "description": "tamagotchi themed endless runner <a href='/#tama'>game</a> inspired by the chrome dinosaur game. written in javascript",
+      "comments": "i love this little guy i almost got lost in the sauce with the game logic because i made my life harder than it needed to be by making each of the obstacles dynamically create the next obstacle in order to vary delay time and increase difficulty and engagement, but i made it and it was definitely worth the extra effort. the tama also doubles as a music player and allows user to change the background image screens."
+    },
+    {
+      "title": "Terminal Doom",
+      "images": ["games/doom.png"],
+      "date": "5/28/24",
+      "description": "a terminal version of the classic doom game, made in Cplusplus",
+      "comments": "i think this is technically my first game. made for cs32 project 3, the one everyone warns about... i did not take everyone's warnings and i started like 2 days before it was due. i remember turning it in at like 3am because i couldn't get the recursive goblin function to work but i still got an alright grade on it"
+    }
+  ],
+  "drawing & painting": [
+    {
+      "title": "caravaggesque cat",
+      "images": ["drawing & painting/cat.png"],
+      "date": "2023-08-24",
+      "description": "cat in dramatic lighting. painted with acrylics",
+      "comments": "found the reference image on pinterest, and i thought it was perfect for my first real painting. painted at a weekly summer art class with a bunch of older ladies, but the teacher got sick so we just went to the park to paint every sunday"
+    },
+    {
+      "title": "teamlab jellyfish",
+      "images": [
+        "drawing & painting/teamlab/1.jpg",
+        "drawing & painting/teamlab/2.jpg",
+        "drawing & painting/teamlab/3.jpg",
+        "drawing & painting/teamlab/4.jpg",
+        "drawing & painting/teamlab/5.jpg",
+        "drawing & painting/teamlab/jellyfish.jpg"
+      ],
+      "date": "september 13, 2024",
+      "description": "oil pastel jellyfish at teamlab borderless exhibit 'sketch ocean'",
+      "comments": "this was from an interactive exhibit at teamlab borderless in tokyo where you could color a sea creature and they would scan it and add it to the exhibit, and it would appear and swim around on the wall with everyone's sea creatures. i know the exhibit's still up, i wonder how long they keep the file around to keep swimming. i loved this exhibit so much, i love being surprised with the opportunity to make art are you kidding meee #. it would be my dream to eventually work for something like this, where you can make art and experiences and creative joy for other people"
+    },
+    {
+      "title": "画龙点睛",
+      "images": [
+        "drawing & painting/dragon/dragon.jpg",
+        "drawing & painting/dragon/2.jpg"
+      ],
+      "date": "sept 5, 2020",
+      "description": "chinese dragon painting, drawn with calligraphy brush and ink",
+      "comments": "i own a few calligraphy ink and brush sets and they are art pieces in themselves. i remember one year my mom led a calligraphy station at my class's chinese new year activity day. i ended up liking this dragon so much i put it on a shirt and gave it to my mom for christmas。 the title of this piece comes from a chinese idiom about an artist who refused to paint the eyes of his dragons, because if he did, they would come to life. one day, he demonstrates this to the unbelieving crowd, and the dragon actually comes to life and flies away."
+    }
+  ],
+  "trinkets": [
+    {
+      "title": "lighter",
+      "images": ["trinkets/lighter/1.png", "trinkets/lighter/lighter.gif"],
+      "date": "may 15, 2026",
+      "description": "trinket lighter made for soleil's birthday",
+      "comments": "i made this out of scraps n stuff i had saved for soleil's bday! it took a few hours but i'm happy with how it turned out. i'm also surprised the stuff hasn't fallen off yet it's pretty sturdy. i love the gif too it's so fun"
+    },
+    {
+      "title": "electronics",
+      "images": [
+        "trinkets/electronics/1.png",
+        "trinkets/electronics/2.png",
+        "trinkets/electronics/3.png",
+        "trinkets/electronics/4.png",
+        "trinkets/electronics/5.png"
+      ],
+      "captions": [
+        "fliphone",
+        "canon powershot a560",
+        "nikon coolpix",
+        "emerson digital camcorder",
+        "coin wallet"
+      ],
+      "date": "sep 2025",
+      "description": "trinkets on old electronics (and a coin pouch)",
+      "comments": "rippp all these cameras (they all broke one way or another) but i decorated them with my trinkets so at least they can now serve as decorations <br><br> i just want to give a short eulogy for each of my cameras because i cherished each one of them... rip the canon powershot you were gone too soon. it broke because i took it to the beach and sand or something must have gotten in the shutter and it wouldn't open anymore :( the nikon coolpix was cool but the pictures weren't as nice and it always had a problem with the battery component not keeping the batteries in so they kept popping out. i found it in goodwill for like $5 though so i can't complain. i also found the emerson video box thing in that same trip and i was so surprised that they both work. fat rippp about the emerson i really loved that thing i took both of my japan videos on it i've never really seen anything like it online or anything <br><br> also bonus fun fact the trinkets on the coin wallet are my full collections mameshibas and pikmins from the bandai machines in japan at the time ToT prety impressive right..."
+    },
+    {
+      "title": "clay lighter (WIP)",
+      "images": ["trinkets/lighter.png"],
+      "date": "--",
+      "description": "clay lighter that i started at a CEC 4/20 event",
+      "comments": "errr i need to paint this before the air dry clay all flakes off"
+    },
+    {
+      "title": "clay toro",
+      "images": [
+        "trinkets/claytoro/resin-toro.png",
+        "trinkets/claytoro/1.png",
+        "trinkets/claytoro/2.png"
+      ],
+      "date": "12/6/24",
+      "description": "toro made from air dry clay and coated in resin",
+      "comments": "i made this at a refine social in the botanical gardens friday of week 10 right before my last cs discussion of the quarter and i had to carry toro in my hand everywhere so it wouldn't get smushed. the clay is like a weird foamy texture and it's really light and dried super fast. it's cute tho >.< </br></br> edit: gave him a resin coat-over and now he's got a shiny new look *-*"
+    },
+    {
+      "title": "resin",
+      "images": ["trinkets/resin/1.png"],
+      "date": "november 27, 2025",
+      "description": "resin trinket with beads",
+      "comments": "i made this with some leftover resin and beads. it's a nice trinket ig, very useless"
+    },
+    {
+      "title": "a chipmunk's love",
+      "images": ["archive/woolfelt.png"],
+      "date": "2023-09-08",
+      "description": "woolfelt chipmunk with a heart, made from a daiso kit",
+      "comments": "this was my first time woolfelting, it was not as bad as i had expected and was actually quite easy. i bought a kit for grce and we started them together but i dont think grce ever finished hers"
+    }
+  ],
+  "archive": [
+    {
+      "title": "a pearly clam",
+      "images": ["archive/clam.png"],
+      "date": "so long ago. maybe like 2014",
+      "description": "clam decoration made from shells and marble %",
+      "comments": "i made this using a clam shell that i probably picked up from the beach or saved from a restaurant from some oyster dish when i was like 10. i love picking up shells on the beach. i still think this was a stroke of genius... look at the way the light hits the marble *-*"
+    },
+    {
+      "title": "scarf",
+      "images": ["archive/scarf.png"],
+      "date": "probably when i was like 11",
+      "description": "green fringe scarf, made on a knitting loom",
+      "comments": "i made this for my dad for christmas one year, i think from a knitting loom that he got me the year before. it's quite long and a bit itchy and very green."
+    },
+    {
+      "title": "silent owl",
+      "images": ["archive/owl.png"],
+      "date": "idk 2015",
+      "description": "pink felt owl made from a kit",
+      "comments": "isn't she adorable? it was super easy to make with the kit too, i think owls were my favorite animal for a while around this time"
+    },
+    {
+      "title": "arterixa",
+      "images": [
+        "archive/arterixa/1.jpg",
+        "archive/arterixa/2.jpg",
+        "archive/arterixa/3.jpg",
+        "archive/arterixa/4.PNG",
+        "archive/arterixa/5.jpg",
+        "archive/arterixa/6.jpg",
+        "archive/arterixa/7.PNG",
+        "archive/arterixa/8.PNG",
+        "archive/arterixa/9.PNG",
+        "archive/arterixa/10.PNG"
+      ],
+      "date": "2019 - 2020",
+      "description": "digital paintings made in aj classic art studio",
+      "comments": "during the pandemic i became super obsessed with animal jam, i never got to play it as a child and i became obsesseddd. i spent hours grinding that game and became really rare but i checked back recently and i think my account got hacked TT i had been collecting nonmember rares for sooo long i had a document and everything dedicated to it it was so sad TT and all my looks were gone T-T but i got into painting on the studio lowkey to get rich but i painted all of these using only the aj studio airbrush and smudge tool and with a MOUSE. i got so into art stuff from this that i made an art instagram account called arterixa which i deleted a long time ago but that's the title of this little collection. i traced most of the paintings from an image that i literally printed out and held up to the computer but this was like my first time doing proper drawings and i think i did pretty good. the one of rm was my first commission and i spent foreverrr on it and i think they paid me a short spiked collar which was probably my first spike and there's one of hyungwon that's obviously unfinished and that one was also supposed to be a commission but i never finished bcs i lowkey quit the game. oops but i think the person who commissioned me lowkey quit too so it's okay. there was also this one painting of a cherry blossom tree that me and grce made together when the painting function first came out for nonmembers but i can't find a picture of it anywhere which is so sad TT idk why i didn't take more pictures of my outfits and dens and stuff while i was playing because now i have no record of them anywhere T-T"
+    },
+    {
+      "title": "\"Alpha\"",
+      "images": [
+        "archive/alpha/1.png",
+        "archive/alpha/2.png",
+        "archive/alpha/3.png",
+        "archive/alpha/4.png",
+        "archive/alpha/5.png",
+        "archive/alpha/6.png",
+        "archive/alpha/7.png"
+      ],
+      "date": "2017 - 2018",
+      "description": "<a href='http://episodeinteractive.com/s/5015758158168064' target='_blank'>episode story</a> adapted from original story 'clan game' by me and grce. link must be opened from a mobile device",
+      "comments": "this project has so much lore, i made this episode story based off a game that me and grace played which we just called the clan game, but we became so invested in the story that by the end, we were both crying. at that time i was also super into episode so i got the idea to make our game into an episode story. i never published it because i never really finished it, there's still so many things that i could smooth out but lowkey this was a really cool idea... it kind of involves coding for the animations and there's even story logic based on the reader's choices, and there's aspects of writing, character design, world building, and also film direction with camera angles and zooms and scene and pacing choices. i think i realized while doing this how hard writing dialogue really is. when i started this i don't think i realized that it would be such a big project but i have so much respect for people who wrote such good episode stories now, especially those ones that had such long episodes and the series went on for forever. i just played the story all the way through and it definitely has its flaws and i literally gave up on it at the ending which was literally the best part but why am i lowkey so proud of it anyways TT this is kinda crazy i feel so accomplished like a self published author"
+    },
+    {
+      "title": "scholastic comics",
+      "images": [
+        "archive/rosalee/rosalee.png",
+        "archive/rosalee/stolen.jpg",
+        "archive/rosalee/majic.jpg"
+      ],
+      "captions": ["\"Rosalee\"", "\"Stolen\"", "\"The Majic Book\""],
+      "date": "july 5, 2016",
+      "description": "one page comics made on scholastic website",
+      "comments": "i made these using the scholastic website's comic maker, which provides graphics and backgrounds for you to make your own comics. i wonder if that's still up. but i gave up when i realized that making comics is hard"
+    },
+    {
+      "title": "notebook",
+      "images": [
+        "archive/notebook/1.png",
+        "archive/notebook/2.png",
+        "archive/notebook/3.jpg",
+        "archive/notebook/4.jpg",
+        "archive/notebook/5.jpg",
+        "archive/notebook/6.png",
+        "archive/notebook/7.png",
+        "archive/notebook/8.jpg"
+      ],
+      "date": "11/23/2015 - 2017",
+      "description": "basically my commonplace book as a child",
+      "comments": "my childhood notebook that i wrote everything in, back when i still spent my time doing things that are actually important. it started as a journal, and i decorated the cover with things that were important to me (i liked my friends and kpop). i spilled so much tea in this journal, wrote songs, made lists, sketched... one weird thing i did was write down the entire lyrics to songs that i really liked, probably so i could memorize them. and i also drew self-insert characters from books/shows that i liked, literally OCs T-T and our 10 minute diss track to ben was first written in these lines... me and grce used to do so many fun projects like Cartopolis 500 where we basically scooted on mover's dollies and the rabbit wedding (bonus photo included at the end). life was so good then... well i hope i'm still that girl now the medium has just changed"
+    },
+    {
+      "title": "duct tape 4life",
+      "images": [
+        "archive/duct tape/wallet.png",
+        "archive/duct tape/ducttape.png",
+        "archive/duct tape/pen.png"
+      ],
+      "date": "circa 2013",
+      "description": "duct tape hello kitty wallet and rose pen",
+      "comments": "remember when duct tape wallets and diys were a whole thing... i still use this wallet and the pen occasionally too. there's a lot more where that came from but i think these ones aged the best"
+    },
+    {
+      "title": "miscellaneous sculptures & clay",
+      "images": [
+        "archive/miscellaneous clay & sculpture/1.png",
+        "archive/miscellaneous clay & sculpture/2.png",
+        "archive/miscellaneous clay & sculpture/3.png",
+        "archive/miscellaneous clay & sculpture/octo.png",
+        "archive/miscellaneous clay & sculpture/4.jpg"
+      ],
+      "captions": [
+        "",
+        "scaly dragon egg made from an eos container, mermaid snow globe scene made from polymer clay inside",
+        "poop made of natural clay",
+        "mini stackable octopi made from air dry clay. coin for scale",
+        "dioramas made from polymer clay"
+      ],
+      "date": "est. 2016 - 2020",
+      "description": "miscellaneous sculptures made of air dry and polymer clay. painted with acrylic paint and coated with glue and clear nail polish",
+      "comments": "this is just a collection of things that i was too lazy to make a separate thing for each one. for the scaly dragon egg, the eos container i used is two different colors because i traded the top half with one of my best friends in elementary school. i used to collect those and look for diys to do with them all the time. there's also these little clay octopi that i made a bunch of at one point and even showed my friend how to make them as well. my favorites were these two tiny ones that sit on top of each other. and let me explain the poop, it was at the lake and me and grce and alicia found natural red clay in the dirt and made sculptures out of them, and the clay was actually really nice and has held up all the way until today. and it does bear a striking resemblance to poop. i also used to make these dioramas for my family for christmas every year, can you see the dog in the last one? :,)"
+    }
+  ]
 }

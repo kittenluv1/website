@@ -2,6 +2,7 @@
 import {
   getCategories,
   getCreationImage,
+  getCreationImageUrl,
   type CreationsData,
 } from "@/lib/creations";
 import { Image } from "astro:assets";
@@ -16,9 +17,11 @@ const categories = getCategories(creationsData as CreationsData);
   {
     categories.map(({ name, slug, preview }) => {
       const image = getCreationImage(preview);
+      const imageUrl = preview ? getCreationImageUrl(preview) : undefined;
       if (!image) {
-        console.warn(`[creations] preview image not found: ${preview} (${name})`);
-        return null;
+        console.warn(
+          `[creations] optimized preview unavailable, using URL fallback: ${preview} (${name})`,
+        );
       }
 
       return (
@@ -26,7 +29,22 @@ const categories = getCategories(creationsData as CreationsData);
           href={`/creations/${slug}`}
           class={gridItemButton}
         >
-          <Image src={image} alt={name} />
+          {
+            image ? (
+              <Image src={image} alt={name} />
+            ) : imageUrl ? (
+              <img
+                src={imageUrl}
+                alt={name}
+                onerror="this.style.display='none'"
+              />
+            ) : (
+              <div
+                aria-hidden="true"
+                class="box-border flex aspect-square h-full w-full items-center justify-center pb-[1vh] opacity-50"
+              />
+            )
+          }
           <p>{name}</p>
         </a>
       );
