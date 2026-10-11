@@ -1,9 +1,9 @@
 export default [
   {
     date: "10/10",
-    content: `telling yourself youre doing well is the first step to doing well. i'm finally starting to understand what they mean by “your looks are the least interesting thing about you”. idk am i stagnating (my worst fear). why am i so bad at random conversations... 
+    content: `telling yourself you're doing well is the first step to doing well. i'm finally starting to understand what they mean by “your looks are the least interesting thing about you”. idk am i stagnating (my worst fear). why am i so bad at random conversations... 
 
-i don't want to be all doom n gloom anymore… it's nice being less doom pilled and lowkey not caring as much (𖦹ᯅ𖦹). my brain is expanding… i'm never talking down about myself again. it's not this or nothing, it never is. i feel like i can hold my head up now just bcs of who i am not bcs of anything i have. 
+i don't want to be all doom n gloom anymore... it's nice being less doom pilled and lowkey not caring as much (𖦹ᯅ𖦹). my brain is expanding... i'm never talking down about myself again. it's not this or nothing, it never is. i feel like i can hold my head up now just bcs of who i am not bcs of anything i have. 
 
 i'm getting better at initiating conversations... mostly bcs i'm not as scared about how they're going to go anymore. it's like, what's the worst that can happen. and if it does happen, knowing that i'll be okay. i need to hold myself to a higher moral standard and also be less judgmental of others. i'm lowkey too judgemental and i'm scared of others becoming aware of that... `,
   },
@@ -13,16 +13,16 @@ i'm getting better at initiating conversations... mostly bcs i'm not as scared a
     content: `i actually care so much less abt validation from man, job, school, etc. now... so it was worth
 reflections from my career fair: 
 - should not have told him i haven't worked with databases ToT like bro just LIE
-- could have talked to those fincon people more. but also… i lowkey think i did the right thing
+- could have talked to those fincon people more. but also... i lowkey think i did the right thing
 - i prefer talking to recruiters like freaking people bro. i'm not gonna go in there and be a walking resume
-- i'm getting better at feeling out a situation and knowing where the conversation is headed… i need to learn how to naturally steer it towards where i want it to go
-- defense companies are out, media companies r in… 
+- i'm getting better at feeling out a situation and knowing where the conversation is headed... i need to learn how to naturally steer it towards where i want it to go
+- defense companies are out, media companies r in... 
 i was going to try to do the roblox oa once again. but it wasn't working and i had other stuff due that night and i had to really sit down and ask myself, 'why do i even want this'... am i in it for the right reasons... is it worth wasting my 3 hours of sleep on this. and i did that for probably like 2 hours and decided no. but honestly it was worth it. i need to give myself that time to understand these things so i can avoid wasting my energy chasing something i don't even want. and now before i'm locked in to an actual job would be a great time to do that... `,
   },
   {
     date: "10/5",
     title: "doomscroll",
-    content: `i lost all my drip but not my swag. the world is tiring but that's all there is. there's no such thing as love at first sight - you can't love somebody until you've seen them at their lowest, until you've seen them fail to do something over and over again and how they react, until you've seen them lose something important and struggle to discover what they really lost, until you've seen how they take accountability for their actions and how they react when you struggle to take accountability for yours. my algorithm wants me to be sad and angry but i just want to shower and sleep. the internet isn't real but everything that they say on there comes true. i've become less hardworking as i became more clear about what it is i'm working for. living day to day, honestly hour to hour… how did it get to this, where do i even honestly want to be?`,
+    content: `i lost all my drip but not my swag. the world is tiring but that's all there is. there's no such thing as love at first sight - you can't love somebody until you've seen them at their lowest, until you've seen them fail to do something over and over again and how they react, until you've seen them lose something important and struggle to discover what they really lost, until you've seen how they take accountability for their actions and how they react when you struggle to take accountability for yours. my algorithm wants me to be sad and angry but i just want to shower and sleep. the internet isn't real but everything that they say on there comes true. i've become less hardworking as i became more clear about what it is i'm working for. living day to day, honestly hour to hour... how did it get to this, where do i even honestly want to be?`,
   },
   {
     date: "9/25",
