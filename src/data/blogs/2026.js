@@ -1,11 +1,51 @@
 export default [
   {
+    date: "8/3/26",
+    title: "questions to ask on a first date",
+    content: `
+do you like to read?
+what are your love languages?
+what is your biggest sin?
+have you dated anyone in the past?
+what kind of music do you listen to?
+favorite animal?
+animals or plants?
+when’s your birthday
+do you do drugs?
+are you close with your parents?
+`,
+  },
+  {
+    date: "10/20",
+    title: "lazy entry",
+    content: `hey... i'm addicted to buldak. it's lowkey bad, this is my third one this week. but there's worse things to be addicted to and i worked today and life is about enjoying yourself and also living for the present as much as preparing for the future. last night i got high and made myself a carbonara buldak with melted cheese... ( ´﹃\` ) i just put my fairy lights up and it makes my bed feel so cozy... ( ´ ˘ \`)
+
+i switched from google calendar to notion calendar and it's lowkey goated. last sunday i was still in sd, seems crazy to think about, it feels like so long ago... 
+
+on thursday, i went to skate club and met some cool ppl, but afterwards i had to grind so hard to study for my cs131 quiz the next day ToT bro i started way too late and i had to stay up until like 4am and i was tiredddd but i drank my energy drinks and i sat down and made myself get thru it. and i made myself enjoy it too bcs if i'm gonna do it anyways, might as well enjoy it. 
+
+i honestly don't know if i'll find a job by the end of this year but i'm coming to realize that lowkey i'll be ok even if not. i'm thankfully not in a position where i rlly need the money, it's always been more of a self concept thing... but i'm genuinely starting to realize what they mean by we gon be ok. like damn no matter what, it's really lowkey gonna be ok. 
+
+i loveee having a full day of nothing to do, i feel like i can take a deep breath. even if there's lots of work to do, i just love staying in all day. no plans, no problem that's my motto
+
+today i did some chores in the morning and went to my psych class, nobody else knows what's going on in that class either apparently... i skated a bit afterwards then came back and finallyyyyy worked bro cus i looked at my bank account this morning and realized i need that money. i also ate another buldak at night ToT imma go do a bit more work after this and then go to bed :) feeling good about today and the rest of this week tbh... 
+`,
+  },
+  {
+    date: "10/11",
+    title: "goals for senior year",
+    content: `- get better at holding random conversations & talking to ppl (and not overthinking it)
+- make the most of time spent with friends
+- get 1 job offer
+- have consistent kickflips`,
+  },
+  {
     date: "10/10",
     content: `telling yourself you're doing well is the first step to doing well. i'm finally starting to understand what they mean by “your looks are the least interesting thing about you”. idk am i stagnating (my worst fear). why am i so bad at random conversations... 
 
 i don't want to be all doom n gloom anymore... it's nice being less doom pilled and lowkey not caring as much (𖦹ᯅ𖦹). my brain is expanding... i'm never talking down about myself again. it's not this or nothing, it never is. i feel like i can hold my head up now just bcs of who i am not bcs of anything i have. 
 
-i'm getting better at initiating conversations... mostly bcs i'm not as scared about how they're going to go anymore. it's like, what's the worst that can happen. and if it does happen, knowing that i'll be okay. i need to hold myself to a higher moral standard and also be less judgmental of others. i'm lowkey too judgemental and i'm scared of others becoming aware of that... `,
+i'm getting better at initiating conversations... mostly bcs i'm not as scared about how they're going to go anymore. it's like, what's the worst that can happen. and if it does happen, knowing that i'll be okay. i need to hold myself to a higher moral standard and also be less judgmental of others. i'm lowkey too judgemental and i'm scared of others finding out... `,
   },
   {
     date: "10'6",
@@ -36,12 +76,14 @@ i was going to try to do the roblox oa once again. but it wasn't working and i h
   },
   {
     date: "9/22",
+    title: "eaf",
     content: `just came back from eaf... omg. i'm not even going to try to overthink all those social interactions... there will be no end. i had some good moments and some major fumbles but literally everyone who tables at eaf will experience this. i'm sure there's nobody who walks away from eaf feeling better than they did going into it. 
 
 the best interactions are the ones that go off script. i feel like this is true in general. it's good to have a script prepared though but yeah. i think the goal is always to go off the script. that's when things get real
 
 i forgot how cliquish and exclusive people can be here. i don't see myself as part of any in group which can be hard sometimes tbh ToT i don't want to be part of the clique group but it's hard to be on the outside... becoming disillusioned by la is just slowly pulling back the cataracts of social hierarchy that seem implanted in everyone here. me included. it clouds your vision but once you see it you won't want to go back. 
-i don't want to be perceived as attractive or “cool” anymore (it means smth different in la than it does elsewhere). wanting to be accepted, loved, and cared is natural; trying to be cool is not the same thing as that. when you look that good it's easy to think that's the most important thing about you... in fact that's what they want you to think... 
+
+i don't want to be perceived as attractive or “cool” anymore (it means smth different in la than it does elsewhere). wanting to be accepted, loved, and cared for is natural; trying to be cool is not the same thing as that. when you look that good it's easy to think that it's the most important thing about you... in fact that's what they want you to think... but it's not true, don't let them get to you!
 `,
   },
   {
