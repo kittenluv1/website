@@ -12,7 +12,7 @@ This means all the styles are contained in these files:
   Source_Serif_4/SourceSerif4-Italic-VariableFont_opsz,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
-that aren’t available as static fonts. Not all apps support variable fonts, and
+that aren't available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Source Serif 4:
   Source_Serif_4/static/SourceSerif4-ExtraLight.ttf
   Source_Serif_4/static/SourceSerif4-Light.ttf

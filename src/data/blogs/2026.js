@@ -1,5 +1,31 @@
 export default [
   {
+    date: "11/5",
+    content: `i'm on some crazy timing recently with these past few weekends being niteharts, beabadoobee, and then halloweekend. i lowkey hate meeting new ppl argh it's a flaw. but i want to learn how to take myself less seriously, make fun of myself more, be a little bit of a jokester sometimes too yk. life is actually so much easier if you don't care what others think. 
+
+it doesn't cost you anything to talk more, you're not billed per word. i don't want my friends to think i'm stupid but lowkey who cares if they do. it doesn't matter if you want to go to your job, cus you have to; it doesn't matter if you want to talk to people, you have to. so you might as well enjoy what you have to do. 
+
+i value my privacy too much and i don't tell ppl things… i hold back on thoughts that i don't think will come off well and i'm kind of people pleasing in that way. i'm getting better at yapping straight shit tho so it can at least fill the space. i always think so much about how my actions are being received i have to feed my energy into positive thoughts and a positive future, not on overthinking shit
+
+being with my friends these past weekends was sosoo worth it tho. 
+also bro i literally just met dominic fike. `,
+  },
+  {
+    date: "10/27",
+    title: "things to do",
+    content: `
+- laugh
+- laugh at yourself
+- laugh at others
+- tell people things
+- make jokes
+- emote
+- look stupid
+- be LOUD
+- speak thru ur stomach voice
+- dance`,
+  },
+  {
     date: "8/3/26",
     title: "questions to ask on a first date",
     content: `
@@ -10,7 +36,7 @@ have you dated anyone in the past?
 what kind of music do you listen to?
 favorite animal?
 animals or plants?
-when’s your birthday
+when's your birthday
 do you do drugs?
 are you close with your parents?
 `,
@@ -22,7 +48,7 @@ are you close with your parents?
 
 i switched from google calendar to notion calendar and it's lowkey goated. last sunday i was still in sd, seems crazy to think about, it feels like so long ago... 
 
-on thursday, i went to skate club and met some cool ppl, but afterwards i had to grind so hard to study for my cs131 quiz the next day ToT bro i started way too late and i had to stay up until like 4am and i was tiredddd but i drank my energy drinks and i sat down and made myself get thru it. and i made myself enjoy it too bcs if i'm gonna do it anyways, might as well enjoy it. 
+on thursday, i went to skate club and met some cool ppl, but afterwards i had to grind so hard to study for my cs131 quiz the next day ToT. bro i started way too late and i had to stay up until like 4am and i was tiredddd. but i drank my energy drinks and i sat down and made myself get thru it. and i made myself enjoy it too bcs if i'm gonna do it anyways, might as well enjoy it. 
 
 i honestly don't know if i'll find a job by the end of this year but i'm coming to realize that lowkey i'll be ok even if not. i'm thankfully not in a position where i rlly need the money, it's always been more of a self concept thing... but i'm genuinely starting to realize what they mean by we gon be ok. like damn no matter what, it's really lowkey gonna be ok. 
 
@@ -48,7 +74,7 @@ i don't want to be all doom n gloom anymore... it's nice being less doom pilled 
 i'm getting better at initiating conversations... mostly bcs i'm not as scared about how they're going to go anymore. it's like, what's the worst that can happen. and if it does happen, knowing that i'll be okay. i need to hold myself to a higher moral standard and also be less judgmental of others. i'm lowkey too judgemental and i'm scared of others finding out... `,
   },
   {
-    date: "10'6",
+    date: "10/6",
     title: "career fairs",
     content: `i actually care so much less abt validation from man, job, school, etc. now... so it was worth
 reflections from my career fair: 
