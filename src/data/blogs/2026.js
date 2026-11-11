@@ -5,6 +5,7 @@ export default [
     content: `truly as an adult you have so much freedom to do what you want... you could go as high or as low as you want... i'm kind of scared of that. but i'm also so excited for the freedom of a 9-5, as crazy as that sounds. it just feels like i have no free time right now - i'm always behind on some work or other and it feels so suffocating sometimes. but also, being a college student is a unique kind of freedom that i might never get to experience again. so let me just keep that in mind
 
 what will you make of your life, once it's not decided by external factors? how busy will you keep yourself? i'm feeling deja vu - except it's highly likely that this has genuinely happened before. idk it's 3am. i guess early mornings feel just as liminal as late nights. at some point they're the same thing
+
 i don't have a girlfriend, i don't have a job, i don't know what i want to do, i care too much about things that don't matter, and i don't get enough sleep on top of and despite all that. sooo... what are we doing here chat ToT
 `,
   },
