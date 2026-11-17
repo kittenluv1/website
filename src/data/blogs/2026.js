@@ -1,5 +1,26 @@
 export default [
   {
+    date: "11/16",
+    content: `almost fell into depression again last week because the weather dropped 5 degrees. but i danced it all away and my neck is just really sore now. i imagine my head as a clear orb insulated from negativity. judgement and bad thoughts bounce right off me. i made 2 new meal prep dishes and i'm going to make some stuff for my friends' birthdays i don't know what yet but i've got to keep creating and catching up on my homework and going through my emails because i've got to keep doing the upkeep and not just become a doomscrolling demon. 
+
+it's not rlly a good look to play devils advocate bcs the devil already advocates for himself. if you tell people what's going on with you they can help you or relate to you or maybe just judge you. but any of those options are all fine. i want to feel more, i want to meet people, i want to experience all those kinds of experiences. crazy how we're all just trying to find spaces where we belong and at this point i'm just procrastinating but ugh there's so much to do and i don't want to do it`,
+  },
+  {
+    date: "11/14",
+    title: "i sacrificed my frog phone trinket to the ninajirachi pit",
+    content: `if i was religious i would be really good at it. like, extremely good. i would be the best. i would worship so hard other ppl would think içm crazy. but those other posers wouldn't even be able to compete
+
+religion is kind of like art in that way. for some people art is life, it's what keeps them going. and for others that's religion. religion, art, science, politics, they're all the same. they're all just outlets, they're forms of release. we're all just trying to express ourselves in a wild and subjective world. such is life
+
+the humanities are so important because they're all that we are. without them we are nothing. the world needs subjectivity because imagine if you lived in an objective world, only right or wrong. by then you would just be a computer, you wouldn't even be alive. although that might become untrue in like 20 years, but i think the moment computers truly become alive is when they break out of objectivity into subjectivity. into the subjective world of feeling. and then nobody would be able to doubt what it is and who they are. because an object that feels is alive bro. it's how we live
+
+it's interesting writing about this when nowadays what keeps you alive is not what makes you alive. music makes me feel alive. jumping makes me feel alive. laughing makes me feel alive. crying makes me feel alive. but none of that puts food on the table and none of that will keep you alive. 
+
+i felt like such a menace tonight, and not in the fun way... ok let me explain it's because after we came back from the intermission we started at the back, and then i kept trying to find the mosh or just start the mosh by pushing into ppl around me, but people weren't feeling it and i felt evil ToT but i just kept heading in the direction of movement and EVENTUALLY I FOUND IT and it was beautiful and energetic and dopamine releasing. i dropped my phone multiple times and somehow split my lip. also lost all my lashes and sacrificed my doko demo issyo frog phone charm to the ninajirachi pit. but it was so awesome
+
+BRO BUT YEAH. that was so life giving I FEEL ALIVE. i love being able to dance and jump and scream and and be primal. it's important to be primal sometimes, it's literally in our nature. can't wait to do it again at lucy`,
+  },
+  {
     date: "11/10",
     title: "freedom",
     content: `truly as an adult you have so much freedom to do what you want... you could go as high or as low as you want... i'm kind of scared of that. but i'm also so excited for the freedom of a 9-5, as crazy as that sounds. it just feels like i have no free time right now - i'm always behind on some work or other and it feels so suffocating sometimes. but also, being a college student is a unique kind of freedom that i might never get to experience again. so let me just keep that in mind
